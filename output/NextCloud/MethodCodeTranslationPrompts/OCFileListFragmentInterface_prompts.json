@@ -1,0 +1,56 @@
+[
+    {
+        "method_name": "getColumnsCount",
+        "method_code": "int getColumnsCount();",
+        "prompt": "\n        Please translate the following Java (Android) method titled getColumnsCount from OCFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: getColumnsCount\n\n        Method Code: int getColumnsCount();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getColumnsCount() -> Int\n```"
+    },
+    {
+        "method_name": "onShareIconClick",
+        "method_code": "void onShareIconClick(OCFile file);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onShareIconClick from OCFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: onShareIconClick\n\n        Method Code: void onShareIconClick(OCFile file);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onShareIconClick(file: OCFile) {\n    // Method implementation\n}\n```"
+    },
+    {
+        "method_name": "showShareDetailView",
+        "method_code": "void showShareDetailView(OCFile file);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showShareDetailView from OCFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: showShareDetailView\n\n        Method Code: void showShareDetailView(OCFile file);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showShareDetailView(file: OCFile) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "showActivityDetailView",
+        "method_code": "void showActivityDetailView(OCFile file);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showActivityDetailView from OCFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: showActivityDetailView\n\n        Method Code: void showActivityDetailView(OCFile file);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showActivityDetailView(file: OCFile) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "onOverflowIconClicked",
+        "method_code": "void onOverflowIconClicked(OCFile file, View view);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onOverflowIconClicked from OCFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: onOverflowIconClicked\n\n        Method Code: void onOverflowIconClicked(OCFile file, View view);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onOverflowIconClicked(file: OCFile, view: UIView) {\n    // Method implementation\n}\n```"
+    },
+    {
+        "method_name": "onItemClicked",
+        "method_code": "void onItemClicked(OCFile file);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onItemClicked from OCFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: onItemClicked\n\n        Method Code: void onItemClicked(OCFile file);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onItemClicked(file: OCFile) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "onLongItemClicked",
+        "method_code": "boolean onLongItemClicked(OCFile file);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onLongItemClicked from OCFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: onLongItemClicked\n\n        Method Code: boolean onLongItemClicked(OCFile file);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onLongItemClicked(file: OCFile) -> Bool {\n    // Implementation goes here\n    return false\n}\n```"
+    },
+    {
+        "method_name": "isLoading",
+        "method_code": "boolean isLoading();",
+        "prompt": "\n        Please translate the following Java (Android) method titled isLoading from OCFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: isLoading\n\n        Method Code: boolean isLoading();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isLoading() -> Bool\n```"
+    },
+    {
+        "method_name": "onHeaderClicked",
+        "method_code": "void onHeaderClicked();",
+        "prompt": "\n        Please translate the following Java (Android) method titled onHeaderClicked from OCFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: onHeaderClicked\n\n        Method Code: void onHeaderClicked();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onHeaderClicked() {\n    // Implementation goes here\n}\n```"
+    }
+]

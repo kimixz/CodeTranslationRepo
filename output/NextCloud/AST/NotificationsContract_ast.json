@@ -1,0 +1,60 @@
+{
+    "methods": [
+        {
+            "name": "onRemovedNotification",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isSuccess"
+                }
+            ],
+            "start_position": 479,
+            "end_position": 525
+        },
+        {
+            "name": "removeNotification",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NotificationListAdapter.NotificationViewHolder",
+                    "name": "holder"
+                }
+            ],
+            "start_position": 535,
+            "end_position": 614
+        },
+        {
+            "name": "onRemovedAllNotifications",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isSuccess"
+                }
+            ],
+            "start_position": 624,
+            "end_position": 674
+        },
+        {
+            "name": "onActionCallback",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isSuccess"
+                },
+                {
+                    "type": "Notification",
+                    "name": "notification"
+                },
+                {
+                    "type": "NotificationListAdapter.NotificationViewHolder",
+                    "name": "holder"
+                }
+            ],
+            "start_position": 684,
+            "end_position": 867
+        }
+    ]
+}

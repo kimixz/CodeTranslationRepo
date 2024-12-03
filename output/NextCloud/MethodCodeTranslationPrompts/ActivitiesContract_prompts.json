@@ -1,0 +1,74 @@
+[
+    {
+        "method_name": "showActivities",
+        "method_code": "void showActivities(List<Object> activities, NextcloudClient client, int lastGiven);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showActivities from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: showActivities\n\n        Method Code: void showActivities(List<Object> activities, NextcloudClient client, int lastGiven);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showActivities(activities: [Any], client: NextcloudClient, lastGiven: Int) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "showActivitiesLoadError",
+        "method_code": "void showActivitiesLoadError(String error);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showActivitiesLoadError from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: showActivitiesLoadError\n\n        Method Code: void showActivitiesLoadError(String error);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showActivitiesLoadError(error: String) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "showActivityDetailUI",
+        "method_code": "void showActivityDetailUI(OCFile ocFile);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showActivityDetailUI from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: showActivityDetailUI\n\n        Method Code: void showActivityDetailUI(OCFile ocFile);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showActivityDetailUI(ocFile: OCFile) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "showActivityDetailUIIsNull",
+        "method_code": "void showActivityDetailUIIsNull();",
+        "prompt": "\n        Please translate the following Java (Android) method titled showActivityDetailUIIsNull from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: showActivityDetailUIIsNull\n\n        Method Code: void showActivityDetailUIIsNull();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showActivityDetailUIIsNull() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "showActivityDetailError",
+        "method_code": "void showActivityDetailError(String error);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showActivityDetailError from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: showActivityDetailError\n\n        Method Code: void showActivityDetailError(String error);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showActivityDetailError(error: String) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "showLoadingMessage",
+        "method_code": "void showLoadingMessage();",
+        "prompt": "\n        Please translate the following Java (Android) method titled showLoadingMessage from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: showLoadingMessage\n\n        Method Code: void showLoadingMessage();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showLoadingMessage() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "showEmptyContent",
+        "method_code": "void showEmptyContent(String headline, String message);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showEmptyContent from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: showEmptyContent\n\n        Method Code: void showEmptyContent(String headline, String message);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showEmptyContent(headline: String, message: String) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "setProgressIndicatorState",
+        "method_code": "void setProgressIndicatorState(boolean isActive);",
+        "prompt": "\n        Please translate the following Java (Android) method titled setProgressIndicatorState from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: setProgressIndicatorState\n\n        Method Code: void setProgressIndicatorState(boolean isActive);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setProgressIndicatorState(isActive: Bool) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "loadActivities",
+        "method_code": "void loadActivities(int lastGiven);",
+        "prompt": "\n        Please translate the following Java (Android) method titled loadActivities from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: loadActivities\n\n        Method Code: void loadActivities(int lastGiven);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc loadActivities(lastGiven: Int) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "openActivity",
+        "method_code": "void openActivity(String fileUrl, BaseActivity baseActivity);",
+        "prompt": "\n        Please translate the following Java (Android) method titled openActivity from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: openActivity\n\n        Method Code: void openActivity(String fileUrl, BaseActivity baseActivity);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc openActivity(fileUrl: String, baseActivity: BaseActivity) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "onStop",
+        "method_code": "void onStop();",
+        "prompt": "\n        Please translate the following Java (Android) method titled onStop from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: onStop\n\n        Method Code: void onStop();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onStop() {\n}\n```"
+    },
+    {
+        "method_name": "onResume",
+        "method_code": "void onResume();",
+        "prompt": "\n        Please translate the following Java (Android) method titled onResume from ActivitiesContract.java into Swift.\n\n        Input:\n\n        Method Name: onResume\n\n        Method Code: void onResume();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onResume() {\n    // Implementation goes here\n}\n```"
+    }
+]

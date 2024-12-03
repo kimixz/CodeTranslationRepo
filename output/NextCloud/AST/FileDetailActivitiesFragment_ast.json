@@ -1,0 +1,634 @@
+{
+    "method_calls": {
+        "FileDetailActivitiesFragment.class": [
+            "getSimpleName"
+        ],
+        "args": [
+            "putParcelable"
+        ],
+        "fragment": [
+            "setArguments"
+        ],
+        "unknown": [
+            "getArguments",
+            "setupView",
+            "fetchAndSetData",
+            "setLoadingMessage",
+            "setLoadingMessageEmpty",
+            "submitComment",
+            "getResources",
+            "getContext",
+            "requireActivity",
+            "getActivity",
+            "setEmptyContent",
+            "getString",
+            "getLifecycle",
+            "populateList",
+            "setErrorContent",
+            "hideRefreshLayoutLoader",
+            "setInfoContent",
+            "requireContext"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "FileDetailsActivitiesFragmentBinding": [
+            "inflate"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeSwipeRefreshLayout"
+        ],
+        "binding.swipeContainingList": [
+            "setOnRefreshListener",
+            "setRefreshing",
+            "setVisibility"
+        ],
+        "binding.swipeContainingEmpty": [
+            "setOnRefreshListener",
+            "setVisibility",
+            "setRefreshing"
+        ],
+        "binding.commentInputField.getText()": [
+            "clear"
+        ],
+        "binding.commentInputField": [
+            "getText"
+        ],
+        "Snackbar.make(binding.list, error, Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "Snackbar": [
+            "make"
+        ],
+        "binding.submitComment": [
+            "setOnClickListener"
+        ],
+        "viewThemeUtils.material": [
+            "colorTextInputLayout"
+        ],
+        "DisplayUtils": [
+            "setAvatar"
+        ],
+        "getResources()": [
+            "getDimension"
+        ],
+        "commentField.toString()": [
+            "trim"
+        ],
+        "commentField": [
+            "toString"
+        ],
+        "trimmedComment": [
+            "isEmpty"
+        ],
+        "new SubmitCommentTask(trimmedComment, file.getLocalId(), callback, nextcloudClient)": [
+            "execute"
+        ],
+        "file": [
+            "getLocalId",
+            "getUnreadCommentsCount",
+            "getRemoteId"
+        ],
+        "binding.emptyList.emptyListView": [
+            "setVisibility"
+        ],
+        "binding.loadingContent": [
+            "setVisibility"
+        ],
+        "super": [
+            "onDestroyView",
+            "onScrolled",
+            "onSaveInstanceState",
+            "onPostExecute"
+        ],
+        "((ComponentsGetter) requireActivity())": [
+            "getFileOperationsHelper"
+        ],
+        "storageManager": [
+            "getCapability"
+        ],
+        "user": [
+            "getAccountName",
+            "isAnonymous"
+        ],
+        "capability.getFilesVersioning()": [
+            "isTrue"
+        ],
+        "capability": [
+            "getFilesVersioning"
+        ],
+        "binding.emptyList.emptyListIcon": [
+            "setImageDrawable",
+            "setVisibility"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "binding.list": [
+            "setAdapter",
+            "setLayoutManager",
+            "addOnScrollListener"
+        ],
+        "recyclerView": [
+            "getChildCount"
+        ],
+        "layoutManager": [
+            "getItemCount",
+            "findFirstVisibleItemPosition"
+        ],
+        "Log_OC": [
+            "e",
+            "d"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "activity": [
+            "runOnUiThread"
+        ],
+        "clientFactory": [
+            "create",
+            "createNextcloudClient"
+        ],
+        "nextcloudClient": [
+            "execute"
+        ],
+        "readFileVersionsOperation": [
+            "execute"
+        ],
+        "result1": [
+            "isSuccess",
+            "getData"
+        ],
+        "result": [
+            "isSuccess",
+            "getData",
+            "getLogMessage",
+            "getHttpCode"
+        ],
+        "data": [
+            "get"
+        ],
+        "activitiesAndVersions": [
+            "isEmpty",
+            "addAll"
+        ],
+        "getLifecycle().getCurrentState()": [
+            "isAtLeast"
+        ],
+        "getLifecycle()": [
+            "getCurrentState"
+        ],
+        "t": [
+            "start"
+        ],
+        "new Thread(() -> {\n            if (file.getUnreadCommentsCount() > 0) {\n                MarkCommentsAsReadRemoteOperation unreadOperation = new MarkCommentsAsReadRemoteOperation(\n                    file.getLocalId());\n                RemoteOperationResult remoteOperationResult = unreadOperation.execute(ownCloudClient);\n\n                if (remoteOperationResult.isSuccess()) {\n                    EventBus.getDefault().post(new CommentsEvent(file.getRemoteId()));\n                }\n            }\n        })": [
+            "start"
+        ],
+        "unreadOperation": [
+            "execute"
+        ],
+        "remoteOperationResult": [
+            "isSuccess"
+        ],
+        "EventBus.getDefault()": [
+            "post"
+        ],
+        "EventBus": [
+            "getDefault"
+        ],
+        "adapter": [
+            "setActivityAndVersionItems",
+            "getItemCount"
+        ],
+        "requireContext()": [
+            "getResources"
+        ],
+        "binding.emptyList.emptyListViewHeadline": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.emptyList.emptyListViewText": [
+            "setText",
+            "setVisibility"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "outState": [
+            "putParcelable"
+        ],
+        "operationsHelper": [
+            "restoreFileVersion"
+        ],
+        "binding.avatar": [
+            "setImageDrawable"
+        ],
+        "commentFileOperation": [
+            "execute"
+        ],
+        "callback": [
+            "onSuccess",
+            "onError"
+        ]
+    },
+    "methods": [
+        {
+            "name": "newInstance",
+            "return_type": "FileDetailActivitiesFragment",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 4042,
+            "end_position": 4398,
+            "body_start": 4121,
+            "body_end": 4398
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 4404,
+            "end_position": 6850,
+            "body_start": 4583,
+            "body_end": 6850
+        },
+        {
+            "name": "onSuccess",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6020,
+            "end_position": 6179,
+            "body_start": 6066,
+            "body_end": 6179
+        },
+        {
+            "name": "onError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "error"
+                }
+            ],
+            "start_position": 6193,
+            "end_position": 6342,
+            "body_start": 6246,
+            "body_end": 6342
+        },
+        {
+            "name": "submitComment",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6856,
+            "end_position": 7295,
+            "body_start": 6884,
+            "body_end": 7295
+        },
+        {
+            "name": "setLoadingMessage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7301,
+            "end_position": 7404,
+            "body_start": 7334,
+            "body_end": 7404
+        },
+        {
+            "name": "setLoadingMessageEmpty",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7410,
+            "end_position": 7665,
+            "body_start": 7470,
+            "body_end": 7665
+        },
+        {
+            "name": "onDestroyView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7671,
+            "end_position": 7775,
+            "body_start": 7713,
+            "body_end": 7775
+        },
+        {
+            "name": "setupView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7781,
+            "end_position": 9891,
+            "body_start": 7806,
+            "body_end": 9891
+        },
+        {
+            "name": "onScrolled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView",
+                    "name": "recyclerView"
+                },
+                {
+                    "type": "int",
+                    "name": "dx"
+                },
+                {
+                    "type": "int",
+                    "name": "dy"
+                }
+            ],
+            "start_position": 9112,
+            "end_position": 9873,
+            "body_start": 9209,
+            "body_end": 9873
+        },
+        {
+            "name": "reload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9897,
+            "end_position": 9954,
+            "body_start": 9918,
+            "body_end": 9954
+        },
+        {
+            "name": "fetchAndSetData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "lastGiven"
+                }
+            ],
+            "start_position": 10019,
+            "end_position": 13920,
+            "body_start": 10063,
+            "body_end": 13920
+        },
+        {
+            "name": "markCommentsAsRead",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13926,
+            "end_position": 14493,
+            "body_start": 13959,
+            "body_end": 14493
+        },
+        {
+            "name": "populateList",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "activities"
+                },
+                {
+                    "type": "boolean",
+                    "name": "clear"
+                }
+            ],
+            "start_position": 14499,
+            "end_position": 15181,
+            "body_start": 14587,
+            "body_end": 15181
+        },
+        {
+            "name": "setEmptyContent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "headline"
+                },
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 15187,
+            "end_position": 15323,
+            "body_start": 15249,
+            "body_end": 15323
+        },
+        {
+            "name": "setErrorContent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 15329,
+            "end_position": 15502,
+            "body_start": 15396,
+            "body_end": 15502
+        },
+        {
+            "name": "setInfoContent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "icon"
+                },
+                {
+                    "type": "String",
+                    "name": "headline"
+                },
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 15508,
+            "end_position": 16505,
+            "body_start": 15592,
+            "body_end": 16505
+        },
+        {
+            "name": "hideRefreshLayoutLoader",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FragmentActivity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 16511,
+            "end_position": 16986,
+            "body_start": 16575,
+            "body_end": 16986
+        },
+        {
+            "name": "onActivityClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RichObject",
+                    "name": "richObject"
+                }
+            ],
+            "start_position": 16992,
+            "end_position": 17107,
+            "body_start": 17059,
+            "body_end": 17107
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 17113,
+            "end_position": 17382,
+            "body_start": 17185,
+            "body_end": 17382
+        },
+        {
+            "name": "onRestoreClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileVersion",
+                    "name": "fileVersion"
+                }
+            ],
+            "start_position": 17388,
+            "end_position": 17521,
+            "body_start": 17456,
+            "body_end": 17521
+        },
+        {
+            "name": "avatarGenerated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "avatarDrawable"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 17527,
+            "end_position": 17678,
+            "body_start": 17614,
+            "body_end": 17678
+        },
+        {
+            "name": "shouldCallGeneratedCallback",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tag"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 17684,
+            "end_position": 17802,
+            "body_start": 17773,
+            "body_end": 17802
+        },
+        {
+            "name": "disableLoadingActivities",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 17812,
+            "end_position": 17918,
+            "body_start": 17874,
+            "body_end": 17918
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Boolean",
+            "parameters": [],
+            "start_position": 18593,
+            "end_position": 18897,
+            "body_start": 18659,
+            "body_end": 18897
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Boolean",
+                    "name": "success"
+                }
+            ],
+            "start_position": 18907,
+            "end_position": 19189,
+            "body_start": 18971,
+            "body_end": 19189
+        }
+    ],
+    "local_variables": {
+        "fragment": "FileDetailActivitiesFragment",
+        "args": "Bundle",
+        "arguments": "Bundle",
+        "view": "View",
+        "commentField": "Editable",
+        "trimmedComment": "String",
+        "storageManager": "FileDataStorageManager",
+        "capability": "OCCapability",
+        "layoutManager": "LinearLayoutManager",
+        "visibleItemCount": "int",
+        "totalItemCount": "int",
+        "firstVisibleItemIndex": "int",
+        "activity": "FragmentActivity",
+        "user": "User",
+        "t": "Thread",
+        "getRemoteNotificationOperation": "GetActivitiesRemoteOperation",
+        "result": "RemoteOperationResult<Void>",
+        "versions": "ArrayList<Object>",
+        "readFileVersionsOperation": "ReadFileVersionsRemoteOperation",
+        "result1": "RemoteOperationResult",
+        "data": "List<Object>",
+        "activitiesAndVersions": "List<Object>",
+        "logMessage": "String",
+        "finalLogMessage": "String",
+        "unreadOperation": "MarkCommentsAsReadRemoteOperation",
+        "remoteOperationResult": "RemoteOperationResult",
+        "commentFileOperation": "CommentFileOperation"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "throw_statement",
+        "try_statement"
+    ]
+}

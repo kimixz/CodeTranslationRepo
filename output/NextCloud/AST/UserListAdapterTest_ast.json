@@ -1,0 +1,72 @@
+{
+    "methods": [
+        {
+            "name": "setup",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1058,
+            "end_position": 1338,
+            "body_start": 1090,
+            "body_end": 1338
+        },
+        {
+            "name": "test_getItemCountEmptyList",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1429,
+            "end_position": 2002,
+            "body_start": 1480,
+            "body_end": 2002
+        },
+        {
+            "name": "test_getItemCountNormalCase",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2105,
+            "end_position": 2813,
+            "body_start": 2157,
+            "body_end": 2813
+        },
+        {
+            "name": "test_getItem",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2886,
+            "end_position": 3956,
+            "body_start": 2923,
+            "body_end": 3956
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "mock",
+            "when",
+            "assertEquals"
+        ],
+        "when(manageAccountsActivity.getResources().getDimension(R.dimen.list_item_avatar_icon_radius))": [
+            "thenReturn"
+        ],
+        "manageAccountsActivity.getResources()": [
+            "getDimension"
+        ],
+        "manageAccountsActivity": [
+            "getResources"
+        ],
+        "userListAdapter": [
+            "getItemCount",
+            "getItem"
+        ],
+        "accounts": [
+            "add"
+        ]
+    },
+    "local_variables": {
+        "accounts": "List<UserListItem>",
+        "manageAccountsActivity": "ManageAccountsActivity",
+        "userListItem1": "UserListItem",
+        "userListItem2": "UserListItem"
+    }
+}

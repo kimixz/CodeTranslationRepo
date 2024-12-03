@@ -1,0 +1,238 @@
+{
+    "method_calls": {
+        "BaseActivity.class": [
+            "getSimpleName"
+        ],
+        "unknown": [
+            "onThemeSettingsModeChanged",
+            "recreate"
+        ],
+        "super": [
+            "onCreate",
+            "onPostCreate",
+            "onDestroy",
+            "onPause",
+            "onResume",
+            "onNewIntent",
+            "onRestart"
+        ],
+        "mixinRegistry": [
+            "add",
+            "onCreate",
+            "onDestroy",
+            "onPause",
+            "onResume",
+            "onNewIntent",
+            "onRestart"
+        ],
+        "preferences": [
+            "addListener",
+            "removeListener"
+        ],
+        "Log_OC": [
+            "v"
+        ],
+        "sessionMixin": [
+            "setAccount",
+            "setUser",
+            "startAccountCreation",
+            "getCapabilities",
+            "getCurrentAccount",
+            "getUser"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onDarkThemeModeChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DarkMode",
+                    "name": "mode"
+                }
+            ],
+            "start_position": 1929,
+            "end_position": 2050,
+            "body_start": 1997,
+            "body_end": 2050
+        },
+        {
+            "name": "getUserAccountManager",
+            "return_type": "UserAccountManager",
+            "parameters": [],
+            "start_position": 2063,
+            "end_position": 2151,
+            "body_start": 2113,
+            "body_end": 2151
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 2157,
+            "end_position": 2491,
+            "body_start": 2232,
+            "body_end": 2491
+        },
+        {
+            "name": "onPostCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 2497,
+            "end_position": 2686,
+            "body_start": 2576,
+            "body_end": 2686
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2692,
+            "end_position": 2860,
+            "body_start": 2733,
+            "body_end": 2860
+        },
+        {
+            "name": "onPause",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2866,
+            "end_position": 2993,
+            "body_start": 2905,
+            "body_end": 2993
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2999,
+            "end_position": 3250,
+            "body_start": 3039,
+            "body_end": 3250
+        },
+        {
+            "name": "onNewIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 3256,
+            "end_position": 3397,
+            "body_start": 3312,
+            "body_end": 3397
+        },
+        {
+            "name": "onRestart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3403,
+            "end_position": 3608,
+            "body_start": 3444,
+            "body_end": 3608
+        },
+        {
+            "name": "onThemeSettingsModeChanged",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3614,
+            "end_position": 3775,
+            "body_start": 3656,
+            "body_end": 3775
+        },
+        {
+            "name": "setAccount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "boolean",
+                    "name": "savedAccount"
+                }
+            ],
+            "start_position": 4133,
+            "end_position": 4263,
+            "body_start": 4214,
+            "body_end": 4263
+        },
+        {
+            "name": "setUser",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 4269,
+            "end_position": 4346,
+            "body_start": 4303,
+            "body_end": 4346
+        },
+        {
+            "name": "startAccountCreation",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4352,
+            "end_position": 4442,
+            "body_start": 4390,
+            "body_end": 4442
+        },
+        {
+            "name": "getCapabilities",
+            "return_type": "OCCapability",
+            "parameters": [],
+            "start_position": 4677,
+            "end_position": 4769,
+            "body_start": 4715,
+            "body_end": 4769
+        },
+        {
+            "name": "getAccount",
+            "return_type": "Account",
+            "parameters": [],
+            "start_position": 5031,
+            "end_position": 5115,
+            "body_start": 5059,
+            "body_end": 5115
+        },
+        {
+            "name": "getUser",
+            "return_type": "Optional<User>",
+            "parameters": [],
+            "start_position": 5121,
+            "end_position": 5199,
+            "body_start": 5153,
+            "body_end": 5199
+        },
+        {
+            "name": "getStorageManager",
+            "return_type": "FileDataStorageManager",
+            "parameters": [],
+            "start_position": 5205,
+            "end_position": 5301,
+            "body_start": 5255,
+            "body_end": 5301
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement"
+    ]
+}

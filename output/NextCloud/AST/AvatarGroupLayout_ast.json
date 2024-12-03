@@ -1,0 +1,244 @@
+{
+    "method_calls": {
+        "AvatarGroupLayout.class": [
+            "getSimpleName"
+        ],
+        "DisplayUtils": [
+            "convertDpToPixel",
+            "setAvatar"
+        ],
+        "ContextCompat": [
+            "getDrawable",
+            "getColor"
+        ],
+        "DrawableCompat": [
+            "setTint"
+        ],
+        "unknown": [
+            "getContext",
+            "removeAllViews",
+            "addView",
+            "showFederatedShareAvatar",
+            "getLayoutParams",
+            "setLayoutParams"
+        ],
+        "Math": [
+            "min"
+        ],
+        "sharees": [
+            "size",
+            "get"
+        ],
+        "context": [
+            "getResources"
+        ],
+        "resources": [
+            "getDimension",
+            "getInteger"
+        ],
+        "avatarLayoutParams": [
+            "setMargins",
+            "addRule"
+        ],
+        "avatar": [
+            "setLayoutParams",
+            "setPadding",
+            "setBackground",
+            "requestLayout",
+            "setImageResource",
+            "getDrawable",
+            "setTag",
+            "setImageDrawable"
+        ],
+        "viewThemeUtils.platform": [
+            "tintTextDrawable",
+            "colorDrawable"
+        ],
+        "sharee": [
+            "getShareType",
+            "getUserId",
+            "getDisplayName"
+        ],
+        "viewThemeUtils.files": [
+            "createAvatar"
+        ],
+        "user": [
+            "split"
+        ],
+        "TextDrawable": [
+            "createAvatarByUserId"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "Glide.with(context).load(url)\n            .asBitmap()\n            .placeholder(placeholder)\n            .error(placeholder)": [
+            "into"
+        ],
+        "Glide.with(context).load(url)\n            .asBitmap()\n            .placeholder(placeholder)": [
+            "error"
+        ],
+        "Glide.with(context).load(url)\n            .asBitmap()": [
+            "placeholder"
+        ],
+        "Glide.with(context).load(url)": [
+            "asBitmap"
+        ],
+        "Glide.with(context)": [
+            "load"
+        ],
+        "Glide": [
+            "with"
+        ],
+        "RoundedBitmapDrawableFactory": [
+            "create"
+        ],
+        "circularBitmapDrawable": [
+            "setCircular"
+        ],
+        "((ImageView) callContext)": [
+            "setImageDrawable",
+            "getTag"
+        ],
+        "((ImageView) callContext).getTag()": [
+            "equals"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "assert_statement",
+        "for_statement",
+        "if_statement",
+        "break_statement",
+        "try_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "setAvatars",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "List<ShareeUser>",
+                    "name": "sharees"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 2656,
+            "end_position": 5819,
+            "body_start": 2825,
+            "body_end": 5819
+        },
+        {
+            "name": "showFederatedShareAvatar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "String",
+                    "name": "user"
+                },
+                {
+                    "type": "float",
+                    "name": "avatarRadius"
+                },
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "avatar"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 5825,
+            "end_position": 7878,
+            "body_start": 6193,
+            "body_end": 7878
+        },
+        {
+            "name": "setResource",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "resource"
+                }
+            ],
+            "start_position": 7408,
+            "end_position": 7856,
+            "body_start": 7478,
+            "body_end": 7856
+        },
+        {
+            "name": "avatarGenerated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "avatarDrawable"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 7884,
+            "end_position": 8046,
+            "body_start": 7971,
+            "body_end": 8046
+        },
+        {
+            "name": "shouldCallGeneratedCallback",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tag"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 8052,
+            "end_position": 8211,
+            "body_start": 8141,
+            "body_end": 8211
+        }
+    ],
+    "local_variables": {
+        "context": "Context",
+        "avatarLayoutParams": "RelativeLayout.LayoutParams",
+        "avatarCount": "int",
+        "shareeSize": "int",
+        "resources": "Resources",
+        "avatarRadius": "float",
+        "sharee": "ShareeUser",
+        "avatar": "ImageView",
+        "size": "int",
+        "rememberParam": "ViewGroup.LayoutParams",
+        "split": "String[]",
+        "userId": "String",
+        "server": "String",
+        "url": "String",
+        "placeholder": "Drawable",
+        "circularBitmapDrawable": "RoundedBitmapDrawable"
+    }
+}

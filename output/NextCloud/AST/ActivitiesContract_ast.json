@@ -1,0 +1,144 @@
+{
+    "methods": [
+        {
+            "name": "showActivities",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "activities"
+                },
+                {
+                    "type": "NextcloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "int",
+                    "name": "lastGiven"
+                }
+            ],
+            "start_position": 455,
+            "end_position": 539
+        },
+        {
+            "name": "showActivitiesLoadError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "error"
+                }
+            ],
+            "start_position": 548,
+            "end_position": 591
+        },
+        {
+            "name": "showActivityDetailUI",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                }
+            ],
+            "start_position": 600,
+            "end_position": 641
+        },
+        {
+            "name": "showActivityDetailUIIsNull",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 650,
+            "end_position": 684
+        },
+        {
+            "name": "showActivityDetailError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "error"
+                }
+            ],
+            "start_position": 693,
+            "end_position": 736
+        },
+        {
+            "name": "showLoadingMessage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 745,
+            "end_position": 771
+        },
+        {
+            "name": "showEmptyContent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "headline"
+                },
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 780,
+            "end_position": 835
+        },
+        {
+            "name": "setProgressIndicatorState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isActive"
+                }
+            ],
+            "start_position": 844,
+            "end_position": 893
+        },
+        {
+            "name": "loadActivities",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "lastGiven"
+                }
+            ],
+            "start_position": 969,
+            "end_position": 1004
+        },
+        {
+            "name": "openActivity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "fileUrl"
+                },
+                {
+                    "type": "BaseActivity",
+                    "name": "baseActivity"
+                }
+            ],
+            "start_position": 1014,
+            "end_position": 1075
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1085,
+            "end_position": 1099
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1109,
+            "end_position": 1125
+        }
+    ]
+}

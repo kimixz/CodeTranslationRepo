@@ -1,0 +1,68 @@
+[
+    {
+        "method_name": "onCreate",
+        "method_code": "Override\n    public void onCreate(@Nullable Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n\n        Bundle bundle = getArguments();\n        if (bundle != null) {\n            setFile(BundleExtensionsKt.getParcelableArgument(bundle, EXTRA_FILE, OCFile.class));\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled onCreate from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: onCreate\n\n        Method Code: Override\n    public void onCreate(@Nullable Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n\n        Bundle bundle = getArguments();\n        if (bundle != null) {\n            setFile(BundleExtensionsKt.getParcelableArgument(bundle, EXTRA_FILE, OCFile.class));\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewDidLoad() {\n    super.viewDidLoad()\n\n    if let bundle = self.arguments {\n        if let file = bundle.getParcelableArgument(EXTRA_FILE, OCFile.self) {\n            setFile(file)\n        }\n    }\n}\n```"
+    },
+    {
+        "method_name": "newInstance",
+        "method_code": "ublic static FileFragment newInstance(OCFile file) {\n        FileFragment fileFragment = new FileFragment();\n        Bundle bundle = new Bundle();\n\n        bundle.putParcelable(EXTRA_FILE, file);\n        fileFragment.setArguments(bundle);\n\n        return fileFragment;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled newInstance from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: newInstance\n\n        Method Code: ublic static FileFragment newInstance(OCFile file) {\n        FileFragment fileFragment = new FileFragment();\n        Bundle bundle = new Bundle();\n\n        bundle.putParcelable(EXTRA_FILE, file);\n        fileFragment.setArguments(bundle);\n\n        return fileFragment;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nstatic func newInstance(file: OCFile) -> FileFragment {\n    let fileFragment = FileFragment()\n    let bundle = Bundle()\n\n    bundle.setValue(file, forKey: EXTRA_FILE)\n    fileFragment.setArguments(bundle)\n\n    return fileFragment\n}\n```"
+    },
+    {
+        "method_name": "getFile",
+        "method_code": "ublic OCFile getFile() {\n        return file;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFile from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: getFile\n\n        Method Code: ublic OCFile getFile() {\n        return file;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFile() -> OCFile? {\n    return file\n}\n```"
+    },
+    {
+        "method_name": "setFile",
+        "method_code": "rotected void setFile(OCFile file) {\n        this.file = file;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFile from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: setFile\n\n        Method Code: rotected void setFile(OCFile file) {\n        this.file = file;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFile(_ file: OCFile) {\n    self.file = file\n}\n```"
+    },
+    {
+        "method_name": "onAttach",
+        "method_code": "Override\n    public void onAttach(Activity activity) {\n        super.onAttach(activity);\n        try {\n            containerActivity = (ContainerActivity) activity;\n\n        } catch (ClassCastException e) {\n            throw new IllegalArgumentException(activity.toString() + \" must implement \" +\n                                                   ContainerActivity.class.getSimpleName(), e);\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled onAttach from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: onAttach\n\n        Method Code: Override\n    public void onAttach(Activity activity) {\n        super.onAttach(activity);\n        try {\n            containerActivity = (ContainerActivity) activity;\n\n        } catch (ClassCastException e) {\n            throw new IllegalArgumentException(activity.toString() + \" must implement \" +\n                                                   ContainerActivity.class.getSimpleName(), e);\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func didMove(toParent parent: UIViewController?) {\n    super.didMove(toParent: parent)\n    if let containerActivity = parent as? ContainerActivity {\n        self.containerActivity = containerActivity\n    } else {\n        fatalError(\"\\(String(describing: parent)) must implement \\(String(describing: ContainerActivity.self))\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "onDetach",
+        "method_code": "Override\n    public void onDetach() {\n        containerActivity = null;\n        super.onDetach();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled onDetach from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: onDetach\n\n        Method Code: Override\n    public void onDetach() {\n        containerActivity = null;\n        super.onDetach();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func willMove(toParent parent: UIViewController?) {\n    if parent == nil {\n        containerActivity = nil\n    }\n    super.willMove(toParent: parent)\n}\n```"
+    },
+    {
+        "method_name": "showDetails",
+        "method_code": "oid showDetails(OCFile file);\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled showDetails from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: showDetails\n\n        Method Code: oid showDetails(OCFile file);\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showDetails(file: OCFile) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "showDetails",
+        "method_code": "oid showDetails(OCFile file, int activeTab);\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled showDetails from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: showDetails\n\n        Method Code: oid showDetails(OCFile file, int activeTab);\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showDetails(file: OCFile, activeTab: Int) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "onBrowsedDownTo",
+        "method_code": "oid onBrowsedDownTo(OCFile folder);\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled onBrowsedDownTo from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: onBrowsedDownTo\n\n        Method Code: oid onBrowsedDownTo(OCFile folder);\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onBrowsedDownTo(folder: OCFile) {\n    // Method implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "onTransferStateChanged",
+        "method_code": "oid onTransferStateChanged(OCFile file, boolean downloading, boolean uploading);\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled onTransferStateChanged from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: onTransferStateChanged\n\n        Method Code: oid onTransferStateChanged(OCFile file, boolean downloading, boolean uploading);\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onTransferStateChanged(file: OCFile, downloading: Bool, uploading: Bool) {\n    // Method implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "showSortListGroup",
+        "method_code": "oid showSortListGroup(boolean show);\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled showSortListGroup from FileFragment.java into Swift.\n\n        Input:\n\n        Method Name: showSortListGroup\n\n        Method Code: oid showSortListGroup(boolean show);\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showSortListGroup(show: Bool) {\n    // Method implementation goes here\n}\n```"
+    }
+]

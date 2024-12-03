@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "getMetadataKeys",
+        "method_code": "public Map<Integer, String> getMetadataKeys() {\n        return this.metadataKeys;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMetadataKeys from Encrypted.java into Swift.\n\n        Input:\n\n        Method Name: getMetadataKeys\n\n        Method Code: public Map<Integer, String> getMetadataKeys() {\n        return this.metadataKeys;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMetadataKeys() -> [Int: String] {\n    return self.metadataKeys\n}\n```"
+    },
+    {
+        "method_name": "setMetadataKeys",
+        "method_code": "public void setMetadataKeys(Map<Integer, String> metadataKeys) {\n        this.metadataKeys = metadataKeys;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMetadataKeys from Encrypted.java into Swift.\n\n        Input:\n\n        Method Name: setMetadataKeys\n\n        Method Code: public void setMetadataKeys(Map<Integer, String> metadataKeys) {\n        this.metadataKeys = metadataKeys;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMetadataKeys(metadataKeys: [Int: String]) {\n    self.metadataKeys = metadataKeys\n}\n```"
+    }
+]

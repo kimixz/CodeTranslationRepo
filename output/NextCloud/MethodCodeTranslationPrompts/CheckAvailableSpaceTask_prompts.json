@@ -1,0 +1,32 @@
+[
+    {
+        "method_name": "onPreExecute",
+        "method_code": "@Override\n    protected void onPreExecute() {\n        callback.onCheckAvailableSpaceStart();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onPreExecute from CheckAvailableSpaceTask.java into Swift.\n\n        Input:\n\n        Method Name: onPreExecute\n\n        Method Code: @Override\n    protected void onPreExecute() {\n        callback.onCheckAvailableSpaceStart();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onPreExecute() {\n    callback.onCheckAvailableSpaceStart()\n}\n```"
+    },
+    {
+        "method_name": "doInBackground",
+        "method_code": "@Override\n    protected Boolean doInBackground(Boolean... params) {\n        File localFile;\n        long total = 0;\n        for (int i = 0; paths != null && i < paths.length; i++) {\n            String localPath = paths[i];\n            localFile = new File(localPath);\n            total += localFile.length();\n        }\n        return FileStorageUtils.getUsableSpace() >= total;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled doInBackground from CheckAvailableSpaceTask.java into Swift.\n\n        Input:\n\n        Method Name: doInBackground\n\n        Method Code: @Override\n    protected Boolean doInBackground(Boolean... params) {\n        File localFile;\n        long total = 0;\n        for (int i = 0; paths != null && i < paths.length; i++) {\n            String localPath = paths[i];\n            localFile = new File(localPath);\n            total += localFile.length();\n        }\n        return FileStorageUtils.getUsableSpace() >= total;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc doInBackground(params: Bool...) -> Bool {\n    var total: Int64 = 0\n    if let paths = paths {\n        for localPath in paths {\n            let localFile = FileManager.default.attributesOfItem(atPath: localPath)\n            if let fileSize = localFile[.size] as? Int64 {\n                total += fileSize\n            }\n        }\n    }\n    return FileStorageUtils.getUsableSpace() >= total\n}\n```"
+    },
+    {
+        "method_name": "onPostExecute",
+        "method_code": "@Override\n    protected void onPostExecute(Boolean result) {\n        callback.onCheckAvailableSpaceFinish(result, paths);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onPostExecute from CheckAvailableSpaceTask.java into Swift.\n\n        Input:\n\n        Method Name: onPostExecute\n\n        Method Code: @Override\n    protected void onPostExecute(Boolean result) {\n        callback.onCheckAvailableSpaceFinish(result, paths);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onPostExecute(_ result: Bool) {\n    callback.onCheckAvailableSpaceFinish(result, paths)\n}\n```"
+    },
+    {
+        "method_name": "onCheckAvailableSpaceStart",
+        "method_code": "void onCheckAvailableSpaceStart();",
+        "prompt": "\n        Please translate the following Java (Android) method titled onCheckAvailableSpaceStart from CheckAvailableSpaceTask.java into Swift.\n\n        Input:\n\n        Method Name: onCheckAvailableSpaceStart\n\n        Method Code: void onCheckAvailableSpaceStart();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onCheckAvailableSpaceStart() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "onCheckAvailableSpaceFinish",
+        "method_code": "void onCheckAvailableSpaceFinish(boolean hasEnoughSpaceAvailable, String... filesToUpload);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onCheckAvailableSpaceFinish from CheckAvailableSpaceTask.java into Swift.\n\n        Input:\n\n        Method Name: onCheckAvailableSpaceFinish\n\n        Method Code: void onCheckAvailableSpaceFinish(boolean hasEnoughSpaceAvailable, String... filesToUpload);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onCheckAvailableSpaceFinish(hasEnoughSpaceAvailable: Bool, filesToUpload: String...) {\n    // Method implementation goes here\n}\n```"
+    }
+]

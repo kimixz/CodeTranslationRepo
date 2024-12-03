@@ -1,0 +1,86 @@
+{
+    "methods": [
+        {
+            "name": "noScheme",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 516,
+            "end_position": 955,
+            "body_start": 553,
+            "body_end": 955
+        },
+        {
+            "name": "lowercaseScheme",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 965,
+            "end_position": 1441,
+            "body_start": 1009,
+            "body_end": 1441
+        },
+        {
+            "name": "uppercaseScheme",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1451,
+            "end_position": 2107,
+            "body_start": 1495,
+            "body_end": 2107
+        },
+        {
+            "name": "emptyInput",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2117,
+            "end_position": 2519,
+            "body_start": 2156,
+            "body_end": 2519
+        },
+        {
+            "name": "ipAddress",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2530,
+            "end_position": 2939,
+            "body_start": 2568,
+            "body_end": 2939
+        },
+        {
+            "name": "withPort",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2950,
+            "end_position": 3381,
+            "body_start": 2987,
+            "body_end": 3381
+        },
+        {
+            "name": "ipAddressWithPort",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3392,
+            "end_position": 3880,
+            "body_start": 3438,
+            "body_end": 3880
+        }
+    ],
+    "local_variables": {
+        "url": "String",
+        "normalized": "String",
+        "mixedCaseUrl": "String",
+        "expectedUrl": "String",
+        "emptyUrl": "String"
+    },
+    "method_calls": {
+        "AuthenticatorUrlUtils.INSTANCE": [
+            "normalizeScheme"
+        ],
+        "Assert": [
+            "assertSame",
+            "assertEquals"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement"
+    ]
+}

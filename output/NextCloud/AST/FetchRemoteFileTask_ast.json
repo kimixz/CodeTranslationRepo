@@ -1,0 +1,107 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1786,
+            "end_position": 4785,
+            "body_start": 1847,
+            "body_end": 4785
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 4791,
+            "end_position": 4951,
+            "body_start": 4850,
+            "body_end": 4951
+        }
+    ],
+    "local_variables": {
+        "searchRemoteOperation": "SearchRemoteOperation",
+        "remoteOperationResult": "RemoteOperationResult",
+        "remotePath": "String",
+        "operation": "ReadFileRemoteOperation",
+        "result": "RemoteOperationResult",
+        "exception": "Exception",
+        "message": "String",
+        "remoteFile": "RemoteFile",
+        "toSync": "OCFile",
+        "currentSyncTime": "long",
+        "refreshFolderOperation": "RemoteOperation"
+    },
+    "method_calls": {
+        "fileDisplayActivity": [
+            "getCapabilities",
+            "getString",
+            "setFile",
+            "showFile"
+        ],
+        "searchRemoteOperation": [
+            "execute"
+        ],
+        "remoteOperationResult": [
+            "isSuccess",
+            "getData",
+            "getLogMessage"
+        ],
+        "remoteOperationResult.getData()": [
+            "isEmpty",
+            "get"
+        ],
+        "((RemoteFile) remoteOperationResult.getData().get(0))": [
+            "getRemotePath"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getException",
+            "getLogMessage",
+            "getData"
+        ],
+        "exception": [
+            "getMessage"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "FileStorageUtils": [
+            "fillOCFile",
+            "searchForLocalFileInDefaultPath"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "storageManager": [
+            "saveFileWithParent",
+            "getFileById"
+        ],
+        "ocFile": [
+            "isFolder",
+            "getParentId"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "refreshFolderOperation": [
+            "execute"
+        ],
+        "super": [
+            "onPostExecute"
+        ]
+    }
+}

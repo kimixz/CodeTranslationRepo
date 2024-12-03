@@ -1,0 +1,2891 @@
+{
+    "method_calls": {
+        "FileDataStorageManager.class": [
+            "getSimpleName"
+        ],
+        "NextcloudDatabase.getInstance(MainApp.getAppContext())": [
+            "offlineOperationDao",
+            "fileDao"
+        ],
+        "NextcloudDatabase": [
+            "getInstance"
+        ],
+        "MainApp": [
+            "getAppContext",
+            "getAuthority"
+        ],
+        "unknown": [
+            "getFileByEncryptedRemotePath",
+            "getFileByPath",
+            "getFileByDecryptedRemotePath",
+            "createPendingFile",
+            "createPendingDirectory",
+            "saveFileWithParent",
+            "getFileById",
+            "moveLocalFile",
+            "createFileInstance",
+            "createRootDir",
+            "getTopParentId",
+            "getTopParentIdRecursive",
+            "getFolderContent",
+            "getAllFilesRecursivelyInsideFolder",
+            "createContentValuesForFile",
+            "fileExists",
+            "getContentResolver",
+            "getContentProviderClient",
+            "getUser",
+            "saveFile",
+            "removeLocalFolder",
+            "triggerMediaScan",
+            "createContentValuesForFolder",
+            "createContentValuesBase",
+            "removeFolder",
+            "deleteFileInMediaScan",
+            "saveConflict",
+            "removeFolderInDb",
+            "nullToZero",
+            "nullToMinusOne",
+            "createContentValueForShare",
+            "shareExistsForRemoteId",
+            "getShareCursorForValue",
+            "createShareInstance",
+            "shareExistsForValue",
+            "getString",
+            "getLong",
+            "getInt",
+            "cleanShares",
+            "resetShareFlagInAFile",
+            "prepareRemoveSharesInFile",
+            "prepareInsertShares",
+            "resetShareFlagsInFolder",
+            "prepareRemoveSharesInFolder",
+            "createContentValues",
+            "capabilityExists",
+            "getCapabilityCursorForAccount",
+            "getCapability",
+            "createCapabilityInstance",
+            "getBoolean",
+            "getGalleryItems",
+            "createFileInstanceFromVirtual",
+            "getEncryptedRemotePath",
+            "getFolderName",
+            "getDecryptedFileNamesAndEncryptedRemotePaths",
+            "getAllFiles"
+        ],
+        "Log_OC": [
+            "d",
+            "e",
+            "w"
+        ],
+        "MimeTypeUtil": [
+            "getMimeTypeFromPath",
+            "isImage",
+            "isMedia",
+            "isAudio",
+            "isVideo"
+        ],
+        "entity": [
+            "setPath",
+            "setType",
+            "setCreatedAt",
+            "setModifiedAt",
+            "setFilename",
+            "setParentOCFileId",
+            "getType",
+            "getFilename",
+            "getParentOCFileId"
+        ],
+        "OfflineOperationRawType.CreateFile": [
+            "name"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "new File(remotePath)": [
+            "getName",
+            "getParent"
+        ],
+        "parentFile": [
+            "getFileId"
+        ],
+        "offlineOperationDao": [
+            "insert",
+            "getByPath",
+            "update"
+        ],
+        "file": [
+            "getDecryptedRemotePath",
+            "setMimeType",
+            "setCreationTimestamp",
+            "setModificationTimestamp",
+            "getParentId",
+            "getFileId",
+            "getDecryptedFileName",
+            "fileExists",
+            "isFolder",
+            "isAPKorAAB",
+            "getFileName",
+            "getFileLength",
+            "getEncryptedFileName",
+            "getStoragePath",
+            "isUpdateThumbnailNeeded",
+            "isDownloading",
+            "getEtagInConflict",
+            "isPreviewAvailable",
+            "isLocked",
+            "getLockType",
+            "shouldHide",
+            "getLockOwnerId",
+            "getLockOwnerDisplayName",
+            "getLockOwnerEditor",
+            "getLockTimestamp",
+            "getLockTimeout",
+            "getLockToken",
+            "getModificationTimestamp",
+            "getImageDimension",
+            "getGeoLocation",
+            "getLinkedFileIdForLivePhoto",
+            "getE2eCounter",
+            "getInternalFolderSyncTimestamp",
+            "getInternalFolderSyncResult",
+            "exists",
+            "getAbsolutePath",
+            "lastModified",
+            "getRemotePath",
+            "getMimeType",
+            "isEncrypted",
+            "isRootDirectory",
+            "isInternalFolderSync"
+        ],
+        "OfflineOperationRawType.CreateFolder": [
+            "name"
+        ],
+        "directory": [
+            "setMimeType",
+            "setCreationTimestamp",
+            "setModificationTimestamp"
+        ],
+        "offlineOperationsRepository": [
+            "deleteOperation",
+            "updateNextOperations"
+        ],
+        "OfflineOperationRawType.RenameFile": [
+            "name"
+        ],
+        "renameEntity": [
+            "getType"
+        ],
+        "renameFile": [
+            "getNewName"
+        ],
+        "OfflineOperationRawType.RemoveFile": [
+            "name"
+        ],
+        "parentFolder": [
+            "getDecryptedRemotePath"
+        ],
+        "createFolderType": [
+            "setPath"
+        ],
+        "createFileType": [
+            "setRemotePath"
+        ],
+        "DateExtensionsKt": [
+            "currentDateRepresentation"
+        ],
+        "ProviderTableMeta.FILE_PATH": [
+            "equals"
+        ],
+        "fileDao": [
+            "getFileByEncryptedRemotePath",
+            "getFileByDecryptedRemotePath",
+            "getFileById",
+            "getFileByLocalPath",
+            "getFileByRemoteId",
+            "getFolderWithDescendants",
+            "getFolderContent",
+            "getGalleryItems",
+            "getAllFiles",
+            "getFilesWithSyncConflict",
+            "getInternalTwoWaySyncFolders"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "OCFile.ROOT_PATH": [
+            "equals"
+        ],
+        "result": [
+            "add",
+            "addAll",
+            "isSuccess",
+            "getData",
+            "getException",
+            "getLogMessage"
+        ],
+        "item": [
+            "isFolder",
+            "isAPKorAAB",
+            "getFirst",
+            "getSecond"
+        ],
+        "ocFile": [
+            "isFolder",
+            "fileExists",
+            "getFileId",
+            "getRemotePath",
+            "setFileId",
+            "getParentId",
+            "getFileName",
+            "setParentId",
+            "isDown",
+            "getStoragePath",
+            "getMimeType",
+            "setStoragePath",
+            "setMimeType",
+            "setDecryptedRemotePath",
+            "setLastSyncDateForData",
+            "setFileLength",
+            "setCreationTimestamp",
+            "setModificationTimestamp",
+            "setModificationTimestampAtLastSyncForData",
+            "setLastSyncDateForProperties",
+            "setEtag",
+            "setEtagOnServer",
+            "setSharedViaLink",
+            "setSharedWithSharee",
+            "setPermissions",
+            "setRemoteId",
+            "setLocalId",
+            "setUpdateThumbnailNeeded",
+            "setDownloading",
+            "setEtagInConflict",
+            "setFavorite",
+            "setEncrypted",
+            "setMountType",
+            "setPreviewAvailable",
+            "setUnreadCommentsCount",
+            "setOwnerId",
+            "setOwnerDisplayName",
+            "setNote",
+            "setRichWorkspace",
+            "setLocked",
+            "setLockType",
+            "setLockOwnerId",
+            "setLockOwnerDisplayName",
+            "setLockOwnerEditor",
+            "setLockTimestamp",
+            "setLockTimeout",
+            "setLockToken",
+            "setLivePhoto",
+            "setHidden",
+            "setE2eCounter",
+            "setInternalFolderSyncTimestamp",
+            "setSharees",
+            "setTags",
+            "setImageDimension",
+            "setGeoLocation",
+            "isShared",
+            "isFavorite"
+        ],
+        "folderContent": [
+            "isEmpty",
+            "add"
+        ],
+        "file.getFileName()": [
+            "equals"
+        ],
+        "newFile": [
+            "getFileName",
+            "getRemotePath",
+            "setParentId"
+        ],
+        "imageList": [
+            "add"
+        ],
+        "cv": [
+            "remove",
+            "put"
+        ],
+        "oldFile": [
+            "getFileId"
+        ],
+        "getContentResolver()": [
+            "update",
+            "insert",
+            "applyBatch",
+            "delete",
+            "query",
+            "bulkInsert"
+        ],
+        "String": [
+            "valueOf",
+            "format"
+        ],
+        "getContentProviderClient()": [
+            "update",
+            "insert",
+            "applyBatch",
+            "delete",
+            "query",
+            "bulkInsert"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "Long": [
+            "parseLong",
+            "toString"
+        ],
+        "result_uri.getPathSegments()": [
+            "get"
+        ],
+        "result_uri": [
+            "getPathSegments"
+        ],
+        "remotePath": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "FileStorageUtils": [
+            "fillOCFile",
+            "getTemporalEncryptedFolderPath",
+            "getDefaultSavePathFor",
+            "getSavePath",
+            "copyFile",
+            "getMimeTypeFromName",
+            "getTemporalPath",
+            "deleteRecursively"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "returnFile": [
+            "getFileId"
+        ],
+        "tempEncryptedFolder": [
+            "exists",
+            "mkdirs"
+        ],
+        "FileUtils": [
+            "cleanDirectory"
+        ],
+        "new File(newFile.getRemotePath())": [
+            "getParent"
+        ],
+        "remoteParentPath": [
+            "endsWith"
+        ],
+        "parent": [
+            "getFileId"
+        ],
+        "folder": [
+            "getRemotePath",
+            "getFileId",
+            "isFolder"
+        ],
+        "updatedFiles": [
+            "size",
+            "iterator"
+        ],
+        "filesToRemove": [
+            "size"
+        ],
+        "contentValues": [
+            "put"
+        ],
+        "getFileByPath(ocFile.getRemotePath())": [
+            "getFileId"
+        ],
+        "operations": [
+            "add",
+            "size"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI)\n                                   .withValues(contentValues)\n                                   .withSelection(ProviderTableMeta._ID + \" = ?\", new String[]{String.valueOf(fileId)})": [
+            "build"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI)\n                                   .withValues(contentValues)": [
+            "withSelection"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI)": [
+            "withValues"
+        ],
+        "ContentProviderOperation": [
+            "newUpdate",
+            "newInsert",
+            "newDelete"
+        ],
+        "ContentProviderOperation.newInsert(ProviderTableMeta.CONTENT_URI)\n                                   .withValues(contentValues)": [
+            "build"
+        ],
+        "ContentProviderOperation.newInsert(ProviderTableMeta.CONTENT_URI)": [
+            "withValues"
+        ],
+        "ContentProviderOperation.newDelete(\n                            ContentUris.withAppendedId(ProviderTableMeta.CONTENT_URI_DIR, ocFile.getFileId()))\n                                       .withSelection(where, whereArgs)": [
+            "build"
+        ],
+        "ContentProviderOperation.newDelete(\n                            ContentUris.withAppendedId(ProviderTableMeta.CONTENT_URI_DIR, ocFile.getFileId()))": [
+            "withSelection"
+        ],
+        "ContentUris": [
+            "withAppendedId"
+        ],
+        "localFolder": [
+            "exists",
+            "listFiles",
+            "delete"
+        ],
+        "ContentProviderOperation.newDelete(\n                            ContentUris.withAppendedId(ProviderTableMeta.CONTENT_URI_FILE, ocFile.getFileId()))\n                                       .withSelection(where, whereArgs)": [
+            "build"
+        ],
+        "ContentProviderOperation.newDelete(\n                            ContentUris.withAppendedId(ProviderTableMeta.CONTENT_URI_FILE, ocFile.getFileId()))": [
+            "withSelection"
+        ],
+        "new File(path)": [
+            "delete"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI)\n                           .withValues(contentValues)\n                           .withSelection(ProviderTableMeta._ID + \" = ?\", new String[]{String.valueOf(folder.getFileId())})": [
+            "build"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI)\n                           .withValues(contentValues)": [
+            "withSelection"
+        ],
+        "fileIterator": [
+            "hasNext",
+            "next"
+        ],
+        "result.uri.getPathSegments()": [
+            "get"
+        ],
+        "result.uri": [
+            "getPathSegments"
+        ],
+        "fileOrFolder": [
+            "getModificationTimestamp",
+            "getModificationTimestampAtLastSyncForData",
+            "getParentId",
+            "getCreationTimestamp",
+            "getMimeType",
+            "getFileName",
+            "getRemotePath",
+            "getDecryptedRemotePath",
+            "isEncrypted",
+            "getLastSyncDateForProperties",
+            "getLastSyncDateForData",
+            "getEtag",
+            "getEtagOnServer",
+            "isSharedViaLink",
+            "isSharedWithSharee",
+            "getPermissions",
+            "getRemoteId",
+            "getLocalId",
+            "isFavorite",
+            "shouldHide",
+            "getUnreadCommentsCount",
+            "getOwnerId",
+            "getOwnerDisplayName",
+            "getNote",
+            "getSharees",
+            "getTags",
+            "getRichWorkspace",
+            "getInternalFolderSyncTimestamp",
+            "getInternalFolderSyncResult"
+        ],
+        "gson": [
+            "toJson",
+            "fromJson"
+        ],
+        "lockType": [
+            "getValue"
+        ],
+        "new File(localPath)": [
+            "delete"
+        ],
+        "Uri": [
+            "withAppendedPath",
+            "fromFile"
+        ],
+        "localFile": [
+            "delete",
+            "isDirectory",
+            "exists",
+            "renameTo"
+        ],
+        "fileEntities": [
+            "size"
+        ],
+        "oldPath": [
+            "length"
+        ],
+        "defaultSavePath": [
+            "length"
+        ],
+        "childFile.getRemotePath()": [
+            "substring",
+            "equals"
+        ],
+        "childFile": [
+            "getRemotePath",
+            "isEncrypted",
+            "getStoragePath",
+            "getMimeType",
+            "getFileId"
+        ],
+        "childFile.getStoragePath()": [
+            "startsWith",
+            "substring"
+        ],
+        "originalPathsToTriggerMediaScan": [
+            "add",
+            "iterator"
+        ],
+        "newPathsToTriggerMediaScan": [
+            "add",
+            "iterator"
+        ],
+        "targetParent": [
+            "getFileId"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI)\n                        .withValues(contentValues)\n                        .withSelection(ProviderTableMeta._ID + \" = ?\", new String[]{String.valueOf(childFile.getFileId())})": [
+            "build"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI)\n                        .withValues(contentValues)": [
+            "withSelection"
+        ],
+        "targetFile": [
+            "getParentFile"
+        ],
+        "targetFolder": [
+            "exists",
+            "mkdirs",
+            "getAbsolutePath"
+        ],
+        "pathIterator": [
+            "hasNext",
+            "next"
+        ],
+        "cursor": [
+            "getCount",
+            "moveToFirst",
+            "getLong",
+            "getColumnIndexOrThrow",
+            "getString",
+            "moveToNext",
+            "close",
+            "getInt"
+        ],
+        "oldFileStoragePath": [
+            "startsWith",
+            "replaceFirst"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI).\n                            withValues(cv).\n                            withSelection(ProviderTableMeta._ID + \"=?\", fileId)": [
+            "build"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI).\n                            withValues(cv)": [
+            "withSelection"
+        ],
+        "child": [
+            "existsOnDevice"
+        ],
+        "fileEntity": [
+            "getPath",
+            "getPathDecrypted",
+            "getId",
+            "getParent",
+            "getContentType",
+            "getStoragePath",
+            "getContentLength",
+            "getCreation",
+            "getModified",
+            "getModifiedAtLastSyncForData",
+            "getLastSyncDate",
+            "getLastSyncDateForData",
+            "getEtag",
+            "getEtagOnServer",
+            "getSharedViaLink",
+            "getSharedWithSharee",
+            "getPermissions",
+            "getRemoteId",
+            "getLocalId",
+            "getUpdateThumbnail",
+            "isDownloading",
+            "getEtagInConflict",
+            "getFavorite",
+            "isEncrypted",
+            "getMountType",
+            "getHasPreview",
+            "getUnreadCommentsCount",
+            "getOwnerId",
+            "getOwnerDisplayName",
+            "getNote",
+            "getRichWorkspace",
+            "getLocked",
+            "getLockType",
+            "getLockOwner",
+            "getLockOwnerDisplayName",
+            "getLockOwnerEditor",
+            "getLockTimestamp",
+            "getLockTimeout",
+            "getLockToken",
+            "getMetadataLivePhoto",
+            "getHidden",
+            "getE2eCounter",
+            "getInternalTwoWaySync",
+            "getSharees",
+            "getTags",
+            "getMetadataSize",
+            "getMetadataGPS"
+        ],
+        "WebdavEntry.MountType": [
+            "values"
+        ],
+        "FileLockType": [
+            "fromValue"
+        ],
+        "sharees": [
+            "isEmpty"
+        ],
+        "JSON_NULL_STRING": [
+            "equals"
+        ],
+        "JSON_EMPTY_ARRAY": [
+            "equals"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "tags": [
+            "isEmpty"
+        ],
+        "metadataSize": [
+            "isEmpty"
+        ],
+        "metadataGPS": [
+            "isEmpty"
+        ],
+        "share": [
+            "getRemoteId",
+            "setId",
+            "getFileSource",
+            "getItemSource",
+            "getShareType",
+            "getShareWith",
+            "getPath",
+            "getPermissions",
+            "getSharedDate",
+            "getExpirationDate",
+            "getToken",
+            "getSharedWithDisplayName",
+            "isFolder",
+            "getUserId",
+            "isPasswordProtected",
+            "getNote",
+            "isHideFileDownload",
+            "getShareLink",
+            "getLabel",
+            "setFileSource",
+            "setShareType",
+            "setShareWith",
+            "setPermissions",
+            "setSharedDate",
+            "setExpirationDate",
+            "setToken",
+            "setSharedWithDisplayName",
+            "setFolder",
+            "setUserId",
+            "setRemoteId",
+            "setPasswordProtected",
+            "setNote",
+            "setHideFileDownload",
+            "setShareLink",
+            "setLabel",
+            "getId"
+        ],
+        "Integer": [
+            "toString"
+        ],
+        "type": [
+            "getValue"
+        ],
+        "shares": [
+            "add",
+            "size"
+        ],
+        "shareType": [
+            "getValue"
+        ],
+        "ShareType": [
+            "fromValue"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI_SHARE)\n                        .withValues(contentValues)\n                        .withSelection(ProviderTableMeta.OCSHARES_ID_REMOTE_SHARED + \" = ?\",\n                                       new String[]{String.valueOf(share.getRemoteId())})": [
+            "build"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI_SHARE)\n                        .withValues(contentValues)": [
+            "withSelection"
+        ],
+        "ContentProviderOperation.newUpdate(ProviderTableMeta.CONTENT_URI_SHARE)": [
+            "withValues"
+        ],
+        "ContentProviderOperation.newInsert(ProviderTableMeta.CONTENT_URI_SHARE)\n                        .withValues(contentValues)": [
+            "build"
+        ],
+        "ContentProviderOperation.newInsert(ProviderTableMeta.CONTENT_URI_SHARE)": [
+            "withValues"
+        ],
+        "filePath": [
+            "equals"
+        ],
+        "ContentProviderOperation\n                               .newInsert(ProviderTableMeta.CONTENT_URI_SHARE)\n                               .withValues(contentValues)": [
+            "build"
+        ],
+        "ContentProviderOperation\n                               .newInsert(ProviderTableMeta.CONTENT_URI_SHARE)": [
+            "withValues"
+        ],
+        "preparedOperations": [
+            "add"
+        ],
+        "ContentProviderOperation.newDelete(ProviderTableMeta.CONTENT_URI_SHARE).\n                        withSelection(where, whereArgs)": [
+            "build"
+        ],
+        "ContentProviderOperation.newDelete(ProviderTableMeta.CONTENT_URI_SHARE)": [
+            "withSelection"
+        ],
+        "ContentProviderOperation\n                .newDelete(ProviderTableMeta.CONTENT_URI_SHARE)\n                .withSelection(where, whereArgs)": [
+            "build"
+        ],
+        "ContentProviderOperation\n                .newDelete(ProviderTableMeta.CONTENT_URI_SHARE)": [
+            "withSelection"
+        ],
+        "ShareType.USER": [
+            "getValue"
+        ],
+        "ShareType.GROUP": [
+            "getValue"
+        ],
+        "ShareType.EMAIL": [
+            "getValue"
+        ],
+        "ShareType.FEDERATED": [
+            "getValue"
+        ],
+        "ShareType.ROOM": [
+            "getValue"
+        ],
+        "ShareType.CIRCLE": [
+            "getValue"
+        ],
+        "TextUtils": [
+            "isEmpty",
+            "join"
+        ],
+        "MainApp.getAppContext()": [
+            "getContentResolver",
+            "sendBroadcast"
+        ],
+        "values": [
+            "put",
+            "toArray"
+        ],
+        "contentResolver": [
+            "insert",
+            "delete"
+        ],
+        "MediaStore.Images.Media": [
+            "getContentUri"
+        ],
+        "intent": [
+            "setData"
+        ],
+        "contentProviderClient": [
+            "delete"
+        ],
+        "ancestorIds": [
+            "add",
+            "size",
+            "toArray"
+        ],
+        "getFileById(parentId)": [
+            "getParentId"
+        ],
+        "stringBuilder.append(ProviderTableMeta._ID)": [
+            "append"
+        ],
+        "stringBuilder": [
+            "append",
+            "toString"
+        ],
+        "parentPath": [
+            "endsWith",
+            "substring",
+            "length",
+            "lastIndexOf"
+        ],
+        "descendentsInConflict": [
+            "getCount",
+            "close"
+        ],
+        "capability": [
+            "setId",
+            "setAccountName",
+            "getVersionMayor",
+            "getVersionMinor",
+            "getVersionMicro",
+            "getVersionString",
+            "getVersionEdition",
+            "getExtendedSupport",
+            "getCorePollInterval",
+            "getFilesSharingApiEnabled",
+            "getFilesSharingPublicEnabled",
+            "getFilesSharingPublicPasswordEnforced",
+            "getFilesSharingPublicAskForOptionalPassword",
+            "getFilesSharingPublicExpireDateEnabled",
+            "getFilesSharingPublicExpireDateDays",
+            "getFilesSharingPublicExpireDateEnforced",
+            "getFilesSharingPublicSendMail",
+            "getFilesSharingPublicUpload",
+            "getFilesSharingUserSendMail",
+            "getFilesSharingResharing",
+            "getFilesSharingFederationOutgoing",
+            "getFilesSharingFederationIncoming",
+            "getFilesBigFileChunking",
+            "getFilesUndelete",
+            "getFilesVersioning",
+            "getExternalLinks",
+            "getServerName",
+            "getServerColor",
+            "getServerTextColor",
+            "getServerElementColor",
+            "getServerBackground",
+            "getServerSlogan",
+            "getServerLogo",
+            "getEndToEndEncryption",
+            "getEndToEndEncryptionKeysExist",
+            "getEndToEndEncryptionApiVersion",
+            "getServerBackgroundDefault",
+            "getServerBackgroundPlain",
+            "getActivity",
+            "getRichDocuments",
+            "getRichDocumentsMimeTypeList",
+            "getRichDocumentsOptionalMimeTypeList",
+            "getRichDocumentsDirectEditing",
+            "getRichDocumentsTemplatesAvailable",
+            "getRichDocumentsProductName",
+            "getDirectEditingEtag",
+            "getEtag",
+            "getUserStatus",
+            "getUserStatusSupportsEmoji",
+            "getFilesLockingVersion",
+            "getAssistant",
+            "getGroupfolders",
+            "getDropAccount",
+            "getSecurityGuard",
+            "getForbiddenFilenameCharactersJson",
+            "getForbiddenFilenamesJson",
+            "getForbiddenFilenameExtensionJson",
+            "getForbiddenFilenameBaseNamesJson",
+            "setVersionMayor",
+            "setVersionMinor",
+            "setVersionMicro",
+            "setVersionString",
+            "setVersionEdition",
+            "setExtendedSupport",
+            "setCorePollInterval",
+            "setFilesSharingApiEnabled",
+            "setFilesSharingPublicEnabled",
+            "setFilesSharingPublicPasswordEnforced",
+            "setFilesSharingPublicAskForOptionalPassword",
+            "setFilesSharingPublicExpireDateEnabled",
+            "setFilesSharingPublicExpireDateDays",
+            "setFilesSharingPublicExpireDateEnforced",
+            "setFilesSharingPublicSendMail",
+            "setFilesSharingPublicUpload",
+            "setFilesSharingUserSendMail",
+            "setFilesSharingResharing",
+            "setFilesSharingFederationOutgoing",
+            "setFilesSharingFederationIncoming",
+            "setFilesBigFileChunking",
+            "setFilesUndelete",
+            "setFilesVersioning",
+            "setExternalLinks",
+            "setServerName",
+            "setServerColor",
+            "setServerTextColor",
+            "setServerElementColor",
+            "setServerBackground",
+            "setServerSlogan",
+            "setServerLogo",
+            "setEndToEndEncryption",
+            "setEndToEndEncryptionKeysExist",
+            "setEndToEndEncryptionApiVersion",
+            "setServerBackgroundDefault",
+            "setServerBackgroundPlain",
+            "setActivity",
+            "setRichDocuments",
+            "setRichDocumentsDirectEditing",
+            "setRichDocumentsTemplatesAvailable",
+            "setRichDocumentsMimeTypeList",
+            "setRichDocumentsOptionalMimeTypeList",
+            "setRichDocumentsProductName",
+            "setDirectEditingEtag",
+            "setEtag",
+            "setUserStatus",
+            "setUserStatusSupportsEmoji",
+            "setFilesLockingVersion",
+            "setAssistant",
+            "setGroupfolders",
+            "setDropAccount",
+            "setSecurityGuard",
+            "setForbiddenFilenameCharactersJson",
+            "setForbiddenFilenamesJson",
+            "setForbiddenFilenameExtensionJson",
+            "setForbiddenFilenameBaseNamesJson"
+        ],
+        "capability.getExtendedSupport()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingApiEnabled()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingPublicEnabled()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingPublicPasswordEnforced()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingPublicAskForOptionalPassword()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingPublicExpireDateEnabled()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingPublicExpireDateEnforced()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingPublicSendMail()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingPublicUpload()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingUserSendMail()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingResharing()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingFederationOutgoing()": [
+            "getValue"
+        ],
+        "capability.getFilesSharingFederationIncoming()": [
+            "getValue"
+        ],
+        "capability.getFilesBigFileChunking()": [
+            "getValue"
+        ],
+        "capability.getFilesUndelete()": [
+            "getValue"
+        ],
+        "capability.getFilesVersioning()": [
+            "getValue"
+        ],
+        "capability.getExternalLinks()": [
+            "getValue"
+        ],
+        "capability.getEndToEndEncryption()": [
+            "getValue"
+        ],
+        "capability.getEndToEndEncryptionKeysExist()": [
+            "getValue"
+        ],
+        "capability.getEndToEndEncryptionApiVersion()": [
+            "getValue"
+        ],
+        "capability.getServerBackgroundDefault()": [
+            "getValue"
+        ],
+        "capability.getServerBackgroundPlain()": [
+            "getValue"
+        ],
+        "capability.getActivity()": [
+            "getValue"
+        ],
+        "capability.getRichDocuments()": [
+            "getValue"
+        ],
+        "capability.getRichDocumentsDirectEditing()": [
+            "getValue"
+        ],
+        "capability.getRichDocumentsTemplatesAvailable()": [
+            "getValue"
+        ],
+        "capability.getUserStatus()": [
+            "getValue"
+        ],
+        "capability.getUserStatusSupportsEmoji()": [
+            "getValue"
+        ],
+        "capability.getAssistant()": [
+            "getValue"
+        ],
+        "capability.getGroupfolders()": [
+            "getValue"
+        ],
+        "capability.getDropAccount()": [
+            "getValue"
+        ],
+        "capability.getSecurityGuard()": [
+            "getValue"
+        ],
+        "E2EVersion": [
+            "fromValue"
+        ],
+        "mimetypes": [
+            "split"
+        ],
+        "optionalMimetypes": [
+            "split"
+        ],
+        "files": [
+            "add"
+        ],
+        "c": [
+            "moveToFirst",
+            "moveToNext",
+            "close"
+        ],
+        "ocFiles": [
+            "add",
+            "size"
+        ],
+        "temp": [
+            "add"
+        ],
+        "Collections": [
+            "sort"
+        ],
+        "path": [
+            "split"
+        ],
+        "decryptedRemotePath": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "item.getFirst()": [
+            "equals"
+        ],
+        "CapabilityBooleanType": [
+            "fromValue"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "for_statement",
+        "enhanced_for_statement",
+        "break_statement",
+        "try_statement",
+        "throw_statement",
+        "while_statement",
+        "do_statement"
+    ],
+    "methods": [
+        {
+            "name": "getFileByPath",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 5820,
+            "end_position": 5935,
+            "body_start": 5877,
+            "body_end": 5935
+        },
+        {
+            "name": "getFileByEncryptedRemotePath",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 5941,
+            "end_position": 6069,
+            "body_start": 5997,
+            "body_end": 6069
+        },
+        {
+            "name": "getFileByDecryptedRemotePath",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 6075,
+            "end_position": 6227,
+            "body_start": 6145,
+            "body_end": 6227
+        },
+        {
+            "name": "addCreateFileOfflineOperation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String[]",
+                    "name": "localPaths"
+                },
+                {
+                    "type": "String[]",
+                    "name": "remotePaths"
+                }
+            ],
+            "start_position": 6233,
+            "end_position": 7696,
+            "body_start": 6318,
+            "body_end": 7696
+        },
+        {
+            "name": "getOfflineEntityFromOCFile",
+            "return_type": "OfflineOperationEntity",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 7702,
+            "end_position": 7856,
+            "body_start": 7772,
+            "body_end": 7856
+        },
+        {
+            "name": "addCreateFolderOfflineOperation",
+            "return_type": "OfflineOperationEntity",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                },
+                {
+                    "type": "Long",
+                    "name": "parentOCFileId"
+                }
+            ],
+            "start_position": 7862,
+            "end_position": 8720,
+            "body_start": 7975,
+            "body_end": 8720
+        },
+        {
+            "name": "createPendingFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                },
+                {
+                    "type": "long",
+                    "name": "createdAt"
+                },
+                {
+                    "type": "long",
+                    "name": "modificationTimestamp"
+                }
+            ],
+            "start_position": 8726,
+            "end_position": 9080,
+            "body_start": 8830,
+            "body_end": 9080
+        },
+        {
+            "name": "createPendingDirectory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "long",
+                    "name": "createdAt"
+                },
+                {
+                    "type": "long",
+                    "name": "modificationTimestamp"
+                }
+            ],
+            "start_position": 9086,
+            "end_position": 9463,
+            "body_start": 9178,
+            "body_end": 9463
+        },
+        {
+            "name": "deleteOfflineOperation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 9469,
+            "end_position": 9583,
+            "body_start": 9517,
+            "body_end": 9583
+        },
+        {
+            "name": "addRenameFileOfflineOperation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "newName"
+                }
+            ],
+            "start_position": 9589,
+            "end_position": 10341,
+            "body_start": 9660,
+            "body_end": 10341
+        },
+        {
+            "name": "getFilenameConsideringOfflineOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 10347,
+            "end_position": 10783,
+            "body_start": 10413,
+            "body_end": 10783
+        },
+        {
+            "name": "addRemoveFileOfflineOperation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                },
+                {
+                    "type": "Long",
+                    "name": "parentOCFileId"
+                }
+            ],
+            "start_position": 10789,
+            "end_position": 11525,
+            "body_start": 10882,
+            "body_end": 11525
+        },
+        {
+            "name": "renameOfflineOperation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "newFolderName"
+                }
+            ],
+            "start_position": 11531,
+            "end_position": 12527,
+            "body_start": 11601,
+            "body_end": 12527
+        },
+        {
+            "name": "keepOfflineOperationAndServerFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OfflineOperationEntity",
+                    "name": "entity"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 12533,
+            "end_position": 13502,
+            "body_start": 12661,
+            "body_end": 13502
+        },
+        {
+            "name": "getFileByPath",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "type"
+                },
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 13508,
+            "end_position": 14127,
+            "body_start": 13577,
+            "body_end": 14127
+        },
+        {
+            "name": "getFileById",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 14133,
+            "end_position": 14362,
+            "body_start": 14182,
+            "body_end": 14362
+        },
+        {
+            "name": "getFileByLocalPath",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 14368,
+            "end_position": 14640,
+            "body_start": 14428,
+            "body_end": 14640
+        },
+        {
+            "name": "getFileByRemoteId",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remoteId"
+                }
+            ],
+            "start_position": 14646,
+            "end_position": 14924,
+            "body_start": 14709,
+            "body_end": 14924
+        },
+        {
+            "name": "fileExists",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 14930,
+            "end_position": 15020,
+            "body_start": 14965,
+            "body_end": 15020
+        },
+        {
+            "name": "fileExists",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 15026,
+            "end_position": 15162,
+            "body_start": 15065,
+            "body_end": 15162
+        },
+        {
+            "name": "getTopParent",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 15168,
+            "end_position": 15305,
+            "body_start": 15208,
+            "body_end": 15305
+        },
+        {
+            "name": "getTopParentId",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 15311,
+            "end_position": 15491,
+            "body_start": 15351,
+            "body_end": 15491
+        },
+        {
+            "name": "getTopParentIdRecursive",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 15497,
+            "end_position": 15827,
+            "body_start": 15547,
+            "body_end": 15827
+        },
+        {
+            "name": "getAllFilesRecursivelyInsideFolder",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 15833,
+            "end_position": 16572,
+            "body_start": 15901,
+            "body_end": 16572
+        },
+        {
+            "name": "getFolderContent",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyOnDevice"
+                }
+            ],
+            "start_position": 16578,
+            "end_position": 16869,
+            "body_start": 16652,
+            "body_end": 16869
+        },
+        {
+            "name": "findDuplicatedFile",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "parentFolder"
+                },
+                {
+                    "type": "ServerFileInterface",
+                    "name": "newFile"
+                }
+            ],
+            "start_position": 16875,
+            "end_position": 17409,
+            "body_start": 16958,
+            "body_end": 17409
+        },
+        {
+            "name": "getFolderImages",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyOnDevice"
+                }
+            ],
+            "start_position": 17415,
+            "end_position": 17969,
+            "body_start": 17488,
+            "body_end": 17969
+        },
+        {
+            "name": "saveFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                }
+            ],
+            "start_position": 17975,
+            "end_position": 20123,
+            "body_start": 18014,
+            "body_end": 20123
+        },
+        {
+            "name": "saveFileWithParent",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 20420,
+            "end_position": 22104,
+            "body_start": 20485,
+            "body_end": 22104
+        },
+        {
+            "name": "clearTempEncryptedFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 22110,
+            "end_position": 22699,
+            "body_start": 22174,
+            "body_end": 22699
+        },
+        {
+            "name": "createTempEncryptedFolder",
+            "return_type": "File",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 22705,
+            "end_position": 23229,
+            "body_start": 22770,
+            "body_end": 23229
+        },
+        {
+            "name": "saveNewFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "newFile"
+                }
+            ],
+            "start_position": 23235,
+            "end_position": 23805,
+            "body_start": 23275,
+            "body_end": 23805
+        },
+        {
+            "name": "saveFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "List<OCFile>",
+                    "name": "updatedFiles"
+                },
+                {
+                    "type": "Collection<OCFile>",
+                    "name": "filesToRemove"
+                }
+            ],
+            "start_position": 24135,
+            "end_position": 29212,
+            "body_start": 24234,
+            "body_end": 29212
+        },
+        {
+            "name": "createContentValuesBase",
+            "return_type": "ContentValues",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "fileOrFolder"
+                }
+            ],
+            "start_position": 29439,
+            "end_position": 32222,
+            "body_start": 29506,
+            "body_end": 32222
+        },
+        {
+            "name": "createContentValuesForFolder",
+            "return_type": "ContentValues",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 32415,
+            "end_position": 32631,
+            "body_start": 32481,
+            "body_end": 32631
+        },
+        {
+            "name": "createContentValuesForFile",
+            "return_type": "ContentValues",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 32824,
+            "end_position": 35032,
+            "body_start": 32952,
+            "body_end": 35032
+        },
+        {
+            "name": "removeFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                },
+                {
+                    "type": "boolean",
+                    "name": "removeDBData"
+                },
+                {
+                    "type": "boolean",
+                    "name": "removeLocalCopy"
+                }
+            ],
+            "start_position": 35038,
+            "end_position": 37175,
+            "body_start": 35126,
+            "body_end": 37175
+        },
+        {
+            "name": "removeFolder",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "boolean",
+                    "name": "removeDBData"
+                },
+                {
+                    "type": "boolean",
+                    "name": "removeLocalContent"
+                }
+            ],
+            "start_position": 37182,
+            "end_position": 37688,
+            "body_start": 37275,
+            "body_end": 37688
+        },
+        {
+            "name": "removeFolderInDb",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 37694,
+            "end_position": 38518,
+            "body_start": 37742,
+            "body_end": 38518
+        },
+        {
+            "name": "removeLocalFolder",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 38524,
+            "end_position": 39868,
+            "body_start": 38573,
+            "body_end": 39868
+        },
+        {
+            "name": "removeLocalFolder",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "localFolder"
+                }
+            ],
+            "start_position": 39874,
+            "end_position": 40393,
+            "body_start": 39926,
+            "body_end": 40393
+        },
+        {
+            "name": "moveLocalFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                },
+                {
+                    "type": "String",
+                    "name": "targetPath"
+                },
+                {
+                    "type": "String",
+                    "name": "targetParentPath"
+                }
+            ],
+            "start_position": 40606,
+            "end_position": 45695,
+            "body_start": 40691,
+            "body_end": 45695
+        },
+        {
+            "name": "copyLocalFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                },
+                {
+                    "type": "String",
+                    "name": "targetPath"
+                }
+            ],
+            "start_position": 45701,
+            "end_position": 46683,
+            "body_start": 45761,
+            "body_end": 46683
+        },
+        {
+            "name": "migrateStoredFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "sourcePath"
+                },
+                {
+                    "type": "String",
+                    "name": "destinationPath"
+                }
+            ],
+            "start_position": 46905,
+            "end_position": 49492,
+            "body_start": 47041,
+            "body_end": 49492
+        },
+        {
+            "name": "getFolderContent",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "parentId"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyOnDevice"
+                }
+            ],
+            "start_position": 49498,
+            "end_position": 50072,
+            "body_start": 49573,
+            "body_end": 50072
+        },
+        {
+            "name": "createRootDir",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 50079,
+            "end_position": 50336,
+            "body_start": 50110,
+            "body_end": 50336
+        },
+        {
+            "name": "createFileInstanceFromVirtual",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cursor"
+                }
+            ],
+            "start_position": 50342,
+            "end_position": 50565,
+            "body_start": 50416,
+            "body_end": 50565
+        },
+        {
+            "name": "nullToZero",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Integer",
+                    "name": "i"
+                }
+            ],
+            "start_position": 50571,
+            "end_position": 50648,
+            "body_start": 50605,
+            "body_end": 50648
+        },
+        {
+            "name": "nullToZero",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "Long",
+                    "name": "i"
+                }
+            ],
+            "start_position": 50654,
+            "end_position": 50729,
+            "body_start": 50686,
+            "body_end": 50729
+        },
+        {
+            "name": "nullToMinusOne",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "Long",
+                    "name": "i"
+                }
+            ],
+            "start_position": 50735,
+            "end_position": 50816,
+            "body_start": 50771,
+            "body_end": 50816
+        },
+        {
+            "name": "createFileInstance",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "FileEntity",
+                    "name": "fileEntity"
+                }
+            ],
+            "start_position": 50822,
+            "end_position": 57501,
+            "body_start": 50879,
+            "body_end": 57501
+        },
+        {
+            "name": "saveShare",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 57507,
+            "end_position": 59490,
+            "body_start": 57547,
+            "body_end": 59490
+        },
+        {
+            "name": "getShareById",
+            "return_type": "OCShare",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 59657,
+            "end_position": 60019,
+            "body_start": 59694,
+            "body_end": 60019
+        },
+        {
+            "name": "shareExistsForRemoteId",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "remoteId"
+                }
+            ],
+            "start_position": 60349,
+            "end_position": 60517,
+            "body_start": 60403,
+            "body_end": 60517
+        },
+        {
+            "name": "shareExistsForValue",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "String",
+                    "name": "value"
+                }
+            ],
+            "start_position": 60871,
+            "end_position": 61095,
+            "body_start": 60933,
+            "body_end": 61095
+        },
+        {
+            "name": "getShareCursorForValue",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "String",
+                    "name": "value"
+                }
+            ],
+            "start_position": 61451,
+            "end_position": 62584,
+            "body_start": 61515,
+            "body_end": 62584
+        },
+        {
+            "name": "getSharesByPathAndType",
+            "return_type": "List<OCShare>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "ShareType",
+                    "name": "type"
+                },
+                {
+                    "type": "String",
+                    "name": "shareWith"
+                }
+            ],
+            "start_position": 62969,
+            "end_position": 65242,
+            "body_start": 63060,
+            "body_end": 65242
+        },
+        {
+            "name": "createContentValueForShare",
+            "return_type": "ContentValues",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 65248,
+            "end_position": 67236,
+            "body_start": 65312,
+            "body_end": 67236
+        },
+        {
+            "name": "createShareInstance",
+            "return_type": "OCShare",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cursor"
+                }
+            ],
+            "start_position": 67272,
+            "end_position": 68938,
+            "body_start": 67323,
+            "body_end": 68938
+        },
+        {
+            "name": "resetShareFlagsInAllFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 68944,
+            "end_position": 69757,
+            "body_start": 68985,
+            "body_end": 69757
+        },
+        {
+            "name": "resetShareFlagsInFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 69763,
+            "end_position": 70715,
+            "body_start": 69815,
+            "body_end": 70715
+        },
+        {
+            "name": "resetShareFlagInAFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filePath"
+                }
+            ],
+            "start_position": 70721,
+            "end_position": 71647,
+            "body_start": 70773,
+            "body_end": 71647
+        },
+        {
+            "name": "cleanShares",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 71653,
+            "end_position": 72275,
+            "body_start": 71702,
+            "body_end": 72275
+        },
+        {
+            "name": "saveShares",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<OCShare>",
+                    "name": "shares"
+                }
+            ],
+            "start_position": 72306,
+            "end_position": 74296,
+            "body_start": 72351,
+            "body_end": 74296
+        },
+        {
+            "name": "removeShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 74302,
+            "end_position": 74979,
+            "body_start": 74341,
+            "body_end": 74979
+        },
+        {
+            "name": "saveSharesDB",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<OCShare>",
+                    "name": "shares"
+                }
+            ],
+            "start_position": 74985,
+            "end_position": 76220,
+            "body_start": 75032,
+            "body_end": 76220
+        },
+        {
+            "name": "removeSharesForFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 76226,
+            "end_position": 77068,
+            "body_start": 76277,
+            "body_end": 77068
+        },
+        {
+            "name": "saveSharesInFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ArrayList<OCShare>",
+                    "name": "shares"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 77114,
+            "end_position": 78156,
+            "body_start": 77187,
+            "body_end": 78156
+        },
+        {
+            "name": "prepareInsertShares",
+            "return_type": "ArrayList<ContentProviderOperation>",
+            "parameters": [
+                {
+                    "type": "Iterable<OCShare>",
+                    "name": "shares"
+                },
+                {
+                    "type": "ArrayList<ContentProviderOperation>",
+                    "name": "operations"
+                }
+            ],
+            "start_position": 78374,
+            "end_position": 79065,
+            "body_start": 78521,
+            "body_end": 79065
+        },
+        {
+            "name": "prepareRemoveSharesInFolder",
+            "return_type": "ArrayList<ContentProviderOperation>",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "ArrayList<ContentProviderOperation>",
+                    "name": "preparedOperations"
+                }
+            ],
+            "start_position": 79071,
+            "end_position": 79949,
+            "body_start": 79223,
+            "body_end": 79949
+        },
+        {
+            "name": "prepareRemoveSharesInFile",
+            "return_type": "ArrayList<ContentProviderOperation>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filePath"
+                },
+                {
+                    "type": "ArrayList<ContentProviderOperation>",
+                    "name": "preparedOperations"
+                }
+            ],
+            "start_position": 79955,
+            "end_position": 80595,
+            "body_start": 80107,
+            "body_end": 80595
+        },
+        {
+            "name": "getSharesWithForAFile",
+            "return_type": "List<OCShare>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filePath"
+                },
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 80601,
+            "end_position": 83010,
+            "body_start": 80681,
+            "body_end": 83010
+        },
+        {
+            "name": "triggerMediaScan",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 83016,
+            "end_position": 83110,
+            "body_start": 83065,
+            "body_end": 83110
+        },
+        {
+            "name": "triggerMediaScan",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 83116,
+            "end_position": 84862,
+            "body_start": 83178,
+            "body_end": 84862
+        },
+        {
+            "name": "deleteFileInMediaScan",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 84868,
+            "end_position": 87104,
+            "body_start": 84915,
+            "body_end": 87104
+        },
+        {
+            "name": "saveConflict",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                },
+                {
+                    "type": "String",
+                    "name": "etagInConflict"
+                }
+            ],
+            "start_position": 87110,
+            "end_position": 94985,
+            "body_start": 87204,
+            "body_end": 94985
+        },
+        {
+            "name": "saveCapabilities",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 94991,
+            "end_position": 96968,
+            "body_start": 95045,
+            "body_end": 96968
+        },
+        {
+            "name": "createContentValues",
+            "return_type": "ContentValues",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 96974,
+            "end_position": 105540,
+            "body_start": 97074,
+            "body_end": 105540
+        },
+        {
+            "name": "capabilityExists",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 105546,
+            "end_position": 105842,
+            "body_start": 105599,
+            "body_end": 105842
+        },
+        {
+            "name": "getCapabilityCursorForAccount",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 105848,
+            "end_position": 106786,
+            "body_start": 105913,
+            "body_end": 106786
+        },
+        {
+            "name": "getCapability",
+            "return_type": "OCCapability",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 106792,
+            "end_position": 106910,
+            "body_start": 106850,
+            "body_end": 106910
+        },
+        {
+            "name": "getCapability",
+            "return_type": "OCCapability",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 106916,
+            "end_position": 107349,
+            "body_start": 106983,
+            "body_end": 107349
+        },
+        {
+            "name": "capabilityExistsForAccount",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 107355,
+            "end_position": 107588,
+            "body_start": 107417,
+            "body_end": 107588
+        },
+        {
+            "name": "createCapabilityInstance",
+            "return_type": "OCCapability",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cursor"
+                }
+            ],
+            "start_position": 107594,
+            "end_position": 116255,
+            "body_start": 107655,
+            "body_end": 116255
+        },
+        {
+            "name": "deleteVirtuals",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "VirtualFolderType",
+                    "name": "type"
+                }
+            ],
+            "start_position": 116261,
+            "end_position": 116997,
+            "body_start": 116312,
+            "body_end": 116997
+        },
+        {
+            "name": "saveVirtuals",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<ContentValues>",
+                    "name": "values"
+                }
+            ],
+            "start_position": 117003,
+            "end_position": 117587,
+            "body_start": 117056,
+            "body_end": 117587
+        },
+        {
+            "name": "getAllGalleryItems",
+            "return_type": "List<OCFile>",
+            "parameters": [],
+            "start_position": 117593,
+            "end_position": 117692,
+            "body_start": 117634,
+            "body_end": 117692
+        },
+        {
+            "name": "getGalleryItems",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "startDate"
+                },
+                {
+                    "type": "long",
+                    "name": "endDate"
+                }
+            ],
+            "start_position": 117698,
+            "end_position": 118317,
+            "body_start": 117764,
+            "body_end": 118317
+        },
+        {
+            "name": "getVirtualFolderContent",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "VirtualFolderType",
+                    "name": "type"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyImages"
+                }
+            ],
+            "start_position": 118323,
+            "end_position": 120084,
+            "body_start": 118411,
+            "body_end": 120084
+        },
+        {
+            "name": "deleteAllFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 120090,
+            "end_position": 120804,
+            "body_start": 120119,
+            "body_end": 120804
+        },
+        {
+            "name": "getFolderName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 120810,
+            "end_position": 120905,
+            "body_start": 120851,
+            "body_end": 120905
+        },
+        {
+            "name": "retrieveRemotePathConsideringEncryption",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 120911,
+            "end_position": 121284,
+            "body_start": 120978,
+            "body_end": 121284
+        },
+        {
+            "name": "getEncryptedRemotePath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "decryptedRemotePath"
+                }
+            ],
+            "start_position": 121290,
+            "end_position": 122160,
+            "body_start": 121355,
+            "body_end": 122160
+        },
+        {
+            "name": "getDecryptedFileNamesAndEncryptedRemotePaths",
+            "return_type": "List<Pair<String, String>>",
+            "parameters": [
+                {
+                    "type": "List<OCFile>",
+                    "name": "fileList"
+                }
+            ],
+            "start_position": 122166,
+            "end_position": 122689,
+            "body_start": 122300,
+            "body_end": 122689
+        },
+        {
+            "name": "removeLocalFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 122695,
+            "end_position": 123095,
+            "body_start": 122774,
+            "body_end": 123095
+        },
+        {
+            "name": "getAllFiles",
+            "return_type": "List<OCFile>",
+            "parameters": [],
+            "start_position": 123101,
+            "end_position": 123522,
+            "body_start": 123135,
+            "body_end": 123522
+        },
+        {
+            "name": "getString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cursor"
+                },
+                {
+                    "type": "String",
+                    "name": "columnName"
+                }
+            ],
+            "start_position": 123528,
+            "end_position": 123669,
+            "body_start": 123587,
+            "body_end": 123669
+        },
+        {
+            "name": "getInt",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cursor"
+                },
+                {
+                    "type": "String",
+                    "name": "columnName"
+                }
+            ],
+            "start_position": 123675,
+            "end_position": 123807,
+            "body_start": 123728,
+            "body_end": 123807
+        },
+        {
+            "name": "getLong",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cursor"
+                },
+                {
+                    "type": "String",
+                    "name": "columnName"
+                }
+            ],
+            "start_position": 123813,
+            "end_position": 123948,
+            "body_start": 123868,
+            "body_end": 123948
+        },
+        {
+            "name": "getBoolean",
+            "return_type": "CapabilityBooleanType",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cursor"
+                },
+                {
+                    "type": "String",
+                    "name": "columnName"
+                }
+            ],
+            "start_position": 123954,
+            "end_position": 124141,
+            "body_start": 124029,
+            "body_end": 124141
+        },
+        {
+            "name": "getContentResolver",
+            "return_type": "ContentResolver",
+            "parameters": [],
+            "start_position": 124147,
+            "end_position": 124235,
+            "body_start": 124191,
+            "body_end": 124235
+        },
+        {
+            "name": "getContentProviderClient",
+            "return_type": "ContentProviderClient",
+            "parameters": [],
+            "start_position": 124241,
+            "end_position": 124347,
+            "body_start": 124297,
+            "body_end": 124347
+        },
+        {
+            "name": "getUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 124353,
+            "end_position": 124403,
+            "body_start": 124375,
+            "body_end": 124403
+        },
+        {
+            "name": "getDefaultRootPath",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 124409,
+            "end_position": 124496,
+            "body_start": 124444,
+            "body_end": 124496
+        },
+        {
+            "name": "getFilesWithSyncConflict",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 124502,
+            "end_position": 124871,
+            "body_start": 124558,
+            "body_end": 124871
+        },
+        {
+            "name": "getInternalTwoWaySyncFolders",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 124877,
+            "end_position": 125366,
+            "body_start": 124937,
+            "body_end": 125366
+        },
+        {
+            "name": "isPartOfInternalTwoWaySync",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 125372,
+            "end_position": 125777,
+            "body_start": 125427,
+            "body_end": 125777
+        },
+        {
+            "name": "filter",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "OCFileFilterType",
+                    "name": "filterType"
+                }
+            ],
+            "start_position": 125783,
+            "end_position": 126492,
+            "body_start": 125852,
+            "body_end": 126492
+        }
+    ],
+    "local_variables": {
+        "i": "int",
+        "localPath": "String",
+        "remotePath": "String",
+        "mimeType": "String",
+        "entity": "var",
+        "createdAt": "long",
+        "modificationTimestamp": "long",
+        "parentPath": "String",
+        "parentFile": "OCFile",
+        "operationType": "OfflineOperationType.RemoveFile",
+        "file": "OCFile",
+        "directory": "OCFile",
+        "filename": "String",
+        "renameEntity": "OfflineOperationEntity",
+        "parentFolder": "OCFile",
+        "newPath": "String",
+        "oldFileName": "String",
+        "parentOCFileId": "Long",
+        "formatPattern": "DateFormatPattern",
+        "currentDateTime": "String",
+        "newFolderName": "String",
+        "shouldUseEncryptedPath": "boolean",
+        "fileEntity": "FileEntity",
+        "topParentId": "long",
+        "result": "List<OCFile>",
+        "filesInsideFolder": "List<OCFile>",
+        "folderContent": "List<OCFile>",
+        "duplicatedFile": "OCFile",
+        "imageList": "List<OCFile>",
+        "overridden": "boolean",
+        "cv": "ContentValues",
+        "sameRemotePath": "boolean",
+        "oldFile": "OCFile",
+        "result_uri": "Uri",
+        "new_id": "long",
+        "returnFile": "OCFile",
+        "operation": "ReadFileRemoteOperation",
+        "remoteFolder": "OCFile",
+        "exception": "Exception",
+        "message": "String",
+        "tempEncryptedFolder": "File",
+        "isTempEncryptedFolderCreated": "boolean",
+        "remoteParentPath": "String",
+        "parent": "OCFile",
+        "operations": "ArrayList<ContentProviderOperation>",
+        "contentValues": "ContentValues",
+        "fileId": "long",
+        "where": "String",
+        "whereArgs": "String[]",
+        "localFolder": "File",
+        "path": "String",
+        "results": "ContentProviderResult[]",
+        "newId": "long",
+        "fileIterator": "Iterator<OCFile>",
+        "ocFile": "OCFile",
+        "lockType": "FileLockType",
+        "success": "boolean",
+        "file_uri": "Uri",
+        "deleted": "int",
+        "folderUri": "Uri",
+        "localFolderPath": "String",
+        "files": "List<OCFile>",
+        "localFile": "File",
+        "localFiles": "File[]",
+        "targetParent": "OCFile",
+        "oldPath": "String",
+        "fileEntities": "List<FileEntity>",
+        "defaultSavePath": "String",
+        "originalPathsToTriggerMediaScan": "List<String>",
+        "newPathsToTriggerMediaScan": "List<String>",
+        "lengthOfOldPath": "int",
+        "lengthOfOldStoragePath": "int",
+        "childFile": "OCFile",
+        "targetLocalPath": "String",
+        "originalLocalPath": "String",
+        "renamed": "boolean",
+        "targetFile": "File",
+        "targetFolder": "File",
+        "pathIterator": "Iterator<String>",
+        "copied": "boolean",
+        "cursor": "Cursor",
+        "oldFileStoragePath": "String",
+        "child": "OCFile",
+        "mountType": "Integer",
+        "lockTypeInt": "int",
+        "sharees": "String",
+        "shareesArray": "ShareeUser[]",
+        "tags": "String",
+        "tagsArray": "String[]",
+        "metadataSize": "String",
+        "imageDimension": "ImageDimension",
+        "metadataGPS": "String",
+        "geoLocation": "GeoLocation",
+        "share": "OCShare",
+        "retval": "boolean",
+        "selection": "String",
+        "selectionArgs": "String[]",
+        "shares": "ArrayList<OCShare>",
+        "shareType": "ShareType",
+        "contentUriShare": "Uri",
+        "filePath": "String",
+        "values": "ContentValues",
+        "contentResolver": "ContentResolver",
+        "intent": "Intent",
+        "mimetypeString": "String",
+        "contentProviderClient": "ContentProviderClient",
+        "updated": "int",
+        "parentId": "long",
+        "ancestorIds": "Set<String>",
+        "stringBuilder": "StringBuilder",
+        "projection": "String[]",
+        "whereForDescencentsInConflict": "String",
+        "descendentsInConflict": "Cursor",
+        "exists": "boolean",
+        "capability": "OCCapability",
+        "e2eVersionString": "String",
+        "e2EVersion": "E2EVersion",
+        "mimetypes": "String",
+        "optionalMimetypes": "String",
+        "contentUriVirtual": "Uri",
+        "arrayValues": "ContentValues[]",
+        "ocFiles": "List<OCFile>",
+        "req_uri": "Uri",
+        "c": "Cursor",
+        "temp": "List<OCFile>",
+        "folderName": "String",
+        "folder": "OCFile",
+        "decryptedFileNamesAndEncryptedRemotePaths": "List<Pair<String, String>>",
+        "decryptedFileName": "String",
+        "fileNameAndEncryptedRemotePath": "Pair<String, String>",
+        "tempDir": "File",
+        "saveDir": "File",
+        "allFiles": "List<OCFile>",
+        "condition": "boolean"
+    }
+}

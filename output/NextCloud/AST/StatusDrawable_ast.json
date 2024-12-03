@@ -1,0 +1,105 @@
+{
+    "method_calls": {
+        "Color": [
+            "argb"
+        ],
+        "backgroundPaint": [
+            "setStyle",
+            "setAntiAlias",
+            "setColor"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "status": [
+            "getIcon",
+            "getStatus"
+        ],
+        "textPaint": [
+            "setColor",
+            "setTextSize",
+            "setAntiAlias",
+            "setTextAlign",
+            "descent",
+            "ascent",
+            "setAlpha",
+            "setColorFilter"
+        ],
+        "canvas": [
+            "drawCircle",
+            "drawText"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "context": [
+            "getResources"
+        ],
+        "drawable": [
+            "setBounds",
+            "draw"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "break_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "draw",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Canvas",
+                    "name": "canvas"
+                }
+            ],
+            "start_position": 2959,
+            "end_position": 3755,
+            "body_start": 3014,
+            "body_end": 3755
+        },
+        {
+            "name": "setAlpha",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "alpha"
+                }
+            ],
+            "start_position": 3761,
+            "end_position": 3849,
+            "body_start": 3807,
+            "body_end": 3849
+        },
+        {
+            "name": "setColorFilter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ColorFilter",
+                    "name": "cf"
+                }
+            ],
+            "start_position": 3855,
+            "end_position": 3957,
+            "body_start": 3912,
+            "body_end": 3957
+        },
+        {
+            "name": "getOpacity",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 3963,
+            "end_position": 4048,
+            "body_start": 4001,
+            "body_end": 4048
+        }
+    ],
+    "local_variables": {
+        "drawable": "Drawable"
+    }
+}

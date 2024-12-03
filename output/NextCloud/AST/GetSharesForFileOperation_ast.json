@@ -1,0 +1,58 @@
+{
+    "method_calls": {
+        "GetSharesForFileOperation.class": [
+            "getSimpleName"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getData",
+            "getCode"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "result.getData()": [
+            "size"
+        ],
+        "shares": [
+            "add"
+        ],
+        "getStorageManager()": [
+            "saveSharesDB",
+            "removeSharesForFile"
+        ],
+        "unknown": [
+            "getStorageManager"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 2036,
+            "end_position": 3118,
+            "body_start": 2109,
+            "body_end": 3118
+        }
+    ],
+    "local_variables": {
+        "operation": "GetSharesForFileRemoteOperation",
+        "result": "RemoteOperationResult",
+        "shares": "ArrayList<OCShare>"
+    }
+}

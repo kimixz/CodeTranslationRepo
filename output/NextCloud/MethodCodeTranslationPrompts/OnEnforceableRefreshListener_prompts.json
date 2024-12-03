@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "onRefresh",
+        "method_code": "void onRefresh(boolean enforced);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onRefresh from OnEnforceableRefreshListener.java into Swift.\n\n        Input:\n\n        Method Name: onRefresh\n\n        Method Code: void onRefresh(boolean enforced);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onRefresh(enforced: Bool) {\n    // Implementation goes here\n}\n```"
+    }
+]

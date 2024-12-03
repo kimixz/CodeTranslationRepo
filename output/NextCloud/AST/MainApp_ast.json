@@ -1,0 +1,1241 @@
+{
+    "method_calls": {
+        "MainApp.class": [
+            "getSimpleName"
+        ],
+        "unknown": [
+            "registerReceiver",
+            "initGlobalContext",
+            "initDagger",
+            "getAppProcessName",
+            "enableStrictMode",
+            "setAppTheme",
+            "insertConscrypt",
+            "registerActivityLifecycleCallbacks",
+            "fixStoragePath",
+            "checkCancelDownloadJobs",
+            "getApplicationContext",
+            "getUserAgent",
+            "isClientBrandedPlus",
+            "setProxyConfig",
+            "setProxyForNonBrandedPlusClients",
+            "initSyncOperations",
+            "initContactsBackup",
+            "notificationChannels",
+            "registerGlobalPassCodeProtection",
+            "registerNetworkChangeReceiver",
+            "disableDocumentsStorageProvider",
+            "getPackageName",
+            "getPackageManager",
+            "getResources",
+            "getAppContext",
+            "updateToAutoUpload",
+            "cleanOldEntries",
+            "updateAutoUploadEntries",
+            "splitOutAutoUploadEntries",
+            "createChannel",
+            "string",
+            "showAutoUploadAlertDialog"
+        ],
+        "this": [
+            "getSystemService"
+        ],
+        "android.os.Process": [
+            "myPid"
+        ],
+        "manager": [
+            "getRunningAppProcesses"
+        ],
+        "Application": [
+            "getProcessName"
+        ],
+        "super": [
+            "attachBaseContext",
+            "onCreate"
+        ],
+        "getAppProcessName()": [
+            "endsWith"
+        ],
+        "appInfo": [
+            "isDebugBuild"
+        ],
+        "Thread": [
+            "getDefaultUncaughtExceptionHandler",
+            "setDefaultUncaughtExceptionHandler"
+        ],
+        "DaggerAppComponent.builder()\n            .application(this)": [
+            "build"
+        ],
+        "DaggerAppComponent.builder()": [
+            "application"
+        ],
+        "DaggerAppComponent": [
+            "builder"
+        ],
+        "appComponent": [
+            "inject"
+        ],
+        "viewThemeUtilsProvider": [
+            "get"
+        ],
+        "preferences": [
+            "getDarkThemeMode",
+            "getStoragePath",
+            "isTwoWaySyncEnabled",
+            "getTwoWaySyncInterval",
+            "isStoragePathFixEnabled",
+            "getLastSeenVersionCode",
+            "setStoragePath",
+            "removeKeysMigrationPreference",
+            "setStoragePathFixEnabled",
+            "shouldStopDownloadJobsOnStart",
+            "setStopDownloadJobsOnStart",
+            "setAutoUploadSplitEntriesEnabled",
+            "isAutoUploadInitialized",
+            "setAutoUploadInit",
+            "instantPictureUploadEnabled",
+            "instantVideoUploadEnabled",
+            "removeLegacyPreferences",
+            "isAutoUploadPathsUpdateEnabled",
+            "isAutoUploadSplitEntriesEnabled",
+            "isLegacyClean",
+            "setLegacyClean"
+        ],
+        "ProcessLifecycleOwner.get().getLifecycle()": [
+            "addObserver"
+        ],
+        "ProcessLifecycleOwner.get()": [
+            "getLifecycle"
+        ],
+        "ProcessLifecycleOwner": [
+            "get"
+        ],
+        "inAppReviewHelper": [
+            "resetAndIncrementAppRestartCounter"
+        ],
+        "migrationsManager": [
+            "startMigration"
+        ],
+        "logger": [
+            "i"
+        ],
+        "String": [
+            "format"
+        ],
+        "DisplayUtils": [
+            "useCompatVectorIfNeeded"
+        ],
+        "getApplicationContext().getFilesDir()": [
+            "getAbsolutePath"
+        ],
+        "getApplicationContext()": [
+            "getFilesDir"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "setUserAgent",
+            "setProxyHost",
+            "setProxyPort"
+        ],
+        "ContextExtensionsKt": [
+            "registerBroadcastReceiver",
+            "showToast"
+        ],
+        "new ThumbnailsCacheManager.InitDiskCacheTask()": [
+            "execute"
+        ],
+        "MDMConfig.INSTANCE": [
+            "isLogEnabled",
+            "sendFilesSupport",
+            "getHost",
+            "getPort"
+        ],
+        "Log_OC": [
+            "setLoggerImplementation",
+            "d",
+            "e",
+            "i"
+        ],
+        "StrictMode.class": [
+            "getMethod"
+        ],
+        "m": [
+            "invoke"
+        ],
+        "backgroundJobManager": [
+            "scheduleMediaFoldersDetectionJob",
+            "startMediaFoldersDetectionJob",
+            "schedulePeriodicHealthStatus",
+            "scheduleInternal2WaySync",
+            "startPeriodicallyOfflineOperation",
+            "schedulePeriodicContactsBackup",
+            "cancelAllFilesDownloadJobs",
+            "scheduleOfflineSync",
+            "startOfflineOperations"
+        ],
+        "packageManager": [
+            "setComponentEnabledSetting"
+        ],
+        "passCodeManager": [
+            "setCanAskPin",
+            "onActivityResumed",
+            "onActivityStopped"
+        ],
+        "getResources()": [
+            "getString",
+            "getInteger"
+        ],
+        "getAppContext().getResources()": [
+            "getBoolean"
+        ],
+        "getAppContext()": [
+            "getResources",
+            "getString",
+            "getPackageName",
+            "getPackageManager"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "activity.getClass()": [
+            "getSimpleName"
+        ],
+        "activity": [
+            "getClass"
+        ],
+        "onboarding": [
+            "launchActivityIfNeeded"
+        ],
+        "appContext": [
+            "get"
+        ],
+        "accountManager": [
+            "getAllUsers"
+        ],
+        "arbitraryDataProvider": [
+            "getBooleanValue"
+        ],
+        "Security": [
+            "insertProviderAt"
+        ],
+        "Conscrypt": [
+            "newProvider",
+            "version"
+        ],
+        "version": [
+            "major",
+            "minor",
+            "patch"
+        ],
+        "SSLContext.getDefault()": [
+            "createSSLEngine"
+        ],
+        "SSLContext": [
+            "getDefault"
+        ],
+        "Arrays": [
+            "toString"
+        ],
+        "engine": [
+            "getEnabledProtocols",
+            "getEnabledCipherSuites"
+        ],
+        "e": [
+            "getMessage",
+            "getCause"
+        ],
+        "DataStorageProvider.getInstance()": [
+            "getAvailableStoragePoints"
+        ],
+        "DataStorageProvider": [
+            "getInstance"
+        ],
+        "Environment.getExternalStorageDirectory()": [
+            "getAbsolutePath"
+        ],
+        "Environment": [
+            "getExternalStorageDirectory"
+        ],
+        "storagePoint": [
+            "getStorageType",
+            "getPrivacyType",
+            "getPath"
+        ],
+        "StrictMode": [
+            "setThreadPolicy",
+            "setVmPolicy"
+        ],
+        "new StrictMode.ThreadPolicy.Builder()\n                                           .detectDiskReads()\n                                           .detectDiskWrites()\n                                           .detectAll()\n                                           .penaltyLog()": [
+            "build"
+        ],
+        "new StrictMode.ThreadPolicy.Builder()\n                                           .detectDiskReads()\n                                           .detectDiskWrites()\n                                           .detectAll()": [
+            "penaltyLog"
+        ],
+        "new StrictMode.ThreadPolicy.Builder()\n                                           .detectDiskReads()\n                                           .detectDiskWrites()": [
+            "detectAll"
+        ],
+        "new StrictMode.ThreadPolicy.Builder()\n                                           .detectDiskReads()": [
+            "detectDiskWrites"
+        ],
+        "new StrictMode.ThreadPolicy.Builder()": [
+            "detectDiskReads"
+        ],
+        "new StrictMode.VmPolicy.Builder()\n                                       .detectLeakedSqlLiteObjects()\n                                       .detectLeakedClosableObjects()\n                                       .penaltyLog()": [
+            "build"
+        ],
+        "new StrictMode.VmPolicy.Builder()\n                                       .detectLeakedSqlLiteObjects()\n                                       .detectLeakedClosableObjects()": [
+            "penaltyLog"
+        ],
+        "new StrictMode.VmPolicy.Builder()\n                                       .detectLeakedSqlLiteObjects()": [
+            "detectLeakedClosableObjects"
+        ],
+        "new StrictMode.VmPolicy.Builder()": [
+            "detectLeakedSqlLiteObjects"
+        ],
+        "PermissionUtil": [
+            "checkExternalStoragePermission"
+        ],
+        "FilesSyncHelper": [
+            "startFilesSyncForAllFolders",
+            "scheduleFilesSyncForAllFoldersIfNeeded",
+            "restartUploadsIfNeeded"
+        ],
+        "ReceiversHelper": [
+            "registerNetworkChangeReceiver",
+            "registerPowerChangeReceiver",
+            "registerPowerSaveReceiver"
+        ],
+        "context": [
+            "getSystemService",
+            "getString",
+            "getResources",
+            "startActivity",
+            "getContentResolver"
+        ],
+        "notificationManager": [
+            "deleteNotificationChannel",
+            "createNotificationChannel"
+        ],
+        "channel": [
+            "setDescription",
+            "enableLights",
+            "enableVibration"
+        ],
+        "MainApp.appContext": [
+            "get"
+        ],
+        "context.getResources()": [
+            "getString"
+        ],
+        "getAppContext().getPackageManager()": [
+            "getPackageInfo"
+        ],
+        "AppPreferencesImpl": [
+            "fromContext"
+        ],
+        "new MaterialAlertDialogBuilder(context, R.style.Theme_ownCloud_Dialog)\n            .setTitle(R.string.drawer_synced_folders)\n            .setMessage(R.string.synced_folders_new_info)\n            .setPositiveButton(R.string.drawer_open, (dialog, which) -> {\n                Intent folderSyncIntent = new Intent(context, SyncedFoldersActivity.class);\n                dialog.dismiss();\n                context.startActivity(folderSyncIntent);\n            })\n            .setNegativeButton(R.string.drawer_close, (dialog, which) -> dialog.dismiss())\n            .setIcon(R.drawable.nav_synced_folders)\n            .create()": [
+            "show"
+        ],
+        "new MaterialAlertDialogBuilder(context, R.style.Theme_ownCloud_Dialog)\n            .setTitle(R.string.drawer_synced_folders)\n            .setMessage(R.string.synced_folders_new_info)\n            .setPositiveButton(R.string.drawer_open, (dialog, which) -> {\n                Intent folderSyncIntent = new Intent(context, SyncedFoldersActivity.class);\n                dialog.dismiss();\n                context.startActivity(folderSyncIntent);\n            })\n            .setNegativeButton(R.string.drawer_close, (dialog, which) -> dialog.dismiss())\n            .setIcon(R.drawable.nav_synced_folders)": [
+            "create"
+        ],
+        "new MaterialAlertDialogBuilder(context, R.style.Theme_ownCloud_Dialog)\n            .setTitle(R.string.drawer_synced_folders)\n            .setMessage(R.string.synced_folders_new_info)\n            .setPositiveButton(R.string.drawer_open, (dialog, which) -> {\n                Intent folderSyncIntent = new Intent(context, SyncedFoldersActivity.class);\n                dialog.dismiss();\n                context.startActivity(folderSyncIntent);\n            })\n            .setNegativeButton(R.string.drawer_close, (dialog, which) -> dialog.dismiss())": [
+            "setIcon"
+        ],
+        "new MaterialAlertDialogBuilder(context, R.style.Theme_ownCloud_Dialog)\n            .setTitle(R.string.drawer_synced_folders)\n            .setMessage(R.string.synced_folders_new_info)\n            .setPositiveButton(R.string.drawer_open, (dialog, which) -> {\n                Intent folderSyncIntent = new Intent(context, SyncedFoldersActivity.class);\n                dialog.dismiss();\n                context.startActivity(folderSyncIntent);\n            })": [
+            "setNegativeButton"
+        ],
+        "new MaterialAlertDialogBuilder(context, R.style.Theme_ownCloud_Dialog)\n            .setTitle(R.string.drawer_synced_folders)\n            .setMessage(R.string.synced_folders_new_info)": [
+            "setPositiveButton"
+        ],
+        "new MaterialAlertDialogBuilder(context, R.style.Theme_ownCloud_Dialog)\n            .setTitle(R.string.drawer_synced_folders)": [
+            "setMessage"
+        ],
+        "new MaterialAlertDialogBuilder(context, R.style.Theme_ownCloud_Dialog)": [
+            "setTitle"
+        ],
+        "dialog": [
+            "dismiss"
+        ],
+        "MainApp.getAppContext()": [
+            "getContentResolver"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "syncedFolderProvider": [
+            "updateAutoUploadPaths",
+            "getSyncedFolders",
+            "storeSyncedFolder",
+            "deleteSyncedFolder",
+            "deleteSyncedFoldersNotInList"
+        ],
+        "MediaProvider": [
+            "getImageFolders",
+            "getVideoFolders"
+        ],
+        "idsToDelete": [
+            "add"
+        ],
+        "syncedFolder": [
+            "getId",
+            "getLocalPath",
+            "clone",
+            "getAccount"
+        ],
+        "absolutePathOfImageFolder": [
+            "equals"
+        ],
+        "newSyncedFolder": [
+            "setType",
+            "getLocalPath"
+        ],
+        "absolutePathOfVideoFolder": [
+            "equals"
+        ],
+        "syncedFolders": [
+            "containsKey",
+            "get",
+            "put",
+            "values"
+        ],
+        "ids": [
+            "size"
+        ],
+        "AppCompatDelegate": [
+            "setDefaultNightMode"
+        ]
+    },
+    "methods": [
+        {
+            "name": "initGlobalContext",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 7633,
+            "end_position": 7746,
+            "body_start": 7688,
+            "body_end": 7746
+        },
+        {
+            "name": "getPreferences",
+            "return_type": "AppPreferences",
+            "parameters": [],
+            "start_position": 7872,
+            "end_position": 7946,
+            "body_start": 7911,
+            "body_end": 7946
+        },
+        {
+            "name": "getPowerManagementService",
+            "return_type": "PowerManagementService",
+            "parameters": [],
+            "start_position": 8072,
+            "end_position": 8176,
+            "body_start": 8130,
+            "body_end": 8176
+        },
+        {
+            "name": "registerNetworkChangeReceiver",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8182,
+            "end_position": 8380,
+            "body_start": 8227,
+            "body_end": 8380
+        },
+        {
+            "name": "getAppProcessName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 8386,
+            "end_position": 9207,
+            "body_start": 8421,
+            "body_end": 9207
+        },
+        {
+            "name": "attachBaseContext",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "base"
+                }
+            ],
+            "start_position": 9213,
+            "end_position": 10116,
+            "body_start": 9274,
+            "body_end": 10116
+        },
+        {
+            "name": "initDagger",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10122,
+            "end_position": 10296,
+            "body_start": 10148,
+            "body_end": 10296
+        },
+        {
+            "name": "getAppComponent",
+            "return_type": "AppComponent",
+            "parameters": [],
+            "start_position": 10668,
+            "end_position": 10867,
+            "body_start": 10713,
+            "body_end": 10867
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10874,
+            "end_position": 14184,
+            "body_start": 10941,
+            "body_end": 14184
+        },
+        {
+            "name": "disableDocumentsStorageProvider",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14190,
+            "end_position": 14679,
+            "body_start": 14236,
+            "body_end": 14679
+        },
+        {
+            "name": "setProxyForNonBrandedPlusClients",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15179,
+            "end_position": 15599,
+            "body_start": 15227,
+            "body_end": 15599
+        },
+        {
+            "name": "isClientBrandedPlus",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 15605,
+            "end_position": 15747,
+            "body_start": 15649,
+            "body_end": 15747
+        },
+        {
+            "name": "onReceive",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 15961,
+            "end_position": 16066,
+            "body_start": 16025,
+            "body_end": 16066
+        },
+        {
+            "name": "setProxyConfig",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 16079,
+            "end_position": 16875,
+            "body_start": 16109,
+            "body_end": 16875
+        },
+        {
+            "name": "registerGlobalPassCodeProtection",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 16881,
+            "end_position": 19126,
+            "body_start": 16929,
+            "body_end": 19126
+        },
+        {
+            "name": "onActivityCreated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 17022,
+            "end_position": 17297,
+            "body_start": 17129,
+            "body_end": 17297
+        },
+        {
+            "name": "onActivityStarted",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 17311,
+            "end_position": 17491,
+            "body_start": 17391,
+            "body_end": 17491
+        },
+        {
+            "name": "onActivityResumed",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 17505,
+            "end_position": 17993,
+            "body_start": 17585,
+            "body_end": 17993
+        },
+        {
+            "name": "onActivityPaused",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 18007,
+            "end_position": 18184,
+            "body_start": 18086,
+            "body_end": 18184
+        },
+        {
+            "name": "onActivityStopped",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 18198,
+            "end_position": 18664,
+            "body_start": 18278,
+            "body_end": 18664
+        },
+        {
+            "name": "onActivitySaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 18678,
+            "end_position": 18912,
+            "body_start": 18794,
+            "body_end": 18912
+        },
+        {
+            "name": "onActivityDestroyed",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 18926,
+            "end_position": 19108,
+            "body_start": 19008,
+            "body_end": 19108
+        },
+        {
+            "name": "initContactsBackup",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "BackgroundJobManager",
+                    "name": "backgroundJobManager"
+                }
+            ],
+            "start_position": 19132,
+            "end_position": 19750,
+            "body_start": 19248,
+            "body_end": 19750
+        },
+        {
+            "name": "insertConscrypt",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 19756,
+            "end_position": 20524,
+            "body_start": 19787,
+            "body_end": 20524
+        },
+        {
+            "name": "fixStoragePath",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 20530,
+            "end_position": 22698,
+            "body_start": 20647,
+            "body_end": 22698
+        },
+        {
+            "name": "enableStrictMode",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 22704,
+            "end_position": 23553,
+            "body_start": 22736,
+            "body_end": 23553
+        },
+        {
+            "name": "checkCancelDownloadJobs",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 23559,
+            "end_position": 23828,
+            "body_start": 23598,
+            "body_end": 23828
+        },
+        {
+            "name": "initSyncOperations",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "AppPreferences",
+                    "name": "preferences"
+                },
+                {
+                    "type": "UploadsStorageManager",
+                    "name": "uploadsStorageManager"
+                },
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "ConnectivityService",
+                    "name": "connectivityService"
+                },
+                {
+                    "type": "PowerManagementService",
+                    "name": "powerManagementService"
+                },
+                {
+                    "type": "BackgroundJobManager",
+                    "name": "backgroundJobManager"
+                },
+                {
+                    "type": "Clock",
+                    "name": "clock"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                },
+                {
+                    "type": "WalledCheckCache",
+                    "name": "walledCheckCache"
+                },
+                {
+                    "type": "SyncedFolderProvider",
+                    "name": "syncedFolderProvider"
+                }
+            ],
+            "start_position": 23834,
+            "end_position": 26374,
+            "body_start": 24405,
+            "body_end": 26374
+        },
+        {
+            "name": "notificationChannels",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 26380,
+            "end_position": 29043,
+            "body_start": 26422,
+            "body_end": 29043
+        },
+        {
+            "name": "createChannel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NotificationManager",
+                    "name": "notificationManager"
+                },
+                {
+                    "type": "String",
+                    "name": "channelId"
+                },
+                {
+                    "type": "int",
+                    "name": "channelName"
+                },
+                {
+                    "type": "int",
+                    "name": "channelDescription"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 29049,
+            "end_position": 29438,
+            "body_start": 29276,
+            "body_end": 29438
+        },
+        {
+            "name": "createChannel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NotificationManager",
+                    "name": "notificationManager"
+                },
+                {
+                    "type": "String",
+                    "name": "channelId"
+                },
+                {
+                    "type": "int",
+                    "name": "channelName"
+                },
+                {
+                    "type": "int",
+                    "name": "channelDescription"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "int",
+                    "name": "importance"
+                }
+            ],
+            "start_position": 29444,
+            "end_position": 30262,
+            "body_start": 29687,
+            "body_end": 30262
+        },
+        {
+            "name": "string",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "id"
+                }
+            ],
+            "start_position": 30268,
+            "end_position": 30357,
+            "body_start": 30304,
+            "body_end": 30357
+        },
+        {
+            "name": "string",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "id"
+                },
+                {
+                    "type": "Object",
+                    "name": "args"
+                }
+            ],
+            "start_position": 30363,
+            "end_position": 30471,
+            "body_start": 30412,
+            "body_end": 30471
+        },
+        {
+            "name": "getAppContext",
+            "return_type": "Context",
+            "parameters": [],
+            "start_position": 30477,
+            "end_position": 30563,
+            "body_start": 30515,
+            "body_end": 30563
+        },
+        {
+            "name": "setAppContext",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 30569,
+            "end_position": 30685,
+            "body_start": 30619,
+            "body_end": 30685
+        },
+        {
+            "name": "getStoragePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 30691,
+            "end_position": 30772,
+            "body_start": 30729,
+            "body_end": 30772
+        },
+        {
+            "name": "setStoragePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 30778,
+            "end_position": 30868,
+            "body_start": 30825,
+            "body_end": 30868
+        },
+        {
+            "name": "getAccountType",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 31024,
+            "end_position": 31156,
+            "body_start": 31077,
+            "body_end": 31156
+        },
+        {
+            "name": "getAuthority",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 31259,
+            "end_position": 31345,
+            "body_start": 31295,
+            "body_end": 31345
+        },
+        {
+            "name": "getAuthTokenType",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 31454,
+            "end_position": 31544,
+            "body_start": 31494,
+            "body_end": 31544
+        },
+        {
+            "name": "getDBFile",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 31636,
+            "end_position": 31717,
+            "body_start": 31669,
+            "body_end": 31717
+        },
+        {
+            "name": "getDBName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 31806,
+            "end_position": 31887,
+            "body_start": 31839,
+            "body_end": 31887
+        },
+        {
+            "name": "getDataFolder",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 31954,
+            "end_position": 32043,
+            "body_start": 31991,
+            "body_end": 32043
+        },
+        {
+            "name": "showOnlyFilesOnDevice",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "state"
+                }
+            ],
+            "start_position": 32049,
+            "end_position": 32143,
+            "body_start": 32105,
+            "body_end": 32143
+        },
+        {
+            "name": "showOnlyPersonalFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "state"
+                }
+            ],
+            "start_position": 32149,
+            "end_position": 32248,
+            "body_start": 32205,
+            "body_end": 32248
+        },
+        {
+            "name": "isOnlyOnDevice",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 32254,
+            "end_position": 32330,
+            "body_start": 32293,
+            "body_end": 32330
+        },
+        {
+            "name": "isOnlyPersonFiles",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 32336,
+            "end_position": 32420,
+            "body_start": 32378,
+            "body_end": 32420
+        },
+        {
+            "name": "getUserAgent",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 32426,
+            "end_position": 32586,
+            "body_start": 32462,
+            "body_end": 32586
+        },
+        {
+            "name": "showMessage",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "messageId"
+                }
+            ],
+            "start_position": 32592,
+            "end_position": 32712,
+            "body_start": 32638,
+            "body_end": 32712
+        },
+        {
+            "name": "getUserAgent",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "agent"
+                }
+            ],
+            "start_position": 32736,
+            "end_position": 33419,
+            "body_start": 32793,
+            "body_end": 33419
+        },
+        {
+            "name": "updateToAutoUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 33425,
+            "end_position": 34011,
+            "body_start": 33481,
+            "body_end": 34011
+        },
+        {
+            "name": "showAutoUploadAlertDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 34017,
+            "end_position": 34736,
+            "body_start": 34080,
+            "body_end": 34736
+        },
+        {
+            "name": "updateAutoUploadEntries",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Clock",
+                    "name": "clock"
+                }
+            ],
+            "start_position": 34742,
+            "end_position": 35291,
+            "body_start": 34799,
+            "body_end": 35291
+        },
+        {
+            "name": "splitOutAutoUploadEntries",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Clock",
+                    "name": "clock"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 35297,
+            "end_position": 39500,
+            "body_start": 35443,
+            "body_end": 39500
+        },
+        {
+            "name": "cleanOldEntries",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Clock",
+                    "name": "clock"
+                }
+            ],
+            "start_position": 39506,
+            "end_position": 41315,
+            "body_start": 39555,
+            "body_end": 41315
+        },
+        {
+            "name": "androidInjector",
+            "return_type": "AndroidInjector<Object>",
+            "parameters": [],
+            "start_position": 41321,
+            "end_position": 41434,
+            "body_start": 41384,
+            "body_end": 41434
+        },
+        {
+            "name": "setAppTheme",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DarkMode",
+                    "name": "mode"
+                }
+            ],
+            "start_position": 41440,
+            "end_position": 41833,
+            "body_start": 41486,
+            "body_end": 41833
+        },
+        {
+            "name": "networkAndServerConnectionListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isNetworkAndServerAvailable"
+                }
+            ],
+            "start_position": 41839,
+            "end_position": 42228,
+            "body_start": 41937,
+            "body_end": 42228
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "break_statement",
+        "throw_statement",
+        "try_statement"
+    ],
+    "local_variables": {
+        "filter": "IntentFilter",
+        "processName": "String",
+        "manager": "ActivityManager",
+        "ownPid": "int",
+        "processes": "List<ActivityManager.RunningAppProcessInfo>",
+        "isCrashReportingProcess": "boolean",
+        "defaultPlatformHandler": "Thread.UncaughtExceptionHandler",
+        "crashReporter": "ExceptionHandler",
+        "startedMigrationsCount": "int",
+        "m": "Method",
+        "packageName": "String",
+        "providerClassName": "String",
+        "componentName": "ComponentName",
+        "packageManager": "PackageManager",
+        "host": "String",
+        "port": "int",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "users": "List<User>",
+        "version": "String",
+        "engine": "SSLEngine",
+        "storagePoints": "StoragePoint[]",
+        "storagePath": "String",
+        "set": "boolean",
+        "context": "Context",
+        "notificationManager": "NotificationManager",
+        "name": "CharSequence",
+        "description": "String",
+        "channel": "NotificationChannel",
+        "appString": "String",
+        "brandedName": "String",
+        "pInfo": "PackageInfo",
+        "preferences": "AppPreferences",
+        "folderSyncIntent": "Intent",
+        "syncedFolderProvider": "SyncedFolderProvider",
+        "contentResolver": "ContentResolver",
+        "imageMediaFolders": "List<MediaFolder>",
+        "videoMediaFolders": "List<MediaFolder>",
+        "idsToDelete": "ArrayList<Long>",
+        "syncedFolders": "Map<Pair<String, String>, Long>",
+        "primaryKey": "long",
+        "newSyncedFolder": "SyncedFolder",
+        "absolutePathOfImageFolder": "String",
+        "absolutePathOfVideoFolder": "String",
+        "syncedFolderList": "List<SyncedFolder>",
+        "checkPair": "Pair<String, String>",
+        "folderId": "Long",
+        "ids": "ArrayList<Long>",
+        "deletedCount": "int"
+    }
+}

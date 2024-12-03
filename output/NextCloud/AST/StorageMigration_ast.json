@@ -1,0 +1,508 @@
+{
+    "method_calls": {
+        "StorageMigration.class": [
+            "getName"
+        ],
+        "unknown": [
+            "storageFolderAlreadyExists",
+            "askToOverride",
+            "createMigrationProgressDialog",
+            "askToStillMove",
+            "publishProgress",
+            "saveAccountsSyncStatus",
+            "stopAccountsSyncing",
+            "waitForUnfinishedSynchronizations",
+            "restoreAccountsSyncStatus",
+            "deleteRecursive",
+            "checkDestinationAvailability",
+            "copyFiles",
+            "updateIndex",
+            "cleanup",
+            "rollback",
+            "copyDirs"
+        ],
+        "progressDialog": [
+            "show",
+            "getButton",
+            "setCancelable",
+            "setTitle",
+            "setMessage",
+            "setButton"
+        ],
+        "new FileMigrationTask(\n                    mContext,\n                    user,\n                    mSourceStoragePath,\n                    mTargetStoragePath,\n                    progressDialog,\n                    mListener,\n                    viewThemeUtils)": [
+            "execute"
+        ],
+        "progressDialog.getButton(ProgressDialog.BUTTON_POSITIVE)": [
+            "setVisibility"
+        ],
+        "MainApp": [
+            "getDataFolder",
+            "getAccountType"
+        ],
+        "f": [
+            "exists",
+            "isDirectory",
+            "getName",
+            "listFiles",
+            "delete"
+        ],
+        "new MaterialAlertDialogBuilder(context)\n            .setMessage(R.string.file_migration_directory_already_exists)\n            .setCancelable(true)\n            .setOnCancelListener(dialogInterface -> {\n\n            })\n            .setNegativeButton(R.string.common_cancel, (dialogInterface, i) -> {\n\n            })\n            .setNeutralButton(R.string.file_migration_use_data_folder, (dialogInterface, i) -> {\n\n            })": [
+            "setPositiveButton"
+        ],
+        "new MaterialAlertDialogBuilder(context)\n            .setMessage(R.string.file_migration_directory_already_exists)\n            .setCancelable(true)\n            .setOnCancelListener(dialogInterface -> {\n\n            })\n            .setNegativeButton(R.string.common_cancel, (dialogInterface, i) -> {\n\n            })": [
+            "setNeutralButton"
+        ],
+        "new MaterialAlertDialogBuilder(context)\n            .setMessage(R.string.file_migration_directory_already_exists)\n            .setCancelable(true)\n            .setOnCancelListener(dialogInterface -> {\n\n            })": [
+            "setNegativeButton"
+        ],
+        "new MaterialAlertDialogBuilder(context)\n            .setMessage(R.string.file_migration_directory_already_exists)\n            .setCancelable(true)": [
+            "setOnCancelListener"
+        ],
+        "new MaterialAlertDialogBuilder(context)\n            .setMessage(R.string.file_migration_directory_already_exists)": [
+            "setCancelable"
+        ],
+        "new MaterialAlertDialogBuilder(context)": [
+            "setMessage"
+        ],
+        "viewThemeUtils.dialog": [
+            "colorMaterialAlertDialogBackground"
+        ],
+        "builder": [
+            "create"
+        ],
+        "alertDialog": [
+            "show"
+        ],
+        "new MaterialAlertDialogBuilder(mContext)\n                .setMessage(R.string.file_migration_directory_already_exists)\n                .setCancelable(true)\n                .setOnCancelListener(dialogInterface -> {\n                    if (mListener != null) {\n                        mListener.onCancelMigration();\n                    }\n                })\n                .setNegativeButton(R.string.common_cancel, (dialogInterface, i) -> {\n                    if (mListener != null) {\n                        mListener.onCancelMigration();\n                    }\n                })\n                .setNeutralButton(R.string.file_migration_use_data_folder, (dialogInterface, i) -> {\n                    ProgressDialog progressDialog = createMigrationProgressDialog();\n                    progressDialog.show();\n                    new StoragePathSwitchTask(\n                            mContext,\n                            user,\n                            mSourceStoragePath,\n                            mTargetStoragePath,\n                            progressDialog,\n                            mListener,\n                            viewThemeUtils).execute();\n\n                    progressDialog.getButton(ProgressDialog.BUTTON_POSITIVE).setVisibility(View.GONE);\n\n                })": [
+            "setPositiveButton"
+        ],
+        "new MaterialAlertDialogBuilder(mContext)\n                .setMessage(R.string.file_migration_directory_already_exists)\n                .setCancelable(true)\n                .setOnCancelListener(dialogInterface -> {\n                    if (mListener != null) {\n                        mListener.onCancelMigration();\n                    }\n                })\n                .setNegativeButton(R.string.common_cancel, (dialogInterface, i) -> {\n                    if (mListener != null) {\n                        mListener.onCancelMigration();\n                    }\n                })": [
+            "setNeutralButton"
+        ],
+        "new MaterialAlertDialogBuilder(mContext)\n                .setMessage(R.string.file_migration_directory_already_exists)\n                .setCancelable(true)\n                .setOnCancelListener(dialogInterface -> {\n                    if (mListener != null) {\n                        mListener.onCancelMigration();\n                    }\n                })": [
+            "setNegativeButton"
+        ],
+        "new MaterialAlertDialogBuilder(mContext)\n                .setMessage(R.string.file_migration_directory_already_exists)\n                .setCancelable(true)": [
+            "setOnCancelListener"
+        ],
+        "new MaterialAlertDialogBuilder(mContext)\n                .setMessage(R.string.file_migration_directory_already_exists)": [
+            "setCancelable"
+        ],
+        "new MaterialAlertDialogBuilder(mContext)": [
+            "setMessage",
+            "setTitle"
+        ],
+        "mListener": [
+            "onCancelMigration",
+            "onStorageMigrationFinished"
+        ],
+        "new StoragePathSwitchTask(\n                            mContext,\n                            user,\n                            mSourceStoragePath,\n                            mTargetStoragePath,\n                            progressDialog,\n                            mListener,\n                            viewThemeUtils)": [
+            "execute"
+        ],
+        "new FileMigrationTask(\n                            mContext,\n                            user,\n                            mSourceStoragePath,\n                            mTargetStoragePath,\n                            progressDialog,\n                            mListener,\n                            viewThemeUtils)": [
+            "execute"
+        ],
+        "builder.create()": [
+            "show"
+        ],
+        "mContext": [
+            "getString",
+            "getResources"
+        ],
+        "dialogInterface": [
+            "dismiss"
+        ],
+        "AccountManager.get(mContext)": [
+            "getAccountsByType"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "mProgressDialog": [
+            "setMessage",
+            "hide",
+            "getButton",
+            "setIndeterminateDrawable"
+        ],
+        "mProgressDialog.getButton(ProgressDialog.BUTTON_POSITIVE)": [
+            "setVisibility"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "new MaterialAlertDialogBuilder(mContext)\n                    .setTitle(R.string.file_migration_source_not_readable_title)\n                    .setMessage(mContext.getString(R.string.file_migration_source_not_readable, mStorageTarget))\n                    .setNegativeButton(R.string.common_no, (dialogInterface, i) -> dialogInterface.dismiss())": [
+            "setPositiveButton"
+        ],
+        "new MaterialAlertDialogBuilder(mContext)\n                    .setTitle(R.string.file_migration_source_not_readable_title)\n                    .setMessage(mContext.getString(R.string.file_migration_source_not_readable, mStorageTarget))": [
+            "setNegativeButton"
+        ],
+        "new MaterialAlertDialogBuilder(mContext)\n                    .setTitle(R.string.file_migration_source_not_readable_title)": [
+            "setMessage"
+        ],
+        "ContentResolver": [
+            "getSyncAutomatically",
+            "setSyncAutomatically",
+            "isSyncActive"
+        ],
+        "Thread": [
+            "sleep",
+            "currentThread"
+        ],
+        "Log_OC": [
+            "w",
+            "e"
+        ],
+        "Thread.currentThread()": [
+            "interrupt"
+        ],
+        "dstFile": [
+            "delete",
+            "canRead",
+            "canWrite",
+            "getFreeSpace",
+            "exists"
+        ],
+        "srcFile": [
+            "mkdirs",
+            "canRead",
+            "canWrite",
+            "delete"
+        ],
+        "e": [
+            "getResId",
+            "getMessage"
+        ],
+        "new File(dstFile, MainApp.getDataFolder())": [
+            "exists"
+        ],
+        "FileStorageUtils": [
+            "getFolderSize",
+            "copyFile"
+        ],
+        "dst": [
+            "mkdirs"
+        ],
+        "src": [
+            "listFiles"
+        ],
+        "context": [
+            "getContentResolver"
+        ],
+        "manager": [
+            "migrateStoredFiles"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onStorageMigrationFinished",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "storagePath"
+                },
+                {
+                    "type": "boolean",
+                    "name": "succeed"
+                }
+            ],
+            "start_position": 1592,
+            "end_position": 1661
+        },
+        {
+            "name": "onCancelMigration",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1670,
+            "end_position": 1695
+        },
+        {
+            "name": "setStorageMigrationProgressListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "StorageMigrationProgressListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 2023,
+            "end_position": 2151,
+            "body_start": 2114,
+            "body_end": 2151
+        },
+        {
+            "name": "migrate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2157,
+            "end_position": 2779,
+            "body_start": 2179,
+            "body_end": 2779
+        },
+        {
+            "name": "storageFolderAlreadyExists",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2785,
+            "end_position": 2955,
+            "body_start": 2830,
+            "body_end": 2955
+        },
+        {
+            "name": "a",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 2961,
+            "end_position": 3802,
+            "body_start": 3030,
+            "body_end": 3802
+        },
+        {
+            "name": "askToOverride",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3808,
+            "end_position": 6009,
+            "body_start": 3837,
+            "body_end": 6009
+        },
+        {
+            "name": "createMigrationProgressDialog",
+            "return_type": "ProgressDialog",
+            "parameters": [],
+            "start_position": 6015,
+            "end_position": 6770,
+            "body_start": 6070,
+            "body_end": 6770
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DialogInterface",
+                    "name": "dialogInterface"
+                },
+                {
+                    "type": "int",
+                    "name": "i"
+                }
+            ],
+            "start_position": 6549,
+            "end_position": 6713,
+            "body_start": 6639,
+            "body_end": 6713
+        },
+        {
+            "name": "onProgressUpdate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8166,
+            "end_position": 8398,
+            "body_start": 8237,
+            "body_end": 8398
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Integer",
+                    "name": "code"
+                }
+            ],
+            "start_position": 8408,
+            "end_position": 9648,
+            "body_start": 8469,
+            "body_end": 9648
+        },
+        {
+            "name": "askToStillMove",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9658,
+            "end_position": 10499,
+            "body_start": 9688,
+            "body_end": 10499
+        },
+        {
+            "name": "saveAccountsSyncStatus",
+            "return_type": "boolean[]",
+            "parameters": [],
+            "start_position": 10509,
+            "end_position": 10820,
+            "body_start": 10554,
+            "body_end": 10820
+        },
+        {
+            "name": "stopAccountsSyncing",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10830,
+            "end_position": 11028,
+            "body_start": 10867,
+            "body_end": 11028
+        },
+        {
+            "name": "waitForUnfinishedSynchronizations",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11038,
+            "end_position": 11571,
+            "body_start": 11089,
+            "body_end": 11571
+        },
+        {
+            "name": "restoreAccountsSyncStatus",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11581,
+            "end_position": 12144,
+            "body_start": 11642,
+            "body_end": 12144
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Integer",
+            "parameters": [],
+            "start_position": 12767,
+            "end_position": 13497,
+            "body_start": 12833,
+            "body_end": 13497
+        },
+        {
+            "name": "getResId",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 14022,
+            "end_position": 14063,
+            "body_start": 14045,
+            "body_end": 14063
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Integer",
+            "parameters": [],
+            "start_position": 14582,
+            "end_position": 16234,
+            "body_start": 14647,
+            "body_end": 16234
+        },
+        {
+            "name": "checkDestinationAvailability",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 16245,
+            "end_position": 17314,
+            "body_start": 16315,
+            "body_end": 17314
+        },
+        {
+            "name": "copyFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 17324,
+            "end_position": 17619,
+            "body_start": 17375,
+            "body_end": 17619
+        },
+        {
+            "name": "copyDirs",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "src"
+                },
+                {
+                    "type": "File",
+                    "name": "dst"
+                }
+            ],
+            "start_position": 17629,
+            "end_position": 18208,
+            "body_start": 17697,
+            "body_end": 18208
+        },
+        {
+            "name": "updateIndex",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 18218,
+            "end_position": 18701,
+            "body_start": 18286,
+            "body_end": 18701
+        },
+        {
+            "name": "cleanup",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 18711,
+            "end_position": 18994,
+            "body_start": 18734,
+            "body_end": 18994
+        },
+        {
+            "name": "deleteRecursive",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "f"
+                }
+            ],
+            "start_position": 19004,
+            "end_position": 19292,
+            "body_start": 19044,
+            "body_end": 19292
+        },
+        {
+            "name": "rollback",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 19302,
+            "end_position": 19559,
+            "body_start": 19326,
+            "body_end": 19559
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "for_statement",
+        "enhanced_for_statement",
+        "while_statement",
+        "try_statement",
+        "throw_statement"
+    ],
+    "local_variables": {
+        "progressDialog": "ProgressDialog",
+        "f": "File",
+        "builder": "MaterialAlertDialogBuilder",
+        "alertDialog": "AlertDialog",
+        "succeed": "boolean",
+        "syncs": "boolean[]",
+        "i": "int",
+        "syncStates": "boolean[]",
+        "syncState": "boolean[]",
+        "dstFile": "File",
+        "srcFile": "File",
+        "manager": "FileDataStorageManager",
+        "res": "boolean"
+    }
+}

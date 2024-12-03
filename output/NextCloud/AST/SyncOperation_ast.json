@@ -1,0 +1,86 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "throw_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "execute",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 1792,
+            "end_position": 2177,
+            "body_start": 1846,
+            "body_end": 2177
+        },
+        {
+            "name": "execute",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "NextcloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 2183,
+            "end_position": 2288,
+            "body_start": 2253,
+            "body_end": 2288
+        },
+        {
+            "name": "execute",
+            "return_type": "Thread",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "OnRemoteOperationListener",
+                    "name": "listener"
+                },
+                {
+                    "type": "Handler",
+                    "name": "listenerHandler"
+                }
+            ],
+            "start_position": 2827,
+            "end_position": 3057,
+            "body_start": 2985,
+            "body_end": 3057
+        },
+        {
+            "name": "getStorageManager",
+            "return_type": "FileDataStorageManager",
+            "parameters": [],
+            "start_position": 3063,
+            "end_position": 3156,
+            "body_start": 3113,
+            "body_end": 3156
+        }
+    ],
+    "method_calls": {
+        "storageManager.getUser()": [
+            "isAnonymous"
+        ],
+        "storageManager": [
+            "getUser"
+        ],
+        "super": [
+            "execute"
+        ],
+        "this.storageManager": [
+            "getUser"
+        ],
+        "unknown": [
+            "run"
+        ]
+    }
+}

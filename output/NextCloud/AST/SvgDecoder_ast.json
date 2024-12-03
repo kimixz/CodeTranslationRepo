@@ -1,0 +1,57 @@
+{
+    "methods": [
+        {
+            "name": "decode",
+            "return_type": "Resource<SVG>",
+            "parameters": [
+                {
+                    "type": "InputStream",
+                    "name": "source"
+                },
+                {
+                    "type": "int",
+                    "name": "w"
+                },
+                {
+                    "type": "int",
+                    "name": "h"
+                }
+            ],
+            "start_position": 899,
+            "end_position": 1478,
+            "body_start": 980,
+            "body_end": 1478
+        },
+        {
+            "name": "getId",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1484,
+            "end_position": 1577,
+            "body_start": 1520,
+            "body_end": 1577
+        }
+    ],
+    "code_constructs": [
+        "try_statement",
+        "expression_statement",
+        "return_statement",
+        "throw_statement"
+    ],
+    "local_variables": {
+        "svg": "SVG"
+    },
+    "method_calls": {
+        "SVG": [
+            "getFromInputStream"
+        ],
+        "svg": [
+            "setDocumentViewBox",
+            "getDocumentWidth",
+            "getDocumentHeight",
+            "setDocumentWidth",
+            "setDocumentHeight",
+            "setDocumentPreserveAspectRatio"
+        ]
+    }
+}

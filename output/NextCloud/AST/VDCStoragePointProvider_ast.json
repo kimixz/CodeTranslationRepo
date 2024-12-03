@@ -1,0 +1,77 @@
+{
+    "method_calls": {
+        "VDCStoragePointProvider.class": [
+            "getSimpleName"
+        ],
+        "result": [
+            "addAll",
+            "add"
+        ],
+        "unknown": [
+            "getPaths",
+            "getCommandLineResult",
+            "canBeAddedToAvailableList"
+        ],
+        "vdcResources": [
+            "split"
+        ],
+        "line": [
+            "split"
+        ],
+        "Integer": [
+            "parseInt"
+        ],
+        "Log_OC": [
+            "e"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getAvailableStoragePoint",
+            "return_type": "List<StoragePoint>",
+            "parameters": [],
+            "start_position": 824,
+            "end_position": 1032,
+            "body_start": 891,
+            "body_end": 1032
+        },
+        {
+            "name": "getCommand",
+            "return_type": "String[]",
+            "parameters": [],
+            "start_position": 1038,
+            "end_position": 1126,
+            "body_start": 1084,
+            "body_end": 1126
+        },
+        {
+            "name": "getPaths",
+            "return_type": "List<StoragePoint>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "vdcResources"
+                }
+            ],
+            "start_position": 1132,
+            "end_position": 2151,
+            "body_start": 1189,
+            "body_end": 2151
+        }
+    ],
+    "local_variables": {
+        "result": "List<StoragePoint>",
+        "vdcLine": "String",
+        "status": "int",
+        "description": "String",
+        "path": "String"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "enhanced_for_statement",
+        "try_statement",
+        "if_statement",
+        "continue_statement"
+    ]
+}

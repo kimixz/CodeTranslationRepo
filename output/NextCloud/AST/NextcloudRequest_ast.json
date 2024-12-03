@@ -1,0 +1,261 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "build",
+            "return_type": "NextcloudRequest",
+            "parameters": [],
+            "start_position": 1284,
+            "end_position": 1351,
+            "body_start": 1316,
+            "body_end": 1351
+        },
+        {
+            "name": "setMethod",
+            "return_type": "Builder",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "method"
+                }
+            ],
+            "start_position": 1361,
+            "end_position": 1470,
+            "body_start": 1401,
+            "body_end": 1470
+        },
+        {
+            "name": "setHeader",
+            "return_type": "Builder",
+            "parameters": [
+                {
+                    "type": "Map<String, List<String>>",
+                    "name": "header"
+                }
+            ],
+            "start_position": 1480,
+            "end_position": 1608,
+            "body_start": 1539,
+            "body_end": 1608
+        },
+        {
+            "name": "setParameter",
+            "return_type": "Builder",
+            "parameters": [
+                {
+                    "type": "Map<String, String>",
+                    "name": "parameter"
+                }
+            ],
+            "start_position": 1618,
+            "end_position": 1752,
+            "body_start": 1677,
+            "body_end": 1752
+        },
+        {
+            "name": "setRequestBody",
+            "return_type": "Builder",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "requestBody"
+                }
+            ],
+            "start_position": 1762,
+            "end_position": 1891,
+            "body_start": 1812,
+            "body_end": 1891
+        },
+        {
+            "name": "setUrl",
+            "return_type": "Builder",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 1901,
+            "end_position": 1998,
+            "body_start": 1935,
+            "body_end": 1998
+        },
+        {
+            "name": "setToken",
+            "return_type": "Builder",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 2008,
+            "end_position": 2113,
+            "body_start": 2046,
+            "body_end": 2113
+        },
+        {
+            "name": "setAccountName",
+            "return_type": "Builder",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 2123,
+            "end_position": 2252,
+            "body_start": 2173,
+            "body_end": 2252
+        },
+        {
+            "name": "setFollowRedirects",
+            "return_type": "Builder",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "followRedirects"
+                }
+            ],
+            "start_position": 2370,
+            "end_position": 2516,
+            "body_start": 2429,
+            "body_end": 2516
+        },
+        {
+            "name": "getMethod",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 2528,
+            "end_position": 2589,
+            "body_start": 2554,
+            "body_end": 2589
+        },
+        {
+            "name": "getHeader",
+            "return_type": "Map<String, List<String>>",
+            "parameters": [],
+            "start_position": 2595,
+            "end_position": 2675,
+            "body_start": 2640,
+            "body_end": 2675
+        },
+        {
+            "name": "getParameter",
+            "return_type": "Map<String, String>",
+            "parameters": [],
+            "start_position": 2681,
+            "end_position": 2761,
+            "body_start": 2723,
+            "body_end": 2761
+        },
+        {
+            "name": "getRequestBody",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 2767,
+            "end_position": 2838,
+            "body_start": 2798,
+            "body_end": 2838
+        },
+        {
+            "name": "getUrl",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 2844,
+            "end_position": 2899,
+            "body_start": 2867,
+            "body_end": 2899
+        },
+        {
+            "name": "getToken",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 2905,
+            "end_position": 2964,
+            "body_start": 2930,
+            "body_end": 2964
+        },
+        {
+            "name": "setToken",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 2970,
+            "end_position": 3040,
+            "body_start": 3005,
+            "body_end": 3040
+        },
+        {
+            "name": "getPackageName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 3046,
+            "end_position": 3117,
+            "body_start": 3077,
+            "body_end": 3117
+        },
+        {
+            "name": "setPackageName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "packageName"
+                }
+            ],
+            "start_position": 3123,
+            "end_position": 3217,
+            "body_start": 3170,
+            "body_end": 3217
+        },
+        {
+            "name": "getAccountName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 3223,
+            "end_position": 3294,
+            "body_start": 3254,
+            "body_end": 3294
+        },
+        {
+            "name": "setAccountName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 3300,
+            "end_position": 3394,
+            "body_start": 3347,
+            "body_end": 3394
+        },
+        {
+            "name": "isFollowRedirects",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3400,
+            "end_position": 3479,
+            "body_start": 3435,
+            "body_end": 3479
+        },
+        {
+            "name": "getParameterV2",
+            "return_type": "Collection<QueryParam>",
+            "parameters": [],
+            "start_position": 3485,
+            "end_position": 3567,
+            "body_start": 3532,
+            "body_end": 3567
+        }
+    ]
+}

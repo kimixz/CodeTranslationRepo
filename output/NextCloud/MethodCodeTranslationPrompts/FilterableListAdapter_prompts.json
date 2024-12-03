@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "filter",
+        "method_code": "void filter(String text);",
+        "prompt": "\n        Please translate the following Java (Android) method titled filter from FilterableListAdapter.java into Swift.\n\n        Input:\n\n        Method Name: filter\n\n        Method Code: void filter(String text);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc filter(text: String) {\n    // Implementation goes here\n}\n```"
+    }
+]

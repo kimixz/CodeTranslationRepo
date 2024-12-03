@@ -1,0 +1,16 @@
+{
+    "methods": [
+        {
+            "name": "onCheckIsTextEditor",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 567,
+            "end_position": 648,
+            "body_start": 619,
+            "body_end": 648
+        }
+    ],
+    "code_constructs": [
+        "return_statement"
+    ]
+}

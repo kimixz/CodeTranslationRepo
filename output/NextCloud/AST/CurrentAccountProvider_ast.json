@@ -1,0 +1,23 @@
+{
+    "methods": [
+        {
+            "name": "getCurrentAccount",
+            "return_type": "Account",
+            "parameters": [],
+            "start_position": 687,
+            "end_position": 744
+        },
+        {
+            "name": "getUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 923,
+            "end_position": 1009,
+            "body_start": 959,
+            "body_end": 1009
+        }
+    ],
+    "code_constructs": [
+        "return_statement"
+    ]
+}

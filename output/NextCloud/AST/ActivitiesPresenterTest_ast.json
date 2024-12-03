@@ -1,0 +1,117 @@
+{
+    "methods": [
+        {
+            "name": "setupActivitiesPresenter",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1695,
+            "end_position": 2686,
+            "body_start": 1746,
+            "body_end": 2686
+        },
+        {
+            "name": "loadInitialActivitiesFromRepositoryIntoView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2692,
+            "end_position": 3537,
+            "body_start": 2760,
+            "body_end": 3537
+        },
+        {
+            "name": "loadFollowUpActivitiesFromRepositoryIntoView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3543,
+            "end_position": 4402,
+            "body_start": 3612,
+            "body_end": 4402
+        },
+        {
+            "name": "loadActivitiesFromRepositoryShowError",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4408,
+            "end_position": 5004,
+            "body_start": 4470,
+            "body_end": 5004
+        },
+        {
+            "name": "loadRemoteFileFromRepositoryShowDetailUI",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5010,
+            "end_position": 5841,
+            "body_start": 5075,
+            "body_end": 5841
+        },
+        {
+            "name": "loadRemoteFileFromRepositoryShowEmptyFile",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5847,
+            "end_position": 6704,
+            "body_start": 5913,
+            "body_end": 6704
+        },
+        {
+            "name": "loadRemoteFileFromRepositoryShowError",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6710,
+            "end_position": 7558,
+            "body_start": 6772,
+            "body_end": 7558
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "MockitoAnnotations": [
+            "initMocks"
+        ],
+        "activitiesList": [
+            "add"
+        ],
+        "activitiesPresenter": [
+            "loadActivities",
+            "openActivity"
+        ],
+        "verify(view)": [
+            "showLoadingMessage",
+            "setProgressIndicatorState",
+            "showActivities",
+            "showActivitiesLoadError",
+            "showActivityDetailUI",
+            "showActivityDetailUIIsNull",
+            "showActivityDetailError"
+        ],
+        "unknown": [
+            "verify",
+            "eq"
+        ],
+        "verify(activitiesRepository)": [
+            "getActivities"
+        ],
+        "loadActivitiesCallbackArgumentCaptor": [
+            "capture",
+            "getValue"
+        ],
+        "loadActivitiesCallbackArgumentCaptor.getValue()": [
+            "onActivitiesLoaded",
+            "onActivitiesLoadedError"
+        ],
+        "verify(filesRepository)": [
+            "readRemoteFile"
+        ],
+        "readRemoteFileCallbackArgumentCaptor": [
+            "capture",
+            "getValue"
+        ],
+        "readRemoteFileCallbackArgumentCaptor.getValue()": [
+            "onFileLoaded",
+            "onFileLoadError"
+        ]
+    }
+}

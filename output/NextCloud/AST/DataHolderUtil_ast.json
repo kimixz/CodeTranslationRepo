@@ -1,0 +1,92 @@
+{
+    "methods": [
+        {
+            "name": "getInstance",
+            "return_type": "DataHolderUtil",
+            "parameters": [],
+            "start_position": 827,
+            "end_position": 1043,
+            "body_start": 924,
+            "body_end": 1043
+        },
+        {
+            "name": "save",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "id"
+                },
+                {
+                    "type": "Object",
+                    "name": "object"
+                }
+            ],
+            "start_position": 1049,
+            "end_position": 1156,
+            "body_start": 1092,
+            "body_end": 1156
+        },
+        {
+            "name": "retrieve",
+            "return_type": "Object",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "id"
+                }
+            ],
+            "start_position": 1162,
+            "end_position": 1311,
+            "body_start": 1196,
+            "body_end": 1311
+        },
+        {
+            "name": "delete",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "id"
+                }
+            ],
+            "start_position": 1317,
+            "end_position": 1419,
+            "body_start": 1347,
+            "body_end": 1419
+        },
+        {
+            "name": "nextItemId",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1425,
+            "end_position": 1680,
+            "body_start": 1452,
+            "body_end": 1680
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement",
+        "while_statement"
+    ],
+    "method_calls": {
+        "data": [
+            "put",
+            "get",
+            "remove",
+            "containsKey"
+        ],
+        "objectWeakReference": [
+            "get"
+        ],
+        "new BigInteger(130, random)": [
+            "toString"
+        ]
+    },
+    "local_variables": {
+        "objectWeakReference": "WeakReference<Object>",
+        "nextItemId": "String"
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "method_calls": {
+        "RichDocumentsUrlOperation.class": [
+            "getSimpleName"
+        ],
+        "client": [
+            "getBaseUri",
+            "executeMethod",
+            "exhaustResponse"
+        ],
+        "postMethod": [
+            "setParameter",
+            "addRequestHeader",
+            "getResponseBodyAsString",
+            "getResponseBodyAsStream",
+            "releaseConnection"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "respJSON.getJSONObject(NODE_OCS).getJSONObject(NODE_DATA)": [
+            "getString"
+        ],
+        "respJSON.getJSONObject(NODE_OCS)": [
+            "getJSONObject"
+        ],
+        "respJSON": [
+            "getJSONObject"
+        ],
+        "result": [
+            "setSingleData",
+            "getLogMessage",
+            "getException"
+        ],
+        "Log_OC": [
+            "e"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1613,
+            "end_position": 3210,
+            "body_start": 1703,
+            "body_end": 3210
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult",
+        "postMethod": "Utf8PostMethod",
+        "status": "int",
+        "response": "String",
+        "respJSON": "JSONObject",
+        "url": "String"
+    }
+}

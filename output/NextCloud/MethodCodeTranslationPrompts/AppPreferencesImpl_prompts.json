@@ -1,0 +1,644 @@
+[
+    {
+        "method_name": "add",
+        "method_code": "oid add(@Nullable final Listener listener) {\n            if (listener != null) {\n                listeners.add(listener);\n            }\n        }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled add from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: add\n\n        Method Code: oid add(@Nullable final Listener listener) {\n            if (listener != null) {\n                listeners.add(listener);\n            }\n        }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc add(listener: Listener?) {\n    if let listener = listener {\n        listeners.append(listener)\n    }\n}\n```"
+    },
+    {
+        "method_name": "remove",
+        "method_code": "oid remove(@Nullable final Listener listener) {\n            if (listener != null) {\n                listeners.remove(listener);\n            }\n        }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled remove from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: remove\n\n        Method Code: oid remove(@Nullable final Listener listener) {\n            if (listener != null) {\n                listeners.remove(listener);\n            }\n        }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc remove(listener: Listener?) {\n    if let listener = listener {\n        listeners.remove(listener)\n    }\n}\n```"
+    },
+    {
+        "method_name": "onSharedPreferenceChanged",
+        "method_code": "Override\n        public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {\n            if (PREF__DARK_THEME.equals(key)) {\n                DarkMode mode = preferences.getDarkThemeMode();\n                for (Listener l : listeners) {\n                    l.onDarkThemeModeChanged(mode);\n                }\n            }\n        }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled onSharedPreferenceChanged from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: onSharedPreferenceChanged\n\n        Method Code: Override\n        public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {\n            if (PREF__DARK_THEME.equals(key)) {\n                DarkMode mode = preferences.getDarkThemeMode();\n                for (Listener l : listeners) {\n                    l.onDarkThemeModeChanged(mode);\n                }\n            }\n        }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onSharedPreferenceChanged(sharedPreferences: UserDefaults, key: String) {\n    if key == PREF__DARK_THEME {\n        let mode = preferences.getDarkThemeMode()\n        for listener in listeners {\n            listener.onDarkThemeModeChanged(mode: mode)\n        }\n    }\n}\n```"
+    },
+    {
+        "method_name": "fromContext",
+        "method_code": "Deprecated\n    public static AppPreferences fromContext(Context context) {\n        final UserAccountManager userAccountManager = UserAccountManagerImpl.fromContext(context);\n        final SharedPreferences prefs = android.preference.PreferenceManager.getDefaultSharedPreferences(context);\n        return new AppPreferencesImpl(context, prefs, userAccountManager);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled fromContext from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: fromContext\n\n        Method Code: Deprecated\n    public static AppPreferences fromContext(Context context) {\n        final UserAccountManager userAccountManager = UserAccountManagerImpl.fromContext(context);\n        final SharedPreferences prefs = android.preference.PreferenceManager.getDefaultSharedPreferences(context);\n        return new AppPreferencesImpl(context, prefs, userAccountManager);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@available(*, deprecated)\npublic static func fromContext(_ context: Context) -> AppPreferences {\n    let userAccountManager = UserAccountManagerImpl.fromContext(context)\n    let prefs = UserDefaults.standard\n    return AppPreferencesImpl(context: context, prefs: prefs, userAccountManager: userAccountManager)\n}\n```"
+    },
+    {
+        "method_name": "addListener",
+        "method_code": "Override\n    public void addListener(@Nullable AppPreferences.Listener listener) {\n        this.listeners.add(listener);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled addListener from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: addListener\n\n        Method Code: Override\n    public void addListener(@Nullable AppPreferences.Listener listener) {\n        this.listeners.add(listener);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc addListener(_ listener: AppPreferences.Listener?) {\n    self.listeners.append(listener)\n}\n```"
+    },
+    {
+        "method_name": "removeListener",
+        "method_code": "Override\n    public void removeListener(@Nullable AppPreferences.Listener listener) {\n        this.listeners.remove(listener);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled removeListener from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: removeListener\n\n        Method Code: Override\n    public void removeListener(@Nullable AppPreferences.Listener listener) {\n        this.listeners.remove(listener);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc removeListener(_ listener: AppPreferences.Listener?) {\n    self.listeners.remove(listener)\n}\n```"
+    },
+    {
+        "method_name": "setKeysReInitEnabled",
+        "method_code": "Override\n    public void setKeysReInitEnabled() {\n        preferences.edit().putBoolean(PREF__KEYS_REINIT, true).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setKeysReInitEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setKeysReInitEnabled\n\n        Method Code: Override\n    public void setKeysReInitEnabled() {\n        preferences.edit().putBoolean(PREF__KEYS_REINIT, true).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setKeysReInitEnabled() {\n    UserDefaults.standard.set(true, forKey: \"PREF__KEYS_REINIT\")\n}\n```"
+    },
+    {
+        "method_name": "isKeysReInitEnabled",
+        "method_code": "Override\n    public boolean isKeysReInitEnabled() {\n        return preferences.getBoolean(PREF__KEYS_REINIT, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isKeysReInitEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isKeysReInitEnabled\n\n        Method Code: Override\n    public boolean isKeysReInitEnabled() {\n        return preferences.getBoolean(PREF__KEYS_REINIT, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func isKeysReInitEnabled() -> Bool {\n    return preferences.bool(forKey: PREF__KEYS_REINIT) ?? false\n}\n```"
+    },
+    {
+        "method_name": "setPushToken",
+        "method_code": "Override\n    public void setPushToken(String pushToken) {\n        preferences.edit().putString(PREF__PUSH_TOKEN, pushToken).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPushToken from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setPushToken\n\n        Method Code: Override\n    public void setPushToken(String pushToken) {\n        preferences.edit().putString(PREF__PUSH_TOKEN, pushToken).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPushToken(_ pushToken: String) {\n    UserDefaults.standard.set(pushToken, forKey: \"PREF__PUSH_TOKEN\")\n}\n```"
+    },
+    {
+        "method_name": "getPushToken",
+        "method_code": "Override\n    public String getPushToken() {\n        return preferences.getString(PREF__PUSH_TOKEN, \"\");\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPushToken from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getPushToken\n\n        Method Code: Override\n    public String getPushToken() {\n        return preferences.getString(PREF__PUSH_TOKEN, \"\");\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPushToken() -> String {\n    return UserDefaults.standard.string(forKey: \"PREF__PUSH_TOKEN\") ?? \"\"\n}\n```"
+    },
+    {
+        "method_name": "instantPictureUploadEnabled",
+        "method_code": "Override\n    public boolean instantPictureUploadEnabled() {\n        return preferences.getBoolean(PREF__INSTANT_UPLOADING, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled instantPictureUploadEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: instantPictureUploadEnabled\n\n        Method Code: Override\n    public boolean instantPictureUploadEnabled() {\n        return preferences.getBoolean(PREF__INSTANT_UPLOADING, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc instantPictureUploadEnabled() -> Bool {\n    return preferences.bool(forKey: \"PREF__INSTANT_UPLOADING\") ?? false\n}\n```"
+    },
+    {
+        "method_name": "instantVideoUploadEnabled",
+        "method_code": "Override\n    public boolean instantVideoUploadEnabled() {\n        return preferences.getBoolean(PREF__INSTANT_VIDEO_UPLOADING, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled instantVideoUploadEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: instantVideoUploadEnabled\n\n        Method Code: Override\n    public boolean instantVideoUploadEnabled() {\n        return preferences.getBoolean(PREF__INSTANT_VIDEO_UPLOADING, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc instantVideoUploadEnabled() -> Bool {\n    return preferences.bool(forKey: \"PREF__INSTANT_VIDEO_UPLOADING\") ?? false\n}\n```"
+    },
+    {
+        "method_name": "isShowHiddenFilesEnabled",
+        "method_code": "Override\n    public boolean isShowHiddenFilesEnabled() {\n        return preferences.getBoolean(PREF__SHOW_HIDDEN_FILES, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isShowHiddenFilesEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isShowHiddenFilesEnabled\n\n        Method Code: Override\n    public boolean isShowHiddenFilesEnabled() {\n        return preferences.getBoolean(PREF__SHOW_HIDDEN_FILES, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isShowHiddenFilesEnabled() -> Bool {\n    return preferences.bool(forKey: \"PREF__SHOW_HIDDEN_FILES\") ?? false\n}\n```"
+    },
+    {
+        "method_name": "setShowHiddenFilesEnabled",
+        "method_code": "Override\n    public void setShowHiddenFilesEnabled(boolean enabled) {\n        preferences.edit().putBoolean(PREF__SHOW_HIDDEN_FILES, enabled).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setShowHiddenFilesEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setShowHiddenFilesEnabled\n\n        Method Code: Override\n    public void setShowHiddenFilesEnabled(boolean enabled) {\n        preferences.edit().putBoolean(PREF__SHOW_HIDDEN_FILES, enabled).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setShowHiddenFilesEnabled(_ enabled: Bool) {\n    UserDefaults.standard.set(enabled, forKey: \"PREF__SHOW_HIDDEN_FILES\")\n}\n```"
+    },
+    {
+        "method_name": "isShowEcosystemApps",
+        "method_code": "Override\n    public boolean isShowEcosystemApps() {\n        return preferences.getBoolean(PREF__SHOW_ECOSYSTEM_APPS, true);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isShowEcosystemApps from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isShowEcosystemApps\n\n        Method Code: Override\n    public boolean isShowEcosystemApps() {\n        return preferences.getBoolean(PREF__SHOW_ECOSYSTEM_APPS, true);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isShowEcosystemApps() -> Bool {\n    return preferences.bool(forKey: \"PREF__SHOW_ECOSYSTEM_APPS\") ?? true\n}\n```"
+    },
+    {
+        "method_name": "setShowEcosystemApps",
+        "method_code": "Override\n    public void setShowEcosystemApps(boolean enabled) {\n        preferences.edit().putBoolean(PREF__SHOW_ECOSYSTEM_APPS, enabled).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setShowEcosystemApps from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setShowEcosystemApps\n\n        Method Code: Override\n    public void setShowEcosystemApps(boolean enabled) {\n        preferences.edit().putBoolean(PREF__SHOW_ECOSYSTEM_APPS, enabled).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setShowEcosystemApps(enabled: Bool) {\n    preferences.edit().putBoolean(PREF__SHOW_ECOSYSTEM_APPS, enabled).apply()\n}\n```"
+    },
+    {
+        "method_name": "getUploadUrlFileExtensionUrlSelectedPos",
+        "method_code": "Override\n    public int getUploadUrlFileExtensionUrlSelectedPos() {\n        return preferences.getInt(AUTO_PREF__UPLOAD_FILE_EXTENSION_URL, 0);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUploadUrlFileExtensionUrlSelectedPos from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getUploadUrlFileExtensionUrlSelectedPos\n\n        Method Code: Override\n    public int getUploadUrlFileExtensionUrlSelectedPos() {\n        return preferences.getInt(AUTO_PREF__UPLOAD_FILE_EXTENSION_URL, 0);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUploadUrlFileExtensionUrlSelectedPos() -> Int {\n    return UserDefaults.standard.integer(forKey: \"AUTO_PREF__UPLOAD_FILE_EXTENSION_URL\")\n}\n```"
+    },
+    {
+        "method_name": "setUploadUrlFileExtensionUrlSelectedPos",
+        "method_code": "Override\n    public void setUploadUrlFileExtensionUrlSelectedPos(int selectedPos) {\n        preferences.edit().putInt(AUTO_PREF__UPLOAD_FILE_EXTENSION_URL, selectedPos).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUploadUrlFileExtensionUrlSelectedPos from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setUploadUrlFileExtensionUrlSelectedPos\n\n        Method Code: Override\n    public void setUploadUrlFileExtensionUrlSelectedPos(int selectedPos) {\n        preferences.edit().putInt(AUTO_PREF__UPLOAD_FILE_EXTENSION_URL, selectedPos).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUploadUrlFileExtensionUrlSelectedPos(selectedPos: Int) {\n    UserDefaults.standard.set(selectedPos, forKey: \"AUTO_PREF__UPLOAD_FILE_EXTENSION_URL\")\n}\n```"
+    },
+    {
+        "method_name": "getUploadMapFileExtensionUrlSelectedPos",
+        "method_code": "Override\n    public int getUploadMapFileExtensionUrlSelectedPos() {\n        return preferences.getInt(AUTO_PREF__UPLOAD_FILE_EXTENSION_MAP_URL, 0);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUploadMapFileExtensionUrlSelectedPos from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getUploadMapFileExtensionUrlSelectedPos\n\n        Method Code: Override\n    public int getUploadMapFileExtensionUrlSelectedPos() {\n        return preferences.getInt(AUTO_PREF__UPLOAD_FILE_EXTENSION_MAP_URL, 0);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUploadMapFileExtensionUrlSelectedPos() -> Int {\n    return UserDefaults.standard.integer(forKey: \"AUTO_PREF__UPLOAD_FILE_EXTENSION_MAP_URL\")\n}\n```"
+    },
+    {
+        "method_name": "setUploadMapFileExtensionUrlSelectedPos",
+        "method_code": "Override\n    public void setUploadMapFileExtensionUrlSelectedPos(int selectedPos) {\n        preferences.edit().putInt(AUTO_PREF__UPLOAD_FILE_EXTENSION_MAP_URL, selectedPos).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUploadMapFileExtensionUrlSelectedPos from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setUploadMapFileExtensionUrlSelectedPos\n\n        Method Code: Override\n    public void setUploadMapFileExtensionUrlSelectedPos(int selectedPos) {\n        preferences.edit().putInt(AUTO_PREF__UPLOAD_FILE_EXTENSION_MAP_URL, selectedPos).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUploadMapFileExtensionUrlSelectedPos(selectedPos: Int) {\n    preferences.set(selectedPos, forKey: \"AUTO_PREF__UPLOAD_FILE_EXTENSION_MAP_URL\")\n}\n```"
+    },
+    {
+        "method_name": "getUploadFromLocalLastPath",
+        "method_code": "Override\n    public String getUploadFromLocalLastPath() {\n        return preferences.getString(AUTO_PREF__UPLOAD_FROM_LOCAL_LAST_PATH, \"\");\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUploadFromLocalLastPath from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getUploadFromLocalLastPath\n\n        Method Code: Override\n    public String getUploadFromLocalLastPath() {\n        return preferences.getString(AUTO_PREF__UPLOAD_FROM_LOCAL_LAST_PATH, \"\");\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUploadFromLocalLastPath() -> String {\n    return UserDefaults.standard.string(forKey: \"AUTO_PREF__UPLOAD_FROM_LOCAL_LAST_PATH\") ?? \"\"\n}\n```"
+    },
+    {
+        "method_name": "setUploadFromLocalLastPath",
+        "method_code": "Override\n    public void setUploadFromLocalLastPath(String path) {\n        preferences.edit().putString(AUTO_PREF__UPLOAD_FROM_LOCAL_LAST_PATH, path).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUploadFromLocalLastPath from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setUploadFromLocalLastPath\n\n        Method Code: Override\n    public void setUploadFromLocalLastPath(String path) {\n        preferences.edit().putString(AUTO_PREF__UPLOAD_FROM_LOCAL_LAST_PATH, path).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUploadFromLocalLastPath(_ path: String) {\n    UserDefaults.standard.set(path, forKey: \"AUTO_PREF__UPLOAD_FROM_LOCAL_LAST_PATH\")\n}\n```"
+    },
+    {
+        "method_name": "getLastUploadPath",
+        "method_code": "Override\n    public String getLastUploadPath() {\n        return preferences.getString(AUTO_PREF__LAST_UPLOAD_PATH, \"\");\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLastUploadPath from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getLastUploadPath\n\n        Method Code: Override\n    public String getLastUploadPath() {\n        return preferences.getString(AUTO_PREF__LAST_UPLOAD_PATH, \"\");\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLastUploadPath() -> String {\n    return UserDefaults.standard.string(forKey: \"AUTO_PREF__LAST_UPLOAD_PATH\") ?? \"\"\n}\n```"
+    },
+    {
+        "method_name": "setLastUploadPath",
+        "method_code": "Override\n    public void setLastUploadPath(String path) {\n        preferences.edit().putString(AUTO_PREF__LAST_UPLOAD_PATH, path).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLastUploadPath from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setLastUploadPath\n\n        Method Code: Override\n    public void setLastUploadPath(String path) {\n        preferences.edit().putString(AUTO_PREF__LAST_UPLOAD_PATH, path).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLastUploadPath(_ path: String) {\n    UserDefaults.standard.set(path, forKey: \"AUTO_PREF__LAST_UPLOAD_PATH\")\n}\n```"
+    },
+    {
+        "method_name": "getLockPreference",
+        "method_code": "Override\n    public String getLockPreference() {\n        return preferences.getString(PREF__LOCK, SettingsActivity.LOCK_NONE);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLockPreference from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getLockPreference\n\n        Method Code: Override\n    public String getLockPreference() {\n        return preferences.getString(PREF__LOCK, SettingsActivity.LOCK_NONE);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLockPreference() -> String {\n    return preferences.string(forKey: PREF__LOCK) ?? SettingsActivity.LOCK_NONE\n}\n```"
+    },
+    {
+        "method_name": "setLockPreference",
+        "method_code": "Override\n    public void setLockPreference(String lockPreference) {\n        preferences.edit().putString(PREF__LOCK, lockPreference).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLockPreference from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setLockPreference\n\n        Method Code: Override\n    public void setLockPreference(String lockPreference) {\n        preferences.edit().putString(PREF__LOCK, lockPreference).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLockPreference(lockPreference: String) {\n    preferences.edit().putString(PREF__LOCK, lockPreference).apply()\n}\n```"
+    },
+    {
+        "method_name": "setPassCode",
+        "method_code": "Override\n    public void setPassCode(String d1, String d2, String d3, String d4) {\n        preferences\n            .edit()\n            .putString(PassCodeActivity.PREFERENCE_PASSCODE_D1, d1)\n            .putString(PassCodeActivity.PREFERENCE_PASSCODE_D2, d2)\n            .putString(PassCodeActivity.PREFERENCE_PASSCODE_D3, d3)\n            .putString(PassCodeActivity.PREFERENCE_PASSCODE_D4, d4)\n            .apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPassCode from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setPassCode\n\n        Method Code: Override\n    public void setPassCode(String d1, String d2, String d3, String d4) {\n        preferences\n            .edit()\n            .putString(PassCodeActivity.PREFERENCE_PASSCODE_D1, d1)\n            .putString(PassCodeActivity.PREFERENCE_PASSCODE_D2, d2)\n            .putString(PassCodeActivity.PREFERENCE_PASSCODE_D3, d3)\n            .putString(PassCodeActivity.PREFERENCE_PASSCODE_D4, d4)\n            .apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPassCode(d1: String, d2: String, d3: String, d4: String) {\n    let preferences = UserDefaults.standard\n    preferences.set(d1, forKey: PassCodeActivity.PREFERENCE_PASSCODE_D1)\n    preferences.set(d2, forKey: PassCodeActivity.PREFERENCE_PASSCODE_D2)\n    preferences.set(d3, forKey: PassCodeActivity.PREFERENCE_PASSCODE_D3)\n    preferences.set(d4, forKey: PassCodeActivity.PREFERENCE_PASSCODE_D4)\n    preferences.synchronize()\n}\n```"
+    },
+    {
+        "method_name": "getPassCode",
+        "method_code": "Override\n    public String[] getPassCode() {\n        return new String[]{\n            preferences.getString(PassCodeActivity.PREFERENCE_PASSCODE_D1, null),\n            preferences.getString(PassCodeActivity.PREFERENCE_PASSCODE_D2, null),\n            preferences.getString(PassCodeActivity.PREFERENCE_PASSCODE_D3, null),\n            preferences.getString(PassCodeActivity.PREFERENCE_PASSCODE_D4, null),\n        };\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPassCode from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getPassCode\n\n        Method Code: Override\n    public String[] getPassCode() {\n        return new String[]{\n            preferences.getString(PassCodeActivity.PREFERENCE_PASSCODE_D1, null),\n            preferences.getString(PassCodeActivity.PREFERENCE_PASSCODE_D2, null),\n            preferences.getString(PassCodeActivity.PREFERENCE_PASSCODE_D3, null),\n            preferences.getString(PassCodeActivity.PREFERENCE_PASSCODE_D4, null),\n        };\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPassCode() -> [String?] {\n    return [\n        preferences.string(forKey: PassCodeActivity.PREFERENCE_PASSCODE_D1),\n        preferences.string(forKey: PassCodeActivity.PREFERENCE_PASSCODE_D2),\n        preferences.string(forKey: PassCodeActivity.PREFERENCE_PASSCODE_D3),\n        preferences.string(forKey: PassCodeActivity.PREFERENCE_PASSCODE_D4)\n    ]\n}\n```"
+    },
+    {
+        "method_name": "isFingerprintUnlockEnabled",
+        "method_code": "Override\n    public boolean isFingerprintUnlockEnabled() {\n        return preferences.getBoolean(SettingsActivity.PREFERENCE_USE_FINGERPRINT, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isFingerprintUnlockEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isFingerprintUnlockEnabled\n\n        Method Code: Override\n    public boolean isFingerprintUnlockEnabled() {\n        return preferences.getBoolean(SettingsActivity.PREFERENCE_USE_FINGERPRINT, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isFingerprintUnlockEnabled() -> Bool {\n    return UserDefaults.standard.bool(forKey: \"PREFERENCE_USE_FINGERPRINT\")\n}\n```"
+    },
+    {
+        "method_name": "getFolderLayout",
+        "method_code": "Override\n    public String getFolderLayout(OCFile folder) {\n        return getFolderPreference(context,\n                                   userAccountManager.getUser(),\n                                   PREF__FOLDER_LAYOUT,\n                                   folder,\n                                   FOLDER_LAYOUT_LIST);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFolderLayout from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getFolderLayout\n\n        Method Code: Override\n    public String getFolderLayout(OCFile folder) {\n        return getFolderPreference(context,\n                                   userAccountManager.getUser(),\n                                   PREF__FOLDER_LAYOUT,\n                                   folder,\n                                   FOLDER_LAYOUT_LIST);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func getFolderLayout(folder: OCFile) -> String {\n    return getFolderPreference(context: context,\n                               user: userAccountManager.getUser(),\n                               preference: PREF__FOLDER_LAYOUT,\n                               folder: folder,\n                               defaultValue: FOLDER_LAYOUT_LIST)\n}\n```"
+    },
+    {
+        "method_name": "setFolderLayout",
+        "method_code": "Override\n    public void setFolderLayout(@Nullable OCFile folder, String layoutName) {\n        setFolderPreference(context,\n                            userAccountManager.getUser(),\n                            PREF__FOLDER_LAYOUT,\n                            folder,\n                            layoutName);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFolderLayout from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setFolderLayout\n\n        Method Code: Override\n    public void setFolderLayout(@Nullable OCFile folder, String layoutName) {\n        setFolderPreference(context,\n                            userAccountManager.getUser(),\n                            PREF__FOLDER_LAYOUT,\n                            folder,\n                            layoutName);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setFolderLayout(folder: OCFile?, layoutName: String) {\n    setFolderPreference(context: context,\n                        user: userAccountManager.getUser(),\n                        preferenceKey: PREF__FOLDER_LAYOUT,\n                        folder: folder,\n                        value: layoutName)\n}\n```"
+    },
+    {
+        "method_name": "getSortOrderByFolder",
+        "method_code": "Override\n    public FileSortOrder getSortOrderByFolder(OCFile folder) {\n        return FileSortOrder.sortOrders.get(getFolderPreference(context,\n                                                                userAccountManager.getUser(),\n                                                                PREF__FOLDER_SORT_ORDER,\n                                                                folder,\n                                                                FileSortOrder.SORT_A_TO_Z.name));\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSortOrderByFolder from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getSortOrderByFolder\n\n        Method Code: Override\n    public FileSortOrder getSortOrderByFolder(OCFile folder) {\n        return FileSortOrder.sortOrders.get(getFolderPreference(context,\n                                                                userAccountManager.getUser(),\n                                                                PREF__FOLDER_SORT_ORDER,\n                                                                folder,\n                                                                FileSortOrder.SORT_A_TO_Z.name));\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func getSortOrderByFolder(folder: OCFile) -> FileSortOrder {\n    return FileSortOrder.sortOrders[getFolderPreference(context: context, user: userAccountManager.getUser(), key: PREF__FOLDER_SORT_ORDER, folder: folder, defaultValue: FileSortOrder.SORT_A_TO_Z.name)]\n}\n```"
+    },
+    {
+        "method_name": "setSortOrder",
+        "method_code": "Override\n    public void setSortOrder(@Nullable OCFile folder, FileSortOrder sortOrder) {\n        setFolderPreference(context,\n                            userAccountManager.getUser(),\n                            PREF__FOLDER_SORT_ORDER,\n                            folder,\n                            sortOrder.name);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSortOrder from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setSortOrder\n\n        Method Code: Override\n    public void setSortOrder(@Nullable OCFile folder, FileSortOrder sortOrder) {\n        setFolderPreference(context,\n                            userAccountManager.getUser(),\n                            PREF__FOLDER_SORT_ORDER,\n                            folder,\n                            sortOrder.name);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setSortOrder(folder: OCFile?, sortOrder: FileSortOrder) {\n    setFolderPreference(context: context,\n                        user: userAccountManager.getUser(),\n                        preferenceKey: PREF__FOLDER_SORT_ORDER,\n                        folder: folder,\n                        value: sortOrder.name)\n}\n```"
+    },
+    {
+        "method_name": "getSortOrderByType",
+        "method_code": "Override\n    public FileSortOrder getSortOrderByType(FileSortOrder.Type type) {\n        return getSortOrderByType(type, FileSortOrder.SORT_A_TO_Z);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSortOrderByType from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getSortOrderByType\n\n        Method Code: Override\n    public FileSortOrder getSortOrderByType(FileSortOrder.Type type) {\n        return getSortOrderByType(type, FileSortOrder.SORT_A_TO_Z);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func getSortOrderByType(type: FileSortOrder.Type) -> FileSortOrder {\n    return getSortOrderByType(type: type, defaultOrder: .SORT_A_TO_Z)\n}\n```"
+    },
+    {
+        "method_name": "getSortOrderByType",
+        "method_code": "Override\n    public FileSortOrder getSortOrderByType(FileSortOrder.Type type, FileSortOrder defaultOrder) {\n        User user = userAccountManager.getUser();\n        if (user.isAnonymous()) {\n            return defaultOrder;\n        }\n\n        ArbitraryDataProvider dataProvider = new ArbitraryDataProviderImpl(context);\n\n        String value = dataProvider.getValue(user.getAccountName(), PREF__FOLDER_SORT_ORDER + \"_\" + type);\n\n        return value.isEmpty() ? defaultOrder : FileSortOrder.sortOrders.get(value);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSortOrderByType from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getSortOrderByType\n\n        Method Code: Override\n    public FileSortOrder getSortOrderByType(FileSortOrder.Type type, FileSortOrder defaultOrder) {\n        User user = userAccountManager.getUser();\n        if (user.isAnonymous()) {\n            return defaultOrder;\n        }\n\n        ArbitraryDataProvider dataProvider = new ArbitraryDataProviderImpl(context);\n\n        String value = dataProvider.getValue(user.getAccountName(), PREF__FOLDER_SORT_ORDER + \"_\" + type);\n\n        return value.isEmpty() ? defaultOrder : FileSortOrder.sortOrders.get(value);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func getSortOrderByType(type: FileSortOrder.Type, defaultOrder: FileSortOrder) -> FileSortOrder {\n    let user = userAccountManager.getUser()\n    if user.isAnonymous() {\n        return defaultOrder\n    }\n\n    let dataProvider = ArbitraryDataProviderImpl(context: context)\n\n    let value = dataProvider.getValue(user.getAccountName(), key: \"\\(PREF__FOLDER_SORT_ORDER)_\\(type)\")\n\n    return value.isEmpty ? defaultOrder : FileSortOrder.sortOrders[value] ?? defaultOrder\n}\n```"
+    },
+    {
+        "method_name": "setSortOrder",
+        "method_code": "Override\n    public void setSortOrder(FileSortOrder.Type type, FileSortOrder sortOrder) {\n        User user = userAccountManager.getUser();\n        ArbitraryDataProvider dataProvider = new ArbitraryDataProviderImpl(context);\n        dataProvider.storeOrUpdateKeyValue(user.getAccountName(), PREF__FOLDER_SORT_ORDER + \"_\" + type, sortOrder.name);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSortOrder from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setSortOrder\n\n        Method Code: Override\n    public void setSortOrder(FileSortOrder.Type type, FileSortOrder sortOrder) {\n        User user = userAccountManager.getUser();\n        ArbitraryDataProvider dataProvider = new ArbitraryDataProviderImpl(context);\n        dataProvider.storeOrUpdateKeyValue(user.getAccountName(), PREF__FOLDER_SORT_ORDER + \"_\" + type, sortOrder.name);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setSortOrder(type: FileSortOrder.Type, sortOrder: FileSortOrder) {\n    let user = userAccountManager.getUser()\n    let dataProvider = ArbitraryDataProviderImpl(context: context)\n    dataProvider.storeOrUpdateKeyValue(user.getAccountName(), key: \"\\(PREF__FOLDER_SORT_ORDER)_\\(type)\", value: sortOrder.name)\n}\n```"
+    },
+    {
+        "method_name": "isLegacyClean",
+        "method_code": "Override\n    public boolean isLegacyClean() {\n        return preferences.getBoolean(PREF__LEGACY_CLEAN, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isLegacyClean from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isLegacyClean\n\n        Method Code: Override\n    public boolean isLegacyClean() {\n        return preferences.getBoolean(PREF__LEGACY_CLEAN, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isLegacyClean() -> Bool {\n    return preferences.bool(forKey: PREF__LEGACY_CLEAN)\n}\n```"
+    },
+    {
+        "method_name": "setLegacyClean",
+        "method_code": "Override\n    public void setLegacyClean(boolean isLegacyClean) {\n        preferences.edit().putBoolean(PREF__LEGACY_CLEAN, isLegacyClean).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLegacyClean from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setLegacyClean\n\n        Method Code: Override\n    public void setLegacyClean(boolean isLegacyClean) {\n        preferences.edit().putBoolean(PREF__LEGACY_CLEAN, isLegacyClean).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLegacyClean(isLegacyClean: Bool) {\n    preferences.set(isLegacyClean, forKey: \"PREF__LEGACY_CLEAN\")\n}\n```"
+    },
+    {
+        "method_name": "isKeysMigrationEnabled",
+        "method_code": "Override\n    public boolean isKeysMigrationEnabled() {\n        return preferences.getBoolean(PREF__KEYS_MIGRATION, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isKeysMigrationEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isKeysMigrationEnabled\n\n        Method Code: Override\n    public boolean isKeysMigrationEnabled() {\n        return preferences.getBoolean(PREF__KEYS_MIGRATION, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isKeysMigrationEnabled() -> Bool {\n    return UserDefaults.standard.bool(forKey: \"PREF__KEYS_MIGRATION\")\n}\n```"
+    },
+    {
+        "method_name": "setKeysMigrationEnabled",
+        "method_code": "Override\n    public void setKeysMigrationEnabled(boolean keysMigration) {\n        preferences.edit().putBoolean(PREF__KEYS_MIGRATION, keysMigration).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setKeysMigrationEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setKeysMigrationEnabled\n\n        Method Code: Override\n    public void setKeysMigrationEnabled(boolean keysMigration) {\n        preferences.edit().putBoolean(PREF__KEYS_MIGRATION, keysMigration).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setKeysMigrationEnabled(_ keysMigration: Bool) {\n    preferences.set(keysMigration, forKey: \"PREF__KEYS_MIGRATION\")\n}\n```"
+    },
+    {
+        "method_name": "isStoragePathFixEnabled",
+        "method_code": "Override\n    public boolean isStoragePathFixEnabled() {\n        return preferences.getBoolean(PREF__FIX_STORAGE_PATH, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isStoragePathFixEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isStoragePathFixEnabled\n\n        Method Code: Override\n    public boolean isStoragePathFixEnabled() {\n        return preferences.getBoolean(PREF__FIX_STORAGE_PATH, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isStoragePathFixEnabled() -> Bool {\n    return preferences.bool(forKey: \"PREF__FIX_STORAGE_PATH\")\n}\n```"
+    },
+    {
+        "method_name": "setStoragePathFixEnabled",
+        "method_code": "Override\n    public void setStoragePathFixEnabled(boolean storagePathFixEnabled) {\n        preferences.edit().putBoolean(PREF__FIX_STORAGE_PATH, storagePathFixEnabled).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setStoragePathFixEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setStoragePathFixEnabled\n\n        Method Code: Override\n    public void setStoragePathFixEnabled(boolean storagePathFixEnabled) {\n        preferences.edit().putBoolean(PREF__FIX_STORAGE_PATH, storagePathFixEnabled).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setStoragePathFixEnabled(_ storagePathFixEnabled: Bool) {\n    UserDefaults.standard.set(storagePathFixEnabled, forKey: \"PREF__FIX_STORAGE_PATH\")\n}\n```"
+    },
+    {
+        "method_name": "isAutoUploadPathsUpdateEnabled",
+        "method_code": "Override\n    public boolean isAutoUploadPathsUpdateEnabled() {\n        return preferences.getBoolean(PREF__AUTO_UPLOAD_UPDATE_PATH, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isAutoUploadPathsUpdateEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isAutoUploadPathsUpdateEnabled\n\n        Method Code: Override\n    public boolean isAutoUploadPathsUpdateEnabled() {\n        return preferences.getBoolean(PREF__AUTO_UPLOAD_UPDATE_PATH, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isAutoUploadPathsUpdateEnabled() -> Bool {\n    return UserDefaults.standard.bool(forKey: \"PREF__AUTO_UPLOAD_UPDATE_PATH\")\n}\n```"
+    },
+    {
+        "method_name": "setAutoUploadPathsUpdateEnabled",
+        "method_code": "Override\n    public void setAutoUploadPathsUpdateEnabled(boolean pathUpdate) {\n        preferences.edit().putBoolean(PREF__AUTO_UPLOAD_UPDATE_PATH, pathUpdate).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAutoUploadPathsUpdateEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setAutoUploadPathsUpdateEnabled\n\n        Method Code: Override\n    public void setAutoUploadPathsUpdateEnabled(boolean pathUpdate) {\n        preferences.edit().putBoolean(PREF__AUTO_UPLOAD_UPDATE_PATH, pathUpdate).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAutoUploadPathsUpdateEnabled(_ pathUpdate: Bool) {\n    UserDefaults.standard.set(pathUpdate, forKey: \"PREF__AUTO_UPLOAD_UPDATE_PATH\")\n}\n```"
+    },
+    {
+        "method_name": "isAutoUploadSplitEntriesEnabled",
+        "method_code": "Override\n    public boolean isAutoUploadSplitEntriesEnabled() {\n        return preferences.getBoolean(PREF__AUTO_UPLOAD_SPLIT_OUT, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isAutoUploadSplitEntriesEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isAutoUploadSplitEntriesEnabled\n\n        Method Code: Override\n    public boolean isAutoUploadSplitEntriesEnabled() {\n        return preferences.getBoolean(PREF__AUTO_UPLOAD_SPLIT_OUT, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isAutoUploadSplitEntriesEnabled() -> Bool {\n    return preferences.bool(forKey: \"PREF__AUTO_UPLOAD_SPLIT_OUT\")\n}\n```"
+    },
+    {
+        "method_name": "setAutoUploadSplitEntriesEnabled",
+        "method_code": "Override\n    public void setAutoUploadSplitEntriesEnabled(boolean splitOut) {\n        preferences.edit().putBoolean(PREF__AUTO_UPLOAD_SPLIT_OUT, splitOut).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAutoUploadSplitEntriesEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setAutoUploadSplitEntriesEnabled\n\n        Method Code: Override\n    public void setAutoUploadSplitEntriesEnabled(boolean splitOut) {\n        preferences.edit().putBoolean(PREF__AUTO_UPLOAD_SPLIT_OUT, splitOut).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAutoUploadSplitEntriesEnabled(_ splitOut: Bool) {\n    UserDefaults.standard.set(splitOut, forKey: \"PREF__AUTO_UPLOAD_SPLIT_OUT\")\n}\n```"
+    },
+    {
+        "method_name": "isAutoUploadInitialized",
+        "method_code": "Override\n    public boolean isAutoUploadInitialized() {\n        return preferences.getBoolean(PREF__AUTO_UPLOAD_INIT, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isAutoUploadInitialized from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isAutoUploadInitialized\n\n        Method Code: Override\n    public boolean isAutoUploadInitialized() {\n        return preferences.getBoolean(PREF__AUTO_UPLOAD_INIT, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func isAutoUploadInitialized() -> Bool {\n    return preferences.bool(forKey: PREF__AUTO_UPLOAD_INIT)\n}\n```"
+    },
+    {
+        "method_name": "setAutoUploadInit",
+        "method_code": "Override\n    public void setAutoUploadInit(boolean autoUploadInit) {\n        preferences.edit().putBoolean(PREF__AUTO_UPLOAD_INIT, autoUploadInit).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAutoUploadInit from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setAutoUploadInit\n\n        Method Code: Override\n    public void setAutoUploadInit(boolean autoUploadInit) {\n        preferences.edit().putBoolean(PREF__AUTO_UPLOAD_INIT, autoUploadInit).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAutoUploadInit(autoUploadInit: Bool) {\n    UserDefaults.standard.set(autoUploadInit, forKey: \"PREF__AUTO_UPLOAD_INIT\")\n}\n```"
+    },
+    {
+        "method_name": "getUploaderBehaviour",
+        "method_code": "Override\n    public int getUploaderBehaviour() {\n        return preferences.getInt(AUTO_PREF__UPLOADER_BEHAVIOR, 1);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUploaderBehaviour from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getUploaderBehaviour\n\n        Method Code: Override\n    public int getUploaderBehaviour() {\n        return preferences.getInt(AUTO_PREF__UPLOADER_BEHAVIOR, 1);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUploaderBehaviour() -> Int {\n    return preferences.integer(forKey: \"AUTO_PREF__UPLOADER_BEHAVIOR\") ?? 1\n}\n```"
+    },
+    {
+        "method_name": "isDarkModeEnabled",
+        "method_code": "Override\n    public boolean isDarkModeEnabled() {\n        DarkMode mode = getDarkThemeMode();\n\n        if (mode == DarkMode.SYSTEM) {\n            int currentNightMode = context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;\n            return currentNightMode == Configuration.UI_MODE_NIGHT_YES;\n        }\n\n        return mode == DarkMode.DARK;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isDarkModeEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isDarkModeEnabled\n\n        Method Code: Override\n    public boolean isDarkModeEnabled() {\n        DarkMode mode = getDarkThemeMode();\n\n        if (mode == DarkMode.SYSTEM) {\n            int currentNightMode = context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;\n            return currentNightMode == Configuration.UI_MODE_NIGHT_YES;\n        }\n\n        return mode == DarkMode.DARK;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isDarkModeEnabled() -> Bool {\n    let mode = getDarkThemeMode()\n\n    if mode == .system {\n        let currentNightMode = UIScreen.main.traitCollection.userInterfaceStyle\n        return currentNightMode == .dark\n    }\n\n    return mode == .dark\n}\n```"
+    },
+    {
+        "method_name": "setDarkThemeMode",
+        "method_code": "Override\n    public void setDarkThemeMode(DarkMode mode) {\n        preferences.edit().putString(PREF__DARK_THEME, mode.name()).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setDarkThemeMode from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setDarkThemeMode\n\n        Method Code: Override\n    public void setDarkThemeMode(DarkMode mode) {\n        preferences.edit().putString(PREF__DARK_THEME, mode.name()).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setDarkThemeMode(mode: DarkMode) {\n    UserDefaults.standard.set(mode.rawValue, forKey: \"PREF__DARK_THEME\")\n}\n```"
+    },
+    {
+        "method_name": "getDarkThemeMode",
+        "method_code": "Override\n    public DarkMode getDarkThemeMode() {\n        try {\n            return DarkMode.valueOf(preferences.getString(PREF__DARK_THEME, DarkMode.SYSTEM.name()));\n        } catch (ClassCastException e) {\n            preferences.edit().putString(PREF__DARK_THEME, DarkMode.SYSTEM.name()).apply();\n            return DarkMode.SYSTEM;\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getDarkThemeMode from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getDarkThemeMode\n\n        Method Code: Override\n    public DarkMode getDarkThemeMode() {\n        try {\n            return DarkMode.valueOf(preferences.getString(PREF__DARK_THEME, DarkMode.SYSTEM.name()));\n        } catch (ClassCastException e) {\n            preferences.edit().putString(PREF__DARK_THEME, DarkMode.SYSTEM.name()).apply();\n            return DarkMode.SYSTEM;\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getDarkThemeMode() -> DarkMode {\n    if let darkThemeString = preferences.string(forKey: PREF__DARK_THEME),\n       let darkMode = DarkMode(rawValue: darkThemeString) {\n        return darkMode\n    } else {\n        preferences.set(DarkMode.system.rawValue, forKey: PREF__DARK_THEME)\n        return .system\n    }\n}\n```"
+    },
+    {
+        "method_name": "setUploaderBehaviour",
+        "method_code": "Override\n    public void setUploaderBehaviour(int uploaderBehaviour) {\n        preferences.edit().putInt(AUTO_PREF__UPLOADER_BEHAVIOR, uploaderBehaviour).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUploaderBehaviour from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setUploaderBehaviour\n\n        Method Code: Override\n    public void setUploaderBehaviour(int uploaderBehaviour) {\n        preferences.edit().putInt(AUTO_PREF__UPLOADER_BEHAVIOR, uploaderBehaviour).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUploaderBehaviour(uploaderBehaviour: Int) {\n    preferences.set(uploaderBehaviour, forKey: \"AUTO_PREF__UPLOADER_BEHAVIOR\")\n}\n```"
+    },
+    {
+        "method_name": "getGridColumns",
+        "method_code": "Override\n    public float getGridColumns() {\n        float columns = preferences.getFloat(AUTO_PREF__GRID_COLUMNS, DEFAULT_GRID_COLUMN);\n\n        if (columns < 0) {\n            return DEFAULT_GRID_COLUMN;\n        } else {\n            return columns;\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getGridColumns from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getGridColumns\n\n        Method Code: Override\n    public float getGridColumns() {\n        float columns = preferences.getFloat(AUTO_PREF__GRID_COLUMNS, DEFAULT_GRID_COLUMN);\n\n        if (columns < 0) {\n            return DEFAULT_GRID_COLUMN;\n        } else {\n            return columns;\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getGridColumns() -> Float {\n    let columns = preferences.float(forKey: AUTO_PREF__GRID_COLUMNS)\n    if columns < 0 {\n        return DEFAULT_GRID_COLUMN\n    } else {\n        return columns\n    }\n}\n```"
+    },
+    {
+        "method_name": "setGridColumns",
+        "method_code": "Override\n    public void setGridColumns(float gridColumns) {\n        preferences.edit().putFloat(AUTO_PREF__GRID_COLUMNS, gridColumns).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setGridColumns from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setGridColumns\n\n        Method Code: Override\n    public void setGridColumns(float gridColumns) {\n        preferences.edit().putFloat(AUTO_PREF__GRID_COLUMNS, gridColumns).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setGridColumns(_ gridColumns: Float) {\n    UserDefaults.standard.set(gridColumns, forKey: \"AUTO_PREF__GRID_COLUMNS\")\n}\n```"
+    },
+    {
+        "method_name": "getLastSeenVersionCode",
+        "method_code": "Override\n    public int getLastSeenVersionCode() {\n        return preferences.getInt(AUTO_PREF__LAST_SEEN_VERSION_CODE, 0);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLastSeenVersionCode from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getLastSeenVersionCode\n\n        Method Code: Override\n    public int getLastSeenVersionCode() {\n        return preferences.getInt(AUTO_PREF__LAST_SEEN_VERSION_CODE, 0);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLastSeenVersionCode() -> Int {\n    return UserDefaults.standard.integer(forKey: \"AUTO_PREF__LAST_SEEN_VERSION_CODE\")\n}\n```"
+    },
+    {
+        "method_name": "saveLogEntry",
+        "method_code": "Override\n    public void saveLogEntry(List<LogEntry> logEntryList) {\n        Gson gson = new Gson();\n        String json = gson.toJson(logEntryList);\n        preferences.edit().putString(LOG_ENTRY, json).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled saveLogEntry from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: saveLogEntry\n\n        Method Code: Override\n    public void saveLogEntry(List<LogEntry> logEntryList) {\n        Gson gson = new Gson();\n        String json = gson.toJson(logEntryList);\n        preferences.edit().putString(LOG_ENTRY, json).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc saveLogEntry(logEntryList: [LogEntry]) {\n    let jsonData = try? JSONEncoder().encode(logEntryList)\n    if let jsonString = jsonData.flatMap({ String(data: $0, encoding: .utf8) }) {\n        UserDefaults.standard.set(jsonString, forKey: \"LOG_ENTRY\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "readLogEntry",
+        "method_code": "Override\n    public List<LogEntry> readLogEntry() {\n        String json = preferences.getString(LOG_ENTRY, null);\n        if (json == null) return emptyList();\n        Gson gson = new Gson();\n        Type listType = new TypeToken<List<LogEntry>>() {}.getType();\n        return gson.fromJson(json, listType);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled readLogEntry from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: readLogEntry\n\n        Method Code: Override\n    public List<LogEntry> readLogEntry() {\n        String json = preferences.getString(LOG_ENTRY, null);\n        if (json == null) return emptyList();\n        Gson gson = new Gson();\n        Type listType = new TypeToken<List<LogEntry>>() {}.getType();\n        return gson.fromJson(json, listType);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func readLogEntry() -> [LogEntry] {\n    guard let json = preferences.string(forKey: LOG_ENTRY) else { return [] }\n    let decoder = JSONDecoder()\n    guard let data = json.data(using: .utf8),\n          let logEntries = try? decoder.decode([LogEntry].self, from: data) else { return [] }\n    return logEntries\n}\n```"
+    },
+    {
+        "method_name": "setLastSeenVersionCode",
+        "method_code": "Override\n    public void setLastSeenVersionCode(int versionCode) {\n        preferences.edit().putInt(AUTO_PREF__LAST_SEEN_VERSION_CODE, versionCode).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLastSeenVersionCode from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setLastSeenVersionCode\n\n        Method Code: Override\n    public void setLastSeenVersionCode(int versionCode) {\n        preferences.edit().putInt(AUTO_PREF__LAST_SEEN_VERSION_CODE, versionCode).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLastSeenVersionCode(versionCode: Int) {\n    preferences.set(versionCode, forKey: \"AUTO_PREF__LAST_SEEN_VERSION_CODE\")\n}\n```"
+    },
+    {
+        "method_name": "getLockTimestamp",
+        "method_code": "Override\n    public long getLockTimestamp() {\n        return preferences.getLong(PREF__LOCK_TIMESTAMP, 0);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLockTimestamp from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getLockTimestamp\n\n        Method Code: Override\n    public long getLockTimestamp() {\n        return preferences.getLong(PREF__LOCK_TIMESTAMP, 0);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLockTimestamp() -> Int64 {\n    return UserDefaults.standard.integer(forKey: \"PREF__LOCK_TIMESTAMP\")\n}\n```"
+    },
+    {
+        "method_name": "setLockTimestamp",
+        "method_code": "Override\n    public void setLockTimestamp(long timestamp) {\n        preferences.edit().putLong(PREF__LOCK_TIMESTAMP, timestamp).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLockTimestamp from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setLockTimestamp\n\n        Method Code: Override\n    public void setLockTimestamp(long timestamp) {\n        preferences.edit().putLong(PREF__LOCK_TIMESTAMP, timestamp).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLockTimestamp(_ timestamp: Int64) {\n    UserDefaults.standard.set(timestamp, forKey: \"PREF__LOCK_TIMESTAMP\")\n}\n```"
+    },
+    {
+        "method_name": "isShowDetailedTimestampEnabled",
+        "method_code": "Override\n    public boolean isShowDetailedTimestampEnabled() {\n        return preferences.getBoolean(AUTO_PREF__SHOW_DETAILED_TIMESTAMP, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isShowDetailedTimestampEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isShowDetailedTimestampEnabled\n\n        Method Code: Override\n    public boolean isShowDetailedTimestampEnabled() {\n        return preferences.getBoolean(AUTO_PREF__SHOW_DETAILED_TIMESTAMP, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isShowDetailedTimestampEnabled() -> Bool {\n    return preferences.bool(forKey: \"AUTO_PREF__SHOW_DETAILED_TIMESTAMP\") ?? false\n}\n```"
+    },
+    {
+        "method_name": "setShowDetailedTimestampEnabled",
+        "method_code": "Override\n    public void setShowDetailedTimestampEnabled(boolean showDetailedTimestamp) {\n        preferences.edit().putBoolean(AUTO_PREF__SHOW_DETAILED_TIMESTAMP, showDetailedTimestamp).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setShowDetailedTimestampEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setShowDetailedTimestampEnabled\n\n        Method Code: Override\n    public void setShowDetailedTimestampEnabled(boolean showDetailedTimestamp) {\n        preferences.edit().putBoolean(AUTO_PREF__SHOW_DETAILED_TIMESTAMP, showDetailedTimestamp).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setShowDetailedTimestampEnabled(_ showDetailedTimestamp: Bool) {\n    UserDefaults.standard.set(showDetailedTimestamp, forKey: \"AUTO_PREF__SHOW_DETAILED_TIMESTAMP\")\n}\n```"
+    },
+    {
+        "method_name": "isShowMediaScanNotifications",
+        "method_code": "Override\n    public boolean isShowMediaScanNotifications() {\n        return preferences.getBoolean(PREF__SHOW_MEDIA_SCAN_NOTIFICATIONS, true);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isShowMediaScanNotifications from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isShowMediaScanNotifications\n\n        Method Code: Override\n    public boolean isShowMediaScanNotifications() {\n        return preferences.getBoolean(PREF__SHOW_MEDIA_SCAN_NOTIFICATIONS, true);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isShowMediaScanNotifications() -> Bool {\n    return UserDefaults.standard.bool(forKey: \"PREF__SHOW_MEDIA_SCAN_NOTIFICATIONS\")\n}\n```"
+    },
+    {
+        "method_name": "setShowMediaScanNotifications",
+        "method_code": "Override\n    public void setShowMediaScanNotifications(boolean value) {\n        preferences.edit().putBoolean(PREF__SHOW_MEDIA_SCAN_NOTIFICATIONS, value).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setShowMediaScanNotifications from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setShowMediaScanNotifications\n\n        Method Code: Override\n    public void setShowMediaScanNotifications(boolean value) {\n        preferences.edit().putBoolean(PREF__SHOW_MEDIA_SCAN_NOTIFICATIONS, value).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setShowMediaScanNotifications(_ value: Bool) {\n    preferences.set(value, forKey: \"PREF__SHOW_MEDIA_SCAN_NOTIFICATIONS\")\n}\n```"
+    },
+    {
+        "method_name": "removeLegacyPreferences",
+        "method_code": "Override\n    public void removeLegacyPreferences() {\n        preferences.edit()\n            .remove(\"instant_uploading\")\n            .remove(\"instant_video_uploading\")\n            .remove(\"instant_upload_path\")\n            .remove(\"instant_upload_path_use_subfolders\")\n            .remove(\"instant_upload_on_wifi\")\n            .remove(\"instant_upload_on_charging\")\n            .remove(\"instant_video_upload_path\")\n            .remove(\"instant_video_upload_path_use_subfolders\")\n            .remove(\"instant_video_upload_on_wifi\")\n            .remove(\"instant_video_uploading\")\n            .remove(\"instant_video_upload_on_charging\")\n            .remove(\"prefs_instant_behaviour\")\n            .apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled removeLegacyPreferences from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: removeLegacyPreferences\n\n        Method Code: Override\n    public void removeLegacyPreferences() {\n        preferences.edit()\n            .remove(\"instant_uploading\")\n            .remove(\"instant_video_uploading\")\n            .remove(\"instant_upload_path\")\n            .remove(\"instant_upload_path_use_subfolders\")\n            .remove(\"instant_upload_on_wifi\")\n            .remove(\"instant_upload_on_charging\")\n            .remove(\"instant_video_upload_path\")\n            .remove(\"instant_video_upload_path_use_subfolders\")\n            .remove(\"instant_video_upload_on_wifi\")\n            .remove(\"instant_video_uploading\")\n            .remove(\"instant_video_upload_on_charging\")\n            .remove(\"prefs_instant_behaviour\")\n            .apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc removeLegacyPreferences() {\n    let preferences = UserDefaults.standard\n    preferences.removeObject(forKey: \"instant_uploading\")\n    preferences.removeObject(forKey: \"instant_video_uploading\")\n    preferences.removeObject(forKey: \"instant_upload_path\")\n    preferences.removeObject(forKey: \"instant_upload_path_use_subfolders\")\n    preferences.removeObject(forKey: \"instant_upload_on_wifi\")\n    preferences.removeObject(forKey: \"instant_upload_on_charging\")\n    preferences.removeObject(forKey: \"instant_video_upload_path\")\n    preferences.removeObject(forKey: \"instant_video_upload_path_use_subfolders\")\n    preferences.removeObject(forKey: \"instant_video_upload_on_wifi\")\n    preferences.removeObject(forKey: \"instant_video_uploading\")\n    preferences.removeObject(forKey: \"instant_video_upload_on_charging\")\n    preferences.removeObject(forKey: \"prefs_instant_behaviour\")\n}\n```"
+    },
+    {
+        "method_name": "clear",
+        "method_code": "Override\n    public void clear() {\n        preferences.edit().clear().apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled clear from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: clear\n\n        Method Code: Override\n    public void clear() {\n        preferences.edit().clear().apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc clear() {\n    UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)\n    UserDefaults.standard.synchronize()\n}\n```"
+    },
+    {
+        "method_name": "getStoragePath",
+        "method_code": "Override\n    public String getStoragePath(String defaultPath) {\n        return preferences.getString(STORAGE_PATH, defaultPath);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getStoragePath from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getStoragePath\n\n        Method Code: Override\n    public String getStoragePath(String defaultPath) {\n        return preferences.getString(STORAGE_PATH, defaultPath);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getStoragePath(defaultPath: String) -> String {\n    return preferences.string(forKey: STORAGE_PATH) ?? defaultPath\n}\n```"
+    },
+    {
+        "method_name": "setStoragePath",
+        "method_code": "SuppressLint(\"ApplySharedPref\")\n    @Override\n    public void setStoragePath(String path) {\n        preferences.edit().putString(STORAGE_PATH, path).commit();  // commit synchronously\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setStoragePath from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setStoragePath\n\n        Method Code: SuppressLint(\"ApplySharedPref\")\n    @Override\n    public void setStoragePath(String path) {\n        preferences.edit().putString(STORAGE_PATH, path).commit();  // commit synchronously\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setStoragePath(_ path: String) {\n    UserDefaults.standard.set(path, forKey: \"STORAGE_PATH\")\n    UserDefaults.standard.synchronize()\n}\n```"
+    },
+    {
+        "method_name": "setStoragePathValid",
+        "method_code": "SuppressLint(\"ApplySharedPref\")\n    @Override\n    public void setStoragePathValid() {\n        preferences.edit().putBoolean(STORAGE_PATH_VALID, true).commit();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setStoragePathValid from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setStoragePathValid\n\n        Method Code: SuppressLint(\"ApplySharedPref\")\n    @Override\n    public void setStoragePathValid() {\n        preferences.edit().putBoolean(STORAGE_PATH_VALID, true).commit();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setStoragePathValid() {\n    UserDefaults.standard.set(true, forKey: \"STORAGE_PATH_VALID\")\n    UserDefaults.standard.synchronize()\n}\n```"
+    },
+    {
+        "method_name": "isStoragePathValid",
+        "method_code": "Override\n    public boolean isStoragePathValid() {\n        return preferences.getBoolean(STORAGE_PATH_VALID, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isStoragePathValid from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isStoragePathValid\n\n        Method Code: Override\n    public boolean isStoragePathValid() {\n        return preferences.getBoolean(STORAGE_PATH_VALID, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func isStoragePathValid() -> Bool {\n    return preferences.bool(forKey: STORAGE_PATH_VALID)\n}\n```"
+    },
+    {
+        "method_name": "removeKeysMigrationPreference",
+        "method_code": "SuppressLint(\"ApplySharedPref\")\n    @Override\n    public void removeKeysMigrationPreference() {\n        preferences.edit().remove(AppPreferencesImpl.PREF__KEYS_MIGRATION).commit(); // commit synchronously\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled removeKeysMigrationPreference from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: removeKeysMigrationPreference\n\n        Method Code: SuppressLint(\"ApplySharedPref\")\n    @Override\n    public void removeKeysMigrationPreference() {\n        preferences.edit().remove(AppPreferencesImpl.PREF__KEYS_MIGRATION).commit(); // commit synchronously\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc removeKeysMigrationPreference() {\n    UserDefaults.standard.removeObject(forKey: \"PREF__KEYS_MIGRATION\")\n    UserDefaults.standard.synchronize() // commit synchronously\n}\n```"
+    },
+    {
+        "method_name": "getCurrentAccountName",
+        "method_code": "Override\n    public String getCurrentAccountName() {\n        return preferences.getString(PREF__SELECTED_ACCOUNT_NAME, null);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getCurrentAccountName from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getCurrentAccountName\n\n        Method Code: Override\n    public String getCurrentAccountName() {\n        return preferences.getString(PREF__SELECTED_ACCOUNT_NAME, null);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getCurrentAccountName() -> String? {\n    return UserDefaults.standard.string(forKey: \"PREF__SELECTED_ACCOUNT_NAME\")\n}\n```"
+    },
+    {
+        "method_name": "setCurrentAccountName",
+        "method_code": "Override\n    public void setCurrentAccountName(String accountName) {\n        preferences.edit().putString(PREF__SELECTED_ACCOUNT_NAME, accountName).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setCurrentAccountName from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setCurrentAccountName\n\n        Method Code: Override\n    public void setCurrentAccountName(String accountName) {\n        preferences.edit().putString(PREF__SELECTED_ACCOUNT_NAME, accountName).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setCurrentAccountName(accountName: String) {\n    UserDefaults.standard.set(accountName, forKey: \"PREF__SELECTED_ACCOUNT_NAME\")\n}\n```"
+    },
+    {
+        "method_name": "isUserIdMigrated",
+        "method_code": "Override\n    public boolean isUserIdMigrated() {\n        return preferences.getBoolean(PREF__MIGRATED_USER_ID, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isUserIdMigrated from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isUserIdMigrated\n\n        Method Code: Override\n    public boolean isUserIdMigrated() {\n        return preferences.getBoolean(PREF__MIGRATED_USER_ID, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func isUserIdMigrated() -> Bool {\n    return preferences.bool(forKey: \"PREF__MIGRATED_USER_ID\")\n}\n```"
+    },
+    {
+        "method_name": "setMigratedUserId",
+        "method_code": "Override\n    public void setMigratedUserId(boolean value) {\n        preferences.edit().putBoolean(PREF__MIGRATED_USER_ID, value).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMigratedUserId from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setMigratedUserId\n\n        Method Code: Override\n    public void setMigratedUserId(boolean value) {\n        preferences.edit().putBoolean(PREF__MIGRATED_USER_ID, value).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMigratedUserId(_ value: Bool) {\n    UserDefaults.standard.set(value, forKey: \"PREF__MIGRATED_USER_ID\")\n}\n```"
+    },
+    {
+        "method_name": "setPhotoSearchTimestamp",
+        "method_code": "Override\n    public void setPhotoSearchTimestamp(long timestamp) {\n        preferences.edit().putLong(PREF__PHOTO_SEARCH_TIMESTAMP, timestamp).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPhotoSearchTimestamp from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setPhotoSearchTimestamp\n\n        Method Code: Override\n    public void setPhotoSearchTimestamp(long timestamp) {\n        preferences.edit().putLong(PREF__PHOTO_SEARCH_TIMESTAMP, timestamp).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPhotoSearchTimestamp(timestamp: Int64) {\n    UserDefaults.standard.set(timestamp, forKey: \"PREF__PHOTO_SEARCH_TIMESTAMP\")\n}\n```"
+    },
+    {
+        "method_name": "getPhotoSearchTimestamp",
+        "method_code": "Override\n    public long getPhotoSearchTimestamp() {\n        return preferences.getLong(PREF__PHOTO_SEARCH_TIMESTAMP, 0);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPhotoSearchTimestamp from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getPhotoSearchTimestamp\n\n        Method Code: Override\n    public long getPhotoSearchTimestamp() {\n        return preferences.getLong(PREF__PHOTO_SEARCH_TIMESTAMP, 0);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPhotoSearchTimestamp() -> Int64 {\n    return UserDefaults.standard.int64(forKey: \"PREF__PHOTO_SEARCH_TIMESTAMP\") ?? 0\n}\n```"
+    },
+    {
+        "method_name": "getFolderPreference",
+        "method_code": "rivate static String getFolderPreference(final Context context,\n                                              final User user,\n                                              final String preferenceName,\n                                              final OCFile folder,\n                                              final String defaultValue) {\n        if (user.isAnonymous()) {\n            return defaultValue;\n        }\n\n        ArbitraryDataProvider dataProvider = new ArbitraryDataProviderImpl(context);\n        FileDataStorageManager storageManager = new FileDataStorageManager(user, context.getContentResolver());\n\n        String value = dataProvider.getValue(user.getAccountName(), getKeyFromFolder(preferenceName, folder));\n        OCFile prefFolder = folder;\n        while (prefFolder != null && value.isEmpty()) {\n            prefFolder = storageManager.getFileById(prefFolder.getParentId());\n            value = dataProvider.getValue(user.getAccountName(), getKeyFromFolder(preferenceName, prefFolder));\n        }\n        return value.isEmpty() ? defaultValue : value;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFolderPreference from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getFolderPreference\n\n        Method Code: rivate static String getFolderPreference(final Context context,\n                                              final User user,\n                                              final String preferenceName,\n                                              final OCFile folder,\n                                              final String defaultValue) {\n        if (user.isAnonymous()) {\n            return defaultValue;\n        }\n\n        ArbitraryDataProvider dataProvider = new ArbitraryDataProviderImpl(context);\n        FileDataStorageManager storageManager = new FileDataStorageManager(user, context.getContentResolver());\n\n        String value = dataProvider.getValue(user.getAccountName(), getKeyFromFolder(preferenceName, folder));\n        OCFile prefFolder = folder;\n        while (prefFolder != null && value.isEmpty()) {\n            prefFolder = storageManager.getFileById(prefFolder.getParentId());\n            value = dataProvider.getValue(user.getAccountName(), getKeyFromFolder(preferenceName, prefFolder));\n        }\n        return value.isEmpty() ? defaultValue : value;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprivate static func getFolderPreference(context: Context, user: User, preferenceName: String, folder: OCFile, defaultValue: String) -> String {\n    if user.isAnonymous() {\n        return defaultValue\n    }\n\n    let dataProvider = ArbitraryDataProviderImpl(context: context)\n    let storageManager = FileDataStorageManager(user: user, contentResolver: context.contentResolver)\n\n    var value = dataProvider.getValue(accountName: user.getAccountName(), key: getKeyFromFolder(preferenceName: preferenceName, folder: folder))\n    var prefFolder: OCFile? = folder\n    while prefFolder != nil && value.isEmpty {\n        prefFolder = storageManager.getFileById(id: prefFolder!.getParentId())\n        if let prefFolder = prefFolder {\n            value = dataProvider.getValue(accountName: user.getAccountName(), key: getKeyFromFolder(preferenceName: preferenceName, folder: prefFolder))\n        }\n    }\n    return value.isEmpty ? defaultValue : value\n}\n```"
+    },
+    {
+        "method_name": "setFolderPreference",
+        "method_code": "rivate static void setFolderPreference(final Context context,\n                                            final User user,\n                                            final String preferenceName,\n                                            @Nullable final OCFile folder,\n                                            final String value) {\n        ArbitraryDataProvider dataProvider = new ArbitraryDataProviderImpl(context);\n        dataProvider.storeOrUpdateKeyValue(user.getAccountName(), getKeyFromFolder(preferenceName, folder), value);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFolderPreference from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setFolderPreference\n\n        Method Code: rivate static void setFolderPreference(final Context context,\n                                            final User user,\n                                            final String preferenceName,\n                                            @Nullable final OCFile folder,\n                                            final String value) {\n        ArbitraryDataProvider dataProvider = new ArbitraryDataProviderImpl(context);\n        dataProvider.storeOrUpdateKeyValue(user.getAccountName(), getKeyFromFolder(preferenceName, folder), value);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprivate static func setFolderPreference(context: Context, user: User, preferenceName: String, folder: OCFile?, value: String) {\n    let dataProvider = ArbitraryDataProviderImpl(context: context)\n    dataProvider.storeOrUpdateKeyValue(user.getAccountName(), getKeyFromFolder(preferenceName, folder), value)\n}\n```"
+    },
+    {
+        "method_name": "getKeyFromFolder",
+        "method_code": "rivate static String getKeyFromFolder(String preferenceName, @Nullable OCFile folder) {\n        final String folderIdString = String.valueOf(folder != null ? folder.getFileId() :\n                                                         FileDataStorageManager.ROOT_PARENT_ID);\n\n        return preferenceName + \"_\" + folderIdString;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getKeyFromFolder from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getKeyFromFolder\n\n        Method Code: rivate static String getKeyFromFolder(String preferenceName, @Nullable OCFile folder) {\n        final String folderIdString = String.valueOf(folder != null ? folder.getFileId() :\n                                                         FileDataStorageManager.ROOT_PARENT_ID);\n\n        return preferenceName + \"_\" + folderIdString;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprivate static func getKeyFromFolder(preferenceName: String, folder: OCFile?) -> String {\n    let folderIdString = folder != nil ? String(folder!.getFileId()) : String(FileDataStorageManager.ROOT_PARENT_ID)\n    return preferenceName + \"_\" + folderIdString\n}\n```"
+    },
+    {
+        "method_name": "isPowerCheckDisabled",
+        "method_code": "Override\n    public boolean isPowerCheckDisabled() {\n        return preferences.getBoolean(PREF__POWER_CHECK_DISABLED, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isPowerCheckDisabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isPowerCheckDisabled\n\n        Method Code: Override\n    public boolean isPowerCheckDisabled() {\n        return preferences.getBoolean(PREF__POWER_CHECK_DISABLED, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func isPowerCheckDisabled() -> Bool {\n    return preferences.bool(forKey: PREF__POWER_CHECK_DISABLED)\n}\n```"
+    },
+    {
+        "method_name": "setPowerCheckDisabled",
+        "method_code": "Override\n    public void setPowerCheckDisabled(boolean value) {\n        preferences.edit().putBoolean(PREF__POWER_CHECK_DISABLED, value).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPowerCheckDisabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setPowerCheckDisabled\n\n        Method Code: Override\n    public void setPowerCheckDisabled(boolean value) {\n        preferences.edit().putBoolean(PREF__POWER_CHECK_DISABLED, value).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPowerCheckDisabled(_ value: Bool) {\n    preferences.set(value, forKey: \"PREF__POWER_CHECK_DISABLED\")\n}\n```"
+    },
+    {
+        "method_name": "increasePinWrongAttempts",
+        "method_code": "ublic void increasePinWrongAttempts() {\n        int count = preferences.getInt(PREF__PIN_BRUTE_FORCE_COUNT, 0);\n        preferences.edit().putInt(PREF__PIN_BRUTE_FORCE_COUNT, count + 1).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled increasePinWrongAttempts from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: increasePinWrongAttempts\n\n        Method Code: ublic void increasePinWrongAttempts() {\n        int count = preferences.getInt(PREF__PIN_BRUTE_FORCE_COUNT, 0);\n        preferences.edit().putInt(PREF__PIN_BRUTE_FORCE_COUNT, count + 1).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc increasePinWrongAttempts() {\n    let count = UserDefaults.standard.integer(forKey: \"PREF__PIN_BRUTE_FORCE_COUNT\")\n    UserDefaults.standard.set(count + 1, forKey: \"PREF__PIN_BRUTE_FORCE_COUNT\")\n}\n```"
+    },
+    {
+        "method_name": "resetPinWrongAttempts",
+        "method_code": "Override\n    public void resetPinWrongAttempts() {\n        preferences.edit().putInt(PREF__PIN_BRUTE_FORCE_COUNT, 0).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled resetPinWrongAttempts from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: resetPinWrongAttempts\n\n        Method Code: Override\n    public void resetPinWrongAttempts() {\n        preferences.edit().putInt(PREF__PIN_BRUTE_FORCE_COUNT, 0).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc resetPinWrongAttempts() {\n    UserDefaults.standard.set(0, forKey: \"PREF__PIN_BRUTE_FORCE_COUNT\")\n}\n```"
+    },
+    {
+        "method_name": "pinBruteForceDelay",
+        "method_code": "ublic int pinBruteForceDelay() {\n        int count = preferences.getInt(PREF__PIN_BRUTE_FORCE_COUNT, 0);\n\n        return computeBruteForceDelay(count);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled pinBruteForceDelay from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: pinBruteForceDelay\n\n        Method Code: ublic int pinBruteForceDelay() {\n        int count = preferences.getInt(PREF__PIN_BRUTE_FORCE_COUNT, 0);\n\n        return computeBruteForceDelay(count);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc pinBruteForceDelay() -> Int {\n    let count = preferences.integer(forKey: PREF__PIN_BRUTE_FORCE_COUNT)\n    return computeBruteForceDelay(count: count)\n}\n```"
+    },
+    {
+        "method_name": "getUidPid",
+        "method_code": "Override\n    public String getUidPid() {\n        return preferences.getString(PREF__UID_PID, \"\");\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUidPid from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getUidPid\n\n        Method Code: Override\n    public String getUidPid() {\n        return preferences.getString(PREF__UID_PID, \"\");\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func getUidPid() -> String {\n    return preferences.string(forKey: PREF__UID_PID) ?? \"\"\n}\n```"
+    },
+    {
+        "method_name": "setUidPid",
+        "method_code": "Override\n    public void setUidPid(String uidPid) {\n        preferences.edit().putString(PREF__UID_PID, uidPid).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUidPid from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setUidPid\n\n        Method Code: Override\n    public void setUidPid(String uidPid) {\n        preferences.edit().putString(PREF__UID_PID, uidPid).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setUidPid(_ uidPid: String) {\n    preferences.edit().putString(PREF__UID_PID, uidPid).apply()\n}\n```"
+    },
+    {
+        "method_name": "getCalendarLastBackup",
+        "method_code": "Override\n    public long getCalendarLastBackup() {\n        return preferences.getLong(PREF__CALENDAR_LAST_BACKUP, 0);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getCalendarLastBackup from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getCalendarLastBackup\n\n        Method Code: Override\n    public long getCalendarLastBackup() {\n        return preferences.getLong(PREF__CALENDAR_LAST_BACKUP, 0);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getCalendarLastBackup() -> Int64 {\n    return preferences.integer(forKey: \"PREF__CALENDAR_LAST_BACKUP\")\n}\n```"
+    },
+    {
+        "method_name": "setCalendarLastBackup",
+        "method_code": "Override\n    public void setCalendarLastBackup(long timestamp) {\n        preferences.edit().putLong(PREF__CALENDAR_LAST_BACKUP, timestamp).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setCalendarLastBackup from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setCalendarLastBackup\n\n        Method Code: Override\n    public void setCalendarLastBackup(long timestamp) {\n        preferences.edit().putLong(PREF__CALENDAR_LAST_BACKUP, timestamp).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setCalendarLastBackup(timestamp: Int64) {\n    UserDefaults.standard.set(timestamp, forKey: \"PREF__CALENDAR_LAST_BACKUP\")\n}\n```"
+    },
+    {
+        "method_name": "isGlobalUploadPaused",
+        "method_code": "Override\n    public boolean isGlobalUploadPaused() {\n        return preferences.getBoolean(PREF__GLOBAL_PAUSE_STATE,false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isGlobalUploadPaused from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isGlobalUploadPaused\n\n        Method Code: Override\n    public boolean isGlobalUploadPaused() {\n        return preferences.getBoolean(PREF__GLOBAL_PAUSE_STATE,false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isGlobalUploadPaused() -> Bool {\n    return preferences.bool(forKey: \"PREF__GLOBAL_PAUSE_STATE\")\n}\n```"
+    },
+    {
+        "method_name": "setGlobalUploadPaused",
+        "method_code": "Override\n    public void setGlobalUploadPaused(boolean globalPausedState) {\n        preferences.edit().putBoolean(PREF__GLOBAL_PAUSE_STATE, globalPausedState).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setGlobalUploadPaused from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setGlobalUploadPaused\n\n        Method Code: Override\n    public void setGlobalUploadPaused(boolean globalPausedState) {\n        preferences.edit().putBoolean(PREF__GLOBAL_PAUSE_STATE, globalPausedState).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setGlobalUploadPaused(_ globalPausedState: Bool) {\n    UserDefaults.standard.set(globalPausedState, forKey: \"PREF__GLOBAL_PAUSE_STATE\")\n}\n```"
+    },
+    {
+        "method_name": "setPdfZoomTipShownCount",
+        "method_code": "Override\n    public void setPdfZoomTipShownCount(int count) {\n        preferences.edit().putInt(PREF__PDF_ZOOM_TIP_SHOWN, count).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPdfZoomTipShownCount from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setPdfZoomTipShownCount\n\n        Method Code: Override\n    public void setPdfZoomTipShownCount(int count) {\n        preferences.edit().putInt(PREF__PDF_ZOOM_TIP_SHOWN, count).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPdfZoomTipShownCount(count: Int) {\n    preferences.set(count, forKey: \"PREF__PDF_ZOOM_TIP_SHOWN\")\n}\n```"
+    },
+    {
+        "method_name": "getPdfZoomTipShownCount",
+        "method_code": "Override\n    public int getPdfZoomTipShownCount() {\n        return preferences.getInt(PREF__PDF_ZOOM_TIP_SHOWN, 0);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPdfZoomTipShownCount from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getPdfZoomTipShownCount\n\n        Method Code: Override\n    public int getPdfZoomTipShownCount() {\n        return preferences.getInt(PREF__PDF_ZOOM_TIP_SHOWN, 0);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPdfZoomTipShownCount() -> Int {\n    return UserDefaults.standard.integer(forKey: \"PREF__PDF_ZOOM_TIP_SHOWN\")\n}\n```"
+    },
+    {
+        "method_name": "isStoragePermissionRequested",
+        "method_code": "Override\n    public boolean isStoragePermissionRequested() {\n        return preferences.getBoolean(PREF__STORAGE_PERMISSION_REQUESTED, false);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isStoragePermissionRequested from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isStoragePermissionRequested\n\n        Method Code: Override\n    public boolean isStoragePermissionRequested() {\n        return preferences.getBoolean(PREF__STORAGE_PERMISSION_REQUESTED, false);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isStoragePermissionRequested() -> Bool {\n    return preferences.bool(forKey: \"PREF__STORAGE_PERMISSION_REQUESTED\")\n}\n```"
+    },
+    {
+        "method_name": "setStoragePermissionRequested",
+        "method_code": "Override\n    public void setStoragePermissionRequested(boolean value) {\n        preferences.edit().putBoolean(PREF__STORAGE_PERMISSION_REQUESTED, value).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setStoragePermissionRequested from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setStoragePermissionRequested\n\n        Method Code: Override\n    public void setStoragePermissionRequested(boolean value) {\n        preferences.edit().putBoolean(PREF__STORAGE_PERMISSION_REQUESTED, value).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setStoragePermissionRequested(_ value: Bool) {\n    UserDefaults.standard.set(value, forKey: \"PREF__STORAGE_PERMISSION_REQUESTED\")\n}\n```"
+    },
+    {
+        "method_name": "computeBruteForceDelay",
+        "method_code": "VisibleForTesting\n    public int computeBruteForceDelay(int count) {\n        return (int) Math.min(count / 3d, 10);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled computeBruteForceDelay from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: computeBruteForceDelay\n\n        Method Code: VisibleForTesting\n    public int computeBruteForceDelay(int count) {\n        return (int) Math.min(count / 3d, 10);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc computeBruteForceDelay(count: Int) -> Int {\n    return min(Int(Double(count) / 3.0), 10)\n}\n```"
+    },
+    {
+        "method_name": "setInAppReviewData",
+        "method_code": "Override\n    public void setInAppReviewData(@NonNull AppReviewShownModel appReviewShownModel) {\n        Gson gson = new Gson();\n        String json = gson.toJson(appReviewShownModel);\n        preferences.edit().putString(PREF__IN_APP_REVIEW_DATA, json).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setInAppReviewData from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setInAppReviewData\n\n        Method Code: Override\n    public void setInAppReviewData(@NonNull AppReviewShownModel appReviewShownModel) {\n        Gson gson = new Gson();\n        String json = gson.toJson(appReviewShownModel);\n        preferences.edit().putString(PREF__IN_APP_REVIEW_DATA, json).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setInAppReviewData(appReviewShownModel: AppReviewShownModel) {\n    let jsonEncoder = JSONEncoder()\n    if let jsonData = try? jsonEncoder.encode(appReviewShownModel),\n       let jsonString = String(data: jsonData, encoding: .utf8) {\n        UserDefaults.standard.set(jsonString, forKey: \"PREF__IN_APP_REVIEW_DATA\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "getInAppReviewData",
+        "method_code": "Nullable\n    @Override\n    public AppReviewShownModel getInAppReviewData() {\n        Gson gson = new Gson();\n        String json = preferences.getString(PREF__IN_APP_REVIEW_DATA, \"\");\n        return gson.fromJson(json, AppReviewShownModel.class);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getInAppReviewData from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getInAppReviewData\n\n        Method Code: Nullable\n    @Override\n    public AppReviewShownModel getInAppReviewData() {\n        Gson gson = new Gson();\n        String json = preferences.getString(PREF__IN_APP_REVIEW_DATA, \"\");\n        return gson.fromJson(json, AppReviewShownModel.class);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getInAppReviewData() -> AppReviewShownModel? {\n    let json = preferences.string(forKey: PREF__IN_APP_REVIEW_DATA) ?? \"\"\n    let data = json.data(using: .utf8)\n    let decoder = JSONDecoder()\n    return try? decoder.decode(AppReviewShownModel.self, from: data!)\n}\n```"
+    },
+    {
+        "method_name": "setLastSelectedMediaFolder",
+        "method_code": "Override\n    public void setLastSelectedMediaFolder(@NonNull String path) {\n        preferences.edit().putString(PREF__MEDIA_FOLDER_LAST_PATH, path).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLastSelectedMediaFolder from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setLastSelectedMediaFolder\n\n        Method Code: Override\n    public void setLastSelectedMediaFolder(@NonNull String path) {\n        preferences.edit().putString(PREF__MEDIA_FOLDER_LAST_PATH, path).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLastSelectedMediaFolder(path: String) {\n    UserDefaults.standard.set(path, forKey: \"PREF__MEDIA_FOLDER_LAST_PATH\")\n}\n```"
+    },
+    {
+        "method_name": "getLastSelectedMediaFolder",
+        "method_code": "NonNull\n    @Override\n    public String getLastSelectedMediaFolder() {\n        return preferences.getString(PREF__MEDIA_FOLDER_LAST_PATH, OCFile.ROOT_PATH);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLastSelectedMediaFolder from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getLastSelectedMediaFolder\n\n        Method Code: NonNull\n    @Override\n    public String getLastSelectedMediaFolder() {\n        return preferences.getString(PREF__MEDIA_FOLDER_LAST_PATH, OCFile.ROOT_PATH);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLastSelectedMediaFolder() -> String {\n    return UserDefaults.standard.string(forKey: \"PREF__MEDIA_FOLDER_LAST_PATH\") ?? OCFile.ROOT_PATH\n}\n```"
+    },
+    {
+        "method_name": "setTwoWaySyncStatus",
+        "method_code": "Override\n    public void setTwoWaySyncStatus(boolean value) {\n        preferences.edit().putBoolean(PREF__TWO_WAY_STATUS, value).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setTwoWaySyncStatus from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setTwoWaySyncStatus\n\n        Method Code: Override\n    public void setTwoWaySyncStatus(boolean value) {\n        preferences.edit().putBoolean(PREF__TWO_WAY_STATUS, value).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setTwoWaySyncStatus(_ value: Bool) {\n    UserDefaults.standard.set(value, forKey: \"PREF__TWO_WAY_STATUS\")\n}\n```"
+    },
+    {
+        "method_name": "isTwoWaySyncEnabled",
+        "method_code": "Override\n    public boolean isTwoWaySyncEnabled() {\n        return preferences.getBoolean(PREF__TWO_WAY_STATUS, true);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isTwoWaySyncEnabled from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: isTwoWaySyncEnabled\n\n        Method Code: Override\n    public boolean isTwoWaySyncEnabled() {\n        return preferences.getBoolean(PREF__TWO_WAY_STATUS, true);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isTwoWaySyncEnabled() -> Bool {\n    return preferences.bool(forKey: PREF__TWO_WAY_STATUS) ?? true\n}\n```"
+    },
+    {
+        "method_name": "setTwoWaySyncInterval",
+        "method_code": "Override\n    public void setTwoWaySyncInterval(Long value) {\n        preferences.edit().putLong(PREF__TWO_WAY_SYNC_INTERVAL, value).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setTwoWaySyncInterval from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setTwoWaySyncInterval\n\n        Method Code: Override\n    public void setTwoWaySyncInterval(Long value) {\n        preferences.edit().putLong(PREF__TWO_WAY_SYNC_INTERVAL, value).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setTwoWaySyncInterval(_ value: Int64) {\n    UserDefaults.standard.set(value, forKey: \"PREF__TWO_WAY_SYNC_INTERVAL\")\n}\n```"
+    },
+    {
+        "method_name": "getTwoWaySyncInterval",
+        "method_code": "Override\n    public Long getTwoWaySyncInterval() {\n        return preferences.getLong(PREF__TWO_WAY_SYNC_INTERVAL, 15L);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getTwoWaySyncInterval from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: getTwoWaySyncInterval\n\n        Method Code: Override\n    public Long getTwoWaySyncInterval() {\n        return preferences.getLong(PREF__TWO_WAY_SYNC_INTERVAL, 15L);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getTwoWaySyncInterval() -> Int64 {\n    return preferences.integer(forKey: PREF__TWO_WAY_SYNC_INTERVAL) != 0 ? Int64(preferences.integer(forKey: PREF__TWO_WAY_SYNC_INTERVAL)) : 15\n}\n```"
+    },
+    {
+        "method_name": "shouldStopDownloadJobsOnStart",
+        "method_code": "Override\n    public boolean shouldStopDownloadJobsOnStart() {\n        return preferences.getBoolean(PREF__STOP_DOWNLOAD_JOBS_ON_START, true);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled shouldStopDownloadJobsOnStart from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: shouldStopDownloadJobsOnStart\n\n        Method Code: Override\n    public boolean shouldStopDownloadJobsOnStart() {\n        return preferences.getBoolean(PREF__STOP_DOWNLOAD_JOBS_ON_START, true);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc shouldStopDownloadJobsOnStart() -> Bool {\n    return UserDefaults.standard.bool(forKey: \"PREF__STOP_DOWNLOAD_JOBS_ON_START\")\n}\n```"
+    },
+    {
+        "method_name": "setStopDownloadJobsOnStart",
+        "method_code": "Override\n    public void setStopDownloadJobsOnStart(boolean value) {\n        preferences.edit().putBoolean(PREF__STOP_DOWNLOAD_JOBS_ON_START, value).apply();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setStopDownloadJobsOnStart from AppPreferencesImpl.java into Swift.\n\n        Input:\n\n        Method Name: setStopDownloadJobsOnStart\n\n        Method Code: Override\n    public void setStopDownloadJobsOnStart(boolean value) {\n        preferences.edit().putBoolean(PREF__STOP_DOWNLOAD_JOBS_ON_START, value).apply();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setStopDownloadJobsOnStart(_ value: Bool) {\n    preferences.set(value, forKey: \"PREF__STOP_DOWNLOAD_JOBS_ON_START\")\n}\n```"
+    }
+]

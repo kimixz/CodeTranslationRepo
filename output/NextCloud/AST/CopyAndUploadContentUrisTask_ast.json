@@ -1,0 +1,227 @@
+{
+    "method_calls": {
+        "CopyAndUploadContentUrisTask.class": [
+            "getSimpleName"
+        ],
+        "Integer": [
+            "valueOf"
+        ],
+        "context": [
+            "getApplicationContext"
+        ],
+        "leakedContentResolver": [
+            "query",
+            "openInputStream"
+        ],
+        "cursor": [
+            "moveToFirst",
+            "getColumnIndex",
+            "getLong"
+        ],
+        "FileStorageUtils": [
+            "getTemporalPath"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "cacheFile": [
+            "getParentFile",
+            "createNewFile",
+            "setLastModified"
+        ],
+        "tempDir": [
+            "exists",
+            "mkdirs"
+        ],
+        "inputStream": [
+            "read",
+            "close"
+        ],
+        "outputStream": [
+            "write",
+            "close"
+        ],
+        "Log_OC": [
+            "w",
+            "e",
+            "i"
+        ],
+        "unknown": [
+            "requestUpload"
+        ],
+        "f": [
+            "exists",
+            "delete"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "uploadNewFiles"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "mListener": [
+            "get"
+        ],
+        "listener": [
+            "onTmpFilesCopied"
+        ],
+        "String": [
+            "format"
+        ],
+        "mAppContext": [
+            "getString"
+        ],
+        "Toast.makeText(mAppContext, message, Toast.LENGTH_LONG)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ]
+    },
+    "methods": [
+        {
+            "name": "makeParamsToExecute",
+            "return_type": "Object[]",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "Uri[]",
+                    "name": "sourceUris"
+                },
+                {
+                    "type": "String[]",
+                    "name": "remotePaths"
+                },
+                {
+                    "type": "int",
+                    "name": "behaviour"
+                },
+                {
+                    "type": "ContentResolver",
+                    "name": "contentResolver"
+                }
+            ],
+            "start_position": 4203,
+            "end_position": 4616,
+            "body_start": 4433,
+            "body_end": 4616
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "ResultCode",
+            "parameters": [
+                {
+                    "type": "Object[]",
+                    "name": "params"
+                }
+            ],
+            "start_position": 5103,
+            "end_position": 9950,
+            "body_start": 5170,
+            "body_end": 9950
+        },
+        {
+            "name": "requestUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "localPath"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "int",
+                    "name": "behaviour"
+                }
+            ],
+            "start_position": 9956,
+            "end_position": 10436,
+            "body_start": 10046,
+            "body_end": 10436
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ResultCode",
+                    "name": "result"
+                }
+            ],
+            "start_position": 10442,
+            "end_position": 11898,
+            "body_start": 10504,
+            "body_end": 11898
+        },
+        {
+            "name": "setListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OnCopyTmpFilesTaskListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 12065,
+            "end_position": 12184,
+            "body_start": 12126,
+            "body_end": 12184
+        },
+        {
+            "name": "onTmpFilesCopied",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ResultCode",
+                    "name": "result"
+                }
+            ],
+            "start_position": 12316,
+            "end_position": 12357
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "try_statement",
+        "for_statement",
+        "try_with_resources_statement",
+        "if_statement",
+        "while_statement",
+        "break_statement"
+    ],
+    "local_variables": {
+        "result": "ResultCode",
+        "inputStream": "InputStream",
+        "outputStream": "FileOutputStream",
+        "fullTempPath": "String",
+        "currentUri": "Uri",
+        "user": "User",
+        "uris": "Uri[]",
+        "remotePaths": "String[]",
+        "behaviour": "int",
+        "leakedContentResolver": "ContentResolver",
+        "currentRemotePath": "String",
+        "i": "int",
+        "lastModified": "long",
+        "columnIndex": "int",
+        "cacheFile": "File",
+        "tempDir": "File",
+        "buffer": "byte[]",
+        "count": "int",
+        "f": "File",
+        "listener": "OnCopyTmpFilesTaskListener",
+        "messageId": "int",
+        "message": "String"
+    }
+}

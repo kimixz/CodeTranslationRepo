@@ -1,0 +1,42 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "Boolean",
+            "parameters": [],
+            "start_position": 1308,
+            "end_position": 2064,
+            "body_start": 1370,
+            "body_end": 2064
+        }
+    ],
+    "local_variables": {
+        "fileActivity": "FileActivity",
+        "checkWipeResult": "RemoteOperationResult"
+    },
+    "method_calls": {
+        "fileActivityWeakReference": [
+            "get"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "new CheckRemoteWipeRemoteOperation()": [
+            "execute"
+        ],
+        "checkWipeResult": [
+            "isSuccess"
+        ],
+        "backgroundJobManager": [
+            "startAccountRemovalJob"
+        ],
+        "fileActivity": [
+            "performCredentialsUpdate"
+        ]
+    }
+}

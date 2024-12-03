@@ -1,0 +1,35 @@
+{
+    "methods": [
+        {
+            "name": "onRestoreClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileVersion",
+                    "name": "fileVersion"
+                }
+            ],
+            "start_position": 401,
+            "end_position": 448
+        },
+        {
+            "name": "onSuccess",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 496,
+            "end_position": 513
+        },
+        {
+            "name": "onError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "error"
+                }
+            ],
+            "start_position": 523,
+            "end_position": 547
+        }
+    ]
+}

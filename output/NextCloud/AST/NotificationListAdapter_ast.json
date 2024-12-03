@@ -1,0 +1,409 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "while_statement",
+        "for_statement"
+    ],
+    "method_calls": {
+        "notificationsActivity.getResources()": [
+            "getColor"
+        ],
+        "notificationsActivity": [
+            "getResources",
+            "startActivity"
+        ],
+        "notificationsList": [
+            "clear",
+            "addAll",
+            "get",
+            "size",
+            "remove"
+        ],
+        "unknown": [
+            "notifyDataSetChanged",
+            "makeSpecialPartsBold",
+            "downloadIcon",
+            "setButtons",
+            "setButtonEnabled",
+            "notifyItemRemoved",
+            "notifyItemRangeChanged"
+        ],
+        "NotificationListItemBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "holder.binding.datetime": [
+            "setText"
+        ],
+        "DisplayUtils": [
+            "getRelativeTimestamp",
+            "startLinkIntent"
+        ],
+        "notification.getDatetime()": [
+            "getTime"
+        ],
+        "notification": [
+            "getDatetime",
+            "getSubject",
+            "getLink",
+            "getMessage",
+            "getIcon",
+            "getActions",
+            "getSubjectRich"
+        ],
+        "notification.subjectRichParameters": [
+            "get"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "holder.binding.subject": [
+            "setTypeface",
+            "getTypeface",
+            "setOnClickListener",
+            "setText"
+        ],
+        "intent": [
+            "setAction",
+            "putExtra",
+            "setData"
+        ],
+        "notification.getMessage()": [
+            "isEmpty"
+        ],
+        "holder.binding.message": [
+            "setText",
+            "setVisibility"
+        ],
+        "viewThemeUtils.platform": [
+            "colorImageView",
+            "colorTextView"
+        ],
+        "holder.binding.dismiss": [
+            "setOnClickListener"
+        ],
+        "new DeleteNotificationTask(client,\n                                                                                  notification,\n                                                                                  holder,\n                                                                                  notificationsActivity)": [
+            "execute"
+        ],
+        "holder.binding.buttons": [
+            "removeAllViews",
+            "setVisibility",
+            "addView",
+            "getChildCount",
+            "getChildAt"
+        ],
+        "params": [
+            "setMargins"
+        ],
+        "resources": [
+            "getDimensionPixelOffset"
+        ],
+        "notification.getActions()": [
+            "size"
+        ],
+        "button": [
+            "setAllCaps",
+            "setText",
+            "setCornerRadiusResource",
+            "setLayoutParams",
+            "setGravity",
+            "setOnClickListener",
+            "setBackgroundColor"
+        ],
+        "ACTION_TYPE_WEB": [
+            "equals"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "new NotificationExecuteActionTask(client,\n                                                              holder,\n                                                              notification,\n                                                              notificationsActivity)": [
+            "execute"
+        ],
+        "viewThemeUtils.material": [
+            "colorMaterialButtonPrimaryFilled",
+            "colorMaterialButtonPrimaryBorderless"
+        ],
+        "overflowActions": [
+            "add"
+        ],
+        "moreButton": [
+            "setBackgroundColor",
+            "setAllCaps",
+            "setText",
+            "setCornerRadiusResource",
+            "setLayoutParams",
+            "setGravity",
+            "setOnClickListener"
+        ],
+        "ResourcesCompat": [
+            "getColor"
+        ],
+        "popup.getMenu().add(action.label)": [
+            "setOnMenuItemClickListener"
+        ],
+        "popup.getMenu()": [
+            "add"
+        ],
+        "popup": [
+            "getMenu",
+            "show"
+        ],
+        "new NotificationExecuteActionTask(client,\n                                                          holder,\n                                                          notification,\n                                                          notificationsActivity)": [
+            "execute"
+        ],
+        "text": [
+            "indexOf",
+            "substring"
+        ],
+        "richObject": [
+            "getName"
+        ],
+        "ssb": [
+            "replace",
+            "toString",
+            "setSpan"
+        ],
+        "name": [
+            "length"
+        ],
+        "holder": [
+            "getAdapterPosition"
+        ],
+        "holder.binding.buttons.getChildAt(i)": [
+            "setEnabled"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())\n            .placeholder(R.drawable.ic_notification)\n            .error(R.drawable.ic_notification)\n            .animate(android.R.anim.fade_in)": [
+            "listener"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())\n            .placeholder(R.drawable.ic_notification)\n            .error(R.drawable.ic_notification)": [
+            "animate"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())\n            .placeholder(R.drawable.ic_notification)": [
+            "error"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())": [
+            "placeholder"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))": [
+            "decoder"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())": [
+            "cacheDecoder"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)": [
+            "sourceEncoder"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)": [
+            "transcode"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)\n            .from(Uri.class)": [
+            "as"
+        ],
+        "Glide.with(notificationsActivity)\n            .using(Glide.buildStreamModelLoader(Uri.class, notificationsActivity), InputStream.class)": [
+            "from"
+        ],
+        "Glide.with(notificationsActivity)": [
+            "using"
+        ],
+        "Glide": [
+            "with",
+            "buildStreamModelLoader"
+        ],
+        "requestBuilder\n            .diskCacheStrategy(DiskCacheStrategy.SOURCE)\n            .load(uri)": [
+            "into"
+        ],
+        "requestBuilder\n            .diskCacheStrategy(DiskCacheStrategy.SOURCE)": [
+            "load"
+        ],
+        "requestBuilder": [
+            "diskCacheStrategy"
+        ],
+        "binding": [
+            "getRoot"
+        ]
+    },
+    "methods": [
+        {
+            "name": "setNotificationItems",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Notification>",
+                    "name": "notificationItems"
+                }
+            ],
+            "start_position": 3853,
+            "end_position": 4051,
+            "body_start": 3924,
+            "body_end": 4051
+        },
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "NotificationViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 4057,
+            "end_position": 4327,
+            "body_start": 4174,
+            "body_end": 4327
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NotificationViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 4333,
+            "end_position": 7524,
+            "body_start": 4430,
+            "body_end": 7524
+        },
+        {
+            "name": "setButtons",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NotificationViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "Notification",
+                    "name": "notification"
+                }
+            ],
+            "start_position": 7530,
+            "end_position": 13785,
+            "body_start": 7611,
+            "body_end": 13785
+        },
+        {
+            "name": "makeSpecialPartsBold",
+            "return_type": "SpannableStringBuilder",
+            "parameters": [
+                {
+                    "type": "Notification",
+                    "name": "notification"
+                }
+            ],
+            "start_position": 13791,
+            "end_position": 14936,
+            "body_start": 13870,
+            "body_end": 14936
+        },
+        {
+            "name": "removeNotification",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NotificationViewHolder",
+                    "name": "holder"
+                }
+            ],
+            "start_position": 14942,
+            "end_position": 15303,
+            "body_start": 15004,
+            "body_end": 15303
+        },
+        {
+            "name": "removeAllNotifications",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15309,
+            "end_position": 15420,
+            "body_start": 15346,
+            "body_end": 15420
+        },
+        {
+            "name": "setButtonEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NotificationViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 15427,
+            "end_position": 15666,
+            "body_start": 15504,
+            "body_end": 15666
+        },
+        {
+            "name": "downloadIcon",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "icon"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "itemViewType"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 15672,
+            "end_position": 16637,
+            "body_start": 15752,
+            "body_end": 16637
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 16643,
+            "end_position": 16731,
+            "body_start": 16683,
+            "body_end": 16731
+        }
+    ],
+    "local_variables": {
+        "notification": "Notification",
+        "file": "RichObject",
+        "subject": "String",
+        "intent": "Intent",
+        "resources": "Resources",
+        "params": "LinearLayout.LayoutParams",
+        "overflowActions": "List<Action>",
+        "button": "MaterialButton",
+        "moreButton": "MaterialButton",
+        "popup": "PopupMenu",
+        "text": "String",
+        "ssb": "SpannableStringBuilder",
+        "openingBrace": "int",
+        "closingBrace": "int",
+        "replaceablePart": "String",
+        "richObject": "RichObject",
+        "name": "String",
+        "position": "int",
+        "i": "int",
+        "requestBuilder": "GenericRequestBuilder<Uri, InputStream, SVG, Drawable>",
+        "uri": "Uri"
+    }
+}

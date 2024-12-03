@@ -1,0 +1,50 @@
+[
+    {
+        "method_name": "getKey",
+        "method_code": "public String getKey() {\n        return this.key;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getKey from Data.java into Swift.\n\n        Input:\n\n        Method Name: getKey\n\n        Method Code: public String getKey() {\n        return this.key;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getKey() -> String {\n    return self.key\n}\n```"
+    },
+    {
+        "method_name": "getFilename",
+        "method_code": "public String getFilename() {\n        return this.filename;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFilename from Data.java into Swift.\n\n        Input:\n\n        Method Name: getFilename\n\n        Method Code: public String getFilename() {\n        return this.filename;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFilename() -> String {\n    return self.filename\n}\n```"
+    },
+    {
+        "method_name": "getMimetype",
+        "method_code": "public String getMimetype() {\n        return this.mimetype;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMimetype from Data.java into Swift.\n\n        Input:\n\n        Method Name: getMimetype\n\n        Method Code: public String getMimetype() {\n        return this.mimetype;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMimetype() -> String {\n    return self.mimetype\n}\n```"
+    },
+    {
+        "method_name": "getVersion",
+        "method_code": "public double getVersion() {\n        return this.version;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getVersion from Data.java into Swift.\n\n        Input:\n\n        Method Name: getVersion\n\n        Method Code: public double getVersion() {\n        return this.version;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getVersion() -> Double {\n    return self.version\n}\n```"
+    },
+    {
+        "method_name": "setKey",
+        "method_code": "public void setKey(String key) {\n        this.key = key;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setKey from Data.java into Swift.\n\n        Input:\n\n        Method Name: setKey\n\n        Method Code: public void setKey(String key) {\n        this.key = key;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setKey(_ key: String) {\n    self.key = key\n}\n```"
+    },
+    {
+        "method_name": "setFilename",
+        "method_code": "public void setFilename(String filename) {\n        this.filename = filename;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFilename from Data.java into Swift.\n\n        Input:\n\n        Method Name: setFilename\n\n        Method Code: public void setFilename(String filename) {\n        this.filename = filename;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFilename(_ filename: String) {\n    self.filename = filename\n}\n```"
+    },
+    {
+        "method_name": "setMimetype",
+        "method_code": "public void setMimetype(String mimetype) {\n        this.mimetype = mimetype;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMimetype from Data.java into Swift.\n\n        Input:\n\n        Method Name: setMimetype\n\n        Method Code: public void setMimetype(String mimetype) {\n        this.mimetype = mimetype;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMimetype(_ mimetype: String) {\n    self.mimetype = mimetype\n}\n```"
+    },
+    {
+        "method_name": "setVersion",
+        "method_code": "public void setVersion(double version) {\n        this.version = version;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setVersion from Data.java into Swift.\n\n        Input:\n\n        Method Name: setVersion\n\n        Method Code: public void setVersion(double version) {\n        this.version = version;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setVersion(_ version: Double) {\n    self.version = version\n}\n```"
+    }
+]

@@ -1,0 +1,185 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "for_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 2428,
+            "end_position": 3175,
+            "body_start": 2493,
+            "body_end": 3175
+        },
+        {
+            "name": "setUpRecyclerView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3181,
+            "end_position": 4137,
+            "body_start": 3214,
+            "body_end": 4137
+        },
+        {
+            "name": "onPermissionChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 3554,
+            "end_position": 3726,
+            "body_start": 3626,
+            "body_end": 3726
+        },
+        {
+            "name": "onDismissSheet",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3744,
+            "end_position": 3849,
+            "body_start": 3799,
+            "body_end": 3849
+        },
+        {
+            "name": "handlePermissionChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<QuickPermissionModel>",
+                    "name": "quickPermissionModelList"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 4286,
+            "end_position": 6143,
+            "body_start": 4390,
+            "body_end": 6143
+        },
+        {
+            "name": "getQuickPermissionList",
+            "return_type": "List<QuickPermissionModel>",
+            "parameters": [],
+            "start_position": 6257,
+            "end_position": 7247,
+            "body_start": 6317,
+            "body_end": 7247
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7254,
+            "end_position": 7347,
+            "body_start": 7292,
+            "body_end": 7347
+        },
+        {
+            "name": "onQuickPermissionChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "int",
+                    "name": "permission"
+                }
+            ],
+            "start_position": 7421,
+            "end_position": 7482
+        }
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate",
+            "onStop"
+        ],
+        "QuickSharingPermissionsBottomSheetFragmentBinding": [
+            "inflate"
+        ],
+        "unknown": [
+            "getLayoutInflater",
+            "setContentView",
+            "getWindow",
+            "setUpRecyclerView",
+            "setOnShowListener",
+            "getQuickPermissionList",
+            "handlePermissionChanged",
+            "dismiss"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "getWindow()": [
+            "setLayout"
+        ],
+        "viewThemeUtils.platform": [
+            "themeDialog"
+        ],
+        "BottomSheetBehavior.from((View) binding.getRoot().getParent())": [
+            "setPeekHeight"
+        ],
+        "BottomSheetBehavior": [
+            "from"
+        ],
+        "binding.getRoot()": [
+            "getParent",
+            "getMeasuredHeight"
+        ],
+        "binding.rvQuickSharePermissions": [
+            "setLayoutManager",
+            "setAdapter"
+        ],
+        "quickPermissionModelList.get(position).getPermissionName()": [
+            "equalsIgnoreCase"
+        ],
+        "quickPermissionModelList.get(position)": [
+            "getPermissionName"
+        ],
+        "quickPermissionModelList": [
+            "get",
+            "add"
+        ],
+        "fileActivity.getResources()": [
+            "getString",
+            "getStringArray"
+        ],
+        "fileActivity": [
+            "getResources"
+        ],
+        "ocShare": [
+            "isFolder"
+        ],
+        "actions": [
+            "onQuickPermissionChanged"
+        ],
+        "SharingMenuHelper": [
+            "getPermissionCheckedItem"
+        ]
+    },
+    "local_variables": {
+        "quickPermissionModelList": "List<QuickPermissionModel>",
+        "adapter": "QuickSharingPermissionsAdapter",
+        "linearLayoutManager": "LinearLayoutManager",
+        "permissionArray": "String[]",
+        "checkedItem": "int",
+        "i": "int",
+        "quickPermissionModel": "QuickPermissionModel"
+    }
+}

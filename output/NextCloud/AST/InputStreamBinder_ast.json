@@ -1,0 +1,499 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "try_statement",
+        "if_statement",
+        "try_with_resources_statement",
+        "break_statement",
+        "throw_statement",
+        "enhanced_for_statement",
+        "continue_statement",
+        "for_statement",
+        "while_statement"
+    ],
+    "methods": [
+        {
+            "name": "performNextcloudRequestV2",
+            "return_type": "ParcelFileDescriptor",
+            "parameters": [
+                {
+                    "type": "ParcelFileDescriptor",
+                    "name": "input"
+                }
+            ],
+            "start_position": 3907,
+            "end_position": 4064,
+            "body_start": 3989,
+            "body_end": 4064
+        },
+        {
+            "name": "performNextcloudRequestAndBodyStreamV2",
+            "return_type": "ParcelFileDescriptor",
+            "parameters": [
+                {
+                    "type": "ParcelFileDescriptor",
+                    "name": "input"
+                },
+                {
+                    "type": "ParcelFileDescriptor",
+                    "name": "requestBodyParcelFileDescriptor"
+                }
+            ],
+            "start_position": 4070,
+            "end_position": 5692,
+            "body_start": 4236,
+            "body_end": 5692
+        },
+        {
+            "name": "performNextcloudRequest",
+            "return_type": "ParcelFileDescriptor",
+            "parameters": [
+                {
+                    "type": "ParcelFileDescriptor",
+                    "name": "input"
+                }
+            ],
+            "start_position": 5698,
+            "end_position": 5851,
+            "body_start": 5778,
+            "body_end": 5851
+        },
+        {
+            "name": "performNextcloudRequestAndBodyStream",
+            "return_type": "ParcelFileDescriptor",
+            "parameters": [
+                {
+                    "type": "ParcelFileDescriptor",
+                    "name": "input"
+                },
+                {
+                    "type": "ParcelFileDescriptor",
+                    "name": "requestBodyParcelFileDescriptor"
+                }
+            ],
+            "start_position": 5857,
+            "end_position": 7802,
+            "body_start": 6021,
+            "body_end": 7802
+        },
+        {
+            "name": "read",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 6470,
+            "end_position": 6561,
+            "body_start": 6510,
+            "body_end": 6561
+        },
+        {
+            "name": "serializeObjectToInputStreamV2",
+            "return_type": "ByteArrayInputStream",
+            "parameters": [
+                {
+                    "type": "Exception",
+                    "name": "exception"
+                },
+                {
+                    "type": "String",
+                    "name": "headers"
+                }
+            ],
+            "start_position": 7808,
+            "end_position": 8456,
+            "body_start": 7905,
+            "body_end": 8456
+        },
+        {
+            "name": "serializeObjectToInputStream",
+            "return_type": "ByteArrayInputStream",
+            "parameters": [
+                {
+                    "type": "T",
+                    "name": "obj"
+                }
+            ],
+            "start_position": 8462,
+            "end_position": 8840,
+            "body_start": 8571,
+            "body_end": 8840
+        },
+        {
+            "name": "deserializeObjectAndCloseStream",
+            "return_type": "T",
+            "parameters": [
+                {
+                    "type": "InputStream",
+                    "name": "is"
+                }
+            ],
+            "start_position": 8846,
+            "end_position": 9151,
+            "body_start": 8980,
+            "body_end": 9151
+        },
+        {
+            "name": "processResponseBody",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "HttpState",
+                    "name": "httpState"
+                },
+                {
+                    "type": "HttpConnection",
+                    "name": "httpConnection"
+                }
+            ],
+            "start_position": 9389,
+            "end_position": 9593,
+            "body_start": 9494,
+            "body_end": 9593
+        },
+        {
+            "name": "buildMethod",
+            "return_type": "HttpMethodBase",
+            "parameters": [
+                {
+                    "type": "NextcloudRequest",
+                    "name": "request"
+                },
+                {
+                    "type": "Uri",
+                    "name": "baseUri"
+                },
+                {
+                    "type": "InputStream",
+                    "name": "requestBodyInputStream"
+                }
+            ],
+            "start_position": 9605,
+            "end_position": 13235,
+            "body_start": 9742,
+            "body_end": 13235
+        },
+        {
+            "name": "processRequest",
+            "return_type": "HttpMethodBase",
+            "parameters": [
+                {
+                    "type": "NextcloudRequest",
+                    "name": "request"
+                },
+                {
+                    "type": "InputStream",
+                    "name": "requestBodyInputStream"
+                }
+            ],
+            "start_position": 13241,
+            "end_position": 16480,
+            "body_start": 13559,
+            "body_end": 16480
+        },
+        {
+            "name": "processRequestV2",
+            "return_type": "Response",
+            "parameters": [
+                {
+                    "type": "NextcloudRequest",
+                    "name": "request"
+                },
+                {
+                    "type": "InputStream",
+                    "name": "requestBodyInputStream"
+                }
+            ],
+            "start_position": 16486,
+            "end_position": 19736,
+            "body_start": 16800,
+            "body_end": 19736
+        },
+        {
+            "name": "isValid",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "NextcloudRequest",
+                    "name": "request"
+                }
+            ],
+            "start_position": 19742,
+            "end_position": 20480,
+            "body_start": 19792,
+            "body_end": 20480
+        },
+        {
+            "name": "validateToken",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "hash"
+                },
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 20486,
+            "end_position": 21059,
+            "body_start": 20543,
+            "body_end": 21059
+        },
+        {
+            "name": "isEqual",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "byte[]",
+                    "name": "a"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "b"
+                }
+            ],
+            "start_position": 21131,
+            "end_position": 21404,
+            "body_start": 21182,
+            "body_end": 21404
+        },
+        {
+            "name": "inputStreamToString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "InputStream",
+                    "name": "inputStream"
+                }
+            ],
+            "start_position": 21410,
+            "end_position": 21944,
+            "body_start": 21477,
+            "body_end": 21944
+        },
+        {
+            "name": "convertMapToNVP",
+            "return_type": "NameValuePair[]",
+            "parameters": [
+                {
+                    "type": "Map<String, String>",
+                    "name": "map"
+                }
+            ],
+            "start_position": 21950,
+            "end_position": 22279,
+            "body_start": 22044,
+            "body_end": 22279
+        },
+        {
+            "name": "convertListToNVP",
+            "return_type": "NameValuePair[]",
+            "parameters": [
+                {
+                    "type": "Collection<QueryParam>",
+                    "name": "list"
+                }
+            ],
+            "start_position": 22285,
+            "end_position": 22620,
+            "body_start": 22384,
+            "body_end": 22620
+        }
+    ],
+    "method_calls": {
+        "unknown": [
+            "performNextcloudRequestAndBodyStreamV2",
+            "deserializeObjectAndCloseStream",
+            "processRequestV2",
+            "serializeObjectToInputStreamV2",
+            "performNextcloudRequestAndBodyStream",
+            "processRequest",
+            "serializeObjectToInputStream",
+            "isValid",
+            "buildMethod",
+            "convertListToNVP",
+            "convertMapToNVP",
+            "inputStreamToString",
+            "validateToken",
+            "isEqual"
+        ],
+        "Log_OC": [
+            "e",
+            "d"
+        ],
+        "response": [
+            "getPlainHeadersString",
+            "getBody",
+            "getMethod"
+        ],
+        "ParcelFileDescriptorUtil": [
+            "pipeFrom"
+        ],
+        "httpMethod": [
+            "getResponseBodyAsStream"
+        ],
+        "oos": [
+            "writeObject",
+            "flush",
+            "close"
+        ],
+        "baos": [
+            "toByteArray"
+        ],
+        "ois": [
+            "readObject",
+            "close"
+        ],
+        "is": [
+            "close"
+        ],
+        "request": [
+            "getUrl",
+            "getMethod",
+            "getRequestBody",
+            "getAccountName",
+            "getParameterV2",
+            "getParameter",
+            "getHeader",
+            "isFollowRedirects",
+            "getToken"
+        ],
+        "((PostMethod) method)": [
+            "setRequestEntity"
+        ],
+        "((PatchMethod) method)": [
+            "setRequestEntity"
+        ],
+        "((PutMethod) method)": [
+            "setRequestEntity"
+        ],
+        "((PropFindMethod) method)": [
+            "setRequestEntity"
+        ],
+        "accountManager": [
+            "getAccountByName"
+        ],
+        "request.getUrl()": [
+            "length",
+            "charAt"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ],
+        "ownCloudClientManager": [
+            "getClientFor"
+        ],
+        "client": [
+            "getBaseUri",
+            "setFollowRedirects",
+            "executeMethod"
+        ],
+        "request.getParameterV2()": [
+            "isEmpty"
+        ],
+        "method": [
+            "setQueryString",
+            "addRequestHeader",
+            "getResponseBodyAsStream",
+            "releaseConnection"
+        ],
+        "request.getHeader()": [
+            "entrySet"
+        ],
+        "header": [
+            "getKey",
+            "getValue"
+        ],
+        "TextUtils": [
+            "join"
+        ],
+        "\"OCS-APIREQUEST\"": [
+            "equalsIgnoreCase"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "context.getPackageManager()": [
+            "getPackagesForUid"
+        ],
+        "context": [
+            "getPackageManager",
+            "getSharedPreferences"
+        ],
+        "Binder": [
+            "getCallingUid"
+        ],
+        "sharedPreferences": [
+            "getString"
+        ],
+        "hash": [
+            "isEmpty",
+            "contains",
+            "split",
+            "getBytes"
+        ],
+        "EncryptionUtils": [
+            "generateSHA512"
+        ],
+        "newHash": [
+            "getBytes"
+        ],
+        "reader": [
+            "readLine"
+        ],
+        "total.append(line)": [
+            "append"
+        ],
+        "total": [
+            "append",
+            "toString"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "map": [
+            "size",
+            "keySet",
+            "get"
+        ],
+        "list": [
+            "size"
+        ]
+    },
+    "local_variables": {
+        "is": "InputStream",
+        "requestBodyInputStream": "InputStream",
+        "exception": "Exception",
+        "response": "Response",
+        "request": "NextcloudRequest",
+        "exceptionStream": "InputStream",
+        "resultStream": "InputStream",
+        "httpMethod": "HttpMethodBase",
+        "httpStream": "InputStream",
+        "baosByteArray": "byte[]",
+        "baos": "ByteArrayOutputStream",
+        "oos": "ObjectOutputStream",
+        "ois": "ObjectInputStream",
+        "result": "int",
+        "requestUrl": "String",
+        "method": "HttpMethodBase",
+        "requestEntity": "StringRequestEntity",
+        "account": "Account",
+        "ownCloudClientManager": "OwnCloudClientManager",
+        "ocAccount": "OwnCloudAccount",
+        "client": "OwnCloudClient",
+        "status": "int",
+        "inputStream": "InputStream",
+        "total": "StringBuilder",
+        "callingPackageNames": "String[]",
+        "sharedPreferences": "SharedPreferences",
+        "hash": "String",
+        "salt": "String",
+        "newHash": "String",
+        "i": "int",
+        "reader": "BufferedReader",
+        "line": "String",
+        "nvp": "NameValuePair[]"
+    }
+}

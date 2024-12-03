@@ -1,0 +1,74 @@
+[
+    {
+        "method_name": "item",
+        "method_code": "public static AndroidCustomField item(String type, String value) {\n        AndroidCustomField property = new AndroidCustomField();\n        property.dir = false;\n        property.type = type;\n        property.values.add(value);\n        return property;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled item from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: item\n\n        Method Code: public static AndroidCustomField item(String type, String value) {\n        AndroidCustomField property = new AndroidCustomField();\n        property.dir = false;\n        property.type = type;\n        property.values.add(value);\n        return property;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nclass AndroidCustomField {\n    var dir: Bool = false\n    var type: String = \"\"\n    var values: [String] = []\n\n    static func item(type: String, value: String) -> AndroidCustomField {\n        let property = AndroidCustomField()\n        property.dir = false\n        property.type = type\n        property.values.append(value)\n        return property\n    }\n}\n```"
+    },
+    {
+        "method_name": "dir",
+        "method_code": "public static AndroidCustomField dir(String type, String... values) {\n        AndroidCustomField property = new AndroidCustomField();\n        property.dir = true;\n        property.type = type;\n        Collections.addAll(property.values, values);\n        return property;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled dir from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: dir\n\n        Method Code: public static AndroidCustomField dir(String type, String... values) {\n        AndroidCustomField property = new AndroidCustomField();\n        property.dir = true;\n        property.type = type;\n        Collections.addAll(property.values, values);\n        return property;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nclass AndroidCustomField {\n    var dir: Bool = false\n    var type: String = \"\"\n    var values: [String] = []\n\n    static func dir(type: String, values: String...) -> AndroidCustomField {\n        let property = AndroidCustomField()\n        property.dir = true\n        property.type = type\n        property.values.append(contentsOf: values)\n        return property\n    }\n}\n```"
+    },
+    {
+        "method_name": "getType",
+        "method_code": "public String getType() {\n        return type;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getType from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: getType\n\n        Method Code: public String getType() {\n        return type;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getType() -> String {\n    return type\n}\n```"
+    },
+    {
+        "method_name": "setType",
+        "method_code": "public void setType(String type) {\n        this.type = type;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setType from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: setType\n\n        Method Code: public void setType(String type) {\n        this.type = type;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setType(_ type: String) {\n    self.type = type\n}\n```"
+    },
+    {
+        "method_name": "getValues",
+        "method_code": "public List<String> getValues() {\n        return values;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getValues from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: getValues\n\n        Method Code: public List<String> getValues() {\n        return values;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getValues() -> [String] {\n    return values\n}\n```"
+    },
+    {
+        "method_name": "isDir",
+        "method_code": "public boolean isDir() {\n        return dir;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isDir from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: isDir\n\n        Method Code: public boolean isDir() {\n        return dir;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isDir() -> Bool {\n    return dir\n}\n```"
+    },
+    {
+        "method_name": "setDir",
+        "method_code": "public void setDir(boolean dir) {\n        this.dir = dir;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setDir from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: setDir\n\n        Method Code: public void setDir(boolean dir) {\n        this.dir = dir;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setDir(_ dir: Bool) {\n    self.dir = dir\n}\n```"
+    },
+    {
+        "method_name": "isItem",
+        "method_code": "public boolean isItem() {\n        return !isDir();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isItem from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: isItem\n\n        Method Code: public boolean isItem() {\n        return !isDir();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isItem() -> Bool {\n    return !isDir()\n}\n```"
+    },
+    {
+        "method_name": "setItem",
+        "method_code": "public void setItem(boolean item) {\n        setDir(!item);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setItem from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: setItem\n\n        Method Code: public void setItem(boolean item) {\n        setDir(!item);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setItem(_ item: Bool) {\n    setDir(!item)\n}\n```"
+    },
+    {
+        "method_name": "isNickname",
+        "method_code": "public boolean isNickname() {\n        return \"nickname\".equals(type);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isNickname from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: isNickname\n\n        Method Code: public boolean isNickname() {\n        return \"nickname\".equals(type);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isNickname() -> Bool {\n    return type == \"nickname\"\n}\n```"
+    },
+    {
+        "method_name": "isContactEvent",
+        "method_code": "public boolean isContactEvent() {\n        return \"contact_event\".equals(type);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isContactEvent from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: isContactEvent\n\n        Method Code: public boolean isContactEvent() {\n        return \"contact_event\".equals(type);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isContactEvent() -> Bool {\n    return type == \"contact_event\"\n}\n```"
+    },
+    {
+        "method_name": "isRelation",
+        "method_code": "public boolean isRelation() {\n        return \"relation\".equals(type);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isRelation from AndroidCustomField.java into Swift.\n\n        Input:\n\n        Method Name: isRelation\n\n        Method Code: public boolean isRelation() {\n        return \"relation\".equals(type);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isRelation() -> Bool {\n    return type == \"relation\"\n}\n```"
+    }
+]

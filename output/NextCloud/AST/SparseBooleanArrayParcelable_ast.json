@@ -1,0 +1,96 @@
+{
+    "methods": [
+        {
+            "name": "createFromParcel",
+            "return_type": "SparseBooleanArrayParcelable",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "source"
+                }
+            ],
+            "start_position": 752,
+            "end_position": 1289,
+            "body_start": 838,
+            "body_end": 1289
+        },
+        {
+            "name": "newArray",
+            "return_type": "SparseBooleanArrayParcelable[]",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "size"
+                }
+            ],
+            "start_position": 1299,
+            "end_position": 1444,
+            "body_start": 1374,
+            "body_end": 1444
+        },
+        {
+            "name": "getSparseBooleanArray",
+            "return_type": "SparseBooleanArray",
+            "parameters": [],
+            "start_position": 1720,
+            "end_position": 1798,
+            "body_start": 1770,
+            "body_end": 1798
+        },
+        {
+            "name": "describeContents",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 1804,
+            "end_position": 1873,
+            "body_start": 1848,
+            "body_end": 1873
+        },
+        {
+            "name": "writeToParcel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "dest"
+                },
+                {
+                    "type": "int",
+                    "name": "flags"
+                }
+            ],
+            "start_position": 1879,
+            "end_position": 2215,
+            "body_start": 1943,
+            "body_end": 2215
+        }
+    ],
+    "local_variables": {
+        "size": "int",
+        "sba": "SparseBooleanArray",
+        "i": "int"
+    },
+    "method_calls": {
+        "source": [
+            "readInt"
+        ],
+        "sba": [
+            "put"
+        ],
+        "dest": [
+            "writeInt"
+        ],
+        "mSba": [
+            "size",
+            "keyAt",
+            "valueAt"
+        ]
+    },
+    "code_constructs": [
+        "for_statement",
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "throw_statement"
+    ]
+}

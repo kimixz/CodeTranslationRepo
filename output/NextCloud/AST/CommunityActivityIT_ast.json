@@ -1,0 +1,30 @@
+{
+    "method_calls": {
+        "GrantStoragePermissionRule": [
+            "grant"
+        ],
+        "activityRule": [
+            "launchActivity"
+        ],
+        "unknown": [
+            "screenshot"
+        ]
+    },
+    "methods": [
+        {
+            "name": "open",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1079,
+            "end_position": 1219,
+            "body_start": 1128,
+            "body_end": 1219
+        }
+    ],
+    "local_variables": {
+        "sut": "Activity"
+    },
+    "code_constructs": [
+        "expression_statement"
+    ]
+}

@@ -1,0 +1,271 @@
+{
+    "method_calls": {
+        "SsoGrantPermissionActivity.class": [
+            "getCanonicalName"
+        ],
+        "super": [
+            "onCreate",
+            "onStart"
+        ],
+        "themeUtilsFactory": [
+            "withDefaultSchemes"
+        ],
+        "DialogSsoGrantPermissionBinding": [
+            "inflate"
+        ],
+        "unknown": [
+            "getLayoutInflater",
+            "getCallingActivity",
+            "getAppNameForPackage",
+            "getIntent",
+            "makeSpecialPartsBold",
+            "getString",
+            "getPackageManager",
+            "getMaterialAlertDialogBuilder",
+            "grantPermission",
+            "exitFailed",
+            "setResultAndExit",
+            "getResources",
+            "setResult",
+            "finish",
+            "getApplicationContext",
+            "getSharedPreferences"
+        ],
+        "callingActivity": [
+            "getPackageName"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "binding.permissionText": [
+            "setText"
+        ],
+        "getPackageManager()": [
+            "getApplicationIcon"
+        ],
+        "binding.appIcon": [
+            "setImageDrawable"
+        ],
+        "Log_OC": [
+            "e",
+            "v"
+        ],
+        "builder\n                .setView(binding.getRoot())\n                .setCancelable(false)\n                .setPositiveButton(R.string.permission_allow, (dialog, which) -> grantPermission())": [
+            "setNegativeButton"
+        ],
+        "builder\n                .setView(binding.getRoot())\n                .setCancelable(false)": [
+            "setPositiveButton"
+        ],
+        "builder\n                .setView(binding.getRoot())": [
+            "setCancelable"
+        ],
+        "builder": [
+            "setView",
+            "create"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "viewThemeUtils.dialog": [
+            "colorMaterialAlertDialogBackground"
+        ],
+        "dialog": [
+            "show",
+            "getButton"
+        ],
+        "viewThemeUtils.platform": [
+            "colorTextButtons"
+        ],
+        "text": [
+            "indexOf"
+        ],
+        "textBlock": [
+            "length"
+        ],
+        "ssb": [
+            "setSpan"
+        ],
+        "getResources()": [
+            "getColor"
+        ],
+        "data": [
+            "putExtra"
+        ],
+        "getApplicationContext()": [
+            "getPackageManager"
+        ],
+        "pm": [
+            "getApplicationInfo",
+            "getApplicationLabel"
+        ],
+        "UUID.randomUUID().toString()": [
+            "replaceAll"
+        ],
+        "UUID.randomUUID()": [
+            "toString"
+        ],
+        "UUID": [
+            "randomUUID"
+        ],
+        "EncryptionUtils": [
+            "generateSHA512"
+        ],
+        "sharedPreferences": [
+            "edit"
+        ],
+        "editor": [
+            "putString",
+            "apply"
+        ],
+        "ocAccount.getBaseUri()": [
+            "toString"
+        ],
+        "ocAccount": [
+            "getBaseUri"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "accountManager": [
+            "getUserData"
+        ],
+        "result": [
+            "putString"
+        ],
+        "MainApp": [
+            "getAccountType"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getBinding",
+            "return_type": "DialogSsoGrantPermissionBinding",
+            "parameters": [],
+            "start_position": 2565,
+            "end_position": 2648,
+            "body_start": 2617,
+            "body_end": 2648
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 2654,
+            "end_position": 4915,
+            "body_start": 2719,
+            "body_end": 4915
+        },
+        {
+            "name": "getMaterialAlertDialogBuilder",
+            "return_type": "MaterialAlertDialogBuilder",
+            "parameters": [],
+            "start_position": 4921,
+            "end_position": 5047,
+            "body_start": 4987,
+            "body_end": 5047
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5053,
+            "end_position": 5317,
+            "body_start": 5092,
+            "body_end": 5317
+        },
+        {
+            "name": "makeSpecialPartsBold",
+            "return_type": "SpannableStringBuilder",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "text"
+                }
+            ],
+            "start_position": 5323,
+            "end_position": 5909,
+            "body_start": 5414,
+            "body_end": 5909
+        },
+        {
+            "name": "setResultAndExit",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "exception"
+                }
+            ],
+            "start_position": 5915,
+            "end_position": 6125,
+            "body_start": 5963,
+            "body_end": 6125
+        },
+        {
+            "name": "getAppNameForPackage",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "pkg"
+                }
+            ],
+            "start_position": 6131,
+            "end_position": 6587,
+            "body_start": 6179,
+            "body_end": 6587
+        },
+        {
+            "name": "exitFailed",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6593,
+            "end_position": 6687,
+            "body_start": 6619,
+            "body_end": 6687
+        },
+        {
+            "name": "grantPermission",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6693,
+            "end_position": 8408,
+            "body_start": 6724,
+            "body_end": 8408
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "if_statement",
+        "try_statement",
+        "enhanced_for_statement"
+    ],
+    "local_variables": {
+        "callingActivity": "ComponentName",
+        "appName": "String",
+        "dialogText": "SpannableStringBuilder",
+        "appIcon": "Drawable",
+        "builder": "MaterialAlertDialogBuilder",
+        "ssb": "SpannableStringBuilder",
+        "start": "int",
+        "end": "int",
+        "data": "Intent",
+        "pm": "PackageManager",
+        "ai": "ApplicationInfo",
+        "sharedPreferences": "SharedPreferences",
+        "token": "String",
+        "hashedTokenWithSalt": "String",
+        "editor": "SharedPreferences.Editor",
+        "serverUrl": "String",
+        "userId": "String",
+        "ocAccount": "OwnCloudAccount",
+        "accountManager": "AccountManager",
+        "result": "Bundle"
+    }
+}

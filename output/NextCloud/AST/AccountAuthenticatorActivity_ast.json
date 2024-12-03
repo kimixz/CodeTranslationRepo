@@ -1,0 +1,62 @@
+{
+    "methods": [
+        {
+            "name": "setAccountAuthenticatorResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "result"
+                }
+            ],
+            "start_position": 1716,
+            "end_position": 1818,
+            "body_start": 1779,
+            "body_end": 1818
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 2048,
+            "end_position": 2593,
+            "body_start": 2113,
+            "body_end": 2593
+        },
+        {
+            "name": "finish",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2707,
+            "end_position": 3236,
+            "body_start": 2742,
+            "body_end": 3236
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate",
+            "finish"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "unknown": [
+            "getIntent"
+        ],
+        "mAccountAuthenticatorResponse": [
+            "onRequestContinued",
+            "onResult",
+            "onError"
+        ]
+    }
+}

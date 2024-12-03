@@ -1,0 +1,215 @@
+{
+    "method_calls": {
+        "FilesystemDataProvider.class": [
+            "getSimpleName"
+        ],
+        "contentResolver": [
+            "delete",
+            "update",
+            "query",
+            "insert"
+        ],
+        "cv": [
+            "put"
+        ],
+        "cursor": [
+            "moveToFirst",
+            "getString",
+            "getColumnIndexOrThrow",
+            "moveToNext",
+            "close",
+            "getInt",
+            "getLong"
+        ],
+        "Log_OC": [
+            "e",
+            "d",
+            "v"
+        ],
+        "file": [
+            "exists",
+            "getParent",
+            "getName"
+        ],
+        "SyncedFolderUtils": [
+            "isQualifiedFolder",
+            "isFileNameQualifiedForAutoUpload"
+        ],
+        "localPathsToUpload": [
+            "add"
+        ],
+        "unknown": [
+            "getFilesystemDataSet",
+            "getFileChecksum"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "syncedFolder": [
+            "getId"
+        ],
+        "Long": [
+            "toString"
+        ],
+        "data": [
+            "getModifiedAt",
+            "getCrc32",
+            "getId"
+        ],
+        "data.getCrc32()": [
+            "equals"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "inputStream": [
+            "read"
+        ],
+        "crc": [
+            "update",
+            "getValue"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "throw_statement",
+        "expression_statement",
+        "return_statement",
+        "do_statement",
+        "try_with_resources_statement",
+        "while_statement"
+    ],
+    "methods": [
+        {
+            "name": "deleteAllEntriesForSyncedFolder",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "syncedFolderId"
+                }
+            ],
+            "start_position": 1302,
+            "end_position": 1643,
+            "body_start": 1368,
+            "body_end": 1643
+        },
+        {
+            "name": "updateFilesystemFileAsSentForUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "String",
+                    "name": "syncedFolderId"
+                }
+            ],
+            "start_position": 1649,
+            "end_position": 2238,
+            "body_start": 1733,
+            "body_end": 2238
+        },
+        {
+            "name": "getFilesForUpload",
+            "return_type": "Set<String>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                },
+                {
+                    "type": "String",
+                    "name": "syncedFolderId"
+                }
+            ],
+            "start_position": 2244,
+            "end_position": 4271,
+            "body_start": 2322,
+            "body_end": 4271
+        },
+        {
+            "name": "storeOrUpdateFileValue",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                },
+                {
+                    "type": "long",
+                    "name": "modifiedAt"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isFolder"
+                },
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                }
+            ],
+            "start_position": 4277,
+            "end_position": 6826,
+            "body_start": 4392,
+            "body_end": 6826
+        },
+        {
+            "name": "getFilesystemDataSet",
+            "return_type": "FileSystemDataSet",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPathParam"
+                },
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                }
+            ],
+            "start_position": 6832,
+            "end_position": 9311,
+            "body_start": 6929,
+            "body_end": 9311
+        },
+        {
+            "name": "getFileChecksum",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filepath"
+                }
+            ],
+            "start_position": 9317,
+            "end_position": 9853,
+            "body_start": 9363,
+            "body_end": 9853
+        }
+    ],
+    "local_variables": {
+        "cv": "ContentValues",
+        "localPathsToUpload": "Set<String>",
+        "likeParam": "String",
+        "cursor": "Cursor",
+        "value": "String",
+        "file": "File",
+        "data": "FileSystemDataSet",
+        "isFolderValue": "int",
+        "newCrc32": "long",
+        "result": "int",
+        "dataSet": "FileSystemDataSet",
+        "id": "int",
+        "localPath": "String",
+        "modifiedAt": "long",
+        "isFolder": "boolean",
+        "foundAt": "long",
+        "isSentForUpload": "boolean",
+        "crc32": "String",
+        "crc": "CRC32",
+        "buf": "byte[]",
+        "size": "int"
+    }
+}

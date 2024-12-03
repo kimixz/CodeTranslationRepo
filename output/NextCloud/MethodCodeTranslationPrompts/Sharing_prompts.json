@@ -1,0 +1,26 @@
+[
+    {
+        "method_name": "getRecipient",
+        "method_code": "public Map<String, String> getRecipient() {\n        return this.recipient;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getRecipient from Sharing.java into Swift.\n\n        Input:\n\n        Method Name: getRecipient\n\n        Method Code: public Map<String, String> getRecipient() {\n        return this.recipient;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getRecipient() -> [String: String] {\n    return self.recipient\n}\n```"
+    },
+    {
+        "method_name": "getSignature",
+        "method_code": "public String getSignature() {\n        return this.signature;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSignature from Sharing.java into Swift.\n\n        Input:\n\n        Method Name: getSignature\n\n        Method Code: public String getSignature() {\n        return this.signature;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getSignature() -> String {\n    return self.signature\n}\n```"
+    },
+    {
+        "method_name": "setRecipient",
+        "method_code": "public void setRecipient(Map<String, String> recipient) {\n        this.recipient = recipient;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setRecipient from Sharing.java into Swift.\n\n        Input:\n\n        Method Name: setRecipient\n\n        Method Code: public void setRecipient(Map<String, String> recipient) {\n        this.recipient = recipient;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setRecipient(recipient: [String: String]) {\n    self.recipient = recipient\n}\n```"
+    },
+    {
+        "method_name": "setSignature",
+        "method_code": "public void setSignature(String signature) {\n        this.signature = signature;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSignature from Sharing.java into Swift.\n\n        Input:\n\n        Method Name: setSignature\n\n        Method Code: public void setSignature(String signature) {\n        this.signature = signature;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSignature(signature: String) {\n    self.signature = signature\n}\n```"
+    }
+]

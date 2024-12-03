@@ -1,0 +1,123 @@
+{
+    "methods": [
+        {
+            "name": "newNotificationBuilder",
+            "return_type": "NotificationCompat.Builder",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "String",
+                    "name": "channelId"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 2562,
+            "end_position": 2914,
+            "body_start": 2698,
+            "body_end": 2914
+        },
+        {
+            "name": "cancelWithDelay",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NotificationManager",
+                    "name": "notificationManager"
+                },
+                {
+                    "type": "int",
+                    "name": "notificationId"
+                },
+                {
+                    "type": "long",
+                    "name": "delayInMillis"
+                }
+            ],
+            "start_position": 2920,
+            "end_position": 3562,
+            "body_start": 3118,
+            "body_end": 3562
+        },
+        {
+            "name": "createUploadNotificationTag",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 3568,
+            "end_position": 3725,
+            "body_start": 3629,
+            "body_end": 3725
+        },
+        {
+            "name": "createUploadNotificationTag",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "String",
+                    "name": "localPath"
+                }
+            ],
+            "start_position": 3730,
+            "end_position": 3861,
+            "body_start": 3815,
+            "body_end": 3861
+        }
+    ],
+    "local_variables": {
+        "builder": "NotificationCompat.Builder",
+        "thread": "HandlerThread",
+        "handler": "Handler"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "viewThemeUtils.androidx": [
+            "themeNotificationCompatBuilder"
+        ],
+        "new SecureRandom()": [
+            "nextInt"
+        ],
+        "thread": [
+            "start",
+            "getLooper"
+        ],
+        "handler": [
+            "postDelayed"
+        ],
+        "notificationManager": [
+            "cancel"
+        ],
+        "((HandlerThread) Thread.currentThread()).getLooper()": [
+            "quit"
+        ],
+        "((HandlerThread) Thread.currentThread())": [
+            "getLooper"
+        ],
+        "Thread": [
+            "currentThread"
+        ],
+        "unknown": [
+            "createUploadNotificationTag"
+        ],
+        "file": [
+            "getRemotePath",
+            "getStoragePath"
+        ]
+    }
+}

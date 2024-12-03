@@ -1,0 +1,746 @@
+{
+    "method_calls": {
+        "Arrays": [
+            "asList"
+        ],
+        "mInsertedTimeZones": [
+            "clear",
+            "contains",
+            "add"
+        ],
+        "mFailedOrganisers": [
+            "clear",
+            "contains",
+            "add"
+        ],
+        "DateFormat.format(\"yyyy-MM-dd_HH-mm-ss\", java.util.Calendar.getInstance())": [
+            "toString"
+        ],
+        "DateFormat": [
+            "format"
+        ],
+        "java.util.Calendar": [
+            "getInstance"
+        ],
+        "activity": [
+            "getCacheDir",
+            "getPackageName",
+            "getPackageManager",
+            "getContentResolver",
+            "getResources"
+        ],
+        "Log_OC": [
+            "i",
+            "w",
+            "e",
+            "d"
+        ],
+        "fileName": [
+            "getAbsolutePath"
+        ],
+        "activity.getPackageManager()": [
+            "getPackageInfo"
+        ],
+        "cal.getProperties()": [
+            "add"
+        ],
+        "cal": [
+            "getProperties",
+            "getComponents"
+        ],
+        "unknown": [
+            "ensureUids",
+            "getEvents",
+            "upload",
+            "getLong",
+            "generateUid",
+            "convertFromDb",
+            "hasStringValue",
+            "copyProperty",
+            "getString",
+            "copyEnumProperty",
+            "getDateTime",
+            "utcDateFromMs",
+            "getInt",
+            "getColumnIndex",
+            "isUtcTimeZone"
+        ],
+        "CompatibilityHints": [
+            "setHintEnabled"
+        ],
+        "cal.getComponents()": [
+            "add",
+            "isEmpty"
+        ],
+        "new CalendarOutputter()": [
+            "output"
+        ],
+        "res": [
+            "getQuantityString"
+        ],
+        "events": [
+            "size",
+            "add"
+        ],
+        "resolver": [
+            "query",
+            "update"
+        ],
+        "cur": [
+            "moveToNext",
+            "close",
+            "getColumnIndexOrThrow",
+            "getString",
+            "getLong",
+            "getInt",
+            "isNull"
+        ],
+        "newUids": [
+            "put",
+            "keySet",
+            "get",
+            "size"
+        ],
+        "ContentUris": [
+            "withAppendedId"
+        ],
+        "c": [
+            "put"
+        ],
+        "Integer": [
+            "toString"
+        ],
+        "e": [
+            "toString",
+            "getAlarms"
+        ],
+        "displayName": [
+            "replaceAll"
+        ],
+        "stripped": [
+            "replaceAll"
+        ],
+        "input": [
+            "setHint",
+            "setText",
+            "selectAll",
+            "getText",
+            "setSelection"
+        ],
+        "new MaterialAlertDialogBuilder(activity).setIcon(R.mipmap.ic_launcher)\n            .setTitle(R.string.enter_destination_filename)\n            .setView(input)\n            .setPositiveButton(ok, (iface, id) -> result[0] = input.getText().toString())\n            .setNeutralButton(suggest, (iface, id) -> {\n            })\n            .setNegativeButton(cancel, (iface, id) -> result[0] = \"\")\n            .setOnCancelListener(iface -> result[0] = \"\")": [
+            "create"
+        ],
+        "new MaterialAlertDialogBuilder(activity).setIcon(R.mipmap.ic_launcher)\n            .setTitle(R.string.enter_destination_filename)\n            .setView(input)\n            .setPositiveButton(ok, (iface, id) -> result[0] = input.getText().toString())\n            .setNeutralButton(suggest, (iface, id) -> {\n            })\n            .setNegativeButton(cancel, (iface, id) -> result[0] = \"\")": [
+            "setOnCancelListener"
+        ],
+        "new MaterialAlertDialogBuilder(activity).setIcon(R.mipmap.ic_launcher)\n            .setTitle(R.string.enter_destination_filename)\n            .setView(input)\n            .setPositiveButton(ok, (iface, id) -> result[0] = input.getText().toString())\n            .setNeutralButton(suggest, (iface, id) -> {\n            })": [
+            "setNegativeButton"
+        ],
+        "new MaterialAlertDialogBuilder(activity).setIcon(R.mipmap.ic_launcher)\n            .setTitle(R.string.enter_destination_filename)\n            .setView(input)\n            .setPositiveButton(ok, (iface, id) -> result[0] = input.getText().toString())": [
+            "setNeutralButton"
+        ],
+        "new MaterialAlertDialogBuilder(activity).setIcon(R.mipmap.ic_launcher)\n            .setTitle(R.string.enter_destination_filename)\n            .setView(input)": [
+            "setPositiveButton"
+        ],
+        "new MaterialAlertDialogBuilder(activity).setIcon(R.mipmap.ic_launcher)\n            .setTitle(R.string.enter_destination_filename)": [
+            "setView"
+        ],
+        "new MaterialAlertDialogBuilder(activity).setIcon(R.mipmap.ic_launcher)": [
+            "setTitle"
+        ],
+        "new MaterialAlertDialogBuilder(activity)": [
+            "setIcon"
+        ],
+        "input.getText()": [
+            "toString",
+            "length"
+        ],
+        "dlg.getWindow()": [
+            "setSoftInputMode"
+        ],
+        "dlg": [
+            "getWindow",
+            "show",
+            "getButton"
+        ],
+        "dlg.getButton(DialogInterface.BUTTON_NEUTRAL)": [
+            "setOnClickListener"
+        ],
+        "DatabaseUtils": [
+            "dumpCurrentRowToString"
+        ],
+        "l": [
+            "add",
+            "getProperty"
+        ],
+        "TextUtils": [
+            "isEmpty",
+            "equals"
+        ],
+        "organizer": [
+            "startsWith"
+        ],
+        "start": [
+            "getTime"
+        ],
+        "getString(cur, Events.DURATION)": [
+            "equals"
+        ],
+        "startDate": [
+            "getTime"
+        ],
+        "end": [
+            "getTime"
+        ],
+        "fb.getParameters()": [
+            "add"
+        ],
+        "fb": [
+            "getParameters",
+            "getPeriods"
+        ],
+        "AVAIL_ENUM": [
+            "get"
+        ],
+        "((DtStart) l.getProperty(Property.DTSTART))": [
+            "getDate"
+        ],
+        "fb.getPeriods()": [
+            "add"
+        ],
+        "dtEnd": [
+            "getDate"
+        ],
+        "d": [
+            "getDuration"
+        ],
+        "Reminders": [
+            "query"
+        ],
+        "alarmCur": [
+            "moveToNext",
+            "close"
+        ],
+        "alarm.getProperties()": [
+            "add"
+        ],
+        "alarm": [
+            "getProperties"
+        ],
+        "e.getAlarms()": [
+            "add"
+        ],
+        "tz": [
+            "toUpperCase"
+        ],
+        "\"UTC\"": [
+            "equals"
+        ],
+        "\"UTC-0\"": [
+            "equals"
+        ],
+        "\"UTC+0\"": [
+            "equals"
+        ],
+        "utz": [
+            "endsWith"
+        ],
+        "dt": [
+            "isUtc",
+            "setTime",
+            "setTimeZone"
+        ],
+        "TimeZoneRegistryFactory.getInstance()": [
+            "createRegistry"
+        ],
+        "TimeZoneRegistryFactory": [
+            "getInstance"
+        ],
+        "mTzRegistry": [
+            "getTimeZone"
+        ],
+        "t": [
+            "getVTimeZone"
+        ],
+        "mPropertyFactory": [
+            "createProperty"
+        ],
+        "p": [
+            "setValue"
+        ],
+        "vals": [
+            "size",
+            "get"
+        ],
+        "preferences": [
+            "getUidPid",
+            "setUidPid"
+        ],
+        "uidPid": [
+            "length"
+        ],
+        "UUID.randomUUID().toString()": [
+            "replace"
+        ],
+        "UUID.randomUUID()": [
+            "toString"
+        ],
+        "UUID": [
+            "randomUUID"
+        ],
+        "Math": [
+            "max"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "activity.getResources()": [
+            "getString"
+        ],
+        "new UploadRequest.Builder(user, file.getAbsolutePath(), backupFolder + file.getName())\n            .setFileSize(file.length())\n            .setNameConflicPolicy(NameCollisionPolicy.RENAME)\n            .setCreateRemoteFolder(true)\n            .setTrigger(UploadTrigger.USER)\n            .setPostAction(PostUploadAction.MOVE_TO_APP)\n            .setRequireWifi(false)\n            .setRequireCharging(false)": [
+            "build"
+        ],
+        "new UploadRequest.Builder(user, file.getAbsolutePath(), backupFolder + file.getName())\n            .setFileSize(file.length())\n            .setNameConflicPolicy(NameCollisionPolicy.RENAME)\n            .setCreateRemoteFolder(true)\n            .setTrigger(UploadTrigger.USER)\n            .setPostAction(PostUploadAction.MOVE_TO_APP)\n            .setRequireWifi(false)": [
+            "setRequireCharging"
+        ],
+        "new UploadRequest.Builder(user, file.getAbsolutePath(), backupFolder + file.getName())\n            .setFileSize(file.length())\n            .setNameConflicPolicy(NameCollisionPolicy.RENAME)\n            .setCreateRemoteFolder(true)\n            .setTrigger(UploadTrigger.USER)\n            .setPostAction(PostUploadAction.MOVE_TO_APP)": [
+            "setRequireWifi"
+        ],
+        "new UploadRequest.Builder(user, file.getAbsolutePath(), backupFolder + file.getName())\n            .setFileSize(file.length())\n            .setNameConflicPolicy(NameCollisionPolicy.RENAME)\n            .setCreateRemoteFolder(true)\n            .setTrigger(UploadTrigger.USER)": [
+            "setPostAction"
+        ],
+        "new UploadRequest.Builder(user, file.getAbsolutePath(), backupFolder + file.getName())\n            .setFileSize(file.length())\n            .setNameConflicPolicy(NameCollisionPolicy.RENAME)\n            .setCreateRemoteFolder(true)": [
+            "setTrigger"
+        ],
+        "new UploadRequest.Builder(user, file.getAbsolutePath(), backupFolder + file.getName())\n            .setFileSize(file.length())\n            .setNameConflicPolicy(NameCollisionPolicy.RENAME)": [
+            "setCreateRemoteFolder"
+        ],
+        "new UploadRequest.Builder(user, file.getAbsolutePath(), backupFolder + file.getName())\n            .setFileSize(file.length())": [
+            "setNameConflicPolicy"
+        ],
+        "new UploadRequest.Builder(user, file.getAbsolutePath(), backupFolder + file.getName())": [
+            "setFileSize"
+        ],
+        "file": [
+            "getAbsolutePath",
+            "getName",
+            "length"
+        ],
+        "connection": [
+            "enqueue"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "while_statement",
+        "return_statement",
+        "for_statement",
+        "throw_statement"
+    ],
+    "methods": [
+        {
+            "name": "start",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5522,
+            "end_position": 8292,
+            "body_start": 5559,
+            "body_end": 8292
+        },
+        {
+            "name": "ensureUids",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "activity"
+                },
+                {
+                    "type": "ContentResolver",
+                    "name": "resolver"
+                },
+                {
+                    "type": "AndroidCalendar",
+                    "name": "cal"
+                }
+            ],
+            "start_position": 8298,
+            "end_position": 9331,
+            "body_start": 8386,
+            "body_end": 9331
+        },
+        {
+            "name": "getEvents",
+            "return_type": "List<VEvent>",
+            "parameters": [
+                {
+                    "type": "ContentResolver",
+                    "name": "resolver"
+                },
+                {
+                    "type": "AndroidCalendar",
+                    "name": "cal_src"
+                },
+                {
+                    "type": "Calendar",
+                    "name": "cal_dst"
+                }
+            ],
+            "start_position": 9337,
+            "end_position": 10706,
+            "body_start": 9437,
+            "body_end": 10706
+        },
+        {
+            "name": "calculateFileName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "displayName"
+                }
+            ],
+            "start_position": 10712,
+            "end_position": 11005,
+            "body_start": 10771,
+            "body_end": 11005
+        },
+        {
+            "name": "getFileImpl",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "previousFile"
+                },
+                {
+                    "type": "String",
+                    "name": "suggestedFile"
+                },
+                {
+                    "type": "String[]",
+                    "name": "result"
+                }
+            ],
+            "start_position": 11011,
+            "end_position": 12408,
+            "body_start": 11143,
+            "body_end": 12408
+        },
+        {
+            "name": "convertFromDb",
+            "return_type": "VEvent",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "Calendar",
+                    "name": "cal"
+                },
+                {
+                    "type": "DtStamp",
+                    "name": "timestamp"
+                }
+            ],
+            "start_position": 12414,
+            "end_position": 18747,
+            "body_start": 12488,
+            "body_end": 18747
+        },
+        {
+            "name": "getColumnIndex",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                }
+            ],
+            "start_position": 18753,
+            "end_position": 18886,
+            "body_start": 18807,
+            "body_end": 18886
+        },
+        {
+            "name": "getString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                }
+            ],
+            "start_position": 18892,
+            "end_position": 19046,
+            "body_start": 18944,
+            "body_end": 19046
+        },
+        {
+            "name": "getLong",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                }
+            ],
+            "start_position": 19052,
+            "end_position": 19198,
+            "body_start": 19100,
+            "body_end": 19198
+        },
+        {
+            "name": "getInt",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                }
+            ],
+            "start_position": 19204,
+            "end_position": 19347,
+            "body_start": 19250,
+            "body_end": 19347
+        },
+        {
+            "name": "hasStringValue",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                }
+            ],
+            "start_position": 19353,
+            "end_position": 19527,
+            "body_start": 19411,
+            "body_end": 19527
+        },
+        {
+            "name": "utcDateFromMs",
+            "return_type": "Date",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "ms"
+                }
+            ],
+            "start_position": 19533,
+            "end_position": 19771,
+            "body_start": 19569,
+            "body_end": 19771
+        },
+        {
+            "name": "isUtcTimeZone",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tz"
+                }
+            ],
+            "start_position": 19777,
+            "end_position": 20061,
+            "body_start": 19824,
+            "body_end": 20061
+        },
+        {
+            "name": "getDateTime",
+            "return_type": "Date",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                },
+                {
+                    "type": "String",
+                    "name": "dbTzName"
+                },
+                {
+                    "type": "Calendar",
+                    "name": "cal"
+                }
+            ],
+            "start_position": 20067,
+            "end_position": 21764,
+            "body_start": 20150,
+            "body_end": 21764
+        },
+        {
+            "name": "copyProperty",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "PropertyList",
+                    "name": "l"
+                },
+                {
+                    "type": "String",
+                    "name": "evName"
+                },
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                }
+            ],
+            "start_position": 21770,
+            "end_position": 22328,
+            "body_start": 21856,
+            "body_end": 22328
+        },
+        {
+            "name": "copyEnumProperty",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PropertyList",
+                    "name": "l"
+                },
+                {
+                    "type": "String",
+                    "name": "evName"
+                },
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                },
+                {
+                    "type": "List<String>",
+                    "name": "vals"
+                }
+            ],
+            "start_position": 22334,
+            "end_position": 23080,
+            "body_start": 22475,
+            "body_end": 23080
+        },
+        {
+            "name": "generateUid",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 23129,
+            "end_position": 23693,
+            "body_start": 23158,
+            "body_end": 23693
+        },
+        {
+            "name": "upload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 23699,
+            "end_position": 24457,
+            "body_start": 23730,
+            "body_end": 24457
+        }
+    ],
+    "local_variables": {
+        "file": "String",
+        "fileName": "File",
+        "name": "String",
+        "ver": "String",
+        "prodId": "String",
+        "cal": "Calendar",
+        "resolver": "ContentResolver",
+        "numberOfCreatedUids": "int",
+        "relaxed": "boolean",
+        "events": "List<VEvent>",
+        "res": "Resources",
+        "msg": "String",
+        "cols": "String[]",
+        "args": "String[]",
+        "newUids": "Map<Long, String>",
+        "cur": "Cursor",
+        "id": "Long",
+        "uid": "String",
+        "updateUri": "Uri",
+        "c": "ContentValues",
+        "where": "String",
+        "sortBy": "String",
+        "n": "int",
+        "timestamp": "DtStamp",
+        "e": "VEvent",
+        "stripped": "String",
+        "input": "EditText",
+        "ok": "int",
+        "cancel": "int",
+        "suggest": "int",
+        "dlg": "AlertDialog",
+        "state": "int",
+        "l": "PropertyList",
+        "summary": "String",
+        "description": "String",
+        "organizer": "String",
+        "allDay": "boolean",
+        "isTransparent": "boolean",
+        "dtEnd": "DtEnd",
+        "start": "DateTime",
+        "end": "Date",
+        "startDate": "Date",
+        "endTz": "String",
+        "availability": "int",
+        "fb": "FreeBusy",
+        "d": "Duration",
+        "s": "String",
+        "desc": "Description",
+        "eventId": "long",
+        "alarmCur": "Cursor",
+        "mins": "int",
+        "method": "int",
+        "alarm": "VAlarm",
+        "i": "int",
+        "utz": "String",
+        "tz": "String",
+        "isUtc": "boolean",
+        "dt": "DateTime",
+        "t": "TimeZone",
+        "value": "int",
+        "p": "Property",
+        "uidPid": "String",
+        "backupFolder": "String",
+        "request": "Request",
+        "connection": "TransferManagerConnection"
+    }
+}

@@ -1,0 +1,156 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "this": [
+            "setAccountManager"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "unknown": [
+            "getContext",
+            "getAccount"
+        ],
+        "OwnCloudClientManagerFactory.getDefaultSingleton()": [
+            "getClientFor"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ],
+        "userAccountManager.getUser(accountName)": [
+            "orElseGet"
+        ],
+        "userAccountManager": [
+            "getUser"
+        ]
+    },
+    "methods": [
+        {
+            "name": "initClientForCurrentAccount",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2777,
+            "end_position": 3132,
+            "body_start": 2921,
+            "body_end": 3132
+        },
+        {
+            "name": "getAccountManager",
+            "return_type": "AccountManager",
+            "parameters": [],
+            "start_position": 3138,
+            "end_position": 3223,
+            "body_start": 3180,
+            "body_end": 3223
+        },
+        {
+            "name": "getAccount",
+            "return_type": "Account",
+            "parameters": [],
+            "start_position": 3229,
+            "end_position": 3293,
+            "body_start": 3257,
+            "body_end": 3293
+        },
+        {
+            "name": "getUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 3299,
+            "end_position": 3540,
+            "body_start": 3321,
+            "body_end": 3540
+        },
+        {
+            "name": "getContentProviderClient",
+            "return_type": "ContentProviderClient",
+            "parameters": [],
+            "start_position": 3546,
+            "end_position": 3652,
+            "body_start": 3602,
+            "body_end": 3652
+        },
+        {
+            "name": "getStorageManager",
+            "return_type": "FileDataStorageManager",
+            "parameters": [],
+            "start_position": 3658,
+            "end_position": 3751,
+            "body_start": 3708,
+            "body_end": 3751
+        },
+        {
+            "name": "getClient",
+            "return_type": "OwnCloudClient",
+            "parameters": [],
+            "start_position": 3757,
+            "end_position": 3829,
+            "body_start": 3794,
+            "body_end": 3829
+        },
+        {
+            "name": "setAccountManager",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AccountManager",
+                    "name": "accountManager"
+                }
+            ],
+            "start_position": 3835,
+            "end_position": 3949,
+            "body_start": 3896,
+            "body_end": 3949
+        },
+        {
+            "name": "setAccount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 3955,
+            "end_position": 4034,
+            "body_start": 3995,
+            "body_end": 4034
+        },
+        {
+            "name": "setContentProviderClient",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ContentProviderClient",
+                    "name": "contentProviderClient"
+                }
+            ],
+            "start_position": 4040,
+            "end_position": 4189,
+            "body_start": 4122,
+            "body_end": 4189
+        },
+        {
+            "name": "setStorageManager",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 4195,
+            "end_position": 4317,
+            "body_start": 4264,
+            "body_end": 4317
+        }
+    ],
+    "local_variables": {
+        "ocAccount": "OwnCloudAccount",
+        "account": "Account",
+        "accountName": "String"
+    }
+}

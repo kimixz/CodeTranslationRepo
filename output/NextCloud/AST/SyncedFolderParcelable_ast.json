@@ -1,0 +1,509 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "break_statement"
+    ],
+    "method_calls": {
+        "syncedFolderDisplayItem": [
+            "getId",
+            "getFolderName",
+            "getLocalPath",
+            "getRemotePath",
+            "isWifiOnly",
+            "isChargingOnly",
+            "isExisting",
+            "isEnabled",
+            "isSubfolderByDate",
+            "getType",
+            "getAccount",
+            "getUploadAction",
+            "getNameCollisionPolicyInt",
+            "isHidden",
+            "getSubfolderRule",
+            "isExcludeHidden"
+        ],
+        "NameCollisionPolicy": [
+            "deserialize"
+        ],
+        "read": [
+            "readLong",
+            "readString",
+            "readInt"
+        ],
+        "MediaFolderType": [
+            "getById"
+        ],
+        "SubFolderRule": [
+            "values"
+        ],
+        "dest": [
+            "writeLong",
+            "writeString",
+            "writeInt"
+        ],
+        "nameCollisionPolicy": [
+            "serialize"
+        ],
+        "subFolderRule": [
+            "ordinal"
+        ]
+    },
+    "methods": [
+        {
+            "name": "writeToParcel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "dest"
+                },
+                {
+                    "type": "int",
+                    "name": "flags"
+                }
+            ],
+            "start_position": 3440,
+            "end_position": 4192,
+            "body_start": 3504,
+            "body_end": 4192
+        },
+        {
+            "name": "createFromParcel",
+            "return_type": "SyncedFolderParcelable",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "source"
+                }
+            ],
+            "start_position": 4329,
+            "end_position": 4499,
+            "body_start": 4417,
+            "body_end": 4499
+        },
+        {
+            "name": "newArray",
+            "return_type": "SyncedFolderParcelable[]",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "size"
+                }
+            ],
+            "start_position": 4517,
+            "end_position": 4674,
+            "body_start": 4594,
+            "body_end": 4674
+        },
+        {
+            "name": "describeContents",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 4695,
+            "end_position": 4764,
+            "body_start": 4739,
+            "body_end": 4764
+        },
+        {
+            "name": "getUploadActionInteger",
+            "return_type": "Integer",
+            "parameters": [],
+            "start_position": 4770,
+            "end_position": 5127,
+            "body_start": 4810,
+            "body_end": 5127
+        },
+        {
+            "name": "setUploadAction",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "uploadAction"
+                }
+            ],
+            "start_position": 5133,
+            "end_position": 5730,
+            "body_start": 5182,
+            "body_end": 5730
+        },
+        {
+            "name": "getFolderName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5736,
+            "end_position": 5805,
+            "body_start": 5766,
+            "body_end": 5805
+        },
+        {
+            "name": "getLocalPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5811,
+            "end_position": 5878,
+            "body_start": 5840,
+            "body_end": 5878
+        },
+        {
+            "name": "getRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5884,
+            "end_position": 5953,
+            "body_start": 5914,
+            "body_end": 5953
+        },
+        {
+            "name": "isWifiOnly",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 5959,
+            "end_position": 6024,
+            "body_start": 5987,
+            "body_end": 6024
+        },
+        {
+            "name": "isChargingOnly",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6030,
+            "end_position": 6103,
+            "body_start": 6062,
+            "body_end": 6103
+        },
+        {
+            "name": "isExisting",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6109,
+            "end_position": 6174,
+            "body_start": 6137,
+            "body_end": 6174
+        },
+        {
+            "name": "isEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6180,
+            "end_position": 6243,
+            "body_start": 6207,
+            "body_end": 6243
+        },
+        {
+            "name": "isSubfolderByDate",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6249,
+            "end_position": 6328,
+            "body_start": 6284,
+            "body_end": 6328
+        },
+        {
+            "name": "getUploadAction",
+            "return_type": "Integer",
+            "parameters": [],
+            "start_position": 6334,
+            "end_position": 6408,
+            "body_start": 6367,
+            "body_end": 6408
+        },
+        {
+            "name": "getNameCollisionPolicy",
+            "return_type": "NameCollisionPolicy",
+            "parameters": [],
+            "start_position": 6414,
+            "end_position": 6514,
+            "body_start": 6466,
+            "body_end": 6514
+        },
+        {
+            "name": "getType",
+            "return_type": "MediaFolderType",
+            "parameters": [],
+            "start_position": 6520,
+            "end_position": 6586,
+            "body_start": 6553,
+            "body_end": 6586
+        },
+        {
+            "name": "isHidden",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6592,
+            "end_position": 6653,
+            "body_start": 6618,
+            "body_end": 6653
+        },
+        {
+            "name": "getId",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 6659,
+            "end_position": 6710,
+            "body_start": 6679,
+            "body_end": 6710
+        },
+        {
+            "name": "getAccount",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 6716,
+            "end_position": 6779,
+            "body_start": 6743,
+            "body_end": 6779
+        },
+        {
+            "name": "getSection",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 6785,
+            "end_position": 6845,
+            "body_start": 6809,
+            "body_end": 6845
+        },
+        {
+            "name": "getSubFolderRule",
+            "return_type": "SubFolderRule",
+            "parameters": [],
+            "start_position": 6851,
+            "end_position": 6921,
+            "body_start": 6891,
+            "body_end": 6921
+        },
+        {
+            "name": "setFolderName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "folderName"
+                }
+            ],
+            "start_position": 6927,
+            "end_position": 7017,
+            "body_start": 6972,
+            "body_end": 7017
+        },
+        {
+            "name": "setLocalPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                }
+            ],
+            "start_position": 7023,
+            "end_position": 7109,
+            "body_start": 7066,
+            "body_end": 7109
+        },
+        {
+            "name": "setRemotePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 7115,
+            "end_position": 7205,
+            "body_start": 7160,
+            "body_end": 7205
+        },
+        {
+            "name": "setWifiOnly",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "wifiOnly"
+                }
+            ],
+            "start_position": 7211,
+            "end_position": 7294,
+            "body_start": 7253,
+            "body_end": 7294
+        },
+        {
+            "name": "setChargingOnly",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "chargingOnly"
+                }
+            ],
+            "start_position": 7300,
+            "end_position": 7399,
+            "body_start": 7350,
+            "body_end": 7399
+        },
+        {
+            "name": "setExisting",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "existing"
+                }
+            ],
+            "start_position": 7405,
+            "end_position": 7488,
+            "body_start": 7447,
+            "body_end": 7488
+        },
+        {
+            "name": "setEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 7494,
+            "end_position": 7573,
+            "body_start": 7534,
+            "body_end": 7573
+        },
+        {
+            "name": "setSubfolderByDate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "subfolderByDate"
+                }
+            ],
+            "start_position": 7579,
+            "end_position": 7690,
+            "body_start": 7635,
+            "body_end": 7690
+        },
+        {
+            "name": "setNameCollisionPolicy",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NameCollisionPolicy",
+                    "name": "nameCollisionPolicy"
+                }
+            ],
+            "start_position": 7696,
+            "end_position": 7835,
+            "body_start": 7772,
+            "body_end": 7835
+        },
+        {
+            "name": "setType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MediaFolderType",
+                    "name": "type"
+                }
+            ],
+            "start_position": 7841,
+            "end_position": 7916,
+            "body_start": 7883,
+            "body_end": 7916
+        },
+        {
+            "name": "setHidden",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "hidden"
+                }
+            ],
+            "start_position": 7922,
+            "end_position": 7997,
+            "body_start": 7960,
+            "body_end": 7997
+        },
+        {
+            "name": "setId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 8003,
+            "end_position": 8059,
+            "body_start": 8030,
+            "body_end": 8059
+        },
+        {
+            "name": "setAccount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "account"
+                }
+            ],
+            "start_position": 8065,
+            "end_position": 8143,
+            "body_start": 8104,
+            "body_end": 8143
+        },
+        {
+            "name": "setSection",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "section"
+                }
+            ],
+            "start_position": 8149,
+            "end_position": 8224,
+            "body_start": 8185,
+            "body_end": 8224
+        },
+        {
+            "name": "setSubFolderRule",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SubFolderRule",
+                    "name": "subFolderRule"
+                }
+            ],
+            "start_position": 8229,
+            "end_position": 8326,
+            "body_start": 8287,
+            "body_end": 8326
+        },
+        {
+            "name": "isExcludeHidden",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8332,
+            "end_position": 8402,
+            "body_start": 8365,
+            "body_end": 8402
+        },
+        {
+            "name": "setExcludeHidden",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "excludeHidden"
+                }
+            ],
+            "start_position": 8408,
+            "end_position": 8511,
+            "body_start": 8460,
+            "body_end": 8511
+        }
+    ]
+}

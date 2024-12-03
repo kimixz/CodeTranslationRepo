@@ -1,0 +1,116 @@
+[
+    {
+        "method_name": "getCurrentOwnCloudAccount",
+        "method_code": "@Nullable\n    OwnCloudAccount getCurrentOwnCloudAccount();",
+        "prompt": "\n        Please translate the following Java (Android) method titled getCurrentOwnCloudAccount from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: getCurrentOwnCloudAccount\n\n        Method Code: @Nullable\n    OwnCloudAccount getCurrentOwnCloudAccount();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getCurrentOwnCloudAccount() -> OwnCloudAccount? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "removeAllAccounts",
+        "method_code": "void removeAllAccounts();",
+        "prompt": "\n        Please translate the following Java (Android) method titled removeAllAccounts from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: removeAllAccounts\n\n        Method Code: void removeAllAccounts();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc removeAllAccounts() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "removeUser",
+        "method_code": "boolean removeUser(User user);",
+        "prompt": "\n        Please translate the following Java (Android) method titled removeUser from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: removeUser\n\n        Method Code: boolean removeUser(User user);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc removeUser(user: User) -> Bool {\n    // Implementation goes here\n    return false\n}\n```"
+    },
+    {
+        "method_name": "getAccounts",
+        "method_code": "@NonNull\n    Account[] getAccounts();",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAccounts from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: getAccounts\n\n        Method Code: @NonNull\n    Account[] getAccounts();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAccounts() -> [Account] {\n    return []\n}\n```"
+    },
+    {
+        "method_name": "getAllUsers",
+        "method_code": "@NonNull\n    List<User> getAllUsers();",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAllUsers from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: getAllUsers\n\n        Method Code: @NonNull\n    List<User> getAllUsers();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAllUsers() -> [User] {\n    return []\n}\n```"
+    },
+    {
+        "method_name": "getUser",
+        "method_code": "@NonNull\n    Optional<User> getUser(CharSequence accountName);",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUser from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: getUser\n\n        Method Code: @NonNull\n    Optional<User> getUser(CharSequence accountName);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUser(accountName: String) -> User? {\n    // Implementation goes here\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "getAnonymousUser",
+        "method_code": "User getAnonymousUser();",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAnonymousUser from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: getAnonymousUser\n\n        Method Code: User getAnonymousUser();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAnonymousUser() -> User {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "exists",
+        "method_code": "boolean exists(Account account);",
+        "prompt": "\n        Please translate the following Java (Android) method titled exists from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: exists\n\n        Method Code: boolean exists(Account account);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc exists(account: Account) -> Bool\n```"
+    },
+    {
+        "method_name": "migrateUserId",
+        "method_code": "boolean migrateUserId();",
+        "prompt": "\n        Please translate the following Java (Android) method titled migrateUserId from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: migrateUserId\n\n        Method Code: boolean migrateUserId();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc migrateUserId() -> Bool {\n    // Implementation goes here\n    return false\n}\n```"
+    },
+    {
+        "method_name": "getAccountByName",
+        "method_code": "@Nullable\n    Account getAccountByName(String name);",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAccountByName from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: getAccountByName\n\n        Method Code: @Nullable\n    Account getAccountByName(String name);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAccountByName(_ name: String) -> Account? {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "setCurrentOwnCloudAccount",
+        "method_code": "boolean setCurrentOwnCloudAccount(String accountName);",
+        "prompt": "\n        Please translate the following Java (Android) method titled setCurrentOwnCloudAccount from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: setCurrentOwnCloudAccount\n\n        Method Code: boolean setCurrentOwnCloudAccount(String accountName);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setCurrentOwnCloudAccount(accountName: String) -> Bool {\n    // Implementation goes here\n    return false\n}\n```"
+    },
+    {
+        "method_name": "setCurrentOwnCloudAccount",
+        "method_code": "boolean setCurrentOwnCloudAccount(int hashCode);",
+        "prompt": "\n        Please translate the following Java (Android) method titled setCurrentOwnCloudAccount from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: setCurrentOwnCloudAccount\n\n        Method Code: boolean setCurrentOwnCloudAccount(int hashCode);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setCurrentOwnCloudAccount(hashCode: Int) -> Bool {\n    // Implementation goes here\n    return false\n}\n```"
+    },
+    {
+        "method_name": "getServerVersion",
+        "method_code": "@Deprecated\n    @NonNull\n    OwnCloudVersion getServerVersion(Account account);",
+        "prompt": "\n        Please translate the following Java (Android) method titled getServerVersion from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: getServerVersion\n\n        Method Code: @Deprecated\n    @NonNull\n    OwnCloudVersion getServerVersion(Account account);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@available(*, deprecated)\nfunc getServerVersion(account: Account) -> OwnCloudVersion {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "resetOwnCloudAccount",
+        "method_code": "void resetOwnCloudAccount();",
+        "prompt": "\n        Please translate the following Java (Android) method titled resetOwnCloudAccount from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: resetOwnCloudAccount\n\n        Method Code: void resetOwnCloudAccount();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc resetOwnCloudAccount() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "accountOwnsFile",
+        "method_code": "@Deprecated\n    boolean accountOwnsFile(OCFile file, Account account);",
+        "prompt": "\n        Please translate the following Java (Android) method titled accountOwnsFile from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: accountOwnsFile\n\n        Method Code: @Deprecated\n    boolean accountOwnsFile(OCFile file, Account account);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@available(*, deprecated)\nfunc accountOwnsFile(file: OCFile, account: Account) -> Bool {\n    // Implementation needed\n    return false\n}\n```"
+    },
+    {
+        "method_name": "userOwnsFile",
+        "method_code": "boolean userOwnsFile(OCFile file, User user);",
+        "prompt": "\n        Please translate the following Java (Android) method titled userOwnsFile from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: userOwnsFile\n\n        Method Code: boolean userOwnsFile(OCFile file, User user);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc userOwnsFile(file: OCFile, user: User) -> Bool\n```"
+    },
+    {
+        "method_name": "getUsername",
+        "method_code": "static String getUsername(User user) {\n        final String name = user.getAccountName();\n        return name.substring(0, name.lastIndexOf('@'));\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUsername from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: getUsername\n\n        Method Code: static String getUsername(User user) {\n        final String name = user.getAccountName();\n        return name.substring(0, name.lastIndexOf('@'));\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nstatic func getUsername(user: User) -> String {\n    let name = user.getAccountName()\n    return String(name[..<name.lastIndex(of: \"@\")!])\n}\n```"
+    },
+    {
+        "method_name": "getDisplayName",
+        "method_code": "@Nullable\n    static String getDisplayName(User user) {\n        return AccountManager.get(MainApp.getAppContext()).getUserData(user.toPlatformAccount(),\n                                                                       AccountUtils.Constants.KEY_DISPLAY_NAME);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getDisplayName from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: getDisplayName\n\n        Method Code: @Nullable\n    static String getDisplayName(User user) {\n        return AccountManager.get(MainApp.getAppContext()).getUserData(user.toPlatformAccount(),\n                                                                       AccountUtils.Constants.KEY_DISPLAY_NAME);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nstatic func getDisplayName(user: User) -> String? {\n    return AccountManager.get(MainApp.getAppContext()).getUserData(user.toPlatformAccount(), key: AccountUtils.Constants.KEY_DISPLAY_NAME)\n}\n```"
+    },
+    {
+        "method_name": "startAccountCreation",
+        "method_code": "void startAccountCreation(Activity activity);",
+        "prompt": "\n        Please translate the following Java (Android) method titled startAccountCreation from UserAccountManager.java into Swift.\n\n        Input:\n\n        Method Name: startAccountCreation\n\n        Method Code: void startAccountCreation(Activity activity);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc startAccountCreation(activity: Activity) {\n    // Implementation goes here\n}\n```"
+    }
+]

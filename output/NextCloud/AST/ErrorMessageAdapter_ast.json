@@ -1,0 +1,366 @@
+{
+    "methods": [
+        {
+            "name": "getErrorCauseMessage",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "RemoteOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 2547,
+            "end_position": 3287,
+            "body_start": 2699,
+            "body_end": 3287
+        },
+        {
+            "name": "getMessageForResultAndOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "RemoteOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 3783,
+            "end_position": 6006,
+            "body_start": 3948,
+            "body_end": 6006
+        },
+        {
+            "name": "getMessageForSynchronizeFolderOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "SynchronizeFolderOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 6012,
+            "end_position": 6523,
+            "body_start": 6196,
+            "body_end": 6523
+        },
+        {
+            "name": "getMessageForMoveFileOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 6529,
+            "end_position": 7512,
+            "body_start": 6641,
+            "body_end": 7512
+        },
+        {
+            "name": "getMessageForUpdateShareOperations",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 7518,
+            "end_position": 8234,
+            "body_start": 7634,
+            "body_end": 8234
+        },
+        {
+            "name": "getMessageForUnshareOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 8240,
+            "end_position": 8953,
+            "body_start": 8351,
+            "body_end": 8953
+        },
+        {
+            "name": "getMessageForCopyFileOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 8959,
+            "end_position": 9770,
+            "body_start": 9071,
+            "body_end": 9770
+        },
+        {
+            "name": "getMessageForCreateShareOperations",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 9776,
+            "end_position": 10490,
+            "body_start": 9892,
+            "body_end": 10490
+        },
+        {
+            "name": "getMessageForCreateFolderOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 10496,
+            "end_position": 11203,
+            "body_start": 10612,
+            "body_end": 11203
+        },
+        {
+            "name": "getMessageForRenameFileOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 11209,
+            "end_position": 12099,
+            "body_start": 11323,
+            "body_end": 12099
+        },
+        {
+            "name": "getMessageForRemoveFileOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 12105,
+            "end_position": 12740,
+            "body_start": 12219,
+            "body_end": 12740
+        },
+        {
+            "name": "getMessageForDownloadFileOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "DownloadFileOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 12746,
+            "end_position": 13625,
+            "body_start": 12920,
+            "body_end": 13625
+        },
+        {
+            "name": "getMessageForUploadFileOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "UploadFileOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 13631,
+            "end_position": 15117,
+            "body_start": 13801,
+            "body_end": 15117
+        },
+        {
+            "name": "getMessageForResult",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 15478,
+            "end_position": 18712,
+            "body_start": 15579,
+            "body_end": 18712
+        },
+        {
+            "name": "getMessageForOperation",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "RemoteOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 19031,
+            "end_position": 21300,
+            "body_start": 19132,
+            "body_end": 21300
+        }
+    ],
+    "local_variables": {
+        "message": "String",
+        "folderPathName": "String"
+    },
+    "method_calls": {
+        "unknown": [
+            "getMessageForResultAndOperation",
+            "getMessageForResult",
+            "getMessageForOperation",
+            "getMessageForUploadFileOperation",
+            "getMessageForDownloadFileOperation",
+            "getMessageForRemoveFileOperation",
+            "getMessageForRenameFileOperation",
+            "getMessageForCreateFolderOperation",
+            "getMessageForCreateShareOperations",
+            "getMessageForUnshareOperation",
+            "getMessageForUpdateShareOperations",
+            "getMessageForMoveFileOperation",
+            "getMessageForSynchronizeFolderOperation",
+            "getMessageForCopyFileOperation"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "result": [
+            "isSuccess",
+            "getCode",
+            "getMessage",
+            "getException",
+            "getHttpPhrase"
+        ],
+        "res": [
+            "getString"
+        ],
+        "((SynchronizeFileOperation) operation)": [
+            "transferWasRequested"
+        ],
+        "String": [
+            "format"
+        ],
+        "new File(operation.getFolderPath())": [
+            "getName"
+        ],
+        "operation": [
+            "getFolderPath",
+            "getSavePath",
+            "getFileName"
+        ],
+        "new File(operation.getSavePath())": [
+            "getName"
+        ],
+        "((UploadFileOperation) operation)": [
+            "getFileName"
+        ],
+        "new File(((DownloadFileOperation) operation).getSavePath())": [
+            "getName"
+        ],
+        "((DownloadFileOperation) operation)": [
+            "getSavePath"
+        ],
+        "new File(\n                    ((SynchronizeFolderOperation) operation).getFolderPath()\n            )": [
+            "getName"
+        ],
+        "((SynchronizeFolderOperation) operation)": [
+            "getFolderPath"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement"
+    ]
+}

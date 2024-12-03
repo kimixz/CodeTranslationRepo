@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "getIdMenuItem",
+        "method_code": "public int getIdMenuItem() {\n        return mIdMenuItem;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getIdMenuItem from MenuSimpleTarget.java into Swift.\n\n        Input:\n\n        Method Name: getIdMenuItem\n\n        Method Code: public int getIdMenuItem() {\n        return mIdMenuItem;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getIdMenuItem() -> Int {\n    return mIdMenuItem\n}\n```"
+    }
+]

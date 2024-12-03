@@ -1,0 +1,100 @@
+{
+    "methods": [
+        {
+            "name": "getKey",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 411,
+            "end_position": 466,
+            "body_start": 434,
+            "body_end": 466
+        },
+        {
+            "name": "getFilename",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 472,
+            "end_position": 537,
+            "body_start": 500,
+            "body_end": 537
+        },
+        {
+            "name": "getMimetype",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 543,
+            "end_position": 608,
+            "body_start": 571,
+            "body_end": 608
+        },
+        {
+            "name": "getVersion",
+            "return_type": "double",
+            "parameters": [],
+            "start_position": 614,
+            "end_position": 677,
+            "body_start": 641,
+            "body_end": 677
+        },
+        {
+            "name": "setKey",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 683,
+            "end_position": 745,
+            "body_start": 714,
+            "body_end": 745
+        },
+        {
+            "name": "setFilename",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 751,
+            "end_position": 833,
+            "body_start": 792,
+            "body_end": 833
+        },
+        {
+            "name": "setMimetype",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimetype"
+                }
+            ],
+            "start_position": 839,
+            "end_position": 921,
+            "body_start": 880,
+            "body_end": 921
+        },
+        {
+            "name": "setVersion",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "double",
+                    "name": "version"
+                }
+            ],
+            "start_position": 927,
+            "end_position": 1005,
+            "body_start": 966,
+            "body_end": 1005
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement"
+    ]
+}

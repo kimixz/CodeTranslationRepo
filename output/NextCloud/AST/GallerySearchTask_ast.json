@@ -1,0 +1,168 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "GallerySearchTask.Result",
+            "parameters": [],
+            "start_position": 1965,
+            "end_position": 4245,
+            "body_start": 2044,
+            "body_end": 4245
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GallerySearchTask.Result",
+                    "name": "result"
+                }
+            ],
+            "start_position": 4251,
+            "end_position": 4563,
+            "body_start": 4327,
+            "body_end": 4563
+        },
+        {
+            "name": "findLastTimestamp",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "ArrayList<RemoteFile>",
+                    "name": "remoteFiles"
+                }
+            ],
+            "start_position": 4569,
+            "end_position": 4876,
+            "body_start": 4635,
+            "body_end": 4876
+        },
+        {
+            "name": "parseMedia",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "startDate"
+                },
+                {
+                    "type": "long",
+                    "name": "endDate"
+                },
+                {
+                    "type": "List<Object>",
+                    "name": "remoteFiles"
+                }
+            ],
+            "start_position": 4882,
+            "end_position": 7870,
+            "body_start": 4965,
+            "body_end": 7870
+        }
+    ],
+    "method_calls": {
+        "photoFragmentWeakReference": [
+            "get"
+        ],
+        "unknown": [
+            "isCancelled",
+            "findLastTimestamp",
+            "parseMedia"
+        ],
+        "storageManager": [
+            "getCapability",
+            "getGalleryItems",
+            "saveFile",
+            "removeFile"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "searchRemoteOperation": [
+            "setLimit",
+            "setEndDate",
+            "setStartDate",
+            "execute"
+        ],
+        "photoFragment": [
+            "getContext",
+            "searchCompleted"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "dateFormat": [
+            "format"
+        ],
+        "result": [
+            "isSuccess",
+            "getData"
+        ],
+        "remoteFiles": [
+            "size",
+            "get"
+        ],
+        "lastFile": [
+            "getModifiedTimestamp"
+        ],
+        "localFile": [
+            "getModificationTimestamp",
+            "getRemotePath",
+            "getEtag"
+        ],
+        "RefreshFolderOperation": [
+            "prefillLocalFilesMap"
+        ],
+        "FileStorageUtils": [
+            "fillOCFile"
+        ],
+        "ocFile": [
+            "getModificationTimestamp",
+            "getRemotePath",
+            "getEtag",
+            "setLastSyncDateForData"
+        ],
+        "localFilesMap": [
+            "remove",
+            "values"
+        ],
+        "localFile.getEtag()": [
+            "equals"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "localFilesMap.values()": [
+            "size"
+        ],
+        "file": [
+            "getRemotePath"
+        ]
+    },
+    "local_variables": {
+        "photoFragment": "GalleryFragment",
+        "ocCapability": "OCCapability",
+        "searchRemoteOperation": "SearchRemoteOperation",
+        "dateFormat": "SimpleDateFormat",
+        "result": "RemoteOperationResult",
+        "lastTimeStamp": "long",
+        "emptySearch": "boolean",
+        "lastPosition": "int",
+        "lastFile": "RemoteFile",
+        "localFiles": "List<OCFile>",
+        "localFilesMap": "Map<String, OCFile>",
+        "filesAdded": "long",
+        "filesUpdated": "long",
+        "filesDeleted": "long",
+        "unchangedFiles": "long",
+        "ocFile": "OCFile",
+        "localFile": "OCFile",
+        "totalFiles": "long"
+    }
+}

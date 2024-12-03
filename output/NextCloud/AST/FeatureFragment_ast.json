@@ -1,0 +1,187 @@
+{
+    "methods": [
+        {
+            "name": "newInstance",
+            "return_type": "FeatureFragment",
+            "parameters": [
+                {
+                    "type": "FeatureItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 1342,
+            "end_position": 1589,
+            "body_start": 1402,
+            "body_end": 1589
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 1595,
+            "end_position": 1972,
+            "body_start": 1667,
+            "body_end": 1972
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 1978,
+            "end_position": 4025,
+            "body_start": 2191,
+            "body_end": 4025
+        },
+        {
+            "name": "generateTextView",
+            "return_type": "TextView",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "text"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "boolean",
+                    "name": "shouldContentCentered"
+                },
+                {
+                    "type": "boolean",
+                    "name": "showBulletPoints"
+                }
+            ],
+            "start_position": 4031,
+            "end_position": 5689,
+            "body_start": 4228,
+            "body_end": 5689
+        }
+    ],
+    "local_variables": {
+        "f": "FeatureFragment",
+        "args": "Bundle",
+        "bundle": "Bundle",
+        "view": "View",
+        "whatsNewImage": "ImageView",
+        "image": "Drawable",
+        "whatsNewTitle": "TextView",
+        "linearLayout": "LinearLayout",
+        "texts": "String[]",
+        "textView": "TextView",
+        "standardMargin": "int",
+        "doubleMargin": "int",
+        "zeroMargin": "int",
+        "layoutParams": "LinearLayout.LayoutParams",
+        "bulletSpan": "BulletSpan",
+        "spannableString": "SpannableString"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "enhanced_for_statement"
+    ],
+    "method_calls": {
+        "args": [
+            "putParcelable"
+        ],
+        "f": [
+            "setArguments"
+        ],
+        "viewThemeUtilsFactory": [
+            "withPrimaryAsBackground"
+        ],
+        "super": [
+            "onCreate"
+        ],
+        "unknown": [
+            "getArguments",
+            "getResources",
+            "requireContext",
+            "getText",
+            "generateTextView"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "view": [
+            "findViewById"
+        ],
+        "item": [
+            "shouldShowImage",
+            "getImage",
+            "shouldShowTitleText",
+            "getTitleText",
+            "shouldShowContentText",
+            "shouldShowBulletPointList",
+            "getContentText",
+            "shouldContentCentered"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "whatsNewImage": [
+            "setImageDrawable"
+        ],
+        "viewThemeUtils.platform": [
+            "tintDrawable",
+            "colorTextView"
+        ],
+        "whatsNewTitle": [
+            "setText",
+            "setVisibility"
+        ],
+        "getText(item.getContentText()).toString()": [
+            "split"
+        ],
+        "getText(item.getContentText())": [
+            "toString"
+        ],
+        "linearLayout": [
+            "addView",
+            "setVisibility"
+        ],
+        "context.getResources()": [
+            "getDimensionPixelSize"
+        ],
+        "context": [
+            "getResources"
+        ],
+        "layoutParams": [
+            "setMargins"
+        ],
+        "textView": [
+            "setTextAppearance",
+            "setLayoutParams",
+            "setText",
+            "setGravity"
+        ],
+        "spannableString": [
+            "setSpan",
+            "length"
+        ]
+    }
+}

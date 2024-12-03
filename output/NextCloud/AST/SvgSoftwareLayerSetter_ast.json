@@ -1,0 +1,75 @@
+{
+    "methods": [
+        {
+            "name": "onException",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Exception",
+                    "name": "e"
+                },
+                {
+                    "type": "T",
+                    "name": "model"
+                },
+                {
+                    "type": "Target<Drawable>",
+                    "name": "target"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isFirstResource"
+                }
+            ],
+            "start_position": 669,
+            "end_position": 938,
+            "body_start": 782,
+            "body_end": 938
+        },
+        {
+            "name": "onResourceReady",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "resource"
+                },
+                {
+                    "type": "T",
+                    "name": "model"
+                },
+                {
+                    "type": "Target<Drawable>",
+                    "name": "target"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isFromMemoryCache"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isFirstResource"
+                }
+            ],
+            "start_position": 944,
+            "end_position": 1289,
+            "body_start": 1129,
+            "body_end": 1289
+        }
+    ],
+    "local_variables": {
+        "view": "ImageView"
+    },
+    "method_calls": {
+        "((ImageViewTarget<?>) target)": [
+            "getView"
+        ],
+        "view": [
+            "setLayerType"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ]
+}

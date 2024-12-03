@@ -1,0 +1,864 @@
+{
+    "method_calls": {
+        "GrantStoragePermissionRule": [
+            "grant"
+        ],
+        "targetContext": [
+            "getContentResolver"
+        ],
+        "InstrumentationRegistry.getInstrumentation()": [
+            "getTargetContext",
+            "waitForIdleSync",
+            "waitForIdle",
+            "runOnMainSync"
+        ],
+        "InstrumentationRegistry": [
+            "getInstrumentation"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "platformAccountManager": [
+            "getAccounts",
+            "removeAccountExplicitly",
+            "addAccountExplicitly",
+            "setUserData"
+        ],
+        "account.type": [
+            "equalsIgnoreCase"
+        ],
+        "unknown": [
+            "createAccount",
+            "getUser",
+            "getCapability",
+            "assumeTrue",
+            "assertTrue",
+            "createFile",
+            "getInstrumentation",
+            "shortSleep",
+            "onView",
+            "withId",
+            "waitForIdleSync",
+            "screenshot",
+            "getStorageManager",
+            "uploadOCUpload",
+            "createName",
+            "getRandomName"
+        ],
+        "OwnCloudClientFactory": [
+            "createOwnCloudClient",
+            "createNextcloudClient"
+        ],
+        "androidx.test.platform.app.InstrumentationRegistry": [
+            "getArguments"
+        ],
+        "arguments": [
+            "getString"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "fileDataStorageManager": [
+            "getCapability",
+            "saveCapabilities",
+            "removeLocalFiles",
+            "deleteAllFiles"
+        ],
+        "capability": [
+            "setGroupfolders",
+            "setServerColor"
+        ],
+        "\"dark\"": [
+            "equalsIgnoreCase"
+        ],
+        "AppPreferencesImpl.fromContext(targetContext)": [
+            "setDarkThemeMode"
+        ],
+        "AppPreferencesImpl": [
+            "fromContext"
+        ],
+        "MainApp": [
+            "setAppTheme",
+            "getAccountType"
+        ],
+        "\"light\"": [
+            "equalsIgnoreCase"
+        ],
+        "\"blue\"": [
+            "equalsIgnoreCase"
+        ],
+        "ocCapability.getVersion()": [
+            "isNewerOrEqual"
+        ],
+        "ocCapability": [
+            "getVersion"
+        ],
+        "new GetCapabilitiesRemoteOperation()\n            .execute(client)": [
+            "getSingleData"
+        ],
+        "new GetCapabilitiesRemoteOperation()": [
+            "execute"
+        ],
+        "androidx.test.espresso.accessibility.AccessibilityChecks.enable()": [
+            "setRunChecksFromRootView"
+        ],
+        "androidx.test.espresso.accessibility.AccessibilityChecks": [
+            "enable"
+        ],
+        "AccountManager.get(targetContext)": [
+            "getAccounts",
+            "getUserData",
+            "removeAccountExplicitly"
+        ],
+        "FileStorageUtils": [
+            "getTemporalPath",
+            "getInternalTemporalPath"
+        ],
+        "tempPath": [
+            "exists",
+            "mkdirs"
+        ],
+        "file": [
+            "exists",
+            "mkdirs",
+            "getParentFile",
+            "createNewFile",
+            "getAbsolutePath"
+        ],
+        "name": [
+            "endsWith",
+            "lastIndexOf",
+            "substring"
+        ],
+        "file.getParentFile()": [
+            "exists",
+            "mkdirs"
+        ],
+        "writer": [
+            "write",
+            "flush",
+            "close"
+        ],
+        "getInstrumentation().getContext().getAssets()": [
+            "open"
+        ],
+        "getInstrumentation().getContext()": [
+            "getAssets"
+        ],
+        "getInstrumentation()": [
+            "getContext"
+        ],
+        "File": [
+            "createTempFile"
+        ],
+        "FileUtils": [
+            "copyInputStreamToFile"
+        ],
+        "activityRule": [
+            "launchActivity"
+        ],
+        "onView(withId(R.id.drawer_layout))": [
+            "perform"
+        ],
+        "DrawerActions": [
+            "open"
+        ],
+        "ActivityLifecycleMonitorRegistry\n                .getInstance()": [
+            "getActivitiesInStage"
+        ],
+        "ActivityLifecycleMonitorRegistry": [
+            "getInstance"
+        ],
+        "resumedActivities.iterator()": [
+            "hasNext",
+            "next"
+        ],
+        "resumedActivities": [
+            "iterator"
+        ],
+        "Thread": [
+            "sleep"
+        ],
+        "e": [
+            "printStackTrace"
+        ],
+        "new ExistenceCheckRemoteOperation(remotePath, false)": [
+            "execute"
+        ],
+        "check": [
+            "isSuccess"
+        ],
+        "new CreateFolderOperation(remotePath, user, targetContext, getStorageManager())\n                           .execute(client)": [
+            "isSuccess"
+        ],
+        "new CreateFolderOperation(remotePath, user, targetContext, getStorageManager())": [
+            "execute"
+        ],
+        "getStorageManager()": [
+            "getFileByDecryptedRemotePath"
+        ],
+        "remotePath": [
+            "endsWith"
+        ],
+        "UserAccountManagerImpl": [
+            "fromContext"
+        ],
+        "newUpload": [
+            "addRenameUploadListener",
+            "setRemoteFolderToBeCreated",
+            "execute"
+        ],
+        "result": [
+            "getLogMessage",
+            "isSuccess"
+        ],
+        "InstrumentationRegistry.getInstrumentation().getTargetContext()": [
+            "getResources"
+        ],
+        "resources": [
+            "getConfiguration",
+            "updateConfiguration"
+        ],
+        "config": [
+            "setLocale"
+        ],
+        "Screenshot.snapActivity(activity).setName(name)": [
+            "record"
+        ],
+        "Screenshot.snapActivity(activity)": [
+            "setName"
+        ],
+        "Screenshot": [
+            "snapActivity",
+            "snap"
+        ],
+        "Screenshot.snap(view).setName(createName(prefix))": [
+            "record"
+        ],
+        "Screenshot.snap(view)": [
+            "setName"
+        ],
+        "Screenshot.snapActivity(sut).setName(createName())": [
+            "record"
+        ],
+        "Screenshot.snapActivity(sut)": [
+            "setName"
+        ],
+        "Objects.requireNonNull(dialogFragment.requireDialog().getWindow())": [
+            "getDecorView"
+        ],
+        "Objects": [
+            "requireNonNull"
+        ],
+        "dialogFragment.requireDialog()": [
+            "getWindow"
+        ],
+        "dialogFragment": [
+            "requireDialog"
+        ],
+        "DARK_MODE": [
+            "isEmpty"
+        ],
+        "COLOR": [
+            "isEmpty"
+        ],
+        "TestNameDetector": [
+            "getTestClass",
+            "getTestName"
+        ],
+        "user": [
+            "toPlatformAccount"
+        ],
+        "RandomStringGenerator": [
+            "make"
+        ],
+        "UserAccountManagerImpl.fromContext(targetContext)": [
+            "getUser",
+            "getAccountByName"
+        ],
+        "optionalUser": [
+            "orElseThrow"
+        ]
+    },
+    "methods": [
+        {
+            "name": "beforeAll",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4611,
+            "end_position": 7805,
+            "body_start": 4659,
+            "body_end": 7805
+        },
+        {
+            "name": "testOnlyOnServer",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OwnCloudVersion",
+                    "name": "version"
+                }
+            ],
+            "start_position": 7811,
+            "end_position": 8044,
+            "body_start": 7913,
+            "body_end": 8044
+        },
+        {
+            "name": "getCapability",
+            "return_type": "OCCapability",
+            "parameters": [],
+            "start_position": 8050,
+            "end_position": 8418,
+            "body_start": 8134,
+            "body_end": 8418
+        },
+        {
+            "name": "enableAccessibilityChecks",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8424,
+            "end_position": 8589,
+            "body_start": 8476,
+            "body_end": 8589
+        },
+        {
+            "name": "after",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8595,
+            "end_position": 8761,
+            "body_start": 8626,
+            "body_end": 8761
+        },
+        {
+            "name": "getStorageManager",
+            "return_type": "FileDataStorageManager",
+            "parameters": [],
+            "start_position": 8767,
+            "end_position": 8866,
+            "body_start": 8820,
+            "body_end": 8866
+        },
+        {
+            "name": "getAllAccounts",
+            "return_type": "Account[]",
+            "parameters": [],
+            "start_position": 8872,
+            "end_position": 8980,
+            "body_start": 8909,
+            "body_end": 8980
+        },
+        {
+            "name": "createDummyFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8986,
+            "end_position": 9387,
+            "body_start": 9046,
+            "body_end": 9387
+        },
+        {
+            "name": "getDummyFile",
+            "return_type": "File",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 9393,
+            "end_position": 10177,
+            "body_start": 9460,
+            "body_end": 10177
+        },
+        {
+            "name": "createFile",
+            "return_type": "File",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                },
+                {
+                    "type": "int",
+                    "name": "iteration"
+                }
+            ],
+            "start_position": 10183,
+            "end_position": 10748,
+            "body_start": 10260,
+            "body_end": 10748
+        },
+        {
+            "name": "getFile",
+            "return_type": "File",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 10754,
+            "end_position": 11055,
+            "body_start": 10813,
+            "body_end": 11055
+        },
+        {
+            "name": "waitForIdleSync",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11061,
+            "end_position": 11173,
+            "body_start": 11094,
+            "body_end": 11173
+        },
+        {
+            "name": "onIdleSync",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Runnable",
+                    "name": "recipient"
+                }
+            ],
+            "start_position": 11179,
+            "end_position": 11309,
+            "body_start": 11225,
+            "body_end": 11309
+        },
+        {
+            "name": "openDrawer",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "IntentsTestRule",
+                    "name": "activityRule"
+                }
+            ],
+            "start_position": 11315,
+            "end_position": 11588,
+            "body_start": 11371,
+            "body_end": 11588
+        },
+        {
+            "name": "getCurrentActivity",
+            "return_type": "Activity",
+            "parameters": [],
+            "start_position": 11594,
+            "end_position": 12076,
+            "body_start": 11634,
+            "body_end": 12076
+        },
+        {
+            "name": "shortSleep",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12082,
+            "end_position": 12256,
+            "body_start": 12117,
+            "body_end": 12256
+        },
+        {
+            "name": "longSleep",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12262,
+            "end_position": 12429,
+            "body_start": 12289,
+            "body_end": 12429
+        },
+        {
+            "name": "sleep",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "second"
+                }
+            ],
+            "start_position": 12435,
+            "end_position": 12617,
+            "body_start": 12468,
+            "body_end": 12617
+        },
+        {
+            "name": "createFolder",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 12623,
+            "end_position": 13142,
+            "body_start": 12669,
+            "body_end": 13142
+        },
+        {
+            "name": "uploadFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 13148,
+            "end_position": 13335,
+            "body_start": 13201,
+            "body_end": 13335
+        },
+        {
+            "name": "uploadOCUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "ocUpload"
+                }
+            ],
+            "start_position": 13341,
+            "end_position": 15497,
+            "body_start": 13387,
+            "body_end": 15497
+        },
+        {
+            "name": "isNetworkAndServerAvailable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GenericCallback<Boolean>",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 13483,
+            "end_position": 13605,
+            "body_start": 13589,
+            "body_end": 13605
+        },
+        {
+            "name": "isConnected",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13619,
+            "end_position": 13715,
+            "body_start": 13670,
+            "body_end": 13715
+        },
+        {
+            "name": "isInternetWalled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13729,
+            "end_position": 13830,
+            "body_start": 13785,
+            "body_end": 13830
+        },
+        {
+            "name": "getConnectivity",
+            "return_type": "Connectivity",
+            "parameters": [],
+            "start_position": 13844,
+            "end_position": 13971,
+            "body_start": 13904,
+            "body_end": 13971
+        },
+        {
+            "name": "getBattery",
+            "return_type": "BatteryStatus",
+            "parameters": [],
+            "start_position": 14087,
+            "end_position": 14223,
+            "body_start": 14164,
+            "body_end": 14223
+        },
+        {
+            "name": "isPowerSavingEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 14237,
+            "end_position": 14342,
+            "body_start": 14297,
+            "body_end": 14342
+        },
+        {
+            "name": "isPowerSavingExclusionAvailable",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 14356,
+            "end_position": 14472,
+            "body_start": 14427,
+            "body_end": 14472
+        },
+        {
+            "name": "enableRTL",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15503,
+            "end_position": 15837,
+            "body_start": 15530,
+            "body_end": 15837
+        },
+        {
+            "name": "resetLocale",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15843,
+            "end_position": 16179,
+            "body_start": 15872,
+            "body_end": 16179
+        },
+        {
+            "name": "screenshot",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 16185,
+            "end_position": 16259,
+            "body_start": 16222,
+            "body_end": 16259
+        },
+        {
+            "name": "screenshotViaName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 16265,
+            "end_position": 16478,
+            "body_start": 16330,
+            "body_end": 16478
+        },
+        {
+            "name": "screenshot",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "String",
+                    "name": "prefix"
+                }
+            ],
+            "start_position": 16484,
+            "end_position": 16686,
+            "body_start": 16536,
+            "body_end": 16686
+        },
+        {
+            "name": "screenshot",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "sut"
+                }
+            ],
+            "start_position": 16692,
+            "end_position": 16883,
+            "body_start": 16732,
+            "body_end": 16883
+        },
+        {
+            "name": "screenshot",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DialogFragment",
+                    "name": "dialogFragment"
+                },
+                {
+                    "type": "String",
+                    "name": "prefix"
+                }
+            ],
+            "start_position": 16889,
+            "end_position": 17079,
+            "body_start": 16961,
+            "body_end": 17079
+        },
+        {
+            "name": "createName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 17085,
+            "end_position": 17151,
+            "body_start": 17113,
+            "body_end": 17151
+        },
+        {
+            "name": "createName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                },
+                {
+                    "type": "String",
+                    "name": "prefix"
+                }
+            ],
+            "start_position": 17157,
+            "end_position": 17503,
+            "body_start": 17210,
+            "body_end": 17503
+        },
+        {
+            "name": "createName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "prefix"
+                }
+            ],
+            "start_position": 17509,
+            "end_position": 17692,
+            "body_start": 17550,
+            "body_end": 17692
+        },
+        {
+            "name": "getUserId",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 17698,
+            "end_position": 17848,
+            "body_start": 17740,
+            "body_end": 17848
+        },
+        {
+            "name": "getRandomName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 17854,
+            "end_position": 17924,
+            "body_start": 17884,
+            "body_end": 17924
+        },
+        {
+            "name": "getRandomName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "length"
+                }
+            ],
+            "start_position": 17930,
+            "end_position": 18028,
+            "body_start": 17970,
+            "body_end": 18028
+        },
+        {
+            "name": "getUser",
+            "return_type": "User",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 18034,
+            "end_position": 18265,
+            "body_start": 18081,
+            "body_end": 18265
+        },
+        {
+            "name": "createAccount",
+            "return_type": "Account",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 18271,
+            "end_position": 19081,
+            "body_start": 18323,
+            "body_end": 19081
+        },
+        {
+            "name": "removeAccount",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 19087,
+            "end_position": 19233,
+            "body_start": 19143,
+            "body_end": 19233
+        }
+    ],
+    "code_constructs": [
+        "try_statement",
+        "expression_statement",
+        "enhanced_for_statement",
+        "if_statement",
+        "throw_statement",
+        "break_statement",
+        "return_statement",
+        "for_statement"
+    ],
+    "local_variables": {
+        "platformAccountManager": "AccountManager",
+        "arguments": "Bundle",
+        "colorParameter": "String",
+        "fileDataStorageManager": "FileDataStorageManager",
+        "colorHex": "String",
+        "capability": "OCCapability",
+        "darkModeParameter": "String",
+        "ocCapability": "OCCapability",
+        "client": "NextcloudClient",
+        "tempPath": "File",
+        "file": "File",
+        "writer": "FileWriter",
+        "i": "int",
+        "inputStream": "InputStream",
+        "temp": "Account",
+        "sut": "Activity",
+        "resumedActivities": "Collection<Activity>",
+        "check": "RemoteOperationResult",
+        "ocUpload": "OCUpload",
+        "connectivityServiceMock": "ConnectivityService",
+        "powerManagementServiceMock": "PowerManagementService",
+        "accountManager": "UserAccountManager",
+        "uploadsStorageManager": "UploadsStorageManager",
+        "newUpload": "UploadFileOperation",
+        "result": "RemoteOperationResult",
+        "locale": "Locale",
+        "resources": "Resources",
+        "config": "Configuration",
+        "name": "String",
+        "optionalUser": "Optional<User>",
+        "atPos": "int",
+        "account": "Account"
+    }
+}

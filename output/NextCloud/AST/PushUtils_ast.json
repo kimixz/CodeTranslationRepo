@@ -1,0 +1,94 @@
+{
+    "methods": [
+        {
+            "name": "pushRegistrationToServer",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "String",
+                    "name": "pushToken"
+                }
+            ],
+            "start_position": 669,
+            "end_position": 828,
+            "body_start": 799,
+            "body_end": 828
+        },
+        {
+            "name": "reinitKeys",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                }
+            ],
+            "start_position": 834,
+            "end_position": 1035,
+            "body_start": 905,
+            "body_end": 1035
+        },
+        {
+            "name": "readKeyFromFile",
+            "return_type": "Key",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "readPublicKey"
+                }
+            ],
+            "start_position": 1041,
+            "end_position": 1126,
+            "body_start": 1098,
+            "body_end": 1126
+        },
+        {
+            "name": "verifySignature",
+            "return_type": "SignatureVerification",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "signatureBytes"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "subjectBytes"
+                }
+            ],
+            "start_position": 1132,
+            "end_position": 1362,
+            "body_start": 1334,
+            "body_end": 1362
+        }
+    ],
+    "local_variables": {
+        "context": "Context"
+    },
+    "method_calls": {
+        "MainApp": [
+            "getAppContext"
+        ],
+        "AppPreferencesImpl.fromContext(context)": [
+            "setKeysReInitEnabled"
+        ],
+        "AppPreferencesImpl": [
+            "fromContext"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ]
+}

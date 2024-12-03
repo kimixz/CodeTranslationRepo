@@ -1,0 +1,505 @@
+{
+    "methods": [
+        {
+            "name": "loadUrl",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 1881,
+            "end_position": 1949,
+            "body_start": 1916,
+            "body_end": 1949
+        },
+        {
+            "name": "hideLoading",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1955,
+            "end_position": 2288,
+            "body_start": 1984,
+            "body_end": 2288
+        },
+        {
+            "name": "onUrlLoaded",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "loadedUrl"
+                }
+            ],
+            "start_position": 2294,
+            "end_position": 3486,
+            "body_start": 2336,
+            "body_end": 3486
+        },
+        {
+            "name": "closeView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3492,
+            "end_position": 3573,
+            "body_start": 3516,
+            "body_end": 3573
+        },
+        {
+            "name": "reload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3579,
+            "end_position": 4007,
+            "body_start": 3600,
+            "body_end": 4007
+        },
+        {
+            "name": "bindView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4013,
+            "end_position": 4136,
+            "body_start": 4053,
+            "body_end": 4136
+        },
+        {
+            "name": "postOnCreate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4142,
+            "end_position": 6003,
+            "body_start": 4186,
+            "body_end": 6003
+        },
+        {
+            "name": "onShowFileChooser",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "WebView",
+                    "name": "webView"
+                },
+                {
+                    "type": "ValueCallback<Uri[]>",
+                    "name": "filePathCallback"
+                },
+                {
+                    "type": "FileChooserParams",
+                    "name": "fileChooserParams"
+                }
+            ],
+            "start_position": 4359,
+            "end_position": 5388,
+            "body_start": 4552,
+            "body_end": 5388
+        },
+        {
+            "name": "onActivityResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                },
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 6009,
+            "end_position": 6470,
+            "body_start": 6101,
+            "body_end": 6470
+        },
+        {
+            "name": "handleActivityResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                },
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 6476,
+            "end_position": 6671,
+            "body_start": 6558,
+            "body_end": 6671
+        },
+        {
+            "name": "handleLocalFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "data"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                }
+            ],
+            "start_position": 6677,
+            "end_position": 7410,
+            "body_start": 6737,
+            "body_end": 7410
+        },
+        {
+            "name": "getWebView",
+            "return_type": "WebView",
+            "parameters": [],
+            "start_position": 7416,
+            "end_position": 7486,
+            "body_start": 7447,
+            "body_end": 7486
+        },
+        {
+            "name": "getRootView",
+            "return_type": "View",
+            "parameters": [],
+            "start_position": 7492,
+            "end_position": 7562,
+            "body_start": 7521,
+            "body_end": 7562
+        },
+        {
+            "name": "showToolbarByDefault",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 7568,
+            "end_position": 7638,
+            "body_start": 7609,
+            "body_end": 7638
+        },
+        {
+            "name": "initLoadingScreen",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 7644,
+            "end_position": 7777,
+            "body_start": 7694,
+            "body_end": 7777
+        },
+        {
+            "name": "openShareDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7783,
+            "end_position": 8072,
+            "body_start": 7814,
+            "body_end": 8072
+        },
+        {
+            "name": "setThumbnailView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 8078,
+            "end_position": 10045,
+            "body_start": 8127,
+            "body_end": 10045
+        },
+        {
+            "name": "downloadFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "url"
+                }
+            ],
+            "start_position": 10051,
+            "end_position": 10637,
+            "body_start": 10088,
+            "body_end": 10637
+        },
+        {
+            "name": "setLoadingSnackbar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Snackbar",
+                    "name": "loadingSnackbar"
+                }
+            ],
+            "start_position": 10643,
+            "end_position": 10755,
+            "body_start": 10700,
+            "body_end": 10755
+        },
+        {
+            "name": "close",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10800,
+            "end_position": 10918,
+            "body_start": 10849,
+            "body_end": 10918
+        },
+        {
+            "name": "share",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10928,
+            "end_position": 11019,
+            "body_start": 10977,
+            "body_end": 11019
+        },
+        {
+            "name": "loaded",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11029,
+            "end_position": 11150,
+            "body_start": 11079,
+            "body_end": 11150
+        },
+        {
+            "name": "reload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11160,
+            "end_position": 11262,
+            "body_start": 11210,
+            "body_end": 11262
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "try_statement",
+        "return_statement",
+        "for_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "onUrlLoaded",
+            "getWebView",
+            "getApplicationContext",
+            "findViewById",
+            "closeView",
+            "setLoadingSnackbar",
+            "finish",
+            "getUser",
+            "getFile",
+            "getLayoutInflater",
+            "getBaseContext",
+            "setFile",
+            "getIntent",
+            "initLoadingScreen",
+            "handleActivityResult",
+            "handleLocalFile",
+            "setThumbnailView",
+            "startActivity",
+            "getResources",
+            "getTheme",
+            "getSystemService",
+            "getString",
+            "runOnUiThread",
+            "openShareDialog"
+        ],
+        "binding.thumbnail": [
+            "setVisibility",
+            "setImageDrawable",
+            "setImageBitmap",
+            "setBackgroundColor"
+        ],
+        "binding.filename": [
+            "setVisibility",
+            "setText"
+        ],
+        "binding.progressBar2": [
+            "setVisibility"
+        ],
+        "getWebView()": [
+            "setVisibility",
+            "destroy",
+            "getVisibility",
+            "setWebChromeClient"
+        ],
+        "loadingSnackbar": [
+            "dismiss"
+        ],
+        "url": [
+            "isEmpty"
+        ],
+        "new WebViewUtil(getApplicationContext())": [
+            "setProxyKKPlus"
+        ],
+        "this": [
+            "getWebView"
+        ],
+        "Thread": [
+            "sleep"
+        ],
+        "this.getWebView()": [
+            "loadUrl",
+            "getVisibility"
+        ],
+        "new Handler()": [
+            "postDelayed"
+        ],
+        "DisplayUtils.createSnackbar(findViewById(android.R.id.content),\n                                                                    R.string.timeout_richDocuments, Snackbar.LENGTH_INDEFINITE)": [
+            "setAction"
+        ],
+        "DisplayUtils": [
+            "createSnackbar",
+            "showSnackMessage"
+        ],
+        "viewThemeUtils.material": [
+            "themeSnackbar"
+        ],
+        "snackbar": [
+            "show"
+        ],
+        "Toast.makeText(getApplicationContext(),\n                           R.string.richdocuments_failed_to_load_document, Toast.LENGTH_LONG)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "user": [
+            "isPresent",
+            "get"
+        ],
+        "task": [
+            "execute"
+        ],
+        "RichdocumentsWebviewBinding": [
+            "inflate"
+        ],
+        "super": [
+            "postOnCreate",
+            "onActivityResult"
+        ],
+        "uploadMessage": [
+            "onReceiveValue"
+        ],
+        "fileChooserParams": [
+            "createIntent"
+        ],
+        "intent": [
+            "setType",
+            "addFlags",
+            "putExtra"
+        ],
+        "activity": [
+            "startActivityForResult"
+        ],
+        "Toast.makeText(getBaseContext(), \"Cannot open file chooser\", Toast.LENGTH_LONG)": [
+            "show"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "getFile()": [
+            "getFileName"
+        ],
+        "this.uploadMessage": [
+            "onReceiveValue"
+        ],
+        "data": [
+            "getClipData"
+        ],
+        "WebChromeClient.FileChooserParams": [
+            "parseResult"
+        ],
+        "data.getClipData()": [
+            "getItemCount",
+            "getItemAt"
+        ],
+        "uris": [
+            "add",
+            "toArray"
+        ],
+        "item": [
+            "getUri"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "getUser()": [
+            "orElseThrow"
+        ],
+        "file": [
+            "isFolder",
+            "getFileOverlayIconId",
+            "getRemoteId",
+            "isUpdateThumbnailNeeded",
+            "getMimeType",
+            "getFileName"
+        ],
+        "SyncedFolderProvider": [
+            "isAutoUploadFolder"
+        ],
+        "MimeTypeUtil": [
+            "getFolderIcon",
+            "isImage",
+            "isVideo",
+            "getFileTypeIcon"
+        ],
+        "preferences": [
+            "isDarkModeEnabled"
+        ],
+        "ThumbnailsCacheManager": [
+            "getBitmapFromDiskCache",
+            "addVideoOverlay"
+        ],
+        "\"image/png\"": [
+            "equalsIgnoreCase"
+        ],
+        "getResources()": [
+            "getColor"
+        ],
+        "request": [
+            "allowScanningByMediaScanner",
+            "setNotificationVisibility"
+        ],
+        "downloadmanager": [
+            "enqueue"
+        ],
+        "EditorWebView.this": [
+            "reload"
+        ]
+    },
+    "local_variables": {
+        "snackbar": "Snackbar",
+        "user": "Optional<User>",
+        "file": "OCFile",
+        "task": "TextEditorLoadUrlTask",
+        "intent": "Intent",
+        "uris": "ArrayList<Uri>",
+        "i": "int",
+        "item": "ClipData.Item",
+        "isAutoUploadFolder": "boolean",
+        "overlayIconId": "Integer",
+        "drawable": "LayerDrawable",
+        "thumbnail": "Bitmap",
+        "withOverlay": "Bitmap",
+        "icon": "Drawable",
+        "downloadmanager": "DownloadManager",
+        "request": "DownloadManager.Request"
+    }
+}

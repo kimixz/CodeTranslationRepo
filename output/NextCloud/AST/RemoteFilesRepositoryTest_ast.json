@@ -1,0 +1,61 @@
+{
+    "methods": [
+        {
+            "name": "setUpFilesRepository",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1022,
+            "end_position": 1186,
+            "body_start": 1069,
+            "body_end": 1186
+        },
+        {
+            "name": "readRemoteFileReturnSuccess",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1192,
+            "end_position": 1592,
+            "body_start": 1244,
+            "body_end": 1592
+        },
+        {
+            "name": "readRemoteFileReturnError",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1598,
+            "end_position": 1998,
+            "body_start": 1648,
+            "body_end": 1998
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "MockitoAnnotations": [
+            "initMocks"
+        ],
+        "mFilesRepository": [
+            "readRemoteFile"
+        ],
+        "verify(serviceApi)": [
+            "readRemoteFile"
+        ],
+        "unknown": [
+            "verify",
+            "eq"
+        ],
+        "filesServiceCallbackCaptor": [
+            "capture",
+            "getValue"
+        ],
+        "filesServiceCallbackCaptor.getValue()": [
+            "onLoaded",
+            "onError"
+        ],
+        "verify(mockedReadRemoteFileCallback)": [
+            "onFileLoaded",
+            "onFileLoadError"
+        ]
+    }
+}

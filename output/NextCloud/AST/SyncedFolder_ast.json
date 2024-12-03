@@ -1,0 +1,446 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "this": [
+            "setEnabled"
+        ],
+        "super": [
+            "clone"
+        ],
+        "NameCollisionPolicy": [
+            "deserialize"
+        ],
+        "unknown": [
+            "getType"
+        ],
+        "MimeTypeUtil": [
+            "isImage",
+            "isVideo"
+        ],
+        "filePath": [
+            "contains"
+        ]
+    },
+    "methods": [
+        {
+            "name": "setEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                },
+                {
+                    "type": "long",
+                    "name": "timestampMs"
+                }
+            ],
+            "start_position": 5266,
+            "end_position": 5449,
+            "body_start": 5324,
+            "body_end": 5449
+        },
+        {
+            "name": "clone",
+            "return_type": "Object",
+            "parameters": [],
+            "start_position": 5455,
+            "end_position": 5616,
+            "body_start": 5477,
+            "body_end": 5616
+        },
+        {
+            "name": "getId",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 5622,
+            "end_position": 5673,
+            "body_start": 5642,
+            "body_end": 5673
+        },
+        {
+            "name": "getLocalPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5679,
+            "end_position": 5746,
+            "body_start": 5708,
+            "body_end": 5746
+        },
+        {
+            "name": "getRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5752,
+            "end_position": 5821,
+            "body_start": 5782,
+            "body_end": 5821
+        },
+        {
+            "name": "isWifiOnly",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 5827,
+            "end_position": 5892,
+            "body_start": 5855,
+            "body_end": 5892
+        },
+        {
+            "name": "isChargingOnly",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 5898,
+            "end_position": 5971,
+            "body_start": 5930,
+            "body_end": 5971
+        },
+        {
+            "name": "isExisting",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 5977,
+            "end_position": 6042,
+            "body_start": 6005,
+            "body_end": 6042
+        },
+        {
+            "name": "isSubfolderByDate",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6048,
+            "end_position": 6127,
+            "body_start": 6083,
+            "body_end": 6127
+        },
+        {
+            "name": "getAccount",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 6133,
+            "end_position": 6196,
+            "body_start": 6160,
+            "body_end": 6196
+        },
+        {
+            "name": "getUploadAction",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 6202,
+            "end_position": 6272,
+            "body_start": 6231,
+            "body_end": 6272
+        },
+        {
+            "name": "getNameCollisionPolicyInt",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 6278,
+            "end_position": 6365,
+            "body_start": 6317,
+            "body_end": 6365
+        },
+        {
+            "name": "getNameCollisionPolicy",
+            "return_type": "NameCollisionPolicy",
+            "parameters": [],
+            "start_position": 6371,
+            "end_position": 6499,
+            "body_start": 6423,
+            "body_end": 6499
+        },
+        {
+            "name": "isEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6505,
+            "end_position": 6568,
+            "body_start": 6532,
+            "body_end": 6568
+        },
+        {
+            "name": "getEnabledTimestampMs",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 6574,
+            "end_position": 6657,
+            "body_start": 6610,
+            "body_end": 6657
+        },
+        {
+            "name": "getType",
+            "return_type": "MediaFolderType",
+            "parameters": [],
+            "start_position": 6663,
+            "end_position": 6729,
+            "body_start": 6696,
+            "body_end": 6729
+        },
+        {
+            "name": "isHidden",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6735,
+            "end_position": 6796,
+            "body_start": 6761,
+            "body_end": 6796
+        },
+        {
+            "name": "getSubfolderRule",
+            "return_type": "SubFolderRule",
+            "parameters": [],
+            "start_position": 6802,
+            "end_position": 6872,
+            "body_start": 6842,
+            "body_end": 6872
+        },
+        {
+            "name": "setId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 6878,
+            "end_position": 6934,
+            "body_start": 6905,
+            "body_end": 6934
+        },
+        {
+            "name": "setLocalPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                }
+            ],
+            "start_position": 6940,
+            "end_position": 7026,
+            "body_start": 6983,
+            "body_end": 7026
+        },
+        {
+            "name": "setRemotePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 7032,
+            "end_position": 7122,
+            "body_start": 7077,
+            "body_end": 7122
+        },
+        {
+            "name": "setWifiOnly",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "wifiOnly"
+                }
+            ],
+            "start_position": 7128,
+            "end_position": 7211,
+            "body_start": 7170,
+            "body_end": 7211
+        },
+        {
+            "name": "setChargingOnly",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "chargingOnly"
+                }
+            ],
+            "start_position": 7217,
+            "end_position": 7316,
+            "body_start": 7267,
+            "body_end": 7316
+        },
+        {
+            "name": "setExisting",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "existing"
+                }
+            ],
+            "start_position": 7322,
+            "end_position": 7405,
+            "body_start": 7364,
+            "body_end": 7405
+        },
+        {
+            "name": "setSubfolderByDate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "subfolderByDate"
+                }
+            ],
+            "start_position": 7411,
+            "end_position": 7522,
+            "body_start": 7467,
+            "body_end": 7522
+        },
+        {
+            "name": "setAccount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "account"
+                }
+            ],
+            "start_position": 7528,
+            "end_position": 7606,
+            "body_start": 7567,
+            "body_end": 7606
+        },
+        {
+            "name": "setUploadAction",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "uploadAction"
+                }
+            ],
+            "start_position": 7612,
+            "end_position": 7707,
+            "body_start": 7658,
+            "body_end": 7707
+        },
+        {
+            "name": "setNameCollisionPolicy",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "nameCollisionPolicy"
+                }
+            ],
+            "start_position": 7713,
+            "end_position": 7836,
+            "body_start": 7773,
+            "body_end": 7836
+        },
+        {
+            "name": "setType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MediaFolderType",
+                    "name": "type"
+                }
+            ],
+            "start_position": 7842,
+            "end_position": 7917,
+            "body_start": 7884,
+            "body_end": 7917
+        },
+        {
+            "name": "setHidden",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "hidden"
+                }
+            ],
+            "start_position": 7923,
+            "end_position": 7998,
+            "body_start": 7961,
+            "body_end": 7998
+        },
+        {
+            "name": "setSubFolderRule",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SubFolderRule",
+                    "name": "subFolderRule"
+                }
+            ],
+            "start_position": 8004,
+            "end_position": 8101,
+            "body_start": 8062,
+            "body_end": 8101
+        },
+        {
+            "name": "isExcludeHidden",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8107,
+            "end_position": 8177,
+            "body_start": 8140,
+            "body_end": 8177
+        },
+        {
+            "name": "setExcludeHidden",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "excludeHidden"
+                }
+            ],
+            "start_position": 8183,
+            "end_position": 8286,
+            "body_start": 8235,
+            "body_end": 8286
+        },
+        {
+            "name": "containsTypedFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filePath"
+                }
+            ],
+            "start_position": 8292,
+            "end_position": 8705,
+            "body_start": 8341,
+            "body_end": 8705
+        },
+        {
+            "name": "getLastScanTimestampMs",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 8711,
+            "end_position": 8779,
+            "body_start": 8748,
+            "body_end": 8779
+        },
+        {
+            "name": "setLastScanTimestampMs",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "lastScanTimestampMs"
+                }
+            ],
+            "start_position": 8785,
+            "end_position": 8897,
+            "body_start": 8846,
+            "body_end": 8897
+        }
+    ],
+    "local_variables": {
+        "isCorrectMediaType": "boolean"
+    }
+}

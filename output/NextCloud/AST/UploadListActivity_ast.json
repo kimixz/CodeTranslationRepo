@@ -1,0 +1,421 @@
+{
+    "method_calls": {
+        "UploadListActivity.class": [
+            "getSimpleName"
+        ],
+        "intent": [
+            "setFlags",
+            "getFlags",
+            "putExtra"
+        ],
+        "super": [
+            "onCreate",
+            "onStart",
+            "onResume",
+            "onPause",
+            "onOptionsItemSelected",
+            "onActivityResult",
+            "onRemoteOperationFinish"
+        ],
+        "throttler": [
+            "setIntervalMillis",
+            "run"
+        ],
+        "UploadListLayoutBinding": [
+            "inflate"
+        ],
+        "unknown": [
+            "getLayoutInflater",
+            "setContentView",
+            "setFile",
+            "setupToolbar",
+            "updateActionBarTitleAndHomeButtonByString",
+            "getString",
+            "setupDrawer",
+            "setupContent",
+            "observeWorkerState",
+            "handleUploadWorkerState",
+            "getStorageManager",
+            "getResources",
+            "loadItems",
+            "getMenuInflater",
+            "updateGlobalPauseIcon",
+            "isDrawerOpen",
+            "closeDrawer",
+            "openDrawer",
+            "toggleGlobalPause",
+            "getFileOperationsHelper",
+            "dismissLoadingDialog",
+            "requestCredentialsUpdate"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "WorkerStateLiveData.Companion.instance()": [
+            "observe"
+        ],
+        "WorkerStateLiveData.Companion": [
+            "instance"
+        ],
+        "Log_OC": [
+            "d",
+            "v"
+        ],
+        "uploadListAdapter": [
+            "loadUploadItemsFromDb",
+            "setLayoutManager",
+            "getItemCount",
+            "notifyDataSetChanged"
+        ],
+        "binding.list": [
+            "setEmptyView",
+            "addItemDecoration",
+            "setLayoutManager",
+            "setAdapter"
+        ],
+        "binding.emptyList": [
+            "getRoot"
+        ],
+        "binding.emptyList.getRoot()": [
+            "setVisibility"
+        ],
+        "binding.emptyList.emptyListIcon": [
+            "setImageResource",
+            "getDrawable",
+            "setAlpha",
+            "setVisibility"
+        ],
+        "binding.emptyList.emptyListIcon.getDrawable()": [
+            "mutate"
+        ],
+        "binding.emptyList.emptyListViewHeadline": [
+            "setText"
+        ],
+        "binding.emptyList.emptyListViewText": [
+            "setText",
+            "setVisibility"
+        ],
+        "getResources()": [
+            "getDimensionPixelSize"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeSwipeRefreshLayout"
+        ],
+        "swipeListRefreshLayout": [
+            "setOnRefreshListener",
+            "setVisibility",
+            "setRefreshing"
+        ],
+        "FilesSyncHelper": [
+            "startFilesSyncForAllFolders",
+            "restartUploadsIfNeeded"
+        ],
+        "uploadsStorageManager": [
+            "getFailedUploads"
+        ],
+        "new Thread(() -> {\n                FileUploadHelper.Companion.instance().retryFailedUploads(\n                    uploadsStorageManager,\n                    connectivityService,\n                    accountManager,\n                    powerManagementService);\n                this.runOnUiThread(() -> {\n                    uploadListAdapter.loadUploadItemsFromDb();\n                });\n            })": [
+            "start"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "retryFailedUploads",
+            "cancelAndRestartUploadJob"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "this": [
+            "runOnUiThread"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage"
+        ],
+        "uploadIntentFilter": [
+            "addAction"
+        ],
+        "FileUploadWorker.Companion": [
+            "getUploadsAddedMessage",
+            "getUploadStartMessage",
+            "getUploadFinishMessage"
+        ],
+        "localBroadcastManager": [
+            "registerReceiver",
+            "unregisterReceiver"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "menu": [
+            "getItem"
+        ],
+        "pauseMenuItem": [
+            "getItemId",
+            "setIcon",
+            "setTitle"
+        ],
+        "preferences": [
+            "isGlobalUploadPaused",
+            "setGlobalUploadPaused"
+        ],
+        "accountManager": [
+            "getAllUsers"
+        ],
+        "item": [
+            "getItemId"
+        ],
+        "getFileOperationsHelper()": [
+            "setOpIdWaitingFor"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "result": [
+            "getData",
+            "isSuccess"
+        ]
+    },
+    "methods": [
+        {
+            "name": "createIntent",
+            "return_type": "Intent",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "Integer",
+                    "name": "flag"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 3183,
+            "end_position": 3603,
+            "body_start": 3272,
+            "body_end": 3603
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 3609,
+            "end_position": 4483,
+            "body_start": 3674,
+            "body_end": 4483
+        },
+        {
+            "name": "observeWorkerState",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4489,
+            "end_position": 4791,
+            "body_start": 4523,
+            "body_end": 4791
+        },
+        {
+            "name": "handleUploadWorkerState",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4797,
+            "end_position": 4894,
+            "body_start": 4836,
+            "body_end": 4894
+        },
+        {
+            "name": "setupContent",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4900,
+            "end_position": 6758,
+            "body_start": 4928,
+            "body_end": 6758
+        },
+        {
+            "name": "loadItems",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6764,
+            "end_position": 7044,
+            "body_start": 6789,
+            "body_end": 7044
+        },
+        {
+            "name": "refresh",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7050,
+            "end_position": 8069,
+            "body_start": 7073,
+            "body_end": 8069
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8075,
+            "end_position": 8146,
+            "body_start": 8114,
+            "body_end": 8146
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8152,
+            "end_position": 8839,
+            "body_start": 8192,
+            "body_end": 8839
+        },
+        {
+            "name": "onPause",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8845,
+            "end_position": 9175,
+            "body_start": 8884,
+            "body_end": 9175
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 9181,
+            "end_position": 9429,
+            "body_start": 9241,
+            "body_end": 9429
+        },
+        {
+            "name": "updateGlobalPauseIcon",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "pauseMenuItem"
+                }
+            ],
+            "start_position": 9435,
+            "end_position": 10122,
+            "body_start": 9560,
+            "body_end": 10122
+        },
+        {
+            "name": "toggleGlobalPause",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "pauseMenuItem"
+                }
+            ],
+            "start_position": 10128,
+            "end_position": 10610,
+            "body_start": 10225,
+            "body_end": 10610
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 10616,
+            "end_position": 11107,
+            "body_start": 10682,
+            "body_end": 11107
+        },
+        {
+            "name": "onActivityResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                },
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 11113,
+            "end_position": 11681,
+            "body_start": 11205,
+            "body_end": 11681
+        },
+        {
+            "name": "onRemoteOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 11795,
+            "end_position": 12839,
+            "body_start": 11902,
+            "body_end": 12839
+        },
+        {
+            "name": "onReceive",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 13107,
+            "end_position": 13322,
+            "body_start": 13179,
+            "body_end": 13322
+        }
+    ],
+    "local_variables": {
+        "intent": "Intent",
+        "lm": "GridLayoutManager",
+        "spacing": "int",
+        "uploadIntentFilter": "IntentFilter",
+        "inflater": "MenuInflater",
+        "iconId": "int",
+        "title": "String",
+        "itemId": "int",
+        "account": "Account"
+    },
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement",
+        "enhanced_for_statement"
+    ]
+}

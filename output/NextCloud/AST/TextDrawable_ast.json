@@ -1,0 +1,195 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "for_statement"
+    ],
+    "method_calls": {
+        "background": [
+            "setStyle",
+            "setAntiAlias",
+            "setColor"
+        ],
+        "Color": [
+            "argb"
+        ],
+        "textPaint": [
+            "setColor",
+            "setTextSize",
+            "setAntiAlias",
+            "setTextAlign",
+            "descent",
+            "ascent",
+            "setAlpha",
+            "setColorFilter"
+        ],
+        "unknown": [
+            "setBounds",
+            "createNamedAvatar",
+            "extractCharsFromDisplayName"
+        ],
+        "UserAccountManager": [
+            "getDisplayName"
+        ],
+        "BitmapUtils": [
+            "usernameToColor"
+        ],
+        "displayName": [
+            "trim"
+        ],
+        "trimmed": [
+            "isEmpty",
+            "split"
+        ],
+        "Math": [
+            "min"
+        ],
+        "firstTwoLetters": [
+            "append",
+            "toString"
+        ],
+        "nameParts[i].substring(0, 1)": [
+            "toUpperCase"
+        ],
+        "nameParts[i]": [
+            "substring"
+        ],
+        "Locale": [
+            "getDefault"
+        ],
+        "canvas": [
+            "drawCircle",
+            "drawText"
+        ]
+    },
+    "methods": [
+        {
+            "name": "createAvatar",
+            "return_type": "TextDrawable",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "float",
+                    "name": "radiusInDp"
+                }
+            ],
+            "start_position": 2510,
+            "end_position": 2722,
+            "body_start": 2592,
+            "body_end": 2722
+        },
+        {
+            "name": "createAvatarByUserId",
+            "return_type": "TextDrawable",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "userId"
+                },
+                {
+                    "type": "float",
+                    "name": "radiusInDp"
+                }
+            ],
+            "start_position": 3014,
+            "end_position": 3169,
+            "body_start": 3108,
+            "body_end": 3169
+        },
+        {
+            "name": "createNamedAvatar",
+            "return_type": "TextDrawable",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                },
+                {
+                    "type": "float",
+                    "name": "radiusInDp"
+                }
+            ],
+            "start_position": 3446,
+            "end_position": 3698,
+            "body_start": 3535,
+            "body_end": 3698
+        },
+        {
+            "name": "extractCharsFromDisplayName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "displayName"
+                }
+            ],
+            "start_position": 3704,
+            "end_position": 4268,
+            "body_start": 3811,
+            "body_end": 4268
+        },
+        {
+            "name": "draw",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Canvas",
+                    "name": "canvas"
+                }
+            ],
+            "start_position": 4551,
+            "end_position": 4870,
+            "body_start": 4606,
+            "body_end": 4870
+        },
+        {
+            "name": "setAlpha",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "alpha"
+                }
+            ],
+            "start_position": 4876,
+            "end_position": 4964,
+            "body_start": 4922,
+            "body_end": 4964
+        },
+        {
+            "name": "setColorFilter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ColorFilter",
+                    "name": "cf"
+                }
+            ],
+            "start_position": 4970,
+            "end_position": 5072,
+            "body_start": 5027,
+            "body_end": 5072
+        },
+        {
+            "name": "getOpacity",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 5078,
+            "end_position": 5163,
+            "body_start": 5116,
+            "body_end": 5163
+        }
+    ],
+    "local_variables": {
+        "username": "String",
+        "color": "BitmapUtils.Color",
+        "trimmed": "String",
+        "nameParts": "String[]",
+        "firstTwoLetters": "StringBuilder",
+        "i": "int"
+    }
+}

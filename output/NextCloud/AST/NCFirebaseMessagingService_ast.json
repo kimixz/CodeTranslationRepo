@@ -1,0 +1,110 @@
+{
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2170,
+            "end_position": 2279,
+            "body_start": 2207,
+            "body_end": 2279
+        },
+        {
+            "name": "handleIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 2285,
+            "end_position": 3703,
+            "body_start": 2339,
+            "body_end": 3703
+        },
+        {
+            "name": "onMessageReceived",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteMessage",
+                    "name": "remoteMessage"
+                }
+            ],
+            "start_position": 3709,
+            "end_position": 4217,
+            "body_start": 3791,
+            "body_end": 4217
+        },
+        {
+            "name": "onNewToken",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "newToken"
+                }
+            ],
+            "start_position": 4223,
+            "end_position": 4603,
+            "body_start": 4286,
+            "body_end": 4603
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate",
+            "handleIntent",
+            "onNewToken"
+        ],
+        "AndroidInjection": [
+            "inject"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "intent.getExtras()": [
+            "getString"
+        ],
+        "intent": [
+            "getExtras",
+            "removeExtra",
+            "putExtra"
+        ],
+        "remoteMessage": [
+            "getData"
+        ],
+        "data": [
+            "get"
+        ],
+        "backgroundJobManager": [
+            "startNotificationJob"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "getResources()": [
+            "getString"
+        ],
+        "unknown": [
+            "getResources"
+        ],
+        "preferences": [
+            "setPushToken",
+            "getPushToken"
+        ],
+        "PushUtils": [
+            "pushRegistrationToServer"
+        ]
+    },
+    "local_variables": {
+        "data": "Map<String, String>",
+        "subject": "String",
+        "signature": "String"
+    }
+}

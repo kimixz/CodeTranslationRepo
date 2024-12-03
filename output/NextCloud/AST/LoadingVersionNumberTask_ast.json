@@ -1,0 +1,72 @@
+{
+    "method_calls": {
+        "LoadingVersionNumberTask.class": [
+            "getSimpleName"
+        ],
+        "Charset": [
+            "defaultCharset"
+        ],
+        "url": [
+            "openStream"
+        ],
+        "Integer": [
+            "parseInt"
+        ],
+        "in": [
+            "readLine"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "callback": [
+            "returnVersion"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "try_with_resources_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "Integer",
+            "parameters": [],
+            "start_position": 914,
+            "end_position": 1490,
+            "body_start": 963,
+            "body_end": 1490
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Integer",
+                    "name": "latestVersion"
+                }
+            ],
+            "start_position": 1496,
+            "end_position": 1616,
+            "body_start": 1562,
+            "body_end": 1616
+        },
+        {
+            "name": "returnVersion",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Integer",
+                    "name": "latestVersion"
+                }
+            ],
+            "start_position": 1669,
+            "end_position": 1711
+        }
+    ],
+    "local_variables": {
+        "url": "URL",
+        "charset": "Charset"
+    }
+}

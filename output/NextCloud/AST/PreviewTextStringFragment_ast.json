@@ -1,0 +1,213 @@
+{
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 1472,
+            "end_position": 1936,
+            "body_start": 1534,
+            "body_end": 1936
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 1979,
+            "end_position": 2239,
+            "body_start": 2051,
+            "body_end": 2239
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 2245,
+            "end_position": 2900,
+            "body_start": 2366,
+            "body_end": 2900
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2906,
+            "end_position": 3217,
+            "body_start": 2942,
+            "body_end": 3217
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "MenuInflater",
+                    "name": "inflater"
+                }
+            ],
+            "start_position": 3260,
+            "end_position": 3927,
+            "body_start": 3358,
+            "body_end": 3927
+        },
+        {
+            "name": "loadAndShowTextPreview",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3933,
+            "end_position": 4259,
+            "body_start": 3970,
+            "body_end": 4259
+        },
+        {
+            "name": "edit",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4265,
+            "end_position": 5079,
+            "body_start": 4285,
+            "body_end": 5079
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "throw_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate",
+            "onSaveInstanceState",
+            "onCreateView",
+            "onStart",
+            "onCreateOptionsMenu"
+        ],
+        "unknown": [
+            "setHasOptionsMenu",
+            "getArguments",
+            "getFile",
+            "requireActivity",
+            "edit",
+            "setText",
+            "getContext",
+            "getView"
+        ],
+        "args": [
+            "containsKey",
+            "getString",
+            "getBoolean"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "outState": [
+            "putParcelable"
+        ],
+        "requireActivity()": [
+            "findViewById"
+        ],
+        "fabMain": [
+            "setVisibility",
+            "setEnabled",
+            "setOnClickListener",
+            "setImageResource"
+        ],
+        "viewThemeUtils.material": [
+            "themeFAB"
+        ],
+        "fileDisplayActivity.getSupportFragmentManager()": [
+            "popBackStack"
+        ],
+        "fileDisplayActivity": [
+            "getSupportFragmentManager",
+            "onRefresh"
+        ],
+        "menu": [
+            "findItem"
+        ],
+        "menuItem": [
+            "setVisible"
+        ],
+        "MenuItemCompat": [
+            "getActionView"
+        ],
+        "searchView": [
+            "setOnQueryTextListener",
+            "setMaxWidth",
+            "setIconified",
+            "setQuery",
+            "clearFocus"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeToolbarSearchView"
+        ],
+        "getFile()": [
+            "getRichWorkspace",
+            "getRemotePath"
+        ],
+        "binding.textPreview": [
+            "setVisibility"
+        ],
+        "binding.emptyListProgress": [
+            "setVisibility"
+        ],
+        "new Thread(() -> {\n            RemoteOperationResult result = new RichWorkspaceDirectEditingRemoteOperation(getFile().getRemotePath())\n                .execute(accountManager.getUser(), getContext());\n\n            if (result.isSuccess()) {\n                String url = (String) result.getSingleData();\n                containerActivity.getFileOperationsHelper().openRichWorkspaceWithTextEditor(getFile(),\n                                                                                            url,\n                                                                                            getContext());\n                isEditorWebviewLaunched = true;\n            } else {\n                DisplayUtils.showSnackMessage(getView(), \"Error\");\n            }\n        })": [
+            "start"
+        ],
+        "new RichWorkspaceDirectEditingRemoteOperation(getFile().getRemotePath())": [
+            "execute"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "result": [
+            "isSuccess",
+            "getSingleData"
+        ],
+        "containerActivity.getFileOperationsHelper()": [
+            "openRichWorkspaceWithTextEditor"
+        ],
+        "containerActivity": [
+            "getFileOperationsHelper"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage"
+        ]
+    },
+    "local_variables": {
+        "args": "Bundle",
+        "view": "View",
+        "fabMain": "FloatingActionButton",
+        "menuItem": "MenuItem",
+        "result": "RemoteOperationResult",
+        "url": "String"
+    }
+}

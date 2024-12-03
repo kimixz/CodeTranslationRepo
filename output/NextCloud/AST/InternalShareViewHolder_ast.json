@@ -1,0 +1,63 @@
+{
+    "method_calls": {
+        "binding": [
+            "getRoot"
+        ],
+        "binding.copyInternalLinkIcon\n            .getBackground()": [
+            "setColorFilter"
+        ],
+        "binding.copyInternalLinkIcon": [
+            "getBackground",
+            "getDrawable"
+        ],
+        "ResourcesCompat": [
+            "getColor"
+        ],
+        "context": [
+            "getResources",
+            "getString"
+        ],
+        "binding.copyInternalLinkIcon\n            .getDrawable()\n            .mutate()": [
+            "setColorFilter"
+        ],
+        "binding.copyInternalLinkIcon\n            .getDrawable()": [
+            "mutate"
+        ],
+        "share": [
+            "isFolder"
+        ],
+        "binding.shareInternalLinkText": [
+            "setText"
+        ],
+        "binding.copyInternalContainer": [
+            "setOnClickListener"
+        ],
+        "listener": [
+            "copyInternalLink"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "bind",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "ShareeListAdapterListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 1125,
+            "end_position": 2261,
+            "body_start": 1193,
+            "body_end": 2261
+        }
+    ]
+}

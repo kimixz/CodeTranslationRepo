@@ -1,0 +1,56 @@
+[
+    {
+        "method_name": "inject",
+        "method_code": "void inject(MainApp app);",
+        "prompt": "\n        Please translate the following Java (Android) method titled inject from AppComponent.java into Swift.\n\n        Input:\n\n        Method Name: inject\n\n        Method Code: void inject(MainApp app);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc inject(app: MainApp)\n```"
+    },
+    {
+        "method_name": "inject",
+        "method_code": "void inject(MediaControlView mediaControlView);",
+        "prompt": "\n        Please translate the following Java (Android) method titled inject from AppComponent.java into Swift.\n\n        Input:\n\n        Method Name: inject\n\n        Method Code: void inject(MediaControlView mediaControlView);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc inject(mediaControlView: MediaControlView) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "inject",
+        "method_code": "@OptIn(markerClass = UnstableApi.class)\n    void inject(BackgroundPlayerService backgroundPlayerService);",
+        "prompt": "\n        Please translate the following Java (Android) method titled inject from AppComponent.java into Swift.\n\n        Input:\n\n        Method Name: inject\n\n        Method Code: @OptIn(markerClass = UnstableApi.class)\n    void inject(BackgroundPlayerService backgroundPlayerService);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@available(*, deprecated, message: \"Unstable API\")\nfunc inject(backgroundPlayerService: BackgroundPlayerService)\n```"
+    },
+    {
+        "method_name": "inject",
+        "method_code": "void inject(ThemeableSwitchPreference switchPreference);",
+        "prompt": "\n        Please translate the following Java (Android) method titled inject from AppComponent.java into Swift.\n\n        Input:\n\n        Method Name: inject\n\n        Method Code: void inject(ThemeableSwitchPreference switchPreference);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc inject(switchPreference: ThemeableSwitchPreference) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "inject",
+        "method_code": "void inject(FileUploadHelper fileUploadHelper);",
+        "prompt": "\n        Please translate the following Java (Android) method titled inject from AppComponent.java into Swift.\n\n        Input:\n\n        Method Name: inject\n\n        Method Code: void inject(FileUploadHelper fileUploadHelper);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc inject(fileUploadHelper: FileUploadHelper) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "inject",
+        "method_code": "void inject(FileDownloadHelper fileDownloadHelper);",
+        "prompt": "\n        Please translate the following Java (Android) method titled inject from AppComponent.java into Swift.\n\n        Input:\n\n        Method Name: inject\n\n        Method Code: void inject(FileDownloadHelper fileDownloadHelper);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc inject(fileDownloadHelper: FileDownloadHelper) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "inject",
+        "method_code": "void inject(ProgressIndicator progressIndicator);",
+        "prompt": "\n        Please translate the following Java (Android) method titled inject from AppComponent.java into Swift.\n\n        Input:\n\n        Method Name: inject\n\n        Method Code: void inject(ProgressIndicator progressIndicator);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc inject(progressIndicator: ProgressIndicator) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "application",
+        "method_code": "@BindsInstance\n        Builder application(Application application);",
+        "prompt": "\n        Please translate the following Java (Android) method titled application from AppComponent.java into Swift.\n\n        Input:\n\n        Method Name: application\n\n        Method Code: @BindsInstance\n        Builder application(Application application);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc application(_ application: Application) -> Builder {\n    // Implementation details would go here\n    return self\n}\n```"
+    },
+    {
+        "method_name": "build",
+        "method_code": "AppComponent build();",
+        "prompt": "\n        Please translate the following Java (Android) method titled build from AppComponent.java into Swift.\n\n        Input:\n\n        Method Name: build\n\n        Method Code: AppComponent build();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc build() -> AppComponent {\n    // Implementation goes here\n}\n```"
+    }
+]

@@ -1,0 +1,57 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1048,
+            "end_position": 1503,
+            "body_start": 1109,
+            "body_end": 1503
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 1509,
+            "end_position": 1752,
+            "body_start": 1564,
+            "body_end": 1752
+        }
+    ],
+    "local_variables": {
+        "editorWebView": "EditorWebView",
+        "result": "RemoteOperationResult"
+    },
+    "method_calls": {
+        "editorWebViewWeakReference": [
+            "get"
+        ],
+        "new RichDocumentsUrlOperation(file.getLocalId())": [
+            "execute"
+        ],
+        "file": [
+            "getLocalId"
+        ],
+        "result": [
+            "isSuccess",
+            "getData"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "editorWebView": [
+            "onUrlLoaded"
+        ]
+    }
+}

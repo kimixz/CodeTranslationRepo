@@ -1,0 +1,62 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "writeObject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ObjectOutputStream",
+                    "name": "oos"
+                }
+            ],
+            "start_position": 666,
+            "end_position": 804,
+            "body_start": 734,
+            "body_end": 804
+        },
+        {
+            "name": "readObject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ObjectInputStream",
+                    "name": "in"
+                }
+            ],
+            "start_position": 810,
+            "end_position": 989,
+            "body_start": 899,
+            "body_end": 989
+        },
+        {
+            "name": "getName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 995,
+            "end_position": 1052,
+            "body_start": 1019,
+            "body_end": 1052
+        },
+        {
+            "name": "getValue",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1058,
+            "end_position": 1117,
+            "body_start": 1083,
+            "body_end": 1117
+        }
+    ],
+    "method_calls": {
+        "oos": [
+            "writeObject"
+        ],
+        "in": [
+            "readObject"
+        ]
+    }
+}

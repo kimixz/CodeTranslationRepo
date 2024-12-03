@@ -1,0 +1,91 @@
+{
+    "method_calls": {
+        "DetectAuthenticationMethodOperation.class": [
+            "getSimpleName"
+        ],
+        "client": [
+            "clearCredentials",
+            "setFollowRedirects",
+            "setBaseUri"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "result": [
+            "getRedirectedLocation",
+            "isIdPRedirection",
+            "getHttpCode",
+            "getAuthenticateHeaders",
+            "isSuccess",
+            "getHttpPhrase",
+            "setData"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "header.toLowerCase(Locale.ROOT)": [
+            "contains"
+        ],
+        "header": [
+            "toLowerCase"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "unknown": [
+            "authenticationMethodToString"
+        ],
+        "data": [
+            "add"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "while_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "break_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 2389,
+            "end_position": 4593,
+            "body_start": 2462,
+            "body_end": 4593
+        },
+        {
+            "name": "authenticationMethodToString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "AuthenticationMethod",
+                    "name": "value"
+                }
+            ],
+            "start_position": 4599,
+            "end_position": 5038,
+            "body_start": 4671,
+            "body_end": 5038
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult",
+        "authMethod": "AuthenticationMethod",
+        "operation": "RemoteOperation",
+        "redirectedLocation": "String",
+        "authHeaders": "ArrayList<String>",
+        "data": "ArrayList<Object>"
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 2037,
+            "end_position": 3664,
+            "body_start": 2110,
+            "body_end": 3664
+        },
+        {
+            "name": "setExpirationDateInMillis",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "expirationDateInMillis"
+                }
+            ],
+            "start_position": 3670,
+            "end_position": 3806,
+            "body_start": 3737,
+            "body_end": 3806
+        },
+        {
+            "name": "setNote",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "note"
+                }
+            ],
+            "start_position": 3812,
+            "end_position": 3878,
+            "body_start": 3845,
+            "body_end": 3878
+        },
+        {
+            "name": "setHideFileDownload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "hideFileDownload"
+                }
+            ],
+            "start_position": 3884,
+            "end_position": 3999,
+            "body_start": 3942,
+            "body_end": 3999
+        },
+        {
+            "name": "setPermissions",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "permissions"
+                }
+            ],
+            "start_position": 4005,
+            "end_position": 4096,
+            "body_start": 4049,
+            "body_end": 4096
+        },
+        {
+            "name": "setPassword",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "password"
+                }
+            ],
+            "start_position": 4102,
+            "end_position": 4184,
+            "body_start": 4143,
+            "body_end": 4184
+        },
+        {
+            "name": "setLabel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "label"
+                }
+            ],
+            "start_position": 4190,
+            "end_position": 4260,
+            "body_start": 4225,
+            "body_end": 4260
+        }
+    ],
+    "local_variables": {
+        "share": "OCShare",
+        "updateOp": "UpdateShareRemoteOperation",
+        "result": "RemoteOperationResult",
+        "getShareOp": "RemoteOperation",
+        "ocShare": "OCShare"
+    },
+    "method_calls": {
+        "getStorageManager()": [
+            "getShareById",
+            "saveShare"
+        ],
+        "unknown": [
+            "getStorageManager"
+        ],
+        "share": [
+            "getRemoteId"
+        ],
+        "updateOp": [
+            "setExpirationDate",
+            "setHideFileDownload",
+            "setNote",
+            "setPermissions",
+            "setPassword",
+            "setLabel",
+            "execute"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "result": [
+            "isSuccess",
+            "getData"
+        ],
+        "getShareOp": [
+            "execute"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "ocShare": [
+            "setPasswordProtected"
+        ]
+    }
+}

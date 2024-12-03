@@ -1,0 +1,118 @@
+{
+    "methods": [
+        {
+            "name": "toString",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 509,
+            "end_position": 595,
+            "body_start": 548,
+            "body_end": 595
+        },
+        {
+            "name": "getMetadataKeys",
+            "return_type": "Map<Integer, String>",
+            "parameters": [],
+            "start_position": 601,
+            "end_position": 688,
+            "body_start": 647,
+            "body_end": 688
+        },
+        {
+            "name": "getMetadataKey",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 694,
+            "end_position": 887,
+            "body_start": 725,
+            "body_end": 887
+        },
+        {
+            "name": "getVersion",
+            "return_type": "double",
+            "parameters": [],
+            "start_position": 893,
+            "end_position": 956,
+            "body_start": 920,
+            "body_end": 956
+        },
+        {
+            "name": "setMetadataKeys",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Map<Integer, String>",
+                    "name": "metadataKeys"
+                }
+            ],
+            "start_position": 962,
+            "end_position": 1074,
+            "body_start": 1025,
+            "body_end": 1074
+        },
+        {
+            "name": "setMetadataKey",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "metadataKey"
+                }
+            ],
+            "start_position": 1080,
+            "end_position": 1174,
+            "body_start": 1127,
+            "body_end": 1174
+        },
+        {
+            "name": "setVersion",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "double",
+                    "name": "version"
+                }
+            ],
+            "start_position": 1180,
+            "end_position": 1258,
+            "body_start": 1219,
+            "body_end": 1258
+        },
+        {
+            "name": "getChecksum",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1264,
+            "end_position": 1324,
+            "body_start": 1292,
+            "body_end": 1324
+        },
+        {
+            "name": "setChecksum",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "checksum"
+                }
+            ],
+            "start_position": 1330,
+            "end_position": 1412,
+            "body_start": 1371,
+            "body_end": 1412
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "if_statement",
+        "expression_statement"
+    ],
+    "method_calls": {
+        "String": [
+            "valueOf"
+        ],
+        "metadataKeys": [
+            "get"
+        ]
+    }
+}

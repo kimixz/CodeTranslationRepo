@@ -1,0 +1,757 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "assert_statement",
+        "enhanced_for_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "populateFileExtensionMimeTypeMapping",
+            "populateMimeTypeIconMapping",
+            "populateMainMimeTypeMapping",
+            "getMimeTypeFromPath",
+            "determineIconIdByMimeTypeList",
+            "determineMimeTypesByFilename",
+            "getDefaultFolderIcon",
+            "getMimeTypeFromCandidates",
+            "isImage",
+            "isVideo",
+            "isAudio",
+            "extractMimeType",
+            "isVCard",
+            "isCalendar",
+            "isPDF",
+            "determineMimeTypesByExtension",
+            "getExtension"
+        ],
+        "MimeTypeUtil": [
+            "getFileTypeIconId",
+            "getFolderIcon",
+            "isImage",
+            "isVideo",
+            "getFileTypeIcon",
+            "isAudio",
+            "isText"
+        ],
+        "ContextCompat": [
+            "getDrawable"
+        ],
+        "viewThemeUtils.platform": [
+            "tintDrawable"
+        ],
+        "Collections": [
+            "singletonList"
+        ],
+        "file": [
+            "isFolder",
+            "getFileOverlayIconId",
+            "getRemoteId",
+            "getMimeType",
+            "getFileName",
+            "isUpdateThumbnailNeeded",
+            "getRemotePath"
+        ],
+        "ThumbnailsCacheManager": [
+            "getBitmapFromDiskCache"
+        ],
+        "context": [
+            "getResources"
+        ],
+        "DrawableUtil.INSTANCE": [
+            "addDrawableAsOverlay",
+            "changeColor"
+        ],
+        "candidates": [
+            "size",
+            "get"
+        ],
+        "mimeType.toLowerCase(Locale.ROOT)": [
+            "startsWith",
+            "contains"
+        ],
+        "mimeType": [
+            "toLowerCase"
+        ],
+        "\"text/vcard\"": [
+            "equalsIgnoreCase"
+        ],
+        "\"image/svg+xml\"": [
+            "equalsIgnoreCase"
+        ],
+        "\"text/calendar\"": [
+            "equalsIgnoreCase"
+        ],
+        "MimeType.DIRECTORY": [
+            "equalsIgnoreCase"
+        ],
+        "MimeType.PDF": [
+            "equalsIgnoreCase"
+        ],
+        "Uri": [
+            "fromFile"
+        ],
+        "MimeTypeMap": [
+            "getFileExtensionFromUrl",
+            "getSingleton"
+        ],
+        "selectedUri.toString()": [
+            "toLowerCase"
+        ],
+        "selectedUri": [
+            "toString"
+        ],
+        "MimeTypeMap.getSingleton()": [
+            "getMimeTypeFromExtension"
+        ],
+        "mimetypes": [
+            "size"
+        ],
+        "MIMETYPE_TO_ICON_MAPPING": [
+            "get",
+            "put"
+        ],
+        "mimetype": [
+            "split"
+        ],
+        "MAIN_MIMETYPE_TO_ICON_MAPPING": [
+            "get",
+            "put"
+        ],
+        "FILE_EXTENSION_TO_MIMETYPE_MAPPING": [
+            "get",
+            "put"
+        ],
+        "mimeTypeList": [
+            "size"
+        ],
+        "path": [
+            "lastIndexOf",
+            "substring"
+        ],
+        "path.substring(pos + 1)": [
+            "toLowerCase"
+        ],
+        "filename.substring(filename.lastIndexOf('.') + 1)": [
+            "toLowerCase"
+        ],
+        "filename": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "Arrays": [
+            "asList"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getFileTypeIcon",
+            "return_type": "Drawable",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimetype"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 3413,
+            "end_position": 4155,
+            "body_start": 3663,
+            "body_end": 4155
+        },
+        {
+            "name": "getIcon",
+            "return_type": "Drawable",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 4161,
+            "end_position": 4793,
+            "body_start": 4258,
+            "body_end": 4793
+        },
+        {
+            "name": "getFileTypeIconId",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimetype"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 5124,
+            "end_position": 5507,
+            "body_start": 5194,
+            "body_end": 5507
+        },
+        {
+            "name": "getOCFileIcon",
+            "return_type": "Drawable",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isAutoUpload"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isDarkModeActive"
+                }
+            ],
+            "start_position": 5921,
+            "end_position": 7281,
+            "body_start": 6067,
+            "body_end": 7281
+        },
+        {
+            "name": "getDefaultFolderIcon",
+            "return_type": "Drawable",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 7287,
+            "end_position": 7613,
+            "body_start": 7379,
+            "body_end": 7613
+        },
+        {
+            "name": "getFolderIcon",
+            "return_type": "LayerDrawable",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isDarkModeActive"
+                },
+                {
+                    "type": "Integer",
+                    "name": "overlayIconId"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 7619,
+            "end_position": 8434,
+            "body_start": 7758,
+            "body_end": 8434
+        },
+        {
+            "name": "getBestMimeTypeByFilename",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 8753,
+            "end_position": 8906,
+            "body_start": 8817,
+            "body_end": 8906
+        },
+        {
+            "name": "getMimeTypeFromCandidates",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "List<String>",
+                    "name": "candidates"
+                }
+            ],
+            "start_position": 8912,
+            "end_position": 9142,
+            "body_start": 8985,
+            "body_end": 9142
+        },
+        {
+            "name": "isMedia",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 9148,
+            "end_position": 9278,
+            "body_start": 9195,
+            "body_end": 9278
+        },
+        {
+            "name": "isImageOrVideo",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 9284,
+            "end_position": 9400,
+            "body_start": 9338,
+            "body_end": 9400
+        },
+        {
+            "name": "isImageOrVideo",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 9406,
+            "end_position": 9508,
+            "body_start": 9454,
+            "body_end": 9508
+        },
+        {
+            "name": "isImageOrVideo",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ServerFileInterface",
+                    "name": "file"
+                }
+            ],
+            "start_position": 9514,
+            "end_position": 9631,
+            "body_start": 9577,
+            "body_end": 9631
+        },
+        {
+            "name": "isImage",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 9706,
+            "end_position": 9918,
+            "body_start": 9753,
+            "body_end": 9918
+        },
+        {
+            "name": "isVideo",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 9990,
+            "end_position": 10135,
+            "body_start": 10037,
+            "body_end": 10135
+        },
+        {
+            "name": "isAudio",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 10207,
+            "end_position": 10352,
+            "body_start": 10254,
+            "body_end": 10352
+        },
+        {
+            "name": "isText",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 10422,
+            "end_position": 10566,
+            "body_start": 10469,
+            "body_end": 10566
+        },
+        {
+            "name": "isVCard",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 10637,
+            "end_position": 10747,
+            "body_start": 10684,
+            "body_end": 10747
+        },
+        {
+            "name": "isVideo",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 10909,
+            "end_position": 11004,
+            "body_start": 10950,
+            "body_end": 11004
+        },
+        {
+            "name": "isImage",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 11167,
+            "end_position": 11262,
+            "body_start": 11208,
+            "body_end": 11262
+        },
+        {
+            "name": "isSVG",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 11268,
+            "end_position": 11385,
+            "body_start": 11309,
+            "body_end": 11385
+        },
+        {
+            "name": "isAudio",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 11499,
+            "end_position": 11606,
+            "body_start": 11542,
+            "body_end": 11606
+        },
+        {
+            "name": "isVideo",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ServerFileInterface",
+                    "name": "file"
+                }
+            ],
+            "start_position": 11720,
+            "end_position": 11840,
+            "body_start": 11776,
+            "body_end": 11840
+        },
+        {
+            "name": "isImage",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ServerFileInterface",
+                    "name": "file"
+                }
+            ],
+            "start_position": 11957,
+            "end_position": 12156,
+            "body_start": 12013,
+            "body_end": 12156
+        },
+        {
+            "name": "isText",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 12323,
+            "end_position": 12506,
+            "body_start": 12365,
+            "body_end": 12506
+        },
+        {
+            "name": "isVCard",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 12616,
+            "end_position": 12764,
+            "body_start": 12659,
+            "body_end": 12764
+        },
+        {
+            "name": "isCalendar",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 12770,
+            "end_position": 12927,
+            "body_start": 12816,
+            "body_end": 12927
+        },
+        {
+            "name": "isCalendar",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 12933,
+            "end_position": 13049,
+            "body_start": 12983,
+            "body_end": 13049
+        },
+        {
+            "name": "isFolder",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 13055,
+            "end_position": 13172,
+            "body_start": 13103,
+            "body_end": 13172
+        },
+        {
+            "name": "isPDF",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 13178,
+            "end_position": 13286,
+            "body_start": 13223,
+            "body_end": 13286
+        },
+        {
+            "name": "isPDF",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 13292,
+            "end_position": 13434,
+            "body_start": 13333,
+            "body_end": 13434
+        },
+        {
+            "name": "extractMimeType",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 13592,
+            "end_position": 13894,
+            "body_start": 13641,
+            "body_end": 13894
+        },
+        {
+            "name": "determineIconIdByMimeTypeList",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "List<String>",
+                    "name": "mimetypes"
+                }
+            ],
+            "start_position": 14121,
+            "end_position": 15086,
+            "body_start": 14194,
+            "body_end": 15086
+        },
+        {
+            "name": "determineMimeTypesByFilename",
+            "return_type": "List<String>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 15339,
+            "end_position": 15490,
+            "body_start": 15413,
+            "body_end": 15490
+        },
+        {
+            "name": "determineMimeTypesByExtension",
+            "return_type": "List<String>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "extension"
+                }
+            ],
+            "start_position": 15749,
+            "end_position": 16447,
+            "body_start": 15825,
+            "body_end": 16447
+        },
+        {
+            "name": "getMimeTypeFromPath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 16453,
+            "end_position": 17036,
+            "body_start": 16507,
+            "body_end": 17036
+        },
+        {
+            "name": "getExtension",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 17191,
+            "end_position": 17341,
+            "body_start": 17243,
+            "body_end": 17341
+        },
+        {
+            "name": "populateMimeTypeIconMapping",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 17424,
+            "end_position": 28021,
+            "body_start": 17474,
+            "body_end": 28021
+        },
+        {
+            "name": "populateMainMimeTypeMapping",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28103,
+            "end_position": 28675,
+            "body_start": 28153,
+            "body_end": 28675
+        },
+        {
+            "name": "populateFileExtensionMimeTypeMapping",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28762,
+            "end_position": 50530,
+            "body_start": 28821,
+            "body_end": 50530
+        }
+    ],
+    "local_variables": {
+        "iconId": "Integer",
+        "icon": "Drawable",
+        "mimeType": "String",
+        "possibleMimeTypes": "List<String>",
+        "result": "String",
+        "overlayIconId": "Integer",
+        "thumbnail": "Bitmap",
+        "background": "Drawable",
+        "videoOverlay": "Drawable",
+        "drawable": "Drawable",
+        "folderDrawable": "Drawable",
+        "folderLayerDrawable": "LayerDrawable",
+        "overlayDrawable": "Drawable",
+        "selectedUri": "Uri",
+        "fileExtension": "String",
+        "mainMimetypePart": "String",
+        "mimeTypeList": "List<String>",
+        "extension": "String",
+        "pos": "int"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "methods": [
+        {
+            "name": "canBeAddedToAvailableList",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Iterable<StoragePoint>",
+                    "name": "currentList"
+                },
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 498,
+            "end_position": 919,
+            "body_start": 581,
+            "body_end": 919
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "return_statement",
+        "enhanced_for_statement"
+    ],
+    "method_calls": {
+        "storage.getPath()": [
+            "equals"
+        ],
+        "storage": [
+            "getPath"
+        ],
+        "f": [
+            "exists",
+            "isDirectory",
+            "canRead",
+            "canWrite"
+        ]
+    },
+    "local_variables": {
+        "f": "File"
+    }
+}

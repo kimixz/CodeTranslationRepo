@@ -1,0 +1,1675 @@
+{
+    "method_calls": {
+        "DisplayUtils.class": [
+            "getSimpleName"
+        ],
+        "mimeType2HumanReadable": [
+            "put",
+            "get"
+        ],
+        "MainApp": [
+            "string",
+            "getAppContext"
+        ],
+        "new BigDecimal(String.valueOf(result))": [
+            "setScale"
+        ],
+        "String": [
+            "valueOf",
+            "format"
+        ],
+        "mimetype": [
+            "split"
+        ],
+        "mimetype.split(\"/\")[1]": [
+            "toUpperCase"
+        ],
+        "Locale": [
+            "getDefault"
+        ],
+        "DateFormat": [
+            "getDateTimeInstance"
+        ],
+        "df": [
+            "format",
+            "setTimeZone"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "url": [
+            "length",
+            "substring",
+            "trim",
+            "indexOf",
+            "contains"
+        ],
+        "HTTP_PROTOCOL": [
+            "equalsIgnoreCase",
+            "length"
+        ],
+        "url.substring(HTTP_PROTOCOL.length())": [
+            "trim"
+        ],
+        "HTTPS_PROTOCOL": [
+            "equalsIgnoreCase",
+            "length"
+        ],
+        "url.substring(HTTPS_PROTOCOL.length())": [
+            "trim"
+        ],
+        "handle": [
+            "trim"
+        ],
+        "trimmedHandle": [
+            "startsWith"
+        ],
+        "urlNoDots": [
+            "length",
+            "charAt",
+            "contains",
+            "substring"
+        ],
+        "\"//\"": [
+            "length"
+        ],
+        "\"@\"": [
+            "length"
+        ],
+        "url.substring(hostStart)": [
+            "indexOf"
+        ],
+        "IDN": [
+            "toASCII",
+            "toUnicode"
+        ],
+        "user": [
+            "toOwnCloudAccount",
+            "getAccountName",
+            "toPlatformAccount"
+        ],
+        "ocs": [
+            "getDisplayName"
+        ],
+        "unknown": [
+            "convertIdn",
+            "getRelativeDateTimeString",
+            "setAvatar",
+            "downloadSVGIcon",
+            "downloadPNGIcon",
+            "showSnackMessage",
+            "findFABView",
+            "startLinkIntent",
+            "getDateByPattern",
+            "stopShimmer",
+            "generateNewThumbnail",
+            "configShimmerGridImageSize",
+            "startShimmer",
+            "getScreenSize"
+        ],
+        "accountName": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "DisplayUtils": [
+            "unixTimeToHumanReadable",
+            "startIntentIfAppAvailable",
+            "showSnackMessage"
+        ],
+        "c": [
+            "getString"
+        ],
+        "DateUtils": [
+            "getRelativeDateTimeString"
+        ],
+        "dateString.toString()": [
+            "split"
+        ],
+        "dateString": [
+            "toString"
+        ],
+        "parts[1]": [
+            "contains"
+        ],
+        "parts[0]": [
+            "contains"
+        ],
+        "path": [
+            "length",
+            "charAt",
+            "substring"
+        ],
+        "OCFile.PATH_SEPARATOR": [
+            "charAt"
+        ],
+        "caller.getWindowManager().getDefaultDisplay()": [
+            "getSize"
+        ],
+        "caller.getWindowManager()": [
+            "getDefaultDisplay"
+        ],
+        "caller": [
+            "getWindowManager"
+        ],
+        "text": [
+            "lastIndexOf",
+            "append",
+            "toString"
+        ],
+        "spanText": [
+            "length"
+        ],
+        "sb": [
+            "setSpan"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "accountManager": [
+            "getUserData"
+        ],
+        "((View) callContext)": [
+            "setContentDescription"
+        ],
+        "user.toPlatformAccount()": [
+            "hashCode"
+        ],
+        "arbitraryDataProvider": [
+            "getValue"
+        ],
+        "BitmapUtils": [
+            "bitmapToCircularBitmapDrawable",
+            "setRoundedBitmapForGridMode",
+            "setRoundedBitmap",
+            "drawableToBitmap"
+        ],
+        "ThumbnailsCacheManager": [
+            "getBitmapFromDiskCache",
+            "addVideoOverlay",
+            "cancelPotentialThumbnailWork",
+            "getThumbnailDimension"
+        ],
+        "TextDrawable": [
+            "createAvatarByUserId"
+        ],
+        "Log_OC": [
+            "e",
+            "d"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "listener": [
+            "avatarGenerated"
+        ],
+        "task": [
+            "execute",
+            "getImageKey",
+            "setListener",
+            "executeOnExecutor"
+        ],
+        "Uri.parse(iconUrl).getEncodedPath()": [
+            "endsWith"
+        ],
+        "Uri.parse(iconUrl)": [
+            "getEncodedPath"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "Glide\n            .with(context)\n            .load(iconUrl)\n            .centerCrop()\n            .placeholder(placeholder)\n            .error(placeholder)\n            .crossFade()": [
+            "into"
+        ],
+        "Glide\n            .with(context)\n            .load(iconUrl)\n            .centerCrop()\n            .placeholder(placeholder)\n            .error(placeholder)": [
+            "crossFade"
+        ],
+        "Glide\n            .with(context)\n            .load(iconUrl)\n            .centerCrop()\n            .placeholder(placeholder)": [
+            "error"
+        ],
+        "Glide\n            .with(context)\n            .load(iconUrl)\n            .centerCrop()": [
+            "placeholder"
+        ],
+        "Glide\n            .with(context)\n            .load(iconUrl)": [
+            "centerCrop"
+        ],
+        "Glide\n            .with(context)": [
+            "load"
+        ],
+        "Glide": [
+            "with"
+        ],
+        "Glide.with(context)\n            .using(new CustomGlideUriLoader(currentAccountProvider.getUser(), clientFactory), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())\n            .placeholder(placeholder)\n            .error(placeholder)": [
+            "animate"
+        ],
+        "Glide.with(context)\n            .using(new CustomGlideUriLoader(currentAccountProvider.getUser(), clientFactory), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())\n            .placeholder(placeholder)": [
+            "error"
+        ],
+        "Glide.with(context)\n            .using(new CustomGlideUriLoader(currentAccountProvider.getUser(), clientFactory), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())": [
+            "placeholder"
+        ],
+        "Glide.with(context)\n            .using(new CustomGlideUriLoader(currentAccountProvider.getUser(), clientFactory), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))": [
+            "decoder"
+        ],
+        "Glide.with(context)\n            .using(new CustomGlideUriLoader(currentAccountProvider.getUser(), clientFactory), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)\n            .sourceEncoder(new StreamEncoder())": [
+            "cacheDecoder"
+        ],
+        "Glide.with(context)\n            .using(new CustomGlideUriLoader(currentAccountProvider.getUser(), clientFactory), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgDrawableTranscoder(context), Drawable.class)": [
+            "sourceEncoder"
+        ],
+        "Glide.with(context)\n            .using(new CustomGlideUriLoader(currentAccountProvider.getUser(), clientFactory), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)": [
+            "transcode"
+        ],
+        "Glide.with(context)\n            .using(new CustomGlideUriLoader(currentAccountProvider.getUser(), clientFactory), InputStream.class)\n            .from(Uri.class)": [
+            "as"
+        ],
+        "Glide.with(context)\n            .using(new CustomGlideUriLoader(currentAccountProvider.getUser(), clientFactory), InputStream.class)": [
+            "from"
+        ],
+        "Glide.with(context)": [
+            "using",
+            "load"
+        ],
+        "currentAccountProvider": [
+            "getUser"
+        ],
+        "requestBuilder\n            .diskCacheStrategy(DiskCacheStrategy.SOURCE)\n            .load(uri)": [
+            "into"
+        ],
+        "requestBuilder\n            .diskCacheStrategy(DiskCacheStrategy.SOURCE)": [
+            "load"
+        ],
+        "requestBuilder": [
+            "diskCacheStrategy"
+        ],
+        "Glide.with(context)\n                .load(imageUrl)\n                .asBitmap()\n                .diskCacheStrategy(DiskCacheStrategy.NONE)\n                .skipMemoryCache(true)\n                .into(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)": [
+            "get"
+        ],
+        "Glide.with(context)\n                .load(imageUrl)\n                .asBitmap()\n                .diskCacheStrategy(DiskCacheStrategy.NONE)\n                .skipMemoryCache(true)": [
+            "into"
+        ],
+        "Glide.with(context)\n                .load(imageUrl)\n                .asBitmap()\n                .diskCacheStrategy(DiskCacheStrategy.NONE)": [
+            "skipMemoryCache"
+        ],
+        "Glide.with(context)\n                .load(imageUrl)\n                .asBitmap()": [
+            "diskCacheStrategy"
+        ],
+        "Glide.with(context)\n                .load(imageUrl)": [
+            "asBitmap"
+        ],
+        "EventBus.getDefault()": [
+            "post"
+        ],
+        "EventBus": [
+            "getDefault"
+        ],
+        "activity": [
+            "getBaseContext",
+            "startActivity",
+            "findViewById",
+            "getString",
+            "getPackageManager",
+            "finish"
+        ],
+        "recentlyAddedIntent": [
+            "putExtra",
+            "addFlags"
+        ],
+        "Charset": [
+            "defaultCharset"
+        ],
+        "buffreader": [
+            "readLine"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "Snackbar": [
+            "make"
+        ],
+        "fab": [
+            "getVisibility"
+        ],
+        "snackbar": [
+            "setAnchorView",
+            "show"
+        ],
+        "view": [
+            "findViewById",
+            "getRootView"
+        ],
+        "context": [
+            "getString",
+            "getResources",
+            "getSystemService"
+        ],
+        "AppCompatDrawableManager": [
+            "get"
+        ],
+        "Class": [
+            "forName"
+        ],
+        "vdcInflateDelegateClass": [
+            "getDeclaredConstructor"
+        ],
+        "constructor": [
+            "setAccessible",
+            "newInstance"
+        ],
+        "AppCompatDrawableManager.class": [
+            "getDeclaredMethod"
+        ],
+        "addDelegate": [
+            "setAccessible",
+            "invoke"
+        ],
+        "resources": [
+            "getDisplayMetrics"
+        ],
+        "Snackbar.make(activity.findViewById(android.R.id.content),\n                      R.string.outdated_server, length)\n            .setAction(R.string.dismiss, v -> {\n            })": [
+            "show"
+        ],
+        "Snackbar.make(activity.findViewById(android.R.id.content),\n                      R.string.outdated_server, length)": [
+            "setAction"
+        ],
+        "intent": [
+            "resolveActivity"
+        ],
+        "Toast.makeText(activity, errorMessage, Toast.LENGTH_LONG)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "supportFragmentManager": [
+            "beginTransaction"
+        ],
+        "fragmentTransaction": [
+            "addToBackStack"
+        ],
+        "SortingOrderDialogFragment.newInstance(sortOrder)": [
+            "show"
+        ],
+        "SortingOrderDialogFragment": [
+            "newInstance"
+        ],
+        "context.getResources()": [
+            "getConfiguration",
+            "getColor"
+        ],
+        "TimeZone": [
+            "getTimeZone",
+            "getDefault"
+        ],
+        "TimeZone.getDefault()": [
+            "getID"
+        ],
+        "file": [
+            "isFolder",
+            "getFileOverlayIconId",
+            "getRemoteId",
+            "isPreviewAvailable",
+            "isUpdateThumbnailNeeded",
+            "getMimeType",
+            "getFileName"
+        ],
+        "SyncedFolderProvider": [
+            "isAutoUploadFolder"
+        ],
+        "preferences": [
+            "isDarkModeEnabled",
+            "getGridColumns"
+        ],
+        "MimeTypeUtil": [
+            "getFolderIcon",
+            "isVideo",
+            "getFileTypeIcon"
+        ],
+        "thumbnailView": [
+            "setImageDrawable",
+            "setImageBitmap",
+            "setBackgroundColor",
+            "getDrawable",
+            "setVisibility"
+        ],
+        "\"image/png\"": [
+            "equalsIgnoreCase"
+        ],
+        "file.getRemoteId()": [
+            "equals"
+        ],
+        "shimmerThumbnail": [
+            "postDelayed"
+        ],
+        "asyncTasks": [
+            "add"
+        ],
+        "thumbnailShimmer": [
+            "setImageResource",
+            "resetLoader",
+            "setVisibility",
+            "getLayoutParams",
+            "getContext",
+            "setLayoutParams"
+        ],
+        "Math": [
+            "round"
+        ],
+        "params": [
+            "setMargins"
+        ],
+        "exception": [
+            "getMessage"
+        ],
+        "windowManager.getDefaultDisplay()": [
+            "getSize"
+        ],
+        "windowManager": [
+            "getDefaultDisplay"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "while_statement",
+        "try_statement",
+        "enhanced_for_statement",
+        "throw_statement"
+    ],
+    "methods": [
+        {
+            "name": "bytesToHumanReadable",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "bytes"
+                }
+            ],
+            "start_position": 7558,
+            "end_position": 8153,
+            "body_start": 7612,
+            "body_end": 8153
+        },
+        {
+            "name": "convertMIMEtoPrettyPrint",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimetype"
+                }
+            ],
+            "start_position": 8438,
+            "end_position": 8872,
+            "body_start": 8501,
+            "body_end": 8872
+        },
+        {
+            "name": "unixTimeToHumanReadable",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "milliseconds"
+                }
+            ],
+            "start_position": 9073,
+            "end_position": 9278,
+            "body_start": 9137,
+            "body_end": 9278
+        },
+        {
+            "name": "beautifyURL",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 9450,
+            "end_position": 9941,
+            "body_start": 9505,
+            "body_end": 9941
+        },
+        {
+            "name": "beautifyTwitterHandle",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "handle"
+                }
+            ],
+            "start_position": 10154,
+            "end_position": 10656,
+            "body_start": 10222,
+            "body_end": 10656
+        },
+        {
+            "name": "convertIdn",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                },
+                {
+                    "type": "boolean",
+                    "name": "toASCII"
+                }
+            ],
+            "start_position": 11007,
+            "end_position": 12003,
+            "body_start": 11068,
+            "body_end": 12003
+        },
+        {
+            "name": "getAccountNameDisplayText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 12139,
+            "end_position": 12476,
+            "body_start": 12197,
+            "body_end": 12476
+        },
+        {
+            "name": "getRelativeTimestamp",
+            "return_type": "CharSequence",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "long",
+                    "name": "modificationTimestamp"
+                }
+            ],
+            "start_position": 12772,
+            "end_position": 13044,
+            "body_start": 12865,
+            "body_end": 13044
+        },
+        {
+            "name": "getRelativeTimestamp",
+            "return_type": "CharSequence",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "long",
+                    "name": "modificationTimestamp"
+                },
+                {
+                    "type": "boolean",
+                    "name": "showFuture"
+                }
+            ],
+            "start_position": 13050,
+            "end_position": 13518,
+            "body_start": 13163,
+            "body_end": 13518
+        },
+        {
+            "name": "getRelativeDateTimeString",
+            "return_type": "CharSequence",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "c"
+                },
+                {
+                    "type": "long",
+                    "name": "time"
+                },
+                {
+                    "type": "long",
+                    "name": "minResolution"
+                },
+                {
+                    "type": "long",
+                    "name": "transitionResolution"
+                },
+                {
+                    "type": "int",
+                    "name": "flags"
+                }
+            ],
+            "start_position": 13524,
+            "end_position": 13823,
+            "body_start": 13714,
+            "body_end": 13823
+        },
+        {
+            "name": "getRelativeDateTimeString",
+            "return_type": "CharSequence",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "c"
+                },
+                {
+                    "type": "long",
+                    "name": "time"
+                },
+                {
+                    "type": "long",
+                    "name": "minResolution"
+                },
+                {
+                    "type": "long",
+                    "name": "transitionResolution"
+                },
+                {
+                    "type": "int",
+                    "name": "flags"
+                },
+                {
+                    "type": "boolean",
+                    "name": "showFuture"
+                }
+            ],
+            "start_position": 13829,
+            "end_position": 15362,
+            "body_start": 14267,
+            "body_end": 15362
+        },
+        {
+            "name": "getPathWithoutLastSlash",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 15515,
+            "end_position": 15811,
+            "body_start": 15573,
+            "body_end": 15811
+        },
+        {
+            "name": "getScreenSize",
+            "return_type": "Point",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "caller"
+                }
+            ],
+            "start_position": 16069,
+            "end_position": 16295,
+            "body_start": 16120,
+            "body_end": 16295
+        },
+        {
+            "name": "createTextWithSpan",
+            "return_type": "SpannableStringBuilder",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "text"
+                },
+                {
+                    "type": "String",
+                    "name": "spanText"
+                },
+                {
+                    "type": "StyleSpan",
+                    "name": "style"
+                }
+            ],
+            "start_position": 16522,
+            "end_position": 17079,
+            "body_start": 16625,
+            "body_end": 17079
+        },
+        {
+            "name": "avatarGenerated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "avatarDrawable"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 17137,
+            "end_position": 17203
+        },
+        {
+            "name": "shouldCallGeneratedCallback",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tag"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 17213,
+            "end_position": 17281
+        },
+        {
+            "name": "setAvatar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "AvatarGenerationListener",
+                    "name": "listener"
+                },
+                {
+                    "type": "float",
+                    "name": "avatarRadius"
+                },
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 17659,
+            "end_position": 18193,
+            "body_start": 17854,
+            "body_end": 18193
+        },
+        {
+            "name": "setAvatar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "userId"
+                },
+                {
+                    "type": "AvatarGenerationListener",
+                    "name": "listener"
+                },
+                {
+                    "type": "float",
+                    "name": "avatarRadius"
+                },
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 18632,
+            "end_position": 18956,
+            "body_start": 18851,
+            "body_end": 18956
+        },
+        {
+            "name": "setAvatar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "userId"
+                },
+                {
+                    "type": "String",
+                    "name": "displayName"
+                },
+                {
+                    "type": "AvatarGenerationListener",
+                    "name": "listener"
+                },
+                {
+                    "type": "float",
+                    "name": "avatarRadius"
+                },
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 19490,
+            "end_position": 22192,
+            "body_start": 19927,
+            "body_end": 22192
+        },
+        {
+            "name": "downloadIcon",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "CurrentAccountProvider",
+                    "name": "currentAccountProvider"
+                },
+                {
+                    "type": "ClientFactory",
+                    "name": "clientFactory"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "String",
+                    "name": "iconUrl"
+                },
+                {
+                    "type": "SimpleTarget",
+                    "name": "imageView"
+                },
+                {
+                    "type": "int",
+                    "name": "placeholder"
+                }
+            ],
+            "start_position": 22198,
+            "end_position": 22992,
+            "body_start": 22560,
+            "body_end": 22992
+        },
+        {
+            "name": "downloadPNGIcon",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "String",
+                    "name": "iconUrl"
+                },
+                {
+                    "type": "SimpleTarget",
+                    "name": "imageView"
+                },
+                {
+                    "type": "int",
+                    "name": "placeholder"
+                }
+            ],
+            "start_position": 22998,
+            "end_position": 23334,
+            "body_start": 23108,
+            "body_end": 23334
+        },
+        {
+            "name": "downloadSVGIcon",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "CurrentAccountProvider",
+                    "name": "currentAccountProvider"
+                },
+                {
+                    "type": "ClientFactory",
+                    "name": "clientFactory"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "String",
+                    "name": "iconUrl"
+                },
+                {
+                    "type": "SimpleTarget",
+                    "name": "imageView"
+                },
+                {
+                    "type": "int",
+                    "name": "placeholder"
+                }
+            ],
+            "start_position": 23340,
+            "end_position": 24524,
+            "body_start": 23726,
+            "body_end": 24524
+        },
+        {
+            "name": "downloadImageSynchronous",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "String",
+                    "name": "imageUrl"
+                }
+            ],
+            "start_position": 24530,
+            "end_position": 25052,
+            "body_start": 24610,
+            "body_end": 25052
+        },
+        {
+            "name": "switchToSearchFragment",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "SearchEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 25058,
+            "end_position": 25595,
+            "body_start": 25139,
+            "body_end": 25595
+        },
+        {
+            "name": "getData",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "InputStream",
+                    "name": "inputStream"
+                }
+            ],
+            "start_position": 25721,
+            "end_position": 26250,
+            "body_start": 25775,
+            "body_end": 26250
+        },
+        {
+            "name": "showSnackMessage",
+            "return_type": "Snackbar",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "int",
+                    "name": "messageResource"
+                }
+            ],
+            "start_position": 26610,
+            "end_position": 26803,
+            "body_start": 26701,
+            "body_end": 26803
+        },
+        {
+            "name": "showSnackMessage",
+            "return_type": "Snackbar",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 27096,
+            "end_position": 27511,
+            "body_start": 27171,
+            "body_end": 27511
+        },
+        {
+            "name": "findFABView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 27517,
+            "end_position": 27628,
+            "body_start": 27568,
+            "body_end": 27628
+        },
+        {
+            "name": "findFABView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 27634,
+            "end_position": 27733,
+            "body_start": 27677,
+            "body_end": 27733
+        },
+        {
+            "name": "showSnackMessage",
+            "return_type": "Snackbar",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "messageResource"
+                }
+            ],
+            "start_position": 28058,
+            "end_position": 28460,
+            "body_start": 28141,
+            "body_end": 28460
+        },
+        {
+            "name": "showSnackMessage",
+            "return_type": "Snackbar",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 28712,
+            "end_position": 28922,
+            "body_start": 28779,
+            "body_end": 28922
+        },
+        {
+            "name": "createSnackbar",
+            "return_type": "Snackbar",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "messageResource"
+                },
+                {
+                    "type": "int",
+                    "name": "length"
+                }
+            ],
+            "start_position": 29249,
+            "end_position": 29410,
+            "body_start": 29342,
+            "body_end": 29410
+        },
+        {
+            "name": "showSnackMessage",
+            "return_type": "Snackbar",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "int",
+                    "name": "messageResource"
+                }
+            ],
+            "start_position": 29857,
+            "end_position": 30094,
+            "body_start": 29970,
+            "body_end": 30094
+        },
+        {
+            "name": "showSnackMessage",
+            "return_type": "Snackbar",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "messageResource"
+                }
+            ],
+            "start_position": 30565,
+            "end_position": 30934,
+            "body_start": 30687,
+            "body_end": 30934
+        },
+        {
+            "name": "useCompatVectorIfNeeded",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 31257,
+            "end_position": 32335,
+            "body_start": 31302,
+            "body_end": 32335
+        },
+        {
+            "name": "convertDpToPixel",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "float",
+                    "name": "dp"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 32341,
+            "end_position": 32620,
+            "body_start": 32403,
+            "body_end": 32620
+        },
+        {
+            "name": "convertPixelToDp",
+            "return_type": "float",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "px"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 32626,
+            "end_position": 32897,
+            "body_start": 32688,
+            "body_end": 32897
+        },
+        {
+            "name": "showServerOutdatedSnackbar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "int",
+                    "name": "length"
+                }
+            ],
+            "start_position": 32903,
+            "end_position": 33194,
+            "body_start": 32980,
+            "body_end": 33194
+        },
+        {
+            "name": "startLinkIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "int",
+                    "name": "link"
+                }
+            ],
+            "start_position": 33200,
+            "end_position": 33343,
+            "body_start": 33275,
+            "body_end": 33343
+        },
+        {
+            "name": "startLinkIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 33349,
+            "end_position": 33526,
+            "body_start": 33415,
+            "body_end": 33526
+        },
+        {
+            "name": "startLinkIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                }
+            ],
+            "start_position": 33532,
+            "end_position": 33760,
+            "body_start": 33595,
+            "body_end": 33760
+        },
+        {
+            "name": "startIntentIfAppAvailable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                },
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "int",
+                    "name": "error"
+                }
+            ],
+            "start_position": 33766,
+            "end_position": 34081,
+            "body_start": 33867,
+            "body_end": 34081
+        },
+        {
+            "name": "showErrorAndFinishActivity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "String",
+                    "name": "errorMessage"
+                }
+            ],
+            "start_position": 34087,
+            "end_position": 34281,
+            "body_start": 34173,
+            "body_end": 34281
+        },
+        {
+            "name": "openSortingOrderDialogFragment",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FragmentManager",
+                    "name": "supportFragmentManager"
+                },
+                {
+                    "type": "FileSortOrder",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 34287,
+            "end_position": 34662,
+            "body_start": 34402,
+            "body_end": 34662
+        },
+        {
+            "name": "getSortOrderStringId",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "FileSortOrder",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 34668,
+            "end_position": 35432,
+            "body_start": 34743,
+            "body_end": 35432
+        },
+        {
+            "name": "getDateByPattern",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "timestamp"
+                },
+                {
+                    "type": "String",
+                    "name": "pattern"
+                }
+            ],
+            "start_position": 35438,
+            "end_position": 35574,
+            "body_start": 35508,
+            "body_end": 35574
+        },
+        {
+            "name": "getDateByPattern",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "timestamp"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "String",
+                    "name": "pattern"
+                }
+            ],
+            "start_position": 35580,
+            "end_position": 36004,
+            "body_start": 35677,
+            "body_end": 36004
+        },
+        {
+            "name": "setThumbnail",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "thumbnailView"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                },
+                {
+                    "type": "List<ThumbnailsCacheManager.ThumbnailGenerationTask>",
+                    "name": "asyncTasks"
+                },
+                {
+                    "type": "boolean",
+                    "name": "gridView"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "LoaderImageView",
+                    "name": "shimmerThumbnail"
+                },
+                {
+                    "type": "AppPreferences",
+                    "name": "preferences"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                },
+                {
+                    "type": "SyncedFolderProvider",
+                    "name": "syncedFolderProvider"
+                }
+            ],
+            "start_position": 36010,
+            "end_position": 39425,
+            "body_start": 36726,
+            "body_end": 39425
+        },
+        {
+            "name": "generateNewThumbnail",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "thumbnailView"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                },
+                {
+                    "type": "List<ThumbnailsCacheManager.ThumbnailGenerationTask>",
+                    "name": "asyncTasks"
+                },
+                {
+                    "type": "boolean",
+                    "name": "gridView"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "LoaderImageView",
+                    "name": "shimmerThumbnail"
+                },
+                {
+                    "type": "AppPreferences",
+                    "name": "preferences"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 39431,
+            "end_position": 43984,
+            "body_start": 40158,
+            "body_end": 43984
+        },
+        {
+            "name": "onSuccess",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 43172,
+            "end_position": 43307,
+            "body_start": 43222,
+            "body_end": 43307
+        },
+        {
+            "name": "onError",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 43325,
+            "end_position": 43458,
+            "body_start": 43373,
+            "body_end": 43458
+        },
+        {
+            "name": "startShimmer",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "LoaderImageView",
+                    "name": "thumbnailShimmer"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "thumbnailView"
+                }
+            ],
+            "start_position": 43990,
+            "end_position": 44296,
+            "body_start": 44081,
+            "body_end": 44296
+        },
+        {
+            "name": "stopShimmer",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "LoaderImageView",
+                    "name": "thumbnailShimmer"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "thumbnailView"
+                }
+            ],
+            "start_position": 44302,
+            "end_position": 44566,
+            "body_start": 44402,
+            "body_end": 44566
+        },
+        {
+            "name": "configShimmerGridImageSize",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "LoaderImageView",
+                    "name": "thumbnailShimmer"
+                },
+                {
+                    "type": "float",
+                    "name": "gridColumns"
+                }
+            ],
+            "start_position": 44572,
+            "end_position": 45598,
+            "body_start": 44672,
+            "body_end": 45598
+        },
+        {
+            "name": "getScreenSize",
+            "return_type": "Point",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 45604,
+            "end_position": 46065,
+            "body_start": 45673,
+            "body_end": 46065
+        }
+    ],
+    "local_variables": {
+        "result": "double",
+        "suffixIndex": "int",
+        "humanReadableMime": "String",
+        "date": "Date",
+        "df": "DateFormat",
+        "trimmedHandle": "String",
+        "urlNoDots": "String",
+        "dots": "String",
+        "hostStart": "int",
+        "hostEnd": "int",
+        "host": "String",
+        "ocs": "OwnCloudAccount",
+        "accountName": "String",
+        "dateString": "CharSequence",
+        "diff": "long",
+        "parts": "String[]",
+        "size": "int",
+        "sb": "SpannableStringBuilder",
+        "start": "int",
+        "end": "int",
+        "accountManager": "AccountManager",
+        "userId": "String",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "serverName": "String",
+        "eTag": "String",
+        "avatarKey": "String",
+        "avatar": "Drawable",
+        "task": "ThumbnailsCacheManager.ThumbnailGenerationTask",
+        "requestBuilder": "GenericRequestBuilder<Uri, InputStream, SVG, Drawable>",
+        "uri": "Uri",
+        "recentlyAddedIntent": "Intent",
+        "buffreader": "BufferedReader",
+        "line": "String",
+        "text": "StringBuilder",
+        "snackbar": "Snackbar",
+        "fab": "var",
+        "drawableManager": "AppCompatDrawableManager",
+        "inflateDelegateClass": "Class<?>",
+        "vdcInflateDelegateClass": "Class<?>",
+        "constructor": "Constructor<?>",
+        "vdcInflateDelegate": "Object",
+        "args": "Class<?>",
+        "addDelegate": "Method",
+        "resources": "Resources",
+        "metrics": "DisplayMetrics",
+        "intent": "Intent",
+        "fragmentTransaction": "FragmentTransaction",
+        "isAutoUploadFolder": "boolean",
+        "isDarkModeActive": "boolean",
+        "overlayIconId": "Integer",
+        "fileIcon": "LayerDrawable",
+        "thumbnail": "Bitmap",
+        "withOverlay": "Bitmap",
+        "drawable": "Drawable",
+        "px": "int",
+        "asyncDrawable": "ThumbnailsCacheManager.AsyncThumbnailDrawable",
+        "targetLayoutParams": "FrameLayout.LayoutParams",
+        "screenSize": "Point",
+        "marginLeftAndRight": "int",
+        "params": "FrameLayout.LayoutParams",
+        "windowManager": "WindowManager",
+        "displaySize": "Point"
+    }
+}

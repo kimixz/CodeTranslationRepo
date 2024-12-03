@@ -1,0 +1,161 @@
+{
+    "methods": [
+        {
+            "name": "screenshotTextFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1622,
+            "end_position": 3492,
+            "body_start": 1686,
+            "body_end": 3492
+        },
+        {
+            "name": "cancel",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6275,
+            "end_position": 7892,
+            "body_start": 6306,
+            "body_end": 7892
+        },
+        {
+            "name": "keepExisting",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7898,
+            "end_position": 9797,
+            "body_start": 7955,
+            "body_end": 9797
+        },
+        {
+            "name": "keepNew",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9803,
+            "end_position": 11744,
+            "body_start": 9855,
+            "body_end": 11744
+        },
+        {
+            "name": "keepBoth",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11750,
+            "end_position": 13704,
+            "body_start": 11803,
+            "body_end": 13704
+        },
+        {
+            "name": "after",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13710,
+            "end_position": 13794,
+            "body_start": 13741,
+            "body_end": 13794
+        }
+    ],
+    "local_variables": {
+        "newFile": "OCFile",
+        "existingFile": "OCFile",
+        "storageManager": "FileDataStorageManager",
+        "intent": "Intent",
+        "sut": "ConflictsResolveActivity",
+        "dialog": "DialogFragment",
+        "newUpload": "OCUpload"
+    },
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "newFile": [
+            "setFileLength",
+            "setModificationTimestamp",
+            "setStoragePath"
+        ],
+        "FileStorageUtils": [
+            "getSavePath"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "existingFile": [
+            "setFileLength",
+            "setModificationTimestamp",
+            "setRemoteId"
+        ],
+        "targetContext": [
+            "getContentResolver"
+        ],
+        "storageManager": [
+            "saveNewFile"
+        ],
+        "intent": [
+            "putExtra"
+        ],
+        "activityRule": [
+            "launchActivity"
+        ],
+        "ConflictsResolveDialog": [
+            "newInstance"
+        ],
+        "UserAccountManagerImpl\n                                                                               .fromContext(targetContext)": [
+            "getUser"
+        ],
+        "UserAccountManagerImpl": [
+            "fromContext"
+        ],
+        "dialog": [
+            "showDialog",
+            "requireDialog"
+        ],
+        "getInstrumentation()": [
+            "waitForIdleSync"
+        ],
+        "unknown": [
+            "getInstrumentation",
+            "shortSleep",
+            "screenshot",
+            "assertEquals",
+            "onView",
+            "withText",
+            "click",
+            "assertTrue",
+            "withId",
+            "getStorageManager"
+        ],
+        "Objects.requireNonNull(dialog.requireDialog().getWindow())": [
+            "getDecorView"
+        ],
+        "Objects": [
+            "requireNonNull"
+        ],
+        "dialog.requireDialog()": [
+            "getWindow"
+        ],
+        "newUpload": [
+            "getUploadId"
+        ],
+        "onView(withText(\"Cancel\"))": [
+            "perform"
+        ],
+        "onView(withId(R.id.right_checkbox))": [
+            "perform"
+        ],
+        "sut.getSupportFragmentManager()": [
+            "findFragmentByTag"
+        ],
+        "sut": [
+            "getSupportFragmentManager"
+        ],
+        "onView(withText(\"OK\"))": [
+            "perform"
+        ],
+        "onView(withId(R.id.left_checkbox))": [
+            "perform"
+        ],
+        "getStorageManager()": [
+            "deleteAllFiles"
+        ]
+    }
+}

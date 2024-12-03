@@ -1,0 +1,1105 @@
+{
+    "method_calls": {
+        "FileActivity.class": [
+            "getSimpleName"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "unknown": [
+            "registerReceiver",
+            "setupToolbar",
+            "setupHomeSearchToolbarWithSortAndListButtons",
+            "getUserAccountManager",
+            "getSupportActionBar",
+            "getIntent",
+            "setUser",
+            "bindService",
+            "registerNetworkChangeReceiver",
+            "hideInfoBox",
+            "refreshList",
+            "showInfoBox",
+            "fetchExternalLinks",
+            "doOnResumeAndBound",
+            "unbindService",
+            "unregisterReceiver",
+            "dismissLoadingDialog",
+            "requestCredentialsUpdate",
+            "getResources",
+            "showUntrustedCertDialog",
+            "updateFileFromDB",
+            "onSynchronizeFileOperationFinish",
+            "onCreateShareViaLinkOperationFinish",
+            "onUpdateShareInformation",
+            "onUpdateNoteForShareOperationFinish",
+            "getAccount",
+            "performCredentialsUpdate",
+            "startActivityForResult",
+            "getSupportFragmentManager",
+            "getUser",
+            "startActivity",
+            "supportInvalidateOptionsMenu",
+            "getFile",
+            "getStorageManager",
+            "setFile",
+            "runOnUiThread",
+            "checkForNewDevVersion",
+            "showDevSnackbar",
+            "showShareLinkDialog",
+            "getShareFileFragment",
+            "copyAndShareFileLink",
+            "getCapabilities",
+            "findViewById",
+            "getFileFromDetailFragment",
+            "doShareWith",
+            "getString",
+            "getFileDetailFragment"
+        ],
+        "MainApp": [
+            "showOnlyFilesOnDevice",
+            "showOnlyPersonalFiles"
+        ],
+        "super": [
+            "onCreate",
+            "onStart",
+            "onResume",
+            "onPause",
+            "onDestroy",
+            "onSaveInstanceState",
+            "onNewIntent"
+        ],
+        "usersAndGroupsSearchConfig": [
+            "reset",
+            "getSearchOnlyUsers"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "savedInstanceState": [
+            "getBoolean",
+            "getLong",
+            "getString"
+        ],
+        "mFileOperationsHelper": [
+            "setOpIdWaitingFor",
+            "getOpIdWaitingFor"
+        ],
+        "viewThemeUtils.files": [
+            "themeActionBar"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "getIntent()": [
+            "getBooleanExtra"
+        ],
+        "mOperationsServiceBinder": [
+            "removeOperationListener",
+            "addOperationListener",
+            "dispatchResultIfFinished"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "outState": [
+            "putParcelable",
+            "putBoolean",
+            "putLong",
+            "putString"
+        ],
+        "getSupportActionBar()": [
+            "getTitle"
+        ],
+        "getSupportActionBar().getTitle()": [
+            "toString"
+        ],
+        "Log_OC": [
+            "d",
+            "e"
+        ],
+        "result": [
+            "isSuccess",
+            "getCode",
+            "isException",
+            "getException",
+            "getMessage",
+            "getData"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage",
+            "startLinkIntent"
+        ],
+        "ErrorMessageAdapter": [
+            "getErrorCauseMessage"
+        ],
+        "accountManager.getServerVersion(account)": [
+            "isRemoteWipeSupported"
+        ],
+        "accountManager": [
+            "getServerVersion",
+            "invalidateAuthToken",
+            "clearPassword"
+        ],
+        "new CheckRemoteWipeTask(backgroundJobManager, account, new WeakReference<>(this))": [
+            "execute"
+        ],
+        "OwnCloudClientManagerFactory.getDefaultSingleton()": [
+            "removeClientFor"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ],
+        "client": [
+            "getCredentials"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "credentials": [
+            "authTokenExpires",
+            "getAuthToken"
+        ],
+        "updateAccountCredentials": [
+            "putExtra",
+            "addFlags"
+        ],
+        "fm": [
+            "findFragmentByTag",
+            "beginTransaction"
+        ],
+        "SslUntrustedCertDialog": [
+            "newInstanceForFullSslError"
+        ],
+        "dialog": [
+            "show"
+        ],
+        "operation": [
+            "getLocalFile",
+            "transferWasRequested",
+            "getPassword"
+        ],
+        "ConflictsResolveActivity": [
+            "createIntent"
+        ],
+        "getUser()": [
+            "orElseThrow"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "getFileByEncryptedRemotePath",
+            "getSharesWithForAFile"
+        ],
+        "file": [
+            "getRemotePath",
+            "isFolder",
+            "getParentRemotePath",
+            "getFileName"
+        ],
+        "fragmentManager": [
+            "findFragmentByTag",
+            "beginTransaction",
+            "executePendingTransactions"
+        ],
+        "LoadingDialog": [
+            "newInstance"
+        ],
+        "ActivityExtensionsKt": [
+            "isDialogFragmentReady"
+        ],
+        "fragmentTransaction": [
+            "add",
+            "commitNow"
+        ],
+        "loadingDialogFragment": [
+            "dismiss"
+        ],
+        "component": [
+            "equals"
+        ],
+        "ConfirmationDialogFragment": [
+            "newInstance"
+        ],
+        "getResources()": [
+            "getBoolean"
+        ],
+        "arbitraryDataProvider": [
+            "getIntegerValue"
+        ],
+        "context": [
+            "getString"
+        ],
+        "loadTask": [
+            "execute"
+        ],
+        "activity.getPackageManager()": [
+            "getPackageInfo"
+        ],
+        "activity": [
+            "getPackageManager",
+            "getPackageName",
+            "getString",
+            "findViewById",
+            "getAccount",
+            "getSupportFragmentManager"
+        ],
+        "Snackbar.make(activity.findViewById(android.R.id.content), R.string.dev_version_new_version_available,\n                              Snackbar.LENGTH_LONG)\n                    .setAction(activity.getString(R.string.version_dev_download), v -> {\n                        DisplayUtils.startLinkIntent(activity, devApkLink);\n                    })": [
+            "show"
+        ],
+        "Snackbar.make(activity.findViewById(android.R.id.content), R.string.dev_version_new_version_available,\n                              Snackbar.LENGTH_LONG)": [
+            "setAction"
+        ],
+        "Snackbar": [
+            "make"
+        ],
+        "MDMConfig.INSTANCE": [
+            "shareViaLink",
+            "clipBoardSupport"
+        ],
+        "ClipboardUtil": [
+            "copyToClipboard"
+        ],
+        "Snackbar.make(activity.findViewById(android.R.id.content), R.string.clipboard_text_copied,\n                                              Snackbar.LENGTH_LONG)": [
+            "setAction"
+        ],
+        "viewThemeUtils.material": [
+            "themeSnackbar"
+        ],
+        "snackbar": [
+            "show"
+        ],
+        "intentToShareLink": [
+            "putExtra",
+            "setType"
+        ],
+        "oca": [
+            "getDisplayName"
+        ],
+        "oca.getDisplayName()": [
+            "isEmpty"
+        ],
+        "com.owncloud.android.lib.common.accounts.AccountUtils": [
+            "getUsernameForAccount"
+        ],
+        "ShareLinkToDialog": [
+            "newInstance"
+        ],
+        "chooserDialog": [
+            "show"
+        ],
+        "sharingFragment": [
+            "onUpdateShareInformation",
+            "getView",
+            "isAdded",
+            "requestPasswordForShareViaLink",
+            "refreshSharesFromDB"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "getSupportFragmentManager()": [
+            "findFragmentByTag"
+        ],
+        "listFragment": [
+            "onRefresh"
+        ],
+        "detailFragment": [
+            "goBackToOCFileListFragment"
+        ],
+        "shareLink": [
+            "getShareType",
+            "getShareLink",
+            "getPath"
+        ],
+        "TAG_PUBLIC_LINK": [
+            "equalsIgnoreCase"
+        ],
+        "shareType": [
+            "name"
+        ],
+        "ocFileListFragment.getAdapterFiles()": [
+            "contains"
+        ],
+        "ocFileListFragment": [
+            "getAdapterFiles",
+            "updateOCFile"
+        ],
+        "getCapabilities().getFilesSharingPublicEnabled()": [
+            "isUnknown"
+        ],
+        "getCapabilities()": [
+            "getFilesSharingPublicEnabled",
+            "getFilesSharingPublicAskForOptionalPassword"
+        ],
+        "getCapabilities().getFilesSharingPublicAskForOptionalPassword()": [
+            "isTrue"
+        ],
+        "fileDetailFragment": [
+            "getFileDetailSharingFragment"
+        ],
+        "UsersAndGroupsSearchProvider.ACTION_SHARE_WITH": [
+            "equals"
+        ],
+        "intent": [
+            "getAction",
+            "getData",
+            "getDataString"
+        ],
+        "dataString": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "getFileFromDetailFragment()": [
+            "getRemotePath"
+        ],
+        "existingSharees": [
+            "add",
+            "contains"
+        ],
+        "share": [
+            "getShareType",
+            "getShareWith"
+        ],
+        "data": [
+            "getAuthority"
+        ],
+        "UsersAndGroupsSearchProvider": [
+            "getShareType"
+        ],
+        "fragment": [
+            "getFile",
+            "initiateSharingProcess",
+            "editExistingShare",
+            "showHideFragmentView"
+        ]
+    },
+    "methods": [
+        {
+            "name": "registerNetworkChangeReceiver",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8536,
+            "end_position": 8734,
+            "body_start": 8581,
+            "body_end": 8734
+        },
+        {
+            "name": "showFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "onDeviceOnly"
+                },
+                {
+                    "type": "boolean",
+                    "name": "personalFiles"
+                }
+            ],
+            "start_position": 8740,
+            "end_position": 9123,
+            "body_start": 8821,
+            "body_end": 9123
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 9425,
+            "end_position": 11332,
+            "body_start": 9490,
+            "body_end": 11332
+        },
+        {
+            "name": "networkAndServerConnectionListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isNetworkAndServerAvailable"
+                }
+            ],
+            "start_position": 11338,
+            "end_position": 11615,
+            "body_start": 11436,
+            "body_end": 11615
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11621,
+            "end_position": 11727,
+            "body_start": 11660,
+            "body_end": 11727
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11733,
+            "end_position": 11923,
+            "body_start": 11773,
+            "body_end": 11923
+        },
+        {
+            "name": "onPause",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11929,
+            "end_position": 12153,
+            "body_start": 11969,
+            "body_end": 12153
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12159,
+            "end_position": 12451,
+            "body_start": 12200,
+            "body_end": 12451
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 12457,
+            "end_position": 13213,
+            "body_start": 12532,
+            "body_end": 13213
+        },
+        {
+            "name": "getFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 13370,
+            "end_position": 13423,
+            "body_start": 13394,
+            "body_end": 13423
+        },
+        {
+            "name": "setFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 13591,
+            "end_position": 13653,
+            "body_start": 13624,
+            "body_end": 13653
+        },
+        {
+            "name": "fromNotification",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13769,
+            "end_position": 13844,
+            "body_start": 13803,
+            "body_end": 13844
+        },
+        {
+            "name": "getOperationsServiceBinder",
+            "return_type": "OperationsServiceBinder",
+            "parameters": [],
+            "start_position": 13850,
+            "end_position": 13958,
+            "body_start": 13910,
+            "body_end": 13958
+        },
+        {
+            "name": "newTransferenceServiceConnection",
+            "return_type": "ServiceConnection",
+            "parameters": [],
+            "start_position": 13964,
+            "end_position": 14055,
+            "body_start": 14027,
+            "body_end": 14055
+        },
+        {
+            "name": "getRemoteOperationListener",
+            "return_type": "OnRemoteOperationListener",
+            "parameters": [],
+            "start_position": 14061,
+            "end_position": 14151,
+            "body_start": 14123,
+            "body_end": 14151
+        },
+        {
+            "name": "getHandler",
+            "return_type": "Handler",
+            "parameters": [],
+            "start_position": 14157,
+            "end_position": 14217,
+            "body_start": 14185,
+            "body_end": 14217
+        },
+        {
+            "name": "getFileOperationsHelper",
+            "return_type": "FileOperationsHelper",
+            "parameters": [],
+            "start_position": 14223,
+            "end_position": 14322,
+            "body_start": 14277,
+            "body_end": 14322
+        },
+        {
+            "name": "onRemoteOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 14451,
+            "end_position": 17884,
+            "body_start": 14558,
+            "body_end": 17884
+        },
+        {
+            "name": "requestCredentialsUpdate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 18359,
+            "end_position": 18472,
+            "body_start": 18416,
+            "body_end": 18472
+        },
+        {
+            "name": "requestCredentialsUpdate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 19011,
+            "end_position": 19498,
+            "body_start": 19085,
+            "body_end": 19498
+        },
+        {
+            "name": "performCredentialsUpdate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 19504,
+            "end_position": 21191,
+            "body_start": 19575,
+            "body_end": 21191
+        },
+        {
+            "name": "showUntrustedCertDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 21247,
+            "end_position": 21833,
+            "body_start": 21313,
+            "body_end": 21833
+        },
+        {
+            "name": "onSynchronizeFileOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SynchronizeFileOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 21839,
+            "end_position": 23001,
+            "body_start": 22001,
+            "body_end": 23001
+        },
+        {
+            "name": "updateFileFromDB",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 23007,
+            "end_position": 23221,
+            "body_start": 23040,
+            "body_end": 23221
+        },
+        {
+            "name": "showLoadingDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 23271,
+            "end_position": 24168,
+            "body_start": 23317,
+            "body_end": 24168
+        },
+        {
+            "name": "dismissLoadingDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 24220,
+            "end_position": 24953,
+            "body_start": 24255,
+            "body_end": 24953
+        },
+        {
+            "name": "doOnResumeAndBound",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 24959,
+            "end_position": 25467,
+            "body_start": 24993,
+            "body_end": 25467
+        },
+        {
+            "name": "onServiceConnected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ComponentName",
+                    "name": "component"
+                },
+                {
+                    "type": "IBinder",
+                    "name": "service"
+                }
+            ],
+            "start_position": 25654,
+            "end_position": 26295,
+            "body_start": 25745,
+            "body_end": 26295
+        },
+        {
+            "name": "onServiceDisconnected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ComponentName",
+                    "name": "component"
+                }
+            ],
+            "start_position": 26305,
+            "end_position": 26698,
+            "body_start": 26382,
+            "body_end": 26698
+        },
+        {
+            "name": "getFileDownloadProgressListener",
+            "return_type": "FileDownloadWorker.FileDownloadProgressListener",
+            "parameters": [],
+            "start_position": 26710,
+            "end_position": 26865,
+            "body_start": 26813,
+            "body_end": 26865
+        },
+        {
+            "name": "getFileUploaderHelper",
+            "return_type": "FileUploadHelper",
+            "parameters": [],
+            "start_position": 26871,
+            "end_position": 26973,
+            "body_start": 26933,
+            "body_end": 26973
+        },
+        {
+            "name": "getCurrentDir",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 26979,
+            "end_position": 27374,
+            "body_start": 27009,
+            "body_end": 27374
+        },
+        {
+            "name": "onSavedCertificate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 27426,
+            "end_position": 27521,
+            "body_start": 27473,
+            "body_end": 27521
+        },
+        {
+            "name": "onFailedSavingCertificate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 27527,
+            "end_position": 27922,
+            "body_start": 27581,
+            "body_end": 27922
+        },
+        {
+            "name": "checkForNewDevVersionNecessary",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 27928,
+            "end_position": 28404,
+            "body_start": 27988,
+            "body_end": 28404
+        },
+        {
+            "name": "returnVersion",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Integer",
+                    "name": "latestVersion"
+                }
+            ],
+            "start_position": 28410,
+            "end_position": 28539,
+            "body_start": 28473,
+            "body_end": 28539
+        },
+        {
+            "name": "checkForNewDevVersion",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "LoadingVersionNumberTask.VersionDevInterface",
+                    "name": "callback"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 28545,
+            "end_position": 28841,
+            "body_start": 28658,
+            "body_end": 28841
+        },
+        {
+            "name": "showDevSnackbar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "Integer",
+                    "name": "latestVersion"
+                },
+                {
+                    "type": "boolean",
+                    "name": "openDirectly"
+                },
+                {
+                    "type": "boolean",
+                    "name": "inBackground"
+                }
+            ],
+            "start_position": 28847,
+            "end_position": 30415,
+            "body_start": 29085,
+            "body_end": 30415
+        },
+        {
+            "name": "copyAndShareFileLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileActivity",
+                    "name": "activity"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "link"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 30421,
+            "end_position": 31241,
+            "body_start": 30679,
+            "body_end": 31241
+        },
+        {
+            "name": "showShareLinkDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileActivity",
+                    "name": "activity"
+                },
+                {
+                    "type": "ServerFileInterface",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "link"
+                }
+            ],
+            "start_position": 31247,
+            "end_position": 33125,
+            "body_start": 31348,
+            "body_end": 33125
+        },
+        {
+            "name": "onUpdateNoteForShareOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 33131,
+            "end_position": 33557,
+            "body_start": 33210,
+            "body_end": 33557
+        },
+        {
+            "name": "onUpdateShareInformation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "int",
+                    "name": "defaultError"
+                }
+            ],
+            "start_position": 33563,
+            "end_position": 34454,
+            "body_start": 33660,
+            "body_end": 34454
+        },
+        {
+            "name": "refreshList",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 34460,
+            "end_position": 34861,
+            "body_start": 34486,
+            "body_end": 34861
+        },
+        {
+            "name": "onCreateShareViaLinkOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "CreateShareViaLinkOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 34867,
+            "end_position": 38351,
+            "body_start": 35038,
+            "body_end": 38351
+        },
+        {
+            "name": "getShareFileFragment",
+            "return_type": "FileDetailSharingFragment",
+            "parameters": [],
+            "start_position": 38537,
+            "end_position": 39213,
+            "body_start": 38624,
+            "body_end": 39213
+        },
+        {
+            "name": "onNewIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 39219,
+            "end_position": 40400,
+            "body_start": 39275,
+            "body_end": 40400
+        },
+        {
+            "name": "getFileFromDetailFragment",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 40521,
+            "end_position": 40741,
+            "body_start": 40564,
+            "body_end": 40741
+        },
+        {
+            "name": "doShareWith",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "shareeName"
+                },
+                {
+                    "type": "ShareType",
+                    "name": "shareType"
+                }
+            ],
+            "start_position": 40884,
+            "end_position": 41268,
+            "body_start": 40951,
+            "body_end": 41268
+        },
+        {
+            "name": "editExistingShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "int",
+                    "name": "screenTypePermission"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isReshareShown"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isExpiryDateShown"
+                }
+            ],
+            "start_position": 41470,
+            "end_position": 41856,
+            "body_start": 41640,
+            "body_end": 41856
+        },
+        {
+            "name": "onShareProcessClosed",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 41945,
+            "end_position": 42156,
+            "body_start": 41994,
+            "body_end": 42156
+        },
+        {
+            "name": "getFileDetailFragment",
+            "return_type": "FileDetailFragment",
+            "parameters": [],
+            "start_position": 42162,
+            "end_position": 42469,
+            "body_start": 42213,
+            "body_end": 42469
+        }
+    ],
+    "local_variables": {
+        "filter": "IntentFilter",
+        "user": "User",
+        "actionBar": "ActionBar",
+        "remoteWipeSupported": "boolean",
+        "ocAccount": "OwnCloudAccount",
+        "client": "OwnCloudClient",
+        "credentials": "OwnCloudCredentials",
+        "accountManager": "AccountManager",
+        "updateAccountCredentials": "Intent",
+        "fm": "FragmentManager",
+        "dialog": "ConfirmationDialogFragment",
+        "ft": "FragmentTransaction",
+        "syncedFile": "OCFile",
+        "intent": "Intent",
+        "file": "OCFile",
+        "fragmentManager": "FragmentManager",
+        "fragment": "Fragment",
+        "loadingDialogFragment": "LoadingDialog",
+        "fragmentTransaction": "FragmentTransaction",
+        "isDialogFragmentReady": "boolean",
+        "waitingForOpId": "long",
+        "wait": "boolean",
+        "parentPath": "String",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "count": "int",
+        "url": "String",
+        "loadTask": "LoadingVersionNumberTask",
+        "currentVersion": "Integer",
+        "devApkLink": "String",
+        "snackbar": "Snackbar",
+        "intentToShareLink": "Intent",
+        "username": "String",
+        "oca": "OwnCloudAccount",
+        "packagesToExclude": "String[]",
+        "chooserDialog": "DialogFragment",
+        "sharingFragment": "FileDetailSharingFragment",
+        "fileListFragment": "Fragment",
+        "link": "String",
+        "shareType": "ShareType",
+        "password": "String",
+        "data": "Uri",
+        "dataString": "String",
+        "shareWith": "String",
+        "existingSharees": "ArrayList<String>",
+        "dataAuthority": "String"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "try_statement",
+        "enhanced_for_statement",
+        "break_statement"
+    ]
+}

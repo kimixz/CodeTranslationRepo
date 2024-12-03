@@ -1,0 +1,32 @@
+{
+    "method_calls": {
+        "binding": [
+            "getRoot"
+        ],
+        "binding.addNewPublicShareLink": [
+            "setOnClickListener"
+        ],
+        "listener": [
+            "createPublicShareLink"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "methods": [
+        {
+            "name": "bind",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ShareeListAdapterListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 846,
+            "end_position": 1003,
+            "body_start": 899,
+            "body_end": 1003
+        }
+    ]
+}

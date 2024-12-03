@@ -1,0 +1,237 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 3041,
+            "end_position": 7501,
+            "body_start": 3106,
+            "body_end": 7501
+        },
+        {
+            "name": "setupClickListener",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7507,
+            "end_position": 8914,
+            "body_start": 7541,
+            "body_end": 8914
+        },
+        {
+            "name": "filterActionsForOfflineOperations",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8920,
+            "end_position": 9811,
+            "body_start": 8969,
+            "body_end": 9811
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9817,
+            "end_position": 9910,
+            "body_start": 9855,
+            "body_end": 9910
+        }
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate",
+            "onStop"
+        ],
+        "FileListActionsBottomSheetFragmentBinding": [
+            "inflate"
+        ],
+        "unknown": [
+            "getLayoutInflater",
+            "setContentView",
+            "getContext",
+            "dismiss",
+            "setupClickListener",
+            "filterActionsForOfflineOperations"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "viewThemeUtils.platform": [
+            "colorImageView"
+        ],
+        "binding.addToCloud": [
+            "setText"
+        ],
+        "getContext().getResources()": [
+            "getString"
+        ],
+        "getContext()": [
+            "getResources"
+        ],
+        "themeUtils": [
+            "getDefaultDisplayNameForRootFolder"
+        ],
+        "fileActivity": [
+            "getCapabilities",
+            "getString"
+        ],
+        "capability.getRichDocuments()": [
+            "isTrue"
+        ],
+        "capability": [
+            "getRichDocuments",
+            "getRichDocumentsDirectEditing",
+            "getRichDocumentsTemplatesAvailable"
+        ],
+        "capability.getRichDocumentsDirectEditing()": [
+            "isTrue"
+        ],
+        "capability.getRichDocumentsTemplatesAvailable()": [
+            "isTrue"
+        ],
+        "file": [
+            "isEncrypted",
+            "getRichWorkspace",
+            "isRootDirectory",
+            "isOfflineOperation"
+        ],
+        "binding.templates": [
+            "setVisibility"
+        ],
+        "new ArbitraryDataProviderImpl(getContext())": [
+            "getValue"
+        ],
+        "json": [
+            "isEmpty"
+        ],
+        "new Gson()": [
+            "fromJson"
+        ],
+        "directEditing.getCreators()": [
+            "isEmpty",
+            "values"
+        ],
+        "directEditing": [
+            "getCreators"
+        ],
+        "binding.creatorsContainer": [
+            "setVisibility"
+        ],
+        "FileListActionsBottomSheetCreatorBinding": [
+            "inflate"
+        ],
+        "creatorViewBinding": [
+            "getRoot"
+        ],
+        "creatorViewBinding.creatorName": [
+            "setText",
+            "getText"
+        ],
+        "String": [
+            "format"
+        ],
+        "creator": [
+            "getName",
+            "getMimetype",
+            "getExtension"
+        ],
+        "creatorViewBinding.creatorThumbnail": [
+            "setImageDrawable",
+            "getContext"
+        ],
+        "MimeTypeUtil": [
+            "getFileTypeIcon"
+        ],
+        "creatorView": [
+            "setOnClickListener"
+        ],
+        "actions": [
+            "showTemplate",
+            "createRichWorkspace",
+            "createFolder",
+            "uploadFromApp",
+            "directCameraUpload",
+            "scanDocUpload",
+            "uploadFiles",
+            "newDocument",
+            "newSpreadsheet",
+            "newPresentation"
+        ],
+        "creatorViewBinding.creatorName.getText()": [
+            "toString"
+        ],
+        "binding.creators": [
+            "addView"
+        ],
+        "deviceInfo": [
+            "hasCamera"
+        ],
+        "binding.menuDirectCameraUpload": [
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "editorUtils": [
+            "isEditorAvailable"
+        ],
+        "\"\"": [
+            "equals"
+        ],
+        "binding.menuCreateRichWorkspace": [
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "binding.menuCreateRichWorkspaceDivider": [
+            "setVisibility"
+        ],
+        "binding.menuMkdir": [
+            "setOnClickListener"
+        ],
+        "binding.menuUploadFromApp": [
+            "setOnClickListener",
+            "setVisibility"
+        ],
+        "appScanOptionalFeature": [
+            "isAvailable"
+        ],
+        "binding.menuScanDocUpload": [
+            "setOnClickListener",
+            "setVisibility"
+        ],
+        "binding.menuUploadFiles": [
+            "setOnClickListener"
+        ],
+        "binding.menuNewDocument": [
+            "setOnClickListener",
+            "setVisibility"
+        ],
+        "binding.menuNewSpreadsheet": [
+            "setOnClickListener",
+            "setVisibility"
+        ],
+        "binding.menuNewPresentation": [
+            "setOnClickListener",
+            "setVisibility"
+        ],
+        "fileActivity.connectivityService": [
+            "isNetworkAndServerAvailable"
+        ]
+    },
+    "local_variables": {
+        "capability": "OCCapability",
+        "json": "String",
+        "directEditing": "DirectEditing",
+        "creatorViewBinding": "FileListActionsBottomSheetCreatorBinding",
+        "creatorView": "View"
+    }
+}

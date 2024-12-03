@@ -1,0 +1,52 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "getValue",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 1347,
+            "end_position": 1398,
+            "body_start": 1369,
+            "body_end": 1398
+        },
+        {
+            "name": "fromValue",
+            "return_type": "UploadResult",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "value"
+                }
+            ],
+            "start_position": 1404,
+            "end_position": 3055,
+            "body_start": 1452,
+            "body_end": 3055
+        },
+        {
+            "name": "fromOperationResult",
+            "return_type": "UploadResult",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 3061,
+            "end_position": 5267,
+            "body_start": 3138,
+            "body_end": 5267
+        }
+    ],
+    "method_calls": {
+        "result": [
+            "getCode",
+            "getException"
+        ]
+    }
+}

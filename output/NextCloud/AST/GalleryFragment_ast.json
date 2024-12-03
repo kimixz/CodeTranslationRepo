@@ -1,0 +1,604 @@
+{
+    "methods": [
+        {
+            "name": "setPhotoSearchQueryRunning",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "value"
+                }
+            ],
+            "start_position": 2912,
+            "end_position": 3124,
+            "body_start": 2969,
+            "body_end": 3124
+        },
+        {
+            "name": "isPhotoSearchQueryRunning",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3130,
+            "end_position": 3225,
+            "body_start": 3173,
+            "body_end": 3225
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 3231,
+            "end_position": 3839,
+            "body_start": 3293,
+            "body_end": 3839
+        },
+        {
+            "name": "registerRefreshSearchEventReceiver",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3845,
+            "end_position": 4095,
+            "body_start": 3895,
+            "body_end": 4095
+        },
+        {
+            "name": "onReceive",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 4196,
+            "end_position": 4449,
+            "body_start": 4268,
+            "body_end": 4449
+        },
+        {
+            "name": "setLastMediaItemPosition",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Integer",
+                    "name": "position"
+                }
+            ],
+            "start_position": 4462,
+            "end_position": 4573,
+            "body_start": 4524,
+            "body_end": 4573
+        },
+        {
+            "name": "onDestroyView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4579,
+            "end_position": 4807,
+            "body_start": 4621,
+            "body_end": 4807
+        },
+        {
+            "name": "onPause",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4813,
+            "end_position": 4973,
+            "body_start": 4849,
+            "body_end": 4973
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 5016,
+            "end_position": 5586,
+            "body_start": 5137,
+            "body_end": 5586
+        },
+        {
+            "name": "onScrolled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView",
+                    "name": "recyclerView"
+                },
+                {
+                    "type": "int",
+                    "name": "dx"
+                },
+                {
+                    "type": "int",
+                    "name": "dy"
+                }
+            ],
+            "start_position": 5314,
+            "end_position": 5484,
+            "body_start": 5411,
+            "body_end": 5484
+        },
+        {
+            "name": "onActivityCreated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 5592,
+            "end_position": 6013,
+            "body_start": 5663,
+            "body_end": 6013
+        },
+        {
+            "name": "setAdapter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "args"
+                }
+            ],
+            "start_position": 6019,
+            "end_position": 7117,
+            "body_start": 6072,
+            "body_end": 7117
+        },
+        {
+            "name": "onConfigurationChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Configuration",
+                    "name": "newConfig"
+                }
+            ],
+            "start_position": 7123,
+            "end_position": 7602,
+            "body_start": 7206,
+            "body_end": 7602
+        },
+        {
+            "name": "getColumnsCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 7608,
+            "end_position": 7685,
+            "body_start": 7651,
+            "body_end": 7685
+        },
+        {
+            "name": "onRefresh",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7691,
+            "end_position": 7792,
+            "body_start": 7729,
+            "body_end": 7792
+        },
+        {
+            "name": "getCommonAdapter",
+            "return_type": "CommonOCFileListAdapterInterface",
+            "parameters": [],
+            "start_position": 7798,
+            "end_position": 7903,
+            "body_start": 7871,
+            "body_end": 7903
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7909,
+            "end_position": 8298,
+            "body_start": 7946,
+            "body_end": 8298
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ChangeMenuEvent",
+                    "name": "changeMenuEvent"
+                }
+            ],
+            "start_position": 8304,
+            "end_position": 8432,
+            "body_start": 8378,
+            "body_end": 8432
+        },
+        {
+            "name": "handleSearchEvent",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8438,
+            "end_position": 8693,
+            "body_start": 8471,
+            "body_end": 8693
+        },
+        {
+            "name": "searchAndDisplay",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8699,
+            "end_position": 9243,
+            "body_start": 8731,
+            "body_end": 9243
+        },
+        {
+            "name": "searchCompleted",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "emptySearch"
+                },
+                {
+                    "type": "long",
+                    "name": "lastTimeStamp"
+                }
+            ],
+            "start_position": 9249,
+            "end_position": 9686,
+            "body_start": 9318,
+            "body_end": 9686
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "MenuInflater",
+                    "name": "inflater"
+                }
+            ],
+            "start_position": 9692,
+            "end_position": 10107,
+            "body_start": 9781,
+            "body_end": 10107
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 10113,
+            "end_position": 10491,
+            "body_start": 10179,
+            "body_end": 10491
+        },
+        {
+            "name": "showBottomSheet",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10497,
+            "end_position": 10711,
+            "body_start": 10528,
+            "body_end": 10711
+        },
+        {
+            "name": "onActivityResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                },
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 10717,
+            "end_position": 11343,
+            "body_start": 10816,
+            "body_end": 11343
+        },
+        {
+            "name": "searchAndDisplayAfterChangingFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11349,
+            "end_position": 11611,
+            "body_start": 11400,
+            "body_end": 11611
+        },
+        {
+            "name": "runGallerySearchTask",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11617,
+            "end_position": 12088,
+            "body_start": 11653,
+            "body_end": 12088
+        },
+        {
+            "name": "loadMoreWhenEndReached",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView",
+                    "name": "recyclerView"
+                },
+                {
+                    "type": "int",
+                    "name": "dy"
+                }
+            ],
+            "start_position": 12094,
+            "end_position": 14083,
+            "body_start": 12174,
+            "body_end": 14083
+        },
+        {
+            "name": "updateMediaContent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GalleryFragmentBottomSheetDialog.MediaState",
+                    "name": "mediaState"
+                }
+            ],
+            "start_position": 14089,
+            "end_position": 14228,
+            "body_start": 14190,
+            "body_end": 14228
+        },
+        {
+            "name": "selectMediaFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14234,
+            "end_position": 14538,
+            "body_start": 14280,
+            "body_end": 14538
+        },
+        {
+            "name": "showAllGalleryItems",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14544,
+            "end_position": 14878,
+            "body_start": 14578,
+            "body_end": 14878
+        },
+        {
+            "name": "updateSubtitle",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GalleryFragmentBottomSheetDialog.MediaState",
+                    "name": "mediaState"
+                }
+            ],
+            "start_position": 14884,
+            "end_position": 15744,
+            "body_start": 14968,
+            "body_end": 15744
+        },
+        {
+            "name": "setGridViewColumns",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "float",
+                    "name": "scaleFactor"
+                }
+            ],
+            "start_position": 15750,
+            "end_position": 15846,
+            "body_start": 15817,
+            "body_end": 15846
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement"
+    ],
+    "method_calls": {
+        "this": [
+            "setLoading",
+            "isPhotoSearchQueryRunning",
+            "setPhotoSearchQueryRunning",
+            "showAllGalleryItems"
+        ],
+        "super": [
+            "onCreate",
+            "onDestroyView",
+            "onPause",
+            "onCreateView",
+            "onActivityCreated",
+            "onConfigurationChanged",
+            "onRefresh",
+            "onResume",
+            "onMessageEvent",
+            "onCreateOptionsMenu",
+            "onOptionsItemSelected",
+            "onActivityResult"
+        ],
+        "unknown": [
+            "setHasOptionsMenu",
+            "getResources",
+            "registerRefreshSearchEventReceiver",
+            "requireContext",
+            "getActivity",
+            "setLastMediaItemPosition",
+            "getRecyclerView",
+            "loadMoreWhenEndReached",
+            "requireActivity",
+            "updateSubtitle",
+            "handleSearchEvent",
+            "setRecyclerViewAdapter",
+            "getContext",
+            "showAllGalleryItems",
+            "setLoading",
+            "getString",
+            "prepareCurrentSearch",
+            "setEmptyListLoadingMessage",
+            "setFabVisible",
+            "searchAndDisplay",
+            "runGallerySearchTask",
+            "setEmptyListMessage",
+            "showBottomSheet",
+            "getChildFragmentManager",
+            "searchAndDisplayAfterChangingFolder",
+            "startActivityForResult",
+            "isAdded"
+        ],
+        "getResources()": [
+            "getConfiguration",
+            "getString"
+        ],
+        "LocalBroadcastManager.getInstance(requireContext())": [
+            "registerReceiver",
+            "unregisterReceiver"
+        ],
+        "LocalBroadcastManager": [
+            "getInstance"
+        ],
+        "fileDisplayActivity": [
+            "startPhotoSearch",
+            "updateActionBarTitleAndHomeButtonByString",
+            "setMainFabVisible"
+        ],
+        "photoSearchTask": [
+            "cancel"
+        ],
+        "getRecyclerView()": [
+            "addOnScrollListener",
+            "setLayoutManager"
+        ],
+        "Log_OC": [
+            "i",
+            "d"
+        ],
+        "requireActivity()": [
+            "invalidateOptionsMenu",
+            "runOnUiThread"
+        ],
+        "galleryFragmentBottomSheetDialog": [
+            "getCurrMediaState",
+            "isVisible",
+            "show"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "ThumbnailsCacheManager": [
+            "getThumbnailDimension"
+        ],
+        "((EmptyRecyclerView) getRecyclerView())": [
+            "setHasFooter"
+        ],
+        "mAdapter": [
+            "setLayoutManager",
+            "changeColumn",
+            "isEmpty",
+            "getItem",
+            "showAllGalleryItems"
+        ],
+        "layoutManager": [
+            "scrollToPosition"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "menu": [
+            "findItem"
+        ],
+        "viewThemeUtils.platform": [
+            "colorMenuItemText"
+        ],
+        "item": [
+            "getItemId"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "preferences": [
+            "setLastSelectedMediaFolder",
+            "getLastSelectedMediaFolder"
+        ],
+        "chosenFolder": [
+            "getRemotePath"
+        ],
+        "new GallerySearchTask(this,\n                                                    accountManager.getUser(),\n                                                    mContainerActivity.getStorageManager(),\n                                                    endDate,\n                                                    limit)": [
+            "execute"
+        ],
+        "mContainerActivity": [
+            "getStorageManager"
+        ],
+        "recyclerView": [
+            "getLayoutManager"
+        ],
+        "gridLayoutManager": [
+            "getItemCount",
+            "findLastCompletelyVisibleItemPosition",
+            "getChildCount"
+        ],
+        "lastFile": [
+            "getModificationTimestamp"
+        ],
+        "action": [
+            "putExtra"
+        ],
+        "toolbarActivity": [
+            "updateToolbarSubtitle"
+        ]
+    },
+    "local_variables": {
+        "filter": "IntentFilter",
+        "v": "View",
+        "layoutManager": "GridLayoutManager",
+        "menuItem": "MenuItem",
+        "chosenFolder": "OCFile",
+        "totalItemCount": "int",
+        "lastVisibleItem": "int",
+        "visibleItemCount": "int",
+        "lastFile": "OCFile",
+        "lastItemTimestamp": "long",
+        "action": "Intent",
+        "subTitle": "String"
+    }
+}

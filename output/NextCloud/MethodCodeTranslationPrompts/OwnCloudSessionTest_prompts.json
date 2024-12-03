@@ -1,0 +1,38 @@
+[
+    {
+        "method_name": "setUp",
+        "method_code": "@Before\n    public void setUp() {\n        ownCloudSession.setSessionName(SESSION_NAME);\n        ownCloudSession.setSessionUrl(SESSION_URL);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUp from OwnCloudSessionTest.java into Swift.\n\n        Input:\n\n        Method Name: setUp\n\n        Method Code: @Before\n    public void setUp() {\n        ownCloudSession.setSessionName(SESSION_NAME);\n        ownCloudSession.setSessionUrl(SESSION_URL);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setUp() {\n    super.setUp()\n    ownCloudSession.setSessionName(SESSION_NAME)\n    ownCloudSession.setSessionUrl(SESSION_URL)\n}\n```"
+    },
+    {
+        "method_name": "setName_assertCorrectNameUpdated",
+        "method_code": "@Test\n    public void setName_assertCorrectNameUpdated() {\n        String newName = \"newTestSession\";\n        ownCloudSession.setSessionName(newName);\n        assertEquals(\"OwnCloud session name not updated\", newName, ownCloudSession.getSessionName());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setName_assertCorrectNameUpdated from OwnCloudSessionTest.java into Swift.\n\n        Input:\n\n        Method Name: setName_assertCorrectNameUpdated\n\n        Method Code: @Test\n    public void setName_assertCorrectNameUpdated() {\n        String newName = \"newTestSession\";\n        ownCloudSession.setSessionName(newName);\n        assertEquals(\"OwnCloud session name not updated\", newName, ownCloudSession.getSessionName());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc testSetName_assertCorrectNameUpdated() {\n    let newName = \"newTestSession\"\n    ownCloudSession.setSessionName(newName)\n    XCTAssertEqual(ownCloudSession.getSessionName(), newName, \"OwnCloud session name not updated\")\n}\n```"
+    },
+    {
+        "method_name": "getName_assertCorrectNamedRetrieved",
+        "method_code": "@Test\n    public void getName_assertCorrectNamedRetrieved() {\n        assertEquals(\"OwnCloudSession name not correct\", SESSION_NAME, ownCloudSession.getSessionName());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getName_assertCorrectNamedRetrieved from OwnCloudSessionTest.java into Swift.\n\n        Input:\n\n        Method Name: getName_assertCorrectNamedRetrieved\n\n        Method Code: @Test\n    public void getName_assertCorrectNamedRetrieved() {\n        assertEquals(\"OwnCloudSession name not correct\", SESSION_NAME, ownCloudSession.getSessionName());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc testGetName_assertCorrectNamedRetrieved() {\n    XCTAssertEqual(ownCloudSession.getSessionName(), SESSION_NAME, \"OwnCloudSession name not correct\")\n}\n```"
+    },
+    {
+        "method_name": "setUrl_assertCorrectUrlUpdated",
+        "method_code": "@Test\n    public void setUrl_assertCorrectUrlUpdated() {\n        String newUrl = \"https://new.cloud.local\";\n        ownCloudSession.setSessionUrl(newUrl);\n        assertEquals(\"OwnCloud session URL not updated\", newUrl, ownCloudSession.getSessionUrl());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUrl_assertCorrectUrlUpdated from OwnCloudSessionTest.java into Swift.\n\n        Input:\n\n        Method Name: setUrl_assertCorrectUrlUpdated\n\n        Method Code: @Test\n    public void setUrl_assertCorrectUrlUpdated() {\n        String newUrl = \"https://new.cloud.local\";\n        ownCloudSession.setSessionUrl(newUrl);\n        assertEquals(\"OwnCloud session URL not updated\", newUrl, ownCloudSession.getSessionUrl());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc testSetUrl_assertCorrectUrlUpdated() {\n    let newUrl = \"https://new.cloud.local\"\n    ownCloudSession.setSessionUrl(newUrl)\n    XCTAssertEqual(newUrl, ownCloudSession.getSessionUrl(), \"OwnCloud session URL not updated\")\n}\n```"
+    },
+    {
+        "method_name": "getUrl_assertCorrectUrlRetrieved",
+        "method_code": "@Test\n    public void getUrl_assertCorrectUrlRetrieved() {\n        assertEquals(\"OwnCloudSession URL not correct\", SESSION_URL, ownCloudSession.getSessionUrl());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUrl_assertCorrectUrlRetrieved from OwnCloudSessionTest.java into Swift.\n\n        Input:\n\n        Method Name: getUrl_assertCorrectUrlRetrieved\n\n        Method Code: @Test\n    public void getUrl_assertCorrectUrlRetrieved() {\n        assertEquals(\"OwnCloudSession URL not correct\", SESSION_URL, ownCloudSession.getSessionUrl());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc testGetUrl_assertCorrectUrlRetrieved() {\n    XCTAssertEqual(ownCloudSession.getSessionUrl(), SESSION_URL, \"OwnCloudSession URL not correct\")\n}\n```"
+    },
+    {
+        "method_name": "getEntryId_assertCorrectIdRetrieved",
+        "method_code": "@Test\n    public void getEntryId_assertCorrectIdRetrieved() {\n        assertEquals(\"OwnCloudSession ID is incorrect\", SESSION_ID, ownCloudSession.getEntryId());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getEntryId_assertCorrectIdRetrieved from OwnCloudSessionTest.java into Swift.\n\n        Input:\n\n        Method Name: getEntryId_assertCorrectIdRetrieved\n\n        Method Code: @Test\n    public void getEntryId_assertCorrectIdRetrieved() {\n        assertEquals(\"OwnCloudSession ID is incorrect\", SESSION_ID, ownCloudSession.getEntryId());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc testGetEntryId_assertCorrectIdRetrieved() {\n    XCTAssertEqual(ownCloudSession.getEntryId(), SESSION_ID, \"OwnCloudSession ID is incorrect\")\n}\n```"
+    }
+]

@@ -1,0 +1,16 @@
+{
+    "methods": [
+        {
+            "name": "onThreadFinished",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Thread",
+                    "name": "thread"
+                }
+            ],
+            "start_position": 248,
+            "end_position": 291
+        }
+    ]
+}

@@ -1,0 +1,401 @@
+{
+    "method_calls": {
+        "DownloadFileOperation.class": [
+            "getSimpleName"
+        ],
+        "getFile()": [
+            "getFileId"
+        ],
+        "unknown": [
+            "getFile",
+            "getUser",
+            "isMatching",
+            "cancel",
+            "getTmpPath",
+            "getTmpFolder",
+            "getSavePath",
+            "decodeStringToBase64Bytes"
+        ],
+        "getUser().getAccountName()": [
+            "equals"
+        ],
+        "getUser()": [
+            "getAccountName"
+        ],
+        "file": [
+            "getStoragePath",
+            "getRemotePath",
+            "getMimeType",
+            "getFileLength",
+            "getModificationTimestamp",
+            "isEncrypted",
+            "getParentRemotePath",
+            "getEncryptedFileName",
+            "getFileName"
+        ],
+        "new File(file.getStoragePath())": [
+            "getParentFile"
+        ],
+        "parentFile": [
+            "exists",
+            "mkdirs",
+            "canWrite"
+        ],
+        "path": [
+            "canWrite",
+            "getAbsolutePath"
+        ],
+        "FileStorageUtils": [
+            "getDefaultSavePathFor",
+            "getTemporalPath"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "MimeTypeMap.getSingleton()": [
+            "getMimeTypeFromExtension"
+        ],
+        "MimeTypeMap": [
+            "getSingleton"
+        ],
+        "file.getRemotePath()": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "Log_OC": [
+            "e",
+            "d",
+            "i"
+        ],
+        "cancellationRequested": [
+            "get",
+            "set"
+        ],
+        "context": [
+            "get"
+        ],
+        "dataTransferListeners": [
+            "iterator",
+            "add",
+            "remove"
+        ],
+        "listener": [
+            "hasNext",
+            "next"
+        ],
+        "downloadOperation": [
+            "addDatatransferProgressListener",
+            "execute",
+            "getModificationTimestamp",
+            "getEtag",
+            "cancel"
+        ],
+        "result": [
+            "isSuccess",
+            "getLogMessage"
+        ],
+        "newFile.getParentFile()": [
+            "exists",
+            "mkdirs",
+            "getAbsolutePath"
+        ],
+        "newFile": [
+            "getParentFile",
+            "setLastModified"
+        ],
+        "operationContext": [
+            "getContentResolver"
+        ],
+        "fileDataStorageManager": [
+            "getFileByEncryptedRemotePath"
+        ],
+        "EncryptionUtils": [
+            "downloadFolderMetadata",
+            "getCipher",
+            "decryptFile"
+        ],
+        "((DecryptedFolderMetadataFile) object)\n                        .getMetadata()\n                        .getFiles()": [
+            "get"
+        ],
+        "((DecryptedFolderMetadataFile) object)\n                        .getMetadata()": [
+            "getFiles"
+        ],
+        "((DecryptedFolderMetadataFile) object)": [
+            "getMetadata"
+        ],
+        "decryptedFile": [
+            "getKey",
+            "getNonce",
+            "getAuthenticationTag",
+            "getEncrypted",
+            "getInitializationVector"
+        ],
+        "((DecryptedFolderMetadataFileV1) object)\n                            .getFiles()": [
+            "get"
+        ],
+        "((DecryptedFolderMetadataFileV1) object)": [
+            "getFiles"
+        ],
+        "decryptedFile.getEncrypted()": [
+            "getKey"
+        ],
+        "tmpFile": [
+            "renameTo",
+            "delete",
+            "getAbsolutePath"
+        ],
+        "new FileExportUtils()": [
+            "exportFile"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "throw_statement",
+        "expression_statement",
+        "return_statement",
+        "try_statement",
+        "synchronized_statement",
+        "while_statement"
+    ],
+    "methods": [
+        {
+            "name": "isMatching",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "long",
+                    "name": "fileId"
+                }
+            ],
+            "start_position": 4070,
+            "end_position": 4234,
+            "body_start": 4129,
+            "body_end": 4234
+        },
+        {
+            "name": "cancelMatchingOperation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "long",
+                    "name": "fileId"
+                }
+            ],
+            "start_position": 4240,
+            "end_position": 4395,
+            "body_start": 4309,
+            "body_end": 4395
+        },
+        {
+            "name": "getSavePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 4401,
+            "end_position": 5022,
+            "body_start": 4429,
+            "body_end": 5022
+        },
+        {
+            "name": "getTmpPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5028,
+            "end_position": 5157,
+            "body_start": 5055,
+            "body_end": 5157
+        },
+        {
+            "name": "getTmpFolder",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5163,
+            "end_position": 5271,
+            "body_start": 5192,
+            "body_end": 5271
+        },
+        {
+            "name": "getRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5277,
+            "end_position": 5351,
+            "body_start": 5307,
+            "body_end": 5351
+        },
+        {
+            "name": "getMimeType",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5357,
+            "end_position": 6059,
+            "body_start": 5385,
+            "body_end": 6059
+        },
+        {
+            "name": "getSize",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 6065,
+            "end_position": 6131,
+            "body_start": 6087,
+            "body_end": 6131
+        },
+        {
+            "name": "getModificationTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 6137,
+            "end_position": 6283,
+            "body_start": 6176,
+            "body_end": 6283
+        },
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 6289,
+            "end_position": 12109,
+            "body_start": 6362,
+            "body_end": 12109
+        },
+        {
+            "name": "cancel",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12115,
+            "end_position": 12329,
+            "body_start": 12136,
+            "body_end": 12329
+        },
+        {
+            "name": "addDownloadDataTransferProgressListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OnDatatransferProgressListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 12336,
+            "end_position": 12542,
+            "body_start": 12429,
+            "body_end": 12542
+        },
+        {
+            "name": "removeDatatransferProgressListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OnDatatransferProgressListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 12548,
+            "end_position": 12752,
+            "body_start": 12636,
+            "body_end": 12752
+        },
+        {
+            "name": "getUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 12758,
+            "end_position": 12813,
+            "body_start": 12780,
+            "body_end": 12813
+        },
+        {
+            "name": "getFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 12819,
+            "end_position": 12876,
+            "body_start": 12843,
+            "body_end": 12876
+        },
+        {
+            "name": "getBehaviour",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 12882,
+            "end_position": 12949,
+            "body_start": 12911,
+            "body_end": 12949
+        },
+        {
+            "name": "getEtag",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 12955,
+            "end_position": 13012,
+            "body_start": 12979,
+            "body_end": 13012
+        },
+        {
+            "name": "getActivityName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 13018,
+            "end_position": 13091,
+            "body_start": 13050,
+            "body_end": 13091
+        },
+        {
+            "name": "getPackageName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 13097,
+            "end_position": 13168,
+            "body_start": 13128,
+            "body_end": 13168
+        },
+        {
+            "name": "getDownloadType",
+            "return_type": "DownloadType",
+            "parameters": [],
+            "start_position": 13174,
+            "end_position": 13248,
+            "body_start": 13212,
+            "body_end": 13248
+        }
+    ],
+    "local_variables": {
+        "parentFile": "File",
+        "path": "File",
+        "mimeType": "String",
+        "operationContext": "Context",
+        "result": "RemoteOperationResult",
+        "newFile": "File",
+        "moved": "boolean",
+        "tmpFile": "File",
+        "tmpFolder": "String",
+        "listener": "Iterator<OnDatatransferProgressListener>",
+        "fileDataStorageManager": "FileDataStorageManager",
+        "parent": "OCFile",
+        "object": "Object",
+        "keyString": "String",
+        "nonceString": "String",
+        "authenticationTagString": "String",
+        "decryptedFile": "com.owncloud.android.datamodel.e2e.v1.decrypted.DecryptedFile",
+        "key": "byte[]",
+        "iv": "byte[]",
+        "cipher": "Cipher",
+        "isLastModifiedSet": "boolean"
+    }
+}

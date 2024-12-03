@@ -1,0 +1,356 @@
+{
+    "method_calls": {
+        "FileDownloadFragment.class": [
+            "getSimpleName"
+        ],
+        "args": [
+            "putParcelable",
+            "putBoolean",
+            "getBoolean"
+        ],
+        "frag": [
+            "setArguments"
+        ],
+        "super": [
+            "onCreate",
+            "onCreateView",
+            "onSaveInstanceState",
+            "onStart",
+            "onResume",
+            "onPause",
+            "onStop",
+            "onDestroy",
+            "getView"
+        ],
+        "unknown": [
+            "getArguments",
+            "setFile",
+            "requireArguments",
+            "getFile",
+            "getActivity",
+            "setButtonsForRemote",
+            "setButtonsForTransferring",
+            "listenForTransferProgress",
+            "leaveTransferProgress",
+            "requireActivity",
+            "getView"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "requireArguments()": [
+            "getBoolean"
+        ],
+        "FileDownloadHelper.Companion.instance()": [
+            "downloadFile"
+        ],
+        "FileDownloadHelper.Companion": [
+            "instance"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "mView": [
+            "findViewById"
+        ],
+        "viewThemeUtils.platform": [
+            "themeHorizontalProgressBar"
+        ],
+        "(mView.findViewById(R.id.cancelBtn))": [
+            "setOnClickListener"
+        ],
+        "(mView.findViewById(R.id.fileDownloadLL))": [
+            "setOnClickListener"
+        ],
+        "previewImageActivity": [
+            "toggleFullScreen"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "outState": [
+            "putParcelable",
+            "putBoolean"
+        ],
+        "v": [
+            "getId"
+        ],
+        "containerActivity.getFileOperationsHelper()": [
+            "cancelTransference"
+        ],
+        "containerActivity": [
+            "getFileOperationsHelper",
+            "getFileDownloadProgressListener"
+        ],
+        "requireActivity()": [
+            "finish"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "getView().findViewById(R.id.cancelBtn)": [
+            "setVisibility"
+        ],
+        "getView()": [
+            "findViewById"
+        ],
+        "getView().findViewById(R.id.progressBar)": [
+            "setVisibility"
+        ],
+        "progressText": [
+            "setText",
+            "setVisibility"
+        ],
+        "getView().findViewById(R.id.errorText)": [
+            "setVisibility"
+        ],
+        "getView().findViewById(R.id.error_image)": [
+            "setVisibility"
+        ],
+        "getView().findViewById(R.id.progressText)": [
+            "setVisibility"
+        ],
+        "containerActivity.getFileDownloadProgressListener()": [
+            "addDataTransferProgressListener",
+            "removeDataTransferProgressListener"
+        ],
+        "mProgressBar": [
+            "get"
+        ],
+        "pb": [
+            "setProgress",
+            "postInvalidate"
+        ]
+    },
+    "methods": [
+        {
+            "name": "newInstance",
+            "return_type": "Fragment",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "boolean",
+                    "name": "ignoreFirstSavedState"
+                }
+            ],
+            "start_position": 3347,
+            "end_position": 3752,
+            "body_start": 3437,
+            "body_end": 3752
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 4162,
+            "end_position": 4664,
+            "body_start": 4224,
+            "body_end": 4664
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 4671,
+            "end_position": 6223,
+            "body_start": 4812,
+            "body_end": 6223
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 6230,
+            "end_position": 6626,
+            "body_start": 6302,
+            "body_end": 6626
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6632,
+            "end_position": 6737,
+            "body_start": 6668,
+            "body_end": 6737
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6743,
+            "end_position": 6813,
+            "body_start": 6780,
+            "body_end": 6813
+        },
+        {
+            "name": "onPause",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6820,
+            "end_position": 6888,
+            "body_start": 6856,
+            "body_end": 6888
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6895,
+            "end_position": 6994,
+            "body_start": 6930,
+            "body_end": 6994
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7000,
+            "end_position": 7072,
+            "body_start": 7038,
+            "body_end": 7072
+        },
+        {
+            "name": "getView",
+            "return_type": "View",
+            "parameters": [],
+            "start_position": 7079,
+            "end_position": 7266,
+            "body_start": 7115,
+            "body_end": 7266
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "v"
+                }
+            ],
+            "start_position": 7273,
+            "end_position": 7573,
+            "body_start": 7315,
+            "body_end": 7573
+        },
+        {
+            "name": "setButtonsForTransferring",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7659,
+            "end_position": 8297,
+            "body_start": 7700,
+            "body_end": 8297
+        },
+        {
+            "name": "setButtonsForRemote",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8457,
+            "end_position": 8969,
+            "body_start": 8492,
+            "body_end": 8969
+        },
+        {
+            "name": "listenForTransferProgress",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8976,
+            "end_position": 9351,
+            "body_start": 9016,
+            "body_end": 9351
+        },
+        {
+            "name": "leaveTransferProgress",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9358,
+            "end_position": 9694,
+            "body_start": 9394,
+            "body_end": 9694
+        },
+        {
+            "name": "onTransferProgress",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "progressRate"
+                },
+                {
+                    "type": "long",
+                    "name": "totalTransferredSoFar"
+                },
+                {
+                    "type": "long",
+                    "name": "totalToTransfer"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 10102,
+            "end_position": 10656,
+            "body_start": 10263,
+            "body_end": 10656
+        },
+        {
+            "name": "setError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "error"
+                }
+            ],
+            "start_position": 10668,
+            "end_position": 10735,
+            "body_start": 10704,
+            "body_end": 10735
+        }
+    ],
+    "local_variables": {
+        "frag": "FileDownloadFragment",
+        "args": "Bundle",
+        "progressBar": "ProgressBar",
+        "progressText": "TextView",
+        "percent": "int",
+        "pb": "ProgressBar"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement"
+    ]
+}

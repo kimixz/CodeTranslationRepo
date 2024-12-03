@@ -1,0 +1,72 @@
+{
+    "methods": [
+        {
+            "name": "deleteFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 623,
+            "end_position": 1908,
+            "body_start": 660,
+            "body_end": 1908
+        },
+        {
+            "name": "deleteFile",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1914,
+            "end_position": 3206,
+            "body_start": 1968,
+            "body_end": 3206
+        }
+    ],
+    "local_variables": {
+        "parent": "String",
+        "path": "String",
+        "folder": "OCFile",
+        "parentFolder": "OCFile",
+        "ocUpload": "OCUpload",
+        "file": "OCFile"
+    },
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "assertTrue",
+            "getStorageManager",
+            "assertNotNull",
+            "getDummyFile",
+            "uploadOCUpload"
+        ],
+        "new CreateFolderOperation(path, user, targetContext, getStorageManager()).execute(client)": [
+            "isSuccess"
+        ],
+        "new CreateFolderOperation(path, user, targetContext, getStorageManager())": [
+            "execute"
+        ],
+        "getStorageManager()": [
+            "getFileByPath"
+        ],
+        "new RemoveFileOperation(folder,\n                                           false,\n                                           user,\n                                           false,\n                                           targetContext,\n                                           getStorageManager())\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new RemoveFileOperation(folder,\n                                           false,\n                                           user,\n                                           false,\n                                           targetContext,\n                                           getStorageManager())": [
+            "execute"
+        ],
+        "new RemoveFileOperation(parentFolder,\n                                           false,\n                                           user,\n                                           false,\n                                           targetContext,\n                                           getStorageManager())\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new RemoveFileOperation(parentFolder,\n                                           false,\n                                           user,\n                                           false,\n                                           targetContext,\n                                           getStorageManager())": [
+            "execute"
+        ],
+        "getDummyFile(\"empty.txt\")": [
+            "getAbsolutePath"
+        ],
+        "new RemoveFileOperation(file,\n                                           false,\n                                           user,\n                                           false,\n                                           targetContext,\n                                           getStorageManager())\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new RemoveFileOperation(file,\n                                           false,\n                                           user,\n                                           false,\n                                           targetContext,\n                                           getStorageManager())": [
+            "execute"
+        ]
+    }
+}

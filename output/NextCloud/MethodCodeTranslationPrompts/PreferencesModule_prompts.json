@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "sharedPreferences",
+        "method_code": "@Provides\n    @Singleton\n    public SharedPreferences sharedPreferences(Context context) {\n        return android.preference.PreferenceManager.getDefaultSharedPreferences(context);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled sharedPreferences from PreferencesModule.java into Swift.\n\n        Input:\n\n        Method Name: sharedPreferences\n\n        Method Code: @Provides\n    @Singleton\n    public SharedPreferences sharedPreferences(Context context) {\n        return android.preference.PreferenceManager.getDefaultSharedPreferences(context);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc sharedPreferences(context: Context) -> UserDefaults {\n    return UserDefaults.standard\n}\n```"
+    },
+    {
+        "method_name": "appPreferences",
+        "method_code": "@Provides\n    @Singleton\n    public AppPreferences appPreferences(Context context,\n                                         SharedPreferences sharedPreferences,\n                                         UserAccountManager userAccountManager) {\n        return new AppPreferencesImpl(context, sharedPreferences, userAccountManager);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled appPreferences from PreferencesModule.java into Swift.\n\n        Input:\n\n        Method Name: appPreferences\n\n        Method Code: @Provides\n    @Singleton\n    public AppPreferences appPreferences(Context context,\n                                         SharedPreferences sharedPreferences,\n                                         UserAccountManager userAccountManager) {\n        return new AppPreferencesImpl(context, sharedPreferences, userAccountManager);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc appPreferences(context: Context, sharedPreferences: UserDefaults, userAccountManager: UserAccountManager) -> AppPreferences {\n    return AppPreferencesImpl(context: context, sharedPreferences: sharedPreferences, userAccountManager: userAccountManager)\n}\n```"
+    }
+]

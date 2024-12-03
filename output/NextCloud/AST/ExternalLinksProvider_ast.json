@@ -1,0 +1,146 @@
+{
+    "method_calls": {
+        "ExternalLinksProvider.class": [
+            "getSimpleName"
+        ],
+        "Log_OC": [
+            "v",
+            "e"
+        ],
+        "externalLink": [
+            "getName",
+            "getIconUrl",
+            "getLanguage",
+            "getType",
+            "getUrl",
+            "getRedirect"
+        ],
+        "unknown": [
+            "createContentValuesFromExternalLink",
+            "createExternalLinkFromCursor"
+        ],
+        "mContentResolver": [
+            "insert",
+            "delete",
+            "query"
+        ],
+        "Long": [
+            "parseLong"
+        ],
+        "result.getPathSegments()": [
+            "get"
+        ],
+        "result": [
+            "getPathSegments"
+        ],
+        "type": [
+            "toString"
+        ],
+        "cursor": [
+            "moveToFirst",
+            "moveToNext",
+            "close",
+            "getInt",
+            "getColumnIndexOrThrow",
+            "getString"
+        ],
+        "list": [
+            "add"
+        ],
+        "cv": [
+            "put"
+        ],
+        "externalLink.getType()": [
+            "toString"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "throw_statement",
+        "expression_statement",
+        "return_statement",
+        "do_statement",
+        "break_statement"
+    ],
+    "methods": [
+        {
+            "name": "storeExternalLink",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "ExternalLink",
+                    "name": "externalLink"
+                }
+            ],
+            "start_position": 1405,
+            "end_position": 1972,
+            "body_start": 1462,
+            "body_end": 1972
+        },
+        {
+            "name": "deleteAllExternalLinks",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 2078,
+            "end_position": 2310,
+            "body_start": 2114,
+            "body_end": 2310
+        },
+        {
+            "name": "getExternalLink",
+            "return_type": "List<ExternalLink>",
+            "parameters": [
+                {
+                    "type": "ExternalLinkType",
+                    "name": "type"
+                }
+            ],
+            "start_position": 2426,
+            "end_position": 3461,
+            "body_start": 2491,
+            "body_end": 3461
+        },
+        {
+            "name": "createContentValuesFromExternalLink",
+            "return_type": "ContentValues",
+            "parameters": [
+                {
+                    "type": "ExternalLink",
+                    "name": "externalLink"
+                }
+            ],
+            "start_position": 3653,
+            "end_position": 4409,
+            "body_start": 3751,
+            "body_end": 4409
+        },
+        {
+            "name": "createExternalLinkFromCursor",
+            "return_type": "ExternalLink",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cursor"
+                }
+            ],
+            "start_position": 4551,
+            "end_position": 6274,
+            "body_start": 4616,
+            "body_end": 6274
+        }
+    ],
+    "local_variables": {
+        "cv": "ContentValues",
+        "result": "Uri",
+        "cursor": "Cursor",
+        "list": "List<ExternalLink>",
+        "externalLink": "ExternalLink",
+        "id": "int",
+        "iconUrl": "String",
+        "language": "String",
+        "type": "ExternalLinkType",
+        "name": "String",
+        "url": "String",
+        "redirect": "boolean"
+    }
+}

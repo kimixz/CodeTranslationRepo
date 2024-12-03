@@ -1,0 +1,46 @@
+{
+    "methods": [
+        {
+            "name": "open",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1037,
+            "end_position": 1200,
+            "body_start": 1086,
+            "body_end": 1200
+        },
+        {
+            "name": "userInfoDetail",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1206,
+            "end_position": 2118,
+            "body_start": 1265,
+            "body_end": 2118
+        }
+    ],
+    "local_variables": {
+        "sut": "ManageAccountsActivity",
+        "user": "User",
+        "userInfo": "UserInfo"
+    },
+    "method_calls": {
+        "activityRule": [
+            "launchActivity"
+        ],
+        "unknown": [
+            "shortSleep",
+            "screenshot",
+            "getCurrentActivity"
+        ],
+        "sut.accountManager": [
+            "getUser"
+        ],
+        "sut": [
+            "showUser"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement"
+    ]
+}

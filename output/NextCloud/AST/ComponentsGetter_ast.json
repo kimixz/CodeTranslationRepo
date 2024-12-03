@@ -1,0 +1,39 @@
+{
+    "methods": [
+        {
+            "name": "getFileDownloadProgressListener",
+            "return_type": "FileDownloadWorker.FileDownloadProgressListener",
+            "parameters": [],
+            "start_position": 1007,
+            "end_position": 1096
+        },
+        {
+            "name": "getFileUploaderHelper",
+            "return_type": "FileUploadHelper",
+            "parameters": [],
+            "start_position": 1240,
+            "end_position": 1288
+        },
+        {
+            "name": "getOperationsServiceBinder",
+            "return_type": "OperationsServiceBinder",
+            "parameters": [],
+            "start_position": 1437,
+            "end_position": 1497
+        },
+        {
+            "name": "getStorageManager",
+            "return_type": "FileDataStorageManager",
+            "parameters": [],
+            "start_position": 1503,
+            "end_position": 1553
+        },
+        {
+            "name": "getFileOperationsHelper",
+            "return_type": "FileOperationsHelper",
+            "parameters": [],
+            "start_position": 1559,
+            "end_position": 1613
+        }
+    ]
+}

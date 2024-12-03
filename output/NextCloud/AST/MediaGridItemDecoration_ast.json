@@ -1,0 +1,33 @@
+{
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "methods": [
+        {
+            "name": "getItemOffsets",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Rect",
+                    "name": "outRect"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "RecyclerView",
+                    "name": "parent"
+                },
+                {
+                    "type": "RecyclerView.State",
+                    "name": "state"
+                }
+            ],
+            "start_position": 628,
+            "end_position": 870,
+            "body_start": 741,
+            "body_end": 870
+        }
+    ]
+}

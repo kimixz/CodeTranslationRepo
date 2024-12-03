@@ -1,0 +1,21 @@
+{
+    "methods": [
+        {
+            "name": "getRepository",
+            "return_type": "ActivitiesRepository",
+            "parameters": [
+                {
+                    "type": "ActivitiesServiceApi",
+                    "name": "activitiesServiceApi"
+                }
+            ],
+            "start_position": 384,
+            "end_position": 574,
+            "body_start": 498,
+            "body_end": 574
+        }
+    ],
+    "code_constructs": [
+        "return_statement"
+    ]
+}

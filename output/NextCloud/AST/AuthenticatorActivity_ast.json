@@ -1,0 +1,1587 @@
+{
+    "method_calls": {
+        "AuthenticatorActivity.class": [
+            "getSimpleName"
+        ],
+        "super": [
+            "onCreate",
+            "onKeyDown",
+            "shouldInterceptRequest",
+            "onPageStarted",
+            "onPageFinished",
+            "onSaveInstanceState",
+            "onRestoreInstanceState",
+            "onNewIntent",
+            "finish",
+            "onResume",
+            "onPause",
+            "onDestroy",
+            "onRequestPermissionsResult"
+        ],
+        "viewThemeUtilsFactory": [
+            "withPrimaryAsBackground"
+        ],
+        "viewThemeUtils.platform": [
+            "colorStatusBar",
+            "colorCircularProgressBar",
+            "resetStatusBar",
+            "colorTextView",
+            "colorEditTextOnPrimary",
+            "tintDrawable"
+        ],
+        "getResources()": [
+            "getColor",
+            "getString",
+            "getBoolean",
+            "openRawResource"
+        ],
+        "unknown": [
+            "getResources",
+            "getIntent",
+            "getString",
+            "checkIfViaSSO",
+            "deleteCookies",
+            "getSupportActionBar",
+            "getLayoutInflater",
+            "setContentView",
+            "anonymouslyPostLoginRequest",
+            "initOverallUi",
+            "initAuthorizationPreFragment",
+            "showEnforcedServers",
+            "initServerPreFragment",
+            "showAuthStatus",
+            "checkOcServer",
+            "poolLogin",
+            "getResponseOfAnonymouslyPostLoginRequest",
+            "getLoginUrl",
+            "runOnUiThread",
+            "initLoginInfoView",
+            "launchDefaultWebBrowser",
+            "startActivity",
+            "getWebLoginUserAgent",
+            "setClient",
+            "finish",
+            "getSupportFragmentManager",
+            "parseAndLoginFromWebView",
+            "getWindow",
+            "parseLoginDataUrl",
+            "showServerStatus",
+            "onScan",
+            "accessRootFolder",
+            "bindService",
+            "doOnResumeAndBound",
+            "unbindService",
+            "onGetServerInfoFinish",
+            "onGetUserNameFinish",
+            "createAccount",
+            "updateAccountAuthentication",
+            "updateStatusIconFailUserName",
+            "checkBasicAuthorization",
+            "updateServerStatusIconAndText",
+            "showUntrustedCertDialog",
+            "recreate",
+            "dismissWaitingDialog",
+            "getUserCapabilitiesAndFinish",
+            "updateAuthStatusIconAndText",
+            "getContentResolver",
+            "endSuccess",
+            "setAccountAuthenticatorResult",
+            "setResult",
+            "startQRScanner",
+            "registerForActivityResult",
+            "performLoginFlowV2",
+            "completeLoginFlow"
+        ],
+        "getIntent()": [
+            "getData",
+            "getBooleanExtra",
+            "getByteExtra",
+            "getExtras"
+        ],
+        "data.toString()": [
+            "startsWith"
+        ],
+        "data": [
+            "toString",
+            "split",
+            "getStringExtra"
+        ],
+        "onboarding": [
+            "launchFirstRunIfNeeded"
+        ],
+        "actionBar": [
+            "hide",
+            "setDisplayHomeAsUpEnabled",
+            "setDisplayShowHomeEnabled",
+            "setDisplayShowTitleEnabled"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "savedInstanceState": [
+            "getLong",
+            "getBoolean",
+            "getString",
+            "getInt"
+        ],
+        "MainApp": [
+            "isClientBrandedPlus",
+            "getUserAgent",
+            "getAppContext",
+            "getAccountType"
+        ],
+        "MDMConfig.INSTANCE": [
+            "getBaseUrl",
+            "multiAccountSupport",
+            "enforceProtection"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "AccountSetupWebviewBinding": [
+            "inflate"
+        ],
+        "accountSetupWebviewBinding": [
+            "getRoot"
+        ],
+        "AccountSetupBinding": [
+            "inflate"
+        ],
+        "accountSetupBinding": [
+            "getRoot"
+        ],
+        "ProcessLifecycleOwner.get().getLifecycle()": [
+            "addObserver",
+            "removeObserver"
+        ],
+        "ProcessLifecycleOwner.get()": [
+            "getLifecycle"
+        ],
+        "ProcessLifecycleOwner": [
+            "get"
+        ],
+        "accountSetupBinding.hostUrlFrame": [
+            "setVisibility"
+        ],
+        "accountSetupBinding.hostUrlInputHelperText": [
+            "setVisibility",
+            "setText"
+        ],
+        "accountSetupBinding.scanQr": [
+            "setVisibility",
+            "setOnClickListener",
+            "getDrawable"
+        ],
+        "accountSetupBinding.serversSpinner": [
+            "setVisibility",
+            "setAdapter",
+            "setOnItemSelectedListener"
+        ],
+        "adapter": [
+            "setDropDownViewResource",
+            "add"
+        ],
+        "servers": [
+            "add",
+            "get"
+        ],
+        "new Gson()": [
+            "fromJson"
+        ],
+        "new TypeToken<ArrayList<EnforcedServer>>() {\n                                                              }": [
+            "getType"
+        ],
+        "e": [
+            "getName",
+            "getUrl",
+            "getMessage"
+        ],
+        "URLUtil": [
+            "isValidUrl"
+        ],
+        "accountSetupBinding.hostUrlInput": [
+            "setText",
+            "setImeOptions",
+            "setOnEditorActionListener",
+            "getText"
+        ],
+        "Log_OC": [
+            "d",
+            "e",
+            "w"
+        ],
+        "CookieSyncManager": [
+            "createInstance"
+        ],
+        "CookieManager.getInstance()": [
+            "removeAllCookies"
+        ],
+        "CookieManager": [
+            "getInstance"
+        ],
+        "JsonParser.parseString(response)": [
+            "getAsJsonObject"
+        ],
+        "JsonParser": [
+            "parseString"
+        ],
+        "jsonObject.getAsJsonObject(\"poll\").get(\"token\")": [
+            "getAsString"
+        ],
+        "jsonObject.getAsJsonObject(\"poll\")": [
+            "get"
+        ],
+        "jsonObject": [
+            "getAsJsonObject",
+            "getString"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage",
+            "getData",
+            "convertIdn",
+            "showServerOutdatedSnackbar",
+            "showErrorAndFinishActivity"
+        ],
+        "thread": [
+            "start"
+        ],
+        "new FormBody.Builder()": [
+            "build",
+            "add"
+        ],
+        "clientFactory": [
+            "createPlainClient"
+        ],
+        "post": [
+            "execute",
+            "getResponseBodyAsString"
+        ],
+        "response.get(\"login\")": [
+            "getAsString"
+        ],
+        "response": [
+            "get",
+            "putString",
+            "isEmpty"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "intent": [
+            "setFlags",
+            "getBooleanExtra",
+            "getData",
+            "getExtras",
+            "putExtras",
+            "putExtra"
+        ],
+        "Build.MANUFACTURER.substring(0, 1)": [
+            "toUpperCase"
+        ],
+        "Build.MANUFACTURER": [
+            "substring"
+        ],
+        "Locale": [
+            "getDefault"
+        ],
+        "Build.MANUFACTURER.substring(1)": [
+            "toLowerCase"
+        ],
+        "accountSetupWebviewBinding.loginWebview": [
+            "setVisibility",
+            "getSettings",
+            "loadUrl",
+            "canGoBack",
+            "goBack",
+            "setWebViewClient",
+            "loadData"
+        ],
+        "new WebViewUtil(this)": [
+            "setProxyKKPlus"
+        ],
+        "accountSetupWebviewBinding.loginWebview.getSettings()": [
+            "setAllowFileAccess",
+            "setJavaScriptEnabled",
+            "setDomStorageEnabled",
+            "setUserAgentString",
+            "setSaveFormData",
+            "setSavePassword"
+        ],
+        "headers": [
+            "put"
+        ],
+        "baseURL": [
+            "isEmpty"
+        ],
+        "url": [
+            "startsWith"
+        ],
+        "event": [
+            "getAction"
+        ],
+        "Snackbar.make(view, R.string.strict_mode, Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "Snackbar": [
+            "make"
+        ],
+        "accountSetupWebviewBinding.loginWebviewProgressBar": [
+            "setVisibility"
+        ],
+        "mServerInfo.mVersion": [
+            "isOlderThan",
+            "getVersion"
+        ],
+        "getWindow()": [
+            "setNavigationBarColor"
+        ],
+        "ContextCompat": [
+            "getColor"
+        ],
+        "customError": [
+            "isEmpty"
+        ],
+        "AuthenticatorUrlUtils.INSTANCE": [
+            "normalizeUrlSuffix",
+            "stripIndexPhpOrAppsFiles",
+            "normalizeScheme",
+            "trimWebdavSuffix"
+        ],
+        "dataString": [
+            "length",
+            "substring"
+        ],
+        "prefix": [
+            "length"
+        ],
+        "value": [
+            "startsWith",
+            "substring"
+        ],
+        "URLDecoder": [
+            "decode"
+        ],
+        "(\"user\" + LOGIN_URL_DATA_KEY_VALUE_SEPARATOR)": [
+            "length"
+        ],
+        "(\"password\" + LOGIN_URL_DATA_KEY_VALUE_SEPARATOR)": [
+            "length"
+        ],
+        "(\"server\" + LOGIN_URL_DATA_KEY_VALUE_SEPARATOR)": [
+            "length"
+        ],
+        "accountSetupBinding.hostUrlContainer": [
+            "setEndIconOnClickListener"
+        ],
+        "String": [
+            "format"
+        ],
+        "viewThemeUtils.material": [
+            "colorTextInputLayout"
+        ],
+        "deviceInfo": [
+            "hasCamera"
+        ],
+        "mAccountMgr": [
+            "getUserData",
+            "setPassword",
+            "addAccountExplicitly",
+            "notifyAccountAuthenticated",
+            "setUserData"
+        ],
+        "mServerInfo.mBaseUrl": [
+            "startsWith"
+        ],
+        "accountManager": [
+            "getServerVersion",
+            "getAccounts",
+            "setCurrentOwnCloudAccount",
+            "getUser",
+            "exists"
+        ],
+        "getString(R.string.webview_login_url)": [
+            "trim"
+        ],
+        "AuthenticationMethod": [
+            "valueOf"
+        ],
+        "outState": [
+            "putLong",
+            "putBoolean",
+            "putString"
+        ],
+        "mServerInfo.mAuthMethod": [
+            "name"
+        ],
+        "mAsyncTask": [
+            "cancel",
+            "execute"
+        ],
+        "OwnCloudCredentialsFactory": [
+            "newBasicCredentials"
+        ],
+        "passCodeManager": [
+            "onActivityResumed"
+        ],
+        "Toast.makeText(this, R.string.no_mutliple_accounts_allowed, Toast.LENGTH_LONG)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "extras": [
+            "getString"
+        ],
+        "\"SSO\"": [
+            "equals"
+        ],
+        "mOperationsServiceBinder": [
+            "removeOperationListener",
+            "queueNewOperation",
+            "addOperationListener",
+            "dispatchResultIfFinished"
+        ],
+        "accountSetupBinding.hostUrlInput.getText().toString()": [
+            "isEmpty",
+            "trim"
+        ],
+        "accountSetupBinding.hostUrlInput.getText()": [
+            "toString"
+        ],
+        "uri": [
+            "length"
+        ],
+        "getServerInfoIntent": [
+            "setAction",
+            "putExtra"
+        ],
+        "IndeterminateProgressDialog": [
+            "newInstance"
+        ],
+        "getSupportFragmentManager()": [
+            "beginTransaction",
+            "findFragmentByTag"
+        ],
+        "ft": [
+            "add",
+            "commitAllowingStateLoss",
+            "addToBackStack"
+        ],
+        "operation": [
+            "hashCode"
+        ],
+        "result": [
+            "isSuccess",
+            "getCode",
+            "getLogMessage",
+            "getData",
+            "getException",
+            "isServerFail",
+            "isException",
+            "getResultCode"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "CapabilityUtils": [
+            "checkOutdatedWarning"
+        ],
+        "webViewUser": [
+            "isEmpty"
+        ],
+        "webViewPassword": [
+            "isEmpty"
+        ],
+        "new Thread(() -> {\n                    OwnCloudClient client = OwnCloudClientFactory.createOwnCloudClient(Uri.parse(mServerInfo.mBaseUrl),\n                                                                                       this,\n                                                                                       true);\n                    RemoteOperationResult remoteOperationResult = new GetCapabilitiesRemoteOperation().execute(client);\n\n                    if (remoteOperationResult.isSuccess() &&\n                        remoteOperationResult.getData() != null &&\n                        remoteOperationResult.getData().size() > 0) {\n                        OCCapability capability = (OCCapability) remoteOperationResult.getData().get(0);\n                        try {\n                            primaryColor = Color.parseColor(capability.getServerColor());\n                        } catch (Exception e) {\n                            // falls back to primary color\n                        }\n                    }\n                })": [
+            "start"
+        ],
+        "OwnCloudClientFactory": [
+            "createOwnCloudClient"
+        ],
+        "new GetCapabilitiesRemoteOperation()": [
+            "execute"
+        ],
+        "remoteOperationResult": [
+            "isSuccess",
+            "getData"
+        ],
+        "remoteOperationResult.getData()": [
+            "size",
+            "get"
+        ],
+        "Color": [
+            "parseColor"
+        ],
+        "capability": [
+            "getServerColor"
+        ],
+        "accountSetupWebviewBinding.loginFlowV2": [
+            "getRoot"
+        ],
+        "loginFlowLayout": [
+            "setVisibility"
+        ],
+        "cancelButton": [
+            "setOnClickListener"
+        ],
+        "loginFlowExecutorService": [
+            "shutdown",
+            "scheduleWithFixedDelay"
+        ],
+        "accountSetupBinding.hostUrlInput\n                        .getText()\n                        .toString()\n                        .trim()\n                        .toLowerCase(Locale.ROOT)": [
+            "startsWith"
+        ],
+        "accountSetupBinding.hostUrlInput\n                        .getText()\n                        .toString()\n                        .trim()": [
+            "toLowerCase"
+        ],
+        "accountSetupBinding.hostUrlInput\n                        .getText()\n                        .toString()": [
+            "trim"
+        ],
+        "accountSetupBinding.hostUrlInput\n                        .getText()": [
+            "toString"
+        ],
+        "result.getException()": [
+            "getMessage"
+        ],
+        "accountSetupBinding.hostUrlInput\n                            .getText()\n                            .toString()\n                            .trim()\n                            .toLowerCase(Locale.ROOT)": [
+            "startsWith"
+        ],
+        "accountSetupBinding.hostUrlInput\n                            .getText()\n                            .toString()\n                            .trim()": [
+            "toLowerCase"
+        ],
+        "accountSetupBinding.hostUrlInput\n                            .getText()\n                            .toString()": [
+            "trim"
+        ],
+        "accountSetupBinding.hostUrlInput\n                            .getText()": [
+            "toString"
+        ],
+        "ErrorMessageAdapter": [
+            "getErrorCauseMessage"
+        ],
+        "accountSetupBinding.serverStatusText": [
+            "setVisibility",
+            "setText",
+            "setCompoundDrawablesWithIntrinsicBounds"
+        ],
+        "Objects": [
+            "equals"
+        ],
+        "preferences": [
+            "getLockPreference"
+        ],
+        "i": [
+            "setAction",
+            "addFlags"
+        ],
+        "user": [
+            "isPresent",
+            "get"
+        ],
+        "Executors.newSingleThreadExecutor()": [
+            "execute"
+        ],
+        "Executors": [
+            "newSingleThreadExecutor",
+            "newSingleThreadScheduledExecutor"
+        ],
+        "new GetCapabilitiesOperation(storageManager)": [
+            "execute"
+        ],
+        "handler": [
+            "post"
+        ],
+        "OwnCloudClientManagerFactory.getDefaultSingleton()": [
+            "removeClientFor"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ],
+        "authResult": [
+            "getLastPermanentLocation",
+            "getResultData"
+        ],
+        "AccountUtils": [
+            "buildAccountName"
+        ],
+        "defaultAccount": [
+            "isAnonymous"
+        ],
+        "PreferenceManager.getDefaultSharedPreferences(this)": [
+            "edit"
+        ],
+        "PreferenceManager": [
+            "getDefaultSharedPreferences"
+        ],
+        "editor": [
+            "putString",
+            "apply"
+        ],
+        "userInfo": [
+            "getDisplayName",
+            "getId"
+        ],
+        "Integer": [
+            "toString"
+        ],
+        "DocumentsStorageProvider": [
+            "notifyRootsChanged"
+        ],
+        "PermissionUtil": [
+            "checkSelfPermission",
+            "requestCameraPermission"
+        ],
+        "qrScanResultLauncher": [
+            "launch"
+        ],
+        "resultData": [
+            "startsWith"
+        ],
+        "EMPTY_STRING": [
+            "equals"
+        ],
+        "accountSetupBinding.authStatusText": [
+            "setVisibility",
+            "setText",
+            "setCompoundDrawablesWithIntrinsicBounds"
+        ],
+        "inputField": [
+            "equals"
+        ],
+        "SslUntrustedCertDialog": [
+            "newInstanceForFullSslError"
+        ],
+        "fm": [
+            "beginTransaction"
+        ],
+        "dialog": [
+            "show",
+            "dismiss",
+            "dismissAllowingStateLoss"
+        ],
+        "component": [
+            "equals"
+        ],
+        "new FormBody.Builder()\n            .add(\"token\", token)": [
+            "build"
+        ],
+        "server": [
+            "isEmpty"
+        ],
+        "loginName": [
+            "isEmpty"
+        ],
+        "appPassword": [
+            "isEmpty"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getAccountSetupBinding",
+            "return_type": "AccountSetupBinding",
+            "parameters": [],
+            "start_position": 11372,
+            "end_position": 11490,
+            "body_start": 11447,
+            "body_end": 11490
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 11606,
+            "end_position": 15615,
+            "body_start": 11671,
+            "body_end": 15615
+        },
+        {
+            "name": "showEnforcedServers",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15633,
+            "end_position": 17586,
+            "body_start": 15668,
+            "body_end": 17586
+        },
+        {
+            "name": "onItemSelected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AdapterView<?>",
+                    "name": "parent"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                },
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 17039,
+            "end_position": 17410,
+            "body_start": 17149,
+            "body_end": 17410
+        },
+        {
+            "name": "onNothingSelected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AdapterView<?>",
+                    "name": "parent"
+                }
+            ],
+            "start_position": 17428,
+            "end_position": 17560,
+            "body_start": 17507,
+            "body_end": 17560
+        },
+        {
+            "name": "deleteCookies",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 17844,
+            "end_position": 18109,
+            "body_start": 17873,
+            "body_end": 18109
+        },
+        {
+            "name": "anonymouslyPostLoginRequest",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 18733,
+            "end_position": 19614,
+            "body_start": 18786,
+            "body_end": 19614
+        },
+        {
+            "name": "getResponseOfAnonymouslyPostLoginRequest",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 19620,
+            "end_position": 19916,
+            "body_start": 19678,
+            "body_end": 19916
+        },
+        {
+            "name": "getLoginUrl",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "JsonObject",
+                    "name": "response"
+                }
+            ],
+            "start_position": 19922,
+            "end_position": 20177,
+            "body_start": 19970,
+            "body_end": 20177
+        },
+        {
+            "name": "launchDefaultWebBrowser",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 20183,
+            "end_position": 20398,
+            "body_start": 20232,
+            "body_end": 20398
+        },
+        {
+            "name": "getWebLoginUserAgent",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 20404,
+            "end_position": 20654,
+            "body_start": 20449,
+            "body_end": 20654
+        },
+        {
+            "name": "initWebViewLogin",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "baseURL"
+                },
+                {
+                    "type": "boolean",
+                    "name": "useGenericUserAgent"
+                }
+            ],
+            "start_position": 20843,
+            "end_position": 22682,
+            "body_start": 21031,
+            "body_end": 22682
+        },
+        {
+            "name": "onKeyDown",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "keyCode"
+                },
+                {
+                    "type": "KeyEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 22688,
+            "end_position": 23187,
+            "body_start": 22756,
+            "body_end": 23187
+        },
+        {
+            "name": "setClient",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 23193,
+            "end_position": 25866,
+            "body_start": 23218,
+            "body_end": 25866
+        },
+        {
+            "name": "shouldInterceptRequest",
+            "return_type": "WebResourceResponse",
+            "parameters": [
+                {
+                    "type": "WebView",
+                    "name": "view"
+                },
+                {
+                    "type": "WebResourceRequest",
+                    "name": "request"
+                }
+            ],
+            "start_position": 23355,
+            "end_position": 23552,
+            "body_start": 23469,
+            "body_end": 23552
+        },
+        {
+            "name": "onPageStarted",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "WebView",
+                    "name": "view"
+                },
+                {
+                    "type": "String",
+                    "name": "url"
+                },
+                {
+                    "type": "Bitmap",
+                    "name": "favicon"
+                }
+            ],
+            "start_position": 23566,
+            "end_position": 23728,
+            "body_start": 23656,
+            "body_end": 23728
+        },
+        {
+            "name": "shouldOverrideUrlLoading",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "WebView",
+                    "name": "view"
+                },
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 23742,
+            "end_position": 24297,
+            "body_start": 23830,
+            "body_end": 24297
+        },
+        {
+            "name": "onPageFinished",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "WebView",
+                    "name": "view"
+                },
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 24311,
+            "end_position": 25178,
+            "body_start": 24386,
+            "body_end": 25178
+        },
+        {
+            "name": "onReceivedError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "WebView",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "errorCode"
+                },
+                {
+                    "type": "String",
+                    "name": "description"
+                },
+                {
+                    "type": "String",
+                    "name": "failingUrl"
+                }
+            ],
+            "start_position": 25192,
+            "end_position": 25848,
+            "body_start": 25310,
+            "body_end": 25848
+        },
+        {
+            "name": "parseAndLoginFromWebView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "dataString"
+                }
+            ],
+            "start_position": 25872,
+            "end_position": 26695,
+            "body_start": 25929,
+            "body_end": 26695
+        },
+        {
+            "name": "parseLoginDataUrl",
+            "return_type": "LoginUrlInfo",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "prefix"
+                },
+                {
+                    "type": "String",
+                    "name": "dataString"
+                }
+            ],
+            "start_position": 26998,
+            "end_position": 28614,
+            "body_start": 27109,
+            "body_end": 28614
+        },
+        {
+            "name": "initOverallUi",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28723,
+            "end_position": 29874,
+            "body_start": 28752,
+            "body_end": 29874
+        },
+        {
+            "name": "initServerPreFragment",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 29984,
+            "end_position": 31686,
+            "body_start": 30046,
+            "body_end": 31686
+        },
+        {
+            "name": "initAuthorizationPreFragment",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 31796,
+            "end_position": 32447,
+            "body_start": 31865,
+            "body_end": 32447
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 32587,
+            "end_position": 33633,
+            "body_start": 32662,
+            "body_end": 33633
+        },
+        {
+            "name": "onRestoreInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 33639,
+            "end_position": 34241,
+            "body_start": 33724,
+            "body_end": 34241
+        },
+        {
+            "name": "onNewIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 34555,
+            "end_position": 35918,
+            "body_start": 34611,
+            "body_end": 35918
+        },
+        {
+            "name": "checkIfViaSSO",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 35924,
+            "end_position": 36221,
+            "body_start": 35969,
+            "body_end": 36221
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 36422,
+            "end_position": 37029,
+            "body_start": 36462,
+            "body_end": 37029
+        },
+        {
+            "name": "onPause",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 37036,
+            "end_position": 37234,
+            "body_start": 37075,
+            "body_end": 37234
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 37240,
+            "end_position": 37546,
+            "body_start": 37281,
+            "body_end": 37546
+        },
+        {
+            "name": "checkOcServer",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 37553,
+            "end_position": 39848,
+            "body_start": 37612,
+            "body_end": 39848
+        },
+        {
+            "name": "checkBasicAuthorization",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "webViewUsername"
+                },
+                {
+                    "type": "String",
+                    "name": "webViewPassword"
+                }
+            ],
+            "start_position": 40001,
+            "end_position": 40827,
+            "body_start": 40106,
+            "body_end": 40827
+        },
+        {
+            "name": "accessRootFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OwnCloudCredentials",
+                    "name": "credentials"
+                }
+            ],
+            "start_position": 40833,
+            "end_position": 41057,
+            "body_start": 40896,
+            "body_end": 41057
+        },
+        {
+            "name": "onRemoteOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 41238,
+            "end_position": 41790,
+            "body_start": 41345,
+            "body_end": 41790
+        },
+        {
+            "name": "onGetUserNameFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult<UserInfo>",
+                    "name": "result"
+                }
+            ],
+            "start_position": 41796,
+            "end_position": 42957,
+            "body_start": 41869,
+            "body_end": 42957
+        },
+        {
+            "name": "onGetServerInfoFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 43138,
+            "end_position": 46340,
+            "body_start": 43203,
+            "body_end": 46340
+        },
+        {
+            "name": "initLoginInfoView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 46374,
+            "end_position": 46875,
+            "body_start": 46407,
+            "body_end": 46875
+        },
+        {
+            "name": "updateServerStatusIconAndText",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 47092,
+            "end_position": 51837,
+            "body_start": 47165,
+            "body_end": 51837
+        },
+        {
+            "name": "updateAuthStatusIconAndText",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 52037,
+            "end_position": 54620,
+            "body_start": 52108,
+            "body_end": 54620
+        },
+        {
+            "name": "updateStatusIconFailUserName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "failedStatusText"
+                }
+            ],
+            "start_position": 54626,
+            "end_position": 54814,
+            "body_start": 54690,
+            "body_end": 54814
+        },
+        {
+            "name": "onAuthenticatorTaskCallback",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult<UserInfo>",
+                    "name": "result"
+                }
+            ],
+            "start_position": 55044,
+            "end_position": 58489,
+            "body_start": 55138,
+            "body_end": 58489
+        },
+        {
+            "name": "endSuccess",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 58495,
+            "end_position": 59084,
+            "body_start": 58521,
+            "body_end": 59084
+        },
+        {
+            "name": "getUserCapabilitiesAndFinish",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 59090,
+            "end_position": 59983,
+            "body_start": 59134,
+            "body_end": 59983
+        },
+        {
+            "name": "updateAccountAuthentication",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 60344,
+            "end_position": 61170,
+            "body_start": 60419,
+            "body_end": 61170
+        },
+        {
+            "name": "createAccount",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult<UserInfo>",
+                    "name": "authResult"
+                }
+            ],
+            "start_position": 61396,
+            "end_position": 65017,
+            "body_start": 61536,
+            "body_end": 65017
+        },
+        {
+            "name": "onScan",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 65023,
+            "end_position": 65270,
+            "body_start": 65044,
+            "body_end": 65270
+        },
+        {
+            "name": "startQRScanner",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 65276,
+            "end_position": 65422,
+            "body_start": 65306,
+            "body_end": 65422
+        },
+        {
+            "name": "onRequestPermissionsResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "String[]",
+                    "name": "permissions"
+                },
+                {
+                    "type": "int[]",
+                    "name": "grantResults"
+                }
+            ],
+            "start_position": 66608,
+            "end_position": 67234,
+            "body_start": 66824,
+            "body_end": 67234
+        },
+        {
+            "name": "showServerStatus",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 67389,
+            "end_position": 67968,
+            "body_start": 67421,
+            "body_end": 67968
+        },
+        {
+            "name": "showAuthStatus",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 68134,
+            "end_position": 68702,
+            "body_start": 68164,
+            "body_end": 68702
+        },
+        {
+            "name": "onEditorAction",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "TextView",
+                    "name": "inputField"
+                },
+                {
+                    "type": "int",
+                    "name": "actionId"
+                },
+                {
+                    "type": "KeyEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 69022,
+            "end_position": 69443,
+            "body_start": 69117,
+            "body_end": 69443
+        },
+        {
+            "name": "showUntrustedCertDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 69500,
+            "end_position": 69983,
+            "body_start": 69567,
+            "body_end": 69983
+        },
+        {
+            "name": "doOnResumeAndBound",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 69989,
+            "end_position": 70255,
+            "body_start": 70023,
+            "body_end": 70255
+        },
+        {
+            "name": "dismissWaitingDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 70261,
+            "end_position": 70667,
+            "body_start": 70297,
+            "body_end": 70667
+        },
+        {
+            "name": "onServiceConnected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ComponentName",
+                    "name": "component"
+                },
+                {
+                    "type": "IBinder",
+                    "name": "service"
+                }
+            ],
+            "start_position": 70827,
+            "end_position": 72259,
+            "body_start": 70918,
+            "body_end": 72259
+        },
+        {
+            "name": "onServiceDisconnected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ComponentName",
+                    "name": "component"
+                }
+            ],
+            "start_position": 72269,
+            "end_position": 72639,
+            "body_start": 72346,
+            "body_end": 72639
+        },
+        {
+            "name": "poolLogin",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 72882,
+            "end_position": 73111,
+            "body_start": 72907,
+            "body_end": 73111
+        },
+        {
+            "name": "performLoginFlowV2",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 73117,
+            "end_position": 73813,
+            "body_start": 73151,
+            "body_end": 73813
+        },
+        {
+            "name": "completeLoginFlow",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "response"
+                },
+                {
+                    "type": "int",
+                    "name": "status"
+                }
+            ],
+            "start_position": 73819,
+            "end_position": 75265,
+            "body_start": 73879,
+            "body_end": 75265
+        },
+        {
+            "name": "onSavedCertificate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 75376,
+            "end_position": 75441,
+            "body_start": 75409,
+            "body_end": 75441
+        },
+        {
+            "name": "onFailedSavingCertificate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 75578,
+            "end_position": 75718,
+            "body_start": 75632,
+            "body_end": 75718
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "try_statement",
+        "throw_statement",
+        "break_statement"
+    ],
+    "local_variables": {
+        "data": "Uri",
+        "directLogin": "boolean",
+        "actionBar": "ActionBar",
+        "extras": "Bundle",
+        "webViewLoginMethod": "boolean",
+        "webloginUrl": "String",
+        "baseUrl": "String",
+        "adapter": "ArrayAdapter<String>",
+        "servers": "ArrayList<String>",
+        "t": "ArrayList<EnforcedServer>",
+        "url": "String",
+        "thread": "Thread",
+        "response": "String",
+        "jsonObject": "JSONObject",
+        "loginUrl": "String",
+        "post": "PostMethod",
+        "client": "PlainClient",
+        "result": "RemoteOperationResult",
+        "intent": "Intent",
+        "headers": "Map<String, String>",
+        "resources": "InputStream",
+        "customError": "String",
+        "prefix": "String",
+        "loginUrlInfo": "LoginUrlInfo",
+        "values": "String[]",
+        "ocVersion": "String",
+        "inProgress": "boolean",
+        "username": "String",
+        "password": "String",
+        "credentials": "OwnCloudCredentials",
+        "authTokenType": "String",
+        "uri": "Uri",
+        "getServerInfoIntent": "Intent",
+        "dialog": "SslUntrustedCertDialog",
+        "ft": "FragmentTransaction",
+        "params": "Object[]",
+        "success": "boolean",
+        "statusText": "int",
+        "remoteOperationResult": "RemoteOperationResult",
+        "capability": "OCCapability",
+        "loginFlowLayout": "LinearLayout",
+        "cancelButton": "MaterialButton",
+        "i": "Intent",
+        "handler": "Handler",
+        "user": "Optional<User>",
+        "storageManager": "FileDataStorageManager",
+        "ocAccount": "OwnCloudAccount",
+        "accountType": "String",
+        "lastPermanentLocation": "String",
+        "loginName": "String",
+        "accountName": "String",
+        "newAccount": "Account",
+        "userInfo": "UserInfo",
+        "defaultAccount": "User",
+        "editor": "SharedPreferences.Editor",
+        "resultData": "String",
+        "fm": "FragmentManager",
+        "frag": "Fragment",
+        "postRequestUrl": "String",
+        "requestBody": "RequestBody",
+        "status": "int",
+        "server": "String",
+        "appPassword": "String"
+    }
+}

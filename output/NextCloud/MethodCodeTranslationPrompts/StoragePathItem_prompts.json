@@ -1,0 +1,38 @@
+[
+    {
+        "method_name": "getIcon",
+        "method_code": "public int getIcon() {\n        return this.icon;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getIcon from StoragePathItem.java into Swift.\n\n        Input:\n\n        Method Name: getIcon\n\n        Method Code: public int getIcon() {\n        return this.icon;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getIcon() -> Int {\n    return self.icon\n}\n```"
+    },
+    {
+        "method_name": "getName",
+        "method_code": "public String getName() {\n        return this.name;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getName from StoragePathItem.java into Swift.\n\n        Input:\n\n        Method Name: getName\n\n        Method Code: public String getName() {\n        return this.name;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getName() -> String {\n    return self.name\n}\n```"
+    },
+    {
+        "method_name": "getPath",
+        "method_code": "public String getPath() {\n        return this.path;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPath from StoragePathItem.java into Swift.\n\n        Input:\n\n        Method Name: getPath\n\n        Method Code: public String getPath() {\n        return this.path;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPath() -> String {\n    return self.path\n}\n```"
+    },
+    {
+        "method_name": "setIcon",
+        "method_code": "public void setIcon(int icon) {\n        this.icon = icon;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setIcon from StoragePathItem.java into Swift.\n\n        Input:\n\n        Method Name: setIcon\n\n        Method Code: public void setIcon(int icon) {\n        this.icon = icon;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setIcon(_ icon: Int) {\n    self.icon = icon\n}\n```"
+    },
+    {
+        "method_name": "setName",
+        "method_code": "public void setName(String name) {\n        this.name = name;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setName from StoragePathItem.java into Swift.\n\n        Input:\n\n        Method Name: setName\n\n        Method Code: public void setName(String name) {\n        this.name = name;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setName(_ name: String) {\n    self.name = name\n}\n```"
+    },
+    {
+        "method_name": "setPath",
+        "method_code": "public void setPath(String path) {\n        this.path = path;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPath from StoragePathItem.java into Swift.\n\n        Input:\n\n        Method Name: setPath\n\n        Method Code: public void setPath(String path) {\n        this.path = path;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPath(_ path: String) {\n    self.path = path\n}\n```"
+    }
+]

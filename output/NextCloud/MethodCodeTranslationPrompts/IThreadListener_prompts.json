@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "onThreadFinished",
+        "method_code": "void onThreadFinished(final Thread thread);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onThreadFinished from IThreadListener.java into Swift.\n\n        Input:\n\n        Method Name: onThreadFinished\n\n        Method Code: void onThreadFinished(final Thread thread);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onThreadFinished(_ thread: Thread)\n```"
+    }
+]

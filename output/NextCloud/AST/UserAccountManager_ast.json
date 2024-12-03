@@ -1,0 +1,234 @@
+{
+    "methods": [
+        {
+            "name": "getCurrentOwnCloudAccount",
+            "return_type": "OwnCloudAccount",
+            "parameters": [],
+            "start_position": 1021,
+            "end_position": 1079
+        },
+        {
+            "name": "removeAllAccounts",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1163,
+            "end_position": 1188
+        },
+        {
+            "name": "removeUser",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 1355,
+            "end_position": 1385
+        },
+        {
+            "name": "getAccounts",
+            "return_type": "Account[]",
+            "parameters": [],
+            "start_position": 1544,
+            "end_position": 1581
+        },
+        {
+            "name": "getAllUsers",
+            "return_type": "List<User>",
+            "parameters": [],
+            "start_position": 1722,
+            "end_position": 1760
+        },
+        {
+            "name": "getUser",
+            "return_type": "Optional<User>",
+            "parameters": [
+                {
+                    "type": "CharSequence",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 1958,
+            "end_position": 2020
+        },
+        {
+            "name": "getAnonymousUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 2027,
+            "end_position": 2051
+        },
+        {
+            "name": "exists",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 2276,
+            "end_position": 2308
+        },
+        {
+            "name": "migrateUserId",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2614,
+            "end_position": 2638
+        },
+        {
+            "name": "getAccountByName",
+            "return_type": "Account",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 2644,
+            "end_position": 2696
+        },
+        {
+            "name": "setCurrentOwnCloudAccount",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 2702,
+            "end_position": 2756
+        },
+        {
+            "name": "setCurrentOwnCloudAccount",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "hashCode"
+                }
+            ],
+            "start_position": 2762,
+            "end_position": 2810
+        },
+        {
+            "name": "getServerVersion",
+            "return_type": "OwnCloudVersion",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 3107,
+            "end_position": 3186
+        },
+        {
+            "name": "resetOwnCloudAccount",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3192,
+            "end_position": 3220
+        },
+        {
+            "name": "accountOwnsFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 3485,
+            "end_position": 3555
+        },
+        {
+            "name": "userOwnsFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 3820,
+            "end_position": 3865
+        },
+        {
+            "name": "getUsername",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 4124,
+            "end_position": 4276,
+            "body_start": 4161,
+            "body_end": 4276
+        },
+        {
+            "name": "getDisplayName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 4282,
+            "end_position": 4553,
+            "body_start": 4336,
+            "body_end": 4553
+        },
+        {
+            "name": "startAccountCreation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 4843,
+            "end_position": 4888
+        }
+    ],
+    "local_variables": {
+        "name": "String"
+    },
+    "method_calls": {
+        "user": [
+            "getAccountName",
+            "toPlatformAccount"
+        ],
+        "name": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "AccountManager.get(MainApp.getAppContext())": [
+            "getUserData"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ]
+    },
+    "code_constructs": [
+        "return_statement"
+    ]
+}

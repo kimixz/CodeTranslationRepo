@@ -1,0 +1,32 @@
+[
+    {
+        "method_name": "equals",
+        "method_code": "@Override\n    public boolean equals(Object obj) {\n        if (obj instanceof ContactsAccount) {\n            ContactsAccount other = (ContactsAccount) obj;\n            return this.name.equalsIgnoreCase(other.name) && this.type.equalsIgnoreCase(other.type);\n        } else {\n            return false;\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled equals from ContactsAccount.java into Swift.\n\n        Input:\n\n        Method Name: equals\n\n        Method Code: @Override\n    public boolean equals(Object obj) {\n        if (obj instanceof ContactsAccount) {\n            ContactsAccount other = (ContactsAccount) obj;\n            return this.name.equalsIgnoreCase(other.name) && this.type.equalsIgnoreCase(other.type);\n        } else {\n            return false;\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func isEqual(_ object: Any?) -> Bool {\n    if let other = object as? ContactsAccount {\n        return self.name.caseInsensitiveCompare(other.name) == .orderedSame &&\n               self.type.caseInsensitiveCompare(other.type) == .orderedSame\n    } else {\n        return false\n    }\n}\n```"
+    },
+    {
+        "method_name": "toString",
+        "method_code": "@NonNull\n    @Override\n    public String toString() {\n        return displayName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled toString from ContactsAccount.java into Swift.\n\n        Input:\n\n        Method Name: toString\n\n        Method Code: @NonNull\n    @Override\n    public String toString() {\n        return displayName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride var description: String {\n    return displayName\n}\n```"
+    },
+    {
+        "method_name": "hashCode",
+        "method_code": "@Override\n    public int hashCode() {\n        return Arrays.hashCode(new Object[]{displayName, name, type});\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled hashCode from ContactsAccount.java into Swift.\n\n        Input:\n\n        Method Name: hashCode\n\n        Method Code: @Override\n    public int hashCode() {\n        return Arrays.hashCode(new Object[]{displayName, name, type});\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func hash(into hasher: inout Hasher) {\n    hasher.combine(displayName)\n    hasher.combine(name)\n    hasher.combine(type)\n}\n```"
+    },
+    {
+        "method_name": "getName",
+        "method_code": "public String getName() {\n        return name;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getName from ContactsAccount.java into Swift.\n\n        Input:\n\n        Method Name: getName\n\n        Method Code: public String getName() {\n        return name;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getName() -> String {\n    return name\n}\n```"
+    },
+    {
+        "method_name": "getType",
+        "method_code": "public String getType() {\n        return type;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getType from ContactsAccount.java into Swift.\n\n        Input:\n\n        Method Name: getType\n\n        Method Code: public String getType() {\n        return type;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getType() -> String {\n    return type\n}\n```"
+    }
+]

@@ -1,0 +1,484 @@
+{
+    "method_calls": {
+        "OperationsService.class": [
+            "getSimpleName"
+        ],
+        "super": [
+            "onCreate",
+            "onDestroy"
+        ],
+        "AndroidInjection": [
+            "inject"
+        ],
+        "Log_OC": [
+            "d",
+            "e",
+            "v"
+        ],
+        "thread": [
+            "start",
+            "getLooper"
+        ],
+        "ACTION_SYNC_FOLDER": [
+            "equals"
+        ],
+        "intent": [
+            "getAction",
+            "hasExtra",
+            "getStringExtra"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument",
+            "getSerializableArgument"
+        ],
+        "unknown": [
+            "newOperation",
+            "getApplicationContext",
+            "startService",
+            "nextOperation",
+            "toUser",
+            "getContentResolver"
+        ],
+        "mSyncFolderHandler": [
+            "add",
+            "obtainMessage",
+            "sendMessage",
+            "getLooper",
+            "cancel",
+            "isSynchronizing"
+        ],
+        "mOperationsHandler": [
+            "obtainMessage",
+            "sendMessage",
+            "getLooper"
+        ],
+        "OwnCloudClientManagerFactory.getDefaultSingleton()": [
+            "saveAllClients",
+            "getClientFor",
+            "getNextcloudClientFor"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ],
+        "MainApp": [
+            "getAccountType"
+        ],
+        "mUndispatchedFinishedOperations": [
+            "clear",
+            "remove",
+            "put"
+        ],
+        "mOperationsHandler.getLooper()": [
+            "quit"
+        ],
+        "mSyncFolderHandler.getLooper()": [
+            "quit"
+        ],
+        "mOperationsBinder": [
+            "clearListeners"
+        ],
+        "mBoundListeners": [
+            "clear",
+            "put",
+            "remove"
+        ],
+        "mServiceHandler.mPendingOperations": [
+            "isEmpty",
+            "add"
+        ],
+        "itemToQueue.second": [
+            "hashCode"
+        ],
+        "listener": [
+            "onRemoteOperationFinish"
+        ],
+        "file": [
+            "getRemotePath"
+        ],
+        "mService": [
+            "stopSelf",
+            "getBaseContext",
+            "dispatchResultToOperationListeners"
+        ],
+        "mPendingOperations": [
+            "peek",
+            "poll"
+        ],
+        "mLastTarget": [
+            "equals"
+        ],
+        "mCurrentOperation": [
+            "execute",
+            "run"
+        ],
+        "operationIntent": [
+            "hasExtra",
+            "getStringExtra",
+            "getAction",
+            "getLongExtra",
+            "getBooleanExtra",
+            "getIntExtra"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "updateLinkOperation": [
+            "setPassword",
+            "setExpirationDateInMillis",
+            "setHideFileDownload",
+            "setLabel"
+        ],
+        "updateShare": [
+            "setPermissions",
+            "setExpirationDateInMillis",
+            "setPassword",
+            "setHideFileDownload",
+            "setLabel"
+        ],
+        "createShareWithShareeOperation": [
+            "setLabel"
+        ],
+        "fileVersion": [
+            "getLocalId",
+            "getFileName"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "accountManager": [
+            "getUser",
+            "getAnonymousUser"
+        ],
+        "optionalUser": [
+            "isPresent",
+            "get"
+        ],
+        "mOperationsBinder.mBoundListeners": [
+            "keySet",
+            "get"
+        ],
+        "handler": [
+            "post"
+        ],
+        "operation": [
+            "hashCode"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "synchronized_statement",
+        "throw_statement",
+        "try_statement",
+        "break_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7210,
+            "end_position": 8010,
+            "body_start": 7247,
+            "body_end": 8010
+        },
+        {
+            "name": "onStartCommand",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                },
+                {
+                    "type": "int",
+                    "name": "flags"
+                },
+                {
+                    "type": "int",
+                    "name": "startId"
+                }
+            ],
+            "start_position": 8302,
+            "end_position": 9876,
+            "body_start": 8381,
+            "body_end": 9876
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9882,
+            "end_position": 10420,
+            "body_start": 9920,
+            "body_end": 10420
+        },
+        {
+            "name": "onBind",
+            "return_type": "IBinder",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 10588,
+            "end_position": 10680,
+            "body_start": 10639,
+            "body_end": 10680
+        },
+        {
+            "name": "onUnbind",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 10758,
+            "end_position": 10933,
+            "body_start": 10811,
+            "body_end": 10933
+        },
+        {
+            "name": "cancel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 11925,
+            "end_position": 12039,
+            "body_start": 11974,
+            "body_end": 12039
+        },
+        {
+            "name": "clearListeners",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12050,
+            "end_position": 12128,
+            "body_start": 12079,
+            "body_end": 12128
+        },
+        {
+            "name": "addOperationListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OnRemoteOperationListener",
+                    "name": "listener"
+                },
+                {
+                    "type": "Handler",
+                    "name": "callbackHandler"
+                }
+            ],
+            "start_position": 12459,
+            "end_position": 12728,
+            "body_start": 12594,
+            "body_end": 12728
+        },
+        {
+            "name": "removeOperationListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OnRemoteOperationListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 12963,
+            "end_position": 13155,
+            "body_start": 13035,
+            "body_end": 13155
+        },
+        {
+            "name": "isPerformingBlockingOperation",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13405,
+            "end_position": 13529,
+            "body_start": 13452,
+            "body_end": 13529
+        },
+        {
+            "name": "queueNewOperation",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "operationIntent"
+                }
+            ],
+            "start_position": 13934,
+            "end_position": 14414,
+            "body_start": 13988,
+            "body_end": 14414
+        },
+        {
+            "name": "dispatchResultIfFinished",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "operationId"
+                },
+                {
+                    "type": "OnRemoteOperationListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 14424,
+            "end_position": 14982,
+            "body_start": 14565,
+            "body_end": 14982
+        },
+        {
+            "name": "isSynchronizing",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 15480,
+            "end_position": 15629,
+            "body_start": 15535,
+            "body_end": 15629
+        },
+        {
+            "name": "handleMessage",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Message",
+                    "name": "msg"
+                }
+            ],
+            "start_position": 16642,
+            "end_position": 16853,
+            "body_start": 16699,
+            "body_end": 16853
+        },
+        {
+            "name": "nextOperation",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 16939,
+            "end_position": 20068,
+            "body_start": 16968,
+            "body_end": 20068
+        },
+        {
+            "name": "newOperation",
+            "return_type": "Pair<Target, RemoteOperation>",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "operationIntent"
+                }
+            ],
+            "start_position": 20409,
+            "end_position": 35441,
+            "body_start": 20484,
+            "body_end": 35441
+        },
+        {
+            "name": "toUser",
+            "return_type": "User",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 35681,
+            "end_position": 36049,
+            "body_start": 35741,
+            "body_end": 36049
+        },
+        {
+            "name": "dispatchResultToOperationListeners",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 36253,
+            "end_position": 37122,
+            "body_start": 36372,
+            "body_end": 37122
+        }
+    ],
+    "local_variables": {
+        "thread": "HandlerThread",
+        "account": "Account",
+        "remotePath": "String",
+        "itemSyncKey": "Pair<Account, String>",
+        "itemToQueue": "Pair<Target, RemoteOperation>",
+        "msg": "Message",
+        "undispatched": "Pair<RemoteOperation, RemoteOperationResult>",
+        "next": "Pair<Target, RemoteOperation>",
+        "result": "RemoteOperationResult",
+        "ocAccount": "OwnCloudAccount",
+        "nextcloudClient": "NextcloudClient",
+        "operation": "RemoteOperation",
+        "target": "Target",
+        "user": "User",
+        "serverUrl": "String",
+        "action": "String",
+        "password": "String",
+        "shareType": "ShareType",
+        "newParentPath": "String",
+        "shareId": "long",
+        "fileDataStorageManager": "FileDataStorageManager",
+        "updateLinkOperation": "UpdateShareViaLinkOperation",
+        "expirationDate": "long",
+        "hideFileDownload": "boolean",
+        "updateShare": "UpdateShareInfoOperation",
+        "permissions": "int",
+        "expirationDateInMillis": "long",
+        "note": "String",
+        "shareeName": "String",
+        "noteMessage": "String",
+        "sharePassword": "String",
+        "createShareWithShareeOperation": "CreateShareWithShareeOperation",
+        "permissionsToChange": "int",
+        "expirationDateInMills": "long",
+        "fileDownloadHide": "boolean",
+        "newName": "String",
+        "file": "OCFile",
+        "onlyLocalCopy": "boolean",
+        "inBackground": "boolean",
+        "syncFileContents": "boolean",
+        "fileVersion": "FileVersion",
+        "accountName": "String",
+        "optionalUser": "Optional<User>",
+        "count": "int",
+        "handler": "Handler"
+    }
+}

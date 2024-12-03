@@ -1,0 +1,967 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "for_statement",
+        "enhanced_for_statement",
+        "continue_statement"
+    ],
+    "methods": [
+        {
+            "name": "newInstance",
+            "return_type": "FileMenuFilter",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "numberOfAllFiles"
+                },
+                {
+                    "type": "Collection<OCFile>",
+                    "name": "files"
+                },
+                {
+                    "type": "ComponentsGetter",
+                    "name": "componentsGetter"
+                },
+                {
+                    "type": "boolean",
+                    "name": "overflowMenu"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 3574,
+            "end_position": 3893,
+            "body_start": 3742,
+            "body_end": 3893
+        },
+        {
+            "name": "newInstance",
+            "return_type": "FileMenuFilter",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "ComponentsGetter",
+                    "name": "componentsGetter"
+                },
+                {
+                    "type": "boolean",
+                    "name": "overflowMenu"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 4237,
+            "end_position": 4481,
+            "body_start": 4364,
+            "body_end": 4481
+        },
+        {
+            "name": "getToHide",
+            "return_type": "List<Integer>",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "inSingleFileFragment"
+                }
+            ],
+            "start_position": 5518,
+            "end_position": 5730,
+            "body_start": 5595,
+            "body_end": 5730
+        },
+        {
+            "name": "filter",
+            "return_type": "List<Integer>",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "inSingleFileFragment"
+                }
+            ],
+            "start_position": 5966,
+            "end_position": 7518,
+            "body_start": 6025,
+            "body_end": 7518
+        },
+        {
+            "name": "filterShareFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 7525,
+            "end_position": 7917,
+            "body_start": 7601,
+            "body_end": 7917
+        },
+        {
+            "name": "filterSendFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "inSingleFileFragment"
+                }
+            ],
+            "start_position": 7923,
+            "end_position": 8777,
+            "body_start": 8004,
+            "body_end": 8777
+        },
+        {
+            "name": "filterDetails",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Collection<Integer>",
+                    "name": "toHide"
+                }
+            ],
+            "start_position": 8783,
+            "end_position": 8940,
+            "body_start": 8838,
+            "body_end": 8940
+        },
+        {
+            "name": "filterFavorite",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "synchronizing"
+                }
+            ],
+            "start_position": 8946,
+            "end_position": 9148,
+            "body_start": 9019,
+            "body_end": 9148
+        },
+        {
+            "name": "filterUnfavorite",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "synchronizing"
+                }
+            ],
+            "start_position": 9154,
+            "end_position": 9367,
+            "body_start": 9229,
+            "body_end": 9367
+        },
+        {
+            "name": "filterLock",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fileLockingEnabled"
+                }
+            ],
+            "start_position": 9373,
+            "end_position": 9880,
+            "body_start": 9447,
+            "body_end": 9880
+        },
+        {
+            "name": "filterUnlock",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fileLockingEnabled"
+                }
+            ],
+            "start_position": 9886,
+            "end_position": 10311,
+            "body_start": 9962,
+            "body_end": 10311
+        },
+        {
+            "name": "filterEncrypt",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "endToEndEncryptionEnabled"
+                }
+            ],
+            "start_position": 10317,
+            "end_position": 10656,
+            "body_start": 10401,
+            "body_end": 10656
+        },
+        {
+            "name": "filterUnsetEncrypted",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "endToEndEncryptionEnabled"
+                }
+            ],
+            "start_position": 10662,
+            "end_position": 11072,
+            "body_start": 10753,
+            "body_end": 11072
+        },
+        {
+            "name": "filterSetPictureAs",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                }
+            ],
+            "start_position": 11078,
+            "end_position": 11282,
+            "body_start": 11132,
+            "body_end": 11282
+        },
+        {
+            "name": "filterPinToHome",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                }
+            ],
+            "start_position": 11288,
+            "end_position": 11512,
+            "body_start": 11339,
+            "body_end": 11512
+        },
+        {
+            "name": "filterRetry",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                }
+            ],
+            "start_position": 11518,
+            "end_position": 11686,
+            "body_start": 11565,
+            "body_end": 11686
+        },
+        {
+            "name": "filterEdit",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 11692,
+            "end_position": 12283,
+            "body_start": 11808,
+            "body_end": 12283
+        },
+        {
+            "name": "isRichDocumentEditingSupported",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                },
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 12413,
+            "end_position": 12804,
+            "body_start": 12533,
+            "body_end": 12804
+        },
+        {
+            "name": "filterSync",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "synchronizing"
+                }
+            ],
+            "start_position": 12810,
+            "end_position": 13100,
+            "body_start": 12879,
+            "body_end": 13100
+        },
+        {
+            "name": "filterCancelSync",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "synchronizing"
+                }
+            ],
+            "start_position": 13106,
+            "end_position": 13296,
+            "body_start": 13181,
+            "body_end": 13296
+        },
+        {
+            "name": "filterOpenWith",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Collection<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "synchronizing"
+                }
+            ],
+            "start_position": 13302,
+            "end_position": 13516,
+            "body_start": 13381,
+            "body_end": 13516
+        },
+        {
+            "name": "filterDeselectAll",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "inSingleFileFragment"
+                }
+            ],
+            "start_position": 13522,
+            "end_position": 13979,
+            "body_start": 13605,
+            "body_end": 13979
+        },
+        {
+            "name": "filterSelectAll",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "inSingleFileFragment"
+                }
+            ],
+            "start_position": 13985,
+            "end_position": 14457,
+            "body_start": 14066,
+            "body_end": 14457
+        },
+        {
+            "name": "filterRemove",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "synchronizing"
+                }
+            ],
+            "start_position": 14463,
+            "end_position": 14751,
+            "body_start": 14534,
+            "body_end": 14751
+        },
+        {
+            "name": "filterMoveOrCopy",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "synchronizing"
+                }
+            ],
+            "start_position": 14757,
+            "end_position": 15027,
+            "body_start": 14832,
+            "body_end": 15027
+        },
+        {
+            "name": "filterRename",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Collection<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "synchronizing"
+                }
+            ],
+            "start_position": 15033,
+            "end_position": 15309,
+            "body_start": 15110,
+            "body_end": 15309
+        },
+        {
+            "name": "filterDownload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                },
+                {
+                    "type": "boolean",
+                    "name": "synchronizing"
+                }
+            ],
+            "start_position": 15315,
+            "end_position": 15541,
+            "body_start": 15388,
+            "body_end": 15541
+        },
+        {
+            "name": "filterExport",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                }
+            ],
+            "start_position": 15547,
+            "end_position": 15712,
+            "body_start": 15595,
+            "body_end": 15712
+        },
+        {
+            "name": "filterStream",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "toHide"
+                }
+            ],
+            "start_position": 15718,
+            "end_position": 15930,
+            "body_start": 15766,
+            "body_end": 15930
+        },
+        {
+            "name": "anyFileSynchronizing",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 15936,
+            "end_position": 16406,
+            "body_start": 15975,
+            "body_end": 16406
+        },
+        {
+            "name": "anyFileSynchronizing",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OperationsServiceBinder",
+                    "name": "opsBinder"
+                }
+            ],
+            "start_position": 16412,
+            "end_position": 16804,
+            "body_start": 16484,
+            "body_end": 16804
+        },
+        {
+            "name": "anyFileDownloading",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 16810,
+            "end_position": 17111,
+            "body_start": 16847,
+            "body_end": 17111
+        },
+        {
+            "name": "anyFileUploading",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 17117,
+            "end_position": 17351,
+            "body_start": 17152,
+            "body_end": 17351
+        },
+        {
+            "name": "isShareApiEnabled",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 17357,
+            "end_position": 17606,
+            "body_start": 17416,
+            "body_end": 17606
+        },
+        {
+            "name": "isShareWithUsersAllowed",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 17612,
+            "end_position": 17737,
+            "body_start": 17654,
+            "body_end": 17737
+        },
+        {
+            "name": "isShareViaLinkAllowed",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 17743,
+            "end_position": 17866,
+            "body_start": 17783,
+            "body_end": 17866
+        },
+        {
+            "name": "isSingleSelection",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 17872,
+            "end_position": 17967,
+            "body_start": 17908,
+            "body_end": 17967
+        },
+        {
+            "name": "isSingleFile",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 17973,
+            "end_position": 18086,
+            "body_start": 18004,
+            "body_end": 18086
+        },
+        {
+            "name": "isEncryptedFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 18092,
+            "end_position": 18333,
+            "body_start": 18128,
+            "body_end": 18333
+        },
+        {
+            "name": "isEmptyFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 18339,
+            "end_position": 18738,
+            "body_start": 18371,
+            "body_end": 18738
+        },
+        {
+            "name": "isGroupFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 18744,
+            "end_position": 18839,
+            "body_start": 18776,
+            "body_end": 18839
+        },
+        {
+            "name": "hasEncryptedParent",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 18845,
+            "end_position": 19068,
+            "body_start": 18882,
+            "body_end": 19068
+        },
+        {
+            "name": "isSingleImage",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 19074,
+            "end_position": 19198,
+            "body_start": 19106,
+            "body_end": 19198
+        },
+        {
+            "name": "isSingleMedia",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 19204,
+            "end_position": 19388,
+            "body_start": 19236,
+            "body_end": 19388
+        },
+        {
+            "name": "isFolderAndContainsEncryptedFile",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 19394,
+            "end_position": 19903,
+            "body_start": 19445,
+            "body_end": 19903
+        },
+        {
+            "name": "containsEncryptedFile",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 19910,
+            "end_position": 20126,
+            "body_start": 19950,
+            "body_end": 20126
+        },
+        {
+            "name": "containsLockedFile",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 20132,
+            "end_position": 20322,
+            "body_start": 20169,
+            "body_end": 20322
+        },
+        {
+            "name": "containsEncryptedFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 20328,
+            "end_position": 20545,
+            "body_start": 20370,
+            "body_end": 20545
+        },
+        {
+            "name": "containsFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 20551,
+            "end_position": 20737,
+            "body_start": 20584,
+            "body_end": 20737
+        },
+        {
+            "name": "anyFileDown",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 20743,
+            "end_position": 20924,
+            "body_start": 20773,
+            "body_end": 20924
+        },
+        {
+            "name": "allFileDown",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 20930,
+            "end_position": 21110,
+            "body_start": 20960,
+            "body_end": 21110
+        },
+        {
+            "name": "allFavorites",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 21116,
+            "end_position": 21303,
+            "body_start": 21147,
+            "body_end": 21303
+        },
+        {
+            "name": "allNotFavorites",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 21309,
+            "end_position": 21498,
+            "body_start": 21343,
+            "body_end": 21498
+        },
+        {
+            "name": "isShared",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 21504,
+            "end_position": 21745,
+            "body_start": 21531,
+            "body_end": 21745
+        }
+    ],
+    "method_calls": {
+        "unknown": [
+            "newInstance",
+            "filter",
+            "anyFileSynchronizing",
+            "filterEdit",
+            "filterDownload",
+            "filterExport",
+            "filterRename",
+            "filterMoveOrCopy",
+            "filterRemove",
+            "filterSelectAll",
+            "filterDeselectAll",
+            "filterOpenWith",
+            "filterCancelSync",
+            "filterSync",
+            "filterShareFile",
+            "filterSendFiles",
+            "filterDetails",
+            "filterFavorite",
+            "filterUnfavorite",
+            "filterEncrypt",
+            "filterUnsetEncrypted",
+            "filterSetPictureAs",
+            "filterStream",
+            "filterLock",
+            "filterUnlock",
+            "filterPinToHome",
+            "filterRetry",
+            "isSingleSelection",
+            "containsEncryptedFile",
+            "hasEncryptedParent",
+            "isShareViaLinkAllowed",
+            "isShareWithUsersAllowed",
+            "isShareApiEnabled",
+            "allFileDown",
+            "allFavorites",
+            "allNotFavorites",
+            "containsEncryptedFolder",
+            "isSingleFile",
+            "isEncryptedFolder",
+            "isGroupFolder",
+            "isEmptyFolder",
+            "isShared",
+            "isSingleImage",
+            "isRichDocumentEditingSupported",
+            "anyFileDown",
+            "containsFolder",
+            "containsLockedFile",
+            "isFolderAndContainsEncryptedFile",
+            "isSingleMedia",
+            "anyFileDownloading",
+            "anyFileUploading"
+        ],
+        "Collections": [
+            "singletonList"
+        ],
+        "AccountManager\n            .get(context)": [
+            "getUserData"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "this.user": [
+            "toPlatformAccount"
+        ],
+        "files": [
+            "isEmpty",
+            "iterator",
+            "size"
+        ],
+        "storageManager": [
+            "getCapability",
+            "getFolderContent",
+            "getFileById"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "capability.getEndToEndEncryption()": [
+            "isTrue"
+        ],
+        "capability": [
+            "getEndToEndEncryption",
+            "getFilesLockingVersion",
+            "getRichDocumentsMimeTypeList",
+            "getRichDocumentsOptionalMimeTypeList",
+            "getRichDocumentsDirectEditing",
+            "getFilesSharingApiEnabled"
+        ],
+        "files.iterator().next()": [
+            "canReshare",
+            "isOfflineOperation",
+            "isEncrypted",
+            "getMimeType",
+            "isFolder",
+            "isGroupFolder"
+        ],
+        "files.iterator()": [
+            "next"
+        ],
+        "toHide": [
+            "add",
+            "contains"
+        ],
+        "MDMConfig.INSTANCE": [
+            "sendFilesSupport",
+            "shareViaUser",
+            "shareViaLink"
+        ],
+        "file": [
+            "isLocked",
+            "isFolder",
+            "isEncrypted",
+            "getFileLength",
+            "isDown",
+            "isFavorite",
+            "isSharedWithMe",
+            "isSharedViaLink",
+            "isSharedWithSharee"
+        ],
+        "FileLockingHelper": [
+            "canUserUnlockFile"
+        ],
+        "FileOperationsHelper": [
+            "isEndToEndEncryptionSetup"
+        ],
+        "MimeTypeUtil": [
+            "isSVG",
+            "isImage",
+            "isVideo",
+            "isAudio"
+        ],
+        "ShortcutManagerCompat": [
+            "isRequestPinShortcutSupported"
+        ],
+        "editorUtils": [
+            "isEditorAvailable"
+        ],
+        "EditImageActivity.Companion": [
+            "canBePreviewed"
+        ],
+        "capability.getRichDocumentsMimeTypeList()": [
+            "contains"
+        ],
+        "capability.getRichDocumentsOptionalMimeTypeList()": [
+            "contains"
+        ],
+        "capability.getRichDocumentsDirectEditing()": [
+            "isTrue"
+        ],
+        "componentsGetter": [
+            "getOperationsServiceBinder"
+        ],
+        "iterator": [
+            "hasNext",
+            "next"
+        ],
+        "opsBinder": [
+            "isSynchronizing"
+        ],
+        "FileDownloadHelper.Companion": [
+            "instance"
+        ],
+        "fileDownloadHelper": [
+            "isDownloading"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "isUploading"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "capability.getFilesSharingApiEnabled()": [
+            "isTrue",
+            "isUnknown"
+        ],
+        "storageManager\n                .getFolderContent(file, false)": [
+            "size"
+        ],
+        "folder": [
+            "getParentId"
+        ],
+        "parent": [
+            "isEncrypted"
+        ],
+        "child": [
+            "isEncrypted"
+        ]
+    },
+    "local_variables": {
+        "synchronizing": "boolean",
+        "capability": "OCCapability",
+        "endToEndEncryptionEnabled": "boolean",
+        "fileLockingEnabled": "boolean",
+        "toHide": "List<Integer>",
+        "sendFilesNotSupported": "boolean",
+        "hasEncryptedFile": "boolean",
+        "isSingleSelection": "boolean",
+        "allFilesNotDown": "boolean",
+        "file": "OCFile",
+        "mimeType": "String",
+        "opsBinder": "OperationsServiceBinder",
+        "iterator": "Iterator<OCFile>",
+        "fileDownloadHelper": "var",
+        "noChildren": "boolean",
+        "folder": "OCFile",
+        "parent": "OCFile",
+        "children": "List<OCFile>"
+    }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "onBindView",
+        "method_code": "@Override\n    protected void onBindView(View view) {\n        super.onBindView(view);\n\n        if (view instanceof ViewGroup) {\n            findSwitch((ViewGroup) view);\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onBindView from ThemeableSwitchPreference.java into Swift.\n\n        Input:\n\n        Method Name: onBindView\n\n        Method Code: @Override\n    protected void onBindView(View view) {\n        super.onBindView(view);\n\n        if (view instanceof ViewGroup) {\n            findSwitch((ViewGroup) view);\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onBindView(_ view: UIView) {\n    super.onBindView(view)\n\n    if let viewGroup = view as? UIView {\n        findSwitch(viewGroup)\n    }\n}\n```"
+    },
+    {
+        "method_name": "findSwitch",
+        "method_code": "private void findSwitch(ViewGroup viewGroup) {\n        for (int i = 0; i < viewGroup.getChildCount(); i++) {\n            View child = viewGroup.getChildAt(i);\n\n            if (child instanceof Switch) {\n                Switch switchView = (Switch) child;\n\n                viewThemeUtils.platform.colorSwitch(switchView);\n\n                break;\n            } else if (child instanceof ViewGroup) {\n                findSwitch((ViewGroup) child);\n            }\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled findSwitch from ThemeableSwitchPreference.java into Swift.\n\n        Input:\n\n        Method Name: findSwitch\n\n        Method Code: private void findSwitch(ViewGroup viewGroup) {\n        for (int i = 0; i < viewGroup.getChildCount(); i++) {\n            View child = viewGroup.getChildAt(i);\n\n            if (child instanceof Switch) {\n                Switch switchView = (Switch) child;\n\n                viewThemeUtils.platform.colorSwitch(switchView);\n\n                break;\n            } else if (child instanceof ViewGroup) {\n                findSwitch((ViewGroup) child);\n            }\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprivate func findSwitch(_ viewGroup: UIView) {\n    for child in viewGroup.subviews {\n        if let switchView = child as? UISwitch {\n            viewThemeUtils.platform.colorSwitch(switchView)\n            break\n        } else if let childViewGroup = child as? UIView {\n            findSwitch(childViewGroup)\n        }\n    }\n}\n```"
+    }
+]

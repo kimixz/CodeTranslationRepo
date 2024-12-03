@@ -1,0 +1,85 @@
+{
+    "methods": [
+        {
+            "name": "pipeFrom",
+            "return_type": "ParcelFileDescriptor",
+            "parameters": [
+                {
+                    "type": "InputStream",
+                    "name": "inputStream"
+                },
+                {
+                    "type": "IThreadListener",
+                    "name": "listener"
+                },
+                {
+                    "type": "HttpMethodBase",
+                    "name": "method"
+                }
+            ],
+            "start_position": 538,
+            "end_position": 1250,
+            "body_start": 783,
+            "body_end": 1250
+        },
+        {
+            "name": "run",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1940,
+            "end_position": 3013,
+            "body_start": 1976,
+            "body_end": 3013
+        }
+    ],
+    "local_variables": {
+        "pipe": "ParcelFileDescriptor[]",
+        "readSide": "ParcelFileDescriptor",
+        "writeSide": "ParcelFileDescriptor",
+        "buf": "byte[]",
+        "len": "int"
+    },
+    "method_calls": {
+        "ParcelFileDescriptor": [
+            "createPipe"
+        ],
+        "new TransferThread(inputStream,\n                           new ParcelFileDescriptor.AutoCloseOutputStream(writeSide),\n                           listener,\n                           method)": [
+            "start"
+        ],
+        "TransferThread.class": [
+            "getCanonicalName"
+        ],
+        "unknown": [
+            "setDaemon"
+        ],
+        "inputStream": [
+            "read",
+            "close"
+        ],
+        "outputStream": [
+            "write",
+            "flush",
+            "close"
+        ],
+        "Log_OC": [
+            "e",
+            "i"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "threadListener": [
+            "onThreadFinished"
+        ],
+        "httpMethod": [
+            "releaseConnection"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "try_statement",
+        "while_statement",
+        "if_statement"
+    ]
+}

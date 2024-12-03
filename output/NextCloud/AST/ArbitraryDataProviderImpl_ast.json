@@ -1,0 +1,307 @@
+{
+    "method_calls": {
+        "NextcloudDatabase.getInstance(context)": [
+            "arbitraryDataDao"
+        ],
+        "NextcloudDatabase": [
+            "getInstance"
+        ],
+        "arbitraryDataDao": [
+            "deleteValue",
+            "getByAccountAndKey",
+            "updateValue",
+            "insertValue"
+        ],
+        "unknown": [
+            "storeOrUpdateKeyValue",
+            "getIntegerValue",
+            "getValue",
+            "getLongValue",
+            "getBooleanValue"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "value": [
+            "isEmpty"
+        ],
+        "Long": [
+            "parseLong"
+        ],
+        "TRUE": [
+            "equalsIgnoreCase"
+        ],
+        "Integer": [
+            "parseInt"
+        ],
+        "entity": [
+            "getValue"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "deleteKeyForAccount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "account"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 1271,
+            "end_position": 1422,
+            "body_start": 1363,
+            "body_end": 1422
+        },
+        {
+            "name": "storeOrUpdateKeyValue",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "long",
+                    "name": "newValue"
+                }
+            ],
+            "start_position": 1428,
+            "end_position": 1623,
+            "body_start": 1541,
+            "body_end": 1623
+        },
+        {
+            "name": "incrementValue",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 1629,
+            "end_position": 1937,
+            "body_start": 1720,
+            "body_end": 1937
+        },
+        {
+            "name": "storeOrUpdateKeyValue",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "boolean",
+                    "name": "newValue"
+                }
+            ],
+            "start_position": 1943,
+            "end_position": 2159,
+            "body_start": 2077,
+            "body_end": 2159
+        },
+        {
+            "name": "storeOrUpdateKeyValue",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "String",
+                    "name": "newValue"
+                }
+            ],
+            "start_position": 2165,
+            "end_position": 2680,
+            "body_start": 2366,
+            "body_end": 2680
+        },
+        {
+            "name": "storeOrUpdateKeyValue",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "String",
+                    "name": "newValue"
+                }
+            ],
+            "start_position": 2686,
+            "end_position": 2953,
+            "body_start": 2877,
+            "body_end": 2953
+        },
+        {
+            "name": "getLongValue",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 2959,
+            "end_position": 3231,
+            "body_start": 3048,
+            "body_end": 3231
+        },
+        {
+            "name": "getLongValue",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 3238,
+            "end_position": 3373,
+            "body_start": 3309,
+            "body_end": 3373
+        },
+        {
+            "name": "getBooleanValue",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 3379,
+            "end_position": 3547,
+            "body_start": 3474,
+            "body_end": 3547
+        },
+        {
+            "name": "getBooleanValue",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 3553,
+            "end_position": 3697,
+            "body_start": 3630,
+            "body_end": 3697
+        },
+        {
+            "name": "getIntegerValue",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 3907,
+            "end_position": 4182,
+            "body_start": 3998,
+            "body_end": 4182
+        },
+        {
+            "name": "getValue",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 4318,
+            "end_position": 4490,
+            "body_start": 4410,
+            "body_end": 4490
+        },
+        {
+            "name": "getValue",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 4496,
+            "end_position": 4827,
+            "body_start": 4596,
+            "body_end": 4827
+        }
+    ],
+    "local_variables": {
+        "oldValue": "int",
+        "value": "String",
+        "currentValue": "ArbitraryDataEntity",
+        "entity": "ArbitraryDataEntity"
+    }
+}

@@ -1,0 +1,1068 @@
+{
+    "method_calls": {
+        "FileDetailFragment.class": [
+            "getSimpleName"
+        ],
+        "args": [
+            "putParcelable",
+            "putInt"
+        ],
+        "frag": [
+            "setArguments"
+        ],
+        "binding.pager": [
+            "getAdapter",
+            "setAdapter",
+            "registerOnPageChangeCallback",
+            "setCurrentItem",
+            "setVisibility"
+        ],
+        "adapter": [
+            "getFileDetailSharingFragment",
+            "getFileDetailActivitiesFragment"
+        ],
+        "requireActivity()": [
+            "onBackPressed",
+            "findViewById",
+            "getSupportFragmentManager"
+        ],
+        "unknown": [
+            "requireActivity",
+            "setHasOptionsMenu",
+            "getArguments",
+            "setFile",
+            "getFile",
+            "showEmptyContent",
+            "getContext",
+            "getResources",
+            "updateFileDetails",
+            "getChildFragmentManager",
+            "showSharingTab",
+            "getFileDetailActivitiesFragment",
+            "listenForTransferProgress",
+            "leaveTransferProgress",
+            "getFragmentManager",
+            "getView",
+            "setFavoriteIconStatus",
+            "onOverflowIconClicked",
+            "setFileModificationTimestamp",
+            "readyToShow",
+            "setFilePreview",
+            "setButtonsForTransferring",
+            "setButtonsForDown",
+            "setButtonsForRemote",
+            "setupViewPager",
+            "requireContext",
+            "isEmpty",
+            "showHideFragmentView"
+        ],
+        "super": [
+            "onActivityCreated",
+            "onPageScrolled",
+            "onSaveInstanceState",
+            "onStart",
+            "onResume",
+            "onPause",
+            "onStop",
+            "onAttach",
+            "onDestroyView",
+            "getView",
+            "onPrepareOptionsMenu"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "arguments": [
+            "getInt"
+        ],
+        "FileDetailsFragmentBinding": [
+            "inflate"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "binding.emptyList.emptyListView": [
+            "setVisibility"
+        ],
+        "getFile().getTags()": [
+            "isEmpty"
+        ],
+        "getFile()": [
+            "getTags",
+            "isFolder",
+            "isAPKorAAB",
+            "isFavorite",
+            "setInternalFolderSyncTimestamp",
+            "getRemotePath",
+            "getRemoteId",
+            "setFavorite",
+            "isEncrypted",
+            "getParentId"
+        ],
+        "binding.tagsGroup": [
+            "setVisibility",
+            "addView"
+        ],
+        "chip": [
+            "setText",
+            "setChipBackgroundColor",
+            "setShapeAppearanceModel",
+            "getShapeAppearanceModel",
+            "setEnsureMinTouchTargetSize",
+            "setClickable"
+        ],
+        "ColorStateList": [
+            "valueOf"
+        ],
+        "getResources()": [
+            "getColor"
+        ],
+        "context": [
+            "getTheme"
+        ],
+        "chip.getShapeAppearanceModel().toBuilder().setAllCornerSizes((100.0f))": [
+            "build"
+        ],
+        "chip.getShapeAppearanceModel().toBuilder()": [
+            "setAllCornerSizes"
+        ],
+        "chip.getShapeAppearanceModel()": [
+            "toBuilder"
+        ],
+        "viewThemeUtils.material": [
+            "themeChipSuggestion",
+            "themeTabLayout"
+        ],
+        "viewThemeUtils.platform": [
+            "themeHorizontalProgressBar"
+        ],
+        "binding.cancelBtn": [
+            "setOnClickListener"
+        ],
+        "binding.favorite": [
+            "setOnClickListener",
+            "setImageDrawable"
+        ],
+        "binding.overflowMenu": [
+            "setOnClickListener"
+        ],
+        "binding.lastModificationTimestamp": [
+            "setOnClickListener",
+            "setText"
+        ],
+        "binding.folderSyncButton": [
+            "setOnClickListener",
+            "isChecked",
+            "setChecked",
+            "setEnabled"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "additionalFilter": [
+            "add"
+        ],
+        "FileActionsBottomSheet.newInstance(file, true, additionalFilter)\n            .setResultListener(fragmentManager, this, this::optionsItemSelected)": [
+            "show"
+        ],
+        "FileActionsBottomSheet.newInstance(file, true, additionalFilter)": [
+            "setResultListener"
+        ],
+        "FileActionsBottomSheet": [
+            "newInstance"
+        ],
+        "binding.tabLayout": [
+            "removeAllTabs",
+            "addTab",
+            "newTab",
+            "addOnTabSelectedListener",
+            "getTabAt",
+            "selectTab",
+            "setVisibility"
+        ],
+        "binding.tabLayout.newTab().setText(R.string.drawer_item_activities)": [
+            "setIcon"
+        ],
+        "binding.tabLayout.newTab()": [
+            "setText"
+        ],
+        "binding.tabLayout.newTab().setText(R.string.share_dialog_title)": [
+            "setIcon"
+        ],
+        "MimeTypeUtil": [
+            "isImage"
+        ],
+        "binding.tabLayout.newTab().setText(R.string.filedetails_details)": [
+            "setIcon"
+        ],
+        "fragment": [
+            "markCommentsAsRead"
+        ],
+        "tab": [
+            "getPosition"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "outState": [
+            "putParcelable"
+        ],
+        "EventBus.getDefault()": [
+            "register",
+            "unregister"
+        ],
+        "EventBus": [
+            "getDefault"
+        ],
+        "toolbarActivity": [
+            "setPreviewImageVisibility",
+            "hidePreviewImage",
+            "setPreviewImageBitmap",
+            "getPreviewImageView",
+            "getPreviewImageContainer",
+            "setPreviewImageDrawable"
+        ],
+        "MenuUtils": [
+            "hideAll"
+        ],
+        "containerActivity.getFileOperationsHelper()": [
+            "sendShareFile",
+            "openFile",
+            "syncFile",
+            "exportFiles",
+            "setPictureAs",
+            "toggleFavoriteFile"
+        ],
+        "containerActivity": [
+            "getFileOperationsHelper",
+            "getStorageManager",
+            "getFileDownloadProgressListener",
+            "getFileUploaderHelper"
+        ],
+        "RemoveFilesDialogFragment": [
+            "newInstance"
+        ],
+        "dialog": [
+            "show"
+        ],
+        "RenameFileDialogFragment": [
+            "newInstance"
+        ],
+        "((FileDisplayActivity) containerActivity)": [
+            "cancelTransference"
+        ],
+        "list": [
+            "add"
+        ],
+        "backgroundJobManager": [
+            "startOfflineOperations"
+        ],
+        "v": [
+            "getId"
+        ],
+        "preferences": [
+            "isShowDetailedTimestampEnabled",
+            "setShowDetailedTimestampEnabled"
+        ],
+        "storageManager": [
+            "saveFile",
+            "getFileByPath",
+            "isPartOfInternalTwoWaySync",
+            "getFileByEncryptedRemotePath",
+            "getFileById"
+        ],
+        "Log_OC": [
+            "e",
+            "d"
+        ],
+        "binding.filename": [
+            "setText",
+            "setVisibility"
+        ],
+        "file": [
+            "getFileName",
+            "getFileLength",
+            "isFavorite",
+            "isDown",
+            "isFolder",
+            "isInternalFolderSync",
+            "getModificationTimestamp",
+            "isUpdateThumbnailNeeded",
+            "getRemotePath",
+            "setFavorite"
+        ],
+        "binding.size": [
+            "setText"
+        ],
+        "DisplayUtils": [
+            "bytesToHumanReadable",
+            "unixTimeToHumanReadable",
+            "getRelativeTimestamp"
+        ],
+        "FileDownloadHelper.Companion.instance()": [
+            "isDownloading"
+        ],
+        "FileDownloadHelper.Companion": [
+            "instance"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "isUploading"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance",
+            "buildRemoteName"
+        ],
+        "fabMain": [
+            "hide"
+        ],
+        "binding.syncBlock": [
+            "setVisibility"
+        ],
+        "getView()": [
+            "invalidate"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "ThumbnailsCacheManager": [
+            "getBitmapFromDiskCache",
+            "cancelPotentialThumbnailWork"
+        ],
+        "containerActivity.getStorageManager()": [
+            "getUser"
+        ],
+        "requireContext()": [
+            "getTheme"
+        ],
+        "MainApp.getAppContext()": [
+            "getResources"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "task": [
+            "execute"
+        ],
+        "binding.progressBlock": [
+            "setVisibility"
+        ],
+        "binding.progressText": [
+            "setVisibility",
+            "setText"
+        ],
+        "containerActivity.getFileDownloadProgressListener()": [
+            "addDataTransferProgressListener",
+            "removeDataTransferProgressListener"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "containerActivity.getFileUploaderHelper()": [
+            "addUploadTransferProgressListener",
+            "removeUploadTransferProgressListener"
+        ],
+        "binding.detailContainer": [
+            "setVisibility"
+        ],
+        "binding.emptyList.emptyListViewHeadline": [
+            "setText"
+        ],
+        "binding.emptyList.emptyListIcon": [
+            "setImageResource",
+            "setVisibility"
+        ],
+        "requireActivity().getSupportFragmentManager().beginTransaction().add(R.id.sharing_frame_container,\n                                                                             FileDetailsSharingProcessFragment.newInstance(getFile(),\n                                                                                                                           shareeName,\n                                                                                                                           shareType,\n                                                                                                                           secureShare),\n                                                                             FileDetailsSharingProcessFragment.TAG)": [
+            "commit"
+        ],
+        "requireActivity().getSupportFragmentManager().beginTransaction()": [
+            "add"
+        ],
+        "requireActivity().getSupportFragmentManager()": [
+            "beginTransaction"
+        ],
+        "FileDetailsSharingProcessFragment": [
+            "newInstance"
+        ],
+        "binding.sharingFrameContainer": [
+            "setVisibility"
+        ],
+        "mFabMain": [
+            "hide",
+            "show"
+        ],
+        "requireActivity().getSupportFragmentManager().beginTransaction().add(R.id.sharing_frame_container,\n                                                                             FileDetailsSharingProcessFragment.newInstance(share, screenTypePermission, isReshareShown,\n                                                                                                                           isExpiryDateShown),\n                                                                             FileDetailsSharingProcessFragment.TAG)": [
+            "commit"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "clientFactory": [
+            "create"
+        ],
+        "event": [
+            "getShouldFavorite",
+            "getRemotePath"
+        ],
+        "toggleFavoriteOperation": [
+            "execute"
+        ],
+        "remoteOperationResult": [
+            "isSuccess"
+        ],
+        "MDMConfig.INSTANCE": [
+            "shareViaLink",
+            "shareViaUser"
+        ],
+        "EncryptionUtils": [
+            "supportsSecureFiledrop"
+        ],
+        "parentFolder": [
+            "isEncrypted"
+        ],
+        "progressBarReference": [
+            "get"
+        ],
+        "pb": [
+            "setProgress",
+            "postInvalidate"
+        ]
+    },
+    "methods": [
+        {
+            "name": "newInstance",
+            "return_type": "FileDetailFragment",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "fileToDetail"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "parentFolder"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 5115,
+            "end_position": 5527,
+            "body_start": 5213,
+            "body_end": 5527
+        },
+        {
+            "name": "newInstance",
+            "return_type": "FileDetailFragment",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "fileToDetail"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "int",
+                    "name": "activeTab"
+                }
+            ],
+            "start_position": 5967,
+            "end_position": 6360,
+            "body_start": 6059,
+            "body_end": 6360
+        },
+        {
+            "name": "getFileDetailSharingFragment",
+            "return_type": "FileDetailSharingFragment",
+            "parameters": [],
+            "start_position": 6867,
+            "end_position": 7178,
+            "body_start": 6931,
+            "body_end": 7178
+        },
+        {
+            "name": "getFileDetailActivitiesFragment",
+            "return_type": "FileDetailActivitiesFragment",
+            "parameters": [],
+            "start_position": 7365,
+            "end_position": 7618,
+            "body_start": 7435,
+            "body_end": 7618
+        },
+        {
+            "name": "goBackToOCFileListFragment",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7624,
+            "end_position": 7715,
+            "body_start": 7665,
+            "body_end": 7715
+        },
+        {
+            "name": "onActivityCreated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 7721,
+            "end_position": 7885,
+            "body_start": 7792,
+            "body_end": 7885
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 7891,
+            "end_position": 10117,
+            "body_start": 8012,
+            "body_end": 10117
+        },
+        {
+            "name": "onViewCreated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 10123,
+            "end_position": 10796,
+            "body_start": 10220,
+            "body_end": 10796
+        },
+        {
+            "name": "onOverflowIconClicked",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10802,
+            "end_position": 12021,
+            "body_start": 10839,
+            "body_end": 12021
+        },
+        {
+            "name": "setupViewPager",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12027,
+            "end_position": 14697,
+            "body_start": 12057,
+            "body_end": 14697
+        },
+        {
+            "name": "onPageScrolled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                },
+                {
+                    "type": "float",
+                    "name": "positionOffset"
+                },
+                {
+                    "type": "int",
+                    "name": "positionOffsetPixels"
+                }
+            ],
+            "start_position": 13166,
+            "end_position": 13602,
+            "body_start": 13277,
+            "body_end": 13602
+        },
+        {
+            "name": "onTabSelected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TabLayout.Tab",
+                    "name": "tab"
+                }
+            ],
+            "start_position": 13718,
+            "end_position": 14151,
+            "body_start": 13785,
+            "body_end": 14151
+        },
+        {
+            "name": "onTabUnselected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TabLayout.Tab",
+                    "name": "tab"
+                }
+            ],
+            "start_position": 14165,
+            "end_position": 14289,
+            "body_start": 14234,
+            "body_end": 14289
+        },
+        {
+            "name": "onTabReselected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TabLayout.Tab",
+                    "name": "tab"
+                }
+            ],
+            "start_position": 14303,
+            "end_position": 14427,
+            "body_start": 14372,
+            "body_end": 14427
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 14703,
+            "end_position": 14982,
+            "body_start": 14775,
+            "body_end": 14982
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14988,
+            "end_position": 15139,
+            "body_start": 15024,
+            "body_end": 15139
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15145,
+            "end_position": 15378,
+            "body_start": 15182,
+            "body_end": 15378
+        },
+        {
+            "name": "onPause",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15384,
+            "end_position": 15452,
+            "body_start": 15420,
+            "body_end": 15452
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15458,
+            "end_position": 15704,
+            "body_start": 15493,
+            "body_end": 15704
+        },
+        {
+            "name": "onAttach",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 15710,
+            "end_position": 15928,
+            "body_start": 15771,
+            "body_end": 15928
+        },
+        {
+            "name": "onDestroyView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15934,
+            "end_position": 16038,
+            "body_start": 15976,
+            "body_end": 16038
+        },
+        {
+            "name": "getView",
+            "return_type": "View",
+            "parameters": [],
+            "start_position": 16044,
+            "end_position": 16152,
+            "body_start": 16080,
+            "body_end": 16152
+        },
+        {
+            "name": "onPrepareOptionsMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 16158,
+            "end_position": 16308,
+            "body_start": 16225,
+            "body_end": 16308
+        },
+        {
+            "name": "optionsItemSelected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "itemId"
+                }
+            ],
+            "start_position": 16314,
+            "end_position": 18334,
+            "body_start": 16372,
+            "body_end": 18334
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "v"
+                }
+            ],
+            "start_position": 18340,
+            "end_position": 19559,
+            "body_start": 18382,
+            "body_end": 19559
+        },
+        {
+            "name": "isEmpty",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 19792,
+            "end_position": 19874,
+            "body_start": 19817,
+            "body_end": 19874
+        },
+        {
+            "name": "updateFileDetails",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 20020,
+            "end_position": 20171,
+            "body_start": 20074,
+            "body_end": 20171
+        },
+        {
+            "name": "updateFileDetails",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "transferring"
+                },
+                {
+                    "type": "boolean",
+                    "name": "refresh"
+                }
+            ],
+            "start_position": 20743,
+            "end_position": 23147,
+            "body_start": 20812,
+            "body_end": 23147
+        },
+        {
+            "name": "setFileModificationTimestamp",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "boolean",
+                    "name": "showDetailedTimestamp"
+                }
+            ],
+            "start_position": 23153,
+            "end_position": 23661,
+            "body_start": 23239,
+            "body_end": 23661
+        },
+        {
+            "name": "setFavoriteIconStatus",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isFavorite"
+                }
+            ],
+            "start_position": 23667,
+            "end_position": 24174,
+            "body_start": 23722,
+            "body_end": 24174
+        },
+        {
+            "name": "readyToShow",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 24345,
+            "end_position": 24432,
+            "body_start": 24375,
+            "body_end": 24432
+        },
+        {
+            "name": "setFilePreview",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 24557,
+            "end_position": 27545,
+            "body_start": 24598,
+            "body_end": 27545
+        },
+        {
+            "name": "setButtonsForTransferring",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 27630,
+            "end_position": 28316,
+            "body_start": 27671,
+            "body_end": 28316
+        },
+        {
+            "name": "setButtonsForDown",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28402,
+            "end_position": 28576,
+            "body_start": 28435,
+            "body_end": 28576
+        },
+        {
+            "name": "setButtonsForRemote",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28666,
+            "end_position": 28842,
+            "body_start": 28701,
+            "body_end": 28842
+        },
+        {
+            "name": "listenForTransferProgress",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28848,
+            "end_position": 29731,
+            "body_start": 28888,
+            "body_end": 29731
+        },
+        {
+            "name": "leaveTransferProgress",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 29737,
+            "end_position": 30551,
+            "body_start": 29774,
+            "body_end": 30551
+        },
+        {
+            "name": "showEmptyContent",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 30557,
+            "end_position": 30975,
+            "body_start": 30589,
+            "body_end": 30975
+        },
+        {
+            "name": "initiateSharingProcess",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "shareeName"
+                },
+                {
+                    "type": "ShareType",
+                    "name": "shareType"
+                },
+                {
+                    "type": "boolean",
+                    "name": "secureShare"
+                }
+            ],
+            "start_position": 31117,
+            "end_position": 32121,
+            "body_start": 31291,
+            "body_end": 32121
+        },
+        {
+            "name": "showHideFragmentView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isFragmentReplaced"
+                }
+            ],
+            "start_position": 32273,
+            "end_position": 32819,
+            "body_start": 32334,
+            "body_end": 32819
+        },
+        {
+            "name": "editExistingShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "int",
+                    "name": "screenTypePermission"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isReshareShown"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isExpiryDateShown"
+                }
+            ],
+            "start_position": 33035,
+            "end_position": 33791,
+            "body_start": 33191,
+            "body_end": 33791
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FavoriteEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 33797,
+            "end_position": 34762,
+            "body_start": 33896,
+            "body_end": 34762
+        },
+        {
+            "name": "showSharingTab",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 34768,
+            "end_position": 35598,
+            "body_start": 34801,
+            "body_end": 35598
+        },
+        {
+            "name": "onTransferProgress",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "progressRate"
+                },
+                {
+                    "type": "long",
+                    "name": "totalTransferredSoFar"
+                },
+                {
+                    "type": "long",
+                    "name": "totalToTransfer"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 36024,
+            "end_position": 36604,
+            "body_start": 36198,
+            "body_end": 36604
+        }
+    ],
+    "local_variables": {
+        "frag": "FileDetailFragment",
+        "args": "Bundle",
+        "arguments": "Bundle",
+        "context": "Context",
+        "chip": "Chip",
+        "file": "OCFile",
+        "additionalFilter": "List<Integer>",
+        "fragmentManager": "FragmentManager",
+        "adapter": "FileDetailTabAdapter",
+        "fragment": "FileDetailActivitiesFragment",
+        "tab": "TabLayout.Tab",
+        "dialog": "RenameFileDialogFragment",
+        "list": "ArrayList<OCFile>",
+        "id": "int",
+        "showDetailedTimestamp": "boolean",
+        "storageManager": "FileDataStorageManager",
+        "fabMain": "FloatingActionButton",
+        "resizedImage": "Bitmap",
+        "tagId": "String",
+        "thumbnail": "Bitmap",
+        "task": "ThumbnailsCacheManager.ResizedImageGenerationTask",
+        "asyncDrawable": "ThumbnailsCacheManager.AsyncResizedImageDrawable",
+        "targetKey": "String",
+        "mFabMain": "FloatingActionButton",
+        "user": "User",
+        "client": "OwnCloudClient",
+        "toggleFavoriteOperation": "ToggleFavoriteRemoteOperation",
+        "remoteOperationResult": "RemoteOperationResult",
+        "percent": "int",
+        "pb": "ProgressBar"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "throw_statement",
+        "enhanced_for_statement",
+        "try_statement"
+    ]
+}

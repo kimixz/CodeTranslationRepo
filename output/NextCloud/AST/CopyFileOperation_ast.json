@@ -1,0 +1,59 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "this.targetParentPath": [
+            "endsWith"
+        ],
+        "targetParentPath": [
+            "startsWith"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "copyLocalFile"
+        ],
+        "unknown": [
+            "getStorageManager"
+        ],
+        "file": [
+            "getFileName",
+            "isFolder"
+        ],
+        "targetPath": [
+            "equals"
+        ],
+        "UploadFileOperation": [
+            "getNewAvailableRemotePath"
+        ],
+        "new CopyFileRemoteOperation(srcPath, targetPath, false)": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess"
+        ]
+    },
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1860,
+            "end_position": 3278,
+            "body_start": 1933,
+            "body_end": 3278
+        }
+    ],
+    "local_variables": {
+        "file": "OCFile",
+        "targetPath": "String",
+        "result": "RemoteOperationResult"
+    }
+}

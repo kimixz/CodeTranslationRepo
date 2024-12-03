@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "getCurrentAccount",
+        "method_code": "@Deprecated\n    @NonNull\n    Account getCurrentAccount();",
+        "prompt": "\n        Please translate the following Java (Android) method titled getCurrentAccount from CurrentAccountProvider.java into Swift.\n\n        Input:\n\n        Method Name: getCurrentAccount\n\n        Method Code: @Deprecated\n    @NonNull\n    Account getCurrentAccount();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@available(*, deprecated)\nfunc getCurrentAccount() -> Account {\n    // Implementation needed\n}\n```"
+    },
+    {
+        "method_name": "getUser",
+        "method_code": "@NonNull\n    default User getUser() {\n        return new AnonymousUser(\"dummy\");\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUser from CurrentAccountProvider.java into Swift.\n\n        Input:\n\n        Method Name: getUser\n\n        Method Code: @NonNull\n    default User getUser() {\n        return new AnonymousUser(\"dummy\");\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUser() -> User {\n    return AnonymousUser(name: \"dummy\")\n}\n```"
+    }
+]

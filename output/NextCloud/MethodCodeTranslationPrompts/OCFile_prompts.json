@@ -1,0 +1,812 @@
+[
+    {
+        "method_name": "writeToParcel",
+        "method_code": "Override\n    public void writeToParcel(Parcel dest, int flags) {\n        dest.writeLong(fileId);\n        dest.writeLong(parentId);\n        dest.writeLong(fileLength);\n        dest.writeLong(creationTimestamp);\n        dest.writeLong(modificationTimestamp);\n        dest.writeLong(modificationTimestampAtLastSyncForData);\n        dest.writeString(remotePath);\n        dest.writeString(decryptedRemotePath);\n        dest.writeString(localPath);\n        dest.writeString(mimeType);\n        dest.writeInt(needsUpdatingWhileSaving ? 1 : 0);\n        dest.writeLong(lastSyncDateForProperties);\n        dest.writeLong(lastSyncDateForData);\n        dest.writeString(etag);\n        dest.writeString(etagOnServer);\n        dest.writeInt(sharedViaLink ? 1 : 0);\n        dest.writeString(permissions);\n        dest.writeLong(localId);\n        dest.writeString(remoteId);\n        dest.writeInt(updateThumbnailNeeded ? 1 : 0);\n        dest.writeInt(downloading ? 1 : 0);\n        dest.writeString(etagInConflict);\n        dest.writeInt(sharedWithSharee ? 1 : 0);\n        dest.writeInt(favorite ? 1 : 0);\n        dest.writeInt(hidden ? 1 : 0);\n        dest.writeInt(encrypted ? 1 : 0);\n        dest.writeString(ownerId);\n        dest.writeString(ownerDisplayName);\n        dest.writeSerializable(mountType);\n        dest.writeString(richWorkspace);\n        dest.writeInt(previewAvailable ? 1 : 0);\n        dest.writeLong(firstShareTimestamp);\n        dest.writeInt(locked ? 1 : 0);\n        dest.writeInt(lockType != null ? lockType.getValue() : -1);\n        dest.writeString(lockOwnerId);\n        dest.writeString(lockOwnerDisplayName);\n        dest.writeString(lockOwnerEditor);\n        dest.writeLong(lockTimestamp);\n        dest.writeLong(lockTimeout);\n        dest.writeString(lockToken);\n        dest.writeString(livePhoto);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled writeToParcel from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: writeToParcel\n\n        Method Code: Override\n    public void writeToParcel(Parcel dest, int flags) {\n        dest.writeLong(fileId);\n        dest.writeLong(parentId);\n        dest.writeLong(fileLength);\n        dest.writeLong(creationTimestamp);\n        dest.writeLong(modificationTimestamp);\n        dest.writeLong(modificationTimestampAtLastSyncForData);\n        dest.writeString(remotePath);\n        dest.writeString(decryptedRemotePath);\n        dest.writeString(localPath);\n        dest.writeString(mimeType);\n        dest.writeInt(needsUpdatingWhileSaving ? 1 : 0);\n        dest.writeLong(lastSyncDateForProperties);\n        dest.writeLong(lastSyncDateForData);\n        dest.writeString(etag);\n        dest.writeString(etagOnServer);\n        dest.writeInt(sharedViaLink ? 1 : 0);\n        dest.writeString(permissions);\n        dest.writeLong(localId);\n        dest.writeString(remoteId);\n        dest.writeInt(updateThumbnailNeeded ? 1 : 0);\n        dest.writeInt(downloading ? 1 : 0);\n        dest.writeString(etagInConflict);\n        dest.writeInt(sharedWithSharee ? 1 : 0);\n        dest.writeInt(favorite ? 1 : 0);\n        dest.writeInt(hidden ? 1 : 0);\n        dest.writeInt(encrypted ? 1 : 0);\n        dest.writeString(ownerId);\n        dest.writeString(ownerDisplayName);\n        dest.writeSerializable(mountType);\n        dest.writeString(richWorkspace);\n        dest.writeInt(previewAvailable ? 1 : 0);\n        dest.writeLong(firstShareTimestamp);\n        dest.writeInt(locked ? 1 : 0);\n        dest.writeInt(lockType != null ? lockType.getValue() : -1);\n        dest.writeString(lockOwnerId);\n        dest.writeString(lockOwnerDisplayName);\n        dest.writeString(lockOwnerEditor);\n        dest.writeLong(lockTimestamp);\n        dest.writeLong(lockTimeout);\n        dest.writeString(lockToken);\n        dest.writeString(livePhoto);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc writeToParcel(dest: inout Parcel, flags: Int) {\n    dest.writeLong(fileId)\n    dest.writeLong(parentId)\n    dest.writeLong(fileLength)\n    dest.writeLong(creationTimestamp)\n    dest.writeLong(modificationTimestamp)\n    dest.writeLong(modificationTimestampAtLastSyncForData)\n    dest.writeString(remotePath)\n    dest.writeString(decryptedRemotePath)\n    dest.writeString(localPath)\n    dest.writeString(mimeType)\n    dest.writeInt(needsUpdatingWhileSaving ? 1 : 0)\n    dest.writeLong(lastSyncDateForProperties)\n    dest.writeLong(lastSyncDateForData)\n    dest.writeString(etag)\n    dest.writeString(etagOnServer)\n    dest.writeInt(sharedViaLink ? 1 : 0)\n    dest.writeString(permissions)\n    dest.writeLong(localId)\n    dest.writeString(remoteId)\n    dest.writeInt(updateThumbnailNeeded ? 1 : 0)\n    dest.writeInt(downloading ? 1 : 0)\n    dest.writeString(etagInConflict)\n    dest.writeInt(sharedWithSharee ? 1 : 0)\n    dest.writeInt(favorite ? 1 : 0)\n    dest.writeInt(hidden ? 1 : 0)\n    dest.writeInt(encrypted ? 1 : 0)\n    dest.writeString(ownerId)\n    dest.writeString(ownerDisplayName)\n    dest.writeSerializable(mountType)\n    dest.writeString(richWorkspace)\n    dest.writeInt(previewAvailable ? 1 : 0)\n    dest.writeLong(firstShareTimestamp)\n    dest.writeInt(locked ? 1 : 0)\n    dest.writeInt(lockType?.getValue() ?? -1)\n    dest.writeString(lockOwnerId)\n    dest.writeString(lockOwnerDisplayName)\n    dest.writeString(lockOwnerEditor)\n    dest.writeLong(lockTimestamp)\n    dest.writeLong(lockTimeout)\n    dest.writeString(lockToken)\n    dest.writeString(livePhoto)\n}\n```"
+    },
+    {
+        "method_name": "getLinkedFileIdForLivePhoto",
+        "method_code": "ublic String getLinkedFileIdForLivePhoto() {\n        return livePhoto;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLinkedFileIdForLivePhoto from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLinkedFileIdForLivePhoto\n\n        Method Code: ublic String getLinkedFileIdForLivePhoto() {\n        return livePhoto;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLinkedFileIdForLivePhoto() -> String? {\n    return livePhoto\n}\n```"
+    },
+    {
+        "method_name": "setLivePhoto",
+        "method_code": "ublic void setLivePhoto(String livePhoto) {\n        this.livePhoto = livePhoto;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLivePhoto from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLivePhoto\n\n        Method Code: ublic void setLivePhoto(String livePhoto) {\n        this.livePhoto = livePhoto;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLivePhoto(_ livePhoto: String) {\n    self.livePhoto = livePhoto\n}\n```"
+    },
+    {
+        "method_name": "setDecryptedRemotePath",
+        "method_code": "ublic void setDecryptedRemotePath(String path) {\n        decryptedRemotePath = path;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setDecryptedRemotePath from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setDecryptedRemotePath\n\n        Method Code: ublic void setDecryptedRemotePath(String path) {\n        decryptedRemotePath = path;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setDecryptedRemotePath(_ path: String) {\n    decryptedRemotePath = path\n}\n```"
+    },
+    {
+        "method_name": "getDecryptedRemotePath",
+        "method_code": "ublic String getDecryptedRemotePath() {\n        // Fallback\n        // TODO test without, on a new created folder\n        if (!isEncrypted() && decryptedRemotePath == null) {\n            decryptedRemotePath = remotePath;\n        }\n\n        if (isFolder()) {\n            if (decryptedRemotePath.endsWith(PATH_SEPARATOR)) {\n                return decryptedRemotePath;\n            } else {\n                return decryptedRemotePath + PATH_SEPARATOR;\n            }\n        } else {\n            if (decryptedRemotePath == null) {\n                // last fallback\n                return remotePath;\n            } else {\n                return decryptedRemotePath;\n            }\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getDecryptedRemotePath from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getDecryptedRemotePath\n\n        Method Code: ublic String getDecryptedRemotePath() {\n        // Fallback\n        // TODO test without, on a new created folder\n        if (!isEncrypted() && decryptedRemotePath == null) {\n            decryptedRemotePath = remotePath;\n        }\n\n        if (isFolder()) {\n            if (decryptedRemotePath.endsWith(PATH_SEPARATOR)) {\n                return decryptedRemotePath;\n            } else {\n                return decryptedRemotePath + PATH_SEPARATOR;\n            }\n        } else {\n            if (decryptedRemotePath == null) {\n                // last fallback\n                return remotePath;\n            } else {\n                return decryptedRemotePath;\n            }\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getDecryptedRemotePath() -> String {\n    // Fallback\n    // TODO test without, on a new created folder\n    if !isEncrypted() && decryptedRemotePath == nil {\n        decryptedRemotePath = remotePath\n    }\n\n    if isFolder() {\n        if decryptedRemotePath!.hasSuffix(PATH_SEPARATOR) {\n            return decryptedRemotePath!\n        } else {\n            return decryptedRemotePath! + PATH_SEPARATOR\n        }\n    } else {\n        if decryptedRemotePath == nil {\n            // last fallback\n            return remotePath\n        } else {\n            return decryptedRemotePath!\n        }\n    }\n}\n```"
+    },
+    {
+        "method_name": "getRemotePath",
+        "method_code": "ublic String getRemotePath() {\n        if (isFolder()) {\n            if (remotePath.endsWith(PATH_SEPARATOR)) {\n                return remotePath;\n            } else {\n                return remotePath + PATH_SEPARATOR;\n            }\n        } else {\n            return remotePath;\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getRemotePath from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getRemotePath\n\n        Method Code: ublic String getRemotePath() {\n        if (isFolder()) {\n            if (remotePath.endsWith(PATH_SEPARATOR)) {\n                return remotePath;\n            } else {\n                return remotePath + PATH_SEPARATOR;\n            }\n        } else {\n            return remotePath;\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getRemotePath() -> String {\n    if isFolder() {\n        if remotePath.hasSuffix(PATH_SEPARATOR) {\n            return remotePath\n        } else {\n            return remotePath + PATH_SEPARATOR\n        }\n    } else {\n        return remotePath\n    }\n}\n```"
+    },
+    {
+        "method_name": "fileExists",
+        "method_code": "ublic boolean fileExists() {\n        return fileId != -1;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileExists from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: fileExists\n\n        Method Code: ublic boolean fileExists() {\n        return fileId != -1;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc fileExists() -> Bool {\n    return fileId != -1\n}\n```"
+    },
+    {
+        "method_name": "isFolder",
+        "method_code": "ublic boolean isFolder() {\n        return MimeType.DIRECTORY.equals(mimeType) || MimeType.WEBDAV_FOLDER.equals(mimeType);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isFolder from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isFolder\n\n        Method Code: ublic boolean isFolder() {\n        return MimeType.DIRECTORY.equals(mimeType) || MimeType.WEBDAV_FOLDER.equals(mimeType);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isFolder() -> Bool {\n    return mimeType == MimeType.DIRECTORY || mimeType == MimeType.WEBDAV_FOLDER\n}\n```"
+    },
+    {
+        "method_name": "setFolder",
+        "method_code": "ublic OCFile setFolder() {\n        setMimeType(MimeType.DIRECTORY);\n        return this;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFolder from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setFolder\n\n        Method Code: ublic OCFile setFolder() {\n        setMimeType(MimeType.DIRECTORY);\n        return this;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFolder() -> OCFile {\n    setMimeType(.directory)\n    return self\n}\n```"
+    },
+    {
+        "method_name": "isDown",
+        "method_code": "ublic boolean isDown() {\n        return !isFolder() && existsOnDevice();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isDown from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isDown\n\n        Method Code: ublic boolean isDown() {\n        return !isFolder() && existsOnDevice();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isDown() -> Bool {\n    return !isFolder() && existsOnDevice()\n}\n```"
+    },
+    {
+        "method_name": "existsOnDevice",
+        "method_code": "ublic boolean existsOnDevice() {\n        if (!TextUtils.isEmpty(localPath)) {\n            return new File(localPath).exists();\n        }\n        return false;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled existsOnDevice from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: existsOnDevice\n\n        Method Code: ublic boolean existsOnDevice() {\n        if (!TextUtils.isEmpty(localPath)) {\n            return new File(localPath).exists();\n        }\n        return false;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc existsOnDevice() -> Bool {\n    if let localPath = localPath, !localPath.isEmpty {\n        return FileManager.default.fileExists(atPath: localPath)\n    }\n    return false\n}\n```"
+    },
+    {
+        "method_name": "getStoragePath",
+        "method_code": "ublic String getStoragePath() {\n        return localPath;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getStoragePath from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getStoragePath\n\n        Method Code: ublic String getStoragePath() {\n        return localPath;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getStoragePath() -> String {\n    return localPath\n}\n```"
+    },
+    {
+        "method_name": "getStorageUri",
+        "method_code": "ublic Uri getStorageUri() {\n        if (TextUtils.isEmpty(localPath)) {\n            return null;\n        }\n        if (localUri == null) {\n            Uri.Builder builder = new Uri.Builder();\n            builder.scheme(ContentResolver.SCHEME_FILE);\n            builder.path(localPath);\n            localUri = builder.build();\n        }\n        return localUri;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getStorageUri from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getStorageUri\n\n        Method Code: ublic Uri getStorageUri() {\n        if (TextUtils.isEmpty(localPath)) {\n            return null;\n        }\n        if (localUri == null) {\n            Uri.Builder builder = new Uri.Builder();\n            builder.scheme(ContentResolver.SCHEME_FILE);\n            builder.path(localPath);\n            localUri = builder.build();\n        }\n        return localUri;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getStorageUri() -> URL? {\n    guard !localPath.isEmpty else {\n        return nil\n    }\n    if localUri == nil {\n        var components = URLComponents()\n        components.scheme = \"file\"\n        components.path = localPath\n        localUri = components.url\n    }\n    return localUri\n}\n```"
+    },
+    {
+        "method_name": "getLegacyExposedFileUri",
+        "method_code": "ublic Uri getLegacyExposedFileUri() {\n        if (TextUtils.isEmpty(localPath)) {\n            return null;\n        }\n\n        if (exposedFileUri == null) {\n            return Uri.parse(ContentResolver.SCHEME_FILE + \"://\" + WebdavUtils.encodePath(localPath));\n        }\n\n        return exposedFileUri;\n\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLegacyExposedFileUri from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLegacyExposedFileUri\n\n        Method Code: ublic Uri getLegacyExposedFileUri() {\n        if (TextUtils.isEmpty(localPath)) {\n            return null;\n        }\n\n        if (exposedFileUri == null) {\n            return Uri.parse(ContentResolver.SCHEME_FILE + \"://\" + WebdavUtils.encodePath(localPath));\n        }\n\n        return exposedFileUri;\n\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLegacyExposedFileUri() -> URL? {\n    if localPath.isEmpty {\n        return nil\n    }\n\n    if exposedFileUri == nil {\n        return URL(string: \"file://\" + WebdavUtils.encodePath(localPath))\n    }\n\n    return exposedFileUri\n}\n```"
+    },
+    {
+        "method_name": "getExposedFileUri",
+        "method_code": "ublic Uri getExposedFileUri(Context context) {\n        if (TextUtils.isEmpty(localPath)) {\n            return null;\n        }\n        if (exposedFileUri == null) {\n            try {\n                exposedFileUri = FileProvider.getUriForFile(\n                        context,\n                        context.getString(R.string.file_provider_authority),\n                        new File(localPath));\n            } catch (IllegalArgumentException ex) {\n                // Could not share file using FileProvider URI scheme.\n                // Fall back to legacy URI parsing.\n                getLegacyExposedFileUri();\n            }\n        }\n\n        return exposedFileUri;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getExposedFileUri from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getExposedFileUri\n\n        Method Code: ublic Uri getExposedFileUri(Context context) {\n        if (TextUtils.isEmpty(localPath)) {\n            return null;\n        }\n        if (exposedFileUri == null) {\n            try {\n                exposedFileUri = FileProvider.getUriForFile(\n                        context,\n                        context.getString(R.string.file_provider_authority),\n                        new File(localPath));\n            } catch (IllegalArgumentException ex) {\n                // Could not share file using FileProvider URI scheme.\n                // Fall back to legacy URI parsing.\n                getLegacyExposedFileUri();\n            }\n        }\n\n        return exposedFileUri;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getExposedFileUri(context: Context) -> URL? {\n    guard !localPath.isEmpty else {\n        return nil\n    }\n    if exposedFileUri == nil {\n        do {\n            exposedFileUri = try FileProvider.url(\n                for: File(context: context, authority: context.getString(R.string.file_provider_authority), file: URL(fileURLWithPath: localPath))\n            )\n        } catch {\n            // Could not share file using FileProvider URI scheme.\n            // Fall back to legacy URI parsing.\n            getLegacyExposedFileUri()\n        }\n    }\n    return exposedFileUri\n}\n```"
+    },
+    {
+        "method_name": "setStoragePath",
+        "method_code": "ublic void setStoragePath(String storage_path) {\n        if (storage_path == null) {\n            localPath = null;\n        } else {\n            localPath = storage_path.replaceAll(\"//\", \"/\");\n\n            if (isFolder() && !localPath.endsWith(\"/\")) {\n                localPath = localPath + \"/\";\n            }\n        }\n        localUri = null;\n        exposedFileUri = null;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setStoragePath from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setStoragePath\n\n        Method Code: ublic void setStoragePath(String storage_path) {\n        if (storage_path == null) {\n            localPath = null;\n        } else {\n            localPath = storage_path.replaceAll(\"//\", \"/\");\n\n            if (isFolder() && !localPath.endsWith(\"/\")) {\n                localPath = localPath + \"/\";\n            }\n        }\n        localUri = null;\n        exposedFileUri = null;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setStoragePath(_ storagePath: String?) {\n    if storagePath == nil {\n        localPath = nil\n    } else {\n        localPath = storagePath!.replacingOccurrences(of: \"//\", with: \"/\")\n        \n        if isFolder() && !localPath!.hasSuffix(\"/\") {\n            localPath = localPath! + \"/\"\n        }\n    }\n    localUri = nil\n    exposedFileUri = nil\n}\n```"
+    },
+    {
+        "method_name": "getFileName",
+        "method_code": "ublic String getFileName() {\n        return getDecryptedFileName();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFileName from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getFileName\n\n        Method Code: ublic String getFileName() {\n        return getDecryptedFileName();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFileName() -> String {\n    return getDecryptedFileName()\n}\n```"
+    },
+    {
+        "method_name": "getDecryptedFileName",
+        "method_code": "ublic String getDecryptedFileName() {\n        File f = new File(getDecryptedRemotePath());\n        return f.getName().length() == 0 ? ROOT_PATH : f.getName();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getDecryptedFileName from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getDecryptedFileName\n\n        Method Code: ublic String getDecryptedFileName() {\n        File f = new File(getDecryptedRemotePath());\n        return f.getName().length() == 0 ? ROOT_PATH : f.getName();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getDecryptedFileName() -> String {\n    let f = URL(fileURLWithPath: getDecryptedRemotePath())\n    return f.lastPathComponent.isEmpty ? ROOT_PATH : f.lastPathComponent\n}\n```"
+    },
+    {
+        "method_name": "getEncryptedFileName",
+        "method_code": "ublic String getEncryptedFileName() {\n        File f = new File(remotePath);\n        return f.getName().length() == 0 ? ROOT_PATH : f.getName();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getEncryptedFileName from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getEncryptedFileName\n\n        Method Code: ublic String getEncryptedFileName() {\n        File f = new File(remotePath);\n        return f.getName().length() == 0 ? ROOT_PATH : f.getName();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getEncryptedFileName() -> String {\n    let f = URL(fileURLWithPath: remotePath)\n    return f.lastPathComponent.isEmpty ? ROOT_PATH : f.lastPathComponent\n}\n```"
+    },
+    {
+        "method_name": "setFileName",
+        "method_code": "ublic void setFileName(String name) {\n        Log_OC.d(TAG, \"OCFile name changing from \" + remotePath);\n        if (!TextUtils.isEmpty(name) && !name.contains(PATH_SEPARATOR) && !ROOT_PATH.equals(remotePath)) {\n            String parent = new File(this.getRemotePath()).getParent();\n            if (parent != null) {\n                parent = parent.endsWith(PATH_SEPARATOR) ? parent : parent + PATH_SEPARATOR;\n                remotePath = parent + name;\n                if (isFolder()) {\n                    remotePath += PATH_SEPARATOR;\n                }\n                Log_OC.d(TAG, \"OCFile name changed to \" + remotePath);\n            }\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFileName from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setFileName\n\n        Method Code: ublic void setFileName(String name) {\n        Log_OC.d(TAG, \"OCFile name changing from \" + remotePath);\n        if (!TextUtils.isEmpty(name) && !name.contains(PATH_SEPARATOR) && !ROOT_PATH.equals(remotePath)) {\n            String parent = new File(this.getRemotePath()).getParent();\n            if (parent != null) {\n                parent = parent.endsWith(PATH_SEPARATOR) ? parent : parent + PATH_SEPARATOR;\n                remotePath = parent + name;\n                if (isFolder()) {\n                    remotePath += PATH_SEPARATOR;\n                }\n                Log_OC.d(TAG, \"OCFile name changed to \" + remotePath);\n            }\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFileName(_ name: String) {\n    Log_OC.d(TAG, \"OCFile name changing from \\(remotePath)\")\n    if !name.isEmpty && !name.contains(PATH_SEPARATOR) && remotePath != ROOT_PATH {\n        if var parent = URL(fileURLWithPath: self.getRemotePath()).deletingLastPathComponent().path {\n            parent = parent.hasSuffix(PATH_SEPARATOR) ? parent : parent + PATH_SEPARATOR\n            remotePath = parent + name\n            if isFolder() {\n                remotePath += PATH_SEPARATOR\n            }\n            Log_OC.d(TAG, \"OCFile name changed to \\(remotePath)\")\n        }\n    }\n}\n```"
+    },
+    {
+        "method_name": "resetData",
+        "method_code": "rivate void resetData() {\n        fileId = -1;\n        remotePath = null;\n        decryptedRemotePath = null;\n        parentId = 0;\n        localPath = null;\n        mimeType = null;\n        fileLength = 0;\n        creationTimestamp = 0;\n        modificationTimestamp = 0;\n        modificationTimestampAtLastSyncForData = 0;\n        lastSyncDateForProperties = 0;\n        lastSyncDateForData = 0;\n        needsUpdatingWhileSaving = false;\n        etag = null;\n        etagOnServer = null;\n        sharedViaLink = false;\n        permissions = null;\n        localId = -1;\n        remoteId = null;\n        updateThumbnailNeeded = false;\n        downloading = false;\n        etagInConflict = null;\n        sharedWithSharee = false;\n        favorite = false;\n        hidden = false;\n        encrypted = false;\n        mountType = WebdavEntry.MountType.INTERNAL;\n        richWorkspace = \"\";\n        firstShareTimestamp = 0;\n        locked = false;\n        lockType = null;\n        lockOwnerId = null;\n        lockOwnerDisplayName = null;\n        lockOwnerEditor = null;\n        lockTimestamp = 0;\n        lockTimeout = 0;\n        lockToken = null;\n        livePhoto = null;\n        imageDimension = null;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled resetData from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: resetData\n\n        Method Code: rivate void resetData() {\n        fileId = -1;\n        remotePath = null;\n        decryptedRemotePath = null;\n        parentId = 0;\n        localPath = null;\n        mimeType = null;\n        fileLength = 0;\n        creationTimestamp = 0;\n        modificationTimestamp = 0;\n        modificationTimestampAtLastSyncForData = 0;\n        lastSyncDateForProperties = 0;\n        lastSyncDateForData = 0;\n        needsUpdatingWhileSaving = false;\n        etag = null;\n        etagOnServer = null;\n        sharedViaLink = false;\n        permissions = null;\n        localId = -1;\n        remoteId = null;\n        updateThumbnailNeeded = false;\n        downloading = false;\n        etagInConflict = null;\n        sharedWithSharee = false;\n        favorite = false;\n        hidden = false;\n        encrypted = false;\n        mountType = WebdavEntry.MountType.INTERNAL;\n        richWorkspace = \"\";\n        firstShareTimestamp = 0;\n        locked = false;\n        lockType = null;\n        lockOwnerId = null;\n        lockOwnerDisplayName = null;\n        lockOwnerEditor = null;\n        lockTimestamp = 0;\n        lockTimeout = 0;\n        lockToken = null;\n        livePhoto = null;\n        imageDimension = null;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprivate func resetData() {\n    fileId = -1\n    remotePath = nil\n    decryptedRemotePath = nil\n    parentId = 0\n    localPath = nil\n    mimeType = nil\n    fileLength = 0\n    creationTimestamp = 0\n    modificationTimestamp = 0\n    modificationTimestampAtLastSyncForData = 0\n    lastSyncDateForProperties = 0\n    lastSyncDateForData = 0\n    needsUpdatingWhileSaving = false\n    etag = nil\n    etagOnServer = nil\n    sharedViaLink = false\n    permissions = nil\n    localId = -1\n    remoteId = nil\n    updateThumbnailNeeded = false\n    downloading = false\n    etagInConflict = nil\n    sharedWithSharee = false\n    favorite = false\n    hidden = false\n    encrypted = false\n    mountType = WebdavEntry.MountType.INTERNAL\n    richWorkspace = \"\"\n    firstShareTimestamp = 0\n    locked = false\n    lockType = nil\n    lockOwnerId = nil\n    lockOwnerDisplayName = nil\n    lockOwnerEditor = nil\n    lockTimestamp = 0\n    lockTimeout = 0\n    lockToken = nil\n    livePhoto = nil\n    imageDimension = nil\n}\n```"
+    },
+    {
+        "method_name": "getParentRemotePath",
+        "method_code": "ublic String getParentRemotePath() {\n        String parentPath = new File(this.getRemotePath()).getParent();\n        if (parentPath != null) {\n            return parentPath.endsWith(PATH_SEPARATOR) ? parentPath : parentPath + PATH_SEPARATOR;\n        } else {\n            return null;\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getParentRemotePath from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getParentRemotePath\n\n        Method Code: ublic String getParentRemotePath() {\n        String parentPath = new File(this.getRemotePath()).getParent();\n        if (parentPath != null) {\n            return parentPath.endsWith(PATH_SEPARATOR) ? parentPath : parentPath + PATH_SEPARATOR;\n        } else {\n            return null;\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getParentRemotePath() -> String? {\n    if let parentPath = URL(fileURLWithPath: self.getRemotePath()).deletingLastPathComponent().path {\n        return parentPath.hasSuffix(PATH_SEPARATOR) ? parentPath : parentPath + PATH_SEPARATOR\n    } else {\n        return nil\n    }\n}\n```"
+    },
+    {
+        "method_name": "describeContents",
+        "method_code": "Override\n    public int describeContents() {\n        return super.hashCode();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled describeContents from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: describeContents\n\n        Method Code: Override\n    public int describeContents() {\n        return super.hashCode();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func hash(into hasher: inout Hasher) {\n    super.hash(into: &hasher)\n}\n```"
+    },
+    {
+        "method_name": "compareTo",
+        "method_code": "Override\n    public int compareTo(@NonNull OCFile another) {\n        if (isFolder() && another.isFolder()) {\n            return AlphanumComparator.compare(this, another);\n        } else if (isFolder()) {\n            return -1;\n        } else if (another.isFolder()) {\n            return 1;\n        }\n        return AlphanumComparator.compare(this, another);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled compareTo from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: compareTo\n\n        Method Code: Override\n    public int compareTo(@NonNull OCFile another) {\n        if (isFolder() && another.isFolder()) {\n            return AlphanumComparator.compare(this, another);\n        } else if (isFolder()) {\n            return -1;\n        } else if (another.isFolder()) {\n            return 1;\n        }\n        return AlphanumComparator.compare(this, another);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc compareTo(_ another: OCFile) -> Int {\n    if isFolder() && another.isFolder() {\n        return AlphanumComparator.compare(self, another)\n    } else if isFolder() {\n        return -1\n    } else if another.isFolder() {\n        return 1\n    }\n    return AlphanumComparator.compare(self, another)\n}\n```"
+    },
+    {
+        "method_name": "equals",
+        "method_code": "Override\n    public boolean equals(Object o) {\n        if (this == o) {\n            return true;\n        }\n        if (o == null || getClass() != o.getClass()) {\n            return false;\n        }\n\n        OCFile ocFile = (OCFile) o;\n\n        return fileId == ocFile.fileId && parentId == ocFile.parentId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled equals from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: equals\n\n        Method Code: Override\n    public boolean equals(Object o) {\n        if (this == o) {\n            return true;\n        }\n        if (o == null || getClass() != o.getClass()) {\n            return false;\n        }\n\n        OCFile ocFile = (OCFile) o;\n\n        return fileId == ocFile.fileId && parentId == ocFile.parentId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func isEqual(_ object: Any?) -> Bool {\n    guard let ocFile = object as? OCFile else {\n        return false\n    }\n    return self === object || (fileId == ocFile.fileId && parentId == ocFile.parentId)\n}\n```"
+    },
+    {
+        "method_name": "hashCode",
+        "method_code": "Override\n    public int hashCode() {\n        return 31 * (int) (fileId ^ (fileId >>> 32)) + (int) (parentId ^ (parentId >>> 32));\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled hashCode from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: hashCode\n\n        Method Code: Override\n    public int hashCode() {\n        return 31 * (int) (fileId ^ (fileId >>> 32)) + (int) (parentId ^ (parentId >>> 32));\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride var hash: Int {\n    return 31 * Int(fileId ^ (fileId >> 32)) + Int(parentId ^ (parentId >> 32))\n}\n```"
+    },
+    {
+        "method_name": "toString",
+        "method_code": "NonNull\n    @Override\n    public String toString() {\n        String asString = \"[id=%s, name=%s, mime=%s, downloaded=%s, local=%s, remote=%s, \" +\n                \"parentId=%s, etag=%s, favourite=%s]\";\n        return String.format(asString,\n                             fileId,\n                             getFileName(),\n                             mimeType,\n                             isDown(),\n                             localPath,\n                             remotePath,\n                             parentId,\n                             etag,\n                             favorite);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled toString from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: toString\n\n        Method Code: NonNull\n    @Override\n    public String toString() {\n        String asString = \"[id=%s, name=%s, mime=%s, downloaded=%s, local=%s, remote=%s, \" +\n                \"parentId=%s, etag=%s, favourite=%s]\";\n        return String.format(asString,\n                             fileId,\n                             getFileName(),\n                             mimeType,\n                             isDown(),\n                             localPath,\n                             remotePath,\n                             parentId,\n                             etag,\n                             favorite);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride var description: String {\n    let asString = \"[id=\\(fileId), name=\\(getFileName()), mime=\\(mimeType), downloaded=\\(isDown()), local=\\(localPath), remote=\\(remotePath), parentId=\\(parentId), etag=\\(etag), favourite=\\(favorite)]\"\n    return asString\n}\n```"
+    },
+    {
+        "method_name": "setEtag",
+        "method_code": "ublic void setEtag(String etag) {\n        this.etag = etag != null ? etag : \"\";\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setEtag from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setEtag\n\n        Method Code: ublic void setEtag(String etag) {\n        this.etag = etag != null ? etag : \"\";\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setEtag(_ etag: String?) {\n    self.etag = etag ?? \"\"\n}\n```"
+    },
+    {
+        "method_name": "setEtagOnServer",
+        "method_code": "ublic void setEtagOnServer(String etag) {\n        this.etagOnServer = etag != null ? etag : \"\";\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setEtagOnServer from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setEtagOnServer\n\n        Method Code: ublic void setEtagOnServer(String etag) {\n        this.etagOnServer = etag != null ? etag : \"\";\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setEtagOnServer(_ etag: String?) {\n    self.etagOnServer = etag ?? \"\"\n}\n```"
+    },
+    {
+        "method_name": "getLocalModificationTimestamp",
+        "method_code": "ublic long getLocalModificationTimestamp() {\n        if (!TextUtils.isEmpty(localPath)) {\n            File f = new File(localPath);\n            return f.lastModified();\n        }\n        return 0;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLocalModificationTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLocalModificationTimestamp\n\n        Method Code: ublic long getLocalModificationTimestamp() {\n        if (!TextUtils.isEmpty(localPath)) {\n            File f = new File(localPath);\n            return f.lastModified();\n        }\n        return 0;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLocalModificationTimestamp() -> Int64 {\n    if !localPath.isEmpty {\n        let file = FileManager.default\n        if let attributes = try? file.attributesOfItem(atPath: localPath),\n           let modificationDate = attributes[.modificationDate] as? Date {\n            return Int64(modificationDate.timeIntervalSince1970 * 1000)\n        }\n    }\n    return 0\n}\n```"
+    },
+    {
+        "method_name": "isHidden",
+        "method_code": "ublic boolean isHidden() {\n        return !TextUtils.isEmpty(getFileName()) && getFileName().charAt(0) == '.';\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isHidden from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isHidden\n\n        Method Code: ublic boolean isHidden() {\n        return !TextUtils.isEmpty(getFileName()) && getFileName().charAt(0) == '.';\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isHidden() -> Bool {\n    return !getFileName().isEmpty && getFileName().first == \".\"\n}\n```"
+    },
+    {
+        "method_name": "getLocalId",
+        "method_code": "SuppressFBWarnings(\"STT\")\n    public long getLocalId() {\n        if (localId > 0) {\n            return localId;\n        } else if (remoteId != null && remoteId.length() > 8) {\n            return Long.parseLong(remoteId.substring(0, 8).replaceAll(\"^0*\", \"\"));\n        } else {\n            return -1;\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLocalId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLocalId\n\n        Method Code: SuppressFBWarnings(\"STT\")\n    public long getLocalId() {\n        if (localId > 0) {\n            return localId;\n        } else if (remoteId != null && remoteId.length() > 8) {\n            return Long.parseLong(remoteId.substring(0, 8).replaceAll(\"^0*\", \"\"));\n        } else {\n            return -1;\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLocalId() -> Int64 {\n    if localId > 0 {\n        return localId\n    } else if let remoteId = remoteId, remoteId.count > 8 {\n        let substring = remoteId.prefix(8)\n        let trimmedString = substring.trimmingCharacters(in: CharacterSet(charactersIn: \"0\"))\n        return Int64(trimmedString) ?? -1\n    } else {\n        return -1\n    }\n}\n```"
+    },
+    {
+        "method_name": "isInConflict",
+        "method_code": "ublic boolean isInConflict() {\n        return !TextUtils.isEmpty(etagInConflict);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isInConflict from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isInConflict\n\n        Method Code: ublic boolean isInConflict() {\n        return !TextUtils.isEmpty(etagInConflict);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isInConflict() -> Bool {\n    return !(etagInConflict?.isEmpty ?? true)\n}\n```"
+    },
+    {
+        "method_name": "isSharedWithMe",
+        "method_code": "ublic boolean isSharedWithMe() {\n        String permissions = getPermissions();\n        return permissions != null && permissions.contains(PERMISSION_SHARED_WITH_ME);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isSharedWithMe from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isSharedWithMe\n\n        Method Code: ublic boolean isSharedWithMe() {\n        String permissions = getPermissions();\n        return permissions != null && permissions.contains(PERMISSION_SHARED_WITH_ME);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isSharedWithMe() -> Bool {\n    if let permissions = getPermissions() {\n        return permissions.contains(PERMISSION_SHARED_WITH_ME)\n    }\n    return false\n}\n```"
+    },
+    {
+        "method_name": "canReshare",
+        "method_code": "ublic boolean canReshare() {\n        String permissions = getPermissions();\n        return permissions != null && permissions.contains(PERMISSION_CAN_RESHARE);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled canReshare from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: canReshare\n\n        Method Code: ublic boolean canReshare() {\n        String permissions = getPermissions();\n        return permissions != null && permissions.contains(PERMISSION_CAN_RESHARE);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc canReshare() -> Bool {\n    if let permissions = getPermissions() {\n        return permissions.contains(PERMISSION_CAN_RESHARE)\n    }\n    return false\n}\n```"
+    },
+    {
+        "method_name": "canWrite",
+        "method_code": "ublic boolean canWrite() {\n        String permissions = getPermissions();\n        return permissions != null && permissions.contains(PERMISSION_CAN_WRITE);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled canWrite from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: canWrite\n\n        Method Code: ublic boolean canWrite() {\n        String permissions = getPermissions();\n        return permissions != null && permissions.contains(PERMISSION_CAN_WRITE);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc canWrite() -> Bool {\n    if let permissions = getPermissions() {\n        return permissions.contains(PERMISSION_CAN_WRITE)\n    }\n    return false\n}\n```"
+    },
+    {
+        "method_name": "isGroupFolder",
+        "method_code": "ublic boolean isGroupFolder() {\n        String permissions = getPermissions();\n        return permissions != null && permissions.contains(PERMISSION_GROUPFOLDER);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isGroupFolder from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isGroupFolder\n\n        Method Code: ublic boolean isGroupFolder() {\n        String permissions = getPermissions();\n        return permissions != null && permissions.contains(PERMISSION_GROUPFOLDER);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isGroupFolder() -> Bool {\n    if let permissions = getPermissions() {\n        return permissions.contains(PERMISSION_GROUPFOLDER)\n    }\n    return false\n}\n```"
+    },
+    {
+        "method_name": "getFileOverlayIconId",
+        "method_code": "ublic Integer getFileOverlayIconId(boolean isAutoUploadFolder) {\n        if (WebdavEntry.MountType.GROUP == mountType || isGroupFolder()) {\n            return R.drawable.ic_folder_overlay_account_group;\n        } else if (sharedViaLink && !encrypted) {\n            return R.drawable.ic_folder_overlay_link;\n        } else if (isSharedWithMe() || sharedWithSharee) {\n            return R.drawable.ic_folder_overlay_share;\n        } else if (encrypted) {\n            return R.drawable.ic_folder_overlay_key;\n        } else if (WebdavEntry.MountType.EXTERNAL == mountType) {\n            return R.drawable.ic_folder_overlay_external;\n        } else if (locked) {\n            return R.drawable.ic_folder_overlay_lock;\n        } else if (isAutoUploadFolder) {\n            return R.drawable.ic_folder_overlay_upload;\n        } else {\n            return null;\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFileOverlayIconId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getFileOverlayIconId\n\n        Method Code: ublic Integer getFileOverlayIconId(boolean isAutoUploadFolder) {\n        if (WebdavEntry.MountType.GROUP == mountType || isGroupFolder()) {\n            return R.drawable.ic_folder_overlay_account_group;\n        } else if (sharedViaLink && !encrypted) {\n            return R.drawable.ic_folder_overlay_link;\n        } else if (isSharedWithMe() || sharedWithSharee) {\n            return R.drawable.ic_folder_overlay_share;\n        } else if (encrypted) {\n            return R.drawable.ic_folder_overlay_key;\n        } else if (WebdavEntry.MountType.EXTERNAL == mountType) {\n            return R.drawable.ic_folder_overlay_external;\n        } else if (locked) {\n            return R.drawable.ic_folder_overlay_lock;\n        } else if (isAutoUploadFolder) {\n            return R.drawable.ic_folder_overlay_upload;\n        } else {\n            return null;\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFileOverlayIconId(isAutoUploadFolder: Bool) -> Int? {\n    if mountType == WebdavEntry.MountType.GROUP || isGroupFolder() {\n        return R.drawable.ic_folder_overlay_account_group\n    } else if sharedViaLink && !encrypted {\n        return R.drawable.ic_folder_overlay_link\n    } else if isSharedWithMe() || sharedWithSharee {\n        return R.drawable.ic_folder_overlay_share\n    } else if encrypted {\n        return R.drawable.ic_folder_overlay_key\n    } else if mountType == WebdavEntry.MountType.EXTERNAL {\n        return R.drawable.ic_folder_overlay_external\n    } else if locked {\n        return R.drawable.ic_folder_overlay_lock\n    } else if isAutoUploadFolder {\n        return R.drawable.ic_folder_overlay_upload\n    } else {\n        return nil\n    }\n}\n```"
+    },
+    {
+        "method_name": "createFromParcel",
+        "method_code": "Override\n        public OCFile createFromParcel(Parcel source) {\n            return new OCFile(source);\n        }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled createFromParcel from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: createFromParcel\n\n        Method Code: Override\n        public OCFile createFromParcel(Parcel source) {\n            return new OCFile(source);\n        }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createFromParcel(source: Parcel) -> OCFile {\n    return OCFile(source: source)\n}\n```"
+    },
+    {
+        "method_name": "newArray",
+        "method_code": "Override\n        public OCFile[] newArray(int size) {\n            return new OCFile[size];\n        }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled newArray from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: newArray\n\n        Method Code: Override\n        public OCFile[] newArray(int size) {\n            return new OCFile[size];\n        }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc newArray(size: Int) -> [OCFile] {\n    return [OCFile](repeating: OCFile(), count: size)\n}\n```"
+    },
+    {
+        "method_name": "getFileId",
+        "method_code": "ublic long getFileId() {\n        return this.fileId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFileId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getFileId\n\n        Method Code: ublic long getFileId() {\n        return this.fileId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFileId() -> Int64 {\n    return self.fileId\n}\n```"
+    },
+    {
+        "method_name": "getParentId",
+        "method_code": "ublic long getParentId() {\n        return this.parentId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getParentId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getParentId\n\n        Method Code: ublic long getParentId() {\n        return this.parentId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getParentId() -> Int64 {\n    return self.parentId\n}\n```"
+    },
+    {
+        "method_name": "getFileLength",
+        "method_code": "ublic long getFileLength() {\n        return this.fileLength;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFileLength from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getFileLength\n\n        Method Code: ublic long getFileLength() {\n        return this.fileLength;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFileLength() -> Int64 {\n    return self.fileLength\n}\n```"
+    },
+    {
+        "method_name": "getCreationTimestamp",
+        "method_code": "ublic long getCreationTimestamp() {\n        return this.creationTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getCreationTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getCreationTimestamp\n\n        Method Code: ublic long getCreationTimestamp() {\n        return this.creationTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getCreationTimestamp() -> Int64 {\n    return self.creationTimestamp\n}\n```"
+    },
+    {
+        "method_name": "getModificationTimestamp",
+        "method_code": "ublic long getModificationTimestamp() {\n        return this.modificationTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getModificationTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getModificationTimestamp\n\n        Method Code: ublic long getModificationTimestamp() {\n        return this.modificationTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getModificationTimestamp() -> Int64 {\n    return self.modificationTimestamp\n}\n```"
+    },
+    {
+        "method_name": "getUploadTimestamp",
+        "method_code": "ublic long getUploadTimestamp() {\n        return this.uploadTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUploadTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getUploadTimestamp\n\n        Method Code: ublic long getUploadTimestamp() {\n        return this.uploadTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUploadTimestamp() -> Int64 {\n    return self.uploadTimestamp\n}\n```"
+    },
+    {
+        "method_name": "getModificationTimestampAtLastSyncForData",
+        "method_code": "ublic long getModificationTimestampAtLastSyncForData() {\n        return this.modificationTimestampAtLastSyncForData;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getModificationTimestampAtLastSyncForData from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getModificationTimestampAtLastSyncForData\n\n        Method Code: ublic long getModificationTimestampAtLastSyncForData() {\n        return this.modificationTimestampAtLastSyncForData;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getModificationTimestampAtLastSyncForData() -> Int64 {\n    return self.modificationTimestampAtLastSyncForData\n}\n```"
+    },
+    {
+        "method_name": "getMimeType",
+        "method_code": "ublic String getMimeType() {\n        return this.mimeType;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMimeType from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getMimeType\n\n        Method Code: ublic String getMimeType() {\n        return this.mimeType;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMimeType() -> String {\n    return self.mimeType\n}\n```"
+    },
+    {
+        "method_name": "isNeedsUpdatingWhileSaving",
+        "method_code": "ublic boolean isNeedsUpdatingWhileSaving() {\n        return this.needsUpdatingWhileSaving;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isNeedsUpdatingWhileSaving from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isNeedsUpdatingWhileSaving\n\n        Method Code: ublic boolean isNeedsUpdatingWhileSaving() {\n        return this.needsUpdatingWhileSaving;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isNeedsUpdatingWhileSaving() -> Bool {\n    return self.needsUpdatingWhileSaving\n}\n```"
+    },
+    {
+        "method_name": "getLastSyncDateForProperties",
+        "method_code": "ublic long getLastSyncDateForProperties() {\n        return this.lastSyncDateForProperties;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLastSyncDateForProperties from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLastSyncDateForProperties\n\n        Method Code: ublic long getLastSyncDateForProperties() {\n        return this.lastSyncDateForProperties;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLastSyncDateForProperties() -> Int64 {\n    return self.lastSyncDateForProperties\n}\n```"
+    },
+    {
+        "method_name": "getLastSyncDateForData",
+        "method_code": "ublic long getLastSyncDateForData() {\n        return this.lastSyncDateForData;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLastSyncDateForData from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLastSyncDateForData\n\n        Method Code: ublic long getLastSyncDateForData() {\n        return this.lastSyncDateForData;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLastSyncDateForData() -> Int64 {\n    return self.lastSyncDateForData\n}\n```"
+    },
+    {
+        "method_name": "isPreviewAvailable",
+        "method_code": "ublic boolean isPreviewAvailable() {\n        return this.previewAvailable;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isPreviewAvailable from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isPreviewAvailable\n\n        Method Code: ublic boolean isPreviewAvailable() {\n        return this.previewAvailable;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isPreviewAvailable() -> Bool {\n    return self.previewAvailable\n}\n```"
+    },
+    {
+        "method_name": "getEtag",
+        "method_code": "ublic String getEtag() {\n        return this.etag;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getEtag from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getEtag\n\n        Method Code: ublic String getEtag() {\n        return this.etag;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getEtag() -> String {\n    return self.etag\n}\n```"
+    },
+    {
+        "method_name": "getEtagOnServer",
+        "method_code": "ublic String getEtagOnServer() {\n        return this.etagOnServer;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getEtagOnServer from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getEtagOnServer\n\n        Method Code: ublic String getEtagOnServer() {\n        return this.etagOnServer;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getEtagOnServer() -> String {\n    return self.etagOnServer\n}\n```"
+    },
+    {
+        "method_name": "isSharedViaLink",
+        "method_code": "ublic boolean isSharedViaLink() {\n        return this.sharedViaLink;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isSharedViaLink from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isSharedViaLink\n\n        Method Code: ublic boolean isSharedViaLink() {\n        return this.sharedViaLink;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isSharedViaLink() -> Bool {\n    return self.sharedViaLink\n}\n```"
+    },
+    {
+        "method_name": "isShared",
+        "method_code": "ublic boolean isShared() {\n        return isSharedViaLink() || isSharedWithSharee() || isSharedWithMe();\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isShared from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isShared\n\n        Method Code: ublic boolean isShared() {\n        return isSharedViaLink() || isSharedWithSharee() || isSharedWithMe();\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isShared() -> Bool {\n    return isSharedViaLink() || isSharedWithSharee() || isSharedWithMe()\n}\n```"
+    },
+    {
+        "method_name": "getPermissions",
+        "method_code": "ublic String getPermissions() {\n        return this.permissions;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPermissions from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getPermissions\n\n        Method Code: ublic String getPermissions() {\n        return this.permissions;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPermissions() -> String {\n    return self.permissions\n}\n```"
+    },
+    {
+        "method_name": "getRemoteId",
+        "method_code": "ublic String getRemoteId() {\n        return this.remoteId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getRemoteId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getRemoteId\n\n        Method Code: ublic String getRemoteId() {\n        return this.remoteId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getRemoteId() -> String {\n    return self.remoteId\n}\n```"
+    },
+    {
+        "method_name": "isUpdateThumbnailNeeded",
+        "method_code": "ublic boolean isUpdateThumbnailNeeded() {\n        return this.updateThumbnailNeeded;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isUpdateThumbnailNeeded from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isUpdateThumbnailNeeded\n\n        Method Code: ublic boolean isUpdateThumbnailNeeded() {\n        return this.updateThumbnailNeeded;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isUpdateThumbnailNeeded() -> Bool {\n    return self.updateThumbnailNeeded\n}\n```"
+    },
+    {
+        "method_name": "isDownloading",
+        "method_code": "ublic boolean isDownloading() {\n        return this.downloading;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isDownloading from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isDownloading\n\n        Method Code: ublic boolean isDownloading() {\n        return this.downloading;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isDownloading() -> Bool {\n    return self.downloading\n}\n```"
+    },
+    {
+        "method_name": "isRootDirectory",
+        "method_code": "ublic boolean isRootDirectory() {\n        return ROOT_PATH.equals(decryptedRemotePath);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isRootDirectory from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isRootDirectory\n\n        Method Code: ublic boolean isRootDirectory() {\n        return ROOT_PATH.equals(decryptedRemotePath);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isRootDirectory() -> Bool {\n    return ROOT_PATH == decryptedRemotePath\n}\n```"
+    },
+    {
+        "method_name": "isOfflineOperation",
+        "method_code": "ublic boolean isOfflineOperation() {\n        return getRemoteId() == null;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isOfflineOperation from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isOfflineOperation\n\n        Method Code: ublic boolean isOfflineOperation() {\n        return getRemoteId() == null;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isOfflineOperation() -> Bool {\n    return getRemoteId() == nil\n}\n```"
+    },
+    {
+        "method_name": "getEtagInConflict",
+        "method_code": "ublic String getEtagInConflict() {\n        return this.etagInConflict;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getEtagInConflict from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getEtagInConflict\n\n        Method Code: ublic String getEtagInConflict() {\n        return this.etagInConflict;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getEtagInConflict() -> String? {\n    return self.etagInConflict\n}\n```"
+    },
+    {
+        "method_name": "isSharedWithSharee",
+        "method_code": "ublic boolean isSharedWithSharee() {\n        return this.sharedWithSharee;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isSharedWithSharee from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isSharedWithSharee\n\n        Method Code: ublic boolean isSharedWithSharee() {\n        return this.sharedWithSharee;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isSharedWithSharee() -> Bool {\n    return self.sharedWithSharee\n}\n```"
+    },
+    {
+        "method_name": "isFavorite",
+        "method_code": "ublic boolean isFavorite() {\n        return this.favorite;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isFavorite from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isFavorite\n\n        Method Code: ublic boolean isFavorite() {\n        return this.favorite;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isFavorite() -> Bool {\n    return self.favorite\n}\n```"
+    },
+    {
+        "method_name": "shouldHide",
+        "method_code": "ublic boolean shouldHide() {\n        return this.hidden;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled shouldHide from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: shouldHide\n\n        Method Code: ublic boolean shouldHide() {\n        return this.hidden;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc shouldHide() -> Bool {\n    return self.hidden\n}\n```"
+    },
+    {
+        "method_name": "isEncrypted",
+        "method_code": "ublic boolean isEncrypted() {\n        return this.encrypted;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isEncrypted from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isEncrypted\n\n        Method Code: ublic boolean isEncrypted() {\n        return this.encrypted;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isEncrypted() -> Bool {\n    return self.encrypted\n}\n```"
+    },
+    {
+        "method_name": "getMountType",
+        "method_code": "ublic WebdavEntry.MountType getMountType() {\n        return this.mountType;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMountType from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getMountType\n\n        Method Code: ublic WebdavEntry.MountType getMountType() {\n        return this.mountType;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMountType() -> WebdavEntry.MountType {\n    return self.mountType\n}\n```"
+    },
+    {
+        "method_name": "getUnreadCommentsCount",
+        "method_code": "ublic int getUnreadCommentsCount() {\n        return this.unreadCommentsCount;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUnreadCommentsCount from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getUnreadCommentsCount\n\n        Method Code: ublic int getUnreadCommentsCount() {\n        return this.unreadCommentsCount;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUnreadCommentsCount() -> Int {\n    return self.unreadCommentsCount\n}\n```"
+    },
+    {
+        "method_name": "getOwnerId",
+        "method_code": "ublic String getOwnerId() {\n        return this.ownerId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getOwnerId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getOwnerId\n\n        Method Code: ublic String getOwnerId() {\n        return this.ownerId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getOwnerId() -> String {\n    return self.ownerId\n}\n```"
+    },
+    {
+        "method_name": "getOwnerDisplayName",
+        "method_code": "ublic String getOwnerDisplayName() {\n        return this.ownerDisplayName;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getOwnerDisplayName from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getOwnerDisplayName\n\n        Method Code: ublic String getOwnerDisplayName() {\n        return this.ownerDisplayName;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getOwnerDisplayName() -> String {\n    return self.ownerDisplayName\n}\n```"
+    },
+    {
+        "method_name": "getNote",
+        "method_code": "ublic String getNote() {\n        return this.note;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getNote from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getNote\n\n        Method Code: ublic String getNote() {\n        return this.note;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getNote() -> String {\n    return self.note\n}\n```"
+    },
+    {
+        "method_name": "getSharees",
+        "method_code": "ublic List<ShareeUser> getSharees() {\n        return this.sharees;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSharees from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getSharees\n\n        Method Code: ublic List<ShareeUser> getSharees() {\n        return this.sharees;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getSharees() -> [ShareeUser] {\n    return self.sharees\n}\n```"
+    },
+    {
+        "method_name": "getRichWorkspace",
+        "method_code": "ublic String getRichWorkspace() {\n        return this.richWorkspace;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getRichWorkspace from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getRichWorkspace\n\n        Method Code: ublic String getRichWorkspace() {\n        return this.richWorkspace;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getRichWorkspace() -> String {\n    return self.richWorkspace\n}\n```"
+    },
+    {
+        "method_name": "setFileId",
+        "method_code": "ublic void setFileId(long fileId) {\n        this.fileId = fileId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFileId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setFileId\n\n        Method Code: ublic void setFileId(long fileId) {\n        this.fileId = fileId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFileId(_ fileId: Int64) {\n    self.fileId = fileId\n}\n```"
+    },
+    {
+        "method_name": "setLocalId",
+        "method_code": "ublic void setLocalId(long localId) {\n        this.localId = localId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLocalId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLocalId\n\n        Method Code: ublic void setLocalId(long localId) {\n        this.localId = localId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLocalId(_ localId: Int64) {\n    self.localId = localId\n}\n```"
+    },
+    {
+        "method_name": "setParentId",
+        "method_code": "ublic void setParentId(long parentId) {\n        this.parentId = parentId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setParentId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setParentId\n\n        Method Code: ublic void setParentId(long parentId) {\n        this.parentId = parentId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setParentId(_ parentId: Int64) {\n    self.parentId = parentId\n}\n```"
+    },
+    {
+        "method_name": "setFileLength",
+        "method_code": "ublic void setFileLength(long fileLength) {\n        this.fileLength = fileLength;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFileLength from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setFileLength\n\n        Method Code: ublic void setFileLength(long fileLength) {\n        this.fileLength = fileLength;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFileLength(_ fileLength: Int64) {\n    self.fileLength = fileLength\n}\n```"
+    },
+    {
+        "method_name": "setCreationTimestamp",
+        "method_code": "ublic void setCreationTimestamp(long creationTimestamp) {\n        this.creationTimestamp = creationTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setCreationTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setCreationTimestamp\n\n        Method Code: ublic void setCreationTimestamp(long creationTimestamp) {\n        this.creationTimestamp = creationTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setCreationTimestamp(_ creationTimestamp: Int64) {\n    self.creationTimestamp = creationTimestamp\n}\n```"
+    },
+    {
+        "method_name": "setModificationTimestamp",
+        "method_code": "ublic void setModificationTimestamp(long modificationTimestamp) {\n        this.modificationTimestamp = modificationTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setModificationTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setModificationTimestamp\n\n        Method Code: ublic void setModificationTimestamp(long modificationTimestamp) {\n        this.modificationTimestamp = modificationTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setModificationTimestamp(_ modificationTimestamp: Int64) {\n    self.modificationTimestamp = modificationTimestamp\n}\n```"
+    },
+    {
+        "method_name": "setModificationTimestampAtLastSyncForData",
+        "method_code": "ublic void setModificationTimestampAtLastSyncForData(long modificationTimestampAtLastSyncForData) {\n        this.modificationTimestampAtLastSyncForData = modificationTimestampAtLastSyncForData;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setModificationTimestampAtLastSyncForData from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setModificationTimestampAtLastSyncForData\n\n        Method Code: ublic void setModificationTimestampAtLastSyncForData(long modificationTimestampAtLastSyncForData) {\n        this.modificationTimestampAtLastSyncForData = modificationTimestampAtLastSyncForData;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setModificationTimestampAtLastSyncForData(_ modificationTimestampAtLastSyncForData: Int64) {\n    self.modificationTimestampAtLastSyncForData = modificationTimestampAtLastSyncForData\n}\n```"
+    },
+    {
+        "method_name": "setRemotePath",
+        "method_code": "ublic void setRemotePath(String remotePath) {\n        this.remotePath = remotePath;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setRemotePath from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setRemotePath\n\n        Method Code: ublic void setRemotePath(String remotePath) {\n        this.remotePath = remotePath;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setRemotePath(_ remotePath: String) {\n    self.remotePath = remotePath\n}\n```"
+    },
+    {
+        "method_name": "setMimeType",
+        "method_code": "ublic void setMimeType(String mimeType) {\n        this.mimeType = mimeType;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMimeType from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setMimeType\n\n        Method Code: ublic void setMimeType(String mimeType) {\n        this.mimeType = mimeType;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMimeType(_ mimeType: String) {\n    self.mimeType = mimeType\n}\n```"
+    },
+    {
+        "method_name": "setLastSyncDateForProperties",
+        "method_code": "ublic void setLastSyncDateForProperties(long lastSyncDateForProperties) {\n        this.lastSyncDateForProperties = lastSyncDateForProperties;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLastSyncDateForProperties from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLastSyncDateForProperties\n\n        Method Code: ublic void setLastSyncDateForProperties(long lastSyncDateForProperties) {\n        this.lastSyncDateForProperties = lastSyncDateForProperties;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLastSyncDateForProperties(_ lastSyncDateForProperties: Int64) {\n    self.lastSyncDateForProperties = lastSyncDateForProperties\n}\n```"
+    },
+    {
+        "method_name": "setLastSyncDateForData",
+        "method_code": "ublic void setLastSyncDateForData(long lastSyncDateForData) {\n        this.lastSyncDateForData = lastSyncDateForData;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLastSyncDateForData from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLastSyncDateForData\n\n        Method Code: ublic void setLastSyncDateForData(long lastSyncDateForData) {\n        this.lastSyncDateForData = lastSyncDateForData;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLastSyncDateForData(_ lastSyncDateForData: Int64) {\n    self.lastSyncDateForData = lastSyncDateForData\n}\n```"
+    },
+    {
+        "method_name": "setPreviewAvailable",
+        "method_code": "ublic void setPreviewAvailable(boolean previewAvailable) {\n        this.previewAvailable = previewAvailable;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPreviewAvailable from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setPreviewAvailable\n\n        Method Code: ublic void setPreviewAvailable(boolean previewAvailable) {\n        this.previewAvailable = previewAvailable;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPreviewAvailable(_ previewAvailable: Bool) {\n    self.previewAvailable = previewAvailable\n}\n```"
+    },
+    {
+        "method_name": "setSharedViaLink",
+        "method_code": "ublic void setSharedViaLink(boolean sharedViaLink) {\n        this.sharedViaLink = sharedViaLink;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSharedViaLink from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setSharedViaLink\n\n        Method Code: ublic void setSharedViaLink(boolean sharedViaLink) {\n        this.sharedViaLink = sharedViaLink;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSharedViaLink(_ sharedViaLink: Bool) {\n    self.sharedViaLink = sharedViaLink\n}\n```"
+    },
+    {
+        "method_name": "setPermissions",
+        "method_code": "ublic void setPermissions(String permissions) {\n        this.permissions = permissions;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPermissions from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setPermissions\n\n        Method Code: ublic void setPermissions(String permissions) {\n        this.permissions = permissions;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPermissions(_ permissions: String) {\n    self.permissions = permissions\n}\n```"
+    },
+    {
+        "method_name": "setRemoteId",
+        "method_code": "ublic void setRemoteId(String remoteId) {\n        this.remoteId = remoteId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setRemoteId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setRemoteId\n\n        Method Code: ublic void setRemoteId(String remoteId) {\n        this.remoteId = remoteId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setRemoteId(_ remoteId: String) {\n    self.remoteId = remoteId\n}\n```"
+    },
+    {
+        "method_name": "setUpdateThumbnailNeeded",
+        "method_code": "ublic void setUpdateThumbnailNeeded(boolean updateThumbnailNeeded) {\n        this.updateThumbnailNeeded = updateThumbnailNeeded;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUpdateThumbnailNeeded from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setUpdateThumbnailNeeded\n\n        Method Code: ublic void setUpdateThumbnailNeeded(boolean updateThumbnailNeeded) {\n        this.updateThumbnailNeeded = updateThumbnailNeeded;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUpdateThumbnailNeeded(_ updateThumbnailNeeded: Bool) {\n    self.updateThumbnailNeeded = updateThumbnailNeeded\n}\n```"
+    },
+    {
+        "method_name": "setDownloading",
+        "method_code": "ublic void setDownloading(boolean downloading) {\n        this.downloading = downloading;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setDownloading from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setDownloading\n\n        Method Code: ublic void setDownloading(boolean downloading) {\n        this.downloading = downloading;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setDownloading(_ downloading: Bool) {\n    self.downloading = downloading\n}\n```"
+    },
+    {
+        "method_name": "setEtagInConflict",
+        "method_code": "ublic void setEtagInConflict(String etagInConflict) {\n        this.etagInConflict = etagInConflict;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setEtagInConflict from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setEtagInConflict\n\n        Method Code: ublic void setEtagInConflict(String etagInConflict) {\n        this.etagInConflict = etagInConflict;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setEtagInConflict(_ etagInConflict: String) {\n    self.etagInConflict = etagInConflict\n}\n```"
+    },
+    {
+        "method_name": "setSharedWithSharee",
+        "method_code": "ublic void setSharedWithSharee(boolean sharedWithSharee) {\n        this.sharedWithSharee = sharedWithSharee;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSharedWithSharee from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setSharedWithSharee\n\n        Method Code: ublic void setSharedWithSharee(boolean sharedWithSharee) {\n        this.sharedWithSharee = sharedWithSharee;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSharedWithSharee(_ sharedWithSharee: Bool) {\n    self.sharedWithSharee = sharedWithSharee\n}\n```"
+    },
+    {
+        "method_name": "setFavorite",
+        "method_code": "ublic void setFavorite(boolean favorite) {\n        this.favorite = favorite;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFavorite from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setFavorite\n\n        Method Code: ublic void setFavorite(boolean favorite) {\n        this.favorite = favorite;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFavorite(_ favorite: Bool) {\n    self.favorite = favorite\n}\n```"
+    },
+    {
+        "method_name": "setHidden",
+        "method_code": "ublic void setHidden(boolean hidden) {\n        this.hidden = hidden;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setHidden from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setHidden\n\n        Method Code: ublic void setHidden(boolean hidden) {\n        this.hidden = hidden;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setHidden(_ hidden: Bool) {\n    self.hidden = hidden\n}\n```"
+    },
+    {
+        "method_name": "setEncrypted",
+        "method_code": "ublic void setEncrypted(boolean encrypted) {\n        this.encrypted = encrypted;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setEncrypted from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setEncrypted\n\n        Method Code: ublic void setEncrypted(boolean encrypted) {\n        this.encrypted = encrypted;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setEncrypted(_ encrypted: Bool) {\n    self.encrypted = encrypted\n}\n```"
+    },
+    {
+        "method_name": "setMountType",
+        "method_code": "ublic void setMountType(WebdavEntry.MountType mountType) {\n        this.mountType = mountType;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMountType from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setMountType\n\n        Method Code: ublic void setMountType(WebdavEntry.MountType mountType) {\n        this.mountType = mountType;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMountType(_ mountType: WebdavEntry.MountType) {\n    self.mountType = mountType\n}\n```"
+    },
+    {
+        "method_name": "setUnreadCommentsCount",
+        "method_code": "ublic void setUnreadCommentsCount(int unreadCommentsCount) {\n        this.unreadCommentsCount = unreadCommentsCount;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUnreadCommentsCount from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setUnreadCommentsCount\n\n        Method Code: ublic void setUnreadCommentsCount(int unreadCommentsCount) {\n        this.unreadCommentsCount = unreadCommentsCount;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUnreadCommentsCount(_ unreadCommentsCount: Int) {\n    self.unreadCommentsCount = unreadCommentsCount\n}\n```"
+    },
+    {
+        "method_name": "setOwnerId",
+        "method_code": "ublic void setOwnerId(String ownerId) {\n        this.ownerId = ownerId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setOwnerId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setOwnerId\n\n        Method Code: ublic void setOwnerId(String ownerId) {\n        this.ownerId = ownerId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setOwnerId(ownerId: String) {\n    self.ownerId = ownerId\n}\n```"
+    },
+    {
+        "method_name": "setOwnerDisplayName",
+        "method_code": "ublic void setOwnerDisplayName(String ownerDisplayName) {\n        this.ownerDisplayName = ownerDisplayName;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setOwnerDisplayName from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setOwnerDisplayName\n\n        Method Code: ublic void setOwnerDisplayName(String ownerDisplayName) {\n        this.ownerDisplayName = ownerDisplayName;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setOwnerDisplayName(_ ownerDisplayName: String) {\n    self.ownerDisplayName = ownerDisplayName\n}\n```"
+    },
+    {
+        "method_name": "setNote",
+        "method_code": "ublic void setNote(String note) {\n        this.note = note;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setNote from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setNote\n\n        Method Code: ublic void setNote(String note) {\n        this.note = note;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setNote(_ note: String) {\n    self.note = note\n}\n```"
+    },
+    {
+        "method_name": "setSharees",
+        "method_code": "ublic void setSharees(List<ShareeUser> sharees) {\n        this.sharees = sharees;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSharees from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setSharees\n\n        Method Code: ublic void setSharees(List<ShareeUser> sharees) {\n        this.sharees = sharees;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSharees(_ sharees: [ShareeUser]) {\n    self.sharees = sharees\n}\n```"
+    },
+    {
+        "method_name": "setRichWorkspace",
+        "method_code": "ublic void setRichWorkspace(String richWorkspace) {\n        this.richWorkspace = richWorkspace;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setRichWorkspace from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setRichWorkspace\n\n        Method Code: ublic void setRichWorkspace(String richWorkspace) {\n        this.richWorkspace = richWorkspace;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setRichWorkspace(_ richWorkspace: String) {\n    self.richWorkspace = richWorkspace\n}\n```"
+    },
+    {
+        "method_name": "getFirstShareTimestamp",
+        "method_code": "ublic long getFirstShareTimestamp() {\n        return firstShareTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFirstShareTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getFirstShareTimestamp\n\n        Method Code: ublic long getFirstShareTimestamp() {\n        return firstShareTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFirstShareTimestamp() -> Int64 {\n    return firstShareTimestamp\n}\n```"
+    },
+    {
+        "method_name": "setFirstShareTimestamp",
+        "method_code": "ublic void setFirstShareTimestamp(long firstShareTimestamp) {\n        this.firstShareTimestamp = firstShareTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFirstShareTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setFirstShareTimestamp\n\n        Method Code: ublic void setFirstShareTimestamp(long firstShareTimestamp) {\n        this.firstShareTimestamp = firstShareTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFirstShareTimestamp(_ firstShareTimestamp: Int64) {\n    self.firstShareTimestamp = firstShareTimestamp\n}\n```"
+    },
+    {
+        "method_name": "isLocked",
+        "method_code": "ublic boolean isLocked() {\n        return locked;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isLocked from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isLocked\n\n        Method Code: ublic boolean isLocked() {\n        return locked;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isLocked() -> Bool {\n    return locked\n}\n```"
+    },
+    {
+        "method_name": "setLocked",
+        "method_code": "ublic void setLocked(boolean locked) {\n        this.locked = locked;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLocked from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLocked\n\n        Method Code: ublic void setLocked(boolean locked) {\n        this.locked = locked;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLocked(_ locked: Bool) {\n    self.locked = locked\n}\n```"
+    },
+    {
+        "method_name": "getLockType",
+        "method_code": "Nullable\n    public FileLockType getLockType() {\n        return lockType;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLockType from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLockType\n\n        Method Code: Nullable\n    public FileLockType getLockType() {\n        return lockType;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLockType() -> FileLockType? {\n    return lockType\n}\n```"
+    },
+    {
+        "method_name": "setLockType",
+        "method_code": "ublic void setLockType(@Nullable FileLockType lockType) {\n        this.lockType = lockType;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLockType from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLockType\n\n        Method Code: ublic void setLockType(@Nullable FileLockType lockType) {\n        this.lockType = lockType;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLockType(_ lockType: FileLockType?) {\n    self.lockType = lockType\n}\n```"
+    },
+    {
+        "method_name": "getLockOwnerId",
+        "method_code": "Nullable\n    public String getLockOwnerId() {\n        return lockOwnerId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLockOwnerId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLockOwnerId\n\n        Method Code: Nullable\n    public String getLockOwnerId() {\n        return lockOwnerId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLockOwnerId() -> String? {\n    return lockOwnerId\n}\n```"
+    },
+    {
+        "method_name": "setLockOwnerId",
+        "method_code": "ublic void setLockOwnerId(@Nullable String lockOwnerId) {\n        this.lockOwnerId = lockOwnerId;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLockOwnerId from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLockOwnerId\n\n        Method Code: ublic void setLockOwnerId(@Nullable String lockOwnerId) {\n        this.lockOwnerId = lockOwnerId;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLockOwnerId(_ lockOwnerId: String?) {\n    self.lockOwnerId = lockOwnerId\n}\n```"
+    },
+    {
+        "method_name": "getLockOwnerDisplayName",
+        "method_code": "Nullable\n    public String getLockOwnerDisplayName() {\n        return lockOwnerDisplayName;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLockOwnerDisplayName from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLockOwnerDisplayName\n\n        Method Code: Nullable\n    public String getLockOwnerDisplayName() {\n        return lockOwnerDisplayName;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLockOwnerDisplayName() -> String? {\n    return lockOwnerDisplayName\n}\n```"
+    },
+    {
+        "method_name": "setLockOwnerDisplayName",
+        "method_code": "ublic void setLockOwnerDisplayName(@Nullable String lockOwnerDisplayName) {\n        this.lockOwnerDisplayName = lockOwnerDisplayName;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLockOwnerDisplayName from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLockOwnerDisplayName\n\n        Method Code: ublic void setLockOwnerDisplayName(@Nullable String lockOwnerDisplayName) {\n        this.lockOwnerDisplayName = lockOwnerDisplayName;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLockOwnerDisplayName(_ lockOwnerDisplayName: String?) {\n    self.lockOwnerDisplayName = lockOwnerDisplayName\n}\n```"
+    },
+    {
+        "method_name": "getLockOwnerEditor",
+        "method_code": "Nullable\n    public String getLockOwnerEditor() {\n        return lockOwnerEditor;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLockOwnerEditor from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLockOwnerEditor\n\n        Method Code: Nullable\n    public String getLockOwnerEditor() {\n        return lockOwnerEditor;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLockOwnerEditor() -> String? {\n    return lockOwnerEditor\n}\n```"
+    },
+    {
+        "method_name": "setLockOwnerEditor",
+        "method_code": "ublic void setLockOwnerEditor(@Nullable String lockOwnerEditor) {\n        this.lockOwnerEditor = lockOwnerEditor;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLockOwnerEditor from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLockOwnerEditor\n\n        Method Code: ublic void setLockOwnerEditor(@Nullable String lockOwnerEditor) {\n        this.lockOwnerEditor = lockOwnerEditor;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLockOwnerEditor(_ lockOwnerEditor: String?) {\n    self.lockOwnerEditor = lockOwnerEditor\n}\n```"
+    },
+    {
+        "method_name": "getLockTimestamp",
+        "method_code": "ublic long getLockTimestamp() {\n        return lockTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLockTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLockTimestamp\n\n        Method Code: ublic long getLockTimestamp() {\n        return lockTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLockTimestamp() -> Int64 {\n    return lockTimestamp\n}\n```"
+    },
+    {
+        "method_name": "setLockTimestamp",
+        "method_code": "ublic void setLockTimestamp(long lockTimestamp) {\n        this.lockTimestamp = lockTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLockTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLockTimestamp\n\n        Method Code: ublic void setLockTimestamp(long lockTimestamp) {\n        this.lockTimestamp = lockTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLockTimestamp(_ lockTimestamp: Int64) {\n    self.lockTimestamp = lockTimestamp\n}\n```"
+    },
+    {
+        "method_name": "getLockTimeout",
+        "method_code": "ublic long getLockTimeout() {\n        return lockTimeout;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLockTimeout from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLockTimeout\n\n        Method Code: ublic long getLockTimeout() {\n        return lockTimeout;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLockTimeout() -> Int64 {\n    return lockTimeout\n}\n```"
+    },
+    {
+        "method_name": "setLockTimeout",
+        "method_code": "ublic void setLockTimeout(long lockTimeout) {\n        this.lockTimeout = lockTimeout;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLockTimeout from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLockTimeout\n\n        Method Code: ublic void setLockTimeout(long lockTimeout) {\n        this.lockTimeout = lockTimeout;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLockTimeout(_ lockTimeout: Int64) {\n    self.lockTimeout = lockTimeout\n}\n```"
+    },
+    {
+        "method_name": "getLockToken",
+        "method_code": "Nullable\n    public String getLockToken() {\n        return lockToken;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLockToken from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getLockToken\n\n        Method Code: Nullable\n    public String getLockToken() {\n        return lockToken;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLockToken() -> String? {\n    return lockToken\n}\n```"
+    },
+    {
+        "method_name": "setLockToken",
+        "method_code": "ublic void setLockToken(@Nullable String lockToken) {\n        this.lockToken = lockToken;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLockToken from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setLockToken\n\n        Method Code: ublic void setLockToken(@Nullable String lockToken) {\n        this.lockToken = lockToken;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLockToken(_ lockToken: String?) {\n    self.lockToken = lockToken\n}\n```"
+    },
+    {
+        "method_name": "setImageDimension",
+        "method_code": "ublic void setImageDimension(@Nullable ImageDimension imageDimension) {\n        this.imageDimension = imageDimension;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setImageDimension from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setImageDimension\n\n        Method Code: ublic void setImageDimension(@Nullable ImageDimension imageDimension) {\n        this.imageDimension = imageDimension;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setImageDimension(_ imageDimension: ImageDimension?) {\n    self.imageDimension = imageDimension\n}\n```"
+    },
+    {
+        "method_name": "getImageDimension",
+        "method_code": "Nullable\n    public ImageDimension getImageDimension() {\n        return imageDimension;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getImageDimension from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getImageDimension\n\n        Method Code: Nullable\n    public ImageDimension getImageDimension() {\n        return imageDimension;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getImageDimension() -> ImageDimension? {\n    return imageDimension\n}\n```"
+    },
+    {
+        "method_name": "setGeoLocation",
+        "method_code": "ublic void setGeoLocation(@Nullable GeoLocation geolocation) {\n        this.geolocation = geolocation;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setGeoLocation from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setGeoLocation\n\n        Method Code: ublic void setGeoLocation(@Nullable GeoLocation geolocation) {\n        this.geolocation = geolocation;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setGeoLocation(_ geolocation: GeoLocation?) {\n    self.geolocation = geolocation\n}\n```"
+    },
+    {
+        "method_name": "getGeoLocation",
+        "method_code": "Nullable\n    public GeoLocation getGeoLocation() {\n        return geolocation;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getGeoLocation from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getGeoLocation\n\n        Method Code: Nullable\n    public GeoLocation getGeoLocation() {\n        return geolocation;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getGeoLocation() -> GeoLocation? {\n    return geolocation\n}\n```"
+    },
+    {
+        "method_name": "getTags",
+        "method_code": "ublic List<String> getTags() {\n        return tags;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getTags from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getTags\n\n        Method Code: ublic List<String> getTags() {\n        return tags;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getTags() -> [String] {\n    return tags\n}\n```"
+    },
+    {
+        "method_name": "setTags",
+        "method_code": "ublic void setTags(List<String> tags) {\n        this.tags = tags;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setTags from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setTags\n\n        Method Code: ublic void setTags(List<String> tags) {\n        this.tags = tags;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setTags(_ tags: [String]) {\n    self.tags = tags\n}\n```"
+    },
+    {
+        "method_name": "getE2eCounter",
+        "method_code": "ublic long getE2eCounter() {\n        return e2eCounter;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getE2eCounter from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getE2eCounter\n\n        Method Code: ublic long getE2eCounter() {\n        return e2eCounter;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getE2eCounter() -> Int64 {\n    return e2eCounter\n}\n```"
+    },
+    {
+        "method_name": "setE2eCounter",
+        "method_code": "ublic void setE2eCounter(@Nullable Long e2eCounter) {\n        if (e2eCounter == null) {\n            this.e2eCounter = -1;\n        } else {\n            this.e2eCounter = e2eCounter;\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setE2eCounter from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setE2eCounter\n\n        Method Code: ublic void setE2eCounter(@Nullable Long e2eCounter) {\n        if (e2eCounter == null) {\n            this.e2eCounter = -1;\n        } else {\n            this.e2eCounter = e2eCounter;\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setE2eCounter(_ e2eCounter: Int64?) {\n    if let e2eCounter = e2eCounter {\n        self.e2eCounter = e2eCounter\n    } else {\n        self.e2eCounter = -1\n    }\n}\n```"
+    },
+    {
+        "method_name": "isInternalFolderSync",
+        "method_code": "ublic boolean isInternalFolderSync() {\n        if (internalFolderSyncTimestamp == null) {\n            return false;\n        }\n\n        return internalFolderSyncTimestamp >= 0;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isInternalFolderSync from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isInternalFolderSync\n\n        Method Code: ublic boolean isInternalFolderSync() {\n        if (internalFolderSyncTimestamp == null) {\n            return false;\n        }\n\n        return internalFolderSyncTimestamp >= 0;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isInternalFolderSync() -> Bool {\n    if internalFolderSyncTimestamp == nil {\n        return false\n    }\n    \n    return internalFolderSyncTimestamp! >= 0\n}\n```"
+    },
+    {
+        "method_name": "getInternalFolderSyncTimestamp",
+        "method_code": "ublic Long getInternalFolderSyncTimestamp() {\n        return Objects.requireNonNullElse(internalFolderSyncTimestamp, -1L);\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getInternalFolderSyncTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getInternalFolderSyncTimestamp\n\n        Method Code: ublic Long getInternalFolderSyncTimestamp() {\n        return Objects.requireNonNullElse(internalFolderSyncTimestamp, -1L);\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getInternalFolderSyncTimestamp() -> Int64 {\n    return internalFolderSyncTimestamp ?? -1\n}\n```"
+    },
+    {
+        "method_name": "setInternalFolderSyncTimestamp",
+        "method_code": "ublic void setInternalFolderSyncTimestamp(Long internalFolderSyncTimestamp) {\n        this.internalFolderSyncTimestamp = internalFolderSyncTimestamp;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setInternalFolderSyncTimestamp from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setInternalFolderSyncTimestamp\n\n        Method Code: ublic void setInternalFolderSyncTimestamp(Long internalFolderSyncTimestamp) {\n        this.internalFolderSyncTimestamp = internalFolderSyncTimestamp;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setInternalFolderSyncTimestamp(_ internalFolderSyncTimestamp: Int64?) {\n    self.internalFolderSyncTimestamp = internalFolderSyncTimestamp\n}\n```"
+    },
+    {
+        "method_name": "getInternalFolderSyncResult",
+        "method_code": "ublic String getInternalFolderSyncResult() {\n        return internalFolderSyncResult;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getInternalFolderSyncResult from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: getInternalFolderSyncResult\n\n        Method Code: ublic String getInternalFolderSyncResult() {\n        return internalFolderSyncResult;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getInternalFolderSyncResult() -> String {\n    return internalFolderSyncResult\n}\n```"
+    },
+    {
+        "method_name": "setInternalFolderSyncResult",
+        "method_code": "ublic void setInternalFolderSyncResult(String internalFolderSyncResult) {\n        this.internalFolderSyncResult = internalFolderSyncResult;\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setInternalFolderSyncResult from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: setInternalFolderSyncResult\n\n        Method Code: ublic void setInternalFolderSyncResult(String internalFolderSyncResult) {\n        this.internalFolderSyncResult = internalFolderSyncResult;\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setInternalFolderSyncResult(_ internalFolderSyncResult: String) {\n    self.internalFolderSyncResult = internalFolderSyncResult\n}\n```"
+    },
+    {
+        "method_name": "isAPKorAAB",
+        "method_code": "ublic boolean isAPKorAAB() {\n        if (\"gplay\".equals(BuildConfig.FLAVOR)) {\n            return getFileName().endsWith(\".apk\") || getFileName().endsWith(\".aab\");\n        } else {\n            return false;\n        }\n    }\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled isAPKorAAB from OCFile.java into Swift.\n\n        Input:\n\n        Method Name: isAPKorAAB\n\n        Method Code: ublic boolean isAPKorAAB() {\n        if (\"gplay\".equals(BuildConfig.FLAVOR)) {\n            return getFileName().endsWith(\".apk\") || getFileName().endsWith(\".aab\");\n        } else {\n            return false;\n        }\n    }\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isAPKorAAB() -> Bool {\n    if BuildConfig.FLAVOR == \"gplay\" {\n        return getFileName().hasSuffix(\".apk\") || getFileName().hasSuffix(\".aab\")\n    } else {\n        return false\n    }\n}\n```"
+    }
+]

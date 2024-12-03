@@ -1,0 +1,297 @@
+{
+    "methods": [
+        {
+            "name": "before",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1838,
+            "end_position": 2195,
+            "body_start": 1871,
+            "body_end": 2195
+        },
+        {
+            "name": "after",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2201,
+            "end_position": 2348,
+            "body_start": 2232,
+            "body_end": 2348
+        },
+        {
+            "name": "simpleTest",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2354,
+            "end_position": 2590,
+            "body_start": 2389,
+            "body_end": 2590
+        },
+        {
+            "name": "getAllFiles_NoAvailable",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2596,
+            "end_position": 2702,
+            "body_start": 2644,
+            "body_end": 2702
+        },
+        {
+            "name": "testFolderContent",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2708,
+            "end_position": 5764,
+            "body_start": 2769,
+            "body_end": 5764
+        },
+        {
+            "name": "testPhotoSearch",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5993,
+            "end_position": 9065,
+            "body_start": 6052,
+            "body_end": 9065
+        },
+        {
+            "name": "testGallerySearch",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9318,
+            "end_position": 13888,
+            "body_start": 9379,
+            "body_end": 13888
+        },
+        {
+            "name": "testSaveNewFile",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13894,
+            "end_position": 15572,
+            "body_start": 13934,
+            "body_end": 15572
+        },
+        {
+            "name": "testSaveNewFile_NonExistingParent",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15578,
+            "end_position": 15869,
+            "body_start": 15679,
+            "body_end": 15869
+        },
+        {
+            "name": "testOCCapability",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15875,
+            "end_position": 16227,
+            "body_start": 15916,
+            "body_end": 16227
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "sut": [
+            "deleteAllFiles",
+            "deleteVirtuals",
+            "getAllFiles",
+            "getFileByDecryptedRemotePath",
+            "getFolderContent",
+            "saveFile",
+            "saveVirtuals",
+            "getVirtualFolderContent",
+            "saveNewFile",
+            "saveCapabilities",
+            "getCapability"
+        ],
+        "unknown": [
+            "assertEquals",
+            "assertNotNull",
+            "assertTrue",
+            "assertNull",
+            "getDummyFile",
+            "getFile"
+        ],
+        "sut.getAllFiles()": [
+            "size"
+        ],
+        "new GetCapabilitiesRemoteOperation(null)\n            .execute(client)": [
+            "getSingleData"
+        ],
+        "new GetCapabilitiesRemoteOperation(null)": [
+            "execute"
+        ],
+        "super": [
+            "after"
+        ],
+        "file": [
+            "fileExists"
+        ],
+        "new CreateFolderRemoteOperation(\"/1/1/\", true).execute(client)": [
+            "isSuccess"
+        ],
+        "new CreateFolderRemoteOperation(\"/1/1/\", true)": [
+            "execute"
+        ],
+        "new CreateFolderRemoteOperation(\"/1/2/\", true).execute(client)": [
+            "isSuccess"
+        ],
+        "new CreateFolderRemoteOperation(\"/1/2/\", true)": [
+            "execute"
+        ],
+        "new UploadFileRemoteOperation(getDummyFile(\"chunkedFile.txt\").getAbsolutePath(),\n                                                 \"/1/1/chunkedFile.txt\",\n                                                 \"text/plain\",\n                                                 System.currentTimeMillis() / 1000)\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new UploadFileRemoteOperation(getDummyFile(\"chunkedFile.txt\").getAbsolutePath(),\n                                                 \"/1/1/chunkedFile.txt\",\n                                                 \"text/plain\",\n                                                 System.currentTimeMillis() / 1000)": [
+            "execute"
+        ],
+        "getDummyFile(\"chunkedFile.txt\")": [
+            "getAbsolutePath"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "new UploadFileRemoteOperation(getDummyFile(\"chunkedFile.txt\").getAbsolutePath(),\n                                                 \"/1/1/chunkedFile2.txt\",\n                                                 \"text/plain\",\n                                                 System.currentTimeMillis() / 1000)\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new UploadFileRemoteOperation(getDummyFile(\"chunkedFile.txt\").getAbsolutePath(),\n                                                 \"/1/1/chunkedFile2.txt\",\n                                                 \"text/plain\",\n                                                 System.currentTimeMillis() / 1000)": [
+            "execute"
+        ],
+        "new UploadFileRemoteOperation(imageFile.getAbsolutePath(),\n                                                 \"/1/1/imageFile.png\",\n                                                 \"image/png\",\n                                                 System.currentTimeMillis() / 1000)\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new UploadFileRemoteOperation(imageFile.getAbsolutePath(),\n                                                 \"/1/1/imageFile.png\",\n                                                 \"image/png\",\n                                                 System.currentTimeMillis() / 1000)": [
+            "execute"
+        ],
+        "imageFile": [
+            "getAbsolutePath"
+        ],
+        "new RefreshFolderOperation(sut.getFileByDecryptedRemotePath(\"/\"),\n                                              System.currentTimeMillis() / 1000,\n                                              false,\n                                              false,\n                                              sut,\n                                              user,\n                                              targetContext).execute(client)": [
+            "isSuccess"
+        ],
+        "new RefreshFolderOperation(sut.getFileByDecryptedRemotePath(\"/\"),\n                                              System.currentTimeMillis() / 1000,\n                                              false,\n                                              false,\n                                              sut,\n                                              user,\n                                              targetContext)": [
+            "execute"
+        ],
+        "new RefreshFolderOperation(sut.getFileByDecryptedRemotePath(\"/1/\"),\n                                              System.currentTimeMillis() / 1000,\n                                              false,\n                                              false,\n                                              sut,\n                                              user,\n                                              targetContext).execute(client)": [
+            "isSuccess"
+        ],
+        "new RefreshFolderOperation(sut.getFileByDecryptedRemotePath(\"/1/\"),\n                                              System.currentTimeMillis() / 1000,\n                                              false,\n                                              false,\n                                              sut,\n                                              user,\n                                              targetContext)": [
+            "execute"
+        ],
+        "new RefreshFolderOperation(sut.getFileByDecryptedRemotePath(\"/1/1/\"),\n                                              System.currentTimeMillis() / 1000,\n                                              false,\n                                              false,\n                                              sut,\n                                              user,\n                                              targetContext).execute(client)": [
+            "isSuccess"
+        ],
+        "new RefreshFolderOperation(sut.getFileByDecryptedRemotePath(\"/1/1/\"),\n                                              System.currentTimeMillis() / 1000,\n                                              false,\n                                              false,\n                                              sut,\n                                              user,\n                                              targetContext)": [
+            "execute"
+        ],
+        "sut.getFolderContent(sut.getFileByDecryptedRemotePath(\"/1/1/\"), false)": [
+            "size"
+        ],
+        "sut.getFolderContent(sut.getFileByDecryptedRemotePath(\"/\"), false)": [
+            "size",
+            "get"
+        ],
+        "new UploadFileRemoteOperation(imageFile.getAbsolutePath(),\n                                                 remotePath,\n                                                 \"image/png\",\n                                                 System.currentTimeMillis() / 1000)\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new UploadFileRemoteOperation(imageFile.getAbsolutePath(),\n                                                 remotePath,\n                                                 \"image/png\",\n                                                 System.currentTimeMillis() / 1000)": [
+            "execute"
+        ],
+        "searchRemoteOperation": [
+            "execute"
+        ],
+        "TestCase": [
+            "assertTrue",
+            "assertEquals"
+        ],
+        "searchResult": [
+            "isSuccess",
+            "getResultData"
+        ],
+        "searchResult.getResultData()": [
+            "size",
+            "get"
+        ],
+        "FileStorageUtils": [
+            "fillOCFile"
+        ],
+        "cv": [
+            "put"
+        ],
+        "virtualType": [
+            "toString"
+        ],
+        "ocFile": [
+            "getFileId",
+            "getRemotePath"
+        ],
+        "contentValues": [
+            "add"
+        ],
+        "sut.getVirtualFolderContent(virtualType, false)": [
+            "size",
+            "get"
+        ],
+        "targetContext\n                                             .getContentResolver()": [
+            "acquireContentProviderClient"
+        ],
+        "targetContext": [
+            "getContentResolver"
+        ],
+        "new UploadFileRemoteOperation(imageFile.getAbsolutePath(),\n                                                 imagePath,\n                                                 \"image/png\",\n                                                 (System.currentTimeMillis() - 10000) / 1000)\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new UploadFileRemoteOperation(imageFile.getAbsolutePath(),\n                                                 imagePath,\n                                                 \"image/png\",\n                                                 (System.currentTimeMillis() - 10000) / 1000)": [
+            "execute"
+        ],
+        "new UploadFileRemoteOperation(videoFile.getAbsolutePath(),\n                                                 videoPath,\n                                                 \"video/mpeg\",\n                                                 (System.currentTimeMillis() + 10000) / 1000)\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new UploadFileRemoteOperation(videoFile.getAbsolutePath(),\n                                                 videoPath,\n                                                 \"video/mpeg\",\n                                                 (System.currentTimeMillis() + 10000) / 1000)": [
+            "execute"
+        ],
+        "videoFile": [
+            "getAbsolutePath"
+        ],
+        "ocFile2": [
+            "getRemotePath",
+            "getFileId"
+        ],
+        "cv2": [
+            "put"
+        ],
+        "newFile": [
+            "setRemoteId"
+        ],
+        "capability": [
+            "setUserStatus",
+            "getUserStatus"
+        ],
+        "newCapability": [
+            "getUserStatus"
+        ]
+    },
+    "local_variables": {
+        "file": "OCFile",
+        "imageFile": "File",
+        "remotePath": "String",
+        "virtualType": "VirtualFolderType",
+        "searchRemoteOperation": "SearchRemoteOperation",
+        "searchResult": "RemoteOperationResult<List<RemoteFile>>",
+        "ocFile": "OCFile",
+        "contentValues": "List<ContentValues>",
+        "cv": "ContentValues",
+        "imagePath": "String",
+        "videoPath": "String",
+        "videoFile": "File",
+        "ocFile2": "OCFile",
+        "cv2": "ContentValues",
+        "newFile": "OCFile",
+        "capability": "OCCapability",
+        "newCapability": "OCCapability"
+    }
+}

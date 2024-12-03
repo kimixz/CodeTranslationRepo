@@ -1,0 +1,1668 @@
+{
+    "method_calls": {
+        "UploadFileOperation.class": [
+            "getSimpleName"
+        ],
+        "newFile": [
+            "setStoragePath",
+            "setLastSyncDateForProperties",
+            "setLastSyncDateForData",
+            "setFileLength",
+            "setMimeType",
+            "getAbsolutePath",
+            "setCreationTimestamp",
+            "setModificationTimestamp",
+            "setModificationTimestampAtLastSyncForData",
+            "setEtag",
+            "setParentId"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "localFile": [
+            "length",
+            "lastModified"
+        ],
+        "MimeTypeUtil": [
+            "getBestMimeTypeByFilename",
+            "isMedia"
+        ],
+        "upload": [
+            "getLocalPath",
+            "getRemotePath",
+            "getMimeType",
+            "getUploadId",
+            "getCreatedBy",
+            "isCreateRemoteFolder",
+            "getFolderUnlockToken"
+        ],
+        "unknown": [
+            "obtainNewOCFileToUpload",
+            "updateSize",
+            "getRemotePath",
+            "getCapabilities",
+            "getStorageManager",
+            "grantFolderExistence",
+            "encryptedUpload",
+            "normalUpload",
+            "getContext",
+            "checkConditions",
+            "getE2ECounter",
+            "getFolderUnlockTokenOrLockFolder",
+            "isEndToEndVersionAtLeastV2",
+            "getDecryptedFolderMetadataV1",
+            "getCollidedFileNames",
+            "checkNameCollision",
+            "copyFile",
+            "getE2EData",
+            "initFileChannel",
+            "getChannelSize",
+            "setUploadOperationForE2E",
+            "performE2EUpload",
+            "updateMetadataForE2E",
+            "cleanupE2EUpload",
+            "completeE2EUpload",
+            "getE2EVersion",
+            "copy",
+            "getEncryptedFileName",
+            "updateMetadataForV1",
+            "updateMetadataForV2",
+            "handleSuccessfulUpload",
+            "sendRefreshFolderEventBroadcast",
+            "logResult",
+            "deleteDuplicatedFileAndSendRefreshFolderEvent",
+            "getOCUploadId",
+            "existsFile",
+            "getNewAvailableRemotePath",
+            "createNewOCFile",
+            "saveUploadedFile",
+            "move",
+            "createLocalFolder",
+            "updateOCFile"
+        ],
+        "mFile": [
+            "getStoragePath",
+            "getFileName",
+            "getRemotePath",
+            "getDecryptedRemotePath",
+            "getMimeType",
+            "setParentId",
+            "setEncrypted",
+            "setDecryptedRemotePath",
+            "getParentRemotePath",
+            "getEtagInConflict",
+            "setStoragePath",
+            "setRemotePath",
+            "getDecryptedFileName",
+            "getCreationTimestamp",
+            "getFileLength",
+            "getModificationTimestamp",
+            "getModificationTimestampAtLastSyncForData",
+            "getEtag",
+            "getLastSyncDateForProperties",
+            "getLastSyncDateForData",
+            "getParentId",
+            "getEncryptedFileName"
+        ],
+        "mDataTransferListeners": [
+            "add",
+            "remove"
+        ],
+        "((ProgressiveDataTransfer) mEntity)": [
+            "addDataTransferProgressListener",
+            "removeDataTransferProgressListener"
+        ],
+        "mUploadOperation": [
+            "addDataTransferProgressListener",
+            "removeDataTransferProgressListener",
+            "execute",
+            "cancel"
+        ],
+        "mCancellationRequested": [
+            "set",
+            "get"
+        ],
+        "mUploadStarted": [
+            "set",
+            "get"
+        ],
+        "new File(getRemotePath())": [
+            "getParent"
+        ],
+        "remoteParentPath": [
+            "endsWith"
+        ],
+        "AutoRename.INSTANCE": [
+            "rename"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "saveConflict",
+            "findDuplicatedFile",
+            "deleteFileInMediaScan",
+            "saveFile",
+            "getFileById"
+        ],
+        "mFolderUnlockToken": [
+            "isEmpty"
+        ],
+        "result": [
+            "isSuccess",
+            "add",
+            "getHttpCode",
+            "getCode",
+            "getLogMessage",
+            "getException",
+            "isCancelled",
+            "getData"
+        ],
+        "parent": [
+            "getFileId"
+        ],
+        "FileStorageUtils": [
+            "checkEncryptionStatus",
+            "getDefaultSavePathFor",
+            "getInternalTemporalPath",
+            "getUsableSpace"
+        ],
+        "Log_OC": [
+            "d",
+            "e",
+            "w",
+            "i"
+        ],
+        "arbitraryDataProvider": [
+            "getValue"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "e2eFiles": [
+            "getOriginalFile",
+            "setExpectedFile",
+            "setEncryptedTempFile",
+            "getEncryptedTempFile",
+            "setTemporalFile",
+            "getTemporalFile",
+            "getParentFile",
+            "getExpectedFile",
+            "deleteTemporalFile",
+            "deleteTemporalFileWithOriginalFileComparison",
+            "deleteEncryptedTempFile"
+        ],
+        "EncryptionUtils": [
+            "downloadFolderMetadata",
+            "lockFolder",
+            "encodeBytesToBase64String",
+            "generateKey",
+            "encryptStringAsymmetric",
+            "generateUid",
+            "randomBytes",
+            "getCipher",
+            "encryptFile",
+            "encryptFolderMetadata",
+            "serializeJSON",
+            "uploadMetadata",
+            "unlockFolderV1",
+            "unlockFolder"
+        ],
+        "decrypted": [
+            "getMetadata"
+        ],
+        "parentFile": [
+            "isEncrypted",
+            "getDecryptedRemotePath",
+            "getE2eCounter",
+            "getLocalId"
+        ],
+        "e2eFiles.getOriginalFile()": [
+            "getName",
+            "lastModified",
+            "length"
+        ],
+        "FileUtil": [
+            "getCreationTimestamp"
+        ],
+        "e2eData.getEncryptedFile()": [
+            "getEncryptedFile",
+            "getAuthenticationTag"
+        ],
+        "e2eData": [
+            "getEncryptedFile",
+            "getEncryptedFileName",
+            "getKey",
+            "getIv"
+        ],
+        "channelResult": [
+            "getFirst",
+            "getSecond",
+            "getThird"
+        ],
+        "getE2EVersion()": [
+            "compareTo"
+        ],
+        "CapabilityUtils.getCapability(mContext)": [
+            "getEndToEndEncryptionApiVersion"
+        ],
+        "CapabilityUtils": [
+            "getCapability"
+        ],
+        "mUpload": [
+            "setFolderUnlockToken"
+        ],
+        "uploadsStorageManager": [
+            "updateUpload",
+            "getUploadById"
+        ],
+        "metadata": [
+            "setMetadata",
+            "getMetadata",
+            "getFiles"
+        ],
+        "metadata.getMetadata()": [
+            "setVersion",
+            "setMetadataKeys",
+            "setMetadataKey",
+            "getMetadataKey"
+        ],
+        "metadata.getFiles()": [
+            "values",
+            "get",
+            "put"
+        ],
+        "file.getEncrypted()": [
+            "getFilename"
+        ],
+        "file": [
+            "getEncrypted",
+            "getFilename",
+            "fileExists",
+            "getFileId",
+            "setLastSyncDateForData",
+            "getParentRemotePath",
+            "setLastSyncDateForProperties",
+            "setUpdateThumbnailNeeded",
+            "getMimeType",
+            "getStoragePath",
+            "getRemoteId",
+            "setCreationTimestamp",
+            "setFileLength",
+            "setMimeType",
+            "setModificationTimestamp",
+            "setModificationTimestampAtLastSyncForData",
+            "setEtag",
+            "setRemoteId",
+            "setPermissions"
+        ],
+        "metadataFile.getMetadata()": [
+            "getFiles"
+        ],
+        "metadataFile": [
+            "getMetadata"
+        ],
+        "files": [
+            "values"
+        ],
+        "((DecryptedFolderMetadataFile) object).getMetadata().getFiles()": [
+            "get"
+        ],
+        "((DecryptedFolderMetadataFile) object).getMetadata()": [
+            "getFiles"
+        ],
+        "((DecryptedFolderMetadataFile) object)": [
+            "getMetadata"
+        ],
+        "connectivityService.getConnectivity()": [
+            "isWifi",
+            "isConnected"
+        ],
+        "connectivityService": [
+            "getConnectivity",
+            "isInternetWalled"
+        ],
+        "encryptedTempFile": [
+            "getAbsolutePath"
+        ],
+        "randomAccessFile": [
+            "getChannel"
+        ],
+        "channel": [
+            "tryLock",
+            "size",
+            "close"
+        ],
+        "Files": [
+            "deleteIfExists"
+        ],
+        "Paths": [
+            "get"
+        ],
+        "e2eFiles.getTemporalFile()": [
+            "length",
+            "getAbsolutePath"
+        ],
+        "new File(mFile.getStoragePath())": [
+            "length"
+        ],
+        "data": [
+            "getClient",
+            "setFilename",
+            "setMimetype",
+            "setKey"
+        ],
+        "e2eFiles.getParentFile()": [
+            "getDecryptedRemotePath",
+            "getRemotePath",
+            "getFileName"
+        ],
+        "decryptedFile": [
+            "setEncrypted",
+            "setInitializationVector",
+            "setAuthenticationTag"
+        ],
+        "clientData": [
+            "getPublicKey",
+            "getToken",
+            "getClient"
+        ],
+        "encryptionUtilsV2": [
+            "addFileToMetadata",
+            "serializeAndUploadMetadata"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "removeDuplicatedFile"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "fileLock": [
+            "release"
+        ],
+        "unlockFolderResult": [
+            "isSuccess"
+        ],
+        "LocalBroadcastManager.getInstance(mContext)": [
+            "sendBroadcast"
+        ],
+        "LocalBroadcastManager": [
+            "getInstance"
+        ],
+        "connectivity": [
+            "isWifi",
+            "isMetered"
+        ],
+        "powerManagementService": [
+            "getBattery",
+            "isPowerSavingEnabled"
+        ],
+        "battery": [
+            "isCharging"
+        ],
+        "originalFile": [
+            "exists",
+            "lastModified",
+            "length",
+            "equals",
+            "delete",
+            "getAbsolutePath"
+        ],
+        "new RandomAccessFile(mFile.getStoragePath(), \"rw\")": [
+            "getChannel"
+        ],
+        "temporalFile": [
+            "length",
+            "getAbsolutePath",
+            "delete",
+            "exists"
+        ],
+        "new RandomAccessFile(temporalFile.getAbsolutePath(), \"rw\")": [
+            "getChannel"
+        ],
+        "ocUpload": [
+            "setFileSize"
+        ],
+        "mOriginalStoragePath": [
+            "equals",
+            "startsWith"
+        ],
+        "mRenameUploadListener": [
+            "onRenameUpload"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "expectedFile": [
+            "getAbsolutePath"
+        ],
+        "FileDataStorageManager": [
+            "triggerMediaScan"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "syncOp": [
+            "execute"
+        ],
+        "new File(remotePath)": [
+            "getParent",
+            "getName"
+        ],
+        "parentPath": [
+            "endsWith"
+        ],
+        "createdFolder": [
+            "setMimeType",
+            "setParentId"
+        ],
+        "remotePath": [
+            "lastIndexOf",
+            "substring"
+        ],
+        "name": [
+            "equalsIgnoreCase"
+        ],
+        "existsOperation": [
+            "execute"
+        ],
+        "sourceFile": [
+            "length",
+            "renameTo",
+            "delete"
+        ],
+        "targetFile": [
+            "getParentFile",
+            "createNewFile",
+            "isFile",
+            "getAbsolutePath",
+            "equals"
+        ],
+        "temporalParent": [
+            "mkdirs",
+            "isDirectory"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "mContext.getContentResolver()": [
+            "openInputStream"
+        ],
+        "mContext": [
+            "getContentResolver"
+        ],
+        "in": [
+            "read",
+            "close"
+        ],
+        "out": [
+            "write",
+            "flush",
+            "close"
+        ],
+        "expectedFolder": [
+            "mkdirs",
+            "isDirectory"
+        ],
+        "new FileInputStream(sourceFile)": [
+            "getChannel"
+        ],
+        "new FileOutputStream(targetFile)": [
+            "getChannel"
+        ],
+        "inChannel": [
+            "transferTo",
+            "size",
+            "close"
+        ],
+        "outChannel": [
+            "close"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "mOldFile": [
+            "getRemotePath"
+        ],
+        "oldFile": [
+            "setStoragePath"
+        ],
+        "task": [
+            "execute"
+        ],
+        "remoteFile": [
+            "getCreationTimestamp",
+            "getLength",
+            "getMimeType",
+            "getModifiedTimestamp",
+            "getEtag",
+            "getRemoteId",
+            "getPermissions"
+        ]
+    },
+    "methods": [
+        {
+            "name": "obtainNewOCFileToUpload",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "String",
+                    "name": "localPath"
+                },
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 7259,
+            "end_position": 8181,
+            "body_start": 7358,
+            "body_end": 8181
+        },
+        {
+            "name": "isWifiRequired",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11670,
+            "end_position": 11737,
+            "body_start": 11702,
+            "body_end": 11737
+        },
+        {
+            "name": "isChargingRequired",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11743,
+            "end_position": 11821,
+            "body_start": 11779,
+            "body_end": 11821
+        },
+        {
+            "name": "isIgnoringPowerSaveMode",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11827,
+            "end_position": 11914,
+            "body_start": 11868,
+            "body_end": 11914
+        },
+        {
+            "name": "getUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 11920,
+            "end_position": 11970,
+            "body_start": 11942,
+            "body_end": 11970
+        },
+        {
+            "name": "getFileName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 11976,
+            "end_position": 12072,
+            "body_start": 12004,
+            "body_end": 12072
+        },
+        {
+            "name": "getFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 12078,
+            "end_position": 12131,
+            "body_start": 12102,
+            "body_end": 12131
+        },
+        {
+            "name": "getOldFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 12264,
+            "end_position": 12337,
+            "body_start": 12305,
+            "body_end": 12337
+        },
+        {
+            "name": "getOriginalStoragePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 12343,
+            "end_position": 12426,
+            "body_start": 12382,
+            "body_end": 12426
+        },
+        {
+            "name": "getStoragePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 12432,
+            "end_position": 12509,
+            "body_start": 12463,
+            "body_end": 12509
+        },
+        {
+            "name": "getRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 12515,
+            "end_position": 12590,
+            "body_start": 12545,
+            "body_end": 12590
+        },
+        {
+            "name": "getDecryptedRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 12596,
+            "end_position": 12689,
+            "body_start": 12635,
+            "body_end": 12689
+        },
+        {
+            "name": "getMimeType",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 12695,
+            "end_position": 12766,
+            "body_start": 12723,
+            "body_end": 12766
+        },
+        {
+            "name": "getLocalBehaviour",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 12772,
+            "end_position": 12842,
+            "body_start": 12803,
+            "body_end": 12842
+        },
+        {
+            "name": "setRemoteFolderToBeCreated",
+            "return_type": "UploadFileOperation",
+            "parameters": [],
+            "start_position": 12848,
+            "end_position": 12974,
+            "body_start": 12904,
+            "body_end": 12974
+        },
+        {
+            "name": "wasRenamed",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 12980,
+            "end_position": 13043,
+            "body_start": 13008,
+            "body_end": 13043
+        },
+        {
+            "name": "setCreatedBy",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "createdBy"
+                }
+            ],
+            "start_position": 13049,
+            "end_position": 13263,
+            "body_start": 13089,
+            "body_end": 13263
+        },
+        {
+            "name": "getCreatedBy",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 13269,
+            "end_position": 13329,
+            "body_start": 13295,
+            "body_end": 13329
+        },
+        {
+            "name": "isInstantPicture",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13335,
+            "end_position": 13433,
+            "body_start": 13369,
+            "body_end": 13433
+        },
+        {
+            "name": "isInstantVideo",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13439,
+            "end_position": 13533,
+            "body_start": 13471,
+            "body_end": 13533
+        },
+        {
+            "name": "setOCUploadId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 13539,
+            "end_position": 13607,
+            "body_start": 13574,
+            "body_end": 13607
+        },
+        {
+            "name": "getOCUploadId",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 13613,
+            "end_position": 13676,
+            "body_start": 13641,
+            "body_end": 13676
+        },
+        {
+            "name": "getDataTransferListeners",
+            "return_type": "Set<OnDatatransferProgressListener>",
+            "parameters": [],
+            "start_position": 13682,
+            "end_position": 13798,
+            "body_start": 13752,
+            "body_end": 13798
+        },
+        {
+            "name": "addDataTransferProgressListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OnDatatransferProgressListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 13804,
+            "end_position": 14258,
+            "body_start": 13889,
+            "body_end": 14258
+        },
+        {
+            "name": "removeDataTransferProgressListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OnDatatransferProgressListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 14264,
+            "end_position": 14730,
+            "body_start": 14352,
+            "body_end": 14730
+        },
+        {
+            "name": "addRenameUploadListener",
+            "return_type": "UploadFileOperation",
+            "parameters": [
+                {
+                    "type": "OnRenameListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 14736,
+            "end_position": 14885,
+            "body_start": 14814,
+            "body_end": 14885
+        },
+        {
+            "name": "getContext",
+            "return_type": "Context",
+            "parameters": [],
+            "start_position": 14891,
+            "end_position": 14951,
+            "body_start": 14919,
+            "body_end": 14951
+        },
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 14957,
+            "end_position": 16897,
+            "body_start": 15082,
+            "body_end": 16897
+        },
+        {
+            "name": "encryptedUpload",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "parentFile"
+                }
+            ],
+            "start_position": 16928,
+            "end_position": 21560,
+            "body_start": 17130,
+            "body_end": 21560
+        },
+        {
+            "name": "isEndToEndVersionAtLeastV2",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 21566,
+            "end_position": 21682,
+            "body_start": 21611,
+            "body_end": 21682
+        },
+        {
+            "name": "getE2EVersion",
+            "return_type": "E2EVersion",
+            "parameters": [],
+            "start_position": 21688,
+            "end_position": 21820,
+            "body_start": 21723,
+            "body_end": 21820
+        },
+        {
+            "name": "getE2ECounter",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "parentFile"
+                }
+            ],
+            "start_position": 21826,
+            "end_position": 22040,
+            "body_start": 21872,
+            "body_end": 22040
+        },
+        {
+            "name": "getFolderUnlockTokenOrLockFolder",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "parentFile"
+                },
+                {
+                    "type": "long",
+                    "name": "counter"
+                }
+            ],
+            "start_position": 22046,
+            "end_position": 22506,
+            "body_start": 22173,
+            "body_end": 22506
+        },
+        {
+            "name": "getDecryptedFolderMetadataV1",
+            "return_type": "DecryptedFolderMetadataFileV1",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "publicKey"
+                },
+                {
+                    "type": "Object",
+                    "name": "object"
+                }
+            ],
+            "start_position": 22512,
+            "end_position": 23467,
+            "body_start": 22767,
+            "body_end": 23467
+        },
+        {
+            "name": "getCollidedFileNames",
+            "return_type": "List<String>",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "object"
+                }
+            ],
+            "start_position": 23473,
+            "end_position": 24221,
+            "body_start": 23530,
+            "body_end": 24221
+        },
+        {
+            "name": "getEncryptedFileName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "object"
+                }
+            ],
+            "start_position": 24227,
+            "end_position": 24838,
+            "body_start": 24278,
+            "body_end": 24838
+        },
+        {
+            "name": "setUploadOperationForE2E",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                },
+                {
+                    "type": "File",
+                    "name": "encryptedTempFile"
+                },
+                {
+                    "type": "String",
+                    "name": "encryptedFileName"
+                },
+                {
+                    "type": "long",
+                    "name": "lastModifiedTimestamp"
+                },
+                {
+                    "type": "long",
+                    "name": "creationTimestamp"
+                },
+                {
+                    "type": "long",
+                    "name": "size"
+                }
+            ],
+            "start_position": 24844,
+            "end_position": 26961,
+            "body_start": 25219,
+            "body_end": 26961
+        },
+        {
+            "name": "initFileChannel",
+            "return_type": "Triple<FileLock, RemoteOperationResult, FileChannel>",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "FileLock",
+                    "name": "fileLock"
+                },
+                {
+                    "type": "E2EFiles",
+                    "name": "e2eFiles"
+                }
+            ],
+            "start_position": 26967,
+            "end_position": 28931,
+            "body_start": 27131,
+            "body_end": 28931
+        },
+        {
+            "name": "getChannelSize",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "FileChannel",
+                    "name": "channel"
+                }
+            ],
+            "start_position": 28937,
+            "end_position": 29149,
+            "body_start": 28986,
+            "body_end": 29149
+        },
+        {
+            "name": "performE2EUpload",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "E2EClientData",
+                    "name": "data"
+                }
+            ],
+            "start_position": 29155,
+            "end_position": 29975,
+            "body_start": 29257,
+            "body_end": 29975
+        },
+        {
+            "name": "getE2EData",
+            "return_type": "E2EData",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "object"
+                }
+            ],
+            "start_position": 29981,
+            "end_position": 30794,
+            "body_start": 30180,
+            "body_end": 30794
+        },
+        {
+            "name": "updateMetadataForE2E",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "object"
+                },
+                {
+                    "type": "E2EData",
+                    "name": "e2eData"
+                },
+                {
+                    "type": "E2EClientData",
+                    "name": "clientData"
+                },
+                {
+                    "type": "E2EFiles",
+                    "name": "e2eFiles"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "EncryptionUtilsV2",
+                    "name": "encryptionUtilsV2"
+                },
+                {
+                    "type": "boolean",
+                    "name": "metadataExists"
+                }
+            ],
+            "start_position": 30800,
+            "end_position": 32161,
+            "body_start": 31234,
+            "body_end": 32161
+        },
+        {
+            "name": "updateMetadataForV1",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DecryptedFolderMetadataFileV1",
+                    "name": "metadata"
+                },
+                {
+                    "type": "E2EData",
+                    "name": "e2eData"
+                },
+                {
+                    "type": "E2EClientData",
+                    "name": "clientData"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "parentFile"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "boolean",
+                    "name": "metadataExists"
+                }
+            ],
+            "start_position": 32167,
+            "end_position": 34551,
+            "body_start": 32625,
+            "body_end": 34551
+        },
+        {
+            "name": "updateMetadataForV2",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DecryptedFolderMetadataFile",
+                    "name": "metadata"
+                },
+                {
+                    "type": "EncryptionUtilsV2",
+                    "name": "encryptionUtilsV2"
+                },
+                {
+                    "type": "E2EData",
+                    "name": "e2eData"
+                },
+                {
+                    "type": "E2EClientData",
+                    "name": "clientData"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "parentFile"
+                }
+            ],
+            "start_position": 34558,
+            "end_position": 35609,
+            "body_start": 34751,
+            "body_end": 35609
+        },
+        {
+            "name": "completeE2EUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "E2EFiles",
+                    "name": "e2eFiles"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 35615,
+            "end_position": 36084,
+            "body_start": 35718,
+            "body_end": 36084
+        },
+        {
+            "name": "deleteDuplicatedFileAndSendRefreshFolderEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 36090,
+            "end_position": 36421,
+            "body_start": 36172,
+            "body_end": 36421
+        },
+        {
+            "name": "cleanupE2EUpload",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "FileLock",
+                    "name": "fileLock"
+                },
+                {
+                    "type": "E2EFiles",
+                    "name": "e2eFiles"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "Object",
+                    "name": "object"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 36427,
+            "end_position": 38178,
+            "body_start": 36594,
+            "body_end": 38178
+        },
+        {
+            "name": "sendRefreshFolderEventBroadcast",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 38201,
+            "end_position": 38397,
+            "body_start": 38248,
+            "body_end": 38397
+        },
+        {
+            "name": "checkConditions",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "originalFile"
+                }
+            ],
+            "start_position": 38403,
+            "end_position": 40360,
+            "body_start": 38468,
+            "body_end": 40360
+        },
+        {
+            "name": "normalUpload",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 40366,
+            "end_position": 47382,
+            "body_start": 40432,
+            "body_end": 47382
+        },
+        {
+            "name": "updateSize",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "size"
+                }
+            ],
+            "start_position": 47388,
+            "end_position": 47652,
+            "body_start": 47423,
+            "body_end": 47652
+        },
+        {
+            "name": "logResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "String",
+                    "name": "sourcePath"
+                },
+                {
+                    "type": "String",
+                    "name": "targetPath"
+                }
+            ],
+            "start_position": 47658,
+            "end_position": 48511,
+            "body_start": 47749,
+            "body_end": 48511
+        },
+        {
+            "name": "copyFile",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "originalFile"
+                },
+                {
+                    "type": "String",
+                    "name": "expectedPath"
+                }
+            ],
+            "start_position": 48517,
+            "end_position": 49260,
+            "body_start": 48652,
+            "body_end": 49260
+        },
+        {
+            "name": "checkNameCollision",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "parentFile"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "List<String>",
+                    "name": "fileNames"
+                },
+                {
+                    "type": "boolean",
+                    "name": "encrypted"
+                }
+            ],
+            "start_position": 49266,
+            "end_position": 51064,
+            "body_start": 49619,
+            "body_end": 51064
+        },
+        {
+            "name": "handleSuccessfulUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "temporalFile"
+                },
+                {
+                    "type": "File",
+                    "name": "expectedFile"
+                },
+                {
+                    "type": "File",
+                    "name": "originalFile"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 51070,
+            "end_position": 53538,
+            "body_start": 51306,
+            "body_end": 53538
+        },
+        {
+            "name": "getCapabilities",
+            "return_type": "OCCapability",
+            "parameters": [],
+            "start_position": 53544,
+            "end_position": 53646,
+            "body_start": 53583,
+            "body_end": 53646
+        },
+        {
+            "name": "grantFolderExistence",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "pathToGrant"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 54137,
+            "end_position": 55157,
+            "body_start": 54231,
+            "body_end": 55157
+        },
+        {
+            "name": "createLocalFolder",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 55163,
+            "end_position": 55903,
+            "body_start": 55215,
+            "body_end": 55903
+        },
+        {
+            "name": "createNewOCFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "newRemotePath"
+                }
+            ],
+            "start_position": 56139,
+            "end_position": 57104,
+            "body_start": 56190,
+            "body_end": 57104
+        },
+        {
+            "name": "getNewAvailableRemotePath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "List<String>",
+                    "name": "fileNames"
+                },
+                {
+                    "type": "boolean",
+                    "name": "encrypted"
+                }
+            ],
+            "start_position": 57420,
+            "end_position": 58398,
+            "body_start": 57687,
+            "body_end": 58398
+        },
+        {
+            "name": "existsFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "List<String>",
+                    "name": "fileNames"
+                },
+                {
+                    "type": "boolean",
+                    "name": "encrypted"
+                }
+            ],
+            "start_position": 58404,
+            "end_position": 59158,
+            "body_start": 58616,
+            "body_end": 59158
+        },
+        {
+            "name": "cancel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ResultCode",
+                    "name": "cancellationReason"
+                }
+            ],
+            "start_position": 59368,
+            "end_position": 59965,
+            "body_start": 59418,
+            "body_end": 59965
+        },
+        {
+            "name": "isUploadInProgress",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 60065,
+            "end_position": 60146,
+            "body_start": 60101,
+            "body_end": 60146
+        },
+        {
+            "name": "copy",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "sourceFile"
+                },
+                {
+                    "type": "File",
+                    "name": "targetFile"
+                }
+            ],
+            "start_position": 60532,
+            "end_position": 63524,
+            "body_start": 60620,
+            "body_end": 63524
+        },
+        {
+            "name": "move",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "sourceFile"
+                },
+                {
+                    "type": "File",
+                    "name": "targetFile"
+                }
+            ],
+            "start_position": 63929,
+            "end_position": 65371,
+            "body_start": 64000,
+            "body_end": 65371
+        },
+        {
+            "name": "saveUploadedFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 65621,
+            "end_position": 68162,
+            "body_start": 65674,
+            "body_end": 68162
+        },
+        {
+            "name": "updateOCFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "RemoteFile",
+                    "name": "remoteFile"
+                }
+            ],
+            "start_position": 68168,
+            "end_position": 68730,
+            "body_start": 68230,
+            "body_end": 68730
+        },
+        {
+            "name": "onRenameUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 68781,
+            "end_position": 68803
+        }
+    ],
+    "local_variables": {
+        "newFile": "OCFile",
+        "localFile": "File",
+        "remoteParentPath": "String",
+        "parent": "OCFile",
+        "result": "RemoteOperationResult",
+        "e2eFiles": "E2EFiles",
+        "fileLock": "FileLock",
+        "size": "long",
+        "metadataExists": "boolean",
+        "token": "String",
+        "object": "Object",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "publicKey": "String",
+        "counter": "long",
+        "encryptionUtilsV2": "EncryptionUtilsV2",
+        "clientData": "E2EClientData",
+        "fileNames": "List<String>",
+        "collisionResult": "RemoteOperationResult",
+        "expectedPath": "String",
+        "lastModifiedTimestamp": "long",
+        "creationTimestamp": "Long",
+        "e2eData": "E2EData",
+        "channelResult": "Triple<FileLock, RemoteOperationResult, FileChannel>",
+        "channel": "FileChannel",
+        "metadata": "DecryptedFolderMetadataFileV1",
+        "metadataKey": "String",
+        "encryptedMetadataKey": "String",
+        "files": "Map<String, com.owncloud.android.datamodel.e2e.v2.decrypted.DecryptedFile>",
+        "encryptedFileName": "String",
+        "onWifiConnection": "boolean",
+        "temporalPath": "String",
+        "key": "byte[]",
+        "iv": "byte[]",
+        "cipher": "Cipher",
+        "file": "OCFile",
+        "encryptedFile": "EncryptedFile",
+        "decryptedFile": "DecryptedFile",
+        "data": "Data",
+        "encryptedFolderMetadata": "EncryptedFolderMetadataFileV1",
+        "serializedFolderMetadata": "String",
+        "unlockFolderResult": "RemoteOperationResult<Void>",
+        "intent": "Intent",
+        "remoteOperationResult": "RemoteOperationResult",
+        "connectivity": "Connectivity",
+        "battery": "BatteryStatus",
+        "temporalFile": "File",
+        "originalFile": "File",
+        "expectedFile": "File",
+        "ocUpload": "OCUpload",
+        "operation": "ReadFileRemoteOperation",
+        "syncOp": "SyncOperation",
+        "parentDir": "OCFile",
+        "parentPath": "String",
+        "createdFolder": "OCFile",
+        "extPos": "int",
+        "suffix": "String",
+        "extension": "String",
+        "remotePathWithoutExtension": "String",
+        "count": "int",
+        "exists": "boolean",
+        "newPath": "String",
+        "fileName": "String",
+        "existsOperation": "ExistenceCheckRemoteOperation",
+        "temporalParent": "File",
+        "in": "InputStream",
+        "out": "OutputStream",
+        "uri": "Uri",
+        "nRead": "int",
+        "buf": "byte[]",
+        "expectedFolder": "File",
+        "inChannel": "FileChannel",
+        "outChannel": "FileChannel",
+        "syncDate": "long",
+        "path": "String",
+        "oldFile": "OCFile",
+        "task": "ThumbnailsCacheManager.ThumbnailGenerationTask"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "throw_statement",
+        "synchronized_statement",
+        "try_statement",
+        "enhanced_for_statement",
+        "while_statement",
+        "try_with_resources_statement",
+        "break_statement",
+        "do_statement"
+    ]
+}

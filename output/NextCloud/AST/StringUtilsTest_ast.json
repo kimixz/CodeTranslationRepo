@@ -1,0 +1,135 @@
+{
+    "methods": [
+        {
+            "name": "assertCorrectSingleSearchMatch",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 450,
+            "end_position": 970,
+            "body_start": 505,
+            "body_end": 970
+        },
+        {
+            "name": "assertTextReturnedIfSearchTextIsEmpty",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 976,
+            "end_position": 1237,
+            "body_start": 1038,
+            "body_end": 1237
+        },
+        {
+            "name": "searchStringNull",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1243,
+            "end_position": 1629,
+            "body_start": 1284,
+            "body_end": 1629
+        },
+        {
+            "name": "searchStringEmpty",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1635,
+            "end_position": 2020,
+            "body_start": 1677,
+            "body_end": 2020
+        },
+        {
+            "name": "textNull",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2026,
+            "end_position": 2366,
+            "body_start": 2059,
+            "body_end": 2366
+        },
+        {
+            "name": "textEmpty",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2372,
+            "end_position": 2711,
+            "body_start": 2406,
+            "body_end": 2711
+        },
+        {
+            "name": "bothNull",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2717,
+            "end_position": 3055,
+            "body_start": 2750,
+            "body_end": 3055
+        },
+        {
+            "name": "bothEmpty",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3061,
+            "end_position": 3396,
+            "body_start": 3095,
+            "body_end": 3396
+        },
+        {
+            "name": "prefixBothEmpty",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3402,
+            "end_position": 3685,
+            "body_start": 3442,
+            "body_end": 3685
+        },
+        {
+            "name": "noPrefix",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3691,
+            "end_position": 4024,
+            "body_start": 3724,
+            "body_end": 4024
+        },
+        {
+            "name": "simplePrefix",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4030,
+            "end_position": 4344,
+            "body_start": 4067,
+            "body_end": 4344
+        },
+        {
+            "name": "prefixEqual",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4350,
+            "end_position": 4663,
+            "body_start": 4386,
+            "body_end": 4663
+        }
+    ],
+    "local_variables": {
+        "text": "String",
+        "searchText": "String",
+        "dummyColorInt": "int",
+        "expectedReturn": "String",
+        "helloWorld": "String",
+        "prefix": "String"
+    },
+    "method_calls": {
+        "String": [
+            "format"
+        ],
+        "unknown": [
+            "assertEquals"
+        ],
+        "StringUtils": [
+            "searchAndColor",
+            "removePrefix"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement"
+    ]
+}

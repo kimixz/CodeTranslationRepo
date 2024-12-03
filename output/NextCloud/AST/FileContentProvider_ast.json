@@ -1,0 +1,685 @@
+{
+    "method_calls": {
+        "FileContentProvider.class": [
+            "getSimpleName"
+        ],
+        "unknown": [
+            "isCallerNotAllowed",
+            "delete",
+            "deleteSingleFile",
+            "deleteDirectory",
+            "query",
+            "deleteWithUri",
+            "insert",
+            "updateFilesTableAccordingToShareInsertion",
+            "getContext",
+            "update",
+            "isTemporary",
+            "verifyColumnName",
+            "isValidColumnName"
+        ],
+        "mDbHelper": [
+            "getWritableDatabase",
+            "getReadableDatabase"
+        ],
+        "db": [
+            "beginTransaction",
+            "setTransactionSuccessful",
+            "endTransaction",
+            "delete",
+            "insert",
+            "update",
+            "execSQL",
+            "query"
+        ],
+        "mContext.getContentResolver()": [
+            "notifyChange"
+        ],
+        "mContext": [
+            "getContentResolver",
+            "getResources",
+            "getPackageManager",
+            "getPackageName"
+        ],
+        "mUriMatcher": [
+            "match",
+            "addURI"
+        ],
+        "VerificationUtils": [
+            "verifyWhere",
+            "prependUriFirstSegmentToSelectionArgs",
+            "verifyColumns",
+            "verifySortOrder",
+            "verifyColumnName"
+        ],
+        "String": [
+            "format"
+        ],
+        "uri": [
+            "toString",
+            "getPathSegments"
+        ],
+        "children": [
+            "moveToFirst",
+            "isAfterLast",
+            "getLong",
+            "getColumnIndexOrThrow",
+            "getString",
+            "moveToNext",
+            "close"
+        ],
+        "MimeType.DIRECTORY": [
+            "equals"
+        ],
+        "ContentUris": [
+            "withAppendedId"
+        ],
+        "uri.getPathSegments()": [
+            "size",
+            "get"
+        ],
+        "c": [
+            "moveToFirst",
+            "getString",
+            "getColumnIndexOrThrow",
+            "setNotificationUri"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "values": [
+            "getAsString"
+        ],
+        "doubleCheck": [
+            "moveToFirst",
+            "close",
+            "getLong",
+            "getColumnIndexOrThrow"
+        ],
+        "ShareType": [
+            "fromValue"
+        ],
+        "newShare": [
+            "getAsInteger",
+            "getAsString"
+        ],
+        "fileValues": [
+            "put"
+        ],
+        "AndroidInjection": [
+            "inject"
+        ],
+        "database": [
+            "getOpenHelper",
+            "beginTransaction",
+            "setTransactionSuccessful",
+            "endTransaction"
+        ],
+        "mContext.getResources()": [
+            "getString"
+        ],
+        "SupportSQLiteQueryBuilder": [
+            "builder"
+        ],
+        "queryBuilder": [
+            "selection",
+            "orderBy",
+            "columns",
+            "create"
+        ],
+        "operations": [
+            "size"
+        ],
+        "operation": [
+            "apply"
+        ],
+        "mContext.getPackageManager()": [
+            "getNameForUid"
+        ],
+        "Binder": [
+            "getCallingUid"
+        ],
+        "callingPackage": [
+            "equals"
+        ],
+        "ProviderTableMeta.FILE_ALL_COLUMNS": [
+            "contains"
+        ],
+        "contentValues.keySet()": [
+            "isEmpty"
+        ],
+        "contentValues": [
+            "keySet"
+        ],
+        "System": [
+            "arraycopy"
+        ],
+        "SQLiteTokenizer": [
+            "tokenize",
+            "isKeyword",
+            "isFunction",
+            "isType"
+        ],
+        "token": [
+            "toUpperCase"
+        ]
+    },
+    "methods": [
+        {
+            "name": "delete",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String",
+                    "name": "where"
+                },
+                {
+                    "type": "String[]",
+                    "name": "whereArgs"
+                }
+            ],
+            "start_position": 3553,
+            "end_position": 4095,
+            "body_start": 3637,
+            "body_end": 4095
+        },
+        {
+            "name": "delete",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String",
+                    "name": "where"
+                }
+            ],
+            "start_position": 4101,
+            "end_position": 6146,
+            "body_start": 4190,
+            "body_end": 6146
+        },
+        {
+            "name": "deleteDirectory",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String",
+                    "name": "where"
+                }
+            ],
+            "start_position": 6152,
+            "end_position": 7570,
+            "body_start": 6250,
+            "body_end": 7570
+        },
+        {
+            "name": "deleteSingleFile",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String",
+                    "name": "where"
+                }
+            ],
+            "start_position": 7576,
+            "end_position": 8171,
+            "body_start": 7675,
+            "body_end": 8171
+        },
+        {
+            "name": "deleteWithUri",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String",
+                    "name": "where"
+                },
+                {
+                    "type": "String[]",
+                    "name": "whereArgs"
+                }
+            ],
+            "start_position": 8177,
+            "end_position": 8607,
+            "body_start": 8272,
+            "body_end": 8607
+        },
+        {
+            "name": "getType",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                }
+            ],
+            "start_position": 8613,
+            "end_position": 9030,
+            "body_start": 8667,
+            "body_end": 9030
+        },
+        {
+            "name": "insert",
+            "return_type": "Uri",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "values"
+                }
+            ],
+            "start_position": 9036,
+            "end_position": 9564,
+            "body_start": 9108,
+            "body_end": 9564
+        },
+        {
+            "name": "insert",
+            "return_type": "Uri",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "values"
+                }
+            ],
+            "start_position": 9570,
+            "end_position": 15598,
+            "body_start": 9646,
+            "body_end": 15598
+        },
+        {
+            "name": "updateFilesTableAccordingToShareInsertion",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "newShare"
+                }
+            ],
+            "start_position": 15604,
+            "end_position": 16883,
+            "body_start": 15709,
+            "body_end": 16883
+        },
+        {
+            "name": "onCreate",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 16890,
+            "end_position": 18238,
+            "body_start": 16930,
+            "body_end": 18238
+        },
+        {
+            "name": "query",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String[]",
+                    "name": "projection"
+                },
+                {
+                    "type": "String",
+                    "name": "selection"
+                },
+                {
+                    "type": "String[]",
+                    "name": "selectionArgs"
+                },
+                {
+                    "type": "String",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 18244,
+            "end_position": 19142,
+            "body_start": 18401,
+            "body_end": 19142
+        },
+        {
+            "name": "query",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String[]",
+                    "name": "projectionArray"
+                },
+                {
+                    "type": "String",
+                    "name": "selection"
+                },
+                {
+                    "type": "String[]",
+                    "name": "selectionArgs"
+                },
+                {
+                    "type": "String",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 19148,
+            "end_position": 24018,
+            "body_start": 19415,
+            "body_end": 24018
+        },
+        {
+            "name": "update",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "values"
+                },
+                {
+                    "type": "String",
+                    "name": "selection"
+                },
+                {
+                    "type": "String[]",
+                    "name": "selectionArgs"
+                }
+            ],
+            "start_position": 24024,
+            "end_position": 24612,
+            "body_start": 24138,
+            "body_end": 24612
+        },
+        {
+            "name": "update",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "values"
+                },
+                {
+                    "type": "String",
+                    "name": "selection"
+                }
+            ],
+            "start_position": 24618,
+            "end_position": 26205,
+            "body_start": 24737,
+            "body_end": 26205
+        },
+        {
+            "name": "applyBatch",
+            "return_type": "ContentProviderResult[]",
+            "parameters": [
+                {
+                    "type": "ArrayList<ContentProviderOperation>",
+                    "name": "operations"
+                }
+            ],
+            "start_position": 26211,
+            "end_position": 27190,
+            "body_start": 26382,
+            "body_end": 27190
+        },
+        {
+            "name": "isCallerNotAllowed",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                }
+            ],
+            "start_position": 27196,
+            "end_position": 27853,
+            "body_start": 27240,
+            "body_end": 27853
+        },
+        {
+            "name": "isValidColumnName",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "columnName"
+                }
+            ],
+            "start_position": 27902,
+            "end_position": 28058,
+            "body_start": 27971,
+            "body_end": 28058
+        },
+        {
+            "name": "verifyColumns",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ContentValues",
+                    "name": "contentValues"
+                }
+            ],
+            "start_position": 28068,
+            "end_position": 28405,
+            "body_start": 28167,
+            "body_end": 28405
+        },
+        {
+            "name": "verifyColumnName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "columnName"
+                }
+            ],
+            "start_position": 28415,
+            "end_position": 28670,
+            "body_start": 28479,
+            "body_end": 28670
+        },
+        {
+            "name": "prependUriFirstSegmentToSelectionArgs",
+            "return_type": "String[]",
+            "parameters": [
+                {
+                    "type": "String[]",
+                    "name": "originalArgs"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                }
+            ],
+            "start_position": 28680,
+            "end_position": 29164,
+            "body_start": 28795,
+            "body_end": 29164
+        },
+        {
+            "name": "verifySortOrder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 29174,
+            "end_position": 29437,
+            "body_start": 29237,
+            "body_end": 29437
+        },
+        {
+            "name": "verifySortToken",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 29447,
+            "end_position": 30162,
+            "body_start": 29496,
+            "body_end": 30162
+        },
+        {
+            "name": "verifyWhere",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "where"
+                }
+            ],
+            "start_position": 30172,
+            "end_position": 30420,
+            "body_start": 30227,
+            "body_end": 30420
+        },
+        {
+            "name": "verifyWhereToken",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 30430,
+            "end_position": 31554,
+            "body_start": 30481,
+            "body_end": 31554
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "return_statement",
+        "expression_statement",
+        "try_statement",
+        "break_statement",
+        "throw_statement",
+        "while_statement",
+        "try_with_resources_statement",
+        "enhanced_for_statement"
+    ],
+    "local_variables": {
+        "count": "int",
+        "db": "SupportSQLiteDatabase",
+        "children": "Cursor",
+        "childId": "long",
+        "isDir": "boolean",
+        "id": "String",
+        "argsWithUri": "String[]",
+        "newUri": "Uri",
+        "where": "String",
+        "remotePath": "String",
+        "accountName": "String",
+        "whereArgs": "String[]",
+        "doubleCheck": "Cursor",
+        "rowId": "long",
+        "insertedFileUri": "Uri",
+        "insertedShareUri": "Uri",
+        "idShares": "long",
+        "insertedCapUri": "Uri",
+        "idCapabilities": "long",
+        "insertedUploadUri": "Uri",
+        "uploadId": "long",
+        "insertedSyncedFolderUri": "Uri",
+        "syncedFolderId": "long",
+        "insertedExternalLinkUri": "Uri",
+        "externalLinkId": "long",
+        "insertedVirtualUri": "Uri",
+        "virtualId": "long",
+        "insertedFilesystemUri": "Uri",
+        "filesystemId": "long",
+        "fileValues": "ContentValues",
+        "newShareType": "ShareType",
+        "authority": "String",
+        "result": "Cursor",
+        "uriMatch": "int",
+        "tableName": "String",
+        "queryBuilder": "SupportSQLiteQueryBuilder",
+        "idColumn": "String",
+        "order": "String",
+        "supportSQLiteQuery": "SupportSQLiteQuery",
+        "c": "Cursor",
+        "results": "ContentProviderResult[]",
+        "i": "int",
+        "database": "SupportSQLiteDatabase",
+        "callingPackage": "String",
+        "args": "String[]"
+    }
+}

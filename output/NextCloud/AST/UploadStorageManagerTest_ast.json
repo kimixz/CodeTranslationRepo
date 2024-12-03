@@ -1,0 +1,278 @@
+{
+    "methods": [
+        {
+            "name": "setUp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2101,
+            "end_position": 3550,
+            "body_start": 2133,
+            "body_end": 3550
+        },
+        {
+            "name": "testDeleteAllUploads",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3556,
+            "end_position": 4077,
+            "body_start": 3601,
+            "body_end": 4077
+        },
+        {
+            "name": "largeTest",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4083,
+            "end_position": 4780,
+            "body_start": 4117,
+            "body_end": 4780
+        },
+        {
+            "name": "testIsSame",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4786,
+            "end_position": 5284,
+            "body_start": 4821,
+            "body_end": 5284
+        },
+        {
+            "name": "contains",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ArrayList<OCUpload>",
+                    "name": "uploads"
+                },
+                {
+                    "type": "OCUpload",
+                    "name": "storedUpload"
+                }
+            ],
+            "start_position": 5290,
+            "end_position": 5555,
+            "body_start": 5367,
+            "body_end": 5555
+        },
+        {
+            "name": "corruptedUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5561,
+            "end_position": 6028,
+            "body_start": 5644,
+            "body_end": 6028
+        },
+        {
+            "name": "getById",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6034,
+            "end_position": 6451,
+            "body_start": 6066,
+            "body_end": 6451
+        },
+        {
+            "name": "getByIdNull",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6457,
+            "end_position": 6602,
+            "body_start": 6493,
+            "body_end": 6602
+        },
+        {
+            "name": "insertUploads",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "int",
+                    "name": "rowsToInsert"
+                }
+            ],
+            "start_position": 6608,
+            "end_position": 6806,
+            "body_start": 6670,
+            "body_end": 6806
+        },
+        {
+            "name": "generateUniqueNumber",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 6812,
+            "end_position": 6927,
+            "body_start": 6849,
+            "body_end": 6927
+        },
+        {
+            "name": "createUpload",
+            "return_type": "OCUpload",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 6933,
+            "end_position": 8766,
+            "body_start": 6980,
+            "body_end": 8766
+        },
+        {
+            "name": "deleteAllUploads",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8772,
+            "end_position": 8939,
+            "body_start": 8804,
+            "body_end": 8939
+        },
+        {
+            "name": "tearDown",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8945,
+            "end_position": 9060,
+            "body_start": 8979,
+            "body_end": 9060
+        }
+    ],
+    "local_variables": {
+        "instrumentationCtx": "Context",
+        "contentResolver": "ContentResolver",
+        "temp": "Account",
+        "platformAccountManager": "AccountManager",
+        "userAccountManager": "UserAccountManager",
+        "accountRowsA": "int",
+        "accountRowsB": "int",
+        "size": "int",
+        "uploads": "ArrayList<OCUpload>",
+        "i": "int",
+        "upload": "OCUpload",
+        "storedUploads": "OCUpload[]",
+        "upload1": "OCUpload",
+        "upload2": "OCUpload",
+        "corruptUpload": "OCUpload",
+        "id": "long",
+        "newUpload": "OCUpload",
+        "uuid": "UUID"
+    },
+    "method_calls": {
+        "ApplicationProvider": [
+            "getApplicationContext"
+        ],
+        "instrumentationCtx": [
+            "getContentResolver"
+        ],
+        "UserAccountManagerImpl": [
+            "fromContext"
+        ],
+        "MainApp": [
+            "getAccountType"
+        ],
+        "userAccountManager": [
+            "exists",
+            "getUser",
+            "getAllUsers",
+            "removeUser"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "platformAccountManager": [
+            "addAccountExplicitly",
+            "setUserData"
+        ],
+        "Integer": [
+            "toString"
+        ],
+        "userAccountManager.getUser(\"test2@test.com\")": [
+            "orElseThrow"
+        ],
+        "uploadsStorageManager": [
+            "removeUserUploads",
+            "getAllStoredUploads",
+            "storeUpload",
+            "getUploadById",
+            "removeAllUploads"
+        ],
+        "unknown": [
+            "insertUploads",
+            "assertEquals",
+            "deleteAllUploads",
+            "createUpload",
+            "assertTrue",
+            "contains",
+            "assertFalse",
+            "assertNotNull",
+            "assertNull",
+            "generateUniqueNumber"
+        ],
+        "user2": [
+            "toPlatformAccount"
+        ],
+        "uploads": [
+            "add",
+            "size",
+            "get"
+        ],
+        "upload1": [
+            "setUseWifiOnly",
+            "isSame"
+        ],
+        "upload2": [
+            "setUseWifiOnly"
+        ],
+        "storedUpload": [
+            "isSame"
+        ],
+        "corruptUpload": [
+            "setLocalPath"
+        ],
+        "upload": [
+            "getLocalAction",
+            "getFolderUnlockToken",
+            "setFileSize",
+            "setUploadStatus",
+            "setLocalAction",
+            "setNameCollisionPolicy",
+            "setCreateRemoteFolder",
+            "setUploadEndTimestamp",
+            "setLastResult",
+            "setCreatedBy",
+            "setUseWifiOnly",
+            "setWhileChargingOnly",
+            "setFolderUnlockToken"
+        ],
+        "newUpload": [
+            "getLocalAction",
+            "getFolderUnlockToken"
+        ],
+        "UUID": [
+            "randomUUID"
+        ],
+        "uuid": [
+            "toString"
+        ],
+        "new Random()": [
+            "nextInt"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "RandomStringGenerator": [
+            "make"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "for_statement",
+        "return_statement"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "for_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "onPreExecute",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 944,
+            "end_position": 1042,
+            "body_start": 988,
+            "body_end": 1042
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Boolean",
+            "parameters": [],
+            "start_position": 1259,
+            "end_position": 1642,
+            "body_start": 1325,
+            "body_end": 1642
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Boolean",
+                    "name": "result"
+                }
+            ],
+            "start_position": 1648,
+            "end_position": 1775,
+            "body_start": 1707,
+            "body_end": 1775
+        },
+        {
+            "name": "onCheckAvailableSpaceStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1836,
+            "end_position": 1870
+        },
+        {
+            "name": "onCheckAvailableSpaceFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "hasEnoughSpaceAvailable"
+                }
+            ],
+            "start_position": 1880,
+            "end_position": 1971
+        }
+    ],
+    "method_calls": {
+        "callback": [
+            "onCheckAvailableSpaceStart",
+            "onCheckAvailableSpaceFinish"
+        ],
+        "localFile": [
+            "length"
+        ],
+        "FileStorageUtils": [
+            "getUsableSpace"
+        ]
+    },
+    "local_variables": {
+        "localFile": "File",
+        "total": "long",
+        "i": "int",
+        "localPath": "String"
+    }
+}

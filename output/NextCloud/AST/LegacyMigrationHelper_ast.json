@@ -1,0 +1,152 @@
+{
+    "method_calls": {
+        "LegacyMigrationHelper.class": [
+            "getSimpleName"
+        ],
+        "unknown": [
+            "upgrade",
+            "clearStorage",
+            "checkIfColumnExists",
+            "createUploadsTable"
+        ],
+        "Log_OC": [
+            "i",
+            "d"
+        ],
+        "context.getCacheDir()": [
+            "delete"
+        ],
+        "context": [
+            "getCacheDir",
+            "getSystemService"
+        ],
+        "((ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE))": [
+            "clearApplicationUserData"
+        ],
+        "db": [
+            "beginTransaction",
+            "execSQL",
+            "setTransactionSuccessful",
+            "endTransaction"
+        ],
+        "String": [
+            "format"
+        ],
+        "clock": [
+            "getCurrentTime"
+        ],
+        "NameCollisionPolicy.ASK_USER": [
+            "serialize"
+        ],
+        "database": [
+            "query"
+        ],
+        "cursor": [
+            "getColumnIndex",
+            "close"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "tryUpgrade",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "int",
+                    "name": "oldVersion"
+                },
+                {
+                    "type": "int",
+                    "name": "newVersion"
+                }
+            ],
+            "start_position": 1563,
+            "end_position": 1851,
+            "body_start": 1644,
+            "body_end": 1851
+        },
+        {
+            "name": "clearStorage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1857,
+            "end_position": 2103,
+            "body_start": 1949,
+            "body_end": 2103
+        },
+        {
+            "name": "upgrade",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                },
+                {
+                    "type": "int",
+                    "name": "oldVersion"
+                },
+                {
+                    "type": "int",
+                    "name": "newVersion"
+                }
+            ],
+            "start_position": 2109,
+            "end_position": 42029,
+            "body_start": 2188,
+            "body_end": 42029
+        },
+        {
+            "name": "createUploadsTable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "db"
+                }
+            ],
+            "start_position": 42035,
+            "end_position": 44221,
+            "body_start": 42093,
+            "body_end": 44221
+        },
+        {
+            "name": "checkIfColumnExists",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "SupportSQLiteDatabase",
+                    "name": "database"
+                },
+                {
+                    "type": "String",
+                    "name": "table"
+                },
+                {
+                    "type": "String",
+                    "name": "column"
+                }
+            ],
+            "start_position": 44227,
+            "end_position": 44520,
+            "body_start": 44324,
+            "body_end": 44520
+        }
+    ],
+    "local_variables": {
+        "upgraded": "boolean",
+        "tmpTableName": "String",
+        "cursor": "Cursor",
+        "exists": "boolean"
+    }
+}

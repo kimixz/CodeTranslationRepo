@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "getRepository",
+        "method_code": "public static synchronized FilesRepository getRepository(@NonNull FilesServiceApi filesServiceApi) {\n        return new RemoteFilesRepository(filesServiceApi);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getRepository from FileRepositories.java into Swift.\n\n        Input:\n\n        Method Name: getRepository\n\n        Method Code: public static synchronized FilesRepository getRepository(@NonNull FilesServiceApi filesServiceApi) {\n        return new RemoteFilesRepository(filesServiceApi);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nstatic func getRepository(filesServiceApi: FilesServiceApi) -> FilesRepository {\n    return RemoteFilesRepository(filesServiceApi: filesServiceApi)\n}\n```"
+    }
+]

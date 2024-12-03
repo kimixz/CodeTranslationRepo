@@ -1,0 +1,68 @@
+{
+    "methods": [
+        {
+            "name": "canProvideStoragePoints",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 643,
+            "end_position": 781,
+            "body_start": 698,
+            "body_end": 781
+        },
+        {
+            "name": "getAvailableStoragePoint",
+            "return_type": "List<StoragePoint>",
+            "parameters": [],
+            "start_position": 787,
+            "end_position": 999,
+            "body_start": 854,
+            "body_end": 999
+        },
+        {
+            "name": "addEntriesFromEnv",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<StoragePoint>",
+                    "name": "result"
+                },
+                {
+                    "type": "String",
+                    "name": "envName"
+                }
+            ],
+            "start_position": 1005,
+            "end_position": 1458,
+            "body_start": 1079,
+            "body_end": 1458
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "if_statement",
+        "enhanced_for_statement"
+    ],
+    "method_calls": {
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "System": [
+            "getenv"
+        ],
+        "unknown": [
+            "addEntriesFromEnv",
+            "canBeAddedToAvailableList"
+        ],
+        "env": [
+            "split"
+        ],
+        "result": [
+            "add"
+        ]
+    },
+    "local_variables": {
+        "result": "List<StoragePoint>",
+        "env": "String"
+    }
+}

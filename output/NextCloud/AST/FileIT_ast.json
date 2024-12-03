@@ -1,0 +1,133 @@
+{
+    "methods": [
+        {
+            "name": "testCreateFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1107,
+            "end_position": 1851,
+            "body_start": 1148,
+            "body_end": 1851
+        },
+        {
+            "name": "testCreateNonExistingSubFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1857,
+            "end_position": 2723,
+            "body_start": 1912,
+            "body_end": 2723
+        },
+        {
+            "name": "testRemoteIdNull",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2729,
+            "end_position": 3162,
+            "body_start": 2770,
+            "body_end": 3162
+        },
+        {
+            "name": "testRenameFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3168,
+            "end_position": 5276,
+            "body_start": 3228,
+            "body_end": 5276
+        }
+    ],
+    "local_variables": {
+        "path": "String",
+        "syncOp": "SyncOperation",
+        "result": "RemoteOperationResult",
+        "file": "OCFile",
+        "test": "OCFile",
+        "folderPath": "String",
+        "storagePath1": "String",
+        "storagePath2": "String"
+    },
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "assertNull",
+            "getStorageManager",
+            "assertTrue",
+            "assertEquals",
+            "createFolder",
+            "uploadFile",
+            "getDummyFile",
+            "shortSleep",
+            "assertFalse"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "deleteAllFiles",
+            "getAllFiles",
+            "saveFile"
+        ],
+        "syncOp": [
+            "execute"
+        ],
+        "result": [
+            "toString",
+            "isSuccess"
+        ],
+        "file": [
+            "isFolder"
+        ],
+        "new RemoveFileOperation(file, false, user, false, targetContext, getStorageManager())\n                       .execute(client)": [
+            "isSuccess"
+        ],
+        "new RemoveFileOperation(file, false, user, false, targetContext, getStorageManager())": [
+            "execute"
+        ],
+        "new RemoveFileOperation(file,\n                                false,\n                                user,\n                                false,\n                                targetContext,\n                                getStorageManager())": [
+            "execute"
+        ],
+        "getStorageManager().getAllFiles()": [
+            "size"
+        ],
+        "new SynchronizeFolderOperation(targetContext,\n                                                  folderPath,\n                                                  user,\n                                                  fileDataStorageManager,\n                                                  false)\n                       .execute(targetContext)": [
+            "isSuccess"
+        ],
+        "new SynchronizeFolderOperation(targetContext,\n                                                  folderPath,\n                                                  user,\n                                                  fileDataStorageManager,\n                                                  false)": [
+            "execute"
+        ],
+        "fileDataStorageManager.getFileByDecryptedRemotePath(folderPath)": [
+            "getStoragePath"
+        ],
+        "fileDataStorageManager": [
+            "getFileByDecryptedRemotePath"
+        ],
+        "new File(storagePath1)": [
+            "exists"
+        ],
+        "fileDataStorageManager\n            .getFileByDecryptedRemotePath(folderPath + \"text.txt\")": [
+            "getStoragePath"
+        ],
+        "new File(storagePath2)": [
+            "exists"
+        ],
+        "new RenameFileOperation(folderPath, \"test123\", fileDataStorageManager)\n                .execute(targetContext)": [
+            "isSuccess"
+        ],
+        "new RenameFileOperation(folderPath, \"test123\", fileDataStorageManager)": [
+            "execute"
+        ],
+        "new File(fileDataStorageManager.getFileByDecryptedRemotePath(\"/test123/\").getStoragePath())": [
+            "exists"
+        ],
+        "fileDataStorageManager.getFileByDecryptedRemotePath(\"/test123/\")": [
+            "getStoragePath"
+        ],
+        "new File(fileDataStorageManager.getFileByDecryptedRemotePath(\"/test123/text.txt\").getStoragePath())": [
+            "exists"
+        ],
+        "fileDataStorageManager.getFileByDecryptedRemotePath(\"/test123/text.txt\")": [
+            "getStoragePath"
+        ]
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "for_statement",
+        "if_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "setup",
+            "getContext",
+            "animateToStep",
+            "generateDefaultLayoutParams",
+            "addView"
+        ],
+        "mDotsContainer": [
+            "removeAllViews",
+            "addView",
+            "getChildAt",
+            "setGravity",
+            "setLayoutParams"
+        ],
+        "iv": [
+            "setImageDrawable"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "getContext()": [
+            "getResources"
+        ],
+        "viewThemeUtils.platform": [
+            "colorImageView"
+        ],
+        "prevDot": [
+            "getDrawable"
+        ],
+        "transition": [
+            "resetTransition",
+            "startTransition"
+        ],
+        "dot": [
+            "getDrawable"
+        ],
+        "MainApp.getAppComponent()": [
+            "inject"
+        ],
+        "MainApp": [
+            "getAppComponent"
+        ],
+        "viewThemeUtilsFactory": [
+            "withPrimaryAsBackground"
+        ]
+    },
+    "methods": [
+        {
+            "name": "hasNextStep",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1587,
+            "end_position": 1669,
+            "body_start": 1616,
+            "body_end": 1669
+        },
+        {
+            "name": "setNumberOfSteps",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "steps"
+                }
+            ],
+            "start_position": 1675,
+            "end_position": 2186,
+            "body_start": 1715,
+            "body_end": 2186
+        },
+        {
+            "name": "animateToStep",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "step"
+                }
+            ],
+            "start_position": 2192,
+            "end_position": 2802,
+            "body_start": 2228,
+            "body_end": 2802
+        },
+        {
+            "name": "setup",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2808,
+            "end_position": 3341,
+            "body_start": 2829,
+            "body_end": 3341
+        }
+    ],
+    "local_variables": {
+        "i": "int",
+        "iv": "ImageView",
+        "prevDot": "ImageView",
+        "transition": "TransitionDrawable",
+        "dot": "ImageView",
+        "params": "FrameLayout.LayoutParams"
+    }
+}

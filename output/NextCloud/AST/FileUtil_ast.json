@@ -1,0 +1,66 @@
+{
+    "methods": [
+        {
+            "name": "getFilenameFromPathString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filePath"
+                }
+            ],
+            "start_position": 980,
+            "end_position": 1346,
+            "body_start": 1067,
+            "body_end": 1346
+        },
+        {
+            "name": "getCreationTimestamp",
+            "return_type": "Long",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 1352,
+            "end_position": 1914,
+            "body_start": 1417,
+            "body_end": 1914
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "return_statement",
+        "try_statement",
+        "expression_statement"
+    ],
+    "method_calls": {
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "file": [
+            "isFile",
+            "getName",
+            "toPath"
+        ],
+        "Files.readAttributes(file.toPath(), BasicFileAttributes.class)\n                .creationTime()": [
+            "to"
+        ],
+        "Files.readAttributes(file.toPath(), BasicFileAttributes.class)": [
+            "creationTime"
+        ],
+        "Files": [
+            "readAttributes"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "UploadFileRemoteOperation.class": [
+            "getSimpleName"
+        ]
+    },
+    "local_variables": {
+        "file": "File"
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "this.targetParentPath": [
+            "endsWith"
+        ],
+        "targetParentPath": [
+            "startsWith"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "moveLocalFile"
+        ],
+        "unknown": [
+            "getStorageManager"
+        ],
+        "file": [
+            "getFileName",
+            "isFolder"
+        ],
+        "new MoveFileRemoteOperation(srcPath, targetPath, false)": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess"
+        ]
+    },
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1880,
+            "end_position": 2883,
+            "body_start": 1953,
+            "body_end": 2883
+        }
+    ],
+    "local_variables": {
+        "file": "OCFile",
+        "targetPath": "String",
+        "result": "RemoteOperationResult"
+    }
+}

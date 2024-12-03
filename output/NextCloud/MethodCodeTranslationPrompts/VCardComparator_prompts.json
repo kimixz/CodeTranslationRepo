@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "compare",
+        "method_code": "@Override\n    public int compare(VCard o1, VCard o2) {\n        String contact1 = BackupListFragment.getDisplayName(o1);\n        String contact2 = BackupListFragment.getDisplayName(o2);\n\n        return contact1.compareToIgnoreCase(contact2);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled compare from VCardComparator.java into Swift.\n\n        Input:\n\n        Method Name: compare\n\n        Method Code: @Override\n    public int compare(VCard o1, VCard o2) {\n        String contact1 = BackupListFragment.getDisplayName(o1);\n        String contact2 = BackupListFragment.getDisplayName(o2);\n\n        return contact1.compareToIgnoreCase(contact2);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc compare(_ o1: VCard, _ o2: VCard) -> Int {\n    let contact1 = BackupListFragment.getDisplayName(o1)\n    let contact2 = BackupListFragment.getDisplayName(o2)\n    \n    return contact1.caseInsensitiveCompare(contact2).rawValue\n}\n```"
+    }
+]

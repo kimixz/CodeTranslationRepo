@@ -1,0 +1,1058 @@
+{
+    "method_calls": {
+        "ThumbnailsCacheManager.class": [
+            "getSimpleName"
+        ],
+        "BitmapFactory": [
+            "decodeResource",
+            "decodeStream"
+        ],
+        "MainApp.getAppContext()": [
+            "getResources",
+            "getCacheDir",
+            "getExternalCacheDir",
+            "getSystemService"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "cacheDir": [
+            "getPath"
+        ],
+        "Log_OC": [
+            "d",
+            "e",
+            "w",
+            "v"
+        ],
+        "oldCacheDir": [
+            "exists",
+            "getPath"
+        ],
+        "FileStorageUtils": [
+            "copyDirs",
+            "deleteRecursive",
+            "getMimeTypeFromName"
+        ],
+        "mThumbnailsDiskCacheLock": [
+            "notifyAll",
+            "wait"
+        ],
+        "Math": [
+            "round",
+            "pow",
+            "floor",
+            "log",
+            "max"
+        ],
+        "r": [
+            "getDimension"
+        ],
+        "wm": [
+            "getDefaultDisplay"
+        ],
+        "display": [
+            "getSize"
+        ],
+        "ThumbnailUtils": [
+            "extractThumbnail",
+            "createVideoThumbnail"
+        ],
+        "BitmapUtils": [
+            "rotateImage",
+            "setRoundedBitmapForGridMode",
+            "setRoundedBitmap",
+            "decodeSampledBitmapFromFile",
+            "scaleBitmap",
+            "bitmapToCircularBitmapDrawable",
+            "drawableToBitmap"
+        ],
+        "mThumbnailCache": [
+            "containsKey",
+            "put",
+            "getScaledBitmap",
+            "getBitmap",
+            "clearCache"
+        ],
+        "unknown": [
+            "addBitmapToCache",
+            "getThumbnailFromCache",
+            "getThumbnailFromServerAndAddToCache",
+            "doResizedImageInBackground",
+            "addVideoOverlay",
+            "getGalleryImageGenerationTask",
+            "getResizedImageGenerationWorkerTask",
+            "doThumbnailFromOCFileInBackground",
+            "doFileInBackground",
+            "getBitmapWorkerTask",
+            "getBitmapFromDiskCache",
+            "getThumbnailDimension",
+            "handlePNG",
+            "addThumbnailToCache",
+            "doAvatarInBackground",
+            "getScreenDimension"
+        ],
+        "file": [
+            "getRemoteId",
+            "isPreviewAvailable",
+            "isUpdateThumbnailNeeded",
+            "getImageDimension",
+            "setImageDimension",
+            "getFileId",
+            "getMimeType",
+            "getLocalId",
+            "getFileName",
+            "hashCode",
+            "getAbsolutePath",
+            "getPath",
+            "getStoragePath",
+            "getRemotePath",
+            "isDown",
+            "setUpdateThumbnailNeeded"
+        ],
+        "ThumbnailsCacheManager": [
+            "getBitmapFromDiskCache",
+            "getThumbnailDimension",
+            "addVideoOverlay"
+        ],
+        "OwnCloudClientManagerFactory.getDefaultSingleton()": [
+            "getClientFor"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ],
+        "user": [
+            "toOwnCloudAccount"
+        ],
+        "MimeTypeUtil": [
+            "isVideo",
+            "isImage",
+            "getDefaultFolderIcon",
+            "getFileTypeIcon"
+        ],
+        "imageDimension": [
+            "getWidth",
+            "getHeight"
+        ],
+        "thumbnail": [
+            "getWidth",
+            "getHeight"
+        ],
+        "storageManager": [
+            "saveFile"
+        ],
+        "imageViewReference": [
+            "get"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "String.valueOf(imageView.getTag())": [
+            "equals"
+        ],
+        "imageView": [
+            "getTag",
+            "setBackgroundColor",
+            "setImageBitmap",
+            "invalidate",
+            "setVisibility",
+            "setImageDrawable",
+            "getDrawable"
+        ],
+        "\"image/png\"": [
+            "equalsIgnoreCase"
+        ],
+        "listener": [
+            "onNewGalleryImage",
+            "onSuccess",
+            "onError",
+            "shouldCallGeneratedCallback",
+            "avatarGenerated"
+        ],
+        "asyncTasks": [
+            "remove"
+        ],
+        "frameLayoutReference": [
+            "get"
+        ],
+        "frameLayout": [
+            "setVisibility"
+        ],
+        "new Thread(() -> {\n                        if (connectivityService.isInternetWalled()) {\n                            if (fileFragment instanceof PreviewImageFragment) {\n                                ((PreviewImageFragment) fileFragment).setNoConnectionErrorMessage();\n                            }\n                        } else {\n                            if (fileFragment instanceof PreviewImageFragment) {\n                                ((PreviewImageFragment) fileFragment).handleUnsupportedImage();\n                            }\n                        }\n                    })": [
+            "start"
+        ],
+        "connectivityService": [
+            "isInternetWalled"
+        ],
+        "((PreviewImageFragment) fileFragment)": [
+            "setNoConnectionErrorMessage",
+            "handleUnsupportedImage"
+        ],
+        "object": [
+            "getFile",
+            "getImageKey"
+        ],
+        "((File) mFile)": [
+            "getAbsolutePath"
+        ],
+        "mImageViewReference": [
+            "get"
+        ],
+        "((OCFile)mFile)": [
+            "getFileId"
+        ],
+        "mFile": [
+            "hashCode",
+            "getAbsolutePath",
+            "isDirectory",
+            "getName"
+        ],
+        "((TrashbinFile) mFile)": [
+            "getRemoteId"
+        ],
+        "mListener": [
+            "onSuccess",
+            "onError"
+        ],
+        "mAsyncTasks": [
+            "remove"
+        ],
+        "((OCFile) file)": [
+            "isUpdateThumbnailNeeded"
+        ],
+        "ocFile": [
+            "isDown",
+            "getStoragePath",
+            "getMimeType",
+            "setUpdateThumbnailNeeded"
+        ],
+        "PNG_MIMETYPE": [
+            "equalsIgnoreCase"
+        ],
+        "mStorageManager": [
+            "saveFile"
+        ],
+        "mClient": [
+            "getBaseUri",
+            "executeMethod",
+            "exhaustResponse"
+        ],
+        "getMethod": [
+            "setRequestHeader",
+            "getResponseBodyAsStream",
+            "releaseConnection"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "d": [
+            "intValue"
+        ],
+        "tagId": [
+            "equals"
+        ],
+        "retriever": [
+            "setDataSource",
+            "getFrameAtTime",
+            "release"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "mAvatarGenerationListener": [
+            "get"
+        ],
+        "arbitraryDataProvider": [
+            "getValue",
+            "getLongValue",
+            "storeOrUpdateKeyValue"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "mResources": [
+            "getInteger"
+        ],
+        "Uri": [
+            "encode"
+        ],
+        "eTag": [
+            "isEmpty"
+        ],
+        "get": [
+            "setRequestHeader",
+            "getResponseBodyAsStream",
+            "getResponseHeader",
+            "releaseConnection"
+        ],
+        "get.getResponseHeader(ETAG).getValue()": [
+            "replace"
+        ],
+        "get.getResponseHeader(ETAG)": [
+            "getValue"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "TextDrawable": [
+            "createAvatar",
+            "createAvatarByUserId"
+        ],
+        "bitmapData": [
+            "equals"
+        ],
+        "bitmapWorkerTask": [
+            "cancel"
+        ],
+        "asyncDrawable": [
+            "getBitmapWorkerTask"
+        ],
+        "DisplayUtils": [
+            "convertDpToPixel"
+        ],
+        "Bitmap": [
+            "createScaledBitmap",
+            "createBitmap"
+        ],
+        "c": [
+            "drawBitmap"
+        ],
+        "p": [
+            "setAlpha"
+        ],
+        "bitmapWorkerTaskReference": [
+            "get"
+        ],
+        "source": [
+            "getWidth",
+            "getHeight"
+        ],
+        "canvas": [
+            "drawColor",
+            "drawBitmap"
+        ],
+        "MainApp.getAppContext().getResources()": [
+            "getColor"
+        ],
+        "client": [
+            "getBaseUri",
+            "executeMethod",
+            "exhaustResponse"
+        ]
+    },
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "Void",
+            "parameters": [],
+            "start_position": 4664,
+            "end_position": 6611,
+            "body_start": 4728,
+            "body_end": 6611
+        },
+        {
+            "name": "getThumbnailDimension",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 6709,
+            "end_position": 6924,
+            "body_start": 6751,
+            "body_end": 6924
+        },
+        {
+            "name": "getScreenDimension",
+            "return_type": "Point",
+            "parameters": [],
+            "start_position": 7019,
+            "end_position": 7316,
+            "body_start": 7061,
+            "body_end": 7316
+        },
+        {
+            "name": "addThumbnailToCache",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "imageKey"
+                },
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                },
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "int",
+                    "name": "pxW"
+                },
+                {
+                    "type": "int",
+                    "name": "pxH"
+                }
+            ],
+            "start_position": 7613,
+            "end_position": 8135,
+            "body_start": 7717,
+            "body_end": 8135
+        },
+        {
+            "name": "addBitmapToCache",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                }
+            ],
+            "start_position": 8141,
+            "end_position": 8378,
+            "body_start": 8204,
+            "body_end": 8378
+        },
+        {
+            "name": "containsBitmap",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 8384,
+            "end_position": 8489,
+            "body_start": 8433,
+            "body_end": 8489
+        },
+        {
+            "name": "getScaledBitmapFromDiskCache",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "int",
+                    "name": "width"
+                },
+                {
+                    "type": "int",
+                    "name": "height"
+                }
+            ],
+            "start_position": 8495,
+            "end_position": 9166,
+            "body_start": 8580,
+            "body_end": 9166
+        },
+        {
+            "name": "getBitmapFromDiskCache",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 9172,
+            "end_position": 9793,
+            "body_start": 9228,
+            "body_end": 9793
+        },
+        {
+            "name": "setListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GalleryImageGenerationTask.GalleryListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 10903,
+            "end_position": 11029,
+            "body_start": 10980,
+            "body_end": 11029
+        },
+        {
+            "name": "getImageKey",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 11039,
+            "end_position": 11107,
+            "body_start": 11067,
+            "body_end": 11107
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Bitmap",
+            "parameters": [],
+            "start_position": 11117,
+            "end_position": 12070,
+            "body_start": 11185,
+            "body_end": 12070
+        },
+        {
+            "name": "getThumbnailFromServerAndAddToCache",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "thumbnail"
+                }
+            ],
+            "start_position": 12080,
+            "end_position": 13059,
+            "body_start": 12167,
+            "body_end": 13059
+        },
+        {
+            "name": "getThumbnailFromCache",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "thumbnail"
+                }
+            ],
+            "start_position": 13069,
+            "end_position": 13851,
+            "body_start": 13124,
+            "body_end": 13851
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                }
+            ],
+            "start_position": 13861,
+            "end_position": 15155,
+            "body_start": 13905,
+            "body_end": 15155
+        },
+        {
+            "name": "onSuccess",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15212,
+            "end_position": 15229
+        },
+        {
+            "name": "onNewGalleryImage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15243,
+            "end_position": 15268
+        },
+        {
+            "name": "onError",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15282,
+            "end_position": 15297
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Bitmap",
+            "parameters": [],
+            "start_position": 16742,
+            "end_position": 17743,
+            "body_start": 16810,
+            "body_end": 17743
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                }
+            ],
+            "start_position": 17753,
+            "end_position": 19449,
+            "body_start": 17797,
+            "body_end": 19449
+        },
+        {
+            "name": "getFile",
+            "return_type": "Object",
+            "parameters": [],
+            "start_position": 19762,
+            "end_position": 19823,
+            "body_start": 19787,
+            "body_end": 19823
+        },
+        {
+            "name": "getImageKey",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 19833,
+            "end_position": 19902,
+            "body_start": 19862,
+            "body_end": 19902
+        },
+        {
+            "name": "getGetMethod",
+            "return_type": "GetMethod",
+            "parameters": [],
+            "start_position": 21910,
+            "end_position": 21983,
+            "body_start": 21942,
+            "body_end": 21983
+        },
+        {
+            "name": "getImageKey",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 21993,
+            "end_position": 22062,
+            "body_start": 22021,
+            "body_end": 22062
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Bitmap",
+            "parameters": [],
+            "start_position": 22656,
+            "end_position": 24483,
+            "body_start": 22781,
+            "body_end": 24483
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                }
+            ],
+            "start_position": 24493,
+            "end_position": 26012,
+            "body_start": 24537,
+            "body_end": 26012
+        },
+        {
+            "name": "setListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Listener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 26022,
+            "end_position": 26109,
+            "body_start": 26064,
+            "body_end": 26109
+        },
+        {
+            "name": "doThumbnailFromOCFileInBackground",
+            "return_type": "Bitmap",
+            "parameters": [],
+            "start_position": 26119,
+            "end_position": 31735,
+            "body_start": 26170,
+            "body_end": 31735
+        },
+        {
+            "name": "getThumbnailDimension",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 31858,
+            "end_position": 32157,
+            "body_start": 31894,
+            "body_end": 32157
+        },
+        {
+            "name": "doFileInBackground",
+            "return_type": "Bitmap",
+            "parameters": [],
+            "start_position": 32167,
+            "end_position": 33178,
+            "body_start": 32203,
+            "body_end": 33178
+        },
+        {
+            "name": "onSuccess",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 33227,
+            "end_position": 33244
+        },
+        {
+            "name": "onError",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 33257,
+            "end_position": 33272
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Bitmap",
+            "parameters": [],
+            "start_position": 34170,
+            "end_position": 35388,
+            "body_start": 34238,
+            "body_end": 35388
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                }
+            ],
+            "start_position": 35398,
+            "end_position": 36876,
+            "body_start": 35442,
+            "body_end": 36876
+        },
+        {
+            "name": "doFileInBackground",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                },
+                {
+                    "type": "Type",
+                    "name": "type"
+                }
+            ],
+            "start_position": 36886,
+            "end_position": 39323,
+            "body_start": 36942,
+            "body_end": 39323
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Drawable",
+            "parameters": [],
+            "start_position": 40754,
+            "end_position": 41423,
+            "body_start": 40858,
+            "body_end": 41423
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "drawable"
+                }
+            ],
+            "start_position": 41433,
+            "end_position": 41942,
+            "body_start": 41481,
+            "body_end": 41942
+        },
+        {
+            "name": "getAvatarDimension",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 42065,
+            "end_position": 42284,
+            "body_start": 42098,
+            "body_end": 42284
+        },
+        {
+            "name": "doAvatarInBackground",
+            "return_type": "Drawable",
+            "parameters": [],
+            "start_position": 42294,
+            "end_position": 47428,
+            "body_start": 42351,
+            "body_end": 47428
+        },
+        {
+            "name": "cancelPotentialThumbnailWork",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "file"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "imageView"
+                }
+            ],
+            "start_position": 47440,
+            "end_position": 48280,
+            "body_start": 47525,
+            "body_end": 48280
+        },
+        {
+            "name": "getBitmapWorkerTask",
+            "return_type": "ThumbnailGenerationTask",
+            "parameters": [
+                {
+                    "type": "ImageView",
+                    "name": "imageView"
+                }
+            ],
+            "start_position": 48286,
+            "end_position": 48731,
+            "body_start": 48365,
+            "body_end": 48731
+        },
+        {
+            "name": "getResizedImageGenerationWorkerTask",
+            "return_type": "ResizedImageGenerationTask",
+            "parameters": [
+                {
+                    "type": "ImageView",
+                    "name": "imageView"
+                }
+            ],
+            "start_position": 48737,
+            "end_position": 49211,
+            "body_start": 48836,
+            "body_end": 49211
+        },
+        {
+            "name": "getGalleryImageGenerationTask",
+            "return_type": "GalleryImageGenerationTask",
+            "parameters": [
+                {
+                    "type": "ImageView",
+                    "name": "imageView"
+                }
+            ],
+            "start_position": 49217,
+            "end_position": 49685,
+            "body_start": 49310,
+            "body_end": 49685
+        },
+        {
+            "name": "addVideoOverlay",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "thumbnail"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 49691,
+            "end_position": 50734,
+            "body_start": 49763,
+            "body_end": 50734
+        },
+        {
+            "name": "getBitmapWorkerTask",
+            "return_type": "ThumbnailGenerationTask",
+            "parameters": [],
+            "start_position": 51166,
+            "end_position": 51282,
+            "body_start": 51219,
+            "body_end": 51282
+        },
+        {
+            "name": "getBitmapWorkerTask",
+            "return_type": "ResizedImageGenerationTask",
+            "parameters": [],
+            "start_position": 51705,
+            "end_position": 51825,
+            "body_start": 51762,
+            "body_end": 51825
+        },
+        {
+            "name": "getBitmapWorkerTask",
+            "return_type": "GalleryImageGenerationTask",
+            "parameters": [],
+            "start_position": 52248,
+            "end_position": 52368,
+            "body_start": 52305,
+            "body_end": 52368
+        },
+        {
+            "name": "handlePNG",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "source"
+                },
+                {
+                    "type": "int",
+                    "name": "newWidth"
+                },
+                {
+                    "type": "int",
+                    "name": "newHeight"
+                }
+            ],
+            "start_position": 52655,
+            "end_position": 53605,
+            "body_start": 52731,
+            "body_end": 53605
+        },
+        {
+            "name": "generateResizedImage",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 53611,
+            "end_position": 54214,
+            "body_start": 53664,
+            "body_end": 54214
+        },
+        {
+            "name": "generateThumbnailFromOCFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 54220,
+            "end_position": 56444,
+            "body_start": 54308,
+            "body_end": 56444
+        },
+        {
+            "name": "clearCache",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 56450,
+            "end_position": 56582,
+            "body_start": 56505,
+            "body_end": 56582
+        },
+        {
+            "name": "doResizedImageInBackground",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 56588,
+            "end_position": 59976,
+            "body_start": 56689,
+            "body_end": 59976
+        }
+    ],
+    "code_constructs": [
+        "synchronized_statement",
+        "expression_statement",
+        "if_statement",
+        "try_statement",
+        "throw_statement",
+        "return_statement",
+        "while_statement",
+        "break_statement"
+    ],
+    "local_variables": {
+        "cacheDir": "File",
+        "cachePath": "String",
+        "diskCacheDir": "File",
+        "oldCacheDir": "File",
+        "cacheOldPath": "String",
+        "diskOldCacheDir": "File",
+        "r": "Resources",
+        "wm": "WindowManager",
+        "display": "Display",
+        "point": "Point",
+        "thumbnail": "Bitmap",
+        "size": "float",
+        "imageDimension": "ImageDimension",
+        "imageView": "ImageView",
+        "bitmapWorkerTask": "ThumbnailGenerationTask",
+        "tagId": "String",
+        "frameLayout": "FrameLayout",
+        "ocAccount": "OwnCloudAccount",
+        "object": "ThumbnailGenerationTaskObject",
+        "url": "String",
+        "mMimeType": "String",
+        "file": "File",
+        "imageKey": "String",
+        "updateEnforced": "boolean",
+        "pxW": "int",
+        "pxH": "int",
+        "ocFile": "OCFile",
+        "bitmap": "Bitmap",
+        "resizedImageKey": "String",
+        "resizedImage": "Bitmap",
+        "uri": "String",
+        "status": "int",
+        "inputStream": "InputStream",
+        "d": "Double",
+        "px": "int",
+        "retriever": "MediaMetadataRetriever",
+        "width": "int",
+        "height": "int",
+        "max": "int",
+        "listener": "AvatarGenerationListener",
+        "accountName": "String",
+        "avatar": "Bitmap",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "eTag": "String",
+        "timestamp": "long",
+        "avatarKey": "String",
+        "get": "GetMethod",
+        "newETag": "String",
+        "newImageKey": "String",
+        "bitmapData": "Object",
+        "drawable": "Drawable",
+        "asyncDrawable": "AsyncGalleryImageDrawable",
+        "playButtonDrawable": "Drawable",
+        "playButton": "Bitmap",
+        "resizedPlayButton": "Bitmap",
+        "resultBitmap": "Bitmap",
+        "c": "Canvas",
+        "p": "Point",
+        "sourceWidth": "int",
+        "sourceHeight": "int",
+        "xScale": "float",
+        "yScale": "float",
+        "scale": "float",
+        "scaledWidth": "float",
+        "scaledHeight": "float",
+        "left": "float",
+        "top": "float",
+        "targetRect": "RectF",
+        "dest": "Bitmap",
+        "canvas": "Canvas",
+        "getMethod": "GetMethod",
+        "client": "OwnCloudClient"
+    }
+}

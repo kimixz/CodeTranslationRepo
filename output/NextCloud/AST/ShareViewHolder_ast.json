@@ -1,0 +1,151 @@
+{
+    "method_calls": {
+        "binding": [
+            "getRoot"
+        ],
+        "share": [
+            "getSharedWithDisplayName",
+            "getShareType",
+            "getShareWith",
+            "getUserId"
+        ],
+        "binding.icon": [
+            "setTag",
+            "setOnClickListener"
+        ],
+        "context": [
+            "getString",
+            "getResources"
+        ],
+        "viewThemeUtils.files": [
+            "createAvatar"
+        ],
+        "unknown": [
+            "setImage",
+            "setPermissionName"
+        ],
+        "context.getResources()": [
+            "getDimension"
+        ],
+        "DisplayUtils": [
+            "setAvatar"
+        ],
+        "listener": [
+            "showProfileBottomSheet",
+            "showSharingMenuActionSheet",
+            "showPermissionsDialog"
+        ],
+        "binding.name": [
+            "setText"
+        ],
+        "share.getShareWith()": [
+            "equalsIgnoreCase"
+        ],
+        "share.getUserId()": [
+            "equalsIgnoreCase"
+        ],
+        "binding.overflowMenu": [
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "SharingMenuHelper": [
+            "getPermissionName"
+        ],
+        "binding.shareNameLayout": [
+            "setOnClickListener"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "binding.permissionName": [
+            "setText",
+            "setVisibility"
+        ],
+        "avatar": [
+            "setImageDrawable",
+            "setImageResource"
+        ],
+        "TextDrawable": [
+            "createNamedAvatar"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "break_statement",
+        "if_statement",
+        "try_statement"
+    ],
+    "methods": [
+        {
+            "name": "bind",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "ShareeListAdapterListener",
+                    "name": "listener"
+                },
+                {
+                    "type": "DisplayUtils.AvatarGenerationListener",
+                    "name": "avatarListener"
+                },
+                {
+                    "type": "String",
+                    "name": "userId"
+                },
+                {
+                    "type": "float",
+                    "name": "avatarRadiusDimension"
+                }
+            ],
+            "start_position": 1708,
+            "end_position": 4546,
+            "body_start": 1958,
+            "body_end": 4546
+        },
+        {
+            "name": "setPermissionName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "permissionName"
+                }
+            ],
+            "start_position": 4552,
+            "end_position": 4875,
+            "body_start": 4606,
+            "body_end": 4875
+        },
+        {
+            "name": "setImage",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ImageView",
+                    "name": "avatar"
+                },
+                {
+                    "type": "String",
+                    "name": "name"
+                },
+                {
+                    "type": "int",
+                    "name": "fallback"
+                }
+            ],
+            "start_position": 4881,
+            "end_position": 5191,
+            "body_start": 4961,
+            "body_end": 5191
+        }
+    ],
+    "local_variables": {
+        "name": "String",
+        "avatarRadius": "float",
+        "permissionName": "String"
+    }
+}

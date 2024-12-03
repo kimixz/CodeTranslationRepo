@@ -1,0 +1,20 @@
+[
+    {
+        "method_name": "onRestoreClicked",
+        "method_code": "void onRestoreClicked(FileVersion fileVersion);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onRestoreClicked from VersionListInterface.java into Swift.\n\n        Input:\n\n        Method Name: onRestoreClicked\n\n        Method Code: void onRestoreClicked(FileVersion fileVersion);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onRestoreClicked(fileVersion: FileVersion)\n```"
+    },
+    {
+        "method_name": "onSuccess",
+        "method_code": "void onSuccess();",
+        "prompt": "\n        Please translate the following Java (Android) method titled onSuccess from VersionListInterface.java into Swift.\n\n        Input:\n\n        Method Name: onSuccess\n\n        Method Code: void onSuccess();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onSuccess()\n```"
+    },
+    {
+        "method_name": "onError",
+        "method_code": "void onError(int error);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onError from VersionListInterface.java into Swift.\n\n        Input:\n\n        Method Name: onError\n\n        Method Code: void onError(int error);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onError(error: Int) {\n    // Implementation here\n}\n```"
+    }
+]

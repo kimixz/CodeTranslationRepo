@@ -1,0 +1,80 @@
+{
+    "method_calls": {
+        "AbstractCommandLineStoragePoint.class": [
+            "getSimpleName"
+        ],
+        "new ProcessBuilder().command(Arrays.asList(getCommand()))": [
+            "start"
+        ],
+        "new ProcessBuilder()": [
+            "command"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "unknown": [
+            "getCommand"
+        ],
+        "process": [
+            "waitFor",
+            "exitValue",
+            "getInputStream"
+        ],
+        "new ProcessBuilder().command(getCommand()).redirectErrorStream(true)": [
+            "start"
+        ],
+        "new ProcessBuilder().command(getCommand())": [
+            "redirectErrorStream"
+        ],
+        "is": [
+            "read",
+            "close"
+        ],
+        "s": [
+            "append",
+            "toString"
+        ],
+        "Log_OC": [
+            "e"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getCommand",
+            "return_type": "String[]",
+            "parameters": [],
+            "start_position": 693,
+            "end_position": 734
+        },
+        {
+            "name": "canProvideStoragePoints",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 740,
+            "end_position": 1116,
+            "body_start": 795,
+            "body_end": 1116
+        },
+        {
+            "name": "getCommandLineResult",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1122,
+            "end_position": 1762,
+            "body_start": 1152,
+            "body_end": 1762
+        }
+    ],
+    "local_variables": {
+        "process": "Process",
+        "s": "StringBuilder",
+        "is": "InputStream",
+        "buffer": "byte"
+    },
+    "code_constructs": [
+        "try_statement",
+        "expression_statement",
+        "return_statement",
+        "while_statement"
+    ]
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "method_name": "copyLink",
+        "method_code": "void copyLink(OCShare share);",
+        "prompt": "\n        Please translate the following Java (Android) method titled copyLink from ShareeListAdapterListener.java into Swift.\n\n        Input:\n\n        Method Name: copyLink\n\n        Method Code: void copyLink(OCShare share);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc copyLink(share: OCShare) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "showSharingMenuActionSheet",
+        "method_code": "void showSharingMenuActionSheet(OCShare share);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showSharingMenuActionSheet from ShareeListAdapterListener.java into Swift.\n\n        Input:\n\n        Method Name: showSharingMenuActionSheet\n\n        Method Code: void showSharingMenuActionSheet(OCShare share);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showSharingMenuActionSheet(share: OCShare) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "copyInternalLink",
+        "method_code": "void copyInternalLink();",
+        "prompt": "\n        Please translate the following Java (Android) method titled copyInternalLink from ShareeListAdapterListener.java into Swift.\n\n        Input:\n\n        Method Name: copyInternalLink\n\n        Method Code: void copyInternalLink();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc copyInternalLink()\n```"
+    },
+    {
+        "method_name": "createPublicShareLink",
+        "method_code": "void createPublicShareLink();",
+        "prompt": "\n        Please translate the following Java (Android) method titled createPublicShareLink from ShareeListAdapterListener.java into Swift.\n\n        Input:\n\n        Method Name: createPublicShareLink\n\n        Method Code: void createPublicShareLink();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createPublicShareLink() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "createSecureFileDrop",
+        "method_code": "void createSecureFileDrop();",
+        "prompt": "\n        Please translate the following Java (Android) method titled createSecureFileDrop from ShareeListAdapterListener.java into Swift.\n\n        Input:\n\n        Method Name: createSecureFileDrop\n\n        Method Code: void createSecureFileDrop();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createSecureFileDrop() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "requestPasswordForShare",
+        "method_code": "void requestPasswordForShare(OCShare share, boolean askForPassword);",
+        "prompt": "\n        Please translate the following Java (Android) method titled requestPasswordForShare from ShareeListAdapterListener.java into Swift.\n\n        Input:\n\n        Method Name: requestPasswordForShare\n\n        Method Code: void requestPasswordForShare(OCShare share, boolean askForPassword);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc requestPasswordForShare(share: OCShare, askForPassword: Bool) {\n    // Method implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "showPermissionsDialog",
+        "method_code": "void showPermissionsDialog(OCShare share);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showPermissionsDialog from ShareeListAdapterListener.java into Swift.\n\n        Input:\n\n        Method Name: showPermissionsDialog\n\n        Method Code: void showPermissionsDialog(OCShare share);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showPermissionsDialog(share: OCShare) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "showProfileBottomSheet",
+        "method_code": "void showProfileBottomSheet(User user, String shareWith);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showProfileBottomSheet from ShareeListAdapterListener.java into Swift.\n\n        Input:\n\n        Method Name: showProfileBottomSheet\n\n        Method Code: void showProfileBottomSheet(User user, String shareWith);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showProfileBottomSheet(user: User, shareWith: String) {\n    // Implementation here\n}\n```"
+    }
+]

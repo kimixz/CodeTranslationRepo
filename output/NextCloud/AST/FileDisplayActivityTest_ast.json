@@ -1,0 +1,51 @@
+{
+    "methods": [
+        {
+            "name": "testSetupToolbar",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 666,
+            "end_position": 1320,
+            "body_start": 707,
+            "body_end": 1320
+        }
+    ],
+    "code_constructs": [
+        "try_with_resources_statement",
+        "expression_statement",
+        "if_statement"
+    ],
+    "method_calls": {
+        "ActivityScenario": [
+            "launch"
+        ],
+        "InstrumentationRegistry.getInstrumentation()": [
+            "waitForIdleSync",
+            "runOnMainSync"
+        ],
+        "InstrumentationRegistry": [
+            "getInstrumentation"
+        ],
+        "ActivityLifecycleMonitorRegistry.getInstance().getActivitiesInStage(RESUMED).iterator()": [
+            "next"
+        ],
+        "ActivityLifecycleMonitorRegistry.getInstance().getActivitiesInStage(RESUMED)": [
+            "iterator"
+        ],
+        "ActivityLifecycleMonitorRegistry.getInstance()": [
+            "getActivitiesInStage"
+        ],
+        "ActivityLifecycleMonitorRegistry": [
+            "getInstance"
+        ],
+        "activity": [
+            "onBackPressed"
+        ],
+        "scenario": [
+            "recreate"
+        ]
+    },
+    "local_variables": {
+        "activity": "Activity"
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "methods": [
+        {
+            "name": "getErrorCauseMessageForForbiddenRemoval",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1308,
+            "end_position": 2246,
+            "body_start": 1372,
+            "body_end": 2246
+        }
+    ],
+    "local_variables": {
+        "resources": "Resources",
+        "user": "User",
+        "context": "Context",
+        "errorMessage": "String"
+    },
+    "method_calls": {
+        "InstrumentationRegistry.getInstrumentation().getTargetContext()": [
+            "getResources"
+        ],
+        "InstrumentationRegistry.getInstrumentation()": [
+            "getTargetContext"
+        ],
+        "InstrumentationRegistry": [
+            "getInstrumentation"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "ErrorMessageAdapter": [
+            "getErrorCauseMessage"
+        ],
+        "context": [
+            "getContentResolver"
+        ],
+        "unknown": [
+            "assertEquals"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement"
+    ]
+}

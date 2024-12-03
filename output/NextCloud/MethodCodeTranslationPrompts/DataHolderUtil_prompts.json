@@ -1,0 +1,32 @@
+[
+    {
+        "method_name": "getInstance",
+        "method_code": "@SuppressFBWarnings(\"MS_EXPOSE_REP\")\n    public static synchronized DataHolderUtil getInstance() {\n        if (instance == null) {\n            instance = new DataHolderUtil();\n        }\n        return instance;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getInstance from DataHolderUtil.java into Swift.\n\n        Input:\n\n        Method Name: getInstance\n\n        Method Code: @SuppressFBWarnings(\"MS_EXPOSE_REP\")\n    public static synchronized DataHolderUtil getInstance() {\n        if (instance == null) {\n            instance = new DataHolderUtil();\n        }\n        return instance;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nclass DataHolderUtil {\n    private static var instance: DataHolderUtil?\n\n    static func getInstance() -> DataHolderUtil {\n        if instance == nil {\n            instance = DataHolderUtil()\n        }\n        return instance!\n    }\n}\n```"
+    },
+    {
+        "method_name": "save",
+        "method_code": "public void save(String id, Object object) {\n        data.put(id, new WeakReference<Object>(object));\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled save from DataHolderUtil.java into Swift.\n\n        Input:\n\n        Method Name: save\n\n        Method Code: public void save(String id, Object object) {\n        data.put(id, new WeakReference<Object>(object));\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc save(id: String, object: AnyObject) {\n    data[id] = WeakReference(object)\n}\n```"
+    },
+    {
+        "method_name": "retrieve",
+        "method_code": "public Object retrieve(String id) {\n        WeakReference<Object> objectWeakReference = data.get(id);\n        return objectWeakReference.get();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled retrieve from DataHolderUtil.java into Swift.\n\n        Input:\n\n        Method Name: retrieve\n\n        Method Code: public Object retrieve(String id) {\n        WeakReference<Object> objectWeakReference = data.get(id);\n        return objectWeakReference.get();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc retrieve(id: String) -> AnyObject? {\n    let objectWeakReference = data[id]\n    return objectWeakReference?.value\n}\n```"
+    },
+    {
+        "method_name": "delete",
+        "method_code": "public void delete(String id) {\n        if (id != null) {\n            data.remove(id);\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled delete from DataHolderUtil.java into Swift.\n\n        Input:\n\n        Method Name: delete\n\n        Method Code: public void delete(String id) {\n        if (id != null) {\n            data.remove(id);\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc delete(id: String?) {\n    if let id = id {\n        data.removeValue(forKey: id)\n    }\n}\n```"
+    },
+    {
+        "method_name": "nextItemId",
+        "method_code": "public String nextItemId() {\n        String nextItemId = new BigInteger(130, random).toString(32);\n        while (data.containsKey(nextItemId)) {\n            nextItemId = new BigInteger(130, random).toString(32);\n        }\n        return nextItemId;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled nextItemId from DataHolderUtil.java into Swift.\n\n        Input:\n\n        Method Name: nextItemId\n\n        Method Code: public String nextItemId() {\n        String nextItemId = new BigInteger(130, random).toString(32);\n        while (data.containsKey(nextItemId)) {\n            nextItemId = new BigInteger(130, random).toString(32);\n        }\n        return nextItemId;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc nextItemId() -> String {\n    var nextItemId = BigInt.randomInteger(withExactWidth: 130, using: &random).toString(radix: 32)\n    while data.keys.contains(nextItemId) {\n        nextItemId = BigInt.randomInteger(withExactWidth: 130, using: &random).toString(radix: 32)\n    }\n    return nextItemId\n}\n```"
+    }
+]

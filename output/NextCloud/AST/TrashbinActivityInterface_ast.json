@@ -1,0 +1,48 @@
+{
+    "methods": [
+        {
+            "name": "onOverflowIconClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TrashbinFile",
+                    "name": "file"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 606,
+            "end_position": 663
+        },
+        {
+            "name": "onItemClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TrashbinFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 669,
+            "end_position": 707
+        },
+        {
+            "name": "onRestoreIconClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TrashbinFile",
+                    "name": "file"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 713,
+            "end_position": 769
+        }
+    ]
+}

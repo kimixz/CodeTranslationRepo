@@ -1,0 +1,140 @@
+{
+    "methods": [
+        {
+            "name": "beforeScreenshot",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1867,
+            "end_position": 2015,
+            "body_start": 1922,
+            "body_end": 2015
+        },
+        {
+            "name": "gridViewScreenshot",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2021,
+            "end_position": 2519,
+            "body_start": 2064,
+            "body_end": 2519
+        },
+        {
+            "name": "listViewScreenshot",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2525,
+            "end_position": 3273,
+            "body_start": 2568,
+            "body_end": 3273
+        },
+        {
+            "name": "drawerScreenshot",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3279,
+            "end_position": 3655,
+            "body_start": 3320,
+            "body_end": 3655
+        },
+        {
+            "name": "multipleAccountsScreenshot",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3661,
+            "end_position": 3990,
+            "body_start": 3712,
+            "body_end": 3990
+        },
+        {
+            "name": "autoUploadScreenshot",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3996,
+            "end_position": 4231,
+            "body_start": 4041,
+            "body_end": 4231
+        },
+        {
+            "name": "davdroidScreenshot",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4237,
+            "end_position": 4595,
+            "body_start": 4280,
+            "body_end": 4595
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "method_calls": {
+        "Screengrab": [
+            "setDefaultScreenshotStrategy",
+            "screenshot"
+        ],
+        "ActivityScenario": [
+            "launch"
+        ],
+        "onView(anyOf(withText(R.string.action_switch_grid_view), withId(R.id.switch_grid_view_button)))": [
+            "perform"
+        ],
+        "unknown": [
+            "onView",
+            "anyOf",
+            "withText",
+            "withId",
+            "click",
+            "shortSleep",
+            "getStorageManager",
+            "assertTrue",
+            "pressBack",
+            "onData"
+        ],
+        "onView(anyOf(withText(R.string.action_switch_list_view), withId(R.id.switch_grid_view_button)))": [
+            "perform"
+        ],
+        "Assert": [
+            "assertTrue"
+        ],
+        "getStorageManager()": [
+            "getFileByEncryptedRemotePath"
+        ],
+        "syncOp": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess"
+        ],
+        "onView(withId(R.id.list_root))": [
+            "perform"
+        ],
+        "RecyclerViewActions": [
+            "actionOnItemAtPosition"
+        ],
+        "onView(withId(R.id.drawer_layout))": [
+            "perform"
+        ],
+        "DrawerActions": [
+            "open",
+            "close"
+        ],
+        "onView(withId(R.id.switch_account_button))": [
+            "perform"
+        ],
+        "onData(PreferenceMatchers.withTitle(R.string.prefs_category_more))": [
+            "perform"
+        ],
+        "PreferenceMatchers": [
+            "withTitle"
+        ],
+        "ViewActions": [
+            "scrollTo"
+        ]
+    },
+    "local_variables": {
+        "path": "String",
+        "syncOp": "SyncOperation",
+        "result": "RemoteOperationResult"
+    }
+}

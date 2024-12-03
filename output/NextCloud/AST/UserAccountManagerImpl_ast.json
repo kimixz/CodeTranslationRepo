@@ -1,0 +1,475 @@
+{
+    "method_calls": {
+        "UserAccountManagerImpl.class": [
+            "getSimpleName"
+        ],
+        "context": [
+            "getSystemService",
+            "getString",
+            "startActivity"
+        ],
+        "unknown": [
+            "getAccounts",
+            "getAccountType",
+            "createUserFromAccount",
+            "getAnonymousAccount",
+            "getCurrentAccount",
+            "getAccountByName",
+            "getAllUsers",
+            "accountOwnsFile"
+        ],
+        "accountManager": [
+            "removeAccount",
+            "getAccountsByType",
+            "getUserData",
+            "setUserData"
+        ],
+        "user": [
+            "toPlatformAccount",
+            "hashCode",
+            "getAccountName"
+        ],
+        "result": [
+            "getResult",
+            "isSuccess",
+            "getResultData"
+        ],
+        "users": [
+            "add"
+        ],
+        "account.name": [
+            "lastIndexOf",
+            "substring",
+            "equals",
+            "split"
+        ],
+        "otherAccount.name": [
+            "lastIndexOf",
+            "substring"
+        ],
+        "otherHostAndPort": [
+            "equals"
+        ],
+        "otherUsername": [
+            "equalsIgnoreCase"
+        ],
+        "PreferenceManager": [
+            "getDefaultSharedPreferences"
+        ],
+        "appPreferences": [
+            "getString"
+        ],
+        "Arrays.stream(ocAccounts)\n            .filter(account -> account.name.equals(accountName))\n            .findFirst()": [
+            "orElse"
+        ],
+        "Arrays.stream(ocAccounts)\n            .filter(account -> account.name.equals(accountName))": [
+            "findFirst"
+        ],
+        "Arrays.stream(ocAccounts)": [
+            "filter"
+        ],
+        "Arrays": [
+            "stream"
+        ],
+        "Arrays.stream(ocAccounts)\n                .filter(account -> !arbitraryDataProvider.getBooleanValue(account.name, PENDING_FOR_REMOVAL))\n                .findFirst()": [
+            "orElse"
+        ],
+        "Arrays.stream(ocAccounts)\n                .filter(account -> !arbitraryDataProvider.getBooleanValue(account.name, PENDING_FOR_REMOVAL))": [
+            "findFirst"
+        ],
+        "arbitraryDataProvider": [
+            "getBooleanValue"
+        ],
+        "MainApp": [
+            "getAppContext",
+            "getAccountType"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "AccountExtensionsKt": [
+            "isAnonymous"
+        ],
+        "serverAddressStr": [
+            "isEmpty"
+        ],
+        "AnonymousUser": [
+            "fromContext"
+        ],
+        "URI": [
+            "create"
+        ],
+        "accountName": [
+            "toString",
+            "equals"
+        ],
+        "Optional": [
+            "ofNullable"
+        ],
+        "PreferenceManager.getDefaultSharedPreferences(context)": [
+            "edit"
+        ],
+        "appPrefs": [
+            "putString",
+            "apply"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "accountMgr": [
+            "getUserData"
+        ],
+        "file": [
+            "getOwnerId"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "account.name.split(\"@\")[0]": [
+            "equalsIgnoreCase"
+        ],
+        "OwnCloudClientManagerFactory\n                    .getDefaultSingleton()": [
+            "getNextcloudClientFor"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ],
+        "remoteUserNameOperation": [
+            "execute"
+        ],
+        "userInfo": [
+            "getId",
+            "getDisplayName"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "intent": [
+            "setFlags"
+        ]
+    },
+    "methods": [
+        {
+            "name": "fromContext",
+            "return_type": "UserAccountManagerImpl",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 2304,
+            "end_position": 2529,
+            "body_start": 2370,
+            "body_end": 2529
+        },
+        {
+            "name": "removeAllAccounts",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2738,
+            "end_position": 2912,
+            "body_start": 2784,
+            "body_end": 2912
+        },
+        {
+            "name": "removeUser",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 2918,
+            "end_position": 3431,
+            "body_start": 2969,
+            "body_end": 3431
+        },
+        {
+            "name": "getAccounts",
+            "return_type": "Account[]",
+            "parameters": [],
+            "start_position": 3437,
+            "end_position": 3569,
+            "body_start": 3495,
+            "body_end": 3569
+        },
+        {
+            "name": "getAllUsers",
+            "return_type": "List<User>",
+            "parameters": [],
+            "start_position": 3575,
+            "end_position": 3956,
+            "body_start": 3634,
+            "body_end": 3956
+        },
+        {
+            "name": "exists",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 3962,
+            "end_position": 4901,
+            "body_start": 4015,
+            "body_end": 4901
+        },
+        {
+            "name": "getCurrentAccount",
+            "return_type": "Account",
+            "parameters": [],
+            "start_position": 4907,
+            "end_position": 6088,
+            "body_start": 4969,
+            "body_end": 6088
+        },
+        {
+            "name": "getAnonymousAccount",
+            "return_type": "Account",
+            "parameters": [],
+            "start_position": 6094,
+            "end_position": 6232,
+            "body_start": 6132,
+            "body_end": 6232
+        },
+        {
+            "name": "createUserFromAccount",
+            "return_type": "User",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 6524,
+            "end_position": 8045,
+            "body_start": 6599,
+            "body_end": 8045
+        },
+        {
+            "name": "getUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 8210,
+            "end_position": 8438,
+            "body_start": 8259,
+            "body_end": 8438
+        },
+        {
+            "name": "getUser",
+            "return_type": "Optional<User>",
+            "parameters": [
+                {
+                    "type": "CharSequence",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 8444,
+            "end_position": 8696,
+            "body_start": 8527,
+            "body_end": 8696
+        },
+        {
+            "name": "getAnonymousUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 8702,
+            "end_position": 8805,
+            "body_start": 8747,
+            "body_end": 8805
+        },
+        {
+            "name": "getCurrentOwnCloudAccount",
+            "return_type": "OwnCloudAccount",
+            "parameters": [],
+            "start_position": 8811,
+            "end_position": 9173,
+            "body_start": 8890,
+            "body_end": 9173
+        },
+        {
+            "name": "getAccountByName",
+            "return_type": "Account",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 9179,
+            "end_position": 9446,
+            "body_start": 9251,
+            "body_end": 9446
+        },
+        {
+            "name": "setCurrentOwnCloudAccount",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 9452,
+            "end_position": 10076,
+            "body_start": 9527,
+            "body_end": 10076
+        },
+        {
+            "name": "setCurrentOwnCloudAccount",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "hashCode"
+                }
+            ],
+            "start_position": 10082,
+            "end_position": 10693,
+            "body_start": 10151,
+            "body_end": 10693
+        },
+        {
+            "name": "getServerVersion",
+            "return_type": "OwnCloudVersion",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 10699,
+            "end_position": 11327,
+            "body_start": 10799,
+            "body_end": 11327
+        },
+        {
+            "name": "resetOwnCloudAccount",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11333,
+            "end_position": 11580,
+            "body_start": 11382,
+            "body_end": 11580
+        },
+        {
+            "name": "accountOwnsFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 11586,
+            "end_position": 11818,
+            "body_start": 11662,
+            "body_end": 11818
+        },
+        {
+            "name": "userOwnsFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 11824,
+            "end_position": 11961,
+            "body_start": 11890,
+            "body_end": 11961
+        },
+        {
+            "name": "migrateUserId",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11967,
+            "end_position": 14107,
+            "body_start": 11998,
+            "body_end": 14107
+        },
+        {
+            "name": "getAccountType",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 14113,
+            "end_position": 14209,
+            "body_start": 14145,
+            "body_end": 14209
+        },
+        {
+            "name": "startAccountCreation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 14215,
+            "end_position": 14664,
+            "body_start": 14287,
+            "body_end": 14664
+        }
+    ],
+    "local_variables": {
+        "am": "AccountManager",
+        "result": "RemoteOperationResult<UserInfo>",
+        "accounts": "Account[]",
+        "users": "List<User>",
+        "user": "User",
+        "nextcloudAccounts": "Account[]",
+        "lastAtPos": "int",
+        "hostAndPort": "String",
+        "username": "String",
+        "otherHostAndPort": "String",
+        "otherUsername": "String",
+        "ocAccounts": "Account[]",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "appPreferences": "SharedPreferences",
+        "accountName": "String",
+        "defaultAccount": "Account",
+        "safeContext": "Context",
+        "ownCloudAccount": "OwnCloudAccount",
+        "serverVersionStr": "String",
+        "serverVersion": "OwnCloudVersion",
+        "serverAddressStr": "String",
+        "serverUri": "URI",
+        "account": "Account",
+        "currentPlatformAccount": "Account",
+        "appPrefs": "SharedPreferences.Editor",
+        "accountMgr": "AccountManager",
+        "ownerId": "String",
+        "userId": "String",
+        "displayName": "String",
+        "remoteUserNameOperation": "GetUserInfoRemoteOperation",
+        "failed": "int",
+        "storedUserId": "String",
+        "ocAccount": "OwnCloudAccount",
+        "nextcloudClient": "NextcloudClient",
+        "userInfo": "UserInfo",
+        "intent": "Intent"
+    },
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "enhanced_for_statement",
+        "try_statement",
+        "if_statement",
+        "break_statement",
+        "continue_statement"
+    ]
+}

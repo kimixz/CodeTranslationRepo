@@ -1,0 +1,2209 @@
+{
+    "method_calls": {
+        "EncryptionUtils.class": [
+            "getSimpleName"
+        ],
+        "new Gson()": [
+            "fromJson"
+        ],
+        "type": [
+            "getType"
+        ],
+        "new GsonBuilder().excludeFieldsWithModifiers(0).create()": [
+            "fromJson"
+        ],
+        "new GsonBuilder().excludeFieldsWithModifiers(0)": [
+            "create"
+        ],
+        "new GsonBuilder()": [
+            "excludeFieldsWithModifiers",
+            "disableHtmlEscaping"
+        ],
+        "unknown": [
+            "deserializeJSON",
+            "serializeJSON",
+            "addIdToMigratedIds",
+            "generateKey",
+            "encodeBytesToBase64String",
+            "encryptStringAsymmetric",
+            "encryptStringSymmetricAsString",
+            "decodeStringToBase64Bytes",
+            "decryptStringAsymmetric",
+            "isFolderMigrated",
+            "reportE2eError",
+            "decryptStringSymmetricAsString",
+            "determinateVersion",
+            "decryptFolderMetaData",
+            "encryptFileWithGivenCipher",
+            "getAuthenticationTag",
+            "encodeStringToBase64Bytes",
+            "decodeBase64BytesToString",
+            "encryptStringSymmetric",
+            "randomBytes",
+            "encryptPrivateKey",
+            "generateSHA512",
+            "lockFolder",
+            "convertCertFromString",
+            "sha256",
+            "bytesToHex"
+        ],
+        "new GsonBuilder()\n                .disableHtmlEscaping()\n                .create()": [
+            "toJson"
+        ],
+        "new GsonBuilder()\n                .disableHtmlEscaping()": [
+            "create",
+            "excludeFieldsWithModifiers"
+        ],
+        "new GsonBuilder()\n                .disableHtmlEscaping()\n                .excludeFieldsWithModifiers(0)\n                .create()": [
+            "toJson"
+        ],
+        "new GsonBuilder()\n                .disableHtmlEscaping()\n                .excludeFieldsWithModifiers(0)": [
+            "create"
+        ],
+        "metadata.getFiles()": [
+            "remove"
+        ],
+        "metadata": [
+            "getFiles",
+            "getCiphertext",
+            "setMetadata",
+            "getMetadata",
+            "getUsers"
+        ],
+        "decryptedFolderMetadata": [
+            "getMetadata",
+            "getFiles",
+            "getFiledrop"
+        ],
+        "EncryptionUtils": [
+            "generateKey",
+            "encryptStringAsymmetric",
+            "encodeBytesToBase64String",
+            "serializeJSON",
+            "encryptStringSymmetricAsString",
+            "generateChecksum",
+            "decodeStringToBase64Bytes",
+            "decryptStringSymmetric",
+            "deserializeJSON",
+            "randomBytes",
+            "convertPublicKeyFromString"
+        ],
+        "encryptedFolderMetadata.getMetadata()": [
+            "setMetadataKey",
+            "setChecksum"
+        ],
+        "encryptedFolderMetadata": [
+            "getMetadata",
+            "getFiledrop",
+            "getFiles"
+        ],
+        "decryptedFolderMetadata\n            .getFiles()": [
+            "entrySet"
+        ],
+        "entry": [
+            "getKey",
+            "getValue"
+        ],
+        "encryptedFile": [
+            "setInitializationVector",
+            "setAuthenticationTag",
+            "setEncrypted",
+            "getInitializationVector",
+            "getMetadataKey",
+            "getAuthenticationTag",
+            "getEncrypted",
+            "getEncryptedKey",
+            "getEncryptedInitializationVector",
+            "getEncryptedTag",
+            "getName"
+        ],
+        "decryptedFile": [
+            "getInitializationVector",
+            "getAuthenticationTag",
+            "getEncrypted",
+            "setInitializationVector",
+            "setMetadataKey",
+            "setAuthenticationTag",
+            "setEncrypted"
+        ],
+        "files": [
+            "put"
+        ],
+        "arbitraryDataProvider.getValue(user.getAccountName(), EncryptionUtils.MNEMONIC)": [
+            "trim"
+        ],
+        "arbitraryDataProvider": [
+            "getValue",
+            "deleteKeyForAccount",
+            "storeOrUpdateKeyValue",
+            "incrementValue",
+            "getLongValue",
+            "getIntegerValue"
+        ],
+        "user": [
+            "getAccountName",
+            "getServer"
+        ],
+        "decryptedFolderMetadata\n            .getFiledrop()": [
+            "entrySet"
+        ],
+        "encJson": [
+            "lastIndexOf",
+            "substring"
+        ],
+        "ivDelimiter": [
+            "length"
+        ],
+        "Arrays": [
+            "copyOfRange",
+            "equals"
+        ],
+        "filesdrop": [
+            "put"
+        ],
+        "decryptedFolderMetadata.getMetadata()": [
+            "getMetadataKey",
+            "getMetadataKeys",
+            "getChecksum"
+        ],
+        "encryptedFolderMetadata\n                .getFiles()": [
+            "entrySet"
+        ],
+        "decryptedFolderMetadata.getMetadata()\n                                                    .getMetadataKeys()": [
+            "get"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "decryptedFolderChecksum": [
+            "equals"
+        ],
+        "fileDrop": [
+            "entrySet",
+            "remove"
+        ],
+        "new GetMetadataRemoteOperation(folder.getLocalId())": [
+            "execute"
+        ],
+        "folder": [
+            "getLocalId",
+            "getDecryptedFileName"
+        ],
+        "getMetadataOperationResult": [
+            "isSuccess",
+            "getResultData",
+            "getHttpCode"
+        ],
+        "CapabilityUtils": [
+            "getCapability"
+        ],
+        "getMetadataOperationResult.getResultData()": [
+            "getMetadata",
+            "getSignature"
+        ],
+        "Log_OC": [
+            "e",
+            "d"
+        ],
+        "capability.getEndToEndEncryptionApiVersion()": [
+            "compareTo"
+        ],
+        "capability": [
+            "getEndToEndEncryptionApiVersion"
+        ],
+        "new EncryptionUtilsV2()": [
+            "migrateV1ToV2andUpload",
+            "gZipDecompress",
+            "decryptFolderMetadataFile",
+            "hashMetadataKey"
+        ],
+        "client": [
+            "getUserId"
+        ],
+        "context": [
+            "getContentResolver",
+            "getResources"
+        ],
+        "encryptionUtilsV2": [
+            "parseAnyMetadata"
+        ],
+        "v1.getMetadata()": [
+            "getVersion"
+        ],
+        "v1": [
+            "getMetadata"
+        ],
+        "\"2.0\"": [
+            "equals"
+        ],
+        "v2": [
+            "getVersion"
+        ],
+        "\"2\"": [
+            "equals"
+        ],
+        "Base64": [
+            "encode",
+            "decode",
+            "encodeToString"
+        ],
+        "string": [
+            "getBytes",
+            "lastIndexOf",
+            "substring",
+            "replace"
+        ],
+        "FileDataStorageManager": [
+            "createTempEncryptedFolder"
+        ],
+        "File": [
+            "createTempFile"
+        ],
+        "file": [
+            "getName",
+            "isEncrypted",
+            "isFolder"
+        ],
+        "cipher.getParameters().getParameterSpec(GCMParameterSpec.class)": [
+            "getIV"
+        ],
+        "cipher.getParameters()": [
+            "getParameterSpec"
+        ],
+        "cipher": [
+            "getParameters",
+            "init",
+            "update",
+            "doFinal",
+            "getIV"
+        ],
+        "Cipher": [
+            "getInstance"
+        ],
+        "inputStream": [
+            "read",
+            "close"
+        ],
+        "outputStream": [
+            "write",
+            "close"
+        ],
+        "exception": [
+            "getLocalizedMessage"
+        ],
+        "getAuthenticationTag(cipher)": [
+            "equals"
+        ],
+        "cert.replace(\"-----BEGIN CERTIFICATE-----\\n\", \"\")": [
+            "replace"
+        ],
+        "cert": [
+            "replace"
+        ],
+        "trimmedCert": [
+            "getBytes"
+        ],
+        "org.apache.commons.codec.binary.Base64": [
+            "decodeBase64"
+        ],
+        "CertificateFactory": [
+            "getInstance"
+        ],
+        "certFactory": [
+            "generateCertificate"
+        ],
+        "certificate": [
+            "getPublicKey"
+        ],
+        "KeyFactory": [
+            "getInstance"
+        ],
+        "kf": [
+            "generatePrivate"
+        ],
+        "ivDelimiterOld": [
+            "length"
+        ],
+        "new IvParameterSpec(decodeStringToBase64Bytes(ivString))": [
+            "getIV"
+        ],
+        "SecretKeyFactory": [
+            "getInstance"
+        ],
+        "keyPhrase": [
+            "toCharArray"
+        ],
+        "factory": [
+            "generateSecret"
+        ],
+        "tmp": [
+            "getEncoded"
+        ],
+        "privateKey": [
+            "lastIndexOf",
+            "split",
+            "getEncoded",
+            "getModulus"
+        ],
+        "pemKey.replaceAll(\"\\n\", \"\").replace(\"-----BEGIN PRIVATE KEY-----\", \"\")": [
+            "replace"
+        ],
+        "pemKey.replaceAll(\"\\n\", \"\")": [
+            "replace"
+        ],
+        "pemKey": [
+            "replaceAll"
+        ],
+        "privateKeyString": [
+            "replaceAll"
+        ],
+        "context.getResources()": [
+            "openRawResource"
+        ],
+        "bufferedReader": [
+            "readLine"
+        ],
+        "lines": [
+            "add",
+            "size",
+            "get"
+        ],
+        "Lists": [
+            "newArrayListWithCapacity"
+        ],
+        "random": [
+            "nextInt",
+            "nextBytes"
+        ],
+        "outputLines": [
+            "add"
+        ],
+        "KeyPairGenerator": [
+            "getInstance"
+        ],
+        "keyGen": [
+            "initialize",
+            "generateKeyPair"
+        ],
+        "KeyGenerator": [
+            "getInstance"
+        ],
+        "keyGenerator": [
+            "init",
+            "generateKey"
+        ],
+        "keyGenerator.generateKey()": [
+            "getEncoded"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "MessageDigest": [
+            "getInstance"
+        ],
+        "digest": [
+            "update",
+            "digest"
+        ],
+        "salt": [
+            "getBytes"
+        ],
+        "token": [
+            "getBytes"
+        ],
+        "stringBuilder": [
+            "append",
+            "toString"
+        ],
+        "Integer.toString((hashByte & 0xff) + 0x100, 16)": [
+            "substring"
+        ],
+        "Integer": [
+            "toString"
+        ],
+        "stringBuilder.append(HASH_DELIMITER)": [
+            "append"
+        ],
+        "hashWithSalt": [
+            "split",
+            "equals"
+        ],
+        "parentFile": [
+            "getLocalId",
+            "getE2eCounter",
+            "getRemoteId"
+        ],
+        "lockFileOperation": [
+            "execute"
+        ],
+        "lockFileOperationResult": [
+            "isSuccess",
+            "getResultData",
+            "getHttpCode"
+        ],
+        "getMetadataOperation": [
+            "execute"
+        ],
+        "metadata.getMetadata()": [
+            "setVersion",
+            "setMetadataKeys",
+            "setMetadataKey",
+            "getKeyChecksums"
+        ],
+        "Double": [
+            "parseDouble"
+        ],
+        "E2EVersion.V1_2": [
+            "getValue"
+        ],
+        "E2EVersion.V2_0": [
+            "getValue"
+        ],
+        "metadata.getUsers()": [
+            "add"
+        ],
+        "metadata.getMetadata().getKeyChecksums()": [
+            "add"
+        ],
+        "new UpdateMetadataV2RemoteOperation(\n                    parentFile.getRemoteId(),\n                    serializedFolderMetadata,\n                    token,\n                    signature)": [
+            "execute"
+        ],
+        "new UpdateMetadataRemoteOperation(\n                    parentFile.getLocalId(),\n                    serializedFolderMetadata,\n                    token)": [
+            "execute"
+        ],
+        "new StoreMetadataV2RemoteOperation(\n                    parentFile.getRemoteId(),\n                    serializedFolderMetadata,\n                    token,\n                    signature\n                )": [
+            "execute"
+        ],
+        "new StoreMetadataRemoteOperation(\n                    parentFile.getLocalId(),\n                    serializedFolderMetadata\n                )": [
+            "execute"
+        ],
+        "uploadMetadataOperationResult": [
+            "isSuccess"
+        ],
+        "new UnlockFileRemoteOperation(parentFolder.getLocalId(), token)": [
+            "execute"
+        ],
+        "parentFolder": [
+            "getLocalId"
+        ],
+        "new UnlockFileV1RemoteOperation(parentFolder.getLocalId(), token)": [
+            "execute"
+        ],
+        "string.replace(\"-----BEGIN CERTIFICATE-----\\n\", \"\")": [
+            "replace"
+        ],
+        "convertCertFromString(string)": [
+            "getPublicKey"
+        ],
+        "keyPair": [
+            "getPrivate"
+        ],
+        "publicKey": [
+            "getModulus"
+        ],
+        "modulusPrivate": [
+            "compareTo"
+        ],
+        "user.getServer().getVersion()": [
+            "isNewerOrEqual"
+        ],
+        "user.getServer()": [
+            "getVersion"
+        ],
+        "mnemonic": [
+            "replaceAll"
+        ],
+        "metadataFile.getFiles()": [
+            "keySet"
+        ],
+        "metadataFile": [
+            "getFiles",
+            "getMetadata"
+        ],
+        "Collections": [
+            "sort"
+        ],
+        "metadataFile.getMetadata()": [
+            "getMetadataKey"
+        ],
+        "MessageDigest\n            .getInstance(\"SHA-256\")": [
+            "digest"
+        ],
+        "result": [
+            "append",
+            "toString"
+        ],
+        "Integer.toString((individualByte & 0xff) + 0x100, 16)": [
+            "substring"
+        ],
+        "gson": [
+            "fromJson",
+            "toJson"
+        ],
+        "arrayList": [
+            "contains",
+            "add"
+        ],
+        "new TypeToken<List<Long>>() {\n        }": [
+            "getType"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "UUID.randomUUID().toString()": [
+            "replaceAll"
+        ],
+        "UUID.randomUUID()": [
+            "toString"
+        ],
+        "UUID": [
+            "randomUUID"
+        ],
+        "new ArbitraryDataProviderImpl(context)": [
+            "getValue"
+        ],
+        "sbKey": [
+            "append",
+            "toString"
+        ],
+        "String": [
+            "format"
+        ]
+    },
+    "methods": [
+        {
+            "name": "deserializeJSON",
+            "return_type": "T",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "json"
+                },
+                {
+                    "type": "TypeToken<T>",
+                    "name": "type"
+                },
+                {
+                    "type": "boolean",
+                    "name": "excludeTransient"
+                }
+            ],
+            "start_position": 6114,
+            "end_position": 6444,
+            "body_start": 6208,
+            "body_end": 6444
+        },
+        {
+            "name": "deserializeJSON",
+            "return_type": "T",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "json"
+                },
+                {
+                    "type": "TypeToken<T>",
+                    "name": "type"
+                }
+            ],
+            "start_position": 6450,
+            "end_position": 6576,
+            "body_start": 6518,
+            "body_end": 6576
+        },
+        {
+            "name": "serializeJSON",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "data"
+                },
+                {
+                    "type": "boolean",
+                    "name": "excludeTransient"
+                }
+            ],
+            "start_position": 6582,
+            "end_position": 7035,
+            "body_start": 6656,
+            "body_end": 7035
+        },
+        {
+            "name": "removeFileFromMetadata",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "fileName"
+                },
+                {
+                    "type": "DecryptedFolderMetadataFileV1",
+                    "name": "metadata"
+                }
+            ],
+            "start_position": 7041,
+            "end_position": 7193,
+            "body_start": 7140,
+            "body_end": 7193
+        },
+        {
+            "name": "serializeJSON",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "data"
+                }
+            ],
+            "start_position": 7199,
+            "end_position": 7297,
+            "body_start": 7247,
+            "body_end": 7297
+        },
+        {
+            "name": "encryptFolderMetadata",
+            "return_type": "EncryptedFolderMetadataFileV1",
+            "parameters": [
+                {
+                    "type": "DecryptedFolderMetadataFileV1",
+                    "name": "decryptedFolderMetadata"
+                },
+                {
+                    "type": "String",
+                    "name": "publicKey"
+                },
+                {
+                    "type": "long",
+                    "name": "parentId"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                }
+            ],
+            "start_position": 7523,
+            "end_position": 10348,
+            "body_start": 8051,
+            "body_end": 10348
+        },
+        {
+            "name": "encryptFileDropFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DecryptedFolderMetadataFileV1",
+                    "name": "decryptedFolderMetadata"
+                },
+                {
+                    "type": "EncryptedFolderMetadataFileV1",
+                    "name": "encryptedFolderMetadata"
+                },
+                {
+                    "type": "String",
+                    "name": "cert"
+                }
+            ],
+            "start_position": 10420,
+            "end_position": 12902,
+            "body_start": 10893,
+            "body_end": 12902
+        },
+        {
+            "name": "decryptFolderMetaData",
+            "return_type": "DecryptedFolderMetadataFileV1",
+            "parameters": [
+                {
+                    "type": "EncryptedFolderMetadataFileV1",
+                    "name": "encryptedFolderMetadata"
+                },
+                {
+                    "type": "String",
+                    "name": "privateKey"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "long",
+                    "name": "remoteId"
+                }
+            ],
+            "start_position": 12974,
+            "end_position": 18456,
+            "body_start": 13675,
+            "body_end": 18456
+        },
+        {
+            "name": "downloadFolderMetadata",
+            "return_type": "Object",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 18592,
+            "end_position": 22053,
+            "body_start": 18859,
+            "body_end": 22053
+        },
+        {
+            "name": "determinateVersion",
+            "return_type": "E2EVersion",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "metadata"
+                }
+            ],
+            "start_position": 22059,
+            "end_position": 23197,
+            "body_start": 22120,
+            "body_end": 23197
+        },
+        {
+            "name": "encodeStringToBase64Bytes",
+            "return_type": "byte[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                }
+            ],
+            "start_position": 23230,
+            "end_position": 23495,
+            "body_start": 23331,
+            "body_end": 23495
+        },
+        {
+            "name": "decodeBase64BytesToString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "byte[]",
+                    "name": "bytes"
+                }
+            ],
+            "start_position": 23501,
+            "end_position": 23756,
+            "body_start": 23601,
+            "body_end": 23756
+        },
+        {
+            "name": "encodeBytesToBase64String",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "byte[]",
+                    "name": "bytes"
+                }
+            ],
+            "start_position": 23762,
+            "end_position": 23930,
+            "body_start": 23862,
+            "body_end": 23930
+        },
+        {
+            "name": "encodeStringToBase64String",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                }
+            ],
+            "start_position": 23936,
+            "end_position": 24118,
+            "body_start": 24038,
+            "body_end": 24118
+        },
+        {
+            "name": "decodeBase64StringToString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                }
+            ],
+            "start_position": 24124,
+            "end_position": 24299,
+            "body_start": 24226,
+            "body_end": 24299
+        },
+        {
+            "name": "decodeStringToBase64Bytes",
+            "return_type": "byte[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                }
+            ],
+            "start_position": 24305,
+            "end_position": 24428,
+            "body_start": 24367,
+            "body_end": 24428
+        },
+        {
+            "name": "encryptFile",
+            "return_type": "EncryptedFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "File",
+                    "name": "file"
+                },
+                {
+                    "type": "Cipher",
+                    "name": "cipher"
+                }
+            ],
+            "start_position": 24434,
+            "end_position": 24990,
+            "body_start": 24570,
+            "body_end": 24990
+        },
+        {
+            "name": "getAuthenticationTag",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Cipher",
+                    "name": "cipher"
+                }
+            ],
+            "start_position": 24996,
+            "end_position": 25266,
+            "body_start": 25090,
+            "body_end": 25266
+        },
+        {
+            "name": "getCipher",
+            "return_type": "Cipher",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "mode"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "iv"
+                }
+            ],
+            "start_position": 25272,
+            "end_position": 25713,
+            "body_start": 25464,
+            "body_end": 25713
+        },
+        {
+            "name": "encryptFileWithGivenCipher",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "inputFile"
+                },
+                {
+                    "type": "File",
+                    "name": "encryptedFile"
+                },
+                {
+                    "type": "Cipher",
+                    "name": "cipher"
+                }
+            ],
+            "start_position": 25719,
+            "end_position": 26605,
+            "body_start": 25816,
+            "body_end": 26605
+        },
+        {
+            "name": "decryptFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Cipher",
+                    "name": "cipher"
+                },
+                {
+                    "type": "File",
+                    "name": "encryptedFile"
+                },
+                {
+                    "type": "File",
+                    "name": "decryptedFile"
+                },
+                {
+                    "type": "String",
+                    "name": "authenticationTag"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 26611,
+            "end_position": 28217,
+            "body_start": 26954,
+            "body_end": 28217
+        },
+        {
+            "name": "encryptStringAsymmetric",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "String",
+                    "name": "cert"
+                }
+            ],
+            "start_position": 28505,
+            "end_position": 29657,
+            "body_start": 28757,
+            "body_end": 29657
+        },
+        {
+            "name": "encryptStringAsymmetricV2",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "byte[]",
+                    "name": "bytes"
+                },
+                {
+                    "type": "String",
+                    "name": "cert"
+                }
+            ],
+            "start_position": 29663,
+            "end_position": 30758,
+            "body_start": 29916,
+            "body_end": 30758
+        },
+        {
+            "name": "encryptStringAsymmetric",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "PublicKey",
+                    "name": "publicKey"
+                }
+            ],
+            "start_position": 30764,
+            "end_position": 31263,
+            "body_start": 30978,
+            "body_end": 31263
+        },
+        {
+            "name": "decryptStringAsymmetric",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "String",
+                    "name": "privateKeyString"
+                }
+            ],
+            "start_position": 31558,
+            "end_position": 32386,
+            "body_start": 31825,
+            "body_end": 32386
+        },
+        {
+            "name": "decryptStringAsymmetricAsBytes",
+            "return_type": "byte[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "String",
+                    "name": "privateKeyString"
+                }
+            ],
+            "start_position": 32392,
+            "end_position": 33156,
+            "body_start": 32666,
+            "body_end": 33156
+        },
+        {
+            "name": "decryptStringAsymmetricV2",
+            "return_type": "byte[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "String",
+                    "name": "privateKeyString"
+                }
+            ],
+            "start_position": 33162,
+            "end_position": 34051,
+            "body_start": 33431,
+            "body_end": 34051
+        },
+        {
+            "name": "decryptStringAsymmetric",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "PrivateKey",
+                    "name": "privateKey"
+                }
+            ],
+            "start_position": 34333,
+            "end_position": 34827,
+            "body_start": 34541,
+            "body_end": 34827
+        },
+        {
+            "name": "encryptStringSymmetricAsString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                }
+            ],
+            "start_position": 35035,
+            "end_position": 35489,
+            "body_start": 35338,
+            "body_end": 35489
+        },
+        {
+            "name": "encryptStringSymmetricAsStringOld",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                }
+            ],
+            "start_position": 35495,
+            "end_position": 35978,
+            "body_start": 35824,
+            "body_end": 35978
+        },
+        {
+            "name": "decryptStringSymmetricAsString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "iv"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "authenticationTag"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 37267,
+            "end_position": 38204,
+            "body_start": 37951,
+            "body_end": 38204
+        },
+        {
+            "name": "decryptStringSymmetricAsString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "iv"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "authenticationTag"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fileDropV2"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 38210,
+            "end_position": 39173,
+            "body_start": 38914,
+            "body_end": 39173
+        },
+        {
+            "name": "decryptStringSymmetricAsString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "byte[]",
+                    "name": "bytes"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "iv"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "authenticationTag"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fileDropV2"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 39179,
+            "end_position": 40892,
+            "body_start": 39930,
+            "body_end": 40892
+        },
+        {
+            "name": "encryptStringSymmetric",
+            "return_type": "EncryptedMetadata",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                }
+            ],
+            "start_position": 40898,
+            "end_position": 41260,
+            "body_start": 41173,
+            "body_end": 41260
+        },
+        {
+            "name": "encryptStringSymmetric",
+            "return_type": "EncryptedMetadata",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                },
+                {
+                    "type": "String",
+                    "name": "delimiter"
+                }
+            ],
+            "start_position": 41267,
+            "end_position": 41712,
+            "body_start": 41568,
+            "body_end": 41712
+        },
+        {
+            "name": "encryptStringSymmetric",
+            "return_type": "EncryptedMetadata",
+            "parameters": [
+                {
+                    "type": "byte[]",
+                    "name": "bytes"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                },
+                {
+                    "type": "String",
+                    "name": "delimiter"
+                }
+            ],
+            "start_position": 41913,
+            "end_position": 43162,
+            "body_start": 42261,
+            "body_end": 43162
+        },
+        {
+            "name": "decryptStringSymmetric",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                }
+            ],
+            "start_position": 43466,
+            "end_position": 44747,
+            "body_start": 43737,
+            "body_end": 44747
+        },
+        {
+            "name": "decryptStringSymmetric",
+            "return_type": "byte[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "encryptionKeyBytes"
+                },
+                {
+                    "type": "String",
+                    "name": "authenticationTag"
+                },
+                {
+                    "type": "String",
+                    "name": "ivString"
+                }
+            ],
+            "start_position": 45006,
+            "end_position": 46755,
+            "body_start": 45464,
+            "body_end": 46755
+        },
+        {
+            "name": "encryptPrivateKey",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "privateKey"
+                },
+                {
+                    "type": "String",
+                    "name": "keyPhrase"
+                }
+            ],
+            "start_position": 47196,
+            "end_position": 47547,
+            "body_start": 47470,
+            "body_end": 47547
+        },
+        {
+            "name": "encryptPrivateKeyOld",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "privateKey"
+                },
+                {
+                    "type": "String",
+                    "name": "keyPhrase"
+                }
+            ],
+            "start_position": 47553,
+            "end_position": 47933,
+            "body_start": 47853,
+            "body_end": 47933
+        },
+        {
+            "name": "encryptPrivateKey",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "privateKey"
+                },
+                {
+                    "type": "String",
+                    "name": "keyPhrase"
+                },
+                {
+                    "type": "String",
+                    "name": "delimiter"
+                }
+            ],
+            "start_position": 47939,
+            "end_position": 49136,
+            "body_start": 48232,
+            "body_end": 49136
+        },
+        {
+            "name": "decryptPrivateKey",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "privateKey"
+                },
+                {
+                    "type": "String",
+                    "name": "keyPhrase"
+                }
+            ],
+            "start_position": 49533,
+            "end_position": 51107,
+            "body_start": 49878,
+            "body_end": 51107
+        },
+        {
+            "name": "privateKeyToPEM",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "PrivateKey",
+                    "name": "privateKey"
+                }
+            ],
+            "start_position": 51113,
+            "end_position": 51408,
+            "body_start": 51173,
+            "body_end": 51408
+        },
+        {
+            "name": "PEMtoPrivateKey",
+            "return_type": "PrivateKey",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "pem"
+                }
+            ],
+            "start_position": 51414,
+            "end_position": 51805,
+            "body_start": 51524,
+            "body_end": 51805
+        },
+        {
+            "name": "getRandomWords",
+            "return_type": "ArrayList<String>",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "count"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 51838,
+            "end_position": 52681,
+            "body_start": 51932,
+            "body_end": 52681
+        },
+        {
+            "name": "generateKeyPair",
+            "return_type": "KeyPair",
+            "parameters": [],
+            "start_position": 52806,
+            "end_position": 53048,
+            "body_start": 52878,
+            "body_end": 53048
+        },
+        {
+            "name": "generateKey",
+            "return_type": "byte[]",
+            "parameters": [],
+            "start_position": 53162,
+            "end_position": 53530,
+            "body_start": 53197,
+            "body_end": 53530
+        },
+        {
+            "name": "generateKeyString",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 53653,
+            "end_position": 53774,
+            "body_start": 53694,
+            "body_end": 53774
+        },
+        {
+            "name": "randomBytes",
+            "return_type": "byte[]",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "size"
+                }
+            ],
+            "start_position": 53780,
+            "end_position": 53972,
+            "body_start": 53823,
+            "body_end": 53972
+        },
+        {
+            "name": "generateSHA512",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 54151,
+            "end_position": 54375,
+            "body_start": 54201,
+            "body_end": 54375
+        },
+        {
+            "name": "generateSHA512",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                },
+                {
+                    "type": "String",
+                    "name": "salt"
+                }
+            ],
+            "start_position": 54554,
+            "end_position": 55358,
+            "body_start": 54617,
+            "body_end": 55358
+        },
+        {
+            "name": "verifySHA512",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "hashWithSalt"
+                },
+                {
+                    "type": "String",
+                    "name": "compareToken"
+                }
+            ],
+            "start_position": 55364,
+            "end_position": 55624,
+            "body_start": 55441,
+            "body_end": 55624
+        },
+        {
+            "name": "lockFolder",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "ServerFileInterface",
+                    "name": "parentFile"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 55630,
+            "end_position": 55798,
+            "body_start": 55740,
+            "body_end": 55798
+        },
+        {
+            "name": "lockFolder",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "ServerFileInterface",
+                    "name": "parentFile"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "long",
+                    "name": "counter"
+                }
+            ],
+            "start_position": 55804,
+            "end_position": 56695,
+            "body_start": 55928,
+            "body_end": 56695
+        },
+        {
+            "name": "retrieveMetadataV1",
+            "return_type": "Pair<Boolean, DecryptedFolderMetadataFileV1>",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "parentFile"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "String",
+                    "name": "privateKey"
+                },
+                {
+                    "type": "String",
+                    "name": "publicKey"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 56869,
+            "end_position": 59740,
+            "body_start": 57741,
+            "body_end": 59740
+        },
+        {
+            "name": "retrieveMetadata",
+            "return_type": "Pair<Boolean, DecryptedFolderMetadataFile>",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "parentFile"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "String",
+                    "name": "privateKey"
+                },
+                {
+                    "type": "String",
+                    "name": "publicKey"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                }
+            ],
+            "start_position": 59914,
+            "end_position": 64072,
+            "body_start": 60985,
+            "body_end": 64072
+        },
+        {
+            "name": "uploadMetadata",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ServerFileInterface",
+                    "name": "parentFile"
+                },
+                {
+                    "type": "String",
+                    "name": "serializedFolderMetadata"
+                },
+                {
+                    "type": "String",
+                    "name": "token"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "boolean",
+                    "name": "metadataExists"
+                },
+                {
+                    "type": "E2EVersion",
+                    "name": "version"
+                },
+                {
+                    "type": "String",
+                    "name": "signature"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 64078,
+            "end_position": 66257,
+            "body_start": 64659,
+            "body_end": 66257
+        },
+        {
+            "name": "unlockFolder",
+            "return_type": "RemoteOperationResult<Void>",
+            "parameters": [
+                {
+                    "type": "ServerFileInterface",
+                    "name": "parentFolder"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 66263,
+            "end_position": 66637,
+            "body_start": 66389,
+            "body_end": 66637
+        },
+        {
+            "name": "unlockFolderV1",
+            "return_type": "RemoteOperationResult<Void>",
+            "parameters": [
+                {
+                    "type": "ServerFileInterface",
+                    "name": "parentFolder"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 66643,
+            "end_position": 67021,
+            "body_start": 66771,
+            "body_end": 67021
+        },
+        {
+            "name": "convertCertFromString",
+            "return_type": "X509Certificate",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                }
+            ],
+            "start_position": 67027,
+            "end_position": 67654,
+            "body_start": 67122,
+            "body_end": 67654
+        },
+        {
+            "name": "convertPublicKeyFromString",
+            "return_type": "RSAPublicKey",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                }
+            ],
+            "start_position": 67660,
+            "end_position": 67840,
+            "body_start": 67757,
+            "body_end": 67840
+        },
+        {
+            "name": "removeE2E",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 67846,
+            "end_position": 68290,
+            "body_start": 67931,
+            "body_end": 68290
+        },
+        {
+            "name": "isMatchingKeys",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "KeyPair",
+                    "name": "keyPair"
+                },
+                {
+                    "type": "String",
+                    "name": "publicKeyString"
+                }
+            ],
+            "start_position": 68296,
+            "end_position": 68786,
+            "body_start": 68402,
+            "body_end": 68786
+        },
+        {
+            "name": "supportsSecureFiledrop",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 68792,
+            "end_position": 69025,
+            "body_start": 68861,
+            "body_end": 69025
+        },
+        {
+            "name": "generateChecksum",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "DecryptedFolderMetadataFileV1",
+                    "name": "metadataFile"
+                },
+                {
+                    "type": "String",
+                    "name": "mnemonic"
+                }
+            ],
+            "start_position": 69031,
+            "end_position": 69684,
+            "body_start": 69204,
+            "body_end": 69684
+        },
+        {
+            "name": "sha256",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                }
+            ],
+            "start_position": 69742,
+            "end_position": 69994,
+            "body_start": 69817,
+            "body_end": 69994
+        },
+        {
+            "name": "bytesToHex",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "byte[]",
+                    "name": "bytes"
+                }
+            ],
+            "start_position": 70000,
+            "end_position": 70319,
+            "body_start": 70046,
+            "body_end": 70319
+        },
+        {
+            "name": "addIdToMigratedIds",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                }
+            ],
+            "start_position": 70325,
+            "end_position": 71177,
+            "body_start": 70512,
+            "body_end": 71177
+        },
+        {
+            "name": "isFolderMigrated",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                }
+            ],
+            "start_position": 71183,
+            "end_position": 71710,
+            "body_start": 71373,
+            "body_end": 71710
+        },
+        {
+            "name": "reportE2eError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 71716,
+            "end_position": 72362,
+            "body_start": 71806,
+            "body_end": 72362
+        },
+        {
+            "name": "readE2eError",
+            "return_type": "Problem",
+            "parameters": [
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 72368,
+            "end_position": 73364,
+            "body_start": 72473,
+            "body_end": 73364
+        },
+        {
+            "name": "generateUid",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 73370,
+            "end_position": 73477,
+            "body_start": 73405,
+            "body_end": 73477
+        },
+        {
+            "name": "retrievePublicKeyForUser",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 73483,
+            "end_position": 73646,
+            "body_start": 73557,
+            "body_end": 73646
+        },
+        {
+            "name": "generateIV",
+            "return_type": "byte[]",
+            "parameters": [],
+            "start_position": 73652,
+            "end_position": 73763,
+            "body_start": 73686,
+            "body_end": 73763
+        },
+        {
+            "name": "byteToHex",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "byte[]",
+                    "name": "bytes"
+                }
+            ],
+            "start_position": 73769,
+            "end_position": 73999,
+            "body_start": 73814,
+            "body_end": 73999
+        },
+        {
+            "name": "savePublicKey",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "currentUser"
+                },
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "String",
+                    "name": "user"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                }
+            ],
+            "start_position": 74005,
+            "end_position": 74460,
+            "body_start": 74237,
+            "body_end": 74460
+        },
+        {
+            "name": "getPublicKey",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "currentUser"
+                },
+                {
+                    "type": "String",
+                    "name": "user"
+                },
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                }
+            ],
+            "start_position": 74466,
+            "end_position": 74760,
+            "body_start": 74652,
+            "body_end": 74760
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "return_statement",
+        "expression_statement",
+        "enhanced_for_statement",
+        "throw_statement",
+        "try_statement",
+        "try_with_resources_statement",
+        "while_statement",
+        "for_statement"
+    ],
+    "local_variables": {
+        "files": "HashMap<String, DecryptedFile>",
+        "filesdrop": "Map<String, EncryptedFiledrop>",
+        "encryptedFolderMetadata": "EncryptedFolderMetadataFile",
+        "metadataKeyBytes": "byte[]",
+        "encryptedMetadataKey": "String",
+        "key": "SecretKeySpec",
+        "decryptedFile": "DecryptedFile",
+        "encryptedFile": "EncryptedFiledrop",
+        "dataJson": "String",
+        "mnemonic": "String",
+        "checksum": "String",
+        "byt": "byte[]",
+        "metadataKey0": "String",
+        "enc": "String",
+        "encJson": "String",
+        "delimiterPosition": "int",
+        "encryptedInitializationVector": "String",
+        "encodedCryptedBytes": "String",
+        "bytes": "byte[]",
+        "extractedAuthenticationTag": "byte[]",
+        "encryptedTag": "String",
+        "decryptedFolderMetadata": "DecryptedFolderMetadataFileV1",
+        "decryptedMetadataKey": "byte[]",
+        "decryptedFolderChecksum": "String",
+        "fileDrop": "Map<String, EncryptedFiledrop>",
+        "encryptedKey": "String",
+        "decryptedData": "String",
+        "getMetadataOperationResult": "RemoteOperationResult<MetadataResponse>",
+        "capability": "OCCapability",
+        "encryptionUtilsV2": "EncryptionUtilsV2",
+        "serializedEncryptedMetadata": "String",
+        "version": "double",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "privateKey": "RSAPrivateCrtKey",
+        "publicKey": "RSAPublicKey",
+        "v1": "EncryptedFolderMetadataFileV1",
+        "v2": "EncryptedFolderMetadataFile",
+        "tempEncryptedFolder": "File",
+        "tempEncryptedFile": "File",
+        "authenticationTagString": "String",
+        "authenticationTag": "String",
+        "cipher": "Cipher",
+        "spec": "KeySpec",
+        "buffer": "byte[]",
+        "bytesRead": "int",
+        "output": "byte[]",
+        "trimmedCert": "String",
+        "encodedCert": "byte[]",
+        "decodedCert": "byte[]",
+        "certFactory": "CertificateFactory",
+        "in": "InputStream",
+        "certificate": "X509Certificate",
+        "realPublicKey": "PublicKey",
+        "cryptedBytes": "byte[]",
+        "privateKeyBytes": "byte[]",
+        "keySpec": "PKCS8EncodedKeySpec",
+        "kf": "KeyFactory",
+        "encodedBytes": "byte[]",
+        "metadata": "DecryptedFolderMetadataFile",
+        "iv": "byte[]",
+        "encodedIV": "String",
+        "ivString": "String",
+        "cipherString": "String",
+        "authenticationTagBytes": "byte[]",
+        "factory": "SecretKeyFactory",
+        "salt": "String",
+        "tmp": "SecretKey",
+        "encrypted": "byte[]",
+        "encodedSalt": "String",
+        "encodedEncryptedBytes": "String",
+        "strings": "String[]",
+        "realPrivateKey": "String",
+        "decrypted": "byte[]",
+        "pemKey": "String",
+        "privateKeyString": "String",
+        "ins": "InputStream",
+        "inputStreamReader": "InputStreamReader",
+        "bufferedReader": "BufferedReader",
+        "lines": "List<String>",
+        "line": "String",
+        "random": "SecureRandom",
+        "outputLines": "ArrayList<String>",
+        "i": "int",
+        "randomLine": "int",
+        "keyGen": "KeyPairGenerator",
+        "keyGenerator": "KeyGenerator",
+        "digest": "MessageDigest",
+        "hashedToken": "String",
+        "hash": "byte[]",
+        "stringBuilder": "StringBuilder",
+        "newHash": "String",
+        "lockFileOperation": "LockFileRemoteOperation",
+        "lockFileOperationResult": "RemoteOperationResult<String>",
+        "localId": "long",
+        "getMetadataOperation": "GetMetadataRemoteOperation",
+        "metadataKey": "byte[]",
+        "uploadMetadataOperationResult": "RemoteOperationResult<String>",
+        "modulusPublic": "BigInteger",
+        "modulusPrivate": "BigInteger",
+        "keys": "ArrayList<String>",
+        "result": "StringBuilder",
+        "gson": "Gson",
+        "ids": "String",
+        "arrayList": "ArrayList<Long>",
+        "json": "String",
+        "value": "int",
+        "timestamp": "long",
+        "sbKey": "StringBuilder"
+    }
+}

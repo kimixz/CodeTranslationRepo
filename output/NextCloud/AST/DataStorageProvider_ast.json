@@ -1,0 +1,111 @@
+{
+    "methods": [
+        {
+            "name": "getInstance",
+            "return_type": "DataStorageProvider",
+            "parameters": [],
+            "start_position": 667,
+            "end_position": 748,
+            "body_start": 715,
+            "body_end": 748
+        },
+        {
+            "name": "getAvailableStoragePoints",
+            "return_type": "StoragePoint[]",
+            "parameters": [],
+            "start_position": 792,
+            "end_position": 3449,
+            "body_start": 842,
+            "body_end": 3449
+        },
+        {
+            "name": "getStorageDescriptionByPath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 3455,
+            "end_position": 3760,
+            "body_start": 3510,
+            "body_end": 3760
+        },
+        {
+            "name": "isExternalStorageWritable",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3835,
+            "end_position": 4003,
+            "body_start": 3878,
+            "body_end": 4003
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "expression_statement"
+    ],
+    "method_calls": {
+        "mCachedStoragePoints": [
+            "size",
+            "toArray",
+            "add"
+        ],
+        "MainApp.getAppContext()": [
+            "getExternalMediaDirs",
+            "getFilesDir",
+            "getExternalFilesDir"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "paths": [
+            "contains"
+        ],
+        "f": [
+            "getAbsolutePath"
+        ],
+        "storagePoint": [
+            "setPath",
+            "setDescription",
+            "setPrivacyType",
+            "setStorageType"
+        ],
+        "f.getAbsolutePath()": [
+            "startsWith"
+        ],
+        "unknown": [
+            "isExternalStorageWritable",
+            "getAvailableStoragePoints"
+        ],
+        "MainApp.getAppContext().getFilesDir()": [
+            "getAbsolutePath"
+        ],
+        "externalFilesDir": [
+            "getAbsolutePath"
+        ],
+        "s.getPath()": [
+            "equals"
+        ],
+        "s": [
+            "getPath",
+            "getDescription"
+        ],
+        "Environment": [
+            "getExternalStorageState"
+        ],
+        "Environment.MEDIA_MOUNTED": [
+            "equals"
+        ]
+    },
+    "local_variables": {
+        "paths": "List<String>",
+        "storagePoint": "StoragePoint",
+        "externalFilesDir": "File",
+        "externalFilesDirPath": "String",
+        "state": "String"
+    }
+}

@@ -1,0 +1,124 @@
+{
+    "methods": [
+        {
+            "name": "setUp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 597,
+            "end_position": 795,
+            "body_start": 629,
+            "body_end": 795
+        },
+        {
+            "name": "isHeader__ObjectIsHeader_ReturnTrue",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 801,
+            "end_position": 1316,
+            "body_start": 861,
+            "body_end": 1316
+        },
+        {
+            "name": "isHeader__ObjectIsActivity_ReturnFalse",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1322,
+            "end_position": 1801,
+            "body_start": 1385,
+            "body_end": 1801
+        },
+        {
+            "name": "getHeaderPositionForItem__AdapterIsEmpty_ReturnZero",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1807,
+            "end_position": 2129,
+            "body_start": 1882,
+            "body_end": 2129
+        },
+        {
+            "name": "getHeaderPositionForItem__ItemIsHeader_ReturnCurrentItem",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2135,
+            "end_position": 3415,
+            "body_start": 2216,
+            "body_end": 3415
+        },
+        {
+            "name": "getHeaderPositionForItem__ItemIsActivity_ReturnNextHeader",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3421,
+            "end_position": 4883,
+            "body_start": 3503,
+            "body_end": 4883
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "MockitoAnnotations": [
+            "initMocks"
+        ],
+        "Mockito": [
+            "mock",
+            "when"
+        ],
+        "Mockito.when(activityListAdapter.isHeader(0))": [
+            "thenCallRealMethod"
+        ],
+        "activityListAdapter": [
+            "isHeader",
+            "getItemViewType",
+            "getHeaderPositionForItem"
+        ],
+        "Mockito.when(activityListAdapter.getItemViewType(0))": [
+            "thenCallRealMethod"
+        ],
+        "activityListAdapter.values": [
+            "add"
+        ],
+        "Assert": [
+            "assertTrue",
+            "assertFalse",
+            "assertEquals"
+        ],
+        "Mockito.when(activityListAdapter.isHeader(1))": [
+            "thenCallRealMethod"
+        ],
+        "Mockito.when(activityListAdapter.getItemViewType(1))": [
+            "thenCallRealMethod"
+        ],
+        "Mockito.when(activityListAdapter.isHeader(2))": [
+            "thenCallRealMethod"
+        ],
+        "Mockito.when(activityListAdapter.getItemViewType(2))": [
+            "thenCallRealMethod"
+        ],
+        "Mockito.when(activityListAdapter.getHeaderPositionForItem(2))": [
+            "thenCallRealMethod"
+        ],
+        "Mockito.when(activityListAdapter.isHeader(3))": [
+            "thenCallRealMethod"
+        ],
+        "Mockito.when(activityListAdapter.getItemViewType(3))": [
+            "thenCallRealMethod"
+        ],
+        "Mockito.when(activityListAdapter.getHeaderPositionForItem(3))": [
+            "thenCallRealMethod"
+        ],
+        "Mockito.when(activityListAdapter.getHeaderPositionForItem(0))": [
+            "thenCallRealMethod"
+        ],
+        "Mockito.when(activityListAdapter.getHeaderPositionForItem(1))": [
+            "thenCallRealMethod"
+        ]
+    },
+    "local_variables": {
+        "header": "Object",
+        "activity": "Object",
+        "result": "boolean"
+    }
+}

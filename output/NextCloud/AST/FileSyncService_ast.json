@@ -1,0 +1,44 @@
+{
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1438,
+            "end_position": 1743,
+            "body_start": 1475,
+            "body_end": 1743
+        },
+        {
+            "name": "onBind",
+            "return_type": "IBinder",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 1786,
+            "end_position": 1895,
+            "body_start": 1837,
+            "body_end": 1895
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "synchronized_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "AndroidInjection": [
+            "inject"
+        ],
+        "unknown": [
+            "getApplicationContext"
+        ],
+        "syncAdapter": [
+            "getSyncAdapterBinder"
+        ]
+    }
+}

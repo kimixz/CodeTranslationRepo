@@ -1,0 +1,519 @@
+{
+    "methods": [
+        {
+            "name": "accountManager",
+            "return_type": "AccountManager",
+            "parameters": [
+                {
+                    "type": "Application",
+                    "name": "application"
+                }
+            ],
+            "start_position": 3377,
+            "end_position": 3540,
+            "body_start": 3446,
+            "body_end": 3540
+        },
+        {
+            "name": "context",
+            "return_type": "Context",
+            "parameters": [
+                {
+                    "type": "Application",
+                    "name": "application"
+                }
+            ],
+            "start_position": 3546,
+            "end_position": 3636,
+            "body_start": 3601,
+            "body_end": 3636
+        },
+        {
+            "name": "packageManager",
+            "return_type": "PackageManager",
+            "parameters": [
+                {
+                    "type": "Application",
+                    "name": "application"
+                }
+            ],
+            "start_position": 3642,
+            "end_position": 3766,
+            "body_start": 3711,
+            "body_end": 3766
+        },
+        {
+            "name": "contentResolver",
+            "return_type": "ContentResolver",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 3772,
+            "end_position": 3887,
+            "body_start": 3835,
+            "body_end": 3887
+        },
+        {
+            "name": "resources",
+            "return_type": "Resources",
+            "parameters": [
+                {
+                    "type": "Application",
+                    "name": "application"
+                }
+            ],
+            "start_position": 3893,
+            "end_position": 4002,
+            "body_start": 3952,
+            "body_end": 4002
+        },
+        {
+            "name": "userAccountManager",
+            "return_type": "UserAccountManager",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "AccountManager",
+                    "name": "accountManager"
+                }
+            ],
+            "start_position": 4008,
+            "end_position": 4200,
+            "body_start": 4125,
+            "body_end": 4200
+        },
+        {
+            "name": "arbitraryDataProvider",
+            "return_type": "ArbitraryDataProvider",
+            "parameters": [
+                {
+                    "type": "ArbitraryDataDao",
+                    "name": "dao"
+                }
+            ],
+            "start_position": 4206,
+            "end_position": 4344,
+            "body_start": 4286,
+            "body_end": 4344
+        },
+        {
+            "name": "syncedFolderProvider",
+            "return_type": "SyncedFolderProvider",
+            "parameters": [
+                {
+                    "type": "ContentResolver",
+                    "name": "contentResolver"
+                },
+                {
+                    "type": "AppPreferences",
+                    "name": "appPreferences"
+                },
+                {
+                    "type": "Clock",
+                    "name": "clock"
+                }
+            ],
+            "start_position": 4350,
+            "end_position": 4663,
+            "body_start": 4575,
+            "body_end": 4663
+        },
+        {
+            "name": "activitiesServiceApi",
+            "return_type": "ActivitiesServiceApi",
+            "parameters": [
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                }
+            ],
+            "start_position": 4669,
+            "end_position": 4828,
+            "body_start": 4760,
+            "body_end": 4828
+        },
+        {
+            "name": "activitiesRepository",
+            "return_type": "ActivitiesRepository",
+            "parameters": [
+                {
+                    "type": "ActivitiesServiceApi",
+                    "name": "api"
+                }
+            ],
+            "start_position": 4834,
+            "end_position": 4975,
+            "body_start": 4916,
+            "body_end": 4975
+        },
+        {
+            "name": "filesRepository",
+            "return_type": "FilesRepository",
+            "parameters": [
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "ClientFactory",
+                    "name": "clientFactory"
+                }
+            ],
+            "start_position": 4981,
+            "end_position": 5196,
+            "body_start": 5091,
+            "body_end": 5196
+        },
+        {
+            "name": "uploadsStorageManager",
+            "return_type": "UploadsStorageManager",
+            "parameters": [
+                {
+                    "type": "CurrentAccountProvider",
+                    "name": "currentAccountProvider"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 5202,
+            "end_position": 5475,
+            "body_start": 5372,
+            "body_end": 5475
+        },
+        {
+            "name": "fileDataStorageManager",
+            "return_type": "FileDataStorageManager",
+            "parameters": [
+                {
+                    "type": "CurrentAccountProvider",
+                    "name": "currentAccountProvider"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 5481,
+            "end_position": 5769,
+            "body_start": 5655,
+            "body_end": 5769
+        },
+        {
+            "name": "currentAccountProvider",
+            "return_type": "CurrentAccountProvider",
+            "parameters": [
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                }
+            ],
+            "start_position": 5775,
+            "end_position": 5908,
+            "body_start": 5870,
+            "body_end": 5908
+        },
+        {
+            "name": "deviceInfo",
+            "return_type": "DeviceInfo",
+            "parameters": [],
+            "start_position": 5914,
+            "end_position": 5992,
+            "body_start": 5952,
+            "body_end": 5992
+        },
+        {
+            "name": "clock",
+            "return_type": "Clock",
+            "parameters": [],
+            "start_position": 5998,
+            "end_position": 6080,
+            "body_start": 6041,
+            "body_end": 6080
+        },
+        {
+            "name": "logger",
+            "return_type": "Logger",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Clock",
+                    "name": "clock"
+                }
+            ],
+            "start_position": 6086,
+            "end_position": 6442,
+            "body_start": 6159,
+            "body_end": 6442
+        },
+        {
+            "name": "logsRepository",
+            "return_type": "LogsRepository",
+            "parameters": [
+                {
+                    "type": "Logger",
+                    "name": "logger"
+                }
+            ],
+            "start_position": 6448,
+            "end_position": 6569,
+            "body_start": 6522,
+            "body_end": 6569
+        },
+        {
+            "name": "uiAsyncRunner",
+            "return_type": "AsyncRunner",
+            "parameters": [],
+            "start_position": 6575,
+            "end_position": 6744,
+            "body_start": 6632,
+            "body_end": 6744
+        },
+        {
+            "name": "ioAsyncRunner",
+            "return_type": "AsyncRunner",
+            "parameters": [],
+            "start_position": 6750,
+            "end_position": 6936,
+            "body_start": 6824,
+            "body_end": 6936
+        },
+        {
+            "name": "notificationManager",
+            "return_type": "NotificationManager",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 6942,
+            "end_position": 7113,
+            "body_start": 7013,
+            "body_end": 7113
+        },
+        {
+            "name": "audioManager",
+            "return_type": "AudioManager",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 7119,
+            "end_position": 7262,
+            "body_start": 7176,
+            "body_end": 7262
+        },
+        {
+            "name": "eventBus",
+            "return_type": "EventBus",
+            "parameters": [],
+            "start_position": 7268,
+            "end_position": 7362,
+            "body_start": 7317,
+            "body_end": 7362
+        },
+        {
+            "name": "migrationsDb",
+            "return_type": "MigrationsDb",
+            "parameters": [
+                {
+                    "type": "Application",
+                    "name": "application"
+                }
+            ],
+            "start_position": 7368,
+            "end_position": 7599,
+            "body_start": 7448,
+            "body_end": 7599
+        },
+        {
+            "name": "migrationsManager",
+            "return_type": "MigrationsManager",
+            "parameters": [
+                {
+                    "type": "MigrationsDb",
+                    "name": "migrationsDb"
+                },
+                {
+                    "type": "AppInfo",
+                    "name": "appInfo"
+                },
+                {
+                    "type": "AsyncRunner",
+                    "name": "asyncRunner"
+                },
+                {
+                    "type": "Migrations",
+                    "name": "migrations"
+                }
+            ],
+            "start_position": 7605,
+            "end_position": 7990,
+            "body_start": 7882,
+            "body_end": 7990
+        },
+        {
+            "name": "notificationsManager",
+            "return_type": "AppNotificationManager",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "NotificationManager",
+                    "name": "platformNotificationsManager"
+                },
+                {
+                    "type": "Provider<ViewThemeUtils>",
+                    "name": "viewThemeUtilsProvider"
+                }
+            ],
+            "start_position": 7996,
+            "end_position": 8566,
+            "body_start": 8281,
+            "body_end": 8566
+        },
+        {
+            "name": "localBroadcastManager",
+            "return_type": "LocalBroadcastManager",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 8572,
+            "end_position": 8713,
+            "body_start": 8647,
+            "body_end": 8713
+        },
+        {
+            "name": "throttler",
+            "return_type": "Throttler",
+            "parameters": [
+                {
+                    "type": "Clock",
+                    "name": "clock"
+                }
+            ],
+            "start_position": 8719,
+            "end_position": 8810,
+            "body_start": 8766,
+            "body_end": 8810
+        },
+        {
+            "name": "passCodeManager",
+            "return_type": "PassCodeManager",
+            "parameters": [
+                {
+                    "type": "AppPreferences",
+                    "name": "preferences"
+                },
+                {
+                    "type": "Clock",
+                    "name": "clock"
+                }
+            ],
+            "start_position": 8816,
+            "end_position": 8981,
+            "body_start": 8918,
+            "body_end": 8981
+        },
+        {
+            "name": "fileOperationHelper",
+            "return_type": "FileOperationHelper",
+            "parameters": [
+                {
+                    "type": "CurrentAccountProvider",
+                    "name": "currentAccountProvider"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 8987,
+            "end_position": 9252,
+            "body_start": 9105,
+            "body_end": 9252
+        },
+        {
+            "name": "userAndGroupSearchConfig",
+            "return_type": "UsersAndGroupsSearchConfig",
+            "parameters": [],
+            "start_position": 9258,
+            "end_position": 9397,
+            "body_start": 9341,
+            "body_end": 9397
+        },
+        {
+            "name": "certificateValidator",
+            "return_type": "CertificateValidator",
+            "parameters": [],
+            "start_position": 9404,
+            "end_position": 9527,
+            "body_start": 9477,
+            "body_end": 9527
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement"
+    ],
+    "method_calls": {
+        "application": [
+            "getSystemService",
+            "getPackageManager",
+            "getResources",
+            "getSharedPreferences"
+        ],
+        "context": [
+            "getContentResolver",
+            "getFilesDir",
+            "getSystemService",
+            "getResources"
+        ],
+        "currentAccountProvider": [
+            "getUser"
+        ],
+        "logger": [
+            "start"
+        ],
+        "EventBus": [
+            "getDefault"
+        ],
+        "migrations": [
+            "getSteps"
+        ],
+        "viewThemeUtilsProvider": [
+            "get"
+        ],
+        "LocalBroadcastManager": [
+            "getInstance"
+        ],
+        "unknown": [
+            "fileDataStorageManager"
+        ]
+    },
+    "local_variables": {
+        "logDir": "File",
+        "handler": "FileLogHandler",
+        "logger": "LoggerImpl",
+        "uiHandler": "Handler",
+        "store": "SharedPreferences"
+    }
+}

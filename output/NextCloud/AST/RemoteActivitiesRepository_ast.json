@@ -1,0 +1,70 @@
+{
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "methods": [
+        {
+            "name": "getActivities",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "lastGiven"
+                },
+                {
+                    "type": "LoadActivitiesCallback",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 639,
+            "end_position": 1280,
+            "body_start": 736,
+            "body_end": 1280
+        },
+        {
+            "name": "onLoaded",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "activities"
+                },
+                {
+                    "type": "NextcloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "int",
+                    "name": "lastGiven"
+                }
+            ],
+            "start_position": 922,
+            "end_position": 1120,
+            "body_start": 1029,
+            "body_end": 1120
+        },
+        {
+            "name": "onError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "error"
+                }
+            ],
+            "start_position": 1134,
+            "end_position": 1262,
+            "body_start": 1190,
+            "body_end": 1262
+        }
+    ],
+    "method_calls": {
+        "activitiesServiceApi": [
+            "getAllActivities"
+        ],
+        "callback": [
+            "onActivitiesLoaded",
+            "onActivitiesLoadedError"
+        ]
+    }
+}

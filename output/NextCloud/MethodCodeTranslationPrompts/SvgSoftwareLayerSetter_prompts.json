@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "onException",
+        "method_code": "@Override\n    public boolean onException(Exception e, T model, Target<Drawable> target, boolean isFirstResource) {\n        ImageView view = ((ImageViewTarget<?>) target).getView();\n        view.setLayerType(ImageView.LAYER_TYPE_NONE, null);\n\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onException from SvgSoftwareLayerSetter.java into Swift.\n\n        Input:\n\n        Method Name: onException\n\n        Method Code: @Override\n    public boolean onException(Exception e, T model, Target<Drawable> target, boolean isFirstResource) {\n        ImageView view = ((ImageViewTarget<?>) target).getView();\n        view.setLayerType(ImageView.LAYER_TYPE_NONE, null);\n\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onException(e: Error, model: T, target: Target<Drawable>, isFirstResource: Bool) -> Bool {\n    if let view = (target as? ImageViewTarget<Any>)?.view {\n        view.layerType = .none\n    }\n    return false\n}\n```"
+    },
+    {
+        "method_name": "onResourceReady",
+        "method_code": "@Override\n    public boolean onResourceReady(Drawable resource, T model, Target<Drawable> target,\n                                   boolean isFromMemoryCache, boolean isFirstResource) {\n        ImageView view = ((ImageViewTarget<?>) target).getView();\n        view.setLayerType(ImageView.LAYER_TYPE_SOFTWARE, null);\n\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onResourceReady from SvgSoftwareLayerSetter.java into Swift.\n\n        Input:\n\n        Method Name: onResourceReady\n\n        Method Code: @Override\n    public boolean onResourceReady(Drawable resource, T model, Target<Drawable> target,\n                                   boolean isFromMemoryCache, boolean isFirstResource) {\n        ImageView view = ((ImageViewTarget<?>) target).getView();\n        view.setLayerType(ImageView.LAYER_TYPE_SOFTWARE, null);\n\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onResourceReady(resource: Drawable, model: T, target: Target<Drawable>, isFromMemoryCache: Bool, isFirstResource: Bool) -> Bool {\n    if let view = (target as? ImageViewTarget<Drawable>)?.view {\n        view.layerType = .software\n    }\n    return false\n}\n```"
+    }
+]

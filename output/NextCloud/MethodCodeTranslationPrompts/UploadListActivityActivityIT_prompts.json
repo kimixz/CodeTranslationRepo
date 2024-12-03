@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "openDrawer",
+        "method_code": "@Test\n    @ScreenshotTest\n    public void openDrawer() {\n        super.openDrawer(activityRule);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled openDrawer from UploadListActivityActivityIT.java into Swift.\n\n        Input:\n\n        Method Name: openDrawer\n\n        Method Code: @Test\n    @ScreenshotTest\n    public void openDrawer() {\n        super.openDrawer(activityRule);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc openDrawer() {\n    super.openDrawer(activityRule)\n}\n```"
+    }
+]

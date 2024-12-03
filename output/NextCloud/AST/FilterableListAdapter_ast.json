@@ -1,0 +1,16 @@
+{
+    "methods": [
+        {
+            "name": "filter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "text"
+                }
+            ],
+            "start_position": 300,
+            "end_position": 325
+        }
+    ]
+}

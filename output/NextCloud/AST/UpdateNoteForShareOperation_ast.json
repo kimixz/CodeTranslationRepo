@@ -1,0 +1,55 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1173,
+            "end_position": 2018,
+            "body_start": 1246,
+            "body_end": 2018
+        }
+    ],
+    "local_variables": {
+        "share": "OCShare",
+        "updateOperation": "UpdateShareRemoteOperation",
+        "result": "RemoteOperationResult",
+        "getShareOp": "RemoteOperation"
+    },
+    "method_calls": {
+        "getStorageManager()": [
+            "getShareById",
+            "saveShare"
+        ],
+        "unknown": [
+            "getStorageManager"
+        ],
+        "share": [
+            "getRemoteId"
+        ],
+        "updateOperation": [
+            "setNote",
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getData"
+        ],
+        "getShareOp": [
+            "execute"
+        ],
+        "result.getData()": [
+            "get"
+        ]
+    }
+}

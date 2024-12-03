@@ -1,0 +1,101 @@
+{
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "mUrl": [
+            "toString",
+            "getProtocol",
+            "toExternalForm",
+            "openConnection"
+        ],
+        "uri": [
+            "toString"
+        ],
+        "\"ftp\"": [
+            "equalsIgnoreCase"
+        ],
+        "\"ftps\"": [
+            "equalsIgnoreCase"
+        ],
+        "external": [
+            "substring"
+        ],
+        "protocol": [
+            "length"
+        ],
+        "HTTP_SEP": [
+            "length"
+        ],
+        "new URL(protocol + HTTP_SEP + userPass + \"@\" + end)": [
+            "openConnection"
+        ],
+        "\"http\"": [
+            "equalsIgnoreCase"
+        ],
+        "\"https\"": [
+            "equalsIgnoreCase"
+        ],
+        "new Base64()": [
+            "encode"
+        ],
+        "userPass": [
+            "getBytes"
+        ],
+        "connection": [
+            "setRequestProperty"
+        ],
+        "context.getContentResolver()": [
+            "openInputStream"
+        ],
+        "context": [
+            "getContentResolver"
+        ],
+        "this": [
+            "getConnection"
+        ],
+        "c": [
+            "getInputStream"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getConnection",
+            "return_type": "URLConnection",
+            "parameters": [],
+            "start_position": 1302,
+            "end_position": 2282,
+            "body_start": 1358,
+            "body_end": 2282
+        },
+        {
+            "name": "getStream",
+            "return_type": "InputStream",
+            "parameters": [],
+            "start_position": 2288,
+            "end_position": 2556,
+            "body_start": 2338,
+            "body_end": 2556
+        },
+        {
+            "name": "toString",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 2562,
+            "end_position": 2632,
+            "body_start": 2601,
+            "body_end": 2632
+        }
+    ],
+    "local_variables": {
+        "protocol": "String",
+        "userPass": "String",
+        "external": "String",
+        "end": "String",
+        "encoded": "String",
+        "connection": "URLConnection",
+        "c": "URLConnection"
+    }
+}

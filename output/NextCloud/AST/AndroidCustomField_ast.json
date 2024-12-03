@@ -1,0 +1,169 @@
+{
+    "methods": [
+        {
+            "name": "item",
+            "return_type": "AndroidCustomField",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "type"
+                },
+                {
+                    "type": "String",
+                    "name": "value"
+                }
+            ],
+            "start_position": 672,
+            "end_position": 929,
+            "body_start": 737,
+            "body_end": 929
+        },
+        {
+            "name": "dir",
+            "return_type": "AndroidCustomField",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "type"
+                }
+            ],
+            "start_position": 1069,
+            "end_position": 1345,
+            "body_start": 1137,
+            "body_end": 1345
+        },
+        {
+            "name": "getType",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1351,
+            "end_position": 1403,
+            "body_start": 1375,
+            "body_end": 1403
+        },
+        {
+            "name": "setType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "type"
+                }
+            ],
+            "start_position": 1409,
+            "end_position": 1475,
+            "body_start": 1442,
+            "body_end": 1475
+        },
+        {
+            "name": "getValues",
+            "return_type": "List<String>",
+            "parameters": [],
+            "start_position": 1481,
+            "end_position": 1543,
+            "body_start": 1513,
+            "body_end": 1543
+        },
+        {
+            "name": "isDir",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1549,
+            "end_position": 1599,
+            "body_start": 1572,
+            "body_end": 1599
+        },
+        {
+            "name": "setDir",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "dir"
+                }
+            ],
+            "start_position": 1605,
+            "end_position": 1668,
+            "body_start": 1637,
+            "body_end": 1668
+        },
+        {
+            "name": "isItem",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1674,
+            "end_position": 1730,
+            "body_start": 1698,
+            "body_end": 1730
+        },
+        {
+            "name": "setItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "item"
+                }
+            ],
+            "start_position": 1736,
+            "end_position": 1800,
+            "body_start": 1770,
+            "body_end": 1800
+        },
+        {
+            "name": "isNickname",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1806,
+            "end_position": 1881,
+            "body_start": 1834,
+            "body_end": 1881
+        },
+        {
+            "name": "isContactEvent",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1887,
+            "end_position": 1971,
+            "body_start": 1919,
+            "body_end": 1971
+        },
+        {
+            "name": "isRelation",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1977,
+            "end_position": 2052,
+            "body_start": 2005,
+            "body_end": 2052
+        }
+    ],
+    "local_variables": {
+        "property": "AndroidCustomField"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "property.values": [
+            "add"
+        ],
+        "Collections": [
+            "addAll"
+        ],
+        "unknown": [
+            "isDir",
+            "setDir"
+        ],
+        "\"nickname\"": [
+            "equals"
+        ],
+        "\"contact_event\"": [
+            "equals"
+        ],
+        "\"relation\"": [
+            "equals"
+        ]
+    }
+}

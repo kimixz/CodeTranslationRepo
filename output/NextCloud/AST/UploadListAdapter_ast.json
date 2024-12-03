@@ -1,0 +1,996 @@
+{
+    "method_calls": {
+        "UploadListAdapter.class": [
+            "getSimpleName"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance",
+            "buildRemoteName"
+        ],
+        "uploadGroups[section]": [
+            "getItems"
+        ],
+        "headerViewHolder.binding.uploadListTitle": [
+            "setText",
+            "setOnClickListener"
+        ],
+        "String": [
+            "format",
+            "valueOf"
+        ],
+        "parentActivity": [
+            "getString",
+            "runOnUiThread",
+            "getUser",
+            "getFileOperationsHelper",
+            "getStorageManager",
+            "getResources",
+            "getHandler",
+            "getAppPreferences",
+            "startActivity",
+            "getSystemService"
+        ],
+        "group": [
+            "getGroupName",
+            "getGroupItemCount",
+            "getItem",
+            "refresh"
+        ],
+        "viewThemeUtils.platform": [
+            "colorPrimaryTextViewElement",
+            "themeHorizontalProgressBar"
+        ],
+        "unknown": [
+            "toggleSectionExpanded",
+            "isSectionExpanded",
+            "loadUploadItemsFromDb",
+            "showFailedPopupMenu",
+            "showCancelledPopupMenu",
+            "clearTempEncryptedFolder",
+            "retryCancelledUploads",
+            "showNotExistMessage",
+            "shouldShowHeadersForEmptySections",
+            "fixAndSortItems",
+            "getStatusText",
+            "showItemConflictPopup",
+            "removeUpload",
+            "checkAndOpenConflictResolutionDialog",
+            "onUploadedItemClick",
+            "onUploadingItemClick",
+            "getThumbnailFromFileTypeAndSetIcon",
+            "refreshFolderAndUpdateUI",
+            "openConflictActivity",
+            "displayFileNotFoundError",
+            "cancelOldErrorNotification",
+            "getUploadFailedStatusText",
+            "notifyDataSetChanged",
+            "openFileWithDefault",
+            "setItems"
+        ],
+        "headerViewHolder.binding.uploadListState": [
+            "setImageResource"
+        ],
+        "headerViewHolder.binding.uploadListAction": [
+            "setImageResource",
+            "setOnClickListener"
+        ],
+        "new Thread(() -> {\n                    OCUpload ocUpload = group.getItem(0);\n                    if (ocUpload == null) {\n                        return;\n                    }\n\n                    String accountName = ocUpload.getAccountName();\n                    if (accountName == null) {\n                        return;\n                    }\n\n                    uploadHelper.cancelFileUploads(Arrays.asList(group.items), accountName);\n                    parentActivity.runOnUiThread(this::loadUploadItemsFromDb);\n                })": [
+            "start"
+        ],
+        "ocUpload": [
+            "getAccountName"
+        ],
+        "uploadHelper": [
+            "cancelFileUploads",
+            "retryFailedUploads",
+            "retryCancelledUploads",
+            "isUploadingNow",
+            "removeUploadTransferProgressListener",
+            "addUploadTransferProgressListener",
+            "cancelFileUpload",
+            "retryUpload"
+        ],
+        "Arrays": [
+            "asList",
+            "sort"
+        ],
+        "uploadsStorageManager": [
+            "clearSuccessfulUploads",
+            "clearFailedButNotDelayedUploads",
+            "clearCancelledUploadsForCurrentAccount",
+            "getCurrentAndPendingUploadsForCurrentAccount",
+            "getFailedButNotDelayedUploadsForCurrentAccount",
+            "getCancelledUploadsForCurrentAccount",
+            "getFinishedUploadsForCurrentAccount",
+            "removeUpload"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "failedPopup": [
+            "inflate",
+            "setOnMenuItemClickListener",
+            "show"
+        ],
+        "i": [
+            "getItemId"
+        ],
+        "new Thread(() -> {\n                    uploadHelper.retryFailedUploads(\n                        uploadsStorageManager,\n                        connectivityService,\n                        accountManager,\n                        powerManagementService);\n                    parentActivity.runOnUiThread(this::loadUploadItemsFromDb);\n                })": [
+            "start"
+        ],
+        "popup": [
+            "inflate",
+            "setOnMenuItemClickListener",
+            "show"
+        ],
+        "user": [
+            "ifPresent",
+            "isPresent",
+            "get"
+        ],
+        "FileDataStorageManager": [
+            "clearTempEncryptedFolder"
+        ],
+        "value": [
+            "getAccountName"
+        ],
+        "new Thread(() -> {\n            boolean showNotExistMessage = uploadHelper.retryCancelledUploads(\n                uploadsStorageManager,\n                connectivityService,\n                accountManager,\n                powerManagementService);\n\n            parentActivity.runOnUiThread(this::loadUploadItemsFromDb);\n            parentActivity.runOnUiThread(() -> {\n                if (showNotExistMessage) {\n                    showNotExistMessage();\n                }\n            });\n        })": [
+            "start"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage",
+            "bytesToHumanReadable",
+            "getRelativeDateTimeString",
+            "getAccountNameDisplayText"
+        ],
+        "Log_OC": [
+            "d",
+            "v",
+            "i"
+        ],
+        "accountManager": [
+            "getAccounts",
+            "getUser"
+        ],
+        "uploadGroup": [
+            "getItem"
+        ],
+        "itemViewHolder.binding.uploadName": [
+            "setText"
+        ],
+        "item": [
+            "getLocalPath",
+            "getRemotePath",
+            "getFileSize",
+            "getUploadEndTimestamp",
+            "getAccountName",
+            "getUploadStatus",
+            "getLastResult",
+            "getMimeType"
+        ],
+        "remoteFile": [
+            "getName"
+        ],
+        "fileName": [
+            "isEmpty"
+        ],
+        "itemViewHolder.binding.uploadRemotePath": [
+            "setText",
+            "setVisibility"
+        ],
+        "new File(item.getRemotePath())": [
+            "getParent"
+        ],
+        "itemViewHolder.binding.uploadFileSize": [
+            "setText",
+            "setVisibility"
+        ],
+        "itemViewHolder.binding.uploadDate": [
+            "setText",
+            "setVisibility"
+        ],
+        "itemViewHolder.binding.uploadAccount": [
+            "setVisibility",
+            "setText"
+        ],
+        "optionalUser": [
+            "isPresent",
+            "get"
+        ],
+        "itemViewHolder.binding.uploadStatus": [
+            "setVisibility",
+            "setText"
+        ],
+        "itemViewHolder.binding.uploadProgressBar": [
+            "setVisibility",
+            "setProgress",
+            "invalidate"
+        ],
+        "progressListener.getUpload()": [
+            "getAccountName",
+            "getRemotePath"
+        ],
+        "progressListener": [
+            "getUpload",
+            "isWrapping"
+        ],
+        "itemViewHolder.binding.uploadRightButton": [
+            "setImageResource",
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "itemViewHolder.binding.uploadListItemLayout": [
+            "setOnClickListener"
+        ],
+        "itemViewHolder.binding.thumbnail": [
+            "setImageResource",
+            "setOnClickListener",
+            "setImageBitmap",
+            "setImageDrawable",
+            "setBackgroundColor"
+        ],
+        "optUser": [
+            "orElseThrow"
+        ],
+        "parentActivity.getFileOperationsHelper()": [
+            "checkCurrentCredentials"
+        ],
+        "file": [
+            "exists",
+            "hashCode",
+            "setStoragePath",
+            "getLocalPath"
+        ],
+        "v.getRootView()": [
+            "findViewById"
+        ],
+        "v": [
+            "getRootView"
+        ],
+        "fakeFileToCheatThumbnailsCacheManagerInterface": [
+            "setStoragePath",
+            "setMimeType",
+            "getRemoteId",
+            "isUpdateThumbnailNeeded"
+        ],
+        "ThumbnailsCacheManager": [
+            "cancelPotentialThumbnailWork",
+            "getBitmapFromDiskCache"
+        ],
+        "MimeTypeUtil": [
+            "isImage",
+            "isVideo",
+            "getFileTypeIcon",
+            "getIcon",
+            "getBestMimeTypeByFilename"
+        ],
+        "task": [
+            "execute",
+            "setListener"
+        ],
+        "\"image/png\"": [
+            "equals",
+            "equalsIgnoreCase"
+        ],
+        "parentActivity.getResources()": [
+            "getColor"
+        ],
+        "storageManager": [
+            "getFileByEncryptedRemotePath"
+        ],
+        "new File(remotePath)": [
+            "getParent"
+        ],
+        "folder": [
+            "isFolder"
+        ],
+        "this": [
+            "openConflictActivity",
+            "refreshFolder"
+        ],
+        "holder.binding.uploadStatus": [
+            "setText"
+        ],
+        "result": [
+            "isSuccess"
+        ],
+        "context": [
+            "getString",
+            "startActivity"
+        ],
+        "view.binding.uploadListItemLayout": [
+            "setClickable"
+        ],
+        "view.binding.uploadStatus": [
+            "setText"
+        ],
+        "new RefreshFolderOperation(folder,\n                                   clock.getCurrentTime(),\n                                   false,\n                                   false,\n                                   true,\n                                   storageManager,\n                                   user,\n                                   context)": [
+            "execute"
+        ],
+        "clock": [
+            "getCurrentTime"
+        ],
+        "listener": [
+            "onRemoteOperationFinish"
+        ],
+        "upload": [
+            "getLocalPath",
+            "getAccountName",
+            "getUploadId",
+            "getUploadStatus",
+            "getLastResult",
+            "getRemotePath",
+            "setDataFixed"
+        ],
+        "ConflictsResolveActivity": [
+            "createIntent"
+        ],
+        "parentActivity.getAppPreferences()": [
+            "isGlobalUploadPaused"
+        ],
+        "UploadListHeaderBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "parent": [
+            "getContext"
+        ],
+        "UploadListItemBinding": [
+            "inflate"
+        ],
+        "f": [
+            "exists"
+        ],
+        "parentActivity.getStorageManager()": [
+            "getFileByEncryptedRemotePath"
+        ],
+        "PreviewImageFragment": [
+            "canBePreviewed"
+        ],
+        "FileDisplayActivity": [
+            "openFileIntent"
+        ],
+        "parentActivity.getUser()": [
+            "get"
+        ],
+        "intent": [
+            "setAction",
+            "putExtra",
+            "addFlags"
+        ],
+        "\"application/octet-stream\"": [
+            "equals"
+        ],
+        "myIntent": [
+            "setDataAndType"
+        ],
+        "Uri": [
+            "fromFile"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "mNotificationManager": [
+            "cancel"
+        ],
+        "NotificationUtils": [
+            "createUploadNotificationTag"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getSectionCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 3652,
+            "end_position": 3738,
+            "body_start": 3695,
+            "body_end": 3738
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "section"
+                }
+            ],
+            "start_position": 3744,
+            "end_position": 3858,
+            "body_start": 3795,
+            "body_end": 3858
+        },
+        {
+            "name": "onBindHeaderViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SectionedViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "section"
+                },
+                {
+                    "type": "boolean",
+                    "name": "expanded"
+                }
+            ],
+            "start_position": 3864,
+            "end_position": 6275,
+            "body_start": 3972,
+            "body_end": 6275
+        },
+        {
+            "name": "showFailedPopupMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "HeaderViewHolder",
+                    "name": "headerViewHolder"
+                }
+            ],
+            "start_position": 6281,
+            "end_position": 7440,
+            "body_start": 6349,
+            "body_end": 7440
+        },
+        {
+            "name": "showCancelledPopupMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "HeaderViewHolder",
+                    "name": "headerViewHolder"
+                }
+            ],
+            "start_position": 7446,
+            "end_position": 8211,
+            "body_start": 7517,
+            "body_end": 8211
+        },
+        {
+            "name": "clearTempEncryptedFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8217,
+            "end_position": 8426,
+            "body_start": 8257,
+            "body_end": 8426
+        },
+        {
+            "name": "retryCancelledUploads",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8475,
+            "end_position": 9034,
+            "body_start": 8512,
+            "body_end": 9034
+        },
+        {
+            "name": "showNotExistMessage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9040,
+            "end_position": 9184,
+            "body_start": 9075,
+            "body_end": 9184
+        },
+        {
+            "name": "onBindFooterViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SectionedViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "section"
+                }
+            ],
+            "start_position": 9190,
+            "end_position": 9309,
+            "body_start": 9280,
+            "body_end": 9309
+        },
+        {
+            "name": "refresh",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10583,
+            "end_position": 10745,
+            "body_start": 10627,
+            "body_end": 10745
+        },
+        {
+            "name": "refresh",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10939,
+            "end_position": 11103,
+            "body_start": 10983,
+            "body_end": 11103
+        },
+        {
+            "name": "refresh",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11359,
+            "end_position": 11513,
+            "body_start": 11403,
+            "body_end": 11513
+        },
+        {
+            "name": "refresh",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11711,
+            "end_position": 11864,
+            "body_start": 11755,
+            "body_end": 11864
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SectionedViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "section"
+                },
+                {
+                    "type": "int",
+                    "name": "relativePosition"
+                },
+                {
+                    "type": "int",
+                    "name": "absolutePosition"
+                }
+            ],
+            "start_position": 11983,
+            "end_position": 27767,
+            "body_start": 12111,
+            "body_end": 27767
+        },
+        {
+            "name": "onSuccess",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 26587,
+            "end_position": 26754,
+            "body_start": 26641,
+            "body_end": 26754
+        },
+        {
+            "name": "onError",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 26776,
+            "end_position": 26948,
+            "body_start": 26828,
+            "body_end": 26948
+        },
+        {
+            "name": "getThumbnailFromFileTypeAndSetIcon",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                },
+                {
+                    "type": "ItemViewHolder",
+                    "name": "itemViewHolder"
+                }
+            ],
+            "start_position": 27773,
+            "end_position": 28077,
+            "body_start": 27870,
+            "body_end": 28077
+        },
+        {
+            "name": "checkAndOpenConflictResolutionDialog",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "ItemViewHolder",
+                    "name": "itemViewHolder"
+                },
+                {
+                    "type": "OCUpload",
+                    "name": "item"
+                },
+                {
+                    "type": "String",
+                    "name": "status"
+                }
+            ],
+            "start_position": 28083,
+            "end_position": 29216,
+            "body_start": 28379,
+            "body_end": 29216
+        },
+        {
+            "name": "refreshFolderAndUpdateUI",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ItemViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "OCUpload",
+                    "name": "item"
+                },
+                {
+                    "type": "String",
+                    "name": "status"
+                }
+            ],
+            "start_position": 29222,
+            "end_position": 29936,
+            "body_start": 29358,
+            "body_end": 29936
+        },
+        {
+            "name": "displayFileNotFoundError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "itemView"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 29942,
+            "end_position": 30163,
+            "body_start": 30012,
+            "body_end": 30163
+        },
+        {
+            "name": "showItemConflictPopup",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "ItemViewHolder",
+                    "name": "itemViewHolder"
+                },
+                {
+                    "type": "OCUpload",
+                    "name": "item"
+                },
+                {
+                    "type": "String",
+                    "name": "status"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 30169,
+            "end_position": 30964,
+            "body_start": 30443,
+            "body_end": 30964
+        },
+        {
+            "name": "removeUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "item"
+                }
+            ],
+            "start_position": 30970,
+            "end_position": 31142,
+            "body_start": 31010,
+            "body_end": 31142
+        },
+        {
+            "name": "refreshFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "ItemViewHolder",
+                    "name": "view"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "OnRemoteOperationListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 31148,
+            "end_position": 32092,
+            "body_start": 31316,
+            "body_end": 32092
+        },
+        {
+            "name": "openConflictActivity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "OCUpload",
+                    "name": "upload"
+                }
+            ],
+            "start_position": 32098,
+            "end_position": 32849,
+            "body_start": 32162,
+            "body_end": 32849
+        },
+        {
+            "name": "getStatusText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "upload"
+                }
+            ],
+            "start_position": 33095,
+            "end_position": 34800,
+            "body_start": 33141,
+            "body_end": 34800
+        },
+        {
+            "name": "getUploadFailedStatusText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "UploadResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 34806,
+            "end_position": 39138,
+            "body_start": 34881,
+            "body_end": 39138
+        },
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "SectionedViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 39144,
+            "end_position": 39654,
+            "body_start": 39258,
+            "body_end": 39654
+        },
+        {
+            "name": "loadUploadItemsFromDb",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 39737,
+            "end_position": 39956,
+            "body_start": 39779,
+            "body_end": 39956
+        },
+        {
+            "name": "onUploadingItemClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "file"
+                }
+            ],
+            "start_position": 40002,
+            "end_position": 40312,
+            "body_start": 40051,
+            "body_end": 40312
+        },
+        {
+            "name": "onUploadedItemClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "upload"
+                }
+            ],
+            "start_position": 40359,
+            "end_position": 41394,
+            "body_start": 40409,
+            "body_end": 41394
+        },
+        {
+            "name": "openFileWithDefault",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                }
+            ],
+            "start_position": 41521,
+            "end_position": 42215,
+            "body_start": 41572,
+            "body_end": 42215
+        },
+        {
+            "name": "refresh",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 42755,
+            "end_position": 42770
+        },
+        {
+            "name": "getGroupName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 43173,
+            "end_position": 43239,
+            "body_start": 43203,
+            "body_end": 43239
+        },
+        {
+            "name": "getItems",
+            "return_type": "OCUpload[]",
+            "parameters": [],
+            "start_position": 43249,
+            "end_position": 43315,
+            "body_start": 43278,
+            "body_end": 43315
+        },
+        {
+            "name": "getItem",
+            "return_type": "OCUpload",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 43325,
+            "end_position": 43535,
+            "body_start": 43363,
+            "body_end": 43535
+        },
+        {
+            "name": "setItems",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 43545,
+            "end_position": 43628,
+            "body_start": 43585,
+            "body_end": 43628
+        },
+        {
+            "name": "fixAndSortItems",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 43638,
+            "end_position": 43886,
+            "body_start": 43678,
+            "body_end": 43886
+        },
+        {
+            "name": "getGroupItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 43896,
+            "end_position": 43992,
+            "body_start": 43928,
+            "body_end": 43992
+        },
+        {
+            "name": "cancelOldErrorNotification",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "upload"
+                }
+            ],
+            "start_position": 44004,
+            "end_position": 44518,
+            "body_start": 44060,
+            "body_end": 44518
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "if_statement",
+        "break_statement",
+        "enhanced_for_statement",
+        "try_statement"
+    ],
+    "local_variables": {
+        "headerViewHolder": "HeaderViewHolder",
+        "group": "UploadGroup",
+        "ocUpload": "OCUpload",
+        "accountName": "String",
+        "failedPopup": "PopupMenu",
+        "itemId": "int",
+        "popup": "PopupMenu",
+        "user": "Optional<User>",
+        "showNotExistMessage": "boolean",
+        "uploadGroup": "UploadGroup",
+        "item": "OCUpload",
+        "itemViewHolder": "ItemViewHolder",
+        "remoteFile": "File",
+        "fileName": "String",
+        "updateTime": "long",
+        "dateString": "CharSequence",
+        "optionalUser": "Optional<User>",
+        "status": "String",
+        "targetKey": "String",
+        "uploadResult": "UploadResult",
+        "optUser": "Optional<User>",
+        "file": "File",
+        "fakeFileToCheatThumbnailsCacheManagerInterface": "OCFile",
+        "allowedToCreateNewThumbnail": "boolean",
+        "thumbnail": "Bitmap",
+        "task": "ThumbnailsCacheManager.ThumbnailGenerationTask",
+        "asyncDrawable": "ThumbnailsCacheManager.AsyncThumbnailDrawable",
+        "icon": "Drawable",
+        "drawable": "Drawable",
+        "remotePath": "String",
+        "localFile": "OCFile",
+        "folder": "OCFile",
+        "context": "Context",
+        "fileOnServer": "OCFile",
+        "message": "String",
+        "intent": "Intent",
+        "f": "File",
+        "myIntent": "Intent",
+        "mimetype": "String"
+    }
+}

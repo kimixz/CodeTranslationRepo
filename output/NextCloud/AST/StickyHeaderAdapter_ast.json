@@ -1,0 +1,56 @@
+{
+    "methods": [
+        {
+            "name": "getHeaderPositionForItem",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "itemPosition"
+                }
+            ],
+            "start_position": 772,
+            "end_position": 819
+        },
+        {
+            "name": "getHeaderLayout",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "headerPosition"
+                }
+            ],
+            "start_position": 1107,
+            "end_position": 1147
+        },
+        {
+            "name": "bindHeaderData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "header"
+                },
+                {
+                    "type": "int",
+                    "name": "headerPosition"
+                }
+            ],
+            "start_position": 1396,
+            "end_position": 1449
+        },
+        {
+            "name": "isHeader",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "itemPosition"
+                }
+            ],
+            "start_position": 1706,
+            "end_position": 1741
+        }
+    ]
+}

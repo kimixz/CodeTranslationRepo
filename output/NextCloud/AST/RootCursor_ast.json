@@ -1,0 +1,62 @@
+{
+    "methods": [
+        {
+            "name": "addRoot",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DocumentsStorageProvider.Document",
+                    "name": "document"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 1156,
+            "end_position": 1863,
+            "body_start": 1237,
+            "body_end": 1863
+        }
+    ],
+    "local_variables": {
+        "user": "User",
+        "rootFlags": "int"
+    },
+    "method_calls": {
+        "document": [
+            "getUser",
+            "getDocumentId"
+        ],
+        "newRow().add(Root.COLUMN_ROOT_ID, user.getAccountName())\n            .add(Root.COLUMN_DOCUMENT_ID, document.getDocumentId())\n            .add(Root.COLUMN_SUMMARY, user.getAccountName())\n            .add(Root.COLUMN_TITLE, context.getString(R.string.app_name))\n            .add(Root.COLUMN_ICON, R.mipmap.ic_launcher)": [
+            "add"
+        ],
+        "newRow().add(Root.COLUMN_ROOT_ID, user.getAccountName())\n            .add(Root.COLUMN_DOCUMENT_ID, document.getDocumentId())\n            .add(Root.COLUMN_SUMMARY, user.getAccountName())\n            .add(Root.COLUMN_TITLE, context.getString(R.string.app_name))": [
+            "add"
+        ],
+        "newRow().add(Root.COLUMN_ROOT_ID, user.getAccountName())\n            .add(Root.COLUMN_DOCUMENT_ID, document.getDocumentId())\n            .add(Root.COLUMN_SUMMARY, user.getAccountName())": [
+            "add"
+        ],
+        "newRow().add(Root.COLUMN_ROOT_ID, user.getAccountName())\n            .add(Root.COLUMN_DOCUMENT_ID, document.getDocumentId())": [
+            "add"
+        ],
+        "newRow().add(Root.COLUMN_ROOT_ID, user.getAccountName())": [
+            "add"
+        ],
+        "newRow()": [
+            "add"
+        ],
+        "unknown": [
+            "newRow"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "context": [
+            "getString"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement"
+    ]
+}

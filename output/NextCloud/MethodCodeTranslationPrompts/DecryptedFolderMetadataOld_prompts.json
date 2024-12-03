@@ -1,0 +1,200 @@
+[
+    {
+        "method_name": "getMetadata",
+        "method_code": "public Metadata getMetadata() {\n        return this.metadata;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMetadata from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getMetadata\n\n        Method Code: public Metadata getMetadata() {\n        return this.metadata;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMetadata() -> Metadata {\n    return self.metadata\n}\n```"
+    },
+    {
+        "method_name": "getFiles",
+        "method_code": "public Map<String, DecryptedFile> getFiles() {\n        return this.files;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFiles from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getFiles\n\n        Method Code: public Map<String, DecryptedFile> getFiles() {\n        return this.files;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFiles() -> [String: DecryptedFile] {\n    return self.files\n}\n```"
+    },
+    {
+        "method_name": "setMetadata",
+        "method_code": "public void setMetadata(Metadata metadata) {\n        this.metadata = metadata;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMetadata from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setMetadata\n\n        Method Code: public void setMetadata(Metadata metadata) {\n        this.metadata = metadata;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMetadata(_ metadata: Metadata) {\n    self.metadata = metadata\n}\n```"
+    },
+    {
+        "method_name": "setFiles",
+        "method_code": "public void setFiles(Map<String, DecryptedFile> files) {\n        this.files = files;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFiles from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setFiles\n\n        Method Code: public void setFiles(Map<String, DecryptedFile> files) {\n        this.files = files;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFiles(_ files: [String: DecryptedFile]) {\n    self.files = files\n}\n```"
+    },
+    {
+        "method_name": "setFiledrop",
+        "method_code": "@VisibleForTesting\n    public void setFiledrop(Map<String, DecryptedFile> filedrop) {\n        this.filedrop = filedrop;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFiledrop from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setFiledrop\n\n        Method Code: @VisibleForTesting\n    public void setFiledrop(Map<String, DecryptedFile> filedrop) {\n        this.filedrop = filedrop;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@objc func setFiledrop(_ filedrop: [String: DecryptedFile]) {\n    self.filedrop = filedrop\n}\n```"
+    },
+    {
+        "method_name": "getFiledrop",
+        "method_code": "public Map<String, DecryptedFile> getFiledrop() {\n        return filedrop;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFiledrop from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getFiledrop\n\n        Method Code: public Map<String, DecryptedFile> getFiledrop() {\n        return filedrop;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFiledrop() -> [String: DecryptedFile] {\n    return filedrop\n}\n```"
+    },
+    {
+        "method_name": "toString",
+        "method_code": "@Override\n        public String toString() {\n            return String.valueOf(version);\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled toString from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: toString\n\n        Method Code: @Override\n        public String toString() {\n            return String.valueOf(version);\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride var description: String {\n    return String(version)\n}\n```"
+    },
+    {
+        "method_name": "getMetadataKeys",
+        "method_code": "public Map<Integer, String> getMetadataKeys() {\n            return this.metadataKeys;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMetadataKeys from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getMetadataKeys\n\n        Method Code: public Map<Integer, String> getMetadataKeys() {\n            return this.metadataKeys;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMetadataKeys() -> [Int: String] {\n    return self.metadataKeys\n}\n```"
+    },
+    {
+        "method_name": "getVersion",
+        "method_code": "public double getVersion() {\n            return this.version;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getVersion from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getVersion\n\n        Method Code: public double getVersion() {\n            return this.version;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getVersion() -> Double {\n    return self.version\n}\n```"
+    },
+    {
+        "method_name": "setMetadataKeys",
+        "method_code": "public void setMetadataKeys(Map<Integer, String> metadataKeys) {\n            this.metadataKeys = metadataKeys;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMetadataKeys from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setMetadataKeys\n\n        Method Code: public void setMetadataKeys(Map<Integer, String> metadataKeys) {\n            this.metadataKeys = metadataKeys;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMetadataKeys(_ metadataKeys: [Int: String]) {\n    self.metadataKeys = metadataKeys\n}\n```"
+    },
+    {
+        "method_name": "setVersion",
+        "method_code": "public void setVersion(double version) {\n            this.version = version;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setVersion from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setVersion\n\n        Method Code: public void setVersion(double version) {\n            this.version = version;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setVersion(_ version: Double) {\n    self.version = version\n}\n```"
+    },
+    {
+        "method_name": "getMetadataKey",
+        "method_code": "public String getMetadataKey() {\n            if (metadataKey == null) {\n                // fallback to old keys array\n                return metadataKeys.get(0);\n            }\n            return metadataKey;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMetadataKey from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getMetadataKey\n\n        Method Code: public String getMetadataKey() {\n            if (metadataKey == null) {\n                // fallback to old keys array\n                return metadataKeys.get(0);\n            }\n            return metadataKey;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMetadataKey() -> String {\n    if metadataKey == nil {\n        // fallback to old keys array\n        return metadataKeys[0]\n    }\n    return metadataKey!\n}\n```"
+    },
+    {
+        "method_name": "setMetadataKey",
+        "method_code": "public void setMetadataKey(String metadataKey) {\n            this.metadataKey = metadataKey;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMetadataKey from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setMetadataKey\n\n        Method Code: public void setMetadataKey(String metadataKey) {\n            this.metadataKey = metadataKey;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMetadataKey(_ metadataKey: String) {\n    self.metadataKey = metadataKey\n}\n```"
+    },
+    {
+        "method_name": "getChecksum",
+        "method_code": "public String getChecksum() {\n            return checksum;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getChecksum from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getChecksum\n\n        Method Code: public String getChecksum() {\n            return checksum;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getChecksum() -> String {\n    return checksum\n}\n```"
+    },
+    {
+        "method_name": "setChecksum",
+        "method_code": "public void setChecksum(String checksum) {\n            this.checksum = checksum;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setChecksum from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setChecksum\n\n        Method Code: public void setChecksum(String checksum) {\n            this.checksum = checksum;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setChecksum(_ checksum: String) {\n    self.checksum = checksum\n}\n```"
+    },
+    {
+        "method_name": "getMetadataKeys",
+        "method_code": "public Map<Integer, String> getMetadataKeys() {\n            return this.metadataKeys;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMetadataKeys from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getMetadataKeys\n\n        Method Code: public Map<Integer, String> getMetadataKeys() {\n            return this.metadataKeys;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMetadataKeys() -> [Int: String] {\n    return self.metadataKeys\n}\n```"
+    },
+    {
+        "method_name": "setMetadataKeys",
+        "method_code": "public void setMetadataKeys(Map<Integer, String> metadataKeys) {\n            this.metadataKeys = metadataKeys;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMetadataKeys from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setMetadataKeys\n\n        Method Code: public void setMetadataKeys(Map<Integer, String> metadataKeys) {\n            this.metadataKeys = metadataKeys;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMetadataKeys(_ metadataKeys: [Int: String]) {\n    self.metadataKeys = metadataKeys\n}\n```"
+    },
+    {
+        "method_name": "getEncrypted",
+        "method_code": "public Data getEncrypted() {\n            return this.encrypted;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getEncrypted from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getEncrypted\n\n        Method Code: public Data getEncrypted() {\n            return this.encrypted;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getEncrypted() -> Data {\n    return self.encrypted\n}\n```"
+    },
+    {
+        "method_name": "getInitializationVector",
+        "method_code": "public String getInitializationVector() {\n            return this.initializationVector;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getInitializationVector from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getInitializationVector\n\n        Method Code: public String getInitializationVector() {\n            return this.initializationVector;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getInitializationVector() -> String {\n    return self.initializationVector\n}\n```"
+    },
+    {
+        "method_name": "getAuthenticationTag",
+        "method_code": "public String getAuthenticationTag() {\n            return this.authenticationTag;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAuthenticationTag from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getAuthenticationTag\n\n        Method Code: public String getAuthenticationTag() {\n            return this.authenticationTag;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAuthenticationTag() -> String {\n    return self.authenticationTag\n}\n```"
+    },
+    {
+        "method_name": "getMetadataKey",
+        "method_code": "public int getMetadataKey() {\n            return this.metadataKey;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMetadataKey from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getMetadataKey\n\n        Method Code: public int getMetadataKey() {\n            return this.metadataKey;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMetadataKey() -> Int {\n    return self.metadataKey\n}\n```"
+    },
+    {
+        "method_name": "setEncrypted",
+        "method_code": "public void setEncrypted(Data encrypted) {\n            this.encrypted = encrypted;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setEncrypted from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setEncrypted\n\n        Method Code: public void setEncrypted(Data encrypted) {\n            this.encrypted = encrypted;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setEncrypted(encrypted: Data) {\n    self.encrypted = encrypted\n}\n```"
+    },
+    {
+        "method_name": "setInitializationVector",
+        "method_code": "public void setInitializationVector(String initializationVector) {\n            this.initializationVector = initializationVector;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setInitializationVector from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setInitializationVector\n\n        Method Code: public void setInitializationVector(String initializationVector) {\n            this.initializationVector = initializationVector;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setInitializationVector(_ initializationVector: String) {\n    self.initializationVector = initializationVector\n}\n```"
+    },
+    {
+        "method_name": "setAuthenticationTag",
+        "method_code": "public void setAuthenticationTag(String authenticationTag) {\n            this.authenticationTag = authenticationTag;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAuthenticationTag from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setAuthenticationTag\n\n        Method Code: public void setAuthenticationTag(String authenticationTag) {\n            this.authenticationTag = authenticationTag;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAuthenticationTag(_ authenticationTag: String) {\n    self.authenticationTag = authenticationTag\n}\n```"
+    },
+    {
+        "method_name": "setMetadataKey",
+        "method_code": "public void setMetadataKey(int metadataKey) {\n            this.metadataKey = metadataKey;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMetadataKey from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setMetadataKey\n\n        Method Code: public void setMetadataKey(int metadataKey) {\n            this.metadataKey = metadataKey;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMetadataKey(_ metadataKey: Int) {\n    self.metadataKey = metadataKey\n}\n```"
+    },
+    {
+        "method_name": "getKey",
+        "method_code": "public String getKey() {\n            return this.key;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getKey from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getKey\n\n        Method Code: public String getKey() {\n            return this.key;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getKey() -> String {\n    return self.key\n}\n```"
+    },
+    {
+        "method_name": "getFilename",
+        "method_code": "public String getFilename() {\n            return this.filename;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFilename from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getFilename\n\n        Method Code: public String getFilename() {\n            return this.filename;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFilename() -> String {\n    return self.filename\n}\n```"
+    },
+    {
+        "method_name": "getMimetype",
+        "method_code": "public String getMimetype() {\n            return this.mimetype;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMimetype from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getMimetype\n\n        Method Code: public String getMimetype() {\n            return this.mimetype;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMimetype() -> String {\n    return self.mimetype\n}\n```"
+    },
+    {
+        "method_name": "getVersion",
+        "method_code": "public double getVersion() {\n            return this.version;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getVersion from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: getVersion\n\n        Method Code: public double getVersion() {\n            return this.version;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getVersion() -> Double {\n    return self.version\n}\n```"
+    },
+    {
+        "method_name": "setKey",
+        "method_code": "public void setKey(String key) {\n            this.key = key;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setKey from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setKey\n\n        Method Code: public void setKey(String key) {\n            this.key = key;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setKey(_ key: String) {\n    self.key = key\n}\n```"
+    },
+    {
+        "method_name": "setFilename",
+        "method_code": "public void setFilename(String filename) {\n            this.filename = filename;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFilename from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setFilename\n\n        Method Code: public void setFilename(String filename) {\n            this.filename = filename;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFilename(_ filename: String) {\n    self.filename = filename\n}\n```"
+    },
+    {
+        "method_name": "setMimetype",
+        "method_code": "public void setMimetype(String mimetype) {\n            this.mimetype = mimetype;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMimetype from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setMimetype\n\n        Method Code: public void setMimetype(String mimetype) {\n            this.mimetype = mimetype;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMimetype(_ mimetype: String) {\n    self.mimetype = mimetype\n}\n```"
+    },
+    {
+        "method_name": "setVersion",
+        "method_code": "public void setVersion(int version) {\n            this.version = version;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setVersion from DecryptedFolderMetadataOld.java into Swift.\n\n        Input:\n\n        Method Name: setVersion\n\n        Method Code: public void setVersion(int version) {\n            this.version = version;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setVersion(_ version: Int) {\n    self.version = version\n}\n```"
+    }
+]

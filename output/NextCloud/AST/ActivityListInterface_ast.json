@@ -1,0 +1,16 @@
+{
+    "methods": [
+        {
+            "name": "onActivityClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RichObject",
+                    "name": "richObject"
+                }
+            ],
+            "start_position": 338,
+            "end_position": 384
+        }
+    ]
+}

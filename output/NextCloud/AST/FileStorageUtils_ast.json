@@ -1,0 +1,943 @@
+{
+    "method_calls": {
+        "FileStorageUtils.class": [
+            "getSimpleName"
+        ],
+        "MainApp": [
+            "getStoragePath",
+            "getDataFolder",
+            "getAppContext"
+        ],
+        "Uri": [
+            "encode"
+        ],
+        "unknown": [
+            "getSavePath",
+            "getSubPathFromDate",
+            "sortOcFolderDescDateModifiedWithoutFavoritesFirst",
+            "getFolderSize",
+            "copyFile",
+            "copyDirs",
+            "deleteRecursively",
+            "deleteRecursive",
+            "checkStoragePermission",
+            "getExtSdCardPathsForActivity",
+            "canListFiles",
+            "checkIfEnoughSpace",
+            "localFolderSize",
+            "getStandardDirectories"
+        ],
+        "file": [
+            "getDecryptedRemotePath",
+            "getAbsolutePath",
+            "getName",
+            "setDecryptedRemotePath",
+            "setCreationTimestamp",
+            "setFileLength",
+            "setMimeType",
+            "setModificationTimestamp",
+            "setEtag",
+            "setPermissions",
+            "setRemoteId",
+            "setLocalId",
+            "setFavorite",
+            "isFolder",
+            "setEncrypted",
+            "setMountType",
+            "setPreviewAvailable",
+            "setUnreadCommentsCount",
+            "setOwnerId",
+            "setOwnerDisplayName",
+            "setNote",
+            "setSharees",
+            "setRichWorkspace",
+            "setLocked",
+            "setLockType",
+            "setLockOwnerId",
+            "setLockOwnerDisplayName",
+            "setLockOwnerEditor",
+            "setLockTimestamp",
+            "setLockTimeout",
+            "setLockToken",
+            "setTags",
+            "setImageDimension",
+            "setGeoLocation",
+            "setLivePhoto",
+            "setHidden",
+            "setLength",
+            "setModifiedTimestamp",
+            "getStoragePath",
+            "setStoragePath",
+            "setLastSyncDateForData",
+            "isDirectory",
+            "listFiles",
+            "delete",
+            "getModificationTimestamp",
+            "getFileLength",
+            "isEncrypted",
+            "getParentId"
+        ],
+        "MainApp\n            .getAppContext()\n            .getFilesDir()": [
+            "getAbsolutePath"
+        ],
+        "MainApp\n            .getAppContext()": [
+            "getFilesDir"
+        ],
+        "context": [
+            "getFilesDir",
+            "getExternalFilesDirs"
+        ],
+        "savePath": [
+            "getUsableSpace"
+        ],
+        "df": [
+            "setTimeZone",
+            "format"
+        ],
+        "TimeZone": [
+            "getTimeZone",
+            "getDefault"
+        ],
+        "TimeZone.getDefault()": [
+            "getID"
+        ],
+        "new File(file.getAbsolutePath().replace(syncedFolderLocalPath, \"\"))": [
+            "getParentFile"
+        ],
+        "file.getAbsolutePath()": [
+            "replace",
+            "lastIndexOf",
+            "substring"
+        ],
+        "Log_OC": [
+            "e",
+            "d",
+            "w"
+        ],
+        "parentFile": [
+            "getAbsolutePath"
+        ],
+        "(remotePath +\n            OCFile.PATH_SEPARATOR +\n            subfolderByDatePath +\n            OCFile.PATH_SEPARATOR +\n            relativeSubfolderPath +\n            OCFile.PATH_SEPARATOR +\n            file.getName())": [
+            "replaceAll"
+        ],
+        "new File(remotePath)": [
+            "getParent"
+        ],
+        "parentPath": [
+            "endsWith"
+        ],
+        "remote": [
+            "getRemotePath",
+            "getCreationTimestamp",
+            "getMimeType",
+            "getSize",
+            "getLength",
+            "getModifiedTimestamp",
+            "getEtag",
+            "getPermissions",
+            "getRemoteId",
+            "getLocalId",
+            "isFavorite",
+            "isEncrypted",
+            "getMountType",
+            "isHasPreview",
+            "getUnreadCommentsCount",
+            "getOwnerId",
+            "getOwnerDisplayName",
+            "getNote",
+            "getSharees",
+            "getRichWorkspace",
+            "isLocked",
+            "getLockType",
+            "getLockOwner",
+            "getLockOwnerDisplayName",
+            "getLockOwnerEditor",
+            "getLockTimestamp",
+            "getLockTimeout",
+            "getLockToken",
+            "getTags",
+            "getImageDimension",
+            "getGeoLocation",
+            "getLivePhoto",
+            "getHidden"
+        ],
+        "MimeType.DIRECTORY": [
+            "equalsIgnoreCase"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "ocFile": [
+            "getRemotePath",
+            "getCreationTimestamp",
+            "getFileLength",
+            "getMimeType",
+            "getModificationTimestamp",
+            "getEtag",
+            "getPermissions",
+            "getRemoteId",
+            "isFavorite"
+        ],
+        "Collections": [
+            "sort",
+            "addAll"
+        ],
+        "Long": [
+            "compare"
+        ],
+        "o1": [
+            "getModificationTimestamp"
+        ],
+        "o2": [
+            "getModificationTimestamp"
+        ],
+        "FileSortOrder": [
+            "sortCloudFilesByFavourite"
+        ],
+        "dir": [
+            "exists",
+            "isDirectory",
+            "listFiles"
+        ],
+        "f": [
+            "isDirectory",
+            "length",
+            "exists",
+            "getAbsolutePath",
+            "lastModified",
+            "getName",
+            "canRead"
+        ],
+        "path": [
+            "lastIndexOf",
+            "substring",
+            "startsWith"
+        ],
+        "MimeTypeMap.getSingleton()": [
+            "getMimeTypeFromExtension"
+        ],
+        "MimeTypeMap": [
+            "getSingleton"
+        ],
+        "extension": [
+            "toLowerCase"
+        ],
+        "new File(file.getStoragePath())": [
+            "exists"
+        ],
+        "FileStorageUtils": [
+            "getDefaultSavePathFor",
+            "copyFile",
+            "getStorageDirectories",
+            "getFolderSize"
+        ],
+        "in": [
+            "read"
+        ],
+        "out": [
+            "write"
+        ],
+        "sourceFile": [
+            "delete"
+        ],
+        "targetFolder": [
+            "mkdirs"
+        ],
+        "sourceFolder": [
+            "listFiles"
+        ],
+        "storageManager": [
+            "deleteFileInMediaScan",
+            "getFileById"
+        ],
+        "realFile": [
+            "lastModified",
+            "length"
+        ],
+        "Thread": [
+            "sleep"
+        ],
+        "OCFile.ROOT_PATH": [
+            "equals"
+        ],
+        "System": [
+            "getenv"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "new File(DEFAULT_FALLBACK_STORAGE_PATH)": [
+            "exists"
+        ],
+        "rv": [
+            "add",
+            "clear",
+            "contains"
+        ],
+        "Environment.getExternalStorageDirectory()": [
+            "getAbsolutePath"
+        ],
+        "Environment": [
+            "getExternalStorageDirectory"
+        ],
+        "OCFile.PATH_SEPARATOR": [
+            "split"
+        ],
+        "Integer": [
+            "valueOf"
+        ],
+        "rawSecondaryStoragesStr": [
+            "split"
+        ],
+        "storageDevice": [
+            "length",
+            "startsWith"
+        ],
+        "FileStorageUtils.StandardDirectory": [
+            "fromPath"
+        ],
+        "resources": [
+            "getString"
+        ],
+        "standardDirectory": [
+            "getDisplayName"
+        ],
+        "new File(storageDevice)": [
+            "getName"
+        ],
+        "ActivityCompat": [
+            "checkSelfPermission"
+        ],
+        "new File(path)": [
+            "getCanonicalPath"
+        ],
+        "paths": [
+            "add",
+            "isEmpty",
+            "toArray"
+        ],
+        "FileOperationsHelper": [
+            "getAvailableSpaceOnDevice"
+        ],
+        "standardDirectories": [
+            "add"
+        ],
+        "directory.getName()": [
+            "equals"
+        ],
+        "directory": [
+            "getName"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getSavePath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 2500,
+            "end_position": 2917,
+            "body_start": 2553,
+            "body_end": 2917
+        },
+        {
+            "name": "getDefaultSavePathFor",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 3110,
+            "end_position": 3266,
+            "body_start": 3186,
+            "body_end": 3266
+        },
+        {
+            "name": "getTemporalPath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 3379,
+            "end_position": 3891,
+            "body_start": 3436,
+            "body_end": 3891
+        },
+        {
+            "name": "getTemporalEncryptedFolderPath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 3897,
+            "end_position": 4209,
+            "body_start": 3969,
+            "body_end": 4209
+        },
+        {
+            "name": "getInternalTemporalPath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 4311,
+            "end_position": 4811,
+            "body_start": 4393,
+            "body_end": 4811
+        },
+        {
+            "name": "getUsableSpace",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 4986,
+            "end_position": 5131,
+            "body_start": 5022,
+            "body_end": 5131
+        },
+        {
+            "name": "getSubPathFromDate",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "date"
+                },
+                {
+                    "type": "Locale",
+                    "name": "currentLocale"
+                },
+                {
+                    "type": "SubFolderRule",
+                    "name": "subFolderRule"
+                }
+            ],
+            "start_position": 5367,
+            "end_position": 6106,
+            "body_start": 5470,
+            "body_end": 6106
+        },
+        {
+            "name": "getInstantUploadFilePath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                },
+                {
+                    "type": "Locale",
+                    "name": "current"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "String",
+                    "name": "syncedFolderLocalPath"
+                },
+                {
+                    "type": "long",
+                    "name": "dateTaken"
+                },
+                {
+                    "type": "Boolean",
+                    "name": "subfolderByDate"
+                },
+                {
+                    "type": "SubFolderRule",
+                    "name": "subFolderRule"
+                }
+            ],
+            "start_position": 6351,
+            "end_position": 7807,
+            "body_start": 6843,
+            "body_end": 7807
+        },
+        {
+            "name": "getParentPath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 7814,
+            "end_position": 8127,
+            "body_start": 7868,
+            "body_end": 8127
+        },
+        {
+            "name": "fillOCFile",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "RemoteFile",
+                    "name": "remote"
+                }
+            ],
+            "start_position": 8420,
+            "end_position": 10526,
+            "body_start": 8471,
+            "body_end": 10526
+        },
+        {
+            "name": "fillRemoteFile",
+            "return_type": "RemoteFile",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                }
+            ],
+            "start_position": 10776,
+            "end_position": 11346,
+            "body_start": 10831,
+            "body_end": 11346
+        },
+        {
+            "name": "sortOcFolderDescDateModifiedWithoutFavoritesFirst",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "List<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 11352,
+            "end_position": 11679,
+            "body_start": 11449,
+            "body_end": 11679
+        },
+        {
+            "name": "sortOcFolderDescDateModified",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "List<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 11685,
+            "end_position": 11906,
+            "body_start": 11761,
+            "body_end": 11906
+        },
+        {
+            "name": "getFolderSize",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "dir"
+                }
+            ],
+            "start_position": 12014,
+            "end_position": 12546,
+            "body_start": 12057,
+            "body_end": 12546
+        },
+        {
+            "name": "getMimeTypeFromName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 12694,
+            "end_position": 13070,
+            "body_start": 12748,
+            "body_end": 13070
+        },
+        {
+            "name": "searchForLocalFileInDefaultPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 14090,
+            "end_position": 14558,
+            "body_start": 14174,
+            "body_end": 14558
+        },
+        {
+            "name": "copyFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "src"
+                },
+                {
+                    "type": "File",
+                    "name": "target"
+                }
+            ],
+            "start_position": 14564,
+            "end_position": 15168,
+            "body_start": 14758,
+            "body_end": 15168
+        },
+        {
+            "name": "moveFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "sourceFile"
+                },
+                {
+                    "type": "File",
+                    "name": "targetFile"
+                }
+            ],
+            "start_position": 15174,
+            "end_position": 15387,
+            "body_start": 15239,
+            "body_end": 15387
+        },
+        {
+            "name": "copyDirs",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "sourceFolder"
+                },
+                {
+                    "type": "File",
+                    "name": "targetFolder"
+                }
+            ],
+            "start_position": 15393,
+            "end_position": 16032,
+            "body_start": 15462,
+            "body_end": 16032
+        },
+        {
+            "name": "deleteRecursively",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 16038,
+            "end_position": 16511,
+            "body_start": 16125,
+            "body_end": 16511
+        },
+        {
+            "name": "deleteRecursive",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 16517,
+            "end_position": 16917,
+            "body_start": 16566,
+            "body_end": 16917
+        },
+        {
+            "name": "checkIfFileFinishedSaving",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 16923,
+            "end_position": 17639,
+            "body_start": 16981,
+            "body_end": 17639
+        },
+        {
+            "name": "checkEncryptionStatus",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 17911,
+            "end_position": 18354,
+            "body_start": 18007,
+            "body_end": 18354
+        },
+        {
+            "name": "getStorageDirectories",
+            "return_type": "List<String>",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 18582,
+            "end_position": 21694,
+            "body_start": 18780,
+            "body_end": 21694
+        },
+        {
+            "name": "pathToUserFriendlyDisplay",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                }
+            ],
+            "start_position": 22157,
+            "end_position": 23769,
+            "body_start": 22255,
+            "body_end": 23769
+        },
+        {
+            "name": "checkStoragePermission",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 24016,
+            "end_position": 24314,
+            "body_start": 24079,
+            "body_end": 24314
+        },
+        {
+            "name": "getExtSdCardPathsForActivity",
+            "return_type": "String[]",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 24538,
+            "end_position": 25495,
+            "body_start": 24608,
+            "body_end": 25495
+        },
+        {
+            "name": "canListFiles",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "f"
+                }
+            ],
+            "start_position": 25721,
+            "end_position": 25819,
+            "body_start": 25765,
+            "body_end": 25819
+        },
+        {
+            "name": "checkIfEnoughSpace",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 26032,
+            "end_position": 26428,
+            "body_start": 26086,
+            "body_end": 26428
+        },
+        {
+            "name": "checkIfEnoughSpace",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "availableSpaceOnDevice"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 26434,
+            "end_position": 26917,
+            "body_start": 26540,
+            "body_end": 26917
+        },
+        {
+            "name": "localFolderSize",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 26923,
+            "end_position": 27200,
+            "body_start": 26972,
+            "body_end": 27200
+        },
+        {
+            "name": "getName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 29079,
+            "end_position": 29144,
+            "body_start": 29103,
+            "body_end": 29144
+        },
+        {
+            "name": "getDisplayName",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 29154,
+            "end_position": 29238,
+            "body_start": 29182,
+            "body_end": 29238
+        },
+        {
+            "name": "getIcon",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 29248,
+            "end_position": 29318,
+            "body_start": 29269,
+            "body_end": 29318
+        },
+        {
+            "name": "getStandardDirectories",
+            "return_type": "Collection<StandardDirectory>",
+            "parameters": [],
+            "start_position": 29328,
+            "end_position": 29861,
+            "body_start": 29397,
+            "body_end": 29861
+        },
+        {
+            "name": "fromPath",
+            "return_type": "StandardDirectory",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 29871,
+            "end_position": 30180,
+            "body_start": 29943,
+            "body_end": 30180
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "if_statement",
+        "expression_statement",
+        "enhanced_for_statement",
+        "try_with_resources_statement",
+        "while_statement",
+        "try_statement",
+        "break_statement",
+        "throw_statement"
+    ],
+    "local_variables": {
+        "savePath": "File",
+        "datePattern": "String",
+        "d": "Date",
+        "df": "DateFormat",
+        "subfolderByDatePath": "String",
+        "parentFile": "File",
+        "relativeSubfolderPath": "String",
+        "parentPath": "String",
+        "file": "RemoteFile",
+        "multiplier": "int",
+        "files": "File[]",
+        "result": "String",
+        "extension": "String",
+        "pos": "int",
+        "f": "File",
+        "ret": "boolean",
+        "buf": "byte[]",
+        "len": "int",
+        "listFiles": "File[]",
+        "res": "boolean",
+        "lastModified": "long",
+        "lastSize": "long",
+        "realFile": "File",
+        "rv": "List<String>",
+        "rawExternalStorage": "String",
+        "rawSecondaryStoragesStr": "String",
+        "rawEmulatedStorageTarget": "String",
+        "rawUserId": "String",
+        "path": "String",
+        "folders": "String[]",
+        "lastFolder": "String",
+        "isDigit": "boolean",
+        "rawSecondaryStorages": "String[]",
+        "extSdCardPaths": "String[]",
+        "storageDevice": "String",
+        "storageFolder": "String",
+        "standardDirectory": "FileStorageUtils.StandardDirectory",
+        "paths": "List<String>",
+        "index": "int",
+        "availableSpaceOnDevice": "long",
+        "standardDirectories": "Collection<StandardDirectory>"
+    }
+}

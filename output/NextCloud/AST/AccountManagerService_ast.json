@@ -1,0 +1,58 @@
+{
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 618,
+            "end_position": 727,
+            "body_start": 655,
+            "body_end": 727
+        },
+        {
+            "name": "onBind",
+            "return_type": "IBinder",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 733,
+            "end_position": 941,
+            "body_start": 784,
+            "body_end": 941
+        },
+        {
+            "name": "onUnbind",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 947,
+            "end_position": 1046,
+            "body_start": 1000,
+            "body_end": 1046
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate",
+            "onUnbind"
+        ],
+        "AndroidInjection": [
+            "inject"
+        ],
+        "unknown": [
+            "getApplicationContext"
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "read",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 715,
+            "end_position": 796,
+            "body_start": 755,
+            "body_end": 796
+        },
+        {
+            "name": "getPlainHeadersString",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1042,
+            "end_position": 1362,
+            "body_start": 1080,
+            "body_end": 1362
+        },
+        {
+            "name": "getBody",
+            "return_type": "InputStream",
+            "parameters": [],
+            "start_position": 1368,
+            "end_position": 1430,
+            "body_start": 1397,
+            "body_end": 1430
+        },
+        {
+            "name": "getMethod",
+            "return_type": "HttpMethodBase",
+            "parameters": [],
+            "start_position": 1436,
+            "end_position": 1500,
+            "body_start": 1470,
+            "body_end": 1500
+        }
+    ],
+    "method_calls": {
+        "methodBase": [
+            "getResponseBodyAsStream",
+            "getResponseHeaders"
+        ],
+        "arrayList": [
+            "add"
+        ],
+        "header": [
+            "getName",
+            "getValue"
+        ],
+        "gson": [
+            "toJson"
+        ]
+    },
+    "local_variables": {
+        "arrayList": "List<PlainHeader>",
+        "gson": "Gson"
+    }
+}

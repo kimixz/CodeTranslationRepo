@@ -1,0 +1,67 @@
+{
+    "methods": [
+        {
+            "name": "getName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1227,
+            "end_position": 1296,
+            "body_start": 1265,
+            "body_end": 1296
+        },
+        {
+            "name": "hasRequestContent",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1439,
+            "end_position": 1620,
+            "body_start": 1477,
+            "body_end": 1620
+        },
+        {
+            "name": "clearRequestBody",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1700,
+            "end_position": 1804,
+            "body_start": 1734,
+            "body_end": 1804
+        },
+        {
+            "name": "generateRequestEntity",
+            "return_type": "RequestEntity",
+            "parameters": [],
+            "start_position": 2023,
+            "end_position": 2880,
+            "body_start": 2071,
+            "body_end": 2880
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "if_statement",
+        "expression_statement"
+    ],
+    "method_calls": {
+        "this.params": [
+            "isEmpty",
+            "clear"
+        ],
+        "super": [
+            "hasRequestContent",
+            "clearRequestBody",
+            "generateRequestEntity"
+        ],
+        "EncodingUtil": [
+            "formUrlEncode",
+            "getAsciiBytes"
+        ],
+        "unknown": [
+            "getParameters",
+            "getRequestCharSet"
+        ]
+    },
+    "local_variables": {
+        "content": "String"
+    }
+}

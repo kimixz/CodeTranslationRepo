@@ -1,0 +1,63 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getSessionName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 528,
+            "end_position": 599,
+            "body_start": 559,
+            "body_end": 599
+        },
+        {
+            "name": "getSessionUrl",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 605,
+            "end_position": 674,
+            "body_start": 635,
+            "body_end": 674
+        },
+        {
+            "name": "getEntryId",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 680,
+            "end_position": 740,
+            "body_start": 704,
+            "body_end": 740
+        },
+        {
+            "name": "setSessionName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "sessionName"
+                }
+            ],
+            "start_position": 746,
+            "end_position": 840,
+            "body_start": 793,
+            "body_end": 840
+        },
+        {
+            "name": "setSessionUrl",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "sessionUrl"
+                }
+            ],
+            "start_position": 846,
+            "end_position": 936,
+            "body_start": 891,
+            "body_end": 936
+        }
+    ]
+}

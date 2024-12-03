@@ -1,0 +1,588 @@
+{
+    "method_calls": {
+        "ActivityListAdapter.class": [
+            "getSimpleName"
+        ],
+        "unknown": [
+            "getThumbnailDimension",
+            "getHeaderDateString",
+            "notifyDataSetChanged",
+            "addClickablePart",
+            "downloadIcon",
+            "createThumbnailNew",
+            "searchObjectByName"
+        ],
+        "values": [
+            "clear",
+            "add",
+            "get",
+            "size",
+            "isEmpty"
+        ],
+        "getHeaderDateString(context, activity.getDatetime().getTime())": [
+            "toString"
+        ],
+        "activity.getDatetime()": [
+            "getTime"
+        ],
+        "activity": [
+            "getDatetime",
+            "getRichSubjectElement",
+            "getSubject",
+            "getMessage",
+            "getIcon",
+            "getType",
+            "getPreviews"
+        ],
+        "sTime": [
+            "equalsIgnoreCase"
+        ],
+        "ActivityListItemBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "parent": [
+            "getContext"
+        ],
+        "ActivityListItemHeaderBinding": [
+            "inflate"
+        ],
+        "activityViewHolder.binding.datetime": [
+            "setVisibility",
+            "setText"
+        ],
+        "DateFormat": [
+            "format",
+            "getBestDateTimePattern"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "activity.getRichSubjectElement()": [
+            "getRichSubject",
+            "getRichObjectList"
+        ],
+        "activityViewHolder.binding.subject": [
+            "setVisibility",
+            "setMovementMethod",
+            "setText"
+        ],
+        "LinkMovementMethod": [
+            "getInstance"
+        ],
+        "activityViewHolder.binding.message": [
+            "setText",
+            "setVisibility"
+        ],
+        "context.getResources()": [
+            "getConfiguration",
+            "getColor"
+        ],
+        "context": [
+            "getResources"
+        ],
+        "\"file_created\"": [
+            "equalsIgnoreCase"
+        ],
+        "\"file_deleted\"": [
+            "equalsIgnoreCase"
+        ],
+        "activityViewHolder.binding.icon": [
+            "setColorFilter"
+        ],
+        "activity.getRichSubjectElement().getRichObjectList()": [
+            "size"
+        ],
+        "activityViewHolder.binding.list": [
+            "setVisibility",
+            "removeAllViews",
+            "post",
+            "getMeasuredWidth",
+            "setColumnCount",
+            "addView"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "MimeTypeUtil": [
+            "isImageOrVideo",
+            "isVideo",
+            "isImage",
+            "isFolder",
+            "getDefaultFolderIcon",
+            "getFileTypeIcon"
+        ],
+        "previewObject": [
+            "getMimeType",
+            "getFileId",
+            "getSource"
+        ],
+        "activity\n                                                                     .getRichSubjectElement()": [
+            "getRichObjectList"
+        ],
+        "activityViewHeaderHolder.binding.header": [
+            "setText"
+        ],
+        "params": [
+            "setMargins"
+        ],
+        "imageView": [
+            "setLayoutParams",
+            "setOnClickListener",
+            "setImageDrawable"
+        ],
+        "Integer": [
+            "parseInt"
+        ],
+        "object": [
+            "getId"
+        ],
+        "activityListInterface": [
+            "onActivityClicked"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(previewObject.getSource())\n                .placeholder(placeholder)\n                .error(placeholder)\n                .diskCacheStrategy(DiskCacheStrategy.NONE)\n                .skipMemoryCache(true)": [
+            "into"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(previewObject.getSource())\n                .placeholder(placeholder)\n                .error(placeholder)\n                .diskCacheStrategy(DiskCacheStrategy.NONE)": [
+            "skipMemoryCache"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(previewObject.getSource())\n                .placeholder(placeholder)\n                .error(placeholder)": [
+            "diskCacheStrategy"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(previewObject.getSource())\n                .placeholder(placeholder)": [
+            "error"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(previewObject.getSource())": [
+            "placeholder"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))": [
+            "load"
+        ],
+        "Glide.with(context)": [
+            "using"
+        ],
+        "Glide": [
+            "with",
+            "buildStreamModelLoader"
+        ],
+        "currentAccountProvider": [
+            "getUser"
+        ],
+        "Glide.with(context)\n            .using(Glide.buildStreamModelLoader(Uri.class, context), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgBitmapTranscoder(128, 128), Bitmap.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())\n            .placeholder(R.drawable.ic_activity)\n            .error(R.drawable.ic_activity)": [
+            "animate"
+        ],
+        "Glide.with(context)\n            .using(Glide.buildStreamModelLoader(Uri.class, context), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgBitmapTranscoder(128, 128), Bitmap.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())\n            .placeholder(R.drawable.ic_activity)": [
+            "error"
+        ],
+        "Glide.with(context)\n            .using(Glide.buildStreamModelLoader(Uri.class, context), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgBitmapTranscoder(128, 128), Bitmap.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))\n            .decoder(new SvgDecoder())": [
+            "placeholder"
+        ],
+        "Glide.with(context)\n            .using(Glide.buildStreamModelLoader(Uri.class, context), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgBitmapTranscoder(128, 128), Bitmap.class)\n            .sourceEncoder(new StreamEncoder())\n            .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))": [
+            "decoder"
+        ],
+        "Glide.with(context)\n            .using(Glide.buildStreamModelLoader(Uri.class, context), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgBitmapTranscoder(128, 128), Bitmap.class)\n            .sourceEncoder(new StreamEncoder())": [
+            "cacheDecoder"
+        ],
+        "Glide.with(context)\n            .using(Glide.buildStreamModelLoader(Uri.class, context), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)\n            .transcode(new SvgBitmapTranscoder(128, 128), Bitmap.class)": [
+            "sourceEncoder"
+        ],
+        "Glide.with(context)\n            .using(Glide.buildStreamModelLoader(Uri.class, context), InputStream.class)\n            .from(Uri.class)\n            .as(SVG.class)": [
+            "transcode"
+        ],
+        "Glide.with(context)\n            .using(Glide.buildStreamModelLoader(Uri.class, context), InputStream.class)\n            .from(Uri.class)": [
+            "as"
+        ],
+        "Glide.with(context)\n            .using(Glide.buildStreamModelLoader(Uri.class, context), InputStream.class)": [
+            "from"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "requestBuilder\n            .diskCacheStrategy(DiskCacheStrategy.SOURCE)\n            .load(uri)": [
+            "into"
+        ],
+        "requestBuilder\n            .diskCacheStrategy(DiskCacheStrategy.SOURCE)": [
+            "load"
+        ],
+        "requestBuilder": [
+            "diskCacheStrategy"
+        ],
+        "richElement": [
+            "getRichSubject",
+            "getRichObjectList"
+        ],
+        "text": [
+            "indexOf",
+            "substring"
+        ],
+        "richObject": [
+            "getName",
+            "getTag"
+        ],
+        "ssb": [
+            "replace",
+            "toString",
+            "setSpan"
+        ],
+        "name": [
+            "length"
+        ],
+        "ds": [
+            "setUnderlineText"
+        ],
+        "richObject.getTag()": [
+            "equalsIgnoreCase"
+        ],
+        "MainApp.getAppContext()": [
+            "getResources"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "Math": [
+            "pow",
+            "floor",
+            "log"
+        ],
+        "r": [
+            "getDimension"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "DisplayUtils": [
+            "getRelativeDateTimeString"
+        ],
+        "Locale": [
+            "getDefault"
+        ],
+        "this": [
+            "isHeader",
+            "getItemViewType"
+        ],
+        "header": [
+            "findViewById"
+        ],
+        "textView": [
+            "setText"
+        ],
+        "binding": [
+            "getRoot"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "return_statement",
+        "try_statement",
+        "break_statement",
+        "while_statement"
+    ],
+    "methods": [
+        {
+            "name": "setActivityItems",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "activityItems"
+                },
+                {
+                    "type": "NextcloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "boolean",
+                    "name": "clear"
+                }
+            ],
+            "start_position": 4246,
+            "end_position": 4940,
+            "body_start": 4342,
+            "body_end": 4940
+        },
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "RecyclerView.ViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 4946,
+            "end_position": 5477,
+            "body_start": 5064,
+            "body_end": 5477
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView.ViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 5483,
+            "end_position": 9858,
+            "body_start": 5581,
+            "body_end": 9858
+        },
+        {
+            "name": "createThumbnailNew",
+            "return_type": "ImageView",
+            "parameters": [
+                {
+                    "type": "PreviewObject",
+                    "name": "previewObject"
+                },
+                {
+                    "type": "List<RichObject>",
+                    "name": "richObjectList"
+                }
+            ],
+            "start_position": 9864,
+            "end_position": 12006,
+            "body_start": 9963,
+            "body_end": 12006
+        },
+        {
+            "name": "downloadIcon",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "itemViewType"
+                }
+            ],
+            "start_position": 12012,
+            "end_position": 12884,
+            "body_start": 12081,
+            "body_end": 12884
+        },
+        {
+            "name": "addClickablePart",
+            "return_type": "SpannableStringBuilder",
+            "parameters": [
+                {
+                    "type": "RichElement",
+                    "name": "richElement"
+                }
+            ],
+            "start_position": 12890,
+            "end_position": 14520,
+            "body_start": 12963,
+            "body_end": 14520
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "widget"
+                }
+            ],
+            "start_position": 13696,
+            "end_position": 13868,
+            "body_start": 13768,
+            "body_end": 13868
+        },
+        {
+            "name": "updateDrawState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TextPaint",
+                    "name": "ds"
+                }
+            ],
+            "start_position": 13890,
+            "end_position": 14046,
+            "body_start": 13971,
+            "body_end": 14046
+        },
+        {
+            "name": "searchObjectByName",
+            "return_type": "RichObject",
+            "parameters": [
+                {
+                    "type": "List<RichObject>",
+                    "name": "richObjectList"
+                },
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 14526,
+            "end_position": 14814,
+            "body_start": 14610,
+            "body_end": 14814
+        },
+        {
+            "name": "getItemViewType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 14821,
+            "end_position": 15032,
+            "body_start": 14876,
+            "body_end": 15032
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 15038,
+            "end_position": 15115,
+            "body_start": 15078,
+            "body_end": 15115
+        },
+        {
+            "name": "isEmpty",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 15121,
+            "end_position": 15186,
+            "body_start": 15146,
+            "body_end": 15186
+        },
+        {
+            "name": "getThumbnailDimension",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 15285,
+            "end_position": 15563,
+            "body_start": 15321,
+            "body_end": 15563
+        },
+        {
+            "name": "getHeaderDateString",
+            "return_type": "CharSequence",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "long",
+                    "name": "modificationTimestamp"
+                }
+            ],
+            "start_position": 15569,
+            "end_position": 16129,
+            "body_start": 15647,
+            "body_end": 16129
+        },
+        {
+            "name": "getHeaderPositionForItem",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "itemPosition"
+                }
+            ],
+            "start_position": 16136,
+            "end_position": 16452,
+            "body_start": 16204,
+            "body_end": 16452
+        },
+        {
+            "name": "getHeaderLayout",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "headerPosition"
+                }
+            ],
+            "start_position": 16459,
+            "end_position": 16578,
+            "body_start": 16520,
+            "body_end": 16578
+        },
+        {
+            "name": "bindHeaderData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "header"
+                },
+                {
+                    "type": "int",
+                    "name": "headerPosition"
+                }
+            ],
+            "start_position": 16584,
+            "end_position": 16826,
+            "body_start": 16658,
+            "body_end": 16826
+        },
+        {
+            "name": "isHeader",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "itemPosition"
+                }
+            ],
+            "start_position": 16832,
+            "end_position": 16961,
+            "body_start": 16888,
+            "body_end": 16961
+        }
+    ],
+    "local_variables": {
+        "sTime": "String",
+        "activity": "Activity",
+        "time": "String",
+        "activityViewHolder": "ActivityViewHolder",
+        "nightModeFlag": "int",
+        "w": "int",
+        "elPxSize": "int",
+        "totalColumnCount": "int",
+        "imageView": "ImageView",
+        "activityViewHeaderHolder": "ActivityViewHeaderHolder",
+        "params": "LinearLayout.LayoutParams",
+        "objectId": "int",
+        "placeholder": "int",
+        "requestBuilder": "GenericRequestBuilder<Uri, InputStream, SVG, Bitmap>",
+        "uri": "Uri",
+        "text": "String",
+        "ssb": "SpannableStringBuilder",
+        "idx1": "int",
+        "idx2": "int",
+        "clickString": "String",
+        "richObject": "RichObject",
+        "name": "String",
+        "r": "Resources",
+        "d": "double",
+        "headerPosition": "int",
+        "textView": "TextView",
+        "headline": "String"
+    }
+}

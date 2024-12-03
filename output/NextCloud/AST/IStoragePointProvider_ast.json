@@ -1,0 +1,18 @@
+{
+    "methods": [
+        {
+            "name": "canProvideStoragePoints",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 657,
+            "end_position": 691
+        },
+        {
+            "name": "getAvailableStoragePoint",
+            "return_type": "List<StoragePoint>",
+            "parameters": [],
+            "start_position": 760,
+            "end_position": 806
+        }
+    ]
+}

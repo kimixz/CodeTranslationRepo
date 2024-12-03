@@ -1,0 +1,599 @@
+{
+    "method_calls": {
+        "OCUpload.class": [
+            "getSimpleName"
+        ],
+        "localPath": [
+            "startsWith",
+            "equals"
+        ],
+        "remotePath": [
+            "startsWith",
+            "equals"
+        ],
+        "accountName": [
+            "length",
+            "equals"
+        ],
+        "unknown": [
+            "resetData",
+            "setLastResult",
+            "getLocalPath",
+            "getUploadStatus",
+            "getLastResult",
+            "readFromParcel"
+        ],
+        "ocFile": [
+            "getStoragePath",
+            "getRemotePath"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "uploadHelper": [
+            "isUploadingNow"
+        ],
+        "MimeTypeUtil": [
+            "getBestMimeTypeByFilename"
+        ],
+        "getLastResult()": [
+            "getValue"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "e": [
+            "toString"
+        ],
+        "source": [
+            "readLong",
+            "readString",
+            "readInt"
+        ],
+        "NameCollisionPolicy": [
+            "deserialize"
+        ],
+        "UploadStatus": [
+            "valueOf"
+        ],
+        "UploadResult": [
+            "valueOf"
+        ],
+        "this": [
+            "hashCode"
+        ],
+        "folderUnlockToken": [
+            "equals"
+        ],
+        "dest": [
+            "writeLong",
+            "writeString",
+            "writeInt"
+        ],
+        "nameCollisionPolicy": [
+            "serialize"
+        ],
+        "uploadStatus": [
+            "name"
+        ],
+        "lastResult": [
+            "name"
+        ],
+        "new File(localPath)": [
+            "exists"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "throw_statement",
+        "expression_statement",
+        "return_statement",
+        "try_statement"
+    ],
+    "methods": [
+        {
+            "name": "resetData",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4986,
+            "end_position": 5546,
+            "body_start": 5011,
+            "body_end": 5546
+        },
+        {
+            "name": "setDataFixed",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileUploadHelper",
+                    "name": "uploadHelper"
+                }
+            ],
+            "start_position": 5552,
+            "end_position": 5832,
+            "body_start": 5608,
+            "body_end": 5832
+        },
+        {
+            "name": "setUploadStatus",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UploadStatus",
+                    "name": "uploadStatus"
+                }
+            ],
+            "start_position": 5990,
+            "end_position": 6139,
+            "body_start": 6045,
+            "body_end": 6139
+        },
+        {
+            "name": "setLastResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UploadResult",
+                    "name": "lastResult"
+                }
+            ],
+            "start_position": 6208,
+            "end_position": 6348,
+            "body_start": 6259,
+            "body_end": 6348
+        },
+        {
+            "name": "getFixedUploadStatus",
+            "return_type": "UploadStatus",
+            "parameters": [],
+            "start_position": 6354,
+            "end_position": 6438,
+            "body_start": 6397,
+            "body_end": 6438
+        },
+        {
+            "name": "isFixedUploadingNow",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6444,
+            "end_position": 6522,
+            "body_start": 6481,
+            "body_end": 6522
+        },
+        {
+            "name": "getFixedUploadEndTimeStamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 6528,
+            "end_position": 6616,
+            "body_start": 6569,
+            "body_end": 6616
+        },
+        {
+            "name": "getFixedUploadId",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 6622,
+            "end_position": 6690,
+            "body_start": 6653,
+            "body_end": 6690
+        },
+        {
+            "name": "getMimeType",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 6740,
+            "end_position": 6841,
+            "body_start": 6768,
+            "body_end": 6841
+        },
+        {
+            "name": "toFormattedString",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 6899,
+            "end_position": 7322,
+            "body_start": 6933,
+            "body_end": 7322
+        },
+        {
+            "name": "createFromParcel",
+            "return_type": "OCUpload",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "source"
+                }
+            ],
+            "start_position": 7458,
+            "end_position": 7576,
+            "body_start": 7524,
+            "body_end": 7576
+        },
+        {
+            "name": "newArray",
+            "return_type": "OCUpload[]",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "size"
+                }
+            ],
+            "start_position": 7586,
+            "end_position": 7691,
+            "body_start": 7641,
+            "body_end": 7691
+        },
+        {
+            "name": "readFromParcel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "source"
+                }
+            ],
+            "start_position": 7874,
+            "end_position": 8879,
+            "body_start": 7917,
+            "body_end": 8879
+        },
+        {
+            "name": "describeContents",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 8885,
+            "end_position": 8968,
+            "body_start": 8929,
+            "body_end": 8968
+        },
+        {
+            "name": "isSame",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "obj"
+                }
+            ],
+            "start_position": 8974,
+            "end_position": 9891,
+            "body_start": 9077,
+            "body_end": 9891
+        },
+        {
+            "name": "writeToParcel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "dest"
+                },
+                {
+                    "type": "int",
+                    "name": "flags"
+                }
+            ],
+            "start_position": 9897,
+            "end_position": 10594,
+            "body_start": 9961,
+            "body_end": 10594
+        },
+        {
+            "name": "getUploadId",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 10600,
+            "end_position": 10663,
+            "body_start": 10626,
+            "body_end": 10663
+        },
+        {
+            "name": "getLocalPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 10669,
+            "end_position": 10736,
+            "body_start": 10698,
+            "body_end": 10736
+        },
+        {
+            "name": "getRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 10742,
+            "end_position": 10811,
+            "body_start": 10772,
+            "body_end": 10811
+        },
+        {
+            "name": "getAccountName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 10817,
+            "end_position": 10888,
+            "body_start": 10848,
+            "body_end": 10888
+        },
+        {
+            "name": "getFileSize",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 10894,
+            "end_position": 10957,
+            "body_start": 10920,
+            "body_end": 10957
+        },
+        {
+            "name": "getLocalAction",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 10963,
+            "end_position": 11031,
+            "body_start": 10991,
+            "body_end": 11031
+        },
+        {
+            "name": "getNameCollisionPolicy",
+            "return_type": "NameCollisionPolicy",
+            "parameters": [],
+            "start_position": 11037,
+            "end_position": 11137,
+            "body_start": 11089,
+            "body_end": 11137
+        },
+        {
+            "name": "isCreateRemoteFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11143,
+            "end_position": 11228,
+            "body_start": 11181,
+            "body_end": 11228
+        },
+        {
+            "name": "getUploadStatus",
+            "return_type": "UploadStatus",
+            "parameters": [],
+            "start_position": 11234,
+            "end_position": 11313,
+            "body_start": 11272,
+            "body_end": 11313
+        },
+        {
+            "name": "getLastResult",
+            "return_type": "UploadResult",
+            "parameters": [],
+            "start_position": 11319,
+            "end_position": 11394,
+            "body_start": 11355,
+            "body_end": 11394
+        },
+        {
+            "name": "getCreatedBy",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 11400,
+            "end_position": 11464,
+            "body_start": 11426,
+            "body_end": 11464
+        },
+        {
+            "name": "getUploadEndTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 11470,
+            "end_position": 11553,
+            "body_start": 11506,
+            "body_end": 11553
+        },
+        {
+            "name": "isUseWifiOnly",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11559,
+            "end_position": 11630,
+            "body_start": 11590,
+            "body_end": 11630
+        },
+        {
+            "name": "exists",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11636,
+            "end_position": 11712,
+            "body_start": 11660,
+            "body_end": 11712
+        },
+        {
+            "name": "isWhileChargingOnly",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11718,
+            "end_position": 11801,
+            "body_start": 11755,
+            "body_end": 11801
+        },
+        {
+            "name": "getFolderUnlockToken",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 11807,
+            "end_position": 11890,
+            "body_start": 11844,
+            "body_end": 11890
+        },
+        {
+            "name": "setUploadId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "uploadId"
+                }
+            ],
+            "start_position": 11896,
+            "end_position": 11976,
+            "body_start": 11935,
+            "body_end": 11976
+        },
+        {
+            "name": "setLocalPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                }
+            ],
+            "start_position": 11982,
+            "end_position": 12068,
+            "body_start": 12025,
+            "body_end": 12068
+        },
+        {
+            "name": "setRemotePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 12074,
+            "end_position": 12164,
+            "body_start": 12119,
+            "body_end": 12164
+        },
+        {
+            "name": "setFileSize",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "fileSize"
+                }
+            ],
+            "start_position": 12170,
+            "end_position": 12250,
+            "body_start": 12209,
+            "body_end": 12250
+        },
+        {
+            "name": "setLocalAction",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "localAction"
+                }
+            ],
+            "start_position": 12256,
+            "end_position": 12347,
+            "body_start": 12300,
+            "body_end": 12347
+        },
+        {
+            "name": "setNameCollisionPolicy",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NameCollisionPolicy",
+                    "name": "nameCollisionPolicy"
+                }
+            ],
+            "start_position": 12353,
+            "end_position": 12492,
+            "body_start": 12429,
+            "body_end": 12492
+        },
+        {
+            "name": "setCreateRemoteFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "createRemoteFolder"
+                }
+            ],
+            "start_position": 12498,
+            "end_position": 12621,
+            "body_start": 12560,
+            "body_end": 12621
+        },
+        {
+            "name": "setCreatedBy",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "createdBy"
+                }
+            ],
+            "start_position": 12627,
+            "end_position": 12710,
+            "body_start": 12667,
+            "body_end": 12710
+        },
+        {
+            "name": "setUploadEndTimestamp",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "uploadEndTimestamp"
+                }
+            ],
+            "start_position": 12716,
+            "end_position": 12836,
+            "body_start": 12775,
+            "body_end": 12836
+        },
+        {
+            "name": "setUseWifiOnly",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "useWifiOnly"
+                }
+            ],
+            "start_position": 12842,
+            "end_position": 12937,
+            "body_start": 12890,
+            "body_end": 12937
+        },
+        {
+            "name": "setWhileChargingOnly",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "whileChargingOnly"
+                }
+            ],
+            "start_position": 12943,
+            "end_position": 13062,
+            "body_start": 13003,
+            "body_end": 13062
+        },
+        {
+            "name": "setFolderUnlockToken",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "folderUnlockToken"
+                }
+            ],
+            "start_position": 13068,
+            "end_position": 13186,
+            "body_start": 13127,
+            "body_end": 13186
+        }
+    ],
+    "local_variables": {
+        "localPath": "String",
+        "other": "OCUpload"
+    }
+}

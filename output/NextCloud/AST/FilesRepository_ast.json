@@ -1,0 +1,48 @@
+{
+    "methods": [
+        {
+            "name": "onFileLoaded",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                }
+            ],
+            "start_position": 540,
+            "end_position": 583
+        },
+        {
+            "name": "onFileLoadError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "error"
+                }
+            ],
+            "start_position": 592,
+            "end_position": 627
+        },
+        {
+            "name": "readRemoteFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                },
+                {
+                    "type": "BaseActivity",
+                    "name": "activity"
+                },
+                {
+                    "type": "ReadRemoteFileCallback",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 639,
+            "end_position": 737
+        }
+    ]
+}

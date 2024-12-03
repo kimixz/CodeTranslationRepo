@@ -1,0 +1,38 @@
+[
+    {
+        "method_name": "getFilePaths",
+        "method_code": "public List<String> getFilePaths() {\n        return this.filePaths;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFilePaths from SyncedFolderDisplayItem.java into Swift.\n\n        Input:\n\n        Method Name: getFilePaths\n\n        Method Code: public List<String> getFilePaths() {\n        return this.filePaths;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFilePaths() -> [String] {\n    return self.filePaths\n}\n```"
+    },
+    {
+        "method_name": "getFolderName",
+        "method_code": "public String getFolderName() {\n        return this.folderName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFolderName from SyncedFolderDisplayItem.java into Swift.\n\n        Input:\n\n        Method Name: getFolderName\n\n        Method Code: public String getFolderName() {\n        return this.folderName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFolderName() -> String {\n    return self.folderName\n}\n```"
+    },
+    {
+        "method_name": "getNumberOfFiles",
+        "method_code": "public long getNumberOfFiles() {\n        return this.numberOfFiles;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getNumberOfFiles from SyncedFolderDisplayItem.java into Swift.\n\n        Input:\n\n        Method Name: getNumberOfFiles\n\n        Method Code: public long getNumberOfFiles() {\n        return this.numberOfFiles;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getNumberOfFiles() -> Int64 {\n    return self.numberOfFiles\n}\n```"
+    },
+    {
+        "method_name": "setFilePaths",
+        "method_code": "public void setFilePaths(List<String> filePaths) {\n        this.filePaths = filePaths;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFilePaths from SyncedFolderDisplayItem.java into Swift.\n\n        Input:\n\n        Method Name: setFilePaths\n\n        Method Code: public void setFilePaths(List<String> filePaths) {\n        this.filePaths = filePaths;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFilePaths(_ filePaths: [String]) {\n    self.filePaths = filePaths\n}\n```"
+    },
+    {
+        "method_name": "setFolderName",
+        "method_code": "public void setFolderName(String folderName) {\n        this.folderName = folderName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFolderName from SyncedFolderDisplayItem.java into Swift.\n\n        Input:\n\n        Method Name: setFolderName\n\n        Method Code: public void setFolderName(String folderName) {\n        this.folderName = folderName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFolderName(_ folderName: String) {\n    self.folderName = folderName\n}\n```"
+    },
+    {
+        "method_name": "setNumberOfFiles",
+        "method_code": "public void setNumberOfFiles(long numberOfFiles) {\n        this.numberOfFiles = numberOfFiles;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setNumberOfFiles from SyncedFolderDisplayItem.java into Swift.\n\n        Input:\n\n        Method Name: setNumberOfFiles\n\n        Method Code: public void setNumberOfFiles(long numberOfFiles) {\n        this.numberOfFiles = numberOfFiles;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setNumberOfFiles(_ numberOfFiles: Int64) {\n    self.numberOfFiles = numberOfFiles\n}\n```"
+    }
+]

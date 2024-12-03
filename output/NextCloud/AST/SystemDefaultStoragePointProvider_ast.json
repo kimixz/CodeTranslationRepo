@@ -1,0 +1,45 @@
+{
+    "methods": [
+        {
+            "name": "canProvideStoragePoints",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 568,
+            "end_position": 651,
+            "body_start": 623,
+            "body_end": 651
+        },
+        {
+            "name": "getAvailableStoragePoint",
+            "return_type": "Vector<StoragePoint>",
+            "parameters": [],
+            "start_position": 657,
+            "end_position": 1178,
+            "body_start": 726,
+            "body_end": 1178
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement"
+    ],
+    "local_variables": {
+        "result": "Vector<StoragePoint>",
+        "defaultStringDesc": "String"
+    },
+    "method_calls": {
+        "MainApp": [
+            "string",
+            "getAppContext"
+        ],
+        "result": [
+            "add"
+        ],
+        "MainApp.getAppContext().getFilesDir()": [
+            "getAbsolutePath"
+        ],
+        "MainApp.getAppContext()": [
+            "getFilesDir"
+        ]
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "method_calls": {
+        "PrintAdapter.class": [
+            "getSimpleName"
+        ],
+        "cancellationSignal": [
+            "isCanceled"
+        ],
+        "callback": [
+            "onLayoutCancelled",
+            "onLayoutFinished",
+            "onWriteCancelled",
+            "onWriteFinished"
+        ],
+        "builder.setContentType(PrintDocumentInfo.CONTENT_TYPE_DOCUMENT)\n                .setPageCount(PrintDocumentInfo.PAGE_COUNT_UNKNOWN)": [
+            "build"
+        ],
+        "builder.setContentType(PrintDocumentInfo.CONTENT_TYPE_DOCUMENT)": [
+            "setPageCount"
+        ],
+        "builder": [
+            "setContentType",
+            "build"
+        ],
+        "newAttributes": [
+            "equals"
+        ],
+        "destination": [
+            "getFileDescriptor"
+        ],
+        "in": [
+            "read"
+        ],
+        "out": [
+            "write"
+        ],
+        "Log_OC": [
+            "e"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "try_with_resources_statement",
+        "while_statement"
+    ],
+    "methods": [
+        {
+            "name": "onLayout",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PrintAttributes",
+                    "name": "oldAttributes"
+                },
+                {
+                    "type": "PrintAttributes",
+                    "name": "newAttributes"
+                },
+                {
+                    "type": "CancellationSignal",
+                    "name": "cancellationSignal"
+                },
+                {
+                    "type": "LayoutResultCallback",
+                    "name": "callback"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "extras"
+                }
+            ],
+            "start_position": 1040,
+            "end_position": 1798,
+            "body_start": 1322,
+            "body_end": 1798
+        },
+        {
+            "name": "onWrite",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PageRange[]",
+                    "name": "pages"
+                },
+                {
+                    "type": "ParcelFileDescriptor",
+                    "name": "destination"
+                },
+                {
+                    "type": "CancellationSignal",
+                    "name": "cancellationSignal"
+                },
+                {
+                    "type": "WriteResultCallback",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 1805,
+            "end_position": 2709,
+            "body_start": 2033,
+            "body_end": 2709
+        }
+    ],
+    "local_variables": {
+        "builder": "PrintDocumentInfo.Builder",
+        "buf": "byte[]",
+        "size": "int"
+    }
+}

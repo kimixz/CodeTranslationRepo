@@ -1,0 +1,402 @@
+{
+    "methods": [
+        {
+            "name": "setupToolbar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isHomeSearchToolbarShow"
+                },
+                {
+                    "type": "boolean",
+                    "name": "showSortListButtonGroup"
+                }
+            ],
+            "start_position": 3004,
+            "end_position": 4422,
+            "body_start": 3096,
+            "body_end": 4422
+        },
+        {
+            "name": "setupToolbarShowOnlyMenuButtonAndTitle",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "title"
+                },
+                {
+                    "type": "View.OnClickListener",
+                    "name": "toggleDrawer"
+                }
+            ],
+            "start_position": 4428,
+            "end_position": 5285,
+            "body_start": 4528,
+            "body_end": 5285
+        },
+        {
+            "name": "setupToolbar",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5291,
+            "end_position": 5361,
+            "body_start": 5318,
+            "body_end": 5361
+        },
+        {
+            "name": "setupHomeSearchToolbarWithSortAndListButtons",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5367,
+            "end_position": 5467,
+            "body_start": 5426,
+            "body_end": 5467
+        },
+        {
+            "name": "updateActionBarTitleAndHomeButton",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "chosenFile"
+                }
+            ],
+            "start_position": 5549,
+            "end_position": 5996,
+            "body_start": 5617,
+            "body_end": 5996
+        },
+        {
+            "name": "showSearchView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6002,
+            "end_position": 6129,
+            "body_start": 6031,
+            "body_end": 6129
+        },
+        {
+            "name": "hideSearchView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "chosenFile"
+                }
+            ],
+            "start_position": 6135,
+            "end_position": 6292,
+            "body_start": 6181,
+            "body_end": 6292
+        },
+        {
+            "name": "showHomeSearchToolbar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "title"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isRoot"
+                }
+            ],
+            "start_position": 6298,
+            "end_position": 6510,
+            "body_start": 6363,
+            "body_end": 6510
+        },
+        {
+            "name": "showHomeSearchToolbar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isShow"
+                }
+            ],
+            "start_position": 6516,
+            "end_position": 7633,
+            "body_start": 6604,
+            "body_end": 7633
+        },
+        {
+            "name": "updateActionBarTitleAndHomeButtonByString",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "title"
+                }
+            ],
+            "start_position": 7715,
+            "end_position": 8197,
+            "body_start": 7783,
+            "body_end": 8197
+        },
+        {
+            "name": "isRoot",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 8453,
+            "end_position": 8609,
+            "body_start": 8488,
+            "body_end": 8609
+        },
+        {
+            "name": "showInfoBox",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "text"
+                }
+            ],
+            "start_position": 8739,
+            "end_position": 8962,
+            "body_start": 8793,
+            "body_end": 8962
+        },
+        {
+            "name": "hideInfoBox",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9021,
+            "end_position": 9149,
+            "body_start": 9053,
+            "body_end": 9149
+        },
+        {
+            "name": "setPreviewImageVisibility",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isVisibility"
+                }
+            ],
+            "start_position": 9155,
+            "end_position": 9630,
+            "body_start": 9215,
+            "body_end": 9630
+        },
+        {
+            "name": "hidePreviewImage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9636,
+            "end_position": 9716,
+            "body_start": 9667,
+            "body_end": 9716
+        },
+        {
+            "name": "showSortListGroup",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "show"
+                }
+            ],
+            "start_position": 9722,
+            "end_position": 9871,
+            "body_start": 9766,
+            "body_end": 9871
+        },
+        {
+            "name": "sortListGroupVisibility",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 9877,
+            "end_position": 10014,
+            "body_start": 9917,
+            "body_end": 10014
+        },
+        {
+            "name": "setPreviewImageBitmap",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                }
+            ],
+            "start_position": 10149,
+            "end_position": 10347,
+            "body_start": 10198,
+            "body_end": 10347
+        },
+        {
+            "name": "setPreviewImageDrawable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "drawable"
+                }
+            ],
+            "start_position": 10489,
+            "end_position": 10697,
+            "body_start": 10544,
+            "body_end": 10697
+        },
+        {
+            "name": "getPreviewImageView",
+            "return_type": "ImageView",
+            "parameters": [],
+            "start_position": 10764,
+            "end_position": 10840,
+            "body_start": 10803,
+            "body_end": 10840
+        },
+        {
+            "name": "getPreviewImageContainer",
+            "return_type": "FrameLayout",
+            "parameters": [],
+            "start_position": 10846,
+            "end_position": 10938,
+            "body_start": 10892,
+            "body_end": 10938
+        },
+        {
+            "name": "updateToolbarSubtitle",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "subtitle"
+                }
+            ],
+            "start_position": 10944,
+            "end_position": 11229,
+            "body_start": 11004,
+            "body_end": 11229
+        },
+        {
+            "name": "clearToolbarSubtitle",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11235,
+            "end_position": 11414,
+            "body_start": 11270,
+            "body_end": 11414
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "findViewById",
+            "setSupportActionBar",
+            "updateActionBarTitleAndHomeButton",
+            "setupToolbar",
+            "getSupportActionBar",
+            "isRoot",
+            "updateActionBarTitleAndHomeButtonByString",
+            "showHomeSearchToolbar",
+            "getString",
+            "setPreviewImageVisibility"
+        ],
+        "findViewById(R.id.sort_list_button_group)": [
+            "setVisibility",
+            "getVisibility"
+        ],
+        "viewThemeUtils.material": [
+            "themeToolbar",
+            "colorToolbarOverflowIcon",
+            "colorMaterialTextButton",
+            "themeCardView",
+            "themeSearchBarText"
+        ],
+        "viewThemeUtils.platform": [
+            "themeStatusBar",
+            "resetStatusBar"
+        ],
+        "actionBar": [
+            "setDisplayShowTitleEnabled",
+            "setTitle",
+            "setSubtitle"
+        ],
+        "titleTextView": [
+            "setText",
+            "setTextColor"
+        ],
+        "ContextCompat": [
+            "getColor",
+            "getColorStateList"
+        ],
+        "menuButton": [
+            "setIconTint",
+            "setOnClickListener"
+        ],
+        "toolbar": [
+            "setVisibility"
+        ],
+        "themeUtils": [
+            "getDefaultDisplayNameForRootFolder"
+        ],
+        "fileDataStorageManager": [
+            "getFilenameConsideringOfflineOperation"
+        ],
+        "mSearchText": [
+            "setText"
+        ],
+        "mAppBar": [
+            "setStateListAnimator",
+            "getContext"
+        ],
+        "AnimatorInflater": [
+            "loadStateListAnimator"
+        ],
+        "mDefaultToolbar": [
+            "setVisibility"
+        ],
+        "mHomeSearchToolbar": [
+            "setVisibility"
+        ],
+        "file": [
+            "isFolder",
+            "getParentId"
+        ],
+        "mInfoBox": [
+            "setVisibility"
+        ],
+        "mInfoBoxMessage": [
+            "setText"
+        ],
+        "mToolbar": [
+            "setTitle",
+            "setBackgroundColor",
+            "setBackgroundResource"
+        ],
+        "mPreviewImageContainer": [
+            "setVisibility"
+        ],
+        "mPreviewImage": [
+            "setImageBitmap",
+            "setImageDrawable"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeActionBarSubtitle"
+        ]
+    },
+    "local_variables": {
+        "actionBar": "ActionBar",
+        "toolbar": "LinearLayout",
+        "menuButton": "MaterialButton",
+        "titleTextView": "MaterialTextView",
+        "title": "String",
+        "isRoot": "boolean"
+    }
+}

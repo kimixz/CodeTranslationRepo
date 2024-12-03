@@ -1,0 +1,30 @@
+{
+    "methods": [
+        {
+            "name": "onMeasure",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "widthMeasureSpec"
+                },
+                {
+                    "type": "int",
+                    "name": "heightMeasureSpec"
+                }
+            ],
+            "start_position": 779,
+            "end_position": 931,
+            "body_start": 863,
+            "body_end": 931
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "onMeasure"
+        ]
+    }
+}

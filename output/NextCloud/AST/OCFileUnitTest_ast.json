@@ -1,0 +1,87 @@
+{
+    "methods": [
+        {
+            "name": "createDefaultOCFile",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2069,
+            "end_position": 2156,
+            "body_start": 2115,
+            "body_end": 2156
+        },
+        {
+            "name": "writeThenReadAsParcelable",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2162,
+            "end_position": 5035,
+            "body_start": 2212,
+            "body_end": 5035
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "mFile": [
+            "setFileId",
+            "setParentId",
+            "setStoragePath",
+            "setMimeType",
+            "setFileLength",
+            "setCreationTimestamp",
+            "setModificationTimestamp",
+            "setModificationTimestampAtLastSyncForData",
+            "setLastSyncDateForProperties",
+            "setLastSyncDateForData",
+            "setEtag",
+            "setSharedViaLink",
+            "setSharedWithSharee",
+            "setPermissions",
+            "setRemoteId",
+            "setUpdateThumbnailNeeded",
+            "setDownloading",
+            "setEtagInConflict",
+            "writeToParcel",
+            "describeContents"
+        ],
+        "Parcel": [
+            "obtain"
+        ],
+        "parcel": [
+            "setDataPosition"
+        ],
+        "OCFile.CREATOR": [
+            "createFromParcel"
+        ],
+        "unknown": [
+            "assertThat",
+            "is"
+        ],
+        "fileReadFromParcel": [
+            "getRemotePath",
+            "getFileId",
+            "getParentId",
+            "getStoragePath",
+            "getMimeType",
+            "getFileLength",
+            "getCreationTimestamp",
+            "getModificationTimestamp",
+            "getModificationTimestampAtLastSyncForData",
+            "getLastSyncDateForProperties",
+            "getLastSyncDateForData",
+            "getEtag",
+            "isSharedViaLink",
+            "isSharedWithSharee",
+            "getPermissions",
+            "getRemoteId",
+            "isUpdateThumbnailNeeded",
+            "isDownloading",
+            "getEtagInConflict"
+        ]
+    },
+    "local_variables": {
+        "parcel": "Parcel",
+        "fileReadFromParcel": "OCFile"
+    }
+}

@@ -1,0 +1,341 @@
+{
+    "method_calls": {
+        "TrashbinListAdapter.class": [
+            "getSimpleName"
+        ],
+        "files": [
+            "clear",
+            "addAll",
+            "get",
+            "indexOf",
+            "remove",
+            "size"
+        ],
+        "preferences.getSortOrderByType(FileSortOrder.Type.trashBinView,\n                                               FileSortOrder.SORT_NEW_TO_OLD)": [
+            "sortTrashbinFiles"
+        ],
+        "preferences": [
+            "getSortOrderByType",
+            "setSortOrder"
+        ],
+        "unknown": [
+            "notifyDataSetChanged",
+            "setThumbnail",
+            "getFooterText",
+            "generateFooterText"
+        ],
+        "TrashbinItemBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "parent": [
+            "getContext"
+        ],
+        "ListFooterBinding": [
+            "inflate"
+        ],
+        "trashbinFileViewHolder.binding.ListItemLayout": [
+            "setOnClickListener"
+        ],
+        "trashbinActivityInterface": [
+            "onItemClicked",
+            "onOverflowIconClicked",
+            "onRestoreIconClicked"
+        ],
+        "trashbinFileViewHolder.binding.thumbnail": [
+            "setTag"
+        ],
+        "file": [
+            "getRemoteId",
+            "getFileName",
+            "getFileLength",
+            "getOriginalLocation",
+            "getDeletionTimestamp",
+            "isFolder",
+            "isHidden",
+            "getMimeType"
+        ],
+        "trashbinFileViewHolder.binding.Filename": [
+            "setText"
+        ],
+        "trashbinFileViewHolder.binding.fileSize": [
+            "setText"
+        ],
+        "DisplayUtils": [
+            "bytesToHumanReadable",
+            "getRelativeTimestamp"
+        ],
+        "file.getOriginalLocation()": [
+            "lastIndexOf",
+            "substring"
+        ],
+        "trashbinFileViewHolder.binding.originalLocation": [
+            "setText"
+        ],
+        "trashbinFileViewHolder.binding.deletionTimestamp": [
+            "setText"
+        ],
+        "trashbinFileViewHolder.binding.customCheckbox": [
+            "setVisibility"
+        ],
+        "trashbinFileViewHolder.binding.overflowMenu": [
+            "setOnClickListener"
+        ],
+        "trashbinFileViewHolder.binding.restore": [
+            "setOnClickListener"
+        ],
+        "trashbinFooterViewHolder.binding.footerText": [
+            "setText"
+        ],
+        "context": [
+            "getResources"
+        ],
+        "resources": [
+            "getQuantityString"
+        ],
+        "thumbnailView": [
+            "setImageDrawable",
+            "setImageBitmap",
+            "setBackgroundColor"
+        ],
+        "MimeTypeUtil": [
+            "getDefaultFolderIcon",
+            "isImage",
+            "isVideo",
+            "getFileTypeIcon"
+        ],
+        "ThumbnailsCacheManager": [
+            "getBitmapFromDiskCache",
+            "addVideoOverlay",
+            "cancelPotentialThumbnailWork"
+        ],
+        "asyncTasks": [
+            "add",
+            "clear"
+        ],
+        "task": [
+            "execute",
+            "cancel",
+            "getGetMethod"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "\"image/png\"": [
+            "equalsIgnoreCase"
+        ],
+        "context.getResources()": [
+            "getColor"
+        ],
+        "task.getGetMethod()": [
+            "abort"
+        ],
+        "sortOrder": [
+            "sortTrashbinFiles"
+        ],
+        "binding": [
+            "getRoot"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "for_statement",
+        "try_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "setTrashbinFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<TrashbinFile>",
+                    "name": "trashbinFiles"
+                },
+                {
+                    "type": "boolean",
+                    "name": "clear"
+                }
+            ],
+            "start_position": 2892,
+            "end_position": 3291,
+            "body_start": 2970,
+            "body_end": 3291
+        },
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "RecyclerView.ViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 3297,
+            "end_position": 3816,
+            "body_start": 3415,
+            "body_end": 3816
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView.ViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 3822,
+            "end_position": 6039,
+            "body_start": 3920,
+            "body_end": 6039
+        },
+        {
+            "name": "removeFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TrashbinFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 6045,
+            "end_position": 6326,
+            "body_start": 6129,
+            "body_end": 6326
+        },
+        {
+            "name": "removeAllFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6332,
+            "end_position": 6423,
+            "body_start": 6361,
+            "body_end": 6423
+        },
+        {
+            "name": "getFooterText",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 6429,
+            "end_position": 6927,
+            "body_start": 6460,
+            "body_end": 6927
+        },
+        {
+            "name": "generateFooterText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "filesCount"
+                },
+                {
+                    "type": "int",
+                    "name": "foldersCount"
+                }
+            ],
+            "start_position": 6933,
+            "end_position": 7741,
+            "body_start": 7001,
+            "body_end": 7741
+        },
+        {
+            "name": "setThumbnail",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TrashbinFile",
+                    "name": "file"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "thumbnailView"
+                }
+            ],
+            "start_position": 7747,
+            "end_position": 11141,
+            "body_start": 7817,
+            "body_end": 11141
+        },
+        {
+            "name": "getItemViewType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 11147,
+            "end_position": 11346,
+            "body_start": 11202,
+            "body_end": 11346
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 11352,
+            "end_position": 11432,
+            "body_start": 11392,
+            "body_end": 11432
+        },
+        {
+            "name": "cancelAllPendingTasks",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11438,
+            "end_position": 11872,
+            "body_start": 11474,
+            "body_end": 11872
+        },
+        {
+            "name": "setSortOrder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileSortOrder",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 11878,
+            "end_position": 12097,
+            "body_start": 11928,
+            "body_end": 12097
+        }
+    ],
+    "local_variables": {
+        "trashbinFileViewHolder": "TrashbinFileViewHolder",
+        "file": "TrashbinFile",
+        "location": "String",
+        "lastIndex": "int",
+        "trashbinFooterViewHolder": "TrashbinFooterViewHolder",
+        "index": "int",
+        "filesCount": "int",
+        "foldersCount": "int",
+        "count": "int",
+        "i": "int",
+        "output": "String",
+        "resources": "Resources",
+        "thumbnail": "Bitmap",
+        "withOverlay": "Bitmap",
+        "task": "ThumbnailsCacheManager.ThumbnailGenerationTask",
+        "asyncDrawable": "ThumbnailsCacheManager.AsyncThumbnailDrawable"
+    }
+}

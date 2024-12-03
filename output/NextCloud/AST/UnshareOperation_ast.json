@@ -1,0 +1,120 @@
+{
+    "method_calls": {
+        "UnshareOperation.class": [
+            "getSimpleName"
+        ],
+        "getStorageManager()": [
+            "getShareById",
+            "getFileByEncryptedRemotePath",
+            "getSharesWithForAFile",
+            "getUser",
+            "saveFile",
+            "removeShare",
+            "removeFile"
+        ],
+        "unknown": [
+            "getStorageManager",
+            "existsFile"
+        ],
+        "file": [
+            "isEncrypted",
+            "getE2eCounter",
+            "setSharedViaLink",
+            "setSharedWithSharee",
+            "getRemotePath"
+        ],
+        "share": [
+            "getShareType",
+            "getShareWith",
+            "getRemoteId"
+        ],
+        "EncryptionUtils": [
+            "lockFolder",
+            "downloadFolderMetadata",
+            "unlockFolder"
+        ],
+        "encryptionUtilsV2": [
+            "removeShareeFromMetadata",
+            "serializeAndUploadMetadata"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getCode"
+        ],
+        "unlockResult": [
+            "isSuccess"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "getStorageManager().getUser()": [
+            "getAccountName"
+        ],
+        "sharesWith": [
+            "size"
+        ],
+        "new ExistenceCheckRemoteOperation(remotePath, false).execute(client)": [
+            "isSuccess"
+        ],
+        "new ExistenceCheckRemoteOperation(remotePath, false)": [
+            "execute"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "try_statement",
+        "return_statement",
+        "throw_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 2302,
+            "end_position": 6940,
+            "body_start": 2375,
+            "body_end": 6940
+        },
+        {
+            "name": "existsFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 6946,
+            "end_position": 7119,
+            "body_start": 7015,
+            "body_end": 7119
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult",
+        "token": "String",
+        "share": "OCShare",
+        "file": "OCFile",
+        "object": "Object",
+        "metadata": "DecryptedFolderMetadataFile",
+        "encryptionUtilsV2": "EncryptionUtilsV2",
+        "newMetadata": "DecryptedFolderMetadataFile",
+        "operation": "RemoveShareRemoteOperation",
+        "unlockResult": "RemoteOperationResult<Void>",
+        "sharesWith": "List<OCShare>"
+    }
+}

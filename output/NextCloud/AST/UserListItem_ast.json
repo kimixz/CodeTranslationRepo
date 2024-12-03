@@ -1,0 +1,49 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 1267,
+            "end_position": 1317,
+            "body_start": 1289,
+            "body_end": 1317
+        },
+        {
+            "name": "getType",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 1323,
+            "end_position": 1372,
+            "body_start": 1344,
+            "body_end": 1372
+        },
+        {
+            "name": "setEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "bool"
+                }
+            ],
+            "start_position": 1378,
+            "end_position": 1446,
+            "body_start": 1415,
+            "body_end": 1446
+        },
+        {
+            "name": "isEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1452,
+            "end_position": 1510,
+            "body_start": 1479,
+            "body_end": 1510
+        }
+    ]
+}

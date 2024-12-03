@@ -1,0 +1,458 @@
+{
+    "method_calls": {
+        "UserListAdapter.class": [
+            "getSimpleName"
+        ],
+        "context.getResources()": [
+            "getDimension"
+        ],
+        "context": [
+            "getResources"
+        ],
+        "values": [
+            "size",
+            "get",
+            "clear",
+            "addAll"
+        ],
+        "AccountItemBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "AccountActionBinding": [
+            "inflate"
+        ],
+        "userListItem": [
+            "getType",
+            "getUser",
+            "isEnabled"
+        ],
+        "item": [
+            "bind"
+        ],
+        "((AddAccountViewHolderItem) holder)": [
+            "bind"
+        ],
+        "((ImageView)callContext)": [
+            "setImageDrawable",
+            "getTag"
+        ],
+        "String.valueOf(((ImageView)callContext).getTag())": [
+            "equals"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "this.values": [
+            "size"
+        ],
+        "unknown": [
+            "notifyItemRangeRemoved",
+            "notifyDataSetChanged",
+            "setData",
+            "setUser",
+            "setUsername",
+            "setAvatar",
+            "setCurrentlyActiveState"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "viewThemeUtils.platform": [
+            "tintPrimaryDrawable"
+        ],
+        "binding.ticker": [
+            "getDrawable",
+            "setVisibility"
+        ],
+        "binding.getRoot()": [
+            "setOnClickListener"
+        ],
+        "binding.accountMenu": [
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "view": [
+            "isEnabled",
+            "getId"
+        ],
+        "clickListener": [
+            "onOptionItemClicked",
+            "onAccountClicked"
+        ],
+        "binding.userName": [
+            "setPaintFlags",
+            "getPaintFlags",
+            "setText",
+            "setTag"
+        ],
+        "binding.account": [
+            "setPaintFlags",
+            "getPaintFlags",
+            "setText",
+            "setTag"
+        ],
+        "DisplayUtils": [
+            "convertIdn",
+            "setAvatar"
+        ],
+        "user": [
+            "getAccountName",
+            "toOwnCloudAccount"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "currentUser": [
+            "nameEquals"
+        ],
+        "viewItem": [
+            "setTag"
+        ],
+        "Log_OC": [
+            "e",
+            "w",
+            "d"
+        ],
+        "binding.userIcon": [
+            "setImageResource"
+        ],
+        "oca": [
+            "getDisplayName"
+        ],
+        "UserAccountManager": [
+            "getUsername"
+        ],
+        "MDMConfig.INSTANCE": [
+            "showIntro"
+        ],
+        "itemView": [
+            "setOnClickListener"
+        ],
+        "accountListAdapterListener": [
+            "showFirstRunActivity",
+            "startAccountCreation"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "try_statement"
+    ],
+    "methods": [
+        {
+            "name": "getItemViewType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 3440,
+            "end_position": 3666,
+            "body_start": 3495,
+            "body_end": 3666
+        },
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "RecyclerView.ViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 3672,
+            "end_position": 4380,
+            "body_start": 3790,
+            "body_end": 4380
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView.ViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 4386,
+            "end_position": 5200,
+            "body_start": 4484,
+            "body_end": 5200
+        },
+        {
+            "name": "avatarGenerated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "avatarDrawable"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 5206,
+            "end_position": 5367,
+            "body_start": 5293,
+            "body_end": 5367
+        },
+        {
+            "name": "shouldCallGeneratedCallback",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tag"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 5373,
+            "end_position": 5547,
+            "body_start": 5462,
+            "body_end": 5547
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 5711,
+            "end_position": 5793,
+            "body_start": 5751,
+            "body_end": 5793
+        },
+        {
+            "name": "getItem",
+            "return_type": "UserListItem",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 6009,
+            "end_position": 6095,
+            "body_start": 6051,
+            "body_end": 6095
+        },
+        {
+            "name": "clear",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6189,
+            "end_position": 6321,
+            "body_start": 6209,
+            "body_end": 6321
+        },
+        {
+            "name": "addAll",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<UserListItem>",
+                    "name": "items"
+                }
+            ],
+            "start_position": 6441,
+            "end_position": 6632,
+            "body_start": 6485,
+            "body_end": 6632
+        },
+        {
+            "name": "showFirstRunActivity",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6674,
+            "end_position": 6702
+        },
+        {
+            "name": "startAccountCreation",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6711,
+            "end_position": 6739
+        },
+        {
+            "name": "setData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 7604,
+            "end_position": 7676,
+            "body_start": 7635,
+            "body_end": 7676
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 7686,
+            "end_position": 8046,
+            "body_start": 7735,
+            "body_end": 8046
+        },
+        {
+            "name": "bind",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "boolean",
+                    "name": "userListItemEnabled"
+                },
+                {
+                    "type": "boolean",
+                    "name": "highlightCurrentlyActiveAccount"
+                },
+                {
+                    "type": "DisplayUtils.AvatarGenerationListener",
+                    "name": "avatarGenerationListener"
+                }
+            ],
+            "start_position": 8056,
+            "end_position": 9162,
+            "body_start": 8293,
+            "body_end": 9162
+        },
+        {
+            "name": "setUser",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 9302,
+            "end_position": 9496,
+            "body_start": 9334,
+            "body_end": 9496
+        },
+        {
+            "name": "setCurrentlyActiveState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 9710,
+            "end_position": 10031,
+            "body_start": 9758,
+            "body_end": 10031
+        },
+        {
+            "name": "setAvatar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "DisplayUtils.AvatarGenerationListener",
+                    "name": "avatarGenerationListener"
+                }
+            ],
+            "start_position": 10153,
+            "end_position": 10982,
+            "body_start": 10251,
+            "body_end": 10982
+        },
+        {
+            "name": "setUsername",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 11106,
+            "end_position": 11592,
+            "body_start": 11142,
+            "body_end": 11592
+        },
+        {
+            "name": "bind",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Listener",
+                    "name": "accountListAdapterListener"
+                }
+            ],
+            "start_position": 12131,
+            "end_position": 12667,
+            "body_start": 12186,
+            "body_end": 12667
+        },
+        {
+            "name": "onOptionItemClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 12720,
+            "end_position": 12767
+        },
+        {
+            "name": "onAccountClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 12777,
+            "end_position": 12810
+        }
+    ],
+    "local_variables": {
+        "userListItem": "UserListItem",
+        "user": "User",
+        "item": "AccountViewHolderItem",
+        "size": "int",
+        "currentUser": "User",
+        "viewItem": "View",
+        "oca": "OwnCloudAccount"
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "method_calls": {
+        "UpdateOCVersionOperation.class": [
+            "getSimpleName"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "accountMngr": [
+            "getUserData",
+            "setUserData"
+        ],
+        "user": [
+            "toPlatformAccount"
+        ],
+        "client.getFilesDavUri()": [
+            "toString"
+        ],
+        "client": [
+            "getFilesDavUri",
+            "executeMethod",
+            "exhaustResponse"
+        ],
+        "getMethod": [
+            "getResponseBodyAsStream",
+            "getResponseBodyAsString",
+            "releaseConnection"
+        ],
+        "json": [
+            "getString"
+        ],
+        "mOwnCloudVersion": [
+            "isVersionValid",
+            "getVersion"
+        ],
+        "Log_OC": [
+            "d",
+            "w",
+            "i",
+            "e"
+        ],
+        "result": [
+            "getLogMessage"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1843,
+            "end_position": 4696,
+            "body_start": 1916,
+            "body_end": 4696
+        },
+        {
+            "name": "getOCVersion",
+            "return_type": "OwnCloudVersion",
+            "parameters": [],
+            "start_position": 4703,
+            "end_position": 4781,
+            "body_start": 4741,
+            "body_end": 4781
+        }
+    ],
+    "local_variables": {
+        "accountMngr": "AccountManager",
+        "statUrl": "String",
+        "result": "RemoteOperationResult",
+        "getMethod": "GetMethod",
+        "webDav": "String",
+        "status": "int",
+        "response": "String",
+        "json": "JSONObject",
+        "version": "String"
+    }
+}

@@ -1,0 +1,204 @@
+{
+    "method_calls": {
+        "Arrays": [
+            "asList"
+        ],
+        "supportedShareTypes": [
+            "contains"
+        ],
+        "getStorageManager()": [
+            "getFileByDecryptedRemotePath",
+            "saveShare",
+            "getFileByPath",
+            "saveFile"
+        ],
+        "unknown": [
+            "getStorageManager",
+            "updateData"
+        ],
+        "folder": [
+            "isEncrypted",
+            "getE2eCounter"
+        ],
+        "EncryptionUtils": [
+            "getPublicKey",
+            "savePublicKey",
+            "lockFolder",
+            "downloadFolderMetadata",
+            "retrievePublicKeyForUser",
+            "unlockFolder"
+        ],
+        "\"\"": [
+            "equals"
+        ],
+        "new ClientFactoryImpl(context)": [
+            "createNextcloudClient"
+        ],
+        "new GetPublicKeyRemoteOperation(shareeName)": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultData"
+        ],
+        "e": [
+            "setMessage"
+        ],
+        "context": [
+            "getString"
+        ],
+        "operation": [
+            "setGetShareDetails",
+            "execute"
+        ],
+        "shareResult": [
+            "isSuccess",
+            "getData"
+        ],
+        "shareResult.getData()": [
+            "size",
+            "get"
+        ],
+        "new EncryptionUtilsV2()": [
+            "createDecryptedFolderMetadataFile"
+        ],
+        "metadata.getUsers()": [
+            "add"
+        ],
+        "metadata": [
+            "getUsers",
+            "getMetadata"
+        ],
+        "client": [
+            "getUserId"
+        ],
+        "DecryptedUserExtensionsKt": [
+            "findMetadataKeyByUserId"
+        ],
+        "encryptionUtilsV2": [
+            "addShareeToMetadata",
+            "serializeAndUploadMetadata"
+        ],
+        "metadata.getMetadata()": [
+            "setCounter"
+        ],
+        "unlockResult": [
+            "isSuccess"
+        ],
+        "updateShareInfoOperation": [
+            "setExpirationDateInMillis",
+            "setHideFileDownload",
+            "setNote",
+            "setLabel",
+            "setPermissions",
+            "execute"
+        ],
+        "updateShareInfoResult": [
+            "isSuccess",
+            "getData"
+        ],
+        "updateShareInfoResult.getData()": [
+            "size",
+            "get"
+        ],
+        "share": [
+            "setPath",
+            "setFolder",
+            "setPasswordProtected"
+        ],
+        "path": [
+            "endsWith"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "file": [
+            "setSharedWithSharee"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "throw_statement",
+        "expression_statement",
+        "try_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 5199,
+            "end_position": 11627,
+            "body_start": 5272,
+            "body_end": 11627
+        },
+        {
+            "name": "updateData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 11633,
+            "end_position": 12308,
+            "body_start": 11672,
+            "body_end": 12308
+        },
+        {
+            "name": "getPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 12314,
+            "end_position": 12371,
+            "body_start": 12338,
+            "body_end": 12371
+        },
+        {
+            "name": "setLabel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "label"
+                }
+            ],
+            "start_position": 12377,
+            "end_position": 12447,
+            "body_start": 12412,
+            "body_end": 12447
+        }
+    ],
+    "local_variables": {
+        "folder": "OCFile",
+        "isEncrypted": "boolean",
+        "token": "String",
+        "newCounter": "long",
+        "publicKey": "String",
+        "nextcloudClient": "NextcloudClient",
+        "result": "RemoteOperationResult<String>",
+        "e": "RemoteOperationResult",
+        "operation": "CreateShareRemoteOperation",
+        "shareResult": "RemoteOperationResult",
+        "object": "Object",
+        "metadata": "DecryptedFolderMetadataFile",
+        "metadataExists": "boolean",
+        "cert": "String",
+        "encryptionUtilsV2": "EncryptionUtilsV2",
+        "decryptedMetadataKey": "String",
+        "newMetadata": "DecryptedFolderMetadataFile",
+        "unlockResult": "RemoteOperationResult<Void>",
+        "share": "OCShare",
+        "updateShareInfoOperation": "UpdateShareInfoOperation",
+        "updateShareInfoResult": "RemoteOperationResult",
+        "shareUpdated": "OCShare",
+        "file": "OCFile"
+    }
+}

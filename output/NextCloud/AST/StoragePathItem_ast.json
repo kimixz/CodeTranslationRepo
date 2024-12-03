@@ -1,0 +1,77 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getIcon",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 524,
+            "end_position": 578,
+            "body_start": 545,
+            "body_end": 578
+        },
+        {
+            "name": "getName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 584,
+            "end_position": 641,
+            "body_start": 608,
+            "body_end": 641
+        },
+        {
+            "name": "getPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 647,
+            "end_position": 704,
+            "body_start": 671,
+            "body_end": 704
+        },
+        {
+            "name": "setIcon",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "icon"
+                }
+            ],
+            "start_position": 710,
+            "end_position": 773,
+            "body_start": 740,
+            "body_end": 773
+        },
+        {
+            "name": "setName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 779,
+            "end_position": 845,
+            "body_start": 812,
+            "body_end": 845
+        },
+        {
+            "name": "setPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 851,
+            "end_position": 917,
+            "body_start": 884,
+            "body_end": 917
+        }
+    ]
+}

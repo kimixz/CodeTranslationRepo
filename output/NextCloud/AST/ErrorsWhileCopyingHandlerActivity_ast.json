@@ -1,0 +1,238 @@
+{
+    "method_calls": {
+        "ErrorsWhileCopyingHandlerActivity.class": [
+            "getSimpleName",
+            "getCanonicalName"
+        ],
+        "super": [
+            "onCreate"
+        ],
+        "unknown": [
+            "getIntent",
+            "getContentResolver",
+            "setContentView",
+            "findViewById",
+            "getString",
+            "getSystemService",
+            "getItem",
+            "finish",
+            "getSupportFragmentManager"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "intent": [
+            "getStringArrayListExtra"
+        ],
+        "mCurrentDialog": [
+            "dismiss",
+            "show"
+        ],
+        "String": [
+            "format"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "textView": [
+            "setText",
+            "setMovementMethod"
+        ],
+        "mLocalPaths": [
+            "size",
+            "isEmpty",
+            "get",
+            "remove"
+        ],
+        "listView": [
+            "setAdapter",
+            "setVisibility"
+        ],
+        "okBtn": [
+            "setText",
+            "setOnClickListener"
+        ],
+        "cancelBtn": [
+            "setOnClickListener"
+        ],
+        "vi": [
+            "inflate"
+        ],
+        "view": [
+            "findViewById"
+        ],
+        "text1": [
+            "setText"
+        ],
+        "mRemotePaths": [
+            "size",
+            "get",
+            "remove"
+        ],
+        "text2": [
+            "setText"
+        ],
+        "v": [
+            "getId"
+        ],
+        "Log_OC": [
+            "d",
+            "e"
+        ],
+        "new MoveFilesTask()": [
+            "execute"
+        ],
+        "IndeterminateProgressDialog": [
+            "newInstance"
+        ],
+        "findViewById(R.id.ok)": [
+            "setEnabled"
+        ],
+        "FileStorageUtils": [
+            "getSavePath"
+        ],
+        "expectedFile": [
+            "equals"
+        ],
+        "currentFile": [
+            "renameTo"
+        ],
+        "mStorageManager": [
+            "getFileByPath",
+            "saveFile"
+        ],
+        "file": [
+            "setStoragePath"
+        ],
+        "mAdapter": [
+            "notifyDataSetChanged"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 3081,
+            "end_position": 4927,
+            "body_start": 3146,
+            "body_end": 4927
+        },
+        {
+            "name": "isEnabled",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 5388,
+            "end_position": 5482,
+            "body_start": 5445,
+            "body_end": 5482
+        },
+        {
+            "name": "getView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                },
+                {
+                    "type": "View",
+                    "name": "convertView"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                }
+            ],
+            "start_position": 5545,
+            "end_position": 6885,
+            "body_start": 5643,
+            "body_end": 6885
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "v"
+                }
+            ],
+            "start_position": 7065,
+            "end_position": 7563,
+            "body_start": 7107,
+            "body_end": 7563
+        },
+        {
+            "name": "onPreExecute",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7833,
+            "end_position": 8184,
+            "body_start": 7882,
+            "body_end": 8184
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Boolean",
+            "parameters": [],
+            "start_position": 8331,
+            "end_position": 9309,
+            "body_start": 8398,
+            "body_end": 9309
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Boolean",
+                    "name": "result"
+                }
+            ],
+            "start_position": 9713,
+            "end_position": 10327,
+            "body_start": 9776,
+            "body_end": 10327
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "while_statement"
+    ],
+    "local_variables": {
+        "intent": "Intent",
+        "textView": "TextView",
+        "appName": "String",
+        "message": "String",
+        "listView": "ListView",
+        "cancelBtn": "Button",
+        "okBtn": "Button",
+        "view": "View",
+        "vi": "LayoutInflater",
+        "localPath": "String",
+        "text1": "TextView",
+        "text2": "TextView",
+        "remotePath": "String",
+        "currentPath": "String",
+        "currentFile": "File",
+        "expectedPath": "String",
+        "expectedFile": "File",
+        "file": "OCFile"
+    }
+}

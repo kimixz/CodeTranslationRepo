@@ -1,0 +1,39 @@
+{
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 437,
+            "end_position": 602,
+            "body_start": 502,
+            "body_end": 602
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 608,
+            "end_position": 730,
+            "body_start": 648,
+            "body_end": 730
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate",
+            "onResume"
+        ],
+        "GooglePlayUtils": [
+            "checkPlayServices"
+        ]
+    }
+}

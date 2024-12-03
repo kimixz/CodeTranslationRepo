@@ -1,0 +1,722 @@
+[
+    {
+        "method_name": "activitiesActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ActivitiesActivity activitiesActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled activitiesActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: activitiesActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ActivitiesActivity activitiesActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol ActivitiesActivity {}\n\nclass ComponentsModule {\n    func activitiesActivity() -> ActivitiesActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "authenticatorActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract AuthenticatorActivity authenticatorActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled authenticatorActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: authenticatorActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract AuthenticatorActivity authenticatorActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol AuthenticatorActivity {}\n\nclass ComponentsModule {\n    func authenticatorActivity() -> AuthenticatorActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "baseActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract BaseActivity baseActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled baseActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: baseActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract BaseActivity baseActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol BaseActivity {}\n\nclass ComponentsModule {\n    func baseActivity() -> BaseActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "conflictsResolveActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ConflictsResolveActivity conflictsResolveActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled conflictsResolveActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: conflictsResolveActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ConflictsResolveActivity conflictsResolveActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol ConflictsResolveActivityProvider {\n    func provideConflictsResolveActivity() -> ConflictsResolveActivity\n}\n\nclass ConflictsResolveActivity: ConflictsResolveActivityProvider {\n    func provideConflictsResolveActivity() -> ConflictsResolveActivity {\n        return ConflictsResolveActivity()\n    }\n}\n```"
+    },
+    {
+        "method_name": "contactsPreferenceActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ContactsPreferenceActivity contactsPreferenceActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled contactsPreferenceActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: contactsPreferenceActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ContactsPreferenceActivity contactsPreferenceActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc contactsPreferenceActivity() -> ContactsPreferenceActivity {\n    return ContactsPreferenceActivity()\n}\n```"
+    },
+    {
+        "method_name": "copyToClipboardActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract CopyToClipboardActivity copyToClipboardActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled copyToClipboardActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: copyToClipboardActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract CopyToClipboardActivity copyToClipboardActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol CopyToClipboardActivity {}\n\nclass ComponentsModule {\n    func copyToClipboardActivity() -> CopyToClipboardActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "deepLinkLoginActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract DeepLinkLoginActivity deepLinkLoginActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled deepLinkLoginActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: deepLinkLoginActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract DeepLinkLoginActivity deepLinkLoginActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol DeepLinkLoginActivity {}\n\nclass ComponentsModule {\n    func deepLinkLoginActivity() -> DeepLinkLoginActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "drawerActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract DrawerActivity drawerActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled drawerActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: drawerActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract DrawerActivity drawerActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc drawerActivity() -> DrawerActivity\n```"
+    },
+    {
+        "method_name": "errorsWhileCopyingHandlerActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ErrorsWhileCopyingHandlerActivity errorsWhileCopyingHandlerActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled errorsWhileCopyingHandlerActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: errorsWhileCopyingHandlerActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ErrorsWhileCopyingHandlerActivity errorsWhileCopyingHandlerActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol ErrorsWhileCopyingHandlerActivity {}\n\nclass ComponentsModule {\n    func errorsWhileCopyingHandlerActivity() -> ErrorsWhileCopyingHandlerActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "externalSiteWebView",
+        "method_code": "@ContributesAndroidInjector\n    abstract ExternalSiteWebView externalSiteWebView();",
+        "prompt": "\n        Please translate the following Java (Android) method titled externalSiteWebView from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: externalSiteWebView\n\n        Method Code: @ContributesAndroidInjector\n    abstract ExternalSiteWebView externalSiteWebView();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol ExternalSiteWebView {}\n\nclass ComponentsModule {\n    func externalSiteWebView() -> ExternalSiteWebView {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "fileDisplayActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileDisplayActivity fileDisplayActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileDisplayActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileDisplayActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileDisplayActivity fileDisplayActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol FileDisplayActivityProvider {\n    func fileDisplayActivity() -> FileDisplayActivity\n}\n\nclass FileDisplayActivity: FileDisplayActivityProvider {\n    func fileDisplayActivity() -> FileDisplayActivity {\n        return self\n    }\n}\n```"
+    },
+    {
+        "method_name": "filePickerActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract FilePickerActivity filePickerActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled filePickerActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: filePickerActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract FilePickerActivity filePickerActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol FilePickerActivity {}\n\nclass ComponentsModule {\n    func filePickerActivity() -> FilePickerActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "firstRunActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract FirstRunActivity firstRunActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled firstRunActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: firstRunActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract FirstRunActivity firstRunActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc firstRunActivity() -> FirstRunActivity {\n    // Implementation details would go here\n    return FirstRunActivity()\n}\n```"
+    },
+    {
+        "method_name": "folderPickerActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract FolderPickerActivity folderPickerActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled folderPickerActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: folderPickerActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract FolderPickerActivity folderPickerActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc folderPickerActivity() -> FolderPickerActivity {\n    // Implementation for Swift\n    return FolderPickerActivity()\n}\n```"
+    },
+    {
+        "method_name": "logsActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract LogsActivity logsActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled logsActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: logsActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract LogsActivity logsActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc logsActivity() -> LogsActivity {\n    // Implementation for dependency injection in Swift\n    return LogsActivity()\n}\n```"
+    },
+    {
+        "method_name": "manageAccountsActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ManageAccountsActivity manageAccountsActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled manageAccountsActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: manageAccountsActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ManageAccountsActivity manageAccountsActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc manageAccountsActivity() -> ManageAccountsActivity {\n    // Implementation for dependency injection in Swift\n    return ManageAccountsActivity()\n}\n```"
+    },
+    {
+        "method_name": "manageSpaceActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ManageSpaceActivity manageSpaceActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled manageSpaceActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: manageSpaceActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ManageSpaceActivity manageSpaceActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol ManageSpaceActivity {}\n\nclass ComponentsModule {\n    func manageSpaceActivity() -> ManageSpaceActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "notificationsActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract NotificationsActivity notificationsActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled notificationsActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: notificationsActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract NotificationsActivity notificationsActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc notificationsActivity() -> NotificationsActivity {\n    // Implementation for dependency injection in Swift\n    return NotificationsActivity()\n}\n```"
+    },
+    {
+        "method_name": "participateActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract CommunityActivity participateActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled participateActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: participateActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract CommunityActivity participateActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol CommunityActivity {}\n\nclass ComponentsModule {\n    func participateActivity() -> CommunityActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "composeActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ComposeActivity composeActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled composeActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: composeActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ComposeActivity composeActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol ComposeActivityProvider {\n    func composeActivity() -> ComposeActivity\n}\n```"
+    },
+    {
+        "method_name": "passCodeActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract PassCodeActivity passCodeActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled passCodeActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: passCodeActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract PassCodeActivity passCodeActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol PassCodeActivityProvider {\n    func passCodeActivity() -> PassCodeActivity\n}\n\nclass PassCodeActivity: NSObject {\n    // Implementation of PassCodeActivity\n}\n```"
+    },
+    {
+        "method_name": "previewImageActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract PreviewImageActivity previewImageActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled previewImageActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: previewImageActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract PreviewImageActivity previewImageActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol PreviewImageActivity {}\n\nclass ComponentsModule {\n    func previewImageActivity() -> PreviewImageActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "previewMediaActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract PreviewMediaActivity previewMediaActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled previewMediaActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: previewMediaActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract PreviewMediaActivity previewMediaActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol PreviewMediaActivityProvider {\n    func previewMediaActivity() -> PreviewMediaActivity\n}\n\nclass PreviewMediaActivity: NSObject {\n    // Implementation of PreviewMediaActivity\n}\n```"
+    },
+    {
+        "method_name": "receiveExternalFilesActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ReceiveExternalFilesActivity receiveExternalFilesActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled receiveExternalFilesActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: receiveExternalFilesActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ReceiveExternalFilesActivity receiveExternalFilesActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol ReceiveExternalFilesActivity {}\n\nclass ComponentsModule {\n    func receiveExternalFilesActivity() -> ReceiveExternalFilesActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "requestCredentialsActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract RequestCredentialsActivity requestCredentialsActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled requestCredentialsActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: requestCredentialsActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract RequestCredentialsActivity requestCredentialsActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol RequestCredentialsActivity {}\n\nclass ComponentsModule {\n    func requestCredentialsActivity() -> RequestCredentialsActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "settingsActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract SettingsActivity settingsActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled settingsActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: settingsActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract SettingsActivity settingsActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol SettingsActivityProvider {\n    func settingsActivity() -> SettingsActivity\n}\n\nclass ComponentsModule: SettingsActivityProvider {\n    func settingsActivity() -> SettingsActivity {\n        return SettingsActivity()\n    }\n}\n\nclass SettingsActivity {\n    // Implementation of SettingsActivity\n}\n```"
+    },
+    {
+        "method_name": "shareActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ShareActivity shareActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled shareActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: shareActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ShareActivity shareActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc shareActivity() -> ShareActivity {\n    // Implementation for ShareActivity in Swift\n    return ShareActivity()\n}\n```"
+    },
+    {
+        "method_name": "ssoGrantPermissionActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract SsoGrantPermissionActivity ssoGrantPermissionActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled ssoGrantPermissionActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: ssoGrantPermissionActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract SsoGrantPermissionActivity ssoGrantPermissionActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol SsoGrantPermissionActivity {}\n\nclass ComponentsModule {\n    func ssoGrantPermissionActivity() -> SsoGrantPermissionActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "syncedFoldersActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract SyncedFoldersActivity syncedFoldersActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled syncedFoldersActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: syncedFoldersActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract SyncedFoldersActivity syncedFoldersActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc syncedFoldersActivity() -> SyncedFoldersActivity {\n    // Implementation for dependency injection in Swift\n    // This is a placeholder as Swift does not have a direct equivalent to Dagger's @ContributesAndroidInjector\n    return SyncedFoldersActivity()\n}\n```"
+    },
+    {
+        "method_name": "trashbinActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract TrashbinActivity trashbinActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled trashbinActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: trashbinActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract TrashbinActivity trashbinActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol TrashbinActivity {}\n\nclass ComponentsModule {\n    func trashbinActivity() -> TrashbinActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "uploadFilesActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract UploadFilesActivity uploadFilesActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled uploadFilesActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: uploadFilesActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract UploadFilesActivity uploadFilesActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc uploadFilesActivity() -> UploadFilesActivity {\n    // Implementation for Swift\n    return UploadFilesActivity()\n}\n```"
+    },
+    {
+        "method_name": "uploadListActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract UploadListActivity uploadListActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled uploadListActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: uploadListActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract UploadListActivity uploadListActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol UploadListActivity {}\n\nclass ComponentsModule {\n    func uploadListActivity() -> UploadListActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "userInfoActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract UserInfoActivity userInfoActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled userInfoActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: userInfoActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract UserInfoActivity userInfoActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesiOSInjector\nfunc userInfoActivity() -> UserInfoActivity\n```"
+    },
+    {
+        "method_name": "whatsNewActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract WhatsNewActivity whatsNewActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled whatsNewActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: whatsNewActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract WhatsNewActivity whatsNewActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol WhatsNewActivityProvider {\n    func provideWhatsNewActivity() -> WhatsNewActivity\n}\n\nclass ComponentsModule: WhatsNewActivityProvider {\n    func provideWhatsNewActivity() -> WhatsNewActivity {\n        return WhatsNewActivity()\n    }\n}\n\nclass WhatsNewActivity {\n    // Implementation of WhatsNewActivity\n}\n```"
+    },
+    {
+        "method_name": "etmActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract EtmActivity etmActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled etmActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: etmActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract EtmActivity etmActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc etmActivity() -> EtmActivity {\n    // Implementation for dependency injection in Swift\n    return EtmActivity()\n}\n```"
+    },
+    {
+        "method_name": "richDocumentsWebView",
+        "method_code": "@ContributesAndroidInjector\n    abstract RichDocumentsEditorWebView richDocumentsWebView();",
+        "prompt": "\n        Please translate the following Java (Android) method titled richDocumentsWebView from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: richDocumentsWebView\n\n        Method Code: @ContributesAndroidInjector\n    abstract RichDocumentsEditorWebView richDocumentsWebView();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol RichDocumentsEditorWebView {}\n\nclass ComponentsModule {\n    func richDocumentsWebView() -> RichDocumentsEditorWebView {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "textEditorWebView",
+        "method_code": "@ContributesAndroidInjector\n    abstract TextEditorWebView textEditorWebView();",
+        "prompt": "\n        Please translate the following Java (Android) method titled textEditorWebView from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: textEditorWebView\n\n        Method Code: @ContributesAndroidInjector\n    abstract TextEditorWebView textEditorWebView();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc textEditorWebView() -> TextEditorWebView\n```"
+    },
+    {
+        "method_name": "extendedListFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract ExtendedListFragment extendedListFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled extendedListFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: extendedListFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract ExtendedListFragment extendedListFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc extendedListFragment() -> ExtendedListFragment\n```"
+    },
+    {
+        "method_name": "fileDetailFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileDetailFragment fileDetailFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileDetailFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileDetailFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileDetailFragment fileDetailFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc fileDetailFragment() -> FileDetailFragment\n```"
+    },
+    {
+        "method_name": "localFileListFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract LocalFileListFragment localFileListFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled localFileListFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: localFileListFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract LocalFileListFragment localFileListFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol LocalFileListFragmentProvider {\n    func localFileListFragment() -> LocalFileListFragment\n}\n\nclass LocalFileListFragment: NSObject {\n    // Implementation of LocalFileListFragment\n}\n```"
+    },
+    {
+        "method_name": "ocFileListFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract OCFileListFragment ocFileListFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled ocFileListFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: ocFileListFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract OCFileListFragment ocFileListFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesiOSInjector\nfunc ocFileListFragment() -> OCFileListFragment\n```"
+    },
+    {
+        "method_name": "fileDetailActivitiesFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileDetailActivitiesFragment fileDetailActivitiesFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileDetailActivitiesFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileDetailActivitiesFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileDetailActivitiesFragment fileDetailActivitiesFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc fileDetailActivitiesFragment() -> FileDetailActivitiesFragment\n```"
+    },
+    {
+        "method_name": "fileDetailsSharingProcessFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileDetailsSharingProcessFragment fileDetailsSharingProcessFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileDetailsSharingProcessFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileDetailsSharingProcessFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileDetailsSharingProcessFragment fileDetailsSharingProcessFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc fileDetailsSharingProcessFragment() -> FileDetailsSharingProcessFragment {\n    return FileDetailsSharingProcessFragment()\n}\n```"
+    },
+    {
+        "method_name": "fileDetailSharingFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileDetailSharingFragment fileDetailSharingFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileDetailSharingFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileDetailSharingFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileDetailSharingFragment fileDetailSharingFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc fileDetailSharingFragment() -> FileDetailSharingFragment {\n    return FileDetailSharingFragment()\n}\n```"
+    },
+    {
+        "method_name": "chooseTemplateDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract ChooseTemplateDialogFragment chooseTemplateDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled chooseTemplateDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: chooseTemplateDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract ChooseTemplateDialogFragment chooseTemplateDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol ChooseTemplateDialogFragmentProvider {\n    func provideChooseTemplateDialogFragment() -> ChooseTemplateDialogFragment\n}\n```"
+    },
+    {
+        "method_name": "accountRemovalDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract AccountRemovalDialog accountRemovalDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled accountRemovalDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: accountRemovalDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract AccountRemovalDialog accountRemovalDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol AccountRemovalDialog {}\n\nclass ComponentsModule {\n    func accountRemovalDialog() -> AccountRemovalDialog {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "chooseRichDocumentsTemplateDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract ChooseRichDocumentsTemplateDialogFragment chooseRichDocumentsTemplateDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled chooseRichDocumentsTemplateDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: chooseRichDocumentsTemplateDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract ChooseRichDocumentsTemplateDialogFragment chooseRichDocumentsTemplateDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc chooseRichDocumentsTemplateDialogFragment() -> ChooseRichDocumentsTemplateDialogFragment {\n    return ChooseRichDocumentsTemplateDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "contactsBackupFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract BackupFragment contactsBackupFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled contactsBackupFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: contactsBackupFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract BackupFragment contactsBackupFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol ContactsBackupFragmentProvider {\n    func contactsBackupFragment() -> BackupFragment\n}\n\nclass ComponentsModule: ContactsBackupFragmentProvider {\n    func contactsBackupFragment() -> BackupFragment {\n        return BackupFragment()\n    }\n}\n\nclass BackupFragment {\n    // Implementation of BackupFragment\n}\n```"
+    },
+    {
+        "method_name": "previewImageFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract PreviewImageFragment previewImageFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled previewImageFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: previewImageFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract PreviewImageFragment previewImageFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc previewImageFragment() -> PreviewImageFragment {\n    // Implementation details would go here\n    return PreviewImageFragment()\n}\n```"
+    },
+    {
+        "method_name": "chooseContactListFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract BackupListFragment chooseContactListFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled chooseContactListFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: chooseContactListFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract BackupListFragment chooseContactListFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc chooseContactListFragment() -> BackupListFragment\n```"
+    },
+    {
+        "method_name": "previewMediaFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract PreviewMediaFragment previewMediaFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled previewMediaFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: previewMediaFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract PreviewMediaFragment previewMediaFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Swinject\n\nclass ComponentsModule: Assembly {\n    func assemble(container: Container) {\n        container.register(PreviewMediaFragment.self) { _ in\n            PreviewMediaFragment()\n        }\n    }\n}\n```"
+    },
+    {
+        "method_name": "previewTextFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract PreviewTextFragment previewTextFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled previewTextFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: previewTextFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract PreviewTextFragment previewTextFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Swinject\n\nclass ComponentsModule: Assembly {\n    func assemble(container: Container) {\n        container.register(PreviewTextFragment.self) { _ in\n            PreviewTextFragment()\n        }\n    }\n}\n\nclass PreviewTextFragment {\n    // Implementation of PreviewTextFragment\n}\n```"
+    },
+    {
+        "method_name": "chooseAccountDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract ChooseAccountDialogFragment chooseAccountDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled chooseAccountDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: chooseAccountDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract ChooseAccountDialogFragment chooseAccountDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc chooseAccountDialogFragment() -> ChooseAccountDialogFragment {\n    return ChooseAccountDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "setStatusDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract SetStatusDialogFragment setStatusDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled setStatusDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: setStatusDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract SetStatusDialogFragment setStatusDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol SetStatusDialogFragment {}\n\nclass ComponentsModule {\n    func setStatusDialogFragment() -> SetStatusDialogFragment {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "previewTextFileFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract PreviewTextFileFragment previewTextFileFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled previewTextFileFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: previewTextFileFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract PreviewTextFileFragment previewTextFileFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc previewTextFileFragment() -> PreviewTextFileFragment\n```"
+    },
+    {
+        "method_name": "previewTextStringFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract PreviewTextStringFragment previewTextStringFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled previewTextStringFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: previewTextStringFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract PreviewTextStringFragment previewTextStringFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc previewTextStringFragment() -> PreviewTextStringFragment\n```"
+    },
+    {
+        "method_name": "searchFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract UnifiedSearchFragment searchFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled searchFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: searchFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract UnifiedSearchFragment searchFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc searchFragment() -> UnifiedSearchFragment\n```"
+    },
+    {
+        "method_name": "photoFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract GalleryFragment photoFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled photoFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: photoFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract GalleryFragment photoFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc photoFragment() -> GalleryFragment\n```"
+    },
+    {
+        "method_name": "multipleAccountsDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract MultipleAccountsDialog multipleAccountsDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled multipleAccountsDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: multipleAccountsDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract MultipleAccountsDialog multipleAccountsDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol MultipleAccountsDialog {}\n\nclass ComponentsModule {\n    func multipleAccountsDialog() -> MultipleAccountsDialog {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "dialogInputUploadFilename",
+        "method_code": "@ContributesAndroidInjector\n    abstract ReceiveExternalFilesActivity.DialogInputUploadFilename dialogInputUploadFilename();",
+        "prompt": "\n        Please translate the following Java (Android) method titled dialogInputUploadFilename from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: dialogInputUploadFilename\n\n        Method Code: @ContributesAndroidInjector\n    abstract ReceiveExternalFilesActivity.DialogInputUploadFilename dialogInputUploadFilename();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol DialogInputUploadFilename {}\n\n@MainActor\nprotocol ReceiveExternalFilesActivity {\n    associatedtype DialogInputUploadFilenameType: DialogInputUploadFilename\n    func dialogInputUploadFilename() -> DialogInputUploadFilenameType\n}\n```"
+    },
+    {
+        "method_name": "bootupBroadcastReceiver",
+        "method_code": "@ContributesAndroidInjector\n    abstract BootupBroadcastReceiver bootupBroadcastReceiver();",
+        "prompt": "\n        Please translate the following Java (Android) method titled bootupBroadcastReceiver from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: bootupBroadcastReceiver\n\n        Method Code: @ContributesAndroidInjector\n    abstract BootupBroadcastReceiver bootupBroadcastReceiver();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol BootupBroadcastReceiver {}\n\nclass ComponentsModule {\n    func bootupBroadcastReceiver() -> BootupBroadcastReceiver {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "networkChangeReceiver",
+        "method_code": "@ContributesAndroidInjector\n    abstract NetworkChangeReceiver networkChangeReceiver();",
+        "prompt": "\n        Please translate the following Java (Android) method titled networkChangeReceiver from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: networkChangeReceiver\n\n        Method Code: @ContributesAndroidInjector\n    abstract NetworkChangeReceiver networkChangeReceiver();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol NetworkChangeReceiver {}\n\nclass ComponentsModule {\n    func networkChangeReceiver() -> NetworkChangeReceiver {\n        // Implementation for creating and returning an instance of a class conforming to NetworkChangeReceiver\n    }\n}\n```"
+    },
+    {
+        "method_name": "notificationWorkBroadcastReceiver",
+        "method_code": "@ContributesAndroidInjector\n    abstract NotificationWork.NotificationReceiver notificationWorkBroadcastReceiver();",
+        "prompt": "\n        Please translate the following Java (Android) method titled notificationWorkBroadcastReceiver from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: notificationWorkBroadcastReceiver\n\n        Method Code: @ContributesAndroidInjector\n    abstract NotificationWork.NotificationReceiver notificationWorkBroadcastReceiver();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol NotificationWorkBroadcastReceiverProvider {\n    func notificationWorkBroadcastReceiver() -> NotificationWork.NotificationReceiver\n}\n```"
+    },
+    {
+        "method_name": "fileContentProvider",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileContentProvider fileContentProvider();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileContentProvider from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileContentProvider\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileContentProvider fileContentProvider();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol FileContentProvider {}\n\nclass FileContentProviderImpl: FileContentProvider {}\n\nclass ComponentsModule {\n    func fileContentProvider() -> FileContentProvider {\n        return FileContentProviderImpl()\n    }\n}\n```"
+    },
+    {
+        "method_name": "usersAndGroupsSearchProvider",
+        "method_code": "@ContributesAndroidInjector\n    abstract UsersAndGroupsSearchProvider usersAndGroupsSearchProvider();",
+        "prompt": "\n        Please translate the following Java (Android) method titled usersAndGroupsSearchProvider from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: usersAndGroupsSearchProvider\n\n        Method Code: @ContributesAndroidInjector\n    abstract UsersAndGroupsSearchProvider usersAndGroupsSearchProvider();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc usersAndGroupsSearchProvider() -> UsersAndGroupsSearchProvider {\n    // Implementation details would go here\n    fatalError(\"This method needs to be implemented\")\n}\n```"
+    },
+    {
+        "method_name": "diskLruImageCacheFileProvider",
+        "method_code": "@ContributesAndroidInjector\n    abstract DiskLruImageCacheFileProvider diskLruImageCacheFileProvider();",
+        "prompt": "\n        Please translate the following Java (Android) method titled diskLruImageCacheFileProvider from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: diskLruImageCacheFileProvider\n\n        Method Code: @ContributesAndroidInjector\n    abstract DiskLruImageCacheFileProvider diskLruImageCacheFileProvider();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol DiskLruImageCacheFileProvider {}\n\nfunc diskLruImageCacheFileProvider() -> DiskLruImageCacheFileProvider {\n    fatalError(\"This method should be overridden\")\n}\n```"
+    },
+    {
+        "method_name": "documentsStorageProvider",
+        "method_code": "@ContributesAndroidInjector\n    abstract DocumentsStorageProvider documentsStorageProvider();",
+        "prompt": "\n        Please translate the following Java (Android) method titled documentsStorageProvider from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: documentsStorageProvider\n\n        Method Code: @ContributesAndroidInjector\n    abstract DocumentsStorageProvider documentsStorageProvider();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc provideDocumentsStorageProvider() -> DocumentsStorageProvider {\n    return DocumentsStorageProvider()\n}\n```"
+    },
+    {
+        "method_name": "accountManagerService",
+        "method_code": "@ContributesAndroidInjector\n    abstract AccountManagerService accountManagerService();",
+        "prompt": "\n        Please translate the following Java (Android) method titled accountManagerService from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: accountManagerService\n\n        Method Code: @ContributesAndroidInjector\n    abstract AccountManagerService accountManagerService();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesAndroidInjector\nfunc accountManagerService() -> AccountManagerService\n```"
+    },
+    {
+        "method_name": "operationsService",
+        "method_code": "@ContributesAndroidInjector\n    abstract OperationsService operationsService();",
+        "prompt": "\n        Please translate the following Java (Android) method titled operationsService from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: operationsService\n\n        Method Code: @ContributesAndroidInjector\n    abstract OperationsService operationsService();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc operationsService() -> OperationsService {\n    fatalError(\"This method should be overridden\")\n}\n```"
+    },
+    {
+        "method_name": "playerService",
+        "method_code": "@ContributesAndroidInjector\n    abstract PlayerService playerService();",
+        "prompt": "\n        Please translate the following Java (Android) method titled playerService from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: playerService\n\n        Method Code: @ContributesAndroidInjector\n    abstract PlayerService playerService();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol PlayerService {}\n\nclass PlayerServiceInjector {\n    static func playerService() -> PlayerService {\n        // Implementation for providing an instance of PlayerService\n        fatalError(\"This method should be overridden to provide a PlayerService instance.\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "fileDownloaderService",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileTransferService fileDownloaderService();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileDownloaderService from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileDownloaderService\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileTransferService fileDownloaderService();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc fileDownloaderService() -> FileTransferService {\n    // Implementation for Swift\n    return FileTransferService()\n}\n```"
+    },
+    {
+        "method_name": "fileSyncService",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileSyncService fileSyncService();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileSyncService from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileSyncService\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileSyncService fileSyncService();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol FileSyncService {}\n\nclass FileSyncServiceImpl: FileSyncService {}\n\nclass ComponentsModule {\n    func fileSyncService() -> FileSyncService {\n        return FileSyncServiceImpl()\n    }\n}\n```"
+    },
+    {
+        "method_name": "dashboardWidgetService",
+        "method_code": "@ContributesAndroidInjector\n    abstract DashboardWidgetService dashboardWidgetService();",
+        "prompt": "\n        Please translate the following Java (Android) method titled dashboardWidgetService from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: dashboardWidgetService\n\n        Method Code: @ContributesAndroidInjector\n    abstract DashboardWidgetService dashboardWidgetService();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc dashboardWidgetService() -> DashboardWidgetService {\n    // Implementation for Swift\n    return DashboardWidgetService()\n}\n```"
+    },
+    {
+        "method_name": "previewPDFFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract PreviewPdfFragment previewPDFFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled previewPDFFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: previewPDFFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract PreviewPdfFragment previewPDFFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc previewPDFFragment() -> PreviewPdfFragment {\n    // Implementation for Swift\n    return PreviewPdfFragment()\n}\n```"
+    },
+    {
+        "method_name": "sharedFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract SharedListFragment sharedFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled sharedFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: sharedFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract SharedListFragment sharedFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc sharedFragment() -> SharedListFragment\n```"
+    },
+    {
+        "method_name": "featureFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract FeatureFragment featureFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled featureFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: featureFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract FeatureFragment featureFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc featureFragment() -> FeatureFragment\n```"
+    },
+    {
+        "method_name": "indeterminateProgressDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract IndeterminateProgressDialog indeterminateProgressDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled indeterminateProgressDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: indeterminateProgressDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract IndeterminateProgressDialog indeterminateProgressDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol IndeterminateProgressDialog {}\n\nclass ComponentsModule {\n    func indeterminateProgressDialog() -> IndeterminateProgressDialog {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "sortingOrderDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract SortingOrderDialogFragment sortingOrderDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled sortingOrderDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: sortingOrderDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract SortingOrderDialogFragment sortingOrderDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc sortingOrderDialogFragment() -> SortingOrderDialogFragment {\n    return SortingOrderDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "confirmationDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract ConfirmationDialogFragment confirmationDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled confirmationDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: confirmationDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract ConfirmationDialogFragment confirmationDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc confirmationDialogFragment() -> ConfirmationDialogFragment {\n    return ConfirmationDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "conflictsResolveDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract ConflictsResolveDialog conflictsResolveDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled conflictsResolveDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: conflictsResolveDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract ConflictsResolveDialog conflictsResolveDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol ConflictsResolveDialog {}\n\nclass ComponentsModule {\n    func conflictsResolveDialog() -> ConflictsResolveDialog {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "createFolderDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract CreateFolderDialogFragment createFolderDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled createFolderDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: createFolderDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract CreateFolderDialogFragment createFolderDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createFolderDialogFragment() -> CreateFolderDialogFragment {\n    // Implementation for creating and returning a CreateFolderDialogFragment instance\n}\n```"
+    },
+    {
+        "method_name": "expirationDatePickerDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract ExpirationDatePickerDialogFragment expirationDatePickerDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled expirationDatePickerDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: expirationDatePickerDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract ExpirationDatePickerDialogFragment expirationDatePickerDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc expirationDatePickerDialogFragment() -> ExpirationDatePickerDialogFragment\n```"
+    },
+    {
+        "method_name": "fileActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileActivity fileActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileActivity fileActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc fileActivity() -> FileActivity\n```"
+    },
+    {
+        "method_name": "fileDownloadFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileDownloadFragment fileDownloadFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileDownloadFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileDownloadFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileDownloadFragment fileDownloadFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc fileDownloadFragment() -> FileDownloadFragment {\n    // Implementation for Swift\n    return FileDownloadFragment()\n}\n```"
+    },
+    {
+        "method_name": "loadingDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract LoadingDialog loadingDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled loadingDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: loadingDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract LoadingDialog loadingDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol ComponentsModule {\n    func loadingDialog() -> LoadingDialog\n}\n```"
+    },
+    {
+        "method_name": "localStoragePathPickerDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract LocalStoragePathPickerDialogFragment localStoragePathPickerDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled localStoragePathPickerDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: localStoragePathPickerDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract LocalStoragePathPickerDialogFragment localStoragePathPickerDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc localStoragePathPickerDialogFragment() -> LocalStoragePathPickerDialogFragment {\n    return LocalStoragePathPickerDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "logsViewModel",
+        "method_code": "@ContributesAndroidInjector\n    abstract LogsViewModel logsViewModel();",
+        "prompt": "\n        Please translate the following Java (Android) method titled logsViewModel from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: logsViewModel\n\n        Method Code: @ContributesAndroidInjector\n    abstract LogsViewModel logsViewModel();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc logsViewModel() -> LogsViewModel\n```"
+    },
+    {
+        "method_name": "mainApp",
+        "method_code": "@ContributesAndroidInjector\n    abstract MainApp mainApp();",
+        "prompt": "\n        Please translate the following Java (Android) method titled mainApp from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: mainApp\n\n        Method Code: @ContributesAndroidInjector\n    abstract MainApp mainApp();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol MainAppProvider {\n    func mainApp() -> MainApp\n}\n```"
+    },
+    {
+        "method_name": "migrations",
+        "method_code": "@ContributesAndroidInjector\n    abstract Migrations migrations();",
+        "prompt": "\n        Please translate the following Java (Android) method titled migrations from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: migrations\n\n        Method Code: @ContributesAndroidInjector\n    abstract Migrations migrations();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc migrations() -> Migrations\n```"
+    },
+    {
+        "method_name": "notificationWork",
+        "method_code": "@ContributesAndroidInjector\n    abstract NotificationWork notificationWork();",
+        "prompt": "\n        Please translate the following Java (Android) method titled notificationWork from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: notificationWork\n\n        Method Code: @ContributesAndroidInjector\n    abstract NotificationWork notificationWork();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc notificationWork() -> NotificationWork {\n    fatalError(\"This method should be overridden\")\n}\n```"
+    },
+    {
+        "method_name": "removeFilesDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract RemoveFilesDialogFragment removeFilesDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled removeFilesDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: removeFilesDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract RemoveFilesDialogFragment removeFilesDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc removeFilesDialogFragment() -> RemoveFilesDialogFragment {\n    // Implementation for Swift\n    return RemoveFilesDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "renamePublicShareDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract RenamePublicShareDialogFragment renamePublicShareDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled renamePublicShareDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: renamePublicShareDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract RenamePublicShareDialogFragment renamePublicShareDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc renamePublicShareDialogFragment() -> RenamePublicShareDialogFragment\n```"
+    },
+    {
+        "method_name": "sendShareDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract SendShareDialog sendShareDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled sendShareDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: sendShareDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract SendShareDialog sendShareDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol SendShareDialog {}\n\nfunc sendShareDialog() -> SendShareDialog {\n    fatalError(\"This method should be overridden\")\n}\n```"
+    },
+    {
+        "method_name": "setupEncryptionDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract SetupEncryptionDialogFragment setupEncryptionDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled setupEncryptionDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: setupEncryptionDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract SetupEncryptionDialogFragment setupEncryptionDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setupEncryptionDialogFragment() -> SetupEncryptionDialogFragment {\n    // Implementation details would go here\n    return SetupEncryptionDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "chooseStorageLocationDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract ChooseStorageLocationDialogFragment chooseStorageLocationDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled chooseStorageLocationDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: chooseStorageLocationDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract ChooseStorageLocationDialogFragment chooseStorageLocationDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc chooseStorageLocationDialogFragment() -> ChooseStorageLocationDialogFragment {\n    // Implementation for Swift\n    return ChooseStorageLocationDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "sharePasswordDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract SharePasswordDialogFragment sharePasswordDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled sharePasswordDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: sharePasswordDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract SharePasswordDialogFragment sharePasswordDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc sharePasswordDialogFragment() -> SharePasswordDialogFragment {\n    return SharePasswordDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "syncedFolderPreferencesDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract SyncedFolderPreferencesDialogFragment syncedFolderPreferencesDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled syncedFolderPreferencesDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: syncedFolderPreferencesDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract SyncedFolderPreferencesDialogFragment syncedFolderPreferencesDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc provideSyncedFolderPreferencesDialogFragment() -> SyncedFolderPreferencesDialogFragment {\n    return SyncedFolderPreferencesDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "toolbarActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract ToolbarActivity toolbarActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled toolbarActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: toolbarActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract ToolbarActivity toolbarActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesAndroidInjector\nfunc toolbarActivity() -> ToolbarActivity\n```"
+    },
+    {
+        "method_name": "storagePermissionDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract StoragePermissionDialogFragment storagePermissionDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled storagePermissionDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: storagePermissionDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract StoragePermissionDialogFragment storagePermissionDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc storagePermissionDialogFragment() -> StoragePermissionDialogFragment {\n    return StoragePermissionDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "ocfileListBottomSheetDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract OCFileListBottomSheetDialog ocfileListBottomSheetDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled ocfileListBottomSheetDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: ocfileListBottomSheetDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract OCFileListBottomSheetDialog ocfileListBottomSheetDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@objc protocol OCFileListBottomSheetDialog {}\n\n@objc class ComponentsModule: NSObject {\n    @objc func ocfileListBottomSheetDialog() -> OCFileListBottomSheetDialog {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "renameFileDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract RenameFileDialogFragment renameFileDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled renameFileDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: renameFileDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract RenameFileDialogFragment renameFileDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol RenameFileDialogFragmentProvider {\n    func renameFileDialogFragment() -> RenameFileDialogFragment\n}\n```"
+    },
+    {
+        "method_name": "syncFileNotEnoughSpaceDialogFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract SyncFileNotEnoughSpaceDialogFragment syncFileNotEnoughSpaceDialogFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled syncFileNotEnoughSpaceDialogFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: syncFileNotEnoughSpaceDialogFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract SyncFileNotEnoughSpaceDialogFragment syncFileNotEnoughSpaceDialogFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc syncFileNotEnoughSpaceDialogFragment() -> SyncFileNotEnoughSpaceDialogFragment {\n    // Implementation for Swift\n    return SyncFileNotEnoughSpaceDialogFragment()\n}\n```"
+    },
+    {
+        "method_name": "dashboardWidgetConfigurationActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract DashboardWidgetConfigurationActivity dashboardWidgetConfigurationActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled dashboardWidgetConfigurationActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: dashboardWidgetConfigurationActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract DashboardWidgetConfigurationActivity dashboardWidgetConfigurationActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol DashboardWidgetConfigurationActivity {}\n\nclass ComponentsModule {\n    func dashboardWidgetConfigurationActivity() -> DashboardWidgetConfigurationActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "dashboardWidgetProvider",
+        "method_code": "@ContributesAndroidInjector\n    abstract DashboardWidgetProvider dashboardWidgetProvider();",
+        "prompt": "\n        Please translate the following Java (Android) method titled dashboardWidgetProvider from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: dashboardWidgetProvider\n\n        Method Code: @ContributesAndroidInjector\n    abstract DashboardWidgetProvider dashboardWidgetProvider();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc dashboardWidgetProvider() -> DashboardWidgetProvider {\n    // Implementation for providing DashboardWidgetProvider in Swift\n    // Note: Swift does not have a direct equivalent for Dagger's @ContributesAndroidInjector\n    // This would typically be handled by a dependency injection framework in Swift\n    return DashboardWidgetProvider()\n}\n```"
+    },
+    {
+        "method_name": "galleryFragmentBottomSheetDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract GalleryFragmentBottomSheetDialog galleryFragmentBottomSheetDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled galleryFragmentBottomSheetDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: galleryFragmentBottomSheetDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract GalleryFragmentBottomSheetDialog galleryFragmentBottomSheetDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc galleryFragmentBottomSheetDialog() -> GalleryFragmentBottomSheetDialog\n```"
+    },
+    {
+        "method_name": "previewBitmapActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract PreviewBitmapActivity previewBitmapActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled previewBitmapActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: previewBitmapActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract PreviewBitmapActivity previewBitmapActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol PreviewBitmapActivityProvider {\n    func previewBitmapActivity() -> PreviewBitmapActivity\n}\n\nclass ComponentsModule: PreviewBitmapActivityProvider {\n    func previewBitmapActivity() -> PreviewBitmapActivity {\n        return PreviewBitmapActivity()\n    }\n}\n\nclass PreviewBitmapActivity {\n    // Implementation of PreviewBitmapActivity\n}\n```"
+    },
+    {
+        "method_name": "fileUploadHelper",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileUploadHelper fileUploadHelper();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileUploadHelper from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileUploadHelper\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileUploadHelper fileUploadHelper();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol FileUploadHelper {}\n\nclass ComponentsModule {\n    func fileUploadHelper() -> FileUploadHelper {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "sslUntrustedCertDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract SslUntrustedCertDialog sslUntrustedCertDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled sslUntrustedCertDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: sslUntrustedCertDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract SslUntrustedCertDialog sslUntrustedCertDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc sslUntrustedCertDialog() -> SslUntrustedCertDialog {\n    // Implementation for Swift\n    return SslUntrustedCertDialog()\n}\n```"
+    },
+    {
+        "method_name": "fileActionsBottomSheet",
+        "method_code": "@ContributesAndroidInjector\n    abstract FileActionsBottomSheet fileActionsBottomSheet();",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileActionsBottomSheet from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: fileActionsBottomSheet\n\n        Method Code: @ContributesAndroidInjector\n    abstract FileActionsBottomSheet fileActionsBottomSheet();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol FileActionsBottomSheet {}\n\nclass ComponentsModule {\n    func fileActionsBottomSheet() -> FileActionsBottomSheet {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "sendFilesDialog",
+        "method_code": "@ContributesAndroidInjector\n    abstract SendFilesDialog sendFilesDialog();",
+        "prompt": "\n        Please translate the following Java (Android) method titled sendFilesDialog from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: sendFilesDialog\n\n        Method Code: @ContributesAndroidInjector\n    abstract SendFilesDialog sendFilesDialog();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc sendFilesDialog() -> SendFilesDialog\n```"
+    },
+    {
+        "method_name": "documentScanActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract DocumentScanActivity documentScanActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled documentScanActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: documentScanActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract DocumentScanActivity documentScanActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol DocumentScanActivityProvider {\n    func documentScanActivity() -> DocumentScanActivity\n}\n\nclass ComponentsModule: DocumentScanActivityProvider {\n    func documentScanActivity() -> DocumentScanActivity {\n        return DocumentScanActivity()\n    }\n}\n\nclass DocumentScanActivity {\n    // Implementation of DocumentScanActivity\n}\n```"
+    },
+    {
+        "method_name": "groupfolderListFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract GroupfolderListFragment groupfolderListFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled groupfolderListFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: groupfolderListFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract GroupfolderListFragment groupfolderListFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc groupfolderListFragment() -> GroupfolderListFragment\n```"
+    },
+    {
+        "method_name": "launcherActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract LauncherActivity launcherActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled launcherActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: launcherActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract LauncherActivity launcherActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol ComponentsModule {\n    func launcherActivity() -> LauncherActivity\n}\n```"
+    },
+    {
+        "method_name": "editImageActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract EditImageActivity editImageActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled editImageActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: editImageActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract EditImageActivity editImageActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@ContributesInjector\nfunc editImageActivity() -> EditImageActivity\n```"
+    },
+    {
+        "method_name": "imageDetailFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract ImageDetailFragment imageDetailFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled imageDetailFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: imageDetailFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract ImageDetailFragment imageDetailFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc imageDetailFragment() -> ImageDetailFragment {\n    return ImageDetailFragment()\n}\n```"
+    },
+    {
+        "method_name": "etmBackgroundJobsFragment",
+        "method_code": "@ContributesAndroidInjector\n    abstract EtmBackgroundJobsFragment etmBackgroundJobsFragment();",
+        "prompt": "\n        Please translate the following Java (Android) method titled etmBackgroundJobsFragment from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: etmBackgroundJobsFragment\n\n        Method Code: @ContributesAndroidInjector\n    abstract EtmBackgroundJobsFragment etmBackgroundJobsFragment();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol EtmBackgroundJobsFragment {}\n\nclass ComponentsModule {\n    func etmBackgroundJobsFragment() -> EtmBackgroundJobsFragment {\n        // Implementation details would go here\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "backgroundJobManagerImpl",
+        "method_code": "@ContributesAndroidInjector\n    abstract BackgroundJobManagerImpl backgroundJobManagerImpl();",
+        "prompt": "\n        Please translate the following Java (Android) method titled backgroundJobManagerImpl from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: backgroundJobManagerImpl\n\n        Method Code: @ContributesAndroidInjector\n    abstract BackgroundJobManagerImpl backgroundJobManagerImpl();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol BackgroundJobManagerImpl {}\n\nclass ComponentsModule {\n    func backgroundJobManagerImpl() -> BackgroundJobManagerImpl {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "testJob",
+        "method_code": "@ContributesAndroidInjector\n    abstract TestJob testJob();",
+        "prompt": "\n        Please translate the following Java (Android) method titled testJob from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: testJob\n\n        Method Code: @ContributesAndroidInjector\n    abstract TestJob testJob();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotocol TestJob {}\n\nclass ComponentsModule {\n    func testJob() -> TestJob {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "internalTwoWaySyncActivity",
+        "method_code": "@ContributesAndroidInjector\n    abstract InternalTwoWaySyncActivity internalTwoWaySyncActivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled internalTwoWaySyncActivity from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: internalTwoWaySyncActivity\n\n        Method Code: @ContributesAndroidInjector\n    abstract InternalTwoWaySyncActivity internalTwoWaySyncActivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nprotocol InternalTwoWaySyncActivity {}\n\nclass ComponentsModule {\n    func internalTwoWaySyncActivity() -> InternalTwoWaySyncActivity {\n        fatalError(\"This method should be overridden\")\n    }\n}\n```"
+    },
+    {
+        "method_name": "backgroundPlayerService",
+        "method_code": "@OptIn(markerClass = UnstableApi.class)\n    @ContributesAndroidInjector\n    abstract BackgroundPlayerService backgroundPlayerService();",
+        "prompt": "\n        Please translate the following Java (Android) method titled backgroundPlayerService from ComponentsModule.java into Swift.\n\n        Input:\n\n        Method Name: backgroundPlayerService\n\n        Method Code: @OptIn(markerClass = UnstableApi.class)\n    @ContributesAndroidInjector\n    abstract BackgroundPlayerService backgroundPlayerService();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@available(*, deprecated)\nfunc backgroundPlayerService() -> BackgroundPlayerService {\n    // Implementation details would go here\n}\n```"
+    }
+]

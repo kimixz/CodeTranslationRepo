@@ -1,0 +1,62 @@
+[
+    {
+        "method_name": "setAdapter",
+        "method_code": "@Override\n    public void setAdapter(Adapter adapter) {\n        Adapter oldAdapter = getAdapter();\n        super.setAdapter(adapter);\n        if (oldAdapter != null) {\n            oldAdapter.unregisterAdapterDataObserver(observer);\n        }\n        if (adapter != null) {\n            adapter.registerAdapterDataObserver(observer);\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAdapter from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: setAdapter\n\n        Method Code: @Override\n    public void setAdapter(Adapter adapter) {\n        Adapter oldAdapter = getAdapter();\n        super.setAdapter(adapter);\n        if (oldAdapter != null) {\n            oldAdapter.unregisterAdapterDataObserver(observer);\n        }\n        if (adapter != null) {\n            adapter.registerAdapterDataObserver(observer);\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setAdapter(_ adapter: Adapter?) {\n    let oldAdapter = getAdapter()\n    super.setAdapter(adapter)\n    if let oldAdapter = oldAdapter {\n        oldAdapter.unregisterAdapterDataObserver(observer)\n    }\n    if let adapter = adapter {\n        adapter.registerAdapterDataObserver(observer)\n    }\n}\n```"
+    },
+    {
+        "method_name": "setEmptyView",
+        "method_code": "public void setEmptyView(View view) {\n        this.mEmptyView = view;\n        initEmptyView();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setEmptyView from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: setEmptyView\n\n        Method Code: public void setEmptyView(View view) {\n        this.mEmptyView = view;\n        initEmptyView();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setEmptyView(_ view: UIView) {\n    self.mEmptyView = view\n    initEmptyView()\n}\n```"
+    },
+    {
+        "method_name": "initEmptyView",
+        "method_code": "private void initEmptyView() {\n        if (mEmptyView != null) {\n            int emptyCount = hasFooter ? 1 : 0;\n            boolean empty = getAdapter() == null || getAdapter().getItemCount() == emptyCount;\n            mEmptyView.setVisibility(empty ? VISIBLE : GONE);\n            mEmptyView.setFocusable(false);\n            this.setVisibility(empty ? GONE : VISIBLE);\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled initEmptyView from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: initEmptyView\n\n        Method Code: private void initEmptyView() {\n        if (mEmptyView != null) {\n            int emptyCount = hasFooter ? 1 : 0;\n            boolean empty = getAdapter() == null || getAdapter().getItemCount() == emptyCount;\n            mEmptyView.setVisibility(empty ? VISIBLE : GONE);\n            mEmptyView.setFocusable(false);\n            this.setVisibility(empty ? GONE : VISIBLE);\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprivate func initEmptyView() {\n    if let emptyView = mEmptyView {\n        let emptyCount = hasFooter ? 1 : 0\n        let empty = getAdapter()?.itemCount == emptyCount\n        emptyView.isHidden = !empty\n        emptyView.isUserInteractionEnabled = false\n        self.isHidden = empty\n    }\n}\n```"
+    },
+    {
+        "method_name": "onChanged",
+        "method_code": "@Override\n        public void onChanged() {\n            super.onChanged();\n            initEmptyView();\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onChanged from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: onChanged\n\n        Method Code: @Override\n        public void onChanged() {\n            super.onChanged();\n            initEmptyView();\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onChanged() {\n    super.onChanged()\n    initEmptyView()\n}\n```"
+    },
+    {
+        "method_name": "onItemRangeChanged",
+        "method_code": "@Override\n        public void onItemRangeChanged(int positionStart, int itemCount) {\n            super.onItemRangeChanged(positionStart, itemCount);\n            initEmptyView();\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onItemRangeChanged from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: onItemRangeChanged\n\n        Method Code: @Override\n        public void onItemRangeChanged(int positionStart, int itemCount) {\n            super.onItemRangeChanged(positionStart, itemCount);\n            initEmptyView();\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onItemRangeChanged(_ positionStart: Int, _ itemCount: Int) {\n    super.onItemRangeChanged(positionStart, itemCount)\n    initEmptyView()\n}\n```"
+    },
+    {
+        "method_name": "onItemRangeChanged",
+        "method_code": "@Override\n        public void onItemRangeChanged(int positionStart, int itemCount, @Nullable Object payload) {\n            super.onItemRangeChanged(positionStart, itemCount, payload);\n            initEmptyView();\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onItemRangeChanged from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: onItemRangeChanged\n\n        Method Code: @Override\n        public void onItemRangeChanged(int positionStart, int itemCount, @Nullable Object payload) {\n            super.onItemRangeChanged(positionStart, itemCount, payload);\n            initEmptyView();\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onItemRangeChanged(_ positionStart: Int, _ itemCount: Int, _ payload: Any?) {\n    super.onItemRangeChanged(positionStart, itemCount, payload)\n    initEmptyView()\n}\n```"
+    },
+    {
+        "method_name": "onItemRangeMoved",
+        "method_code": "@Override\n        public void onItemRangeMoved(int fromPosition, int toPosition, int itemCount) {\n            super.onItemRangeMoved(fromPosition, toPosition, itemCount);\n            initEmptyView();\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onItemRangeMoved from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: onItemRangeMoved\n\n        Method Code: @Override\n        public void onItemRangeMoved(int fromPosition, int toPosition, int itemCount) {\n            super.onItemRangeMoved(fromPosition, toPosition, itemCount);\n            initEmptyView();\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onItemRangeMoved(fromPosition: Int, toPosition: Int, itemCount: Int) {\n    super.onItemRangeMoved(fromPosition: fromPosition, toPosition: toPosition, itemCount: itemCount)\n    initEmptyView()\n}\n```"
+    },
+    {
+        "method_name": "onItemRangeInserted",
+        "method_code": "@Override\n        public void onItemRangeInserted(int positionStart, int itemCount) {\n            super.onItemRangeInserted(positionStart, itemCount);\n            initEmptyView();\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onItemRangeInserted from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: onItemRangeInserted\n\n        Method Code: @Override\n        public void onItemRangeInserted(int positionStart, int itemCount) {\n            super.onItemRangeInserted(positionStart, itemCount);\n            initEmptyView();\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onItemRangeInserted(_ positionStart: Int, _ itemCount: Int) {\n    super.onItemRangeInserted(positionStart, itemCount)\n    initEmptyView()\n}\n```"
+    },
+    {
+        "method_name": "onItemRangeRemoved",
+        "method_code": "@Override\n        public void onItemRangeRemoved(int positionStart, int itemCount) {\n            super.onItemRangeRemoved(positionStart, itemCount);\n            initEmptyView();\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onItemRangeRemoved from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: onItemRangeRemoved\n\n        Method Code: @Override\n        public void onItemRangeRemoved(int positionStart, int itemCount) {\n            super.onItemRangeRemoved(positionStart, itemCount);\n            initEmptyView();\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onItemRangeRemoved(_ positionStart: Int, _ itemCount: Int) {\n    super.onItemRangeRemoved(positionStart, itemCount)\n    initEmptyView()\n}\n```"
+    },
+    {
+        "method_name": "setHasFooter",
+        "method_code": "public void setHasFooter(boolean bool) {\n        hasFooter = bool;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setHasFooter from EmptyRecyclerView.java into Swift.\n\n        Input:\n\n        Method Name: setHasFooter\n\n        Method Code: public void setHasFooter(boolean bool) {\n        hasFooter = bool;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setHasFooter(_ bool: Bool) {\n    hasFooter = bool\n}\n```"
+    }
+]

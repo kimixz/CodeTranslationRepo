@@ -1,0 +1,1577 @@
+{
+    "method_calls": {
+        "OCFileListAdapter.class": [
+            "getSimpleName"
+        ],
+        "Locale": [
+            "getDefault"
+        ],
+        "UUID.randomUUID()": [
+            "getLeastSignificantBits"
+        ],
+        "UUID": [
+            "randomUUID"
+        ],
+        "transferServiceGetter": [
+            "getStorageManager"
+        ],
+        "((FileDisplayActivity) activity)": [
+            "showSortListGroup"
+        ],
+        "activity": [
+            "getContentResolver",
+            "getString",
+            "getResources"
+        ],
+        "AccountManager\n            .get(activity)": [
+            "getUserData"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "this.user": [
+            "toPlatformAccount"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "CapabilityUtils\n                                                        .getCapability(activity)\n                                                        .getVersion()": [
+            "isShareesOnDavSupported"
+        ],
+        "CapabilityUtils\n                                                        .getCapability(activity)": [
+            "getVersion"
+        ],
+        "CapabilityUtils": [
+            "getCapability"
+        ],
+        "unknown": [
+            "setHasStableIds",
+            "notifyDataSetChanged",
+            "shouldShowHeader",
+            "getItem",
+            "getFooterText",
+            "isMultiSelect",
+            "checkVisibilityOfFileFeaturesLayout",
+            "bindListItemViewHolder",
+            "bindListGridItemViewHolder",
+            "updateLivePhotoIndicators",
+            "configureThumbnail",
+            "prepareFileSize",
+            "getFileSizeText",
+            "generateFooterText",
+            "filterHiddenFiles",
+            "filterByMimeType",
+            "limitToPersonalFiles",
+            "prepareListOfHiddenFiles",
+            "mergeOCFilesForLivePhoto",
+            "addOfflineOperations",
+            "resetLastTimestamp",
+            "parseShares",
+            "parseVirtuals",
+            "notifyItemChanged",
+            "getItemPosition"
+        ],
+        "new ThumbnailsCacheManager.InitDiskCacheTask()": [
+            "execute"
+        ],
+        "ocFileListDelegate": [
+            "isMultiSelect",
+            "setMultiSelect",
+            "removeCheckedFile",
+            "addToCheckedFiles",
+            "bindGridViewHolder",
+            "setShowShareAvatar",
+            "getCheckedItems",
+            "setCheckedItem",
+            "clearCheckedItems",
+            "isCheckedFile",
+            "addCheckedFile",
+            "setHighlightedItem",
+            "cancelAllPendingTasks"
+        ],
+        "mFiles": [
+            "indexOf",
+            "removeAll",
+            "size",
+            "get",
+            "isEmpty",
+            "clear",
+            "addAll",
+            "contains",
+            "add",
+            "forEach"
+        ],
+        "file.getRemotePath()": [
+            "equals"
+        ],
+        "file": [
+            "getRemotePath",
+            "setFavorite",
+            "getRemoteId",
+            "setUnreadCommentsCount",
+            "setEncrypted",
+            "setE2eCounter",
+            "getLocalId",
+            "getMimeType",
+            "getLinkedFileIdForLivePhoto",
+            "isSharedWithMe",
+            "isSharedWithSharee",
+            "getOwnerId",
+            "getSharees",
+            "getOwnerDisplayName",
+            "getFileName",
+            "getTags",
+            "getStoragePath",
+            "getFileLength",
+            "getModificationTimestamp",
+            "getFirstShareTimestamp",
+            "isLocked",
+            "isOfflineOperation",
+            "isFolder",
+            "getDecryptedRemotePath",
+            "isHidden",
+            "shouldHide",
+            "isGroupFolder"
+        ],
+        "filesToDelete": [
+            "add"
+        ],
+        "mStorageManager": [
+            "saveFile",
+            "getFilenameConsideringOfflineOperation",
+            "getOfflineEntityFromOCFile",
+            "getFolderContent",
+            "getCapability",
+            "deleteVirtuals",
+            "saveShares",
+            "saveFileWithParent",
+            "getFileById",
+            "saveVirtuals"
+        ],
+        "preferences": [
+            "getSortOrderByFolder",
+            "isDarkModeEnabled",
+            "isShowHiddenFilesEnabled",
+            "setPhotoSearchTimestamp",
+            "setSortOrder"
+        ],
+        "Collections": [
+            "sort",
+            "reverse"
+        ],
+        "Long": [
+            "compare"
+        ],
+        "o2": [
+            "getFirstShareTimestamp"
+        ],
+        "o1": [
+            "getFirstShareTimestamp"
+        ],
+        "sortOrder": [
+            "sortCloudFiles",
+            "getType"
+        ],
+        "new Handler(Looper.getMainLooper())": [
+            "post"
+        ],
+        "Looper": [
+            "getMainLooper"
+        ],
+        "file.getRemoteId()": [
+            "equals"
+        ],
+        "mFiles.get(position)": [
+            "getFileId"
+        ],
+        "MimeTypeUtil": [
+            "isImageOrVideo",
+            "isVideo",
+            "isImage",
+            "getOCFileIcon"
+        ],
+        "GridItemBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "parent": [
+            "getContext",
+            "getHeight"
+        ],
+        "ListItemBinding": [
+            "inflate"
+        ],
+        "GridImageBinding": [
+            "inflate"
+        ],
+        "ListFooterBinding": [
+            "inflate"
+        ],
+        "ListHeaderBinding": [
+            "inflate"
+        ],
+        "binding.headerView": [
+            "getLayoutParams",
+            "setLayoutParams"
+        ],
+        "footerViewHolder.getFooterText()": [
+            "setText"
+        ],
+        "footerViewHolder": [
+            "getFooterText",
+            "getLoadingProgressBar"
+        ],
+        "viewThemeUtils.platform": [
+            "colorCircularProgressBar"
+        ],
+        "footerViewHolder.getLoadingProgressBar()": [
+            "setVisibility"
+        ],
+        "ocFileListFragmentInterface": [
+            "isLoading",
+            "onHeaderClicked",
+            "getColumnsCount",
+            "onShareIconClick",
+            "onOverflowIconClicked"
+        ],
+        "currentDirectory": [
+            "getRichWorkspace"
+        ],
+        "PreviewTextFragment": [
+            "setText"
+        ],
+        "headerViewHolder": [
+            "getHeaderText",
+            "getHeaderView"
+        ],
+        "headerViewHolder.getHeaderView()": [
+            "setOnClickListener"
+        ],
+        "Log_OC": [
+            "e",
+            "d"
+        ],
+        "ViewExtensionsKt": [
+            "setVisibleIf",
+            "makeRounded"
+        ],
+        "gridViewHolder": [
+            "getMore",
+            "getShared"
+        ],
+        "gridItemViewHolder": [
+            "getMore"
+        ],
+        "MDMConfig.INSTANCE": [
+            "sharingSupport"
+        ],
+        "gridViewHolder.getShared()": [
+            "setVisibility"
+        ],
+        "holder": [
+            "getFileFeaturesLayout",
+            "getLivePhotoIndicator",
+            "getLivePhotoIndicatorSeparator",
+            "getGridLivePhotoIndicator",
+            "getFileName",
+            "getSharedAvatars",
+            "getTagsGroup",
+            "getFileDetailGroup",
+            "getFirstTag",
+            "getSecondTag",
+            "getTagMore",
+            "getFileSize",
+            "getFileSizeSeparator",
+            "getLastModification",
+            "getOverflowMenu",
+            "getThumbnail"
+        ],
+        "fileFeaturesLayout": [
+            "getChildCount",
+            "getChildAt",
+            "setVisibility"
+        ],
+        "child": [
+            "getVisibility"
+        ],
+        "String": [
+            "valueOf",
+            "format"
+        ],
+        "nextFile": [
+            "getLinkedFileIdForLivePhoto",
+            "getMimeType"
+        ],
+        "fileLocalId": [
+            "equals"
+        ],
+        "filesToRemove": [
+            "add",
+            "clear"
+        ],
+        "holder.getLivePhotoIndicator()": [
+            "setVisibility"
+        ],
+        "holder.getLivePhotoIndicatorSeparator()": [
+            "setVisibility"
+        ],
+        "holder.getGridLivePhotoIndicator()": [
+            "setVisibility"
+        ],
+        "holder.getFileName()": [
+            "setText",
+            "setVisibility"
+        ],
+        "holder.getSharedAvatars()": [
+            "setVisibility",
+            "removeAllViews",
+            "setAvatars",
+            "setOnClickListener"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "fileOwner": [
+            "equals"
+        ],
+        "sharees": [
+            "contains",
+            "add"
+        ],
+        "file.getTags()": [
+            "isEmpty",
+            "get",
+            "size"
+        ],
+        "holder.getTagsGroup()": [
+            "setVisibility"
+        ],
+        "holder.getFileDetailGroup()": [
+            "setVisibility"
+        ],
+        "viewThemeUtils.material": [
+            "themeChipSuggestion"
+        ],
+        "holder.getFirstTag()": [
+            "setVisibility",
+            "setText"
+        ],
+        "holder.getSecondTag()": [
+            "setVisibility",
+            "setText"
+        ],
+        "holder.getTagMore()": [
+            "setVisibility",
+            "setText"
+        ],
+        "localFile": [
+            "isDirectory",
+            "length"
+        ],
+        "FileStorageUtils": [
+            "getFolderSize",
+            "sortOcFolderDescDateModifiedWithoutFavoritesFirst",
+            "searchForLocalFileInDefaultPath",
+            "fillOCFile"
+        ],
+        "holder.getFileSize()": [
+            "setVisibility",
+            "setText"
+        ],
+        "holder.getFileSizeSeparator()": [
+            "setVisibility"
+        ],
+        "holder.getLastModification()": [
+            "setText",
+            "setVisibility"
+        ],
+        "DisplayUtils": [
+            "getRelativeTimestamp",
+            "bytesToHumanReadable",
+            "stopShimmer"
+        ],
+        "holder.getOverflowMenu()": [
+            "setVisibility",
+            "setOnClickListener",
+            "setImageResource"
+        ],
+        "entity": [
+            "getType"
+        ],
+        "Executors": [
+            "newCachedThreadPool"
+        ],
+        "MainApp": [
+            "getAppContext",
+            "isOnlyOnDevice",
+            "isOnlyPersonFiles"
+        ],
+        "ContextCompat": [
+            "getDrawable"
+        ],
+        "holder.getThumbnail()": [
+            "setImageDrawable",
+            "getWidth",
+            "getHeight",
+            "setImageBitmap"
+        ],
+        "executorService": [
+            "execute",
+            "shutdown"
+        ],
+        "mStorageManager.offlineOperationDao": [
+            "getByPath"
+        ],
+        "BitmapUtils": [
+            "decodeSampledBitmapFromFile",
+            "addColorFilter"
+        ],
+        "createFileOperation": [
+            "getLocalPath"
+        ],
+        "mainHandler": [
+            "post"
+        ],
+        "SyncedFolderProvider": [
+            "isAutoUploadFolder"
+        ],
+        "((ListViewHolder) holder)": [
+            "getShimmerThumbnail"
+        ],
+        "thumbnailShimmer": [
+            "getVisibility",
+            "setImageResource",
+            "resetLoader"
+        ],
+        "resources": [
+            "getQuantityString"
+        ],
+        "currentDirectory.getRichWorkspace()": [
+            "trim"
+        ],
+        "updatedStorageManager": [
+            "equals",
+            "filter"
+        ],
+        "CapabilityUtils.getCapability(account, activity).getVersion()": [
+            "isShareesOnDavSupported"
+        ],
+        "CapabilityUtils.getCapability(account, activity)": [
+            "getVersion"
+        ],
+        "limitToMimeType": [
+            "isEmpty"
+        ],
+        "OCFile.ROOT_PATH": [
+            "equals"
+        ],
+        "directory": [
+            "getRemotePath",
+            "getFileId"
+        ],
+        "mFilesAll": [
+            "clear",
+            "addAll",
+            "stream"
+        ],
+        "mStorageManager.offlineOperationsRepository": [
+            "convertToOCFiles"
+        ],
+        "offlineOperations": [
+            "isEmpty",
+            "stream"
+        ],
+        "offlineOperations.stream()\n                .filter(offlineFile -> mFilesAll.stream()\n                    .noneMatch(file -> Objects.equals(file.getDecryptedRemotePath(), offlineFile.getDecryptedRemotePath())))": [
+            "toList",
+            "collect"
+        ],
+        "offlineOperations.stream()": [
+            "filter"
+        ],
+        "mFilesAll.stream()": [
+            "noneMatch"
+        ],
+        "Objects": [
+            "equals"
+        ],
+        "offlineFile": [
+            "getDecryptedRemotePath"
+        ],
+        "Collectors": [
+            "toList"
+        ],
+        "mStorageManager\n                                                      .getCapability(user.getAccountName())\n                                                      .getVersion()": [
+            "isShareesOnDavSupported"
+        ],
+        "mStorageManager\n                                                      .getCapability(user.getAccountName())": [
+            "getVersion"
+        ],
+        "user": [
+            "getAccountName",
+            "toPlatformAccount"
+        ],
+        "objects": [
+            "size",
+            "get"
+        ],
+        "shares": [
+            "add"
+        ],
+        "OCShareToOCFileConverter": [
+            "buildOCFilesFromShares"
+        ],
+        "lastFile": [
+            "getModifiedTimestamp"
+        ],
+        "ocFile": [
+            "getParentId",
+            "isEncrypted",
+            "isFolder",
+            "getFileId"
+        ],
+        "parentFolder": [
+            "isEncrypted"
+        ],
+        "RefreshFolderOperation": [
+            "getDecryptedFolderMetadata",
+            "updateFileNameForEncryptedFileV1",
+            "updateFileNameForEncryptedFile"
+        ],
+        "OwnCloudClientFactory": [
+            "createOwnCloudClient"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "refreshFolderOperation": [
+            "execute"
+        ],
+        "cv": [
+            "put"
+        ],
+        "type": [
+            "toString"
+        ],
+        "contentValues": [
+            "add"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "storageManager": [
+            "getVirtualFolderContent"
+        ],
+        "listOfHiddenFiles": [
+            "clear",
+            "add"
+        ],
+        "super": [
+            "onViewRecycled"
+        ],
+        "listGridImageViewHolder": [
+            "getShimmerThumbnail",
+            "getThumbnail"
+        ],
+        "((ImageView) callContext)": [
+            "setImageDrawable",
+            "getTag"
+        ],
+        "((ImageView) callContext).getTag()": [
+            "equals"
+        ],
+        "ret": [
+            "contains",
+            "add"
+        ],
+        "file.getMimeType()": [
+            "startsWith"
+        ],
+        "ownerId": [
+            "equals"
+        ],
+        "String.valueOf(file.getFileName().charAt(0))": [
+            "toUpperCase"
+        ],
+        "file.getFileName()": [
+            "charAt"
+        ],
+        "dateFormat": [
+            "format"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "enhanced_for_statement",
+        "break_statement",
+        "for_statement",
+        "try_statement",
+        "throw_statement"
+    ],
+    "methods": [
+        {
+            "name": "isMultiSelect",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8853,
+            "end_position": 8942,
+            "body_start": 8884,
+            "body_end": 8942
+        },
+        {
+            "name": "setMultiSelect",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "bool"
+                }
+            ],
+            "start_position": 8948,
+            "end_position": 9119,
+            "body_start": 9031,
+            "body_end": 9119
+        },
+        {
+            "name": "removeCheckedFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 9125,
+            "end_position": 9236,
+            "body_start": 9177,
+            "body_end": 9236
+        },
+        {
+            "name": "addAllFilesToCheckedFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9242,
+            "end_position": 9343,
+            "body_start": 9282,
+            "body_end": 9343
+        },
+        {
+            "name": "getItemPosition",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 9349,
+            "end_position": 9558,
+            "body_start": 9398,
+            "body_end": 9558
+        },
+        {
+            "name": "setFavoriteAttributeForItemID",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "boolean",
+                    "name": "favorite"
+                },
+                {
+                    "type": "boolean",
+                    "name": "removeFromList"
+                }
+            ],
+            "start_position": 9564,
+            "end_position": 10959,
+            "body_start": 9709,
+            "body_end": 10959
+        },
+        {
+            "name": "refreshCommentsCount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "fileId"
+                }
+            ],
+            "start_position": 10965,
+            "end_position": 11473,
+            "body_start": 11013,
+            "body_end": 11473
+        },
+        {
+            "name": "setEncryptionAttributeForItemID",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "fileId"
+                },
+                {
+                    "type": "boolean",
+                    "name": "encrypted"
+                }
+            ],
+            "start_position": 11479,
+            "end_position": 12119,
+            "body_start": 11557,
+            "body_end": 12119
+        },
+        {
+            "name": "getItemId",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 12125,
+            "end_position": 12591,
+            "body_start": 12175,
+            "body_end": 12591
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 12597,
+            "end_position": 12705,
+            "body_start": 12637,
+            "body_end": 12705
+        },
+        {
+            "name": "getItem",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 12711,
+            "end_position": 13026,
+            "body_start": 12761,
+            "body_end": 13026
+        },
+        {
+            "name": "getItemViewType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 13032,
+            "end_position": 13636,
+            "body_start": 13087,
+            "body_end": 13636
+        },
+        {
+            "name": "isEmpty",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13642,
+            "end_position": 13707,
+            "body_start": 13667,
+            "body_end": 13707
+        },
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "RecyclerView.ViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 13713,
+            "end_position": 15624,
+            "body_start": 13831,
+            "body_end": 15624
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView.ViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 15630,
+            "end_position": 17852,
+            "body_start": 15785,
+            "body_end": 17852
+        },
+        {
+            "name": "checkVisibilityOfFileFeaturesLayout",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ListViewHolder",
+                    "name": "holder"
+                }
+            ],
+            "start_position": 17858,
+            "end_position": 18466,
+            "body_start": 17930,
+            "body_end": 18466
+        },
+        {
+            "name": "mergeOCFilesForLivePhoto",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 18472,
+            "end_position": 19498,
+            "body_start": 18512,
+            "body_end": 19498
+        },
+        {
+            "name": "updateLivePhotoIndicators",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ListViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 19504,
+            "end_position": 20109,
+            "body_start": 19579,
+            "body_end": 20109
+        },
+        {
+            "name": "bindListGridItemViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ListGridItemViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 20115,
+            "end_position": 20830,
+            "body_start": 20199,
+            "body_end": 20830
+        },
+        {
+            "name": "bindListItemViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ListItemViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 20836,
+            "end_position": 25809,
+            "body_start": 20912,
+            "body_end": 25809
+        },
+        {
+            "name": "prepareFileSize",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ListItemViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "long",
+                    "name": "size"
+                }
+            ],
+            "start_position": 25815,
+            "end_position": 26071,
+            "body_start": 25895,
+            "body_end": 26071
+        },
+        {
+            "name": "getFileSizeText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "long",
+                    "name": "size"
+                }
+            ],
+            "start_position": 26077,
+            "end_position": 26716,
+            "body_start": 26132,
+            "body_end": 26716
+        },
+        {
+            "name": "configureThumbnail",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ListViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 26885,
+            "end_position": 28608,
+            "body_start": 26953,
+            "body_end": 28608
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28614,
+            "end_position": 28681,
+            "body_start": 28638,
+            "body_end": 28681
+        },
+        {
+            "name": "onViewAttachedToWindow",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView.ViewHolder",
+                    "name": "holder"
+                }
+            ],
+            "start_position": 28687,
+            "end_position": 29142,
+            "body_start": 28777,
+            "body_end": 29142
+        },
+        {
+            "name": "getFooterText",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 29148,
+            "end_position": 29741,
+            "body_start": 29179,
+            "body_end": 29741
+        },
+        {
+            "name": "generateFooterText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "filesCount"
+                },
+                {
+                    "type": "int",
+                    "name": "foldersCount"
+                }
+            ],
+            "start_position": 29747,
+            "end_position": 30552,
+            "body_start": 29815,
+            "body_end": 30552
+        },
+        {
+            "name": "shouldShowHeader",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 30558,
+            "end_position": 30928,
+            "body_start": 30592,
+            "body_end": 30928
+        },
+        {
+            "name": "swapDirectory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "account"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "directory"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "updatedStorageManager"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyOnDevice"
+                },
+                {
+                    "type": "String",
+                    "name": "limitToMimeType"
+                }
+            ],
+            "start_position": 31263,
+            "end_position": 33495,
+            "body_start": 31532,
+            "body_end": 33495
+        },
+        {
+            "name": "addOfflineOperations",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "fileId"
+                }
+            ],
+            "start_position": 34171,
+            "end_position": 35122,
+            "body_start": 34218,
+            "body_end": 35122
+        },
+        {
+            "name": "setData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "objects"
+                },
+                {
+                    "type": "SearchType",
+                    "name": "searchType"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "boolean",
+                    "name": "clear"
+                }
+            ],
+            "start_position": 35128,
+            "end_position": 37597,
+            "body_start": 35368,
+            "body_end": 37597
+        },
+        {
+            "name": "parseShares",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "objects"
+                }
+            ],
+            "start_position": 37603,
+            "end_position": 38468,
+            "body_start": 37650,
+            "body_end": 38468
+        },
+        {
+            "name": "parseVirtuals",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "objects"
+                },
+                {
+                    "type": "SearchType",
+                    "name": "searchType"
+                }
+            ],
+            "start_position": 38474,
+            "end_position": 43464,
+            "body_start": 38546,
+            "body_end": 43464
+        },
+        {
+            "name": "showVirtuals",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "VirtualFolderType",
+                    "name": "type"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyImages"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 43470,
+            "end_position": 43958,
+            "body_start": 43578,
+            "body_end": 43958
+        },
+        {
+            "name": "setSortOrder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "FileSortOrder",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 43965,
+            "end_position": 44220,
+            "body_start": 44040,
+            "body_end": 44220
+        },
+        {
+            "name": "getCheckedItems",
+            "return_type": "Set<OCFile>",
+            "parameters": [],
+            "start_position": 44226,
+            "end_position": 44323,
+            "body_start": 44263,
+            "body_end": 44323
+        },
+        {
+            "name": "setCheckedItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Set<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 44329,
+            "end_position": 44432,
+            "body_start": 44375,
+            "body_end": 44432
+        },
+        {
+            "name": "clearCheckedItems",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 44438,
+            "end_position": 44525,
+            "body_start": 44470,
+            "body_end": 44525
+        },
+        {
+            "name": "setFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 44531,
+            "end_position": 44603,
+            "body_start": 44572,
+            "body_end": 44603
+        },
+        {
+            "name": "getFiles",
+            "return_type": "List<OCFile>",
+            "parameters": [],
+            "start_position": 44609,
+            "end_position": 44670,
+            "body_start": 44640,
+            "body_end": 44670
+        },
+        {
+            "name": "prepareListOfHiddenFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 44676,
+            "end_position": 44914,
+            "body_start": 44716,
+            "body_end": 44914
+        },
+        {
+            "name": "resetLastTimestamp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 44920,
+            "end_position": 44988,
+            "body_start": 44953,
+            "body_end": 44988
+        },
+        {
+            "name": "getLastTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 44994,
+            "end_position": 45062,
+            "body_start": 45025,
+            "body_end": 45062
+        },
+        {
+            "name": "onViewRecycled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView.ViewHolder",
+                    "name": "holder"
+                }
+            ],
+            "start_position": 45068,
+            "end_position": 45468,
+            "body_start": 45150,
+            "body_end": 45468
+        },
+        {
+            "name": "avatarGenerated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "avatarDrawable"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 45474,
+            "end_position": 45636,
+            "body_start": 45561,
+            "body_end": 45636
+        },
+        {
+            "name": "shouldCallGeneratedCallback",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tag"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 45642,
+            "end_position": 45801,
+            "body_start": 45731,
+            "body_end": 45801
+        },
+        {
+            "name": "isCheckedFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 45807,
+            "end_position": 45911,
+            "body_start": 45849,
+            "body_end": 45911
+        },
+        {
+            "name": "addCheckedFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 45917,
+            "end_position": 46013,
+            "body_start": 45957,
+            "body_end": 46013
+        },
+        {
+            "name": "setHighlightedItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 46019,
+            "end_position": 46123,
+            "body_start": 46063,
+            "body_end": 46123
+        },
+        {
+            "name": "filterHiddenFiles",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "Iterable<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 46265,
+            "end_position": 46553,
+            "body_start": 46328,
+            "body_end": 46553
+        },
+        {
+            "name": "filterByMimeType",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "Iterable<OCFile>",
+                    "name": "files"
+                },
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 46559,
+            "end_position": 46882,
+            "body_start": 46638,
+            "body_end": 46882
+        },
+        {
+            "name": "limitToPersonalFiles",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "Iterable<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 46888,
+            "end_position": 47281,
+            "body_start": 46954,
+            "body_end": 47281
+        },
+        {
+            "name": "cancelAllPendingTasks",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 47287,
+            "end_position": 47382,
+            "body_start": 47323,
+            "body_end": 47382
+        },
+        {
+            "name": "setGridView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "bool"
+                }
+            ],
+            "start_position": 47388,
+            "end_position": 47458,
+            "body_start": 47426,
+            "body_end": 47458
+        },
+        {
+            "name": "setShowMetadata",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "bool"
+                }
+            ],
+            "start_position": 47464,
+            "end_position": 47562,
+            "body_start": 47506,
+            "body_end": 47562
+        },
+        {
+            "name": "getPopupText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 47568,
+            "end_position": 48395,
+            "body_start": 47647,
+            "body_end": 48395
+        },
+        {
+            "name": "setShowShareAvatar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "bool"
+                }
+            ],
+            "start_position": 48401,
+            "end_position": 48529,
+            "body_start": 48469,
+            "body_end": 48529
+        },
+        {
+            "name": "setCurrentDirectory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 48535,
+            "end_position": 48647,
+            "body_start": 48605,
+            "body_end": 48647
+        },
+        {
+            "name": "getAllFiles",
+            "return_type": "List<OCFile>",
+            "parameters": [],
+            "start_position": 48653,
+            "end_position": 48761,
+            "body_start": 48728,
+            "body_end": 48761
+        },
+        {
+            "name": "getCurrentDirectory",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 48767,
+            "end_position": 48843,
+            "body_start": 48803,
+            "body_end": 48843
+        },
+        {
+            "name": "getFilesCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 48849,
+            "end_position": 48927,
+            "body_start": 48890,
+            "body_end": 48927
+        },
+        {
+            "name": "notifyItemChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 48933,
+            "end_position": 49056,
+            "body_start": 48999,
+            "body_end": 49056
+        }
+    ],
+    "local_variables": {
+        "position": "int",
+        "filesToDelete": "List<OCFile>",
+        "sortOrder": "FileSortOrder",
+        "newPosition": "int",
+        "item": "OCFile",
+        "binding": "ListHeaderBinding",
+        "layoutParams": "ViewGroup.LayoutParams",
+        "text": "String",
+        "gridViewHolder": "ListViewHolder",
+        "file": "OCFile",
+        "fileFeaturesVisibility": "int",
+        "fileFeaturesLayout": "LinearLayout",
+        "i": "int",
+        "child": "View",
+        "filesToRemove": "List<OCFile>",
+        "j": "int",
+        "nextFile": "OCFile",
+        "fileLocalId": "String",
+        "nextFileLinkedLocalId": "String",
+        "isLivePhoto": "boolean",
+        "gridImage": "boolean",
+        "fileOwner": "String",
+        "sharees": "List<ShareeUser>",
+        "fileOwnerSharee": "ShareeUser",
+        "storagePath": "String",
+        "localFile": "File",
+        "localSize": "long",
+        "fileLength": "long",
+        "modificationTimestamp": "long",
+        "fileSizeText": "String",
+        "entity": "OfflineOperationEntity",
+        "isRemoveOperation": "boolean",
+        "context": "var",
+        "icon": "Drawable",
+        "bitmap": "Bitmap",
+        "thumbnail": "Bitmap",
+        "isAutoUpload": "boolean",
+        "isDarkModeActive": "boolean",
+        "thumbnailShimmer": "LoaderImageView",
+        "filesCount": "int",
+        "foldersCount": "int",
+        "count": "int",
+        "showHiddenFiles": "boolean",
+        "output": "String",
+        "resources": "Resources",
+        "offlineOperations": "List<OCFile>",
+        "newFiles": "List<OCFile>",
+        "type": "VirtualFolderType",
+        "shares": "List<OCShare>",
+        "ocShare": "OCShare",
+        "files": "List<OCFile>",
+        "onlyMedia": "boolean",
+        "lastPosition": "int",
+        "lastFile": "RemoteFile",
+        "contentValues": "List<ContentValues>",
+        "ocFile": "OCFile",
+        "parentFolder": "OCFile",
+        "object": "Object",
+        "currentSyncTime": "long",
+        "refreshFolderOperation": "RemoteOperation",
+        "cv": "ContentValues",
+        "ret": "List<OCFile>",
+        "ownerId": "String",
+        "milliseconds": "long",
+        "date": "Date"
+    }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "deserialize",
+        "method_code": "public static NameCollisionPolicy deserialize(int ordinal) {\n        NameCollisionPolicy[] values = NameCollisionPolicy.values();\n        return ordinal >= 0 && ordinal < values.length ? values[ordinal] : DEFAULT;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled deserialize from NameCollisionPolicy.java into Swift.\n\n        Input:\n\n        Method Name: deserialize\n\n        Method Code: public static NameCollisionPolicy deserialize(int ordinal) {\n        NameCollisionPolicy[] values = NameCollisionPolicy.values();\n        return ordinal >= 0 && ordinal < values.length ? values[ordinal] : DEFAULT;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nstatic func deserialize(_ ordinal: Int) -> NameCollisionPolicy {\n    let values = NameCollisionPolicy.allCases\n    return (ordinal >= 0 && ordinal < values.count) ? values[ordinal] : .default\n}\n```"
+    },
+    {
+        "method_name": "serialize",
+        "method_code": "public int serialize() {\n        return this.ordinal();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled serialize from NameCollisionPolicy.java into Swift.\n\n        Input:\n\n        Method Name: serialize\n\n        Method Code: public int serialize() {\n        return this.ordinal();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc serialize() -> Int {\n    return self.rawValue\n}\n```"
+    }
+]

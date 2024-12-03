@@ -1,0 +1,32 @@
+[
+    {
+        "method_name": "isNetworkAndServerAvailable",
+        "method_code": "void isNetworkAndServerAvailable(@NonNull GenericCallback<Boolean> callback);",
+        "prompt": "\n        Please translate the following Java (Android) method titled isNetworkAndServerAvailable from ConnectivityService.java into Swift.\n\n        Input:\n\n        Method Name: isNetworkAndServerAvailable\n\n        Method Code: void isNetworkAndServerAvailable(@NonNull GenericCallback<Boolean> callback);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isNetworkAndServerAvailable(callback: @escaping (Bool) -> Void) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "isConnected",
+        "method_code": "boolean isConnected();",
+        "prompt": "\n        Please translate the following Java (Android) method titled isConnected from ConnectivityService.java into Swift.\n\n        Input:\n\n        Method Name: isConnected\n\n        Method Code: boolean isConnected();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isConnected() -> Bool\n```"
+    },
+    {
+        "method_name": "isInternetWalled",
+        "method_code": "boolean isInternetWalled();",
+        "prompt": "\n        Please translate the following Java (Android) method titled isInternetWalled from ConnectivityService.java into Swift.\n\n        Input:\n\n        Method Name: isInternetWalled\n\n        Method Code: boolean isInternetWalled();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isInternetWalled() -> Bool {\n    // Implementation needed\n    return false\n}\n```"
+    },
+    {
+        "method_name": "getConnectivity",
+        "method_code": "Connectivity getConnectivity();",
+        "prompt": "\n        Please translate the following Java (Android) method titled getConnectivity from ConnectivityService.java into Swift.\n\n        Input:\n\n        Method Name: getConnectivity\n\n        Method Code: Connectivity getConnectivity();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getConnectivity() -> Connectivity {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "onComplete",
+        "method_code": "void onComplete(T result);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onComplete from ConnectivityService.java into Swift.\n\n        Input:\n\n        Method Name: onComplete\n\n        Method Code: void onComplete(T result);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onComplete<T>(_ result: T) {\n    // Implementation here\n}\n```"
+    }
+]

@@ -1,0 +1,39 @@
+{
+    "methods": [
+        {
+            "name": "canProvideStoragePoints",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 722,
+            "end_position": 805,
+            "body_start": 777,
+            "body_end": 805
+        },
+        {
+            "name": "getAvailableStoragePoint",
+            "return_type": "Vector<StoragePoint>",
+            "parameters": [],
+            "start_position": 811,
+            "end_position": 1199,
+            "body_start": 880,
+            "body_end": 1199
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "enhanced_for_statement",
+        "if_statement",
+        "expression_statement"
+    ],
+    "local_variables": {
+        "result": "Vector<StoragePoint>"
+    },
+    "method_calls": {
+        "unknown": [
+            "canBeAddedToAvailableList"
+        ],
+        "result": [
+            "add"
+        ]
+    }
+}

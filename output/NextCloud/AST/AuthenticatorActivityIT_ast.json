@@ -1,0 +1,47 @@
+{
+    "method_calls": {
+        "GrantStoragePermissionRule": [
+            "grant"
+        ],
+        "ActivityScenario": [
+            "launch"
+        ],
+        "scenario": [
+            "onActivity"
+        ],
+        "unknown": [
+            "onIdleSync",
+            "createName",
+            "screenshotViaName"
+        ],
+        "((TextView) sut.findViewById(R.id.host_url_input))": [
+            "setText"
+        ],
+        "sut": [
+            "findViewById",
+            "runOnUiThread",
+            "getAccountSetupBinding"
+        ],
+        "sut.getAccountSetupBinding().hostUrlInput": [
+            "clearFocus"
+        ]
+    },
+    "methods": [
+        {
+            "name": "login",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 918,
+            "end_position": 1501,
+            "body_start": 968,
+            "body_end": 1501
+        }
+    ],
+    "code_constructs": [
+        "try_with_resources_statement",
+        "expression_statement"
+    ],
+    "local_variables": {
+        "screenShotName": "String"
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1260,
+            "end_position": 1910,
+            "body_start": 1321,
+            "body_end": 1910
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 1916,
+            "end_position": 2159,
+            "body_start": 1971,
+            "body_end": 2159
+        }
+    ],
+    "local_variables": {
+        "editorWebView": "EditorWebView",
+        "editor": "Editor",
+        "result": "RemoteOperationResult<String>"
+    },
+    "method_calls": {
+        "editorWebViewWeakReference": [
+            "get"
+        ],
+        "editorUtils": [
+            "getEditor"
+        ],
+        "file": [
+            "getMimeType",
+            "getRemotePath"
+        ],
+        "new DirectEditingOpenFileRemoteOperation(file.getRemotePath(), editor.getId())": [
+            "executeNextcloudClient"
+        ],
+        "editor": [
+            "getId"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultData"
+        ],
+        "editorWebView": [
+            "onUrlLoaded"
+        ]
+    }
+}

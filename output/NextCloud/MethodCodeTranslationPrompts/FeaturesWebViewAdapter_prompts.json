@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "createFragment",
+        "method_code": "@NonNull\n    @Override\n    public Fragment createFragment(int position) {\n        return FeatureWebFragment.newInstance(mWebUrls[position]);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled createFragment from FeaturesWebViewAdapter.java into Swift.\n\n        Input:\n\n        Method Name: createFragment\n\n        Method Code: @NonNull\n    @Override\n    public Fragment createFragment(int position) {\n        return FeatureWebFragment.newInstance(mWebUrls[position]);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func createFragment(at position: Int) -> Fragment {\n    return FeatureWebFragment.newInstance(mWebUrls[position])\n}\n```"
+    },
+    {
+        "method_name": "getItemCount",
+        "method_code": "@Override\n    public int getItemCount() {\n        return mWebUrls.length;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getItemCount from FeaturesWebViewAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getItemCount\n\n        Method Code: @Override\n    public int getItemCount() {\n        return mWebUrls.length;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getItemCount() -> Int {\n    return mWebUrls.count\n}\n```"
+    }
+]

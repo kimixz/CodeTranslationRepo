@@ -1,0 +1,480 @@
+{
+    "method_calls": {
+        "UserAccountManagerImpl": [
+            "fromContext"
+        ],
+        "targetContext": [
+            "getContentResolver"
+        ],
+        "unknown": [
+            "createDummyFiles",
+            "uploadOCUpload",
+            "assertTrue",
+            "verifyStoragePath",
+            "assertFalse",
+            "getStorageManager",
+            "assertEquals",
+            "testOnlyOnServer",
+            "getDummyFile",
+            "getFile",
+            "assertNotNull"
+        ],
+        "FileStorageUtils": [
+            "getTemporalPath",
+            "getSavePath"
+        ],
+        "fileDataStorageManager": [
+            "getFileByDecryptedRemotePath"
+        ],
+        "originalFile": [
+            "exists"
+        ],
+        "new File(uploadedFile.getStoragePath())": [
+            "exists"
+        ],
+        "uploadedFile": [
+            "getStoragePath"
+        ],
+        "uploadedFile.getStoragePath()": [
+            "isEmpty"
+        ],
+        "ocUpload": [
+            "setWhileChargingOnly",
+            "setUseWifiOnly"
+        ],
+        "newUpload": [
+            "setRemoteFolderToBeCreated",
+            "addRenameUploadListener",
+            "execute"
+        ],
+        "result": [
+            "toString",
+            "isSuccess",
+            "getCode"
+        ],
+        "new RemoveFileOperation(getStorageManager().getFileByDecryptedRemotePath(FOLDER),\n                                false,\n                                user,\n                                false,\n                                targetContext,\n                                getStorageManager())": [
+            "execute"
+        ],
+        "getStorageManager()": [
+            "getFileByDecryptedRemotePath",
+            "getFolderContent"
+        ],
+        "file": [
+            "getAbsolutePath",
+            "toPath",
+            "getDecryptedFileName",
+            "getStoragePath"
+        ],
+        "new UploadFileOperation(\n                uploadsStorageManager,\n                connectivityServiceMock,\n                powerManagementServiceMock,\n                user,\n                null,\n                ocUpload,\n                NameCollisionPolicy.DEFAULT,\n                FileUploadWorker.LOCAL_BEHAVIOUR_COPY,\n                targetContext,\n                false,\n                false,\n                getStorageManager()\n            )\n                .setRemoteFolderToBeCreated()\n                .execute(client)": [
+            "isSuccess"
+        ],
+        "new UploadFileOperation(\n                uploadsStorageManager,\n                connectivityServiceMock,\n                powerManagementServiceMock,\n                user,\n                null,\n                ocUpload,\n                NameCollisionPolicy.DEFAULT,\n                FileUploadWorker.LOCAL_BEHAVIOUR_COPY,\n                targetContext,\n                false,\n                false,\n                getStorageManager()\n            )\n                .setRemoteFolderToBeCreated()": [
+            "execute"
+        ],
+        "new UploadFileOperation(\n                uploadsStorageManager,\n                connectivityServiceMock,\n                powerManagementServiceMock,\n                user,\n                null,\n                ocUpload,\n                NameCollisionPolicy.DEFAULT,\n                FileUploadWorker.LOCAL_BEHAVIOUR_COPY,\n                targetContext,\n                false,\n                false,\n                getStorageManager()\n            )": [
+            "setRemoteFolderToBeCreated"
+        ],
+        "Files.readAttributes(file.toPath(), BasicFileAttributes.class)\n            .creationTime()": [
+            "to"
+        ],
+        "Files.readAttributes(file.toPath(), BasicFileAttributes.class)": [
+            "creationTime"
+        ],
+        "Files": [
+            "readAttributes"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "new RefreshFolderOperation(getStorageManager().getFileByDecryptedRemotePath(\"/\"),\n                                              System.currentTimeMillis() / 1000,\n                                              false,\n                                              false,\n                                              getStorageManager(),\n                                              user,\n                                              targetContext).execute(client)": [
+            "isSuccess"
+        ],
+        "new RefreshFolderOperation(getStorageManager().getFileByDecryptedRemotePath(\"/\"),\n                                              System.currentTimeMillis() / 1000,\n                                              false,\n                                              false,\n                                              getStorageManager(),\n                                              user,\n                                              targetContext)": [
+            "execute"
+        ],
+        "files": [
+            "get"
+        ],
+        "ocFile": [
+            "getRemotePath",
+            "getCreationTimestamp",
+            "getUploadTimestamp",
+            "getGeoLocation",
+            "getImageDimension"
+        ],
+        "new UploadFileOperation(\n                    uploadsStorageManager,\n                    connectivityServiceMock,\n                    powerManagementServiceMock,\n                    user,\n                    null,\n                    ocUpload,\n                    NameCollisionPolicy.DEFAULT,\n                    FileUploadWorker.LOCAL_BEHAVIOUR_COPY,\n                    targetContext,\n                    false,\n                    false,\n                    getStorageManager()\n                )\n                        .setRemoteFolderToBeCreated()\n                        .execute(client)": [
+            "isSuccess"
+        ],
+        "new UploadFileOperation(\n                    uploadsStorageManager,\n                    connectivityServiceMock,\n                    powerManagementServiceMock,\n                    user,\n                    null,\n                    ocUpload,\n                    NameCollisionPolicy.DEFAULT,\n                    FileUploadWorker.LOCAL_BEHAVIOUR_COPY,\n                    targetContext,\n                    false,\n                    false,\n                    getStorageManager()\n                )\n                        .setRemoteFolderToBeCreated()": [
+            "execute"
+        ],
+        "new UploadFileOperation(\n                    uploadsStorageManager,\n                    connectivityServiceMock,\n                    powerManagementServiceMock,\n                    user,\n                    null,\n                    ocUpload,\n                    NameCollisionPolicy.DEFAULT,\n                    FileUploadWorker.LOCAL_BEHAVIOUR_COPY,\n                    targetContext,\n                    false,\n                    false,\n                    getStorageManager()\n                )": [
+            "setRemoteFolderToBeCreated"
+        ],
+        "\"metadata.jpg\"": [
+            "equals"
+        ],
+        "f": [
+            "getFileName"
+        ]
+    },
+    "methods": [
+        {
+            "name": "isNetworkAndServerAvailable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GenericCallback<Boolean>",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 2438,
+            "end_position": 2552,
+            "body_start": 2540,
+            "body_end": 2552
+        },
+        {
+            "name": "isConnected",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2562,
+            "end_position": 2646,
+            "body_start": 2609,
+            "body_end": 2646
+        },
+        {
+            "name": "isInternetWalled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2656,
+            "end_position": 2745,
+            "body_start": 2708,
+            "body_end": 2745
+        },
+        {
+            "name": "getConnectivity",
+            "return_type": "Connectivity",
+            "parameters": [],
+            "start_position": 2755,
+            "end_position": 2870,
+            "body_start": 2811,
+            "body_end": 2870
+        },
+        {
+            "name": "isPowerSavingEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2982,
+            "end_position": 3075,
+            "body_start": 3038,
+            "body_end": 3075
+        },
+        {
+            "name": "isPowerSavingExclusionAvailable",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3085,
+            "end_position": 3189,
+            "body_start": 3152,
+            "body_end": 3189
+        },
+        {
+            "name": "getBattery",
+            "return_type": "BatteryStatus",
+            "parameters": [],
+            "start_position": 3199,
+            "end_position": 3327,
+            "body_start": 3268,
+            "body_end": 3327
+        },
+        {
+            "name": "before",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3340,
+            "end_position": 3519,
+            "body_start": 3392,
+            "body_end": 3519
+        },
+        {
+            "name": "testEmptyUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3525,
+            "end_position": 3830,
+            "body_start": 3565,
+            "body_end": 3830
+        },
+        {
+            "name": "testNonEmptyUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3836,
+            "end_position": 4150,
+            "body_start": 3879,
+            "body_end": 4150
+        },
+        {
+            "name": "testUploadWithCopy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4156,
+            "end_position": 4877,
+            "body_start": 4199,
+            "body_end": 4877
+        },
+        {
+            "name": "testUploadWithMove",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4883,
+            "end_position": 5605,
+            "body_start": 4926,
+            "body_end": 5605
+        },
+        {
+            "name": "testUploadWithForget",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5611,
+            "end_position": 6357,
+            "body_start": 5656,
+            "body_end": 6357
+        },
+        {
+            "name": "testUploadWithDelete",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6363,
+            "end_position": 7110,
+            "body_start": 6408,
+            "body_end": 7110
+        },
+        {
+            "name": "testChunkedUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7116,
+            "end_position": 7394,
+            "body_start": 7158,
+            "body_end": 7394
+        },
+        {
+            "name": "testUploadInNonExistingFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7400,
+            "end_position": 7680,
+            "body_start": 7454,
+            "body_end": 7680
+        },
+        {
+            "name": "testUploadOnChargingOnlyButNotCharging",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7686,
+            "end_position": 8777,
+            "body_start": 7749,
+            "body_end": 8777
+        },
+        {
+            "name": "testUploadOnChargingOnlyAndCharging",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8783,
+            "end_position": 10282,
+            "body_start": 8843,
+            "body_end": 10282
+        },
+        {
+            "name": "isPowerSavingEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8948,
+            "end_position": 9053,
+            "body_start": 9008,
+            "body_end": 9053
+        },
+        {
+            "name": "isPowerSavingExclusionAvailable",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 9067,
+            "end_position": 9183,
+            "body_start": 9138,
+            "body_end": 9183
+        },
+        {
+            "name": "getBattery",
+            "return_type": "BatteryStatus",
+            "parameters": [],
+            "start_position": 9197,
+            "end_position": 9342,
+            "body_start": 9274,
+            "body_end": 9342
+        },
+        {
+            "name": "testUploadOnWifiOnlyButNoWifi",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10288,
+            "end_position": 11964,
+            "body_start": 10342,
+            "body_end": 11964
+        },
+        {
+            "name": "isNetworkAndServerAvailable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GenericCallback<Boolean>",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 10438,
+            "end_position": 10560,
+            "body_start": 10544,
+            "body_end": 10560
+        },
+        {
+            "name": "isConnected",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 10574,
+            "end_position": 10670,
+            "body_start": 10625,
+            "body_end": 10670
+        },
+        {
+            "name": "isInternetWalled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 10684,
+            "end_position": 10785,
+            "body_start": 10740,
+            "body_end": 10785
+        },
+        {
+            "name": "getConnectivity",
+            "return_type": "Connectivity",
+            "parameters": [],
+            "start_position": 10799,
+            "end_position": 10941,
+            "body_start": 10859,
+            "body_end": 10941
+        },
+        {
+            "name": "testUploadOnWifiOnlyAndWifi",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11970,
+            "end_position": 13303,
+            "body_start": 12022,
+            "body_end": 13303
+        },
+        {
+            "name": "testUploadOnWifiOnlyButMeteredWifi",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13309,
+            "end_position": 15029,
+            "body_start": 13368,
+            "body_end": 15029
+        },
+        {
+            "name": "isNetworkAndServerAvailable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GenericCallback<Boolean>",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 13464,
+            "end_position": 13586,
+            "body_start": 13570,
+            "body_end": 13586
+        },
+        {
+            "name": "isConnected",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13600,
+            "end_position": 13696,
+            "body_start": 13651,
+            "body_end": 13696
+        },
+        {
+            "name": "isInternetWalled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13710,
+            "end_position": 13811,
+            "body_start": 13766,
+            "body_end": 13811
+        },
+        {
+            "name": "getConnectivity",
+            "return_type": "Connectivity",
+            "parameters": [],
+            "start_position": 13825,
+            "end_position": 13965,
+            "body_start": 13885,
+            "body_end": 13965
+        },
+        {
+            "name": "testCreationAndUploadTimestamp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15035,
+            "end_position": 17284,
+            "body_start": 15148,
+            "body_end": 17284
+        },
+        {
+            "name": "testMetadata",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 17290,
+            "end_position": 19486,
+            "body_start": 17385,
+            "body_end": 19486
+        },
+        {
+            "name": "verifyStoragePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 19492,
+            "end_position": 19692,
+            "body_start": 19536,
+            "body_end": 19692
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "enhanced_for_statement",
+        "if_statement",
+        "break_statement"
+    ],
+    "local_variables": {
+        "ocUpload": "OCUpload",
+        "originalFile": "File",
+        "uploadedFile": "OCFile",
+        "newUpload": "UploadFileOperation",
+        "result": "RemoteOperationResult",
+        "powerManagementServiceMock": "PowerManagementService",
+        "connectivityServiceMock": "ConnectivityService",
+        "file": "File",
+        "remotePath": "String",
+        "creationTimestamp": "long",
+        "uploadTimestamp": "long",
+        "files": "List<OCFile>",
+        "ocFile": "OCFile"
+    }
+}

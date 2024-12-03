@@ -1,0 +1,236 @@
+[
+    {
+        "method_name": "writeToParcel",
+        "method_code": "@Override\n    public void writeToParcel(Parcel dest, int flags) {\n        dest.writeLong(id);\n        dest.writeString(folderName);\n        dest.writeString(localPath);\n        dest.writeString(remotePath);\n        dest.writeInt(wifiOnly ? 1 : 0);\n        dest.writeInt(chargingOnly ? 1 : 0);\n        dest.writeInt(existing ? 1 : 0);\n        dest.writeInt(enabled ? 1 : 0);\n        dest.writeInt(subfolderByDate ? 1 : 0);\n        dest.writeInt(type.id);\n        dest.writeString(account);\n        dest.writeInt(uploadAction);\n        dest.writeInt(nameCollisionPolicy.serialize());\n        dest.writeInt(section);\n        dest.writeInt(hidden ? 1 : 0);\n        dest.writeInt(subFolderRule.ordinal());\n        dest.writeInt(excludeHidden ? 1 : 0);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled writeToParcel from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: writeToParcel\n\n        Method Code: @Override\n    public void writeToParcel(Parcel dest, int flags) {\n        dest.writeLong(id);\n        dest.writeString(folderName);\n        dest.writeString(localPath);\n        dest.writeString(remotePath);\n        dest.writeInt(wifiOnly ? 1 : 0);\n        dest.writeInt(chargingOnly ? 1 : 0);\n        dest.writeInt(existing ? 1 : 0);\n        dest.writeInt(enabled ? 1 : 0);\n        dest.writeInt(subfolderByDate ? 1 : 0);\n        dest.writeInt(type.id);\n        dest.writeString(account);\n        dest.writeInt(uploadAction);\n        dest.writeInt(nameCollisionPolicy.serialize());\n        dest.writeInt(section);\n        dest.writeInt(hidden ? 1 : 0);\n        dest.writeInt(subFolderRule.ordinal());\n        dest.writeInt(excludeHidden ? 1 : 0);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc writeToParcel(dest: inout Parcel, flags: Int) {\n    dest.writeLong(id)\n    dest.writeString(folderName)\n    dest.writeString(localPath)\n    dest.writeString(remotePath)\n    dest.writeInt(wifiOnly ? 1 : 0)\n    dest.writeInt(chargingOnly ? 1 : 0)\n    dest.writeInt(existing ? 1 : 0)\n    dest.writeInt(enabled ? 1 : 0)\n    dest.writeInt(subfolderByDate ? 1 : 0)\n    dest.writeInt(type.id)\n    dest.writeString(account)\n    dest.writeInt(uploadAction)\n    dest.writeInt(nameCollisionPolicy.serialize())\n    dest.writeInt(section)\n    dest.writeInt(hidden ? 1 : 0)\n    dest.writeInt(subFolderRule.rawValue)\n    dest.writeInt(excludeHidden ? 1 : 0)\n}\n```"
+    },
+    {
+        "method_name": "createFromParcel",
+        "method_code": "@Override\n                public SyncedFolderParcelable createFromParcel(Parcel source) {\n                    return new SyncedFolderParcelable(source);\n                }",
+        "prompt": "\n        Please translate the following Java (Android) method titled createFromParcel from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: createFromParcel\n\n        Method Code: @Override\n                public SyncedFolderParcelable createFromParcel(Parcel source) {\n                    return new SyncedFolderParcelable(source);\n                }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createFromParcel(source: Parcel) -> SyncedFolderParcelable {\n    return SyncedFolderParcelable(source: source)\n}\n```"
+    },
+    {
+        "method_name": "newArray",
+        "method_code": "@Override\n                public SyncedFolderParcelable[] newArray(int size) {\n                    return new SyncedFolderParcelable[size];\n                }",
+        "prompt": "\n        Please translate the following Java (Android) method titled newArray from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: newArray\n\n        Method Code: @Override\n                public SyncedFolderParcelable[] newArray(int size) {\n                    return new SyncedFolderParcelable[size];\n                }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc newArray(size: Int) -> [SyncedFolderParcelable] {\n    return [SyncedFolderParcelable](repeating: SyncedFolderParcelable(), count: size)\n}\n```"
+    },
+    {
+        "method_name": "describeContents",
+        "method_code": "@Override\n    public int describeContents() {\n        return 0;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled describeContents from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: describeContents\n\n        Method Code: @Override\n    public int describeContents() {\n        return 0;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc describeContents() -> Int {\n    return 0\n}\n```"
+    },
+    {
+        "method_name": "getUploadActionInteger",
+        "method_code": "public Integer getUploadActionInteger() {\n        switch (uploadAction) {\n            case FileUploadWorker.LOCAL_BEHAVIOUR_FORGET:\n                return 0;\n            case FileUploadWorker.LOCAL_BEHAVIOUR_MOVE:\n                return 1;\n            case FileUploadWorker.LOCAL_BEHAVIOUR_DELETE:\n                return 2;\n        }\n        return 0;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUploadActionInteger from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getUploadActionInteger\n\n        Method Code: public Integer getUploadActionInteger() {\n        switch (uploadAction) {\n            case FileUploadWorker.LOCAL_BEHAVIOUR_FORGET:\n                return 0;\n            case FileUploadWorker.LOCAL_BEHAVIOUR_MOVE:\n                return 1;\n            case FileUploadWorker.LOCAL_BEHAVIOUR_DELETE:\n                return 2;\n        }\n        return 0;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUploadActionInteger() -> Int {\n    switch uploadAction {\n    case FileUploadWorker.LOCAL_BEHAVIOUR_FORGET:\n        return 0\n    case FileUploadWorker.LOCAL_BEHAVIOUR_MOVE:\n        return 1\n    case FileUploadWorker.LOCAL_BEHAVIOUR_DELETE:\n        return 2\n    default:\n        return 0\n    }\n}\n```"
+    },
+    {
+        "method_name": "setUploadAction",
+        "method_code": "public void setUploadAction(String uploadAction) {\n        switch (uploadAction) {\n            case \"LOCAL_BEHAVIOUR_FORGET\":\n                this.uploadAction = FileUploadWorker.LOCAL_BEHAVIOUR_FORGET;\n                break;\n            case \"LOCAL_BEHAVIOUR_MOVE\":\n                this.uploadAction = FileUploadWorker.LOCAL_BEHAVIOUR_MOVE;\n                break;\n            case \"LOCAL_BEHAVIOUR_DELETE\":\n                this.uploadAction = FileUploadWorker.LOCAL_BEHAVIOUR_DELETE;\n                break;\n            default:\n                // do nothing\n                break;\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUploadAction from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setUploadAction\n\n        Method Code: public void setUploadAction(String uploadAction) {\n        switch (uploadAction) {\n            case \"LOCAL_BEHAVIOUR_FORGET\":\n                this.uploadAction = FileUploadWorker.LOCAL_BEHAVIOUR_FORGET;\n                break;\n            case \"LOCAL_BEHAVIOUR_MOVE\":\n                this.uploadAction = FileUploadWorker.LOCAL_BEHAVIOUR_MOVE;\n                break;\n            case \"LOCAL_BEHAVIOUR_DELETE\":\n                this.uploadAction = FileUploadWorker.LOCAL_BEHAVIOUR_DELETE;\n                break;\n            default:\n                // do nothing\n                break;\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUploadAction(_ uploadAction: String) {\n    switch uploadAction {\n    case \"LOCAL_BEHAVIOUR_FORGET\":\n        self.uploadAction = FileUploadWorker.LOCAL_BEHAVIOUR_FORGET\n    case \"LOCAL_BEHAVIOUR_MOVE\":\n        self.uploadAction = FileUploadWorker.LOCAL_BEHAVIOUR_MOVE\n    case \"LOCAL_BEHAVIOUR_DELETE\":\n        self.uploadAction = FileUploadWorker.LOCAL_BEHAVIOUR_DELETE\n    default:\n        // do nothing\n        break\n    }\n}\n```"
+    },
+    {
+        "method_name": "getFolderName",
+        "method_code": "public String getFolderName() {\n        return this.folderName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFolderName from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getFolderName\n\n        Method Code: public String getFolderName() {\n        return this.folderName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFolderName() -> String {\n    return self.folderName\n}\n```"
+    },
+    {
+        "method_name": "getLocalPath",
+        "method_code": "public String getLocalPath() {\n        return this.localPath;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLocalPath from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getLocalPath\n\n        Method Code: public String getLocalPath() {\n        return this.localPath;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLocalPath() -> String {\n    return self.localPath\n}\n```"
+    },
+    {
+        "method_name": "getRemotePath",
+        "method_code": "public String getRemotePath() {\n        return this.remotePath;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getRemotePath from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getRemotePath\n\n        Method Code: public String getRemotePath() {\n        return this.remotePath;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getRemotePath() -> String {\n    return self.remotePath\n}\n```"
+    },
+    {
+        "method_name": "isWifiOnly",
+        "method_code": "public boolean isWifiOnly() {\n        return this.wifiOnly;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isWifiOnly from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: isWifiOnly\n\n        Method Code: public boolean isWifiOnly() {\n        return this.wifiOnly;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isWifiOnly() -> Bool {\n    return self.wifiOnly\n}\n```"
+    },
+    {
+        "method_name": "isChargingOnly",
+        "method_code": "public boolean isChargingOnly() {\n        return this.chargingOnly;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isChargingOnly from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: isChargingOnly\n\n        Method Code: public boolean isChargingOnly() {\n        return this.chargingOnly;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isChargingOnly() -> Bool {\n    return self.chargingOnly\n}\n```"
+    },
+    {
+        "method_name": "isExisting",
+        "method_code": "public boolean isExisting() {\n        return this.existing;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isExisting from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: isExisting\n\n        Method Code: public boolean isExisting() {\n        return this.existing;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isExisting() -> Bool {\n    return self.existing\n}\n```"
+    },
+    {
+        "method_name": "isEnabled",
+        "method_code": "public boolean isEnabled() {\n        return this.enabled;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isEnabled from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: isEnabled\n\n        Method Code: public boolean isEnabled() {\n        return this.enabled;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isEnabled() -> Bool {\n    return self.enabled\n}\n```"
+    },
+    {
+        "method_name": "isSubfolderByDate",
+        "method_code": "public boolean isSubfolderByDate() {\n        return this.subfolderByDate;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isSubfolderByDate from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: isSubfolderByDate\n\n        Method Code: public boolean isSubfolderByDate() {\n        return this.subfolderByDate;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isSubfolderByDate() -> Bool {\n    return self.subfolderByDate\n}\n```"
+    },
+    {
+        "method_name": "getUploadAction",
+        "method_code": "public Integer getUploadAction() {\n        return this.uploadAction;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUploadAction from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getUploadAction\n\n        Method Code: public Integer getUploadAction() {\n        return this.uploadAction;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUploadAction() -> Int? {\n    return self.uploadAction\n}\n```"
+    },
+    {
+        "method_name": "getNameCollisionPolicy",
+        "method_code": "public NameCollisionPolicy getNameCollisionPolicy() {\n        return this.nameCollisionPolicy;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getNameCollisionPolicy from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getNameCollisionPolicy\n\n        Method Code: public NameCollisionPolicy getNameCollisionPolicy() {\n        return this.nameCollisionPolicy;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getNameCollisionPolicy() -> NameCollisionPolicy {\n    return self.nameCollisionPolicy\n}\n```"
+    },
+    {
+        "method_name": "getType",
+        "method_code": "public MediaFolderType getType() {\n        return this.type;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getType from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getType\n\n        Method Code: public MediaFolderType getType() {\n        return this.type;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getType() -> MediaFolderType {\n    return self.type\n}\n```"
+    },
+    {
+        "method_name": "isHidden",
+        "method_code": "public boolean isHidden() {\n        return this.hidden;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isHidden from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: isHidden\n\n        Method Code: public boolean isHidden() {\n        return this.hidden;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isHidden() -> Bool {\n    return self.hidden\n}\n```"
+    },
+    {
+        "method_name": "getId",
+        "method_code": "public long getId() {\n        return this.id;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getId from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getId\n\n        Method Code: public long getId() {\n        return this.id;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getId() -> Int64 {\n    return self.id\n}\n```"
+    },
+    {
+        "method_name": "getAccount",
+        "method_code": "public String getAccount() {\n        return this.account;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAccount from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getAccount\n\n        Method Code: public String getAccount() {\n        return this.account;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAccount() -> String {\n    return self.account\n}\n```"
+    },
+    {
+        "method_name": "getSection",
+        "method_code": "public int getSection() {\n        return this.section;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSection from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getSection\n\n        Method Code: public int getSection() {\n        return this.section;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getSection() -> Int {\n    return self.section\n}\n```"
+    },
+    {
+        "method_name": "getSubFolderRule",
+        "method_code": "public SubFolderRule getSubFolderRule() { return this.subFolderRule; }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSubFolderRule from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: getSubFolderRule\n\n        Method Code: public SubFolderRule getSubFolderRule() { return this.subFolderRule; }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getSubFolderRule() -> SubFolderRule {\n    return self.subFolderRule\n}\n```"
+    },
+    {
+        "method_name": "setFolderName",
+        "method_code": "public void setFolderName(String folderName) {\n        this.folderName = folderName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFolderName from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setFolderName\n\n        Method Code: public void setFolderName(String folderName) {\n        this.folderName = folderName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFolderName(_ folderName: String) {\n    self.folderName = folderName\n}\n```"
+    },
+    {
+        "method_name": "setLocalPath",
+        "method_code": "public void setLocalPath(String localPath) {\n        this.localPath = localPath;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLocalPath from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setLocalPath\n\n        Method Code: public void setLocalPath(String localPath) {\n        this.localPath = localPath;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLocalPath(_ localPath: String) {\n    self.localPath = localPath\n}\n```"
+    },
+    {
+        "method_name": "setRemotePath",
+        "method_code": "public void setRemotePath(String remotePath) {\n        this.remotePath = remotePath;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setRemotePath from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setRemotePath\n\n        Method Code: public void setRemotePath(String remotePath) {\n        this.remotePath = remotePath;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setRemotePath(_ remotePath: String) {\n    self.remotePath = remotePath\n}\n```"
+    },
+    {
+        "method_name": "setWifiOnly",
+        "method_code": "public void setWifiOnly(boolean wifiOnly) {\n        this.wifiOnly = wifiOnly;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setWifiOnly from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setWifiOnly\n\n        Method Code: public void setWifiOnly(boolean wifiOnly) {\n        this.wifiOnly = wifiOnly;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setWifiOnly(_ wifiOnly: Bool) {\n    self.wifiOnly = wifiOnly\n}\n```"
+    },
+    {
+        "method_name": "setChargingOnly",
+        "method_code": "public void setChargingOnly(boolean chargingOnly) {\n        this.chargingOnly = chargingOnly;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setChargingOnly from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setChargingOnly\n\n        Method Code: public void setChargingOnly(boolean chargingOnly) {\n        this.chargingOnly = chargingOnly;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setChargingOnly(_ chargingOnly: Bool) {\n    self.chargingOnly = chargingOnly\n}\n```"
+    },
+    {
+        "method_name": "setExisting",
+        "method_code": "public void setExisting(boolean existing) {\n        this.existing = existing;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setExisting from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setExisting\n\n        Method Code: public void setExisting(boolean existing) {\n        this.existing = existing;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setExisting(_ existing: Bool) {\n    self.existing = existing\n}\n```"
+    },
+    {
+        "method_name": "setEnabled",
+        "method_code": "public void setEnabled(boolean enabled) {\n        this.enabled = enabled;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setEnabled from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setEnabled\n\n        Method Code: public void setEnabled(boolean enabled) {\n        this.enabled = enabled;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setEnabled(_ enabled: Bool) {\n    self.enabled = enabled\n}\n```"
+    },
+    {
+        "method_name": "setSubfolderByDate",
+        "method_code": "public void setSubfolderByDate(boolean subfolderByDate) {\n        this.subfolderByDate = subfolderByDate;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSubfolderByDate from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setSubfolderByDate\n\n        Method Code: public void setSubfolderByDate(boolean subfolderByDate) {\n        this.subfolderByDate = subfolderByDate;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSubfolderByDate(_ subfolderByDate: Bool) {\n    self.subfolderByDate = subfolderByDate\n}\n```"
+    },
+    {
+        "method_name": "setNameCollisionPolicy",
+        "method_code": "public void setNameCollisionPolicy(NameCollisionPolicy nameCollisionPolicy) {\n        this.nameCollisionPolicy = nameCollisionPolicy;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setNameCollisionPolicy from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setNameCollisionPolicy\n\n        Method Code: public void setNameCollisionPolicy(NameCollisionPolicy nameCollisionPolicy) {\n        this.nameCollisionPolicy = nameCollisionPolicy;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setNameCollisionPolicy(_ nameCollisionPolicy: NameCollisionPolicy) {\n    self.nameCollisionPolicy = nameCollisionPolicy\n}\n```"
+    },
+    {
+        "method_name": "setType",
+        "method_code": "public void setType(MediaFolderType type) {\n        this.type = type;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setType from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setType\n\n        Method Code: public void setType(MediaFolderType type) {\n        this.type = type;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setType(_ type: MediaFolderType) {\n    self.type = type\n}\n```"
+    },
+    {
+        "method_name": "setHidden",
+        "method_code": "public void setHidden(boolean hidden) {\n        this.hidden = hidden;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setHidden from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setHidden\n\n        Method Code: public void setHidden(boolean hidden) {\n        this.hidden = hidden;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setHidden(_ hidden: Bool) {\n    self.hidden = hidden\n}\n```"
+    },
+    {
+        "method_name": "setId",
+        "method_code": "public void setId(long id) {\n        this.id = id;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setId from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setId\n\n        Method Code: public void setId(long id) {\n        this.id = id;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setId(_ id: Int64) {\n    self.id = id\n}\n```"
+    },
+    {
+        "method_name": "setAccount",
+        "method_code": "public void setAccount(String account) {\n        this.account = account;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAccount from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setAccount\n\n        Method Code: public void setAccount(String account) {\n        this.account = account;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAccount(_ account: String) {\n    self.account = account\n}\n```"
+    },
+    {
+        "method_name": "setSection",
+        "method_code": "public void setSection(int section) {\n        this.section = section;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSection from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setSection\n\n        Method Code: public void setSection(int section) {\n        this.section = section;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSection(_ section: Int) {\n    self.section = section\n}\n```"
+    },
+    {
+        "method_name": "setSubFolderRule",
+        "method_code": "public void setSubFolderRule(SubFolderRule subFolderRule) { this.subFolderRule = subFolderRule; }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSubFolderRule from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setSubFolderRule\n\n        Method Code: public void setSubFolderRule(SubFolderRule subFolderRule) { this.subFolderRule = subFolderRule; }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSubFolderRule(_ subFolderRule: SubFolderRule) {\n    self.subFolderRule = subFolderRule\n}\n```"
+    },
+    {
+        "method_name": "isExcludeHidden",
+        "method_code": "public boolean isExcludeHidden() {\n        return excludeHidden;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isExcludeHidden from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: isExcludeHidden\n\n        Method Code: public boolean isExcludeHidden() {\n        return excludeHidden;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isExcludeHidden() -> Bool {\n    return excludeHidden\n}\n```"
+    },
+    {
+        "method_name": "setExcludeHidden",
+        "method_code": "public void setExcludeHidden(boolean excludeHidden) {\n        this.excludeHidden = excludeHidden;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setExcludeHidden from SyncedFolderParcelable.java into Swift.\n\n        Input:\n\n        Method Name: setExcludeHidden\n\n        Method Code: public void setExcludeHidden(boolean excludeHidden) {\n        this.excludeHidden = excludeHidden;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setExcludeHidden(_ excludeHidden: Bool) {\n    self.excludeHidden = excludeHidden\n}\n```"
+    }
+]

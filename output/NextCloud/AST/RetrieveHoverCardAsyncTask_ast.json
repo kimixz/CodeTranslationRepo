@@ -1,0 +1,74 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "HoverCard",
+            "parameters": [],
+            "start_position": 1815,
+            "end_position": 2353,
+            "body_start": 1879,
+            "body_end": 2353
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "HoverCard",
+                    "name": "hoverCard"
+                }
+            ],
+            "start_position": 2359,
+            "end_position": 3041,
+            "body_start": 2423,
+            "body_end": 3041
+        }
+    ],
+    "local_variables": {
+        "client": "NextcloudClient",
+        "result": "RemoteOperationResult<HoverCard>",
+        "activity": "FragmentActivity"
+    },
+    "method_calls": {
+        "clientFactory": [
+            "createNextcloudClient"
+        ],
+        "new GetHoverCardRemoteOperation(userId)": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultData"
+        ],
+        "this.activityWeakReference": [
+            "get"
+        ],
+        "activity.getLifecycle().getCurrentState()": [
+            "isAtLeast"
+        ],
+        "activity.getLifecycle()": [
+            "getCurrentState"
+        ],
+        "activity": [
+            "getLifecycle"
+        ],
+        "hoverCard.getActions()": [
+            "size"
+        ],
+        "hoverCard": [
+            "getActions"
+        ],
+        "new ProfileBottomSheetDialog(activity,\n                                             user,\n                                             hoverCard,\n                                             viewThemeUtils)": [
+            "show"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage"
+        ]
+    }
+}

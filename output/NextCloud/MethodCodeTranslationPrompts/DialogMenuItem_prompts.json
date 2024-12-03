@@ -1,0 +1,248 @@
+[
+    {
+        "method_name": "getItemId",
+        "method_code": "@Override\n    public int getItemId() {\n        return mItemId;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getItemId from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getItemId\n\n        Method Code: @Override\n    public int getItemId() {\n        return mItemId;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getItemId() -> Int {\n    return mItemId\n}\n```"
+    },
+    {
+        "method_name": "getGroupId",
+        "method_code": "@Override\n    public int getGroupId() {\n        return 0;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getGroupId from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getGroupId\n\n        Method Code: @Override\n    public int getGroupId() {\n        return 0;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getGroupId() -> Int {\n    return 0\n}\n```"
+    },
+    {
+        "method_name": "getOrder",
+        "method_code": "@Override\n    public int getOrder() {\n        return 0;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getOrder from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getOrder\n\n        Method Code: @Override\n    public int getOrder() {\n        return 0;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getOrder() -> Int {\n    return 0\n}\n```"
+    },
+    {
+        "method_name": "setTitle",
+        "method_code": "@Override\n    public MenuItem setTitle(CharSequence title) {\n        this.mTitle = title;\n        return this;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setTitle from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setTitle\n\n        Method Code: @Override\n    public MenuItem setTitle(CharSequence title) {\n        this.mTitle = title;\n        return this;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@discardableResult\nfunc setTitle(_ title: String) -> Self {\n    self.mTitle = title\n    return self\n}\n```"
+    },
+    {
+        "method_name": "setTitle",
+        "method_code": "@Override\n    public MenuItem setTitle(int title) {\n        return this;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setTitle from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setTitle\n\n        Method Code: @Override\n    public MenuItem setTitle(int title) {\n        return this;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setTitle(_ title: Int) -> MenuItem {\n    return self\n}\n```"
+    },
+    {
+        "method_name": "getTitle",
+        "method_code": "@Override\n    public CharSequence getTitle() {\n        return this.mTitle;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getTitle from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getTitle\n\n        Method Code: @Override\n    public CharSequence getTitle() {\n        return this.mTitle;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getTitle() -> String {\n    return self.mTitle\n}\n```"
+    },
+    {
+        "method_name": "setTitleCondensed",
+        "method_code": "@Override\n    public MenuItem setTitleCondensed(CharSequence title) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setTitleCondensed from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setTitleCondensed\n\n        Method Code: @Override\n    public MenuItem setTitleCondensed(CharSequence title) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setTitleCondensed(_ title: String?) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "getTitleCondensed",
+        "method_code": "@Override\n    public CharSequence getTitleCondensed() {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getTitleCondensed from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getTitleCondensed\n\n        Method Code: @Override\n    public CharSequence getTitleCondensed() {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getTitleCondensed() -> String? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setIcon",
+        "method_code": "@Override\n    public MenuItem setIcon(Drawable icon) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setIcon from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setIcon\n\n        Method Code: @Override\n    public MenuItem setIcon(Drawable icon) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setIcon(icon: Drawable) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setIcon",
+        "method_code": "@Override\n    public MenuItem setIcon(int iconRes) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setIcon from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setIcon\n\n        Method Code: @Override\n    public MenuItem setIcon(int iconRes) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setIcon(iconRes: Int) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "getIcon",
+        "method_code": "@Override\n    public Drawable getIcon() {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getIcon from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getIcon\n\n        Method Code: @Override\n    public Drawable getIcon() {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getIcon() -> UIImage? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setIntent",
+        "method_code": "@Override\n    public MenuItem setIntent(Intent intent) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setIntent from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setIntent\n\n        Method Code: @Override\n    public MenuItem setIntent(Intent intent) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setIntent(intent: Intent) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "getIntent",
+        "method_code": "@Override\n    public Intent getIntent() {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getIntent from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getIntent\n\n        Method Code: @Override\n    public Intent getIntent() {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func getIntent() -> Intent? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setShortcut",
+        "method_code": "@Override\n    public MenuItem setShortcut(char numericChar, char alphaChar) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setShortcut from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setShortcut\n\n        Method Code: @Override\n    public MenuItem setShortcut(char numericChar, char alphaChar) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setShortcut(numericChar: Character, alphaChar: Character) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setNumericShortcut",
+        "method_code": "@Override\n    public MenuItem setNumericShortcut(char numericChar) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setNumericShortcut from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setNumericShortcut\n\n        Method Code: @Override\n    public MenuItem setNumericShortcut(char numericChar) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setNumericShortcut(_ numericChar: Character) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "getNumericShortcut",
+        "method_code": "@Override\n    public char getNumericShortcut() {\n        return 0;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getNumericShortcut from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getNumericShortcut\n\n        Method Code: @Override\n    public char getNumericShortcut() {\n        return 0;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getNumericShortcut() -> Character {\n    return \"\\0\"\n}\n```"
+    },
+    {
+        "method_name": "setAlphabeticShortcut",
+        "method_code": "@Override\n    public MenuItem setAlphabeticShortcut(char alphaChar) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAlphabeticShortcut from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setAlphabeticShortcut\n\n        Method Code: @Override\n    public MenuItem setAlphabeticShortcut(char alphaChar) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAlphabeticShortcut(_ alphaChar: Character) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "getAlphabeticShortcut",
+        "method_code": "@Override\n    public char getAlphabeticShortcut() {\n        return 0;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAlphabeticShortcut from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getAlphabeticShortcut\n\n        Method Code: @Override\n    public char getAlphabeticShortcut() {\n        return 0;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAlphabeticShortcut() -> Character {\n    return \"\\0\"\n}\n```"
+    },
+    {
+        "method_name": "setCheckable",
+        "method_code": "@Override\n    public MenuItem setCheckable(boolean checkable) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setCheckable from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setCheckable\n\n        Method Code: @Override\n    public MenuItem setCheckable(boolean checkable) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setCheckable(_ checkable: Bool) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "isCheckable",
+        "method_code": "@Override\n    public boolean isCheckable() {\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isCheckable from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: isCheckable\n\n        Method Code: @Override\n    public boolean isCheckable() {\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isCheckable() -> Bool {\n    return false\n}\n```"
+    },
+    {
+        "method_name": "setChecked",
+        "method_code": "@Override\n    public MenuItem setChecked(boolean checked) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setChecked from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setChecked\n\n        Method Code: @Override\n    public MenuItem setChecked(boolean checked) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setChecked(_ checked: Bool) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "isChecked",
+        "method_code": "@Override\n    public boolean isChecked() {\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isChecked from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: isChecked\n\n        Method Code: @Override\n    public boolean isChecked() {\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isChecked() -> Bool {\n    return false\n}\n```"
+    },
+    {
+        "method_name": "setVisible",
+        "method_code": "@Override\n    public MenuItem setVisible(boolean visible) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setVisible from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setVisible\n\n        Method Code: @Override\n    public MenuItem setVisible(boolean visible) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setVisible(_ visible: Bool) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "isVisible",
+        "method_code": "@Override\n    public boolean isVisible() {\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isVisible from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: isVisible\n\n        Method Code: @Override\n    public boolean isVisible() {\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isVisible() -> Bool {\n    return false\n}\n```"
+    },
+    {
+        "method_name": "setEnabled",
+        "method_code": "@Override\n    public MenuItem setEnabled(boolean enabled) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setEnabled from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setEnabled\n\n        Method Code: @Override\n    public MenuItem setEnabled(boolean enabled) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setEnabled(_ enabled: Bool) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "isEnabled",
+        "method_code": "@Override\n    public boolean isEnabled() {\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isEnabled from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: isEnabled\n\n        Method Code: @Override\n    public boolean isEnabled() {\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isEnabled() -> Bool {\n    return false\n}\n```"
+    },
+    {
+        "method_name": "hasSubMenu",
+        "method_code": "@Override\n    public boolean hasSubMenu() {\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled hasSubMenu from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: hasSubMenu\n\n        Method Code: @Override\n    public boolean hasSubMenu() {\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc hasSubMenu() -> Bool {\n    return false\n}\n```"
+    },
+    {
+        "method_name": "getSubMenu",
+        "method_code": "@Override\n    public SubMenu getSubMenu() {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSubMenu from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getSubMenu\n\n        Method Code: @Override\n    public SubMenu getSubMenu() {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func getSubMenu() -> SubMenu? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setOnMenuItemClickListener",
+        "method_code": "@Override\n    public MenuItem setOnMenuItemClickListener(OnMenuItemClickListener menuItemClickListener) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setOnMenuItemClickListener from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setOnMenuItemClickListener\n\n        Method Code: @Override\n    public MenuItem setOnMenuItemClickListener(OnMenuItemClickListener menuItemClickListener) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setOnMenuItemClickListener(_ menuItemClickListener: OnMenuItemClickListener) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "getMenuInfo",
+        "method_code": "@Override\n    public ContextMenu.ContextMenuInfo getMenuInfo() {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMenuInfo from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getMenuInfo\n\n        Method Code: @Override\n    public ContextMenu.ContextMenuInfo getMenuInfo() {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride var menuInfo: Any? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setShowAsAction",
+        "method_code": "@Override\n    public void setShowAsAction(int actionEnum) {\n        // not used at the moment\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setShowAsAction from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setShowAsAction\n\n        Method Code: @Override\n    public void setShowAsAction(int actionEnum) {\n        // not used at the moment\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setShowAsAction(_ actionEnum: Int) {\n    // not used at the moment\n}\n```"
+    },
+    {
+        "method_name": "setShowAsActionFlags",
+        "method_code": "@Override\n    public MenuItem setShowAsActionFlags(int actionEnum) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setShowAsActionFlags from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setShowAsActionFlags\n\n        Method Code: @Override\n    public MenuItem setShowAsActionFlags(int actionEnum) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func setShowAsActionFlags(_ actionEnum: Int) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setActionView",
+        "method_code": "@Override\n    public MenuItem setActionView(View view) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setActionView from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setActionView\n\n        Method Code: @Override\n    public MenuItem setActionView(View view) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setActionView(_ view: UIView) -> UIMenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setActionView",
+        "method_code": "@Override\n    public MenuItem setActionView(int resId) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setActionView from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setActionView\n\n        Method Code: @Override\n    public MenuItem setActionView(int resId) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setActionView(_ resId: Int) -> MenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "getActionView",
+        "method_code": "@Override\n    public View getActionView() {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getActionView from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getActionView\n\n        Method Code: @Override\n    public View getActionView() {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getActionView() -> UIView? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "setActionProvider",
+        "method_code": "@Override\n    public MenuItem setActionProvider(ActionProvider actionProvider) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setActionProvider from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setActionProvider\n\n        Method Code: @Override\n    public MenuItem setActionProvider(ActionProvider actionProvider) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setActionProvider(actionProvider: UIActionProvider?) -> UIMenuItem? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "getActionProvider",
+        "method_code": "@Override\n    public ActionProvider getActionProvider() {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getActionProvider from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: getActionProvider\n\n        Method Code: @Override\n    public ActionProvider getActionProvider() {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func actionProvider() -> UIActionProvider? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "expandActionView",
+        "method_code": "@Override\n    public boolean expandActionView() {\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled expandActionView from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: expandActionView\n\n        Method Code: @Override\n    public boolean expandActionView() {\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc expandActionView() -> Bool {\n    return false\n}\n```"
+    },
+    {
+        "method_name": "collapseActionView",
+        "method_code": "@Override\n    public boolean collapseActionView() {\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled collapseActionView from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: collapseActionView\n\n        Method Code: @Override\n    public boolean collapseActionView() {\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc collapseActionView() -> Bool {\n    return false\n}\n```"
+    },
+    {
+        "method_name": "isActionViewExpanded",
+        "method_code": "@Override\n    public boolean isActionViewExpanded() {\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isActionViewExpanded from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: isActionViewExpanded\n\n        Method Code: @Override\n    public boolean isActionViewExpanded() {\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isActionViewExpanded() -> Bool {\n    return false\n}\n```"
+    },
+    {
+        "method_name": "setOnActionExpandListener",
+        "method_code": "@Override\n    public MenuItem setOnActionExpandListener(OnActionExpandListener listener) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setOnActionExpandListener from DialogMenuItem.java into Swift.\n\n        Input:\n\n        Method Name: setOnActionExpandListener\n\n        Method Code: @Override\n    public MenuItem setOnActionExpandListener(OnActionExpandListener listener) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setOnActionExpandListener(listener: Any?) -> MenuItem? {\n    return nil\n}\n```"
+    }
+]

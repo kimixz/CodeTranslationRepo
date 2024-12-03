@@ -1,0 +1,174 @@
+{
+    "method_calls": {
+        "SynchronizeFileOperation.class": [
+            "getSimpleName"
+        ],
+        "mLocalFile": [
+            "getRemotePath",
+            "isDown",
+            "getEtag",
+            "getModificationTimestampAtLastSyncForData",
+            "getLocalModificationTimestamp",
+            "getLastSyncDateForData",
+            "setRemoteId",
+            "isFavorite",
+            "shouldHide",
+            "getStoragePath",
+            "getParentId"
+        ],
+        "mServerFile.getRemotePath()": [
+            "equals"
+        ],
+        "mServerFile": [
+            "getRemotePath",
+            "setLastSyncDateForProperties",
+            "getModificationTimestamp",
+            "getEtag",
+            "getRemoteId",
+            "setFavorite",
+            "setHidden",
+            "setLastSyncDateForData",
+            "setStoragePath",
+            "setParentId",
+            "setEtag"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "saveConflict",
+            "saveFile",
+            "removeFile"
+        ],
+        "unknown": [
+            "getStorageManager",
+            "requestForDownload",
+            "requestForUpload",
+            "getClient"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getData",
+            "getCode",
+            "getLogMessage"
+        ],
+        "FileStorageUtils": [
+            "fillOCFile"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "mServerFile.getEtag()": [
+            "equals"
+        ],
+        "Log_OC": [
+            "d",
+            "e",
+            "i"
+        ],
+        "mUser": [
+            "getAccountName"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "uploadUpdatedFile"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "FileDownloadHelper.Companion": [
+            "instance"
+        ],
+        "file": [
+            "getFileName"
+        ],
+        "fileDownloadHelper": [
+            "saveFile",
+            "downloadFile"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "throw_statement",
+        "return_statement",
+        "try_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 7526,
+            "end_position": 13065,
+            "body_start": 7599,
+            "body_end": 13065
+        },
+        {
+            "name": "requestForUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 13218,
+            "end_position": 13520,
+            "body_start": 13261,
+            "body_end": 13520
+        },
+        {
+            "name": "requestForDownload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 13526,
+            "end_position": 14714,
+            "body_start": 13571,
+            "body_end": 14714
+        },
+        {
+            "name": "transferWasRequested",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 14720,
+            "end_position": 14803,
+            "body_start": 14758,
+            "body_end": 14803
+        },
+        {
+            "name": "getLocalFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 14809,
+            "end_position": 14872,
+            "body_start": 14838,
+            "body_end": 14872
+        }
+    ],
+    "local_variables": {
+        "result": "var",
+        "operation": "var",
+        "serverChanged": "boolean",
+        "localChanged": "boolean",
+        "deleteResult": "boolean",
+        "fileDownloadHelper": "var",
+        "filename": "String"
+    }
+}

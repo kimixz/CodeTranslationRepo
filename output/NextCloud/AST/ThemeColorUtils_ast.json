@@ -1,0 +1,64 @@
+{
+    "methods": [
+        {
+            "name": "unchangedPrimaryColor",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 793,
+            "end_position": 1079,
+            "body_start": 860,
+            "body_end": 1079
+        },
+        {
+            "name": "unchangedFontColor",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 1085,
+            "end_position": 1441,
+            "body_start": 1132,
+            "body_end": 1441
+        }
+    ],
+    "code_constructs": [
+        "try_statement",
+        "return_statement",
+        "if_statement"
+    ],
+    "method_calls": {
+        "Color": [
+            "parseColor"
+        ],
+        "getCapability(account, context)": [
+            "getServerColor"
+        ],
+        "unknown": [
+            "getCapability"
+        ],
+        "context.getResources()": [
+            "getColor"
+        ],
+        "context": [
+            "getResources"
+        ],
+        "getCapability(context)": [
+            "getServerTextColor"
+        ],
+        "PlatformThemeUtil": [
+            "isDarkMode"
+        ]
+    }
+}

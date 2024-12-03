@@ -1,0 +1,32 @@
+[
+    {
+        "method_name": "getSessionName",
+        "method_code": "public String getSessionName() {\n        return this.sessionName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSessionName from OwnCloudSession.java into Swift.\n\n        Input:\n\n        Method Name: getSessionName\n\n        Method Code: public String getSessionName() {\n        return this.sessionName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getSessionName() -> String {\n    return self.sessionName\n}\n```"
+    },
+    {
+        "method_name": "getSessionUrl",
+        "method_code": "public String getSessionUrl() {\n        return this.sessionUrl;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSessionUrl from OwnCloudSession.java into Swift.\n\n        Input:\n\n        Method Name: getSessionUrl\n\n        Method Code: public String getSessionUrl() {\n        return this.sessionUrl;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getSessionUrl() -> String {\n    return self.sessionUrl\n}\n```"
+    },
+    {
+        "method_name": "getEntryId",
+        "method_code": "public int getEntryId() {\n        return this.entryId;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getEntryId from OwnCloudSession.java into Swift.\n\n        Input:\n\n        Method Name: getEntryId\n\n        Method Code: public int getEntryId() {\n        return this.entryId;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getEntryId() -> Int {\n    return self.entryId\n}\n```"
+    },
+    {
+        "method_name": "setSessionName",
+        "method_code": "public void setSessionName(String sessionName) {\n        this.sessionName = sessionName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSessionName from OwnCloudSession.java into Swift.\n\n        Input:\n\n        Method Name: setSessionName\n\n        Method Code: public void setSessionName(String sessionName) {\n        this.sessionName = sessionName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSessionName(_ sessionName: String) {\n    self.sessionName = sessionName\n}\n```"
+    },
+    {
+        "method_name": "setSessionUrl",
+        "method_code": "public void setSessionUrl(String sessionUrl) {\n        this.sessionUrl = sessionUrl;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSessionUrl from OwnCloudSession.java into Swift.\n\n        Input:\n\n        Method Name: setSessionUrl\n\n        Method Code: public void setSessionUrl(String sessionUrl) {\n        this.sessionUrl = sessionUrl;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSessionUrl(sessionUrl: String) {\n    self.sessionUrl = sessionUrl\n}\n```"
+    }
+]

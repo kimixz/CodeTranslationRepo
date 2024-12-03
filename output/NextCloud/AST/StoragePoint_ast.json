@@ -1,0 +1,122 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getDescription",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 853,
+            "end_position": 924,
+            "body_start": 884,
+            "body_end": 924
+        },
+        {
+            "name": "getPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 930,
+            "end_position": 987,
+            "body_start": 954,
+            "body_end": 987
+        },
+        {
+            "name": "getStorageType",
+            "return_type": "StorageType",
+            "parameters": [],
+            "start_position": 993,
+            "end_position": 1069,
+            "body_start": 1029,
+            "body_end": 1069
+        },
+        {
+            "name": "getPrivacyType",
+            "return_type": "PrivacyType",
+            "parameters": [],
+            "start_position": 1075,
+            "end_position": 1151,
+            "body_start": 1111,
+            "body_end": 1151
+        },
+        {
+            "name": "setDescription",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "description"
+                }
+            ],
+            "start_position": 1157,
+            "end_position": 1251,
+            "body_start": 1204,
+            "body_end": 1251
+        },
+        {
+            "name": "setPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 1257,
+            "end_position": 1323,
+            "body_start": 1290,
+            "body_end": 1323
+        },
+        {
+            "name": "setStorageType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "StorageType",
+                    "name": "storageType"
+                }
+            ],
+            "start_position": 1329,
+            "end_position": 1428,
+            "body_start": 1381,
+            "body_end": 1428
+        },
+        {
+            "name": "setPrivacyType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PrivacyType",
+                    "name": "privacyType"
+                }
+            ],
+            "start_position": 1434,
+            "end_position": 1533,
+            "body_start": 1486,
+            "body_end": 1533
+        },
+        {
+            "name": "compareTo",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "StoragePoint",
+                    "name": "another"
+                }
+            ],
+            "start_position": 1664,
+            "end_position": 1778,
+            "body_start": 1721,
+            "body_end": 1778
+        }
+    ],
+    "method_calls": {
+        "path": [
+            "compareTo"
+        ],
+        "another": [
+            "getPath"
+        ]
+    }
+}

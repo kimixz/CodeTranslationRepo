@@ -1,0 +1,104 @@
+[
+    {
+        "method_name": "onDarkThemeModeChanged",
+        "method_code": "@Override\n        public void onDarkThemeModeChanged(DarkMode mode) {\n            onThemeSettingsModeChanged();\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onDarkThemeModeChanged from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: onDarkThemeModeChanged\n\n        Method Code: @Override\n        public void onDarkThemeModeChanged(DarkMode mode) {\n            onThemeSettingsModeChanged();\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onDarkThemeModeChanged(_ mode: DarkMode) {\n    onThemeSettingsModeChanged()\n}\n```"
+    },
+    {
+        "method_name": "getUserAccountManager",
+        "method_code": "public UserAccountManager getUserAccountManager() {\n        return accountManager;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUserAccountManager from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: getUserAccountManager\n\n        Method Code: public UserAccountManager getUserAccountManager() {\n        return accountManager;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUserAccountManager() -> UserAccountManager {\n    return accountManager\n}\n```"
+    },
+    {
+        "method_name": "onCreate",
+        "method_code": "@Override\n    protected void onCreate(@Nullable Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        sessionMixin = new SessionMixin(this, accountManager);\n        mixinRegistry.add(sessionMixin);\n\n        if (enableAccountHandling) {\n            mixinRegistry.onCreate(savedInstanceState);\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onCreate from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: onCreate\n\n        Method Code: @Override\n    protected void onCreate(@Nullable Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        sessionMixin = new SessionMixin(this, accountManager);\n        mixinRegistry.add(sessionMixin);\n\n        if (enableAccountHandling) {\n            mixinRegistry.onCreate(savedInstanceState);\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewDidLoad() {\n    super.viewDidLoad()\n    sessionMixin = SessionMixin(self, accountManager: accountManager)\n    mixinRegistry.add(sessionMixin)\n\n    if enableAccountHandling {\n        mixinRegistry.onCreate(savedInstanceState)\n    }\n}\n```"
+    },
+    {
+        "method_name": "onPostCreate",
+        "method_code": "@Override\n    protected void onPostCreate(@Nullable Bundle savedInstanceState) {\n        super.onPostCreate(savedInstanceState);\n        preferences.addListener(onPreferencesChanged);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onPostCreate from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: onPostCreate\n\n        Method Code: @Override\n    protected void onPostCreate(@Nullable Bundle savedInstanceState) {\n        super.onPostCreate(savedInstanceState);\n        preferences.addListener(onPreferencesChanged);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewDidLoad() {\n    super.viewDidLoad()\n    preferences.addListener(onPreferencesChanged)\n}\n```"
+    },
+    {
+        "method_name": "onDestroy",
+        "method_code": "@Override\n    protected void onDestroy() {\n        super.onDestroy();\n        mixinRegistry.onDestroy();\n        preferences.removeListener(onPreferencesChanged);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onDestroy from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: onDestroy\n\n        Method Code: @Override\n    protected void onDestroy() {\n        super.onDestroy();\n        mixinRegistry.onDestroy();\n        preferences.removeListener(onPreferencesChanged);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewWillDisappear(_ animated: Bool) {\n    super.viewWillDisappear(animated)\n    mixinRegistry.onDestroy()\n    preferences.removeListener(onPreferencesChanged)\n}\n```"
+    },
+    {
+        "method_name": "onPause",
+        "method_code": "@Override\n    protected void onPause() {\n        super.onPause();\n        mixinRegistry.onPause();\n        paused = true;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onPause from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: onPause\n\n        Method Code: @Override\n    protected void onPause() {\n        super.onPause();\n        mixinRegistry.onPause();\n        paused = true;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewWillDisappear(_ animated: Bool) {\n    super.viewWillDisappear(animated)\n    mixinRegistry.onPause()\n    paused = true\n}\n```"
+    },
+    {
+        "method_name": "onResume",
+        "method_code": "@Override\n    protected void onResume() {\n        super.onResume();\n        if (enableAccountHandling) {\n            mixinRegistry.onResume();\n        }\n        paused = false;\n\n        if (themeChangePending) {\n            recreate();\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onResume from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: onResume\n\n        Method Code: @Override\n    protected void onResume() {\n        super.onResume();\n        if (enableAccountHandling) {\n            mixinRegistry.onResume();\n        }\n        paused = false;\n\n        if (themeChangePending) {\n            recreate();\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewWillAppear(_ animated: Bool) {\n    super.viewWillAppear(animated)\n    if enableAccountHandling {\n        mixinRegistry.onResume()\n    }\n    paused = false\n\n    if themeChangePending {\n        recreate()\n    }\n}\n```"
+    },
+    {
+        "method_name": "onNewIntent",
+        "method_code": "@Override\n    protected void onNewIntent(Intent intent) {\n        super.onNewIntent(intent);\n        mixinRegistry.onNewIntent(intent);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onNewIntent from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: onNewIntent\n\n        Method Code: @Override\n    protected void onNewIntent(Intent intent) {\n        super.onNewIntent(intent);\n        mixinRegistry.onNewIntent(intent);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewWillAppear(_ animated: Bool) {\n    super.viewWillAppear(animated)\n    mixinRegistry.onNewIntent(intent)\n}\n```"
+    },
+    {
+        "method_name": "onRestart",
+        "method_code": "@Override\n    protected void onRestart() {\n        Log_OC.v(TAG, \"onRestart() start\");\n        super.onRestart();\n        if (enableAccountHandling) {\n            mixinRegistry.onRestart();\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onRestart from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: onRestart\n\n        Method Code: @Override\n    protected void onRestart() {\n        Log_OC.v(TAG, \"onRestart() start\");\n        super.onRestart();\n        if (enableAccountHandling) {\n            mixinRegistry.onRestart();\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewWillAppear(_ animated: Bool) {\n    super.viewWillAppear(animated)\n    NSLog(\"onRestart() start\")\n    if enableAccountHandling {\n        mixinRegistry.onRestart()\n    }\n}\n```"
+    },
+    {
+        "method_name": "onThemeSettingsModeChanged",
+        "method_code": "private void onThemeSettingsModeChanged() {\n        if (paused) {\n            themeChangePending = true;\n        } else {\n            recreate();\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onThemeSettingsModeChanged from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: onThemeSettingsModeChanged\n\n        Method Code: private void onThemeSettingsModeChanged() {\n        if (paused) {\n            themeChangePending = true;\n        } else {\n            recreate();\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprivate func onThemeSettingsModeChanged() {\n    if paused {\n        themeChangePending = true\n    } else {\n        recreate()\n    }\n}\n```"
+    },
+    {
+        "method_name": "setAccount",
+        "method_code": "@Deprecated\n    protected void setAccount(Account account, boolean savedAccount) {\n        sessionMixin.setAccount(account);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAccount from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: setAccount\n\n        Method Code: @Deprecated\n    protected void setAccount(Account account, boolean savedAccount) {\n        sessionMixin.setAccount(account);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@available(*, deprecated)\nfunc setAccount(_ account: Account, savedAccount: Bool) {\n    sessionMixin.setAccount(account)\n}\n```"
+    },
+    {
+        "method_name": "setUser",
+        "method_code": "protected void setUser(User user) {\n        sessionMixin.setUser(user);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUser from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: setUser\n\n        Method Code: protected void setUser(User user) {\n        sessionMixin.setUser(user);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUser(_ user: User) {\n    sessionMixin.setUser(user)\n}\n```"
+    },
+    {
+        "method_name": "startAccountCreation",
+        "method_code": "protected void startAccountCreation() {\n        sessionMixin.startAccountCreation();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled startAccountCreation from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: startAccountCreation\n\n        Method Code: protected void startAccountCreation() {\n        sessionMixin.startAccountCreation();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc startAccountCreation() {\n    sessionMixin.startAccountCreation()\n}\n```"
+    },
+    {
+        "method_name": "getCapabilities",
+        "method_code": "public OCCapability getCapabilities() {\n        return sessionMixin.getCapabilities();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getCapabilities from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: getCapabilities\n\n        Method Code: public OCCapability getCapabilities() {\n        return sessionMixin.getCapabilities();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getCapabilities() -> OCCapability {\n    return sessionMixin.getCapabilities()\n}\n```"
+    },
+    {
+        "method_name": "getAccount",
+        "method_code": "public Account getAccount() {\n        return sessionMixin.getCurrentAccount();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAccount from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: getAccount\n\n        Method Code: public Account getAccount() {\n        return sessionMixin.getCurrentAccount();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAccount() -> Account {\n    return sessionMixin.getCurrentAccount()\n}\n```"
+    },
+    {
+        "method_name": "getUser",
+        "method_code": "public Optional<User> getUser() {\n        return sessionMixin.getUser();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUser from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: getUser\n\n        Method Code: public Optional<User> getUser() {\n        return sessionMixin.getUser();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUser() -> User? {\n    return sessionMixin.getUser()\n}\n```"
+    },
+    {
+        "method_name": "getStorageManager",
+        "method_code": "public FileDataStorageManager getStorageManager() {\n        return fileDataStorageManager;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getStorageManager from BaseActivity.java into Swift.\n\n        Input:\n\n        Method Name: getStorageManager\n\n        Method Code: public FileDataStorageManager getStorageManager() {\n        return fileDataStorageManager;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getStorageManager() -> FileDataStorageManager {\n    return fileDataStorageManager\n}\n```"
+    }
+]

@@ -1,0 +1,97 @@
+{
+    "methods": [
+        {
+            "name": "searchAndColor",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "text"
+                },
+                {
+                    "type": "String",
+                    "name": "searchText"
+                },
+                {
+                    "type": "int",
+                    "name": "color"
+                }
+            ],
+            "start_position": 636,
+            "end_position": 1770,
+            "body_start": 784,
+            "body_end": 1770
+        },
+        {
+            "name": "removePrefix",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "s"
+                },
+                {
+                    "type": "String",
+                    "name": "prefix"
+                }
+            ],
+            "start_position": 1776,
+            "end_position": 1990,
+            "body_start": 1870,
+            "body_end": 1990
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "return_statement",
+        "while_statement",
+        "expression_statement"
+    ],
+    "method_calls": {
+        "text": [
+            "isEmpty"
+        ],
+        "searchText": [
+            "isEmpty"
+        ],
+        "Pattern.compile(searchText,\n                                              Pattern.CASE_INSENSITIVE | Pattern.LITERAL)": [
+            "matcher"
+        ],
+        "Pattern": [
+            "compile"
+        ],
+        "matcher": [
+            "find",
+            "group",
+            "appendReplacement",
+            "appendTail"
+        ],
+        "matcher.group()": [
+            "replace"
+        ],
+        "String": [
+            "format"
+        ],
+        "Locale": [
+            "getDefault"
+        ],
+        "Matcher": [
+            "quoteReplacement"
+        ],
+        "stringBuffer": [
+            "toString"
+        ],
+        "s": [
+            "startsWith",
+            "substring"
+        ],
+        "prefix": [
+            "length"
+        ]
+    },
+    "local_variables": {
+        "matcher": "Matcher",
+        "stringBuffer": "StringBuffer",
+        "replacement": "String"
+    }
+}

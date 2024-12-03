@@ -1,0 +1,168 @@
+{
+    "local_variables": {
+        "m": "Map<String, Integer>",
+        "value": "Integer",
+        "androidType": "Integer"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "enhanced_for_statement"
+    ],
+    "method_calls": {
+        "m": [
+            "put"
+        ],
+        "Collections": [
+            "unmodifiableMap"
+        ],
+        "AddressType": [
+            "get"
+        ],
+        "type": [
+            "toLowerCase",
+            "contains"
+        ],
+        "websiteTypeMappings": [
+            "get"
+        ],
+        "abDateMappings": [
+            "entrySet"
+        ],
+        "entry": [
+            "getKey",
+            "getValue"
+        ],
+        "abRelatedNamesMappings": [
+            "entrySet"
+        ],
+        "protocol": [
+            "toLowerCase"
+        ],
+        "imProtocolMappings": [
+            "get"
+        ],
+        "property": [
+            "getTypes"
+        ],
+        "phoneTypeMappings": [
+            "get"
+        ],
+        "emailTypeMappings": [
+            "get"
+        ],
+        "addressTypeMappings": [
+            "get"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getWebSiteType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "type"
+                }
+            ],
+            "start_position": 7133,
+            "end_position": 7493,
+            "body_start": 7179,
+            "body_end": 7493
+        },
+        {
+            "name": "getDateType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "type"
+                }
+            ],
+            "start_position": 7719,
+            "end_position": 8179,
+            "body_start": 7762,
+            "body_end": 8179
+        },
+        {
+            "name": "getNameType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "type"
+                }
+            ],
+            "start_position": 8408,
+            "end_position": 8884,
+            "body_start": 8451,
+            "body_end": 8884
+        },
+        {
+            "name": "getImPropertyNameMappings",
+            "return_type": "Map<String, Integer>",
+            "parameters": [],
+            "start_position": 9172,
+            "end_position": 9280,
+            "body_start": 9234,
+            "body_end": 9280
+        },
+        {
+            "name": "getIMTypeFromProtocol",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "protocol"
+                }
+            ],
+            "start_position": 9558,
+            "end_position": 9942,
+            "body_start": 9615,
+            "body_end": 9942
+        },
+        {
+            "name": "getPhoneType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Telephone",
+                    "name": "property"
+                }
+            ],
+            "start_position": 10181,
+            "end_position": 10522,
+            "body_start": 10232,
+            "body_end": 10522
+        },
+        {
+            "name": "getEmailType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Email",
+                    "name": "property"
+                }
+            ],
+            "start_position": 10758,
+            "end_position": 11091,
+            "body_start": 10805,
+            "body_end": 11091
+        },
+        {
+            "name": "getAddressType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Address",
+                    "name": "property"
+                }
+            ],
+            "start_position": 11340,
+            "end_position": 11693,
+            "body_start": 11391,
+            "body_end": 11693
+        }
+    ]
+}

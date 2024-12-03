@@ -1,0 +1,20 @@
+[
+    {
+        "method_name": "onTransferProgress",
+        "method_code": "@Override\n    public void onTransferProgress(\n            long progressRate,\n            long totalTransferredSoFar,\n            long totalToTransfer,\n            String fileAbsoluteName) {\n        int percent = (int) (100.0 * ((double) totalTransferredSoFar) / ((double) totalToTransfer));\n\n        if (percent != mLastPercent) {\n            ProgressBar progressBar = mProgressBar.get();\n            if (progressBar != null) {\n                progressBar.setProgress(percent);\n                progressBar.postInvalidate();\n            }\n        }\n\n        mLastPercent = percent;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onTransferProgress from ProgressListener.java into Swift.\n\n        Input:\n\n        Method Name: onTransferProgress\n\n        Method Code: @Override\n    public void onTransferProgress(\n            long progressRate,\n            long totalTransferredSoFar,\n            long totalToTransfer,\n            String fileAbsoluteName) {\n        int percent = (int) (100.0 * ((double) totalTransferredSoFar) / ((double) totalToTransfer));\n\n        if (percent != mLastPercent) {\n            ProgressBar progressBar = mProgressBar.get();\n            if (progressBar != null) {\n                progressBar.setProgress(percent);\n                progressBar.postInvalidate();\n            }\n        }\n\n        mLastPercent = percent;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onTransferProgress(progressRate: Int64, totalTransferredSoFar: Int64, totalToTransfer: Int64, fileAbsoluteName: String) {\n    let percent = Int(100.0 * (Double(totalTransferredSoFar) / Double(totalToTransfer)))\n\n    if percent != mLastPercent {\n        if let progressBar = mProgressBar {\n            progressBar.progress = Float(percent)\n            progressBar.setNeedsDisplay()\n        }\n    }\n\n    mLastPercent = percent\n}\n```"
+    },
+    {
+        "method_name": "isWrapping",
+        "method_code": "public boolean isWrapping(ProgressBar progressBar) {\n        ProgressBar wrappedProgressBar = mProgressBar.get();\n        return wrappedProgressBar != null && wrappedProgressBar == progressBar; // on purpose; don't replace with equals\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isWrapping from ProgressListener.java into Swift.\n\n        Input:\n\n        Method Name: isWrapping\n\n        Method Code: public boolean isWrapping(ProgressBar progressBar) {\n        ProgressBar wrappedProgressBar = mProgressBar.get();\n        return wrappedProgressBar != null && wrappedProgressBar == progressBar; // on purpose; don't replace with equals\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isWrapping(progressBar: ProgressBar) -> Bool {\n    if let wrappedProgressBar = mProgressBar.get() {\n        return wrappedProgressBar === progressBar\n    }\n    return false\n}\n```"
+    },
+    {
+        "method_name": "getUpload",
+        "method_code": "public OCUpload getUpload() {\n        return mUpload;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUpload from ProgressListener.java into Swift.\n\n        Input:\n\n        Method Name: getUpload\n\n        Method Code: public OCUpload getUpload() {\n        return mUpload;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUpload() -> OCUpload {\n    return mUpload\n}\n```"
+    }
+]

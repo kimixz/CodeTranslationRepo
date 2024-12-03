@@ -1,0 +1,182 @@
+{
+    "method_calls": {
+        "Looper": [
+            "getMainLooper"
+        ],
+        "new Thread(() -> {\n            Network activeNetwork = platformConnectivityManager.getActiveNetwork();\n            NetworkCapabilities networkCapabilities = platformConnectivityManager.getNetworkCapabilities(activeNetwork);\n            boolean hasInternet = networkCapabilities != null && networkCapabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET);\n\n            boolean result;\n            if (hasInternet) {\n                result = !isInternetWalled();\n            } else {\n                result = false;\n            }\n\n            mainThreadHandler.post(() -> callback.onComplete(result));\n        })": [
+            "start"
+        ],
+        "platformConnectivityManager": [
+            "getActiveNetwork",
+            "getNetworkCapabilities",
+            "getActiveNetworkInfo",
+            "getAllNetworkInfo"
+        ],
+        "networkCapabilities": [
+            "hasCapability"
+        ],
+        "unknown": [
+            "isInternetWalled",
+            "getConnectivity",
+            "isNetworkMetered",
+            "hasNonCellularConnectivity"
+        ],
+        "mainThreadHandler": [
+            "post"
+        ],
+        "callback": [
+            "onComplete"
+        ],
+        "actNw": [
+            "hasTransport"
+        ],
+        "walledCheckCache": [
+            "getValue",
+            "setValue"
+        ],
+        "accountManager.getUser()": [
+            "getServer"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "server.getUri()": [
+            "toString"
+        ],
+        "server": [
+            "getUri"
+        ],
+        "c": [
+            "isConnected",
+            "isWifi",
+            "isMetered"
+        ],
+        "baseServerAddress": [
+            "isEmpty"
+        ],
+        "requestBuilder": [
+            "invoke"
+        ],
+        "clientFactory": [
+            "createPlainClient"
+        ],
+        "get": [
+            "execute",
+            "getResponseContentLength",
+            "releaseConnection"
+        ],
+        "Log_OC": [
+            "w",
+            "e"
+        ],
+        "networkInfo": [
+            "isConnectedOrConnecting",
+            "getType"
+        ],
+        "ConnectivityManagerCompat": [
+            "isActiveNetworkMetered"
+        ]
+    },
+    "methods": [
+        {
+            "name": "invoke",
+            "return_type": "GetMethod",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 1502,
+            "end_position": 1613,
+            "body_start": 1556,
+            "body_end": 1613
+        },
+        {
+            "name": "isNetworkAndServerAvailable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GenericCallback<Boolean>",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 2220,
+            "end_position": 2967,
+            "body_start": 2318,
+            "body_end": 2967
+        },
+        {
+            "name": "isConnected",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2973,
+            "end_position": 3545,
+            "body_start": 3016,
+            "body_end": 3545
+        },
+        {
+            "name": "isInternetWalled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3551,
+            "end_position": 4926,
+            "body_start": 3599,
+            "body_end": 4926
+        },
+        {
+            "name": "getConnectivity",
+            "return_type": "Connectivity",
+            "parameters": [],
+            "start_position": 4932,
+            "end_position": 5737,
+            "body_start": 4984,
+            "body_end": 5737
+        },
+        {
+            "name": "isNetworkMetered",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 5743,
+            "end_position": 6441,
+            "body_start": 5778,
+            "body_end": 6441
+        },
+        {
+            "name": "hasNonCellularConnectivity",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6447,
+            "end_position": 6859,
+            "body_start": 6492,
+            "body_end": 6859
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "if_statement",
+        "try_statement",
+        "enhanced_for_statement"
+    ],
+    "local_variables": {
+        "activeNetwork": "Network",
+        "networkCapabilities": "NetworkCapabilities",
+        "hasInternet": "boolean",
+        "result": "boolean",
+        "nw": "Network",
+        "actNw": "NetworkCapabilities",
+        "cachedValue": "Boolean",
+        "server": "Server",
+        "baseServerAddress": "String",
+        "c": "Connectivity",
+        "get": "GetMethod",
+        "client": "PlainClient",
+        "status": "int",
+        "networkInfo": "NetworkInfo",
+        "isConnected": "boolean",
+        "isMetered": "boolean",
+        "isWifi": "boolean",
+        "network": "Network"
+    }
+}

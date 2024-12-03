@@ -1,0 +1,59 @@
+{
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult<UserInfo>",
+            "parameters": [
+                {
+                    "type": "NextcloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1684,
+            "end_position": 2375,
+            "body_start": 1765,
+            "body_end": 2375
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult<UserInfo>",
+        "accountManager": "AccountManager",
+        "userInfo": "UserInfo",
+        "storedAccount": "Account"
+    },
+    "method_calls": {
+        "new GetUserInfoRemoteOperation()": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultData"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "getStorageManager().getUser()": [
+            "toPlatformAccount"
+        ],
+        "getStorageManager()": [
+            "getUser"
+        ],
+        "unknown": [
+            "getStorageManager"
+        ],
+        "accountManager": [
+            "setUserData"
+        ],
+        "userInfo": [
+            "getDisplayName"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement"
+    ]
+}

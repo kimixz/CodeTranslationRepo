@@ -1,0 +1,86 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "try_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "onPreExecute",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1336,
+            "end_position": 1595,
+            "body_start": 1380,
+            "body_end": 1595
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Boolean",
+            "parameters": [],
+            "start_position": 1601,
+            "end_position": 2421,
+            "body_start": 1663,
+            "body_end": 2421
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Boolean",
+                    "name": "bool"
+                }
+            ],
+            "start_position": 2427,
+            "end_position": 2658,
+            "body_start": 2484,
+            "body_end": 2658
+        }
+    ],
+    "method_calls": {
+        "backupListFragmentWeakReference": [
+            "get"
+        ],
+        "backupListFragmentWeakReference.get()": [
+            "hasCalendarEntry",
+            "showLoadingMessage",
+            "loadVCards"
+        ],
+        "unknown": [
+            "isCancelled"
+        ],
+        "ocFile": [
+            "getStoragePath"
+        ],
+        "vCards": [
+            "addAll"
+        ],
+        "Ezvcard.parse(new BufferedInputStream(Files.newInputStream(file.toPath())))": [
+            "all"
+        ],
+        "Ezvcard": [
+            "parse"
+        ],
+        "Files": [
+            "newInputStream"
+        ],
+        "file": [
+            "toPath",
+            "getAbsolutePath"
+        ],
+        "Ezvcard.parse(new BufferedInputStream(new FileInputStream((file))))": [
+            "all"
+        ],
+        "Collections": [
+            "sort"
+        ],
+        "Log_OC": [
+            "e"
+        ]
+    },
+    "local_variables": {
+        "file": "File"
+    }
+}

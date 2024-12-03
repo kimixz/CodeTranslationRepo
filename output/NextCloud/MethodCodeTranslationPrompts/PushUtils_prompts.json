@@ -1,0 +1,26 @@
+[
+    {
+        "method_name": "pushRegistrationToServer",
+        "method_code": "public static void pushRegistrationToServer(\n        final UserAccountManager accountManager,\n        final String pushToken)\n    {\n        // do nothing\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled pushRegistrationToServer from PushUtils.java into Swift.\n\n        Input:\n\n        Method Name: pushRegistrationToServer\n\n        Method Code: public static void pushRegistrationToServer(\n        final UserAccountManager accountManager,\n        final String pushToken)\n    {\n        // do nothing\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nstatic func pushRegistrationToServer(accountManager: UserAccountManager, pushToken: String) {\n    // do nothing\n}\n```"
+    },
+    {
+        "method_name": "reinitKeys",
+        "method_code": "public static void reinitKeys(final UserAccountManager accountManager) {\n        Context context = MainApp.getAppContext();\n        AppPreferencesImpl.fromContext(context).setKeysReInitEnabled();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled reinitKeys from PushUtils.java into Swift.\n\n        Input:\n\n        Method Name: reinitKeys\n\n        Method Code: public static void reinitKeys(final UserAccountManager accountManager) {\n        Context context = MainApp.getAppContext();\n        AppPreferencesImpl.fromContext(context).setKeysReInitEnabled();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nstatic func reinitKeys(accountManager: UserAccountManager) {\n    let context = MainApp.getAppContext()\n    AppPreferencesImpl.fromContext(context).setKeysReInitEnabled()\n}\n```"
+    },
+    {
+        "method_name": "readKeyFromFile",
+        "method_code": "public static Key readKeyFromFile(boolean readPublicKey) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled readKeyFromFile from PushUtils.java into Swift.\n\n        Input:\n\n        Method Name: readKeyFromFile\n\n        Method Code: public static Key readKeyFromFile(boolean readPublicKey) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nstatic func readKeyFromFile(readPublicKey: Bool) -> Key? {\n    return nil\n}\n```"
+    },
+    {
+        "method_name": "verifySignature",
+        "method_code": "public static SignatureVerification verifySignature(\n        final Context context,\n        final UserAccountManager accountManager,\n        final byte[] signatureBytes, final byte[] subjectBytes\n    ) {\n        return null;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled verifySignature from PushUtils.java into Swift.\n\n        Input:\n\n        Method Name: verifySignature\n\n        Method Code: public static SignatureVerification verifySignature(\n        final Context context,\n        final UserAccountManager accountManager,\n        final byte[] signatureBytes, final byte[] subjectBytes\n    ) {\n        return null;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nstatic func verifySignature(context: Context, accountManager: UserAccountManager, signatureBytes: [UInt8], subjectBytes: [UInt8]) -> SignatureVerification? {\n    return nil\n}\n```"
+    }
+]

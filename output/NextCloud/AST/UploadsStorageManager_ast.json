@@ -1,0 +1,897 @@
+{
+    "method_calls": {
+        "UploadsStorageManager.class": [
+            "getSimpleName"
+        ],
+        "CapabilityUtils": [
+            "getCapability"
+        ],
+        "MainApp": [
+            "getAppContext",
+            "getAuthority"
+        ],
+        "Log_OC": [
+            "e",
+            "v",
+            "d",
+            "w"
+        ],
+        "unknown": [
+            "getPendingCurrentOrFailedUpload",
+            "updateUpload",
+            "getContentValues",
+            "getDB",
+            "notifyObserversNow",
+            "createOCUploadFromCursor",
+            "updateUploadInternal",
+            "setChanged",
+            "notifyObservers",
+            "removeUpload",
+            "getUploads",
+            "getUploadPage",
+            "initOCCapability",
+            "getCurrentAndPendingUploadsForAccount",
+            "getInProgressAndDelayedUploadsSelection",
+            "updateUploadStatus"
+        ],
+        "ocUpload": [
+            "getLocalPath",
+            "setUploadId",
+            "getUploadStatus",
+            "getRemotePath",
+            "getAccountName",
+            "getFileSize",
+            "getLocalAction",
+            "getNameCollisionPolicy",
+            "isCreateRemoteFolder",
+            "getLastResult",
+            "getCreatedBy",
+            "isWhileChargingOnly",
+            "isUseWifiOnly",
+            "getFolderUnlockToken",
+            "getUploadEndTimestamp",
+            "getUploadId"
+        ],
+        "existingUpload": [
+            "getUploadId"
+        ],
+        "getDB()": [
+            "insert",
+            "applyBatch",
+            "update",
+            "query",
+            "delete"
+        ],
+        "Long": [
+            "parseLong",
+            "toString"
+        ],
+        "result.getPathSegments()": [
+            "get"
+        ],
+        "result": [
+            "getPathSegments",
+            "toString"
+        ],
+        "ocUploads": [
+            "size",
+            "get"
+        ],
+        "ContentProviderOperation\n                .newInsert(ProviderTableMeta.CONTENT_URI_UPLOADS)\n                .withValues(getContentValues(ocUpload))": [
+            "build"
+        ],
+        "ContentProviderOperation\n                .newInsert(ProviderTableMeta.CONTENT_URI_UPLOADS)": [
+            "withValues"
+        ],
+        "ContentProviderOperation": [
+            "newInsert"
+        ],
+        "operations": [
+            "add"
+        ],
+        "result.uri.getPathSegments()": [
+            "get"
+        ],
+        "result.uri": [
+            "getPathSegments"
+        ],
+        "ocUploads.get(i)": [
+            "setUploadId"
+        ],
+        "cv": [
+            "put"
+        ],
+        "ocUpload.getNameCollisionPolicy()": [
+            "serialize"
+        ],
+        "ocUpload.getLastResult()": [
+            "getValue"
+        ],
+        "String": [
+            "valueOf",
+            "format"
+        ],
+        "c": [
+            "moveToNext",
+            "getString",
+            "getColumnIndexOrThrow",
+            "getCount",
+            "close",
+            "moveToFirst",
+            "isAfterLast",
+            "getLong",
+            "getInt"
+        ],
+        "upload": [
+            "toFormattedString",
+            "setUploadStatus",
+            "setLastResult",
+            "setRemotePath",
+            "setLocalPath",
+            "setUploadEndTimestamp",
+            "getUploadId",
+            "getRemotePath",
+            "getLocalPath",
+            "getAccountName",
+            "setFileSize",
+            "setUploadId",
+            "setLocalAction",
+            "setNameCollisionPolicy",
+            "setCreateRemoteFolder",
+            "setCreatedBy",
+            "setUseWifiOnly",
+            "setWhileChargingOnly",
+            "setFolderUnlockToken",
+            "getUser",
+            "getLocalBehaviour",
+            "getStoragePath",
+            "getOCUploadId",
+            "getContext"
+        ],
+        "Calendar.getInstance()": [
+            "getTimeInMillis"
+        ],
+        "Calendar": [
+            "getInstance"
+        ],
+        "cursor": [
+            "moveToFirst",
+            "getInt",
+            "getColumnIndexOrThrow",
+            "close"
+        ],
+        "uploadsPage": [
+            "size",
+            "isEmpty",
+            "get"
+        ],
+        "uploadsPage.get(uploadsPage.size() - 1)": [
+            "getUploadId"
+        ],
+        "uploads": [
+            "addAll",
+            "size",
+            "toArray",
+            "add"
+        ],
+        "UploadResult.DELAYED_FOR_WIFI": [
+            "getValue"
+        ],
+        "UploadResult.LOCK_FAILED": [
+            "getValue"
+        ],
+        "UploadResult.DELAYED_FOR_CHARGING": [
+            "getValue"
+        ],
+        "UploadResult.DELAYED_IN_POWER_SAVE_MODE": [
+            "getValue"
+        ],
+        "Arrays": [
+            "copyOf"
+        ],
+        "AutoRename.INSTANCE": [
+            "rename"
+        ],
+        "UploadStatus": [
+            "fromValue"
+        ],
+        "NameCollisionPolicy": [
+            "deserialize"
+        ],
+        "UploadResult": [
+            "fromValue",
+            "fromOperationResult"
+        ],
+        "currentAccountProvider": [
+            "getUser"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "UploadResult.VIRUS_DETECTED": [
+            "getValue"
+        ],
+        "uploadResult": [
+            "isCancelled",
+            "isSuccess",
+            "getCode"
+        ],
+        "upload.getUser()": [
+            "getAccountName"
+        ],
+        "new FileUploadHelper()": [
+            "isSameFileOnRemote"
+        ],
+        "UploadStatus.UPLOAD_FAILED": [
+            "getValue"
+        ],
+        "fail": [
+            "getValue"
+        ],
+        "UploadResult.UNKNOWN": [
+            "getValue"
+        ],
+        "UploadStatus.UPLOAD_IN_PROGRESS": [
+            "getValue"
+        ],
+        "Integer": [
+            "toString"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "throw_statement",
+        "expression_statement",
+        "try_statement",
+        "return_statement",
+        "enhanced_for_statement",
+        "continue_statement",
+        "for_statement",
+        "while_statement",
+        "try_with_resources_statement",
+        "do_statement"
+    ],
+    "methods": [
+        {
+            "name": "initOCCapability",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3435,
+            "end_position": 3712,
+            "body_start": 3467,
+            "body_end": 3712
+        },
+        {
+            "name": "storeUpload",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "ocUpload"
+                }
+            ],
+            "start_position": 3883,
+            "end_position": 5110,
+            "body_start": 3926,
+            "body_end": 5110
+        },
+        {
+            "name": "storeUploads",
+            "return_type": "long[]",
+            "parameters": [
+                {
+                    "type": "List<OCUpload>",
+                    "name": "ocUploads"
+                }
+            ],
+            "start_position": 5116,
+            "end_position": 6876,
+            "body_start": 5175,
+            "body_end": 6876
+        },
+        {
+            "name": "getContentValues",
+            "return_type": "ContentValues",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "ocUpload"
+                }
+            ],
+            "start_position": 6882,
+            "end_position": 8200,
+            "body_start": 6953,
+            "body_end": 8200
+        },
+        {
+            "name": "updateUpload",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "ocUpload"
+                }
+            ],
+            "start_position": 8365,
+            "end_position": 9902,
+            "body_start": 8408,
+            "body_end": 9902
+        },
+        {
+            "name": "updateUploadInternal",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "c"
+                },
+                {
+                    "type": "UploadStatus",
+                    "name": "status"
+                },
+                {
+                    "type": "UploadResult",
+                    "name": "result"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "String",
+                    "name": "localPath"
+                }
+            ],
+            "start_position": 9908,
+            "end_position": 11102,
+            "body_start": 10067,
+            "body_end": 11102
+        },
+        {
+            "name": "updateUploadStatus",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                },
+                {
+                    "type": "UploadStatus",
+                    "name": "status"
+                },
+                {
+                    "type": "UploadResult",
+                    "name": "result"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "String",
+                    "name": "localPath"
+                }
+            ],
+            "start_position": 11526,
+            "end_position": 12544,
+            "body_start": 11680,
+            "body_end": 12544
+        },
+        {
+            "name": "notifyObserversNow",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12658,
+            "end_position": 12792,
+            "body_start": 12691,
+            "body_end": 12792
+        },
+        {
+            "name": "removeUpload",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "upload"
+                }
+            ],
+            "start_position": 13050,
+            "end_position": 13242,
+            "body_start": 13101,
+            "body_end": 13242
+        },
+        {
+            "name": "removeUpload",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 13480,
+            "end_position": 13906,
+            "body_start": 13513,
+            "body_end": 13906
+        },
+        {
+            "name": "removeUpload",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 14260,
+            "end_position": 14812,
+            "body_start": 14323,
+            "body_end": 14812
+        },
+        {
+            "name": "removeUploads",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 15060,
+            "end_position": 15514,
+            "body_start": 15105,
+            "body_end": 15514
+        },
+        {
+            "name": "getAllStoredUploads",
+            "return_type": "OCUpload[]",
+            "parameters": [],
+            "start_position": 15520,
+            "end_position": 15617,
+            "body_start": 15560,
+            "body_end": 15617
+        },
+        {
+            "name": "getPendingCurrentOrFailedUpload",
+            "return_type": "OCUpload",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "upload"
+                }
+            ],
+            "start_position": 15623,
+            "end_position": 16693,
+            "body_start": 15688,
+            "body_end": 16693
+        },
+        {
+            "name": "getUploadByRemotePath",
+            "return_type": "OCUpload",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 16699,
+            "end_position": 17358,
+            "body_start": 16756,
+            "body_end": 17358
+        },
+        {
+            "name": "getUploadById",
+            "return_type": "OCUpload",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 17364,
+            "end_position": 17919,
+            "body_start": 17417,
+            "body_end": 17919
+        },
+        {
+            "name": "getUploads",
+            "return_type": "OCUpload[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "selection"
+                }
+            ],
+            "start_position": 17925,
+            "end_position": 19402,
+            "body_start": 18018,
+            "body_end": 19402
+        },
+        {
+            "name": "getUploadPage",
+            "return_type": "List<OCUpload>",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "afterId"
+                },
+                {
+                    "type": "String",
+                    "name": "selection"
+                }
+            ],
+            "start_position": 19408,
+            "end_position": 19636,
+            "body_start": 19541,
+            "body_end": 19636
+        },
+        {
+            "name": "getInProgressAndDelayedUploadsSelection",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 19642,
+            "end_position": 20375,
+            "body_start": 19699,
+            "body_end": 20375
+        },
+        {
+            "name": "getTotalUploadSize",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 20381,
+            "end_position": 21104,
+            "body_start": 20446,
+            "body_end": 21104
+        },
+        {
+            "name": "getUploadPage",
+            "return_type": "List<OCUpload>",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "limit"
+                },
+                {
+                    "type": "long",
+                    "name": "afterId"
+                },
+                {
+                    "type": "boolean",
+                    "name": "descending"
+                },
+                {
+                    "type": "String",
+                    "name": "selection"
+                }
+            ],
+            "start_position": 21110,
+            "end_position": 23418,
+            "body_start": 21281,
+            "body_end": 23418
+        },
+        {
+            "name": "createOCUploadFromCursor",
+            "return_type": "OCUpload",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "c"
+                }
+            ],
+            "start_position": 23424,
+            "end_position": 25755,
+            "body_start": 23476,
+            "body_end": 25755
+        },
+        {
+            "name": "getCurrentAndPendingUploadsForCurrentAccount",
+            "return_type": "OCUpload[]",
+            "parameters": [],
+            "start_position": 25761,
+            "end_position": 25965,
+            "body_start": 25826,
+            "body_end": 25965
+        },
+        {
+            "name": "getCurrentAndPendingUploadsForAccount",
+            "return_type": "OCUpload[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 25971,
+            "end_position": 26224,
+            "body_start": 26062,
+            "body_end": 26224
+        },
+        {
+            "name": "getCurrentUploadsForAccount",
+            "return_type": "OCUpload[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 26230,
+            "end_position": 26528,
+            "body_start": 26311,
+            "body_end": 26528
+        },
+        {
+            "name": "getCurrentUploadsForAccountPageAscById",
+            "return_type": "List<OCUpload>",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "afterId"
+                },
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 26534,
+            "end_position": 26929,
+            "body_start": 26650,
+            "body_end": 26929
+        },
+        {
+            "name": "getCurrentAndPendingUploadsForAccountPageAscById",
+            "return_type": "List<OCUpload>",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "afterId"
+                },
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 27131,
+            "end_position": 27427,
+            "body_start": 27257,
+            "body_end": 27427
+        },
+        {
+            "name": "getFailedUploads",
+            "return_type": "OCUpload[]",
+            "parameters": [],
+            "start_position": 27480,
+            "end_position": 28459,
+            "body_start": 27517,
+            "body_end": 28459
+        },
+        {
+            "name": "getUploadsForAccount",
+            "return_type": "OCUpload[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 28465,
+            "end_position": 28637,
+            "body_start": 28539,
+            "body_end": 28637
+        },
+        {
+            "name": "getFinishedUploadsForCurrentAccount",
+            "return_type": "OCUpload[]",
+            "parameters": [],
+            "start_position": 28643,
+            "end_position": 28979,
+            "body_start": 28699,
+            "body_end": 28979
+        },
+        {
+            "name": "getCancelledUploadsForCurrentAccount",
+            "return_type": "OCUpload[]",
+            "parameters": [],
+            "start_position": 28985,
+            "end_position": 29322,
+            "body_start": 29042,
+            "body_end": 29322
+        },
+        {
+            "name": "getFinishedUploads",
+            "return_type": "OCUpload[]",
+            "parameters": [],
+            "start_position": 29403,
+            "end_position": 29573,
+            "body_start": 29442,
+            "body_end": 29573
+        },
+        {
+            "name": "getFailedButNotDelayedUploadsForCurrentAccount",
+            "return_type": "OCUpload[]",
+            "parameters": [],
+            "start_position": 29579,
+            "end_position": 30622,
+            "body_start": 29646,
+            "body_end": 30622
+        },
+        {
+            "name": "getFailedButNotDelayedUploads",
+            "return_type": "OCUpload[]",
+            "parameters": [],
+            "start_position": 30868,
+            "end_position": 31742,
+            "body_start": 30918,
+            "body_end": 31742
+        },
+        {
+            "name": "getDB",
+            "return_type": "ContentResolver",
+            "parameters": [],
+            "start_position": 31748,
+            "end_position": 31819,
+            "body_start": 31780,
+            "body_end": 31819
+        },
+        {
+            "name": "clearFailedButNotDelayedUploads",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 31825,
+            "end_position": 33020,
+            "body_start": 31871,
+            "body_end": 33020
+        },
+        {
+            "name": "clearCancelledUploadsForCurrentAccount",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 33026,
+            "end_position": 33611,
+            "body_start": 33079,
+            "body_end": 33611
+        },
+        {
+            "name": "clearSuccessfulUploads",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 33617,
+            "end_position": 34211,
+            "body_start": 33654,
+            "body_end": 34211
+        },
+        {
+            "name": "updateDatabaseUploadResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "uploadResult"
+                },
+                {
+                    "type": "UploadFileOperation",
+                    "name": "upload"
+                }
+            ],
+            "start_position": 34299,
+            "end_position": 36571,
+            "body_start": 34402,
+            "body_end": 36571
+        },
+        {
+            "name": "updateDatabaseUploadStart",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UploadFileOperation",
+                    "name": "upload"
+                }
+            ],
+            "start_position": 36671,
+            "end_position": 37118,
+            "body_start": 36737,
+            "body_end": 37118
+        },
+        {
+            "name": "failInProgressUploads",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "UploadResult",
+                    "name": "fail"
+                }
+            ],
+            "start_position": 37325,
+            "end_position": 38389,
+            "body_start": 37377,
+            "body_end": 38389
+        },
+        {
+            "name": "removeAllUploads",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 38395,
+            "end_position": 38628,
+            "body_start": 38448,
+            "body_end": 38628
+        },
+        {
+            "name": "removeUserUploads",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 38634,
+            "end_position": 38954,
+            "body_start": 38674,
+            "body_end": 38954
+        },
+        {
+            "name": "fromValue",
+            "return_type": "UploadStatus",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "value"
+                }
+            ],
+            "start_position": 39501,
+            "end_position": 39819,
+            "body_start": 39549,
+            "body_end": 39819
+        },
+        {
+            "name": "getValue",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 39829,
+            "end_position": 39888,
+            "body_start": 39851,
+            "body_end": 39888
+        }
+    ],
+    "local_variables": {
+        "existingUpload": "OCUpload",
+        "existingId": "long",
+        "cv": "ContentValues",
+        "result": "int",
+        "new_id": "long",
+        "operations": "ArrayList<ContentProviderOperation>",
+        "operation": "ContentProviderOperation",
+        "contentProviderResults": "ContentProviderResult[]",
+        "newIds": "long[]",
+        "i": "int",
+        "r": "int",
+        "upload": "OCUpload",
+        "path": "String",
+        "returnValue": "int",
+        "c": "Cursor",
+        "cursor": "Cursor",
+        "uploads": "List<OCUpload>",
+        "page": "long",
+        "rowsRead": "long",
+        "rowsTotal": "long",
+        "lastRowID": "long",
+        "uploadsPage": "List<OCUpload>",
+        "selection": "String",
+        "totalSize": "int",
+        "pageSelection": "String",
+        "pageSelectionArgs": "String[]",
+        "idComparator": "String",
+        "sortDirection": "String",
+        "sortOrder": "String",
+        "localPath": "String",
+        "remotePath": "String",
+        "accountName": "String",
+        "user": "User",
+        "inProgressUploadsSelection": "String",
+        "deleted": "long"
+    }
+}

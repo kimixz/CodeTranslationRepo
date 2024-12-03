@@ -1,0 +1,979 @@
+{
+    "methods": [
+        {
+            "name": "onDarkThemeModeChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DarkMode",
+                    "name": "mode"
+                }
+            ],
+            "start_position": 1166,
+            "end_position": 1275,
+            "body_start": 1217,
+            "body_end": 1275
+        },
+        {
+            "name": "addListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Listener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 1458,
+            "end_position": 1504
+        },
+        {
+            "name": "removeListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Listener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 1658,
+            "end_position": 1707
+        },
+        {
+            "name": "setKeysReInitEnabled",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1713,
+            "end_position": 1741
+        },
+        {
+            "name": "isKeysReInitEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1746,
+            "end_position": 1776
+        },
+        {
+            "name": "setPushToken",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "pushToken"
+                }
+            ],
+            "start_position": 1782,
+            "end_position": 1818
+        },
+        {
+            "name": "getPushToken",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1823,
+            "end_position": 1845
+        },
+        {
+            "name": "instantPictureUploadEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1851,
+            "end_position": 1889
+        },
+        {
+            "name": "instantVideoUploadEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1894,
+            "end_position": 1930
+        },
+        {
+            "name": "isDarkModeEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1935,
+            "end_position": 1963
+        },
+        {
+            "name": "isShowHiddenFilesEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1969,
+            "end_position": 2004
+        },
+        {
+            "name": "setShowHiddenFilesEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 2009,
+            "end_position": 2057
+        },
+        {
+            "name": "isShowEcosystemApps",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2063,
+            "end_position": 2093
+        },
+        {
+            "name": "setShowEcosystemApps",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 2098,
+            "end_position": 2141
+        },
+        {
+            "name": "getUploadUrlFileExtensionUrlSelectedPos",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 2372,
+            "end_position": 2418
+        },
+        {
+            "name": "setUploadUrlFileExtensionUrlSelectedPos",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "selectedPos"
+                }
+            ],
+            "start_position": 2645,
+            "end_position": 2707
+        },
+        {
+            "name": "getUploadMapFileExtensionUrlSelectedPos",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 2942,
+            "end_position": 2988
+        },
+        {
+            "name": "setUploadMapFileExtensionUrlSelectedPos",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "selectedPos"
+                }
+            ],
+            "start_position": 3219,
+            "end_position": 3281
+        },
+        {
+            "name": "getUploadFromLocalLastPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 3554,
+            "end_position": 3590
+        },
+        {
+            "name": "setUploadFromLocalLastPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 3758,
+            "end_position": 3803
+        },
+        {
+            "name": "getLastUploadPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 4089,
+            "end_position": 4116
+        },
+        {
+            "name": "getFolderLayout",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 4345,
+            "end_position": 4383
+        },
+        {
+            "name": "setFolderLayout",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "String",
+                    "name": "layoutName"
+                }
+            ],
+            "start_position": 4574,
+            "end_position": 4639
+        },
+        {
+            "name": "setLastUploadPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 4818,
+            "end_position": 4854
+        },
+        {
+            "name": "getLockPreference",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 4860,
+            "end_position": 4887
+        },
+        {
+            "name": "setLockPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "lockPreference"
+                }
+            ],
+            "start_position": 4892,
+            "end_position": 4938
+        },
+        {
+            "name": "setPassCode",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "d1"
+                },
+                {
+                    "type": "String",
+                    "name": "d2"
+                },
+                {
+                    "type": "String",
+                    "name": "d3"
+                },
+                {
+                    "type": "String",
+                    "name": "d4"
+                }
+            ],
+            "start_position": 5200,
+            "end_position": 5261
+        },
+        {
+            "name": "getPassCode",
+            "return_type": "String[]",
+            "parameters": [],
+            "start_position": 5406,
+            "end_position": 5429
+        },
+        {
+            "name": "isFingerprintUnlockEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 5640,
+            "end_position": 5677
+        },
+        {
+            "name": "isAutoUploadPathsUpdateEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 5833,
+            "end_position": 5874
+        },
+        {
+            "name": "setAutoUploadPathsUpdateEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "pathUpdate"
+                }
+            ],
+            "start_position": 6035,
+            "end_position": 6092
+        },
+        {
+            "name": "isAutoUploadSplitEntriesEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6252,
+            "end_position": 6294
+        },
+        {
+            "name": "setAutoUploadSplitEntriesEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "splitOut"
+                }
+            ],
+            "start_position": 6432,
+            "end_position": 6488
+        },
+        {
+            "name": "isAutoUploadInitialized",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6494,
+            "end_position": 6528
+        },
+        {
+            "name": "setAutoUploadInit",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "autoUploadInit"
+                }
+            ],
+            "start_position": 6533,
+            "end_position": 6580
+        },
+        {
+            "name": "getSortOrderByFolder",
+            "return_type": "FileSortOrder",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 6838,
+            "end_position": 6898
+        },
+        {
+            "name": "setSortOrder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "FileSortOrder",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 7107,
+            "end_position": 7175
+        },
+        {
+            "name": "setSortOrder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileSortOrder.Type",
+                    "name": "type"
+                },
+                {
+                    "type": "FileSortOrder",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 7283,
+            "end_position": 7351
+        },
+        {
+            "name": "getSortOrderByType",
+            "return_type": "FileSortOrder",
+            "parameters": [
+                {
+                    "type": "FileSortOrder.Type",
+                    "name": "type"
+                },
+                {
+                    "type": "FileSortOrder",
+                    "name": "defaultOrder"
+                }
+            ],
+            "start_position": 7526,
+            "end_position": 7612
+        },
+        {
+            "name": "getSortOrderByType",
+            "return_type": "FileSortOrder",
+            "parameters": [
+                {
+                    "type": "FileSortOrder.Type",
+                    "name": "type"
+                }
+            ],
+            "start_position": 7617,
+            "end_position": 7675
+        },
+        {
+            "name": "isLegacyClean",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 7830,
+            "end_position": 7854
+        },
+        {
+            "name": "setLegacyClean",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "legacyClean"
+                }
+            ],
+            "start_position": 8008,
+            "end_position": 8049
+        },
+        {
+            "name": "isKeysMigrationEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8055,
+            "end_position": 8088
+        },
+        {
+            "name": "setKeysMigrationEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 8093,
+            "end_position": 8139
+        },
+        {
+            "name": "isStoragePathFixEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8145,
+            "end_position": 8179
+        },
+        {
+            "name": "setStoragePathFixEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 8184,
+            "end_position": 8231
+        },
+        {
+            "name": "isShowDetailedTimestampEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8237,
+            "end_position": 8278
+        },
+        {
+            "name": "setShowDetailedTimestampEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "showDetailedTimestamp"
+                }
+            ],
+            "start_position": 8283,
+            "end_position": 8351
+        },
+        {
+            "name": "isShowMediaScanNotifications",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8357,
+            "end_position": 8396
+        },
+        {
+            "name": "setShowMediaScanNotifications",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "showMediaScanNotification"
+                }
+            ],
+            "start_position": 8401,
+            "end_position": 8471
+        },
+        {
+            "name": "getUploaderBehaviour",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 8622,
+            "end_position": 8649
+        },
+        {
+            "name": "setDarkThemeMode",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DarkMode",
+                    "name": "mode"
+                }
+            ],
+            "start_position": 8845,
+            "end_position": 8882
+        },
+        {
+            "name": "getDarkThemeMode",
+            "return_type": "DarkMode",
+            "parameters": [],
+            "start_position": 8954,
+            "end_position": 8982
+        },
+        {
+            "name": "setUploaderBehaviour",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "uploaderBehaviour"
+                }
+            ],
+            "start_position": 9129,
+            "end_position": 9178
+        },
+        {
+            "name": "getGridColumns",
+            "return_type": "float",
+            "parameters": [],
+            "start_position": 9184,
+            "end_position": 9207
+        },
+        {
+            "name": "setGridColumns",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "float",
+                    "name": "gridColumns"
+                }
+            ],
+            "start_position": 9212,
+            "end_position": 9251
+        },
+        {
+            "name": "getLockTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 9257,
+            "end_position": 9281
+        },
+        {
+            "name": "setLockTimestamp",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "timestamp"
+                }
+            ],
+            "start_position": 9286,
+            "end_position": 9324
+        },
+        {
+            "name": "getLastSeenVersionCode",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 9460,
+            "end_position": 9489
+        },
+        {
+            "name": "saveLogEntry",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<LogEntry>",
+                    "name": "logEntryList"
+                }
+            ],
+            "start_position": 9495,
+            "end_position": 9542
+        },
+        {
+            "name": "readLogEntry",
+            "return_type": "List<LogEntry>",
+            "parameters": [],
+            "start_position": 9548,
+            "end_position": 9578
+        },
+        {
+            "name": "setLastSeenVersionCode",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "versionCode"
+                }
+            ],
+            "start_position": 9717,
+            "end_position": 9762
+        },
+        {
+            "name": "removeLegacyPreferences",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9768,
+            "end_position": 9799
+        },
+        {
+            "name": "clear",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9958,
+            "end_position": 9971
+        },
+        {
+            "name": "getStoragePath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "defaultPath"
+                }
+            ],
+            "start_position": 9977,
+            "end_position": 10019
+        },
+        {
+            "name": "setStoragePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 10025,
+            "end_position": 10058
+        },
+        {
+            "name": "setStoragePathValid",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10064,
+            "end_position": 10091
+        },
+        {
+            "name": "isStoragePathValid",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 10097,
+            "end_position": 10126
+        },
+        {
+            "name": "removeKeysMigrationPreference",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10132,
+            "end_position": 10169
+        },
+        {
+            "name": "getCurrentAccountName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 10175,
+            "end_position": 10206
+        },
+        {
+            "name": "setCurrentAccountName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 10212,
+            "end_position": 10259
+        },
+        {
+            "name": "isUserIdMigrated",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 10448,
+            "end_position": 10475
+        },
+        {
+            "name": "setMigratedUserId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "value"
+                }
+            ],
+            "start_position": 10481,
+            "end_position": 10519
+        },
+        {
+            "name": "setPhotoSearchTimestamp",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "timestamp"
+                }
+            ],
+            "start_position": 10525,
+            "end_position": 10570
+        },
+        {
+            "name": "getPhotoSearchTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 10576,
+            "end_position": 10607
+        },
+        {
+            "name": "isPowerCheckDisabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 10613,
+            "end_position": 10644
+        },
+        {
+            "name": "setPowerCheckDisabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "value"
+                }
+            ],
+            "start_position": 10650,
+            "end_position": 10692
+        },
+        {
+            "name": "increasePinWrongAttempts",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10698,
+            "end_position": 10730
+        },
+        {
+            "name": "resetPinWrongAttempts",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10736,
+            "end_position": 10765
+        },
+        {
+            "name": "pinBruteForceDelay",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 10771,
+            "end_position": 10796
+        },
+        {
+            "name": "getUidPid",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 10802,
+            "end_position": 10821
+        },
+        {
+            "name": "setUidPid",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "uidPid"
+                }
+            ],
+            "start_position": 10827,
+            "end_position": 10857
+        },
+        {
+            "name": "getCalendarLastBackup",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 10863,
+            "end_position": 10892
+        },
+        {
+            "name": "setCalendarLastBackup",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "timestamp"
+                }
+            ],
+            "start_position": 10898,
+            "end_position": 10941
+        },
+        {
+            "name": "isGlobalUploadPaused",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 10947,
+            "end_position": 10978
+        },
+        {
+            "name": "setGlobalUploadPaused",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "globalPausedState"
+                }
+            ],
+            "start_position": 10984,
+            "end_position": 11038
+        },
+        {
+            "name": "setPdfZoomTipShownCount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "count"
+                }
+            ],
+            "start_position": 11044,
+            "end_position": 11084
+        },
+        {
+            "name": "getPdfZoomTipShownCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 11090,
+            "end_position": 11120
+        },
+        {
+            "name": "isStoragePermissionRequested",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11126,
+            "end_position": 11165
+        },
+        {
+            "name": "setStoragePermissionRequested",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "value"
+                }
+            ],
+            "start_position": 11171,
+            "end_position": 11221
+        },
+        {
+            "name": "setInAppReviewData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AppReviewShownModel",
+                    "name": "appReviewShownModel"
+                }
+            ],
+            "start_position": 11227,
+            "end_position": 11301
+        },
+        {
+            "name": "getInAppReviewData",
+            "return_type": "AppReviewShownModel",
+            "parameters": [],
+            "start_position": 11307,
+            "end_position": 11362
+        },
+        {
+            "name": "setLastSelectedMediaFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 11368,
+            "end_position": 11422
+        },
+        {
+            "name": "getLastSelectedMediaFolder",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 11428,
+            "end_position": 11477
+        },
+        {
+            "name": "setTwoWaySyncStatus",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "value"
+                }
+            ],
+            "start_position": 11483,
+            "end_position": 11523
+        },
+        {
+            "name": "isTwoWaySyncEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11528,
+            "end_position": 11558
+        },
+        {
+            "name": "setTwoWaySyncInterval",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Long",
+                    "name": "value"
+                }
+            ],
+            "start_position": 11564,
+            "end_position": 11603
+        },
+        {
+            "name": "getTwoWaySyncInterval",
+            "return_type": "Long",
+            "parameters": [],
+            "start_position": 11608,
+            "end_position": 11637
+        },
+        {
+            "name": "shouldStopDownloadJobsOnStart",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11643,
+            "end_position": 11683
+        },
+        {
+            "name": "setStopDownloadJobsOnStart",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "value"
+                }
+            ],
+            "start_position": 11688,
+            "end_position": 11735
+        }
+    ]
+}

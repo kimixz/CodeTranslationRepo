@@ -1,0 +1,142 @@
+{
+    "methods": [
+        {
+            "name": "getCapability",
+            "return_type": "OCCapability",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 1010,
+            "end_position": 1424,
+            "body_start": 1068,
+            "body_end": 1424
+        },
+        {
+            "name": "getCapability",
+            "return_type": "OCCapability",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "acc"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 1515,
+            "end_position": 2120,
+            "body_start": 1602,
+            "body_end": 2120
+        },
+        {
+            "name": "getCapability",
+            "return_type": "OCCapability",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 2126,
+            "end_position": 2628,
+            "body_start": 2195,
+            "body_end": 2628
+        },
+        {
+            "name": "updateCapability",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 2634,
+            "end_position": 2775,
+            "body_start": 2695,
+            "body_end": 2775
+        },
+        {
+            "name": "checkOutdatedWarning",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                },
+                {
+                    "type": "OwnCloudVersion",
+                    "name": "version"
+                },
+                {
+                    "type": "boolean",
+                    "name": "hasExtendedSupport"
+                }
+            ],
+            "start_position": 2781,
+            "end_position": 3257,
+            "body_start": 2992,
+            "body_end": 3257
+        }
+    ],
+    "local_variables": {
+        "user": "Optional<User>",
+        "capability": "OCCapability",
+        "storageManager": "FileDataStorageManager"
+    },
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "UserAccountManagerImpl.fromContext(context)": [
+            "getUser"
+        ],
+        "UserAccountManagerImpl": [
+            "fromContext"
+        ],
+        "unknown": [
+            "getCapability"
+        ],
+        "Optional": [
+            "empty",
+            "of"
+        ],
+        "user": [
+            "isPresent",
+            "get",
+            "getAccountName"
+        ],
+        "cachedCapabilities": [
+            "get",
+            "put"
+        ],
+        "context": [
+            "getContentResolver"
+        ],
+        "storageManager": [
+            "getCapability"
+        ],
+        "capability": [
+            "getAccountName"
+        ],
+        "resources": [
+            "getBoolean"
+        ],
+        "MainApp.OUTDATED_SERVER_VERSION": [
+            "isSameMajorVersion"
+        ],
+        "version": [
+            "isOlderThan"
+        ]
+    }
+}

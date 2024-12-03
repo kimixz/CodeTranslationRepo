@@ -1,0 +1,30 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getResourceFetcher",
+            "return_type": "DataFetcher<InputStream>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                },
+                {
+                    "type": "int",
+                    "name": "width"
+                },
+                {
+                    "type": "int",
+                    "name": "height"
+                }
+            ],
+            "start_position": 879,
+            "end_position": 1050,
+            "body_start": 979,
+            "body_end": 1050
+        }
+    ]
+}

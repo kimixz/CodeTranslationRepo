@@ -1,0 +1,108 @@
+{
+    "method_calls": {
+        "GetServerInfoOperation.class": [
+            "getSimpleName"
+        ],
+        "AuthenticatorUrlUtils.INSTANCE": [
+            "trimWebdavSuffix"
+        ],
+        "getStatus": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getData",
+            "getCode",
+            "setData"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "unknown": [
+            "normalizeProtocolPrefix",
+            "detectAuthorizationMethod"
+        ],
+        "detectAuthResult": [
+            "isSuccess",
+            "getData"
+        ],
+        "detectAuthResult.getData()": [
+            "get"
+        ],
+        "data": [
+            "add"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "url.toLowerCase(Locale.ROOT)": [
+            "startsWith"
+        ],
+        "url": [
+            "toLowerCase"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 2477,
+            "end_position": 3729,
+            "body_start": 2547,
+            "body_end": 3729
+        },
+        {
+            "name": "detectAuthorizationMethod",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 3736,
+            "end_position": 4072,
+            "body_start": 3815,
+            "body_end": 4072
+        },
+        {
+            "name": "normalizeProtocolPrefix",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isSslConn"
+                }
+            ],
+            "start_position": 4078,
+            "end_position": 4469,
+            "body_start": 4148,
+            "body_end": 4469
+        }
+    ],
+    "local_variables": {
+        "getStatus": "GetStatusRemoteOperation",
+        "result": "RemoteOperationResult",
+        "detectAuthResult": "RemoteOperationResult",
+        "data": "ArrayList<Object>",
+        "operation": "DetectAuthenticationMethodOperation"
+    }
+}

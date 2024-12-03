@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "onCreate",
+        "method_code": "@Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        GooglePlayUtils.checkPlayServices(this);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onCreate from ModifiedAuthenticatorActivity.java into Swift.\n\n        Input:\n\n        Method Name: onCreate\n\n        Method Code: @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        GooglePlayUtils.checkPlayServices(this);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewDidLoad() {\n    super.viewDidLoad()\n    GooglePlayUtils.checkPlayServices(self)\n}\n```"
+    },
+    {
+        "method_name": "onResume",
+        "method_code": "@Override\n    protected void onResume() {\n        super.onResume();\n        GooglePlayUtils.checkPlayServices(this);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onResume from ModifiedAuthenticatorActivity.java into Swift.\n\n        Input:\n\n        Method Name: onResume\n\n        Method Code: @Override\n    protected void onResume() {\n        super.onResume();\n        GooglePlayUtils.checkPlayServices(this);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func viewWillAppear(_ animated: Bool) {\n    super.viewWillAppear(animated)\n    GooglePlayUtils.checkPlayServices(self)\n}\n```"
+    }
+]

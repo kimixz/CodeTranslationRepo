@@ -1,0 +1,79 @@
+{
+    "local_variables": {
+        "styledAttributes": "TypedArray",
+        "right": "int",
+        "childCount": "int",
+        "i": "int",
+        "child": "View",
+        "bottom": "int",
+        "top": "int"
+    },
+    "method_calls": {
+        "context": [
+            "obtainStyledAttributes",
+            "getResources"
+        ],
+        "styledAttributes": [
+            "getDrawable",
+            "recycle"
+        ],
+        "Math": [
+            "round"
+        ],
+        "context.getResources()": [
+            "getDisplayMetrics"
+        ],
+        "canvas": [
+            "save",
+            "clipRect",
+            "restore"
+        ],
+        "parent": [
+            "getClipToPadding",
+            "getWidth",
+            "getPaddingRight",
+            "getPaddingTop",
+            "getHeight",
+            "getPaddingBottom",
+            "getChildCount",
+            "getChildAt",
+            "getDecoratedBoundsWithMargins"
+        ],
+        "child": [
+            "getTranslationY"
+        ],
+        "divider": [
+            "setBounds",
+            "draw"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "for_statement"
+    ],
+    "methods": [
+        {
+            "name": "onDraw",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Canvas",
+                    "name": "canvas"
+                },
+                {
+                    "type": "RecyclerView",
+                    "name": "parent"
+                },
+                {
+                    "type": "RecyclerView.State",
+                    "name": "state"
+                }
+            ],
+            "start_position": 1406,
+            "end_position": 2489,
+            "body_start": 1501,
+            "body_end": 2489
+        }
+    ]
+}

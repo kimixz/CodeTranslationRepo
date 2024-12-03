@@ -1,0 +1,77 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getMetadata",
+            "return_type": "DecryptedMetadata",
+            "parameters": [],
+            "start_position": 949,
+            "end_position": 1025,
+            "body_start": 988,
+            "body_end": 1025
+        },
+        {
+            "name": "getFiles",
+            "return_type": "Map<String, DecryptedFile>",
+            "parameters": [],
+            "start_position": 1031,
+            "end_position": 1110,
+            "body_start": 1076,
+            "body_end": 1110
+        },
+        {
+            "name": "setMetadata",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DecryptedMetadata",
+                    "name": "metadata"
+                }
+            ],
+            "start_position": 1116,
+            "end_position": 1209,
+            "body_start": 1168,
+            "body_end": 1209
+        },
+        {
+            "name": "setFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Map<String, DecryptedFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 1215,
+            "end_position": 1305,
+            "body_start": 1270,
+            "body_end": 1305
+        },
+        {
+            "name": "setFiledrop",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Map<String, DecryptedFile>",
+                    "name": "filedrop"
+                }
+            ],
+            "start_position": 1311,
+            "end_position": 1436,
+            "body_start": 1395,
+            "body_end": 1436
+        },
+        {
+            "name": "getFiledrop",
+            "return_type": "Map<String, DecryptedFile>",
+            "parameters": [],
+            "start_position": 1442,
+            "end_position": 1522,
+            "body_start": 1490,
+            "body_end": 1522
+        }
+    ]
+}

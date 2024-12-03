@@ -1,0 +1,134 @@
+[
+    {
+        "method_name": "build",
+        "method_code": "public NextcloudRequest build() {\n            return ncr;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled build from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: build\n\n        Method Code: public NextcloudRequest build() {\n            return ncr;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc build() -> NextcloudRequest {\n    return ncr\n}\n```"
+    },
+    {
+        "method_name": "setMethod",
+        "method_code": "public Builder setMethod(String method) {\n            ncr.method = method;\n            return this;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMethod from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setMethod\n\n        Method Code: public Builder setMethod(String method) {\n            ncr.method = method;\n            return this;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMethod(_ method: String) -> Builder {\n    ncr.method = method\n    return self\n}\n```"
+    },
+    {
+        "method_name": "setHeader",
+        "method_code": "public Builder setHeader(Map<String, List<String>> header) {\n            ncr.header = header;\n            return this;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setHeader from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setHeader\n\n        Method Code: public Builder setHeader(Map<String, List<String>> header) {\n            ncr.header = header;\n            return this;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setHeader(_ header: [String: [String]]) -> Self {\n    ncr.header = header\n    return self\n}\n```"
+    },
+    {
+        "method_name": "setParameter",
+        "method_code": "public Builder setParameter(Map<String, String> parameter) {\n            ncr.parameter = parameter;\n            return this;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setParameter from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setParameter\n\n        Method Code: public Builder setParameter(Map<String, String> parameter) {\n            ncr.parameter = parameter;\n            return this;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setParameter(_ parameter: [String: String]) -> Builder {\n    ncr.parameter = parameter\n    return self\n}\n```"
+    },
+    {
+        "method_name": "setRequestBody",
+        "method_code": "public Builder setRequestBody(String requestBody) {\n            ncr.requestBody = requestBody;\n            return this;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setRequestBody from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setRequestBody\n\n        Method Code: public Builder setRequestBody(String requestBody) {\n            ncr.requestBody = requestBody;\n            return this;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setRequestBody(_ requestBody: String) -> Builder {\n    ncr.requestBody = requestBody\n    return self\n}\n```"
+    },
+    {
+        "method_name": "setUrl",
+        "method_code": "public Builder setUrl(String url) {\n            ncr.url = url;\n            return this;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUrl from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setUrl\n\n        Method Code: public Builder setUrl(String url) {\n            ncr.url = url;\n            return this;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUrl(_ url: String) -> Builder {\n    ncr.url = url\n    return self\n}\n```"
+    },
+    {
+        "method_name": "setToken",
+        "method_code": "public Builder setToken(String token) {\n            ncr.token = token;\n            return this;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setToken from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setToken\n\n        Method Code: public Builder setToken(String token) {\n            ncr.token = token;\n            return this;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setToken(_ token: String) -> Builder {\n    ncr.token = token\n    return self\n}\n```"
+    },
+    {
+        "method_name": "setAccountName",
+        "method_code": "public Builder setAccountName(String accountName) {\n            ncr.accountName = accountName;\n            return this;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAccountName from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setAccountName\n\n        Method Code: public Builder setAccountName(String accountName) {\n            ncr.accountName = accountName;\n            return this;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAccountName(_ accountName: String) -> Builder {\n    ncr.accountName = accountName\n    return self\n}\n```"
+    },
+    {
+        "method_name": "setFollowRedirects",
+        "method_code": "public Builder setFollowRedirects(boolean followRedirects) {\n            ncr.followRedirects = followRedirects;\n            return this;\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFollowRedirects from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setFollowRedirects\n\n        Method Code: public Builder setFollowRedirects(boolean followRedirects) {\n            ncr.followRedirects = followRedirects;\n            return this;\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFollowRedirects(_ followRedirects: Bool) -> Self {\n    ncr.followRedirects = followRedirects\n    return self\n}\n```"
+    },
+    {
+        "method_name": "getMethod",
+        "method_code": "public String getMethod() {\n        return this.method;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMethod from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: getMethod\n\n        Method Code: public String getMethod() {\n        return this.method;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMethod() -> String {\n    return self.method\n}\n```"
+    },
+    {
+        "method_name": "getHeader",
+        "method_code": "public Map<String, List<String>> getHeader() {\n        return this.header;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getHeader from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: getHeader\n\n        Method Code: public Map<String, List<String>> getHeader() {\n        return this.header;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getHeader() -> [String: [String]] {\n    return self.header\n}\n```"
+    },
+    {
+        "method_name": "getParameter",
+        "method_code": "public Map<String, String> getParameter() {\n        return this.parameter;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getParameter from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: getParameter\n\n        Method Code: public Map<String, String> getParameter() {\n        return this.parameter;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getParameter() -> [String: String] {\n    return self.parameter\n}\n```"
+    },
+    {
+        "method_name": "getRequestBody",
+        "method_code": "public String getRequestBody() {\n        return this.requestBody;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getRequestBody from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: getRequestBody\n\n        Method Code: public String getRequestBody() {\n        return this.requestBody;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getRequestBody() -> String {\n    return self.requestBody\n}\n```"
+    },
+    {
+        "method_name": "getUrl",
+        "method_code": "public String getUrl() {\n        return this.url;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUrl from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: getUrl\n\n        Method Code: public String getUrl() {\n        return this.url;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUrl() -> String {\n    return self.url\n}\n```"
+    },
+    {
+        "method_name": "getToken",
+        "method_code": "public String getToken() {\n        return this.token;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getToken from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: getToken\n\n        Method Code: public String getToken() {\n        return this.token;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getToken() -> String {\n    return self.token\n}\n```"
+    },
+    {
+        "method_name": "setToken",
+        "method_code": "public void setToken(String token) {\n        this.token = token;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setToken from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setToken\n\n        Method Code: public void setToken(String token) {\n        this.token = token;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setToken(_ token: String) {\n    self.token = token\n}\n```"
+    },
+    {
+        "method_name": "getPackageName",
+        "method_code": "public String getPackageName() {\n        return this.packageName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPackageName from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: getPackageName\n\n        Method Code: public String getPackageName() {\n        return this.packageName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPackageName() -> String {\n    return self.packageName\n}\n```"
+    },
+    {
+        "method_name": "setPackageName",
+        "method_code": "public void setPackageName(String packageName) {\n        this.packageName = packageName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPackageName from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setPackageName\n\n        Method Code: public void setPackageName(String packageName) {\n        this.packageName = packageName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPackageName(_ packageName: String) {\n    self.packageName = packageName\n}\n```"
+    },
+    {
+        "method_name": "getAccountName",
+        "method_code": "public String getAccountName() {\n        return this.accountName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAccountName from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: getAccountName\n\n        Method Code: public String getAccountName() {\n        return this.accountName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAccountName() -> String {\n    return self.accountName\n}\n```"
+    },
+    {
+        "method_name": "setAccountName",
+        "method_code": "public void setAccountName(String accountName) {\n        this.accountName = accountName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAccountName from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: setAccountName\n\n        Method Code: public void setAccountName(String accountName) {\n        this.accountName = accountName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAccountName(_ accountName: String) {\n    self.accountName = accountName\n}\n```"
+    },
+    {
+        "method_name": "isFollowRedirects",
+        "method_code": "public boolean isFollowRedirects() {\n        return this.followRedirects;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isFollowRedirects from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: isFollowRedirects\n\n        Method Code: public boolean isFollowRedirects() {\n        return this.followRedirects;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isFollowRedirects() -> Bool {\n    return self.followRedirects\n}\n```"
+    },
+    {
+        "method_name": "getParameterV2",
+        "method_code": "public Collection<QueryParam> getParameterV2() {\n        return parameterV2;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getParameterV2 from NextcloudRequest.java into Swift.\n\n        Input:\n\n        Method Name: getParameterV2\n\n        Method Code: public Collection<QueryParam> getParameterV2() {\n        return parameterV2;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getParameterV2() -> [QueryParam] {\n    return parameterV2\n}\n```"
+    }
+]

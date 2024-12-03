@@ -1,0 +1,44 @@
+[
+    {
+        "method_name": "create",
+        "method_code": "OwnCloudClient create(User user) throws CreationException;",
+        "prompt": "\n        Please translate the following Java (Android) method titled create from ClientFactory.java into Swift.\n\n        Input:\n\n        Method Name: create\n\n        Method Code: OwnCloudClient create(User user) throws CreationException;\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc create(user: User) throws -> OwnCloudClient\n```"
+    },
+    {
+        "method_name": "createNextcloudClient",
+        "method_code": "NextcloudClient createNextcloudClient(User user) throws CreationException;",
+        "prompt": "\n        Please translate the following Java (Android) method titled createNextcloudClient from ClientFactory.java into Swift.\n\n        Input:\n\n        Method Name: createNextcloudClient\n\n        Method Code: NextcloudClient createNextcloudClient(User user) throws CreationException;\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createNextcloudClient(user: User) throws -> NextcloudClient {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "create",
+        "method_code": "@Deprecated\n    OwnCloudClient create(Account account)\n        throws OperationCanceledException, AuthenticatorException, IOException,\n        AccountUtils.AccountNotFoundException;",
+        "prompt": "\n        Please translate the following Java (Android) method titled create from ClientFactory.java into Swift.\n\n        Input:\n\n        Method Name: create\n\n        Method Code: @Deprecated\n    OwnCloudClient create(Account account)\n        throws OperationCanceledException, AuthenticatorException, IOException,\n        AccountUtils.AccountNotFoundException;\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@available(*, deprecated)\nfunc create(account: Account) throws -> OwnCloudClient {\n    throw NSError(domain: \"OperationCanceledException\", code: 0, userInfo: nil)\n    throw NSError(domain: \"AuthenticatorException\", code: 0, userInfo: nil)\n    throw NSError(domain: \"IOException\", code: 0, userInfo: nil)\n    throw NSError(domain: \"AccountUtils.AccountNotFoundException\", code: 0, userInfo: nil)\n}\n```"
+    },
+    {
+        "method_name": "create",
+        "method_code": "@Deprecated\n    OwnCloudClient create(Account account, Activity currentActivity)\n        throws OperationCanceledException, AuthenticatorException, IOException,\n        AccountUtils.AccountNotFoundException;",
+        "prompt": "\n        Please translate the following Java (Android) method titled create from ClientFactory.java into Swift.\n\n        Input:\n\n        Method Name: create\n\n        Method Code: @Deprecated\n    OwnCloudClient create(Account account, Activity currentActivity)\n        throws OperationCanceledException, AuthenticatorException, IOException,\n        AccountUtils.AccountNotFoundException;\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@available(*, deprecated)\nfunc create(account: Account, currentActivity: Activity) throws -> OwnCloudClient {\n    // Implementation goes here\n    throw NSError(domain: \"NotImplemented\", code: 0, userInfo: nil)\n}\n```"
+    },
+    {
+        "method_name": "create",
+        "method_code": "OwnCloudClient create(Uri uri,\n                          boolean followRedirects,\n                          boolean useNextcloudUserAgent);",
+        "prompt": "\n        Please translate the following Java (Android) method titled create from ClientFactory.java into Swift.\n\n        Input:\n\n        Method Name: create\n\n        Method Code: OwnCloudClient create(Uri uri,\n                          boolean followRedirects,\n                          boolean useNextcloudUserAgent);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc create(uri: URL, followRedirects: Bool, useNextcloudUserAgent: Bool) -> OwnCloudClient {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "create",
+        "method_code": "OwnCloudClient create(Uri uri, boolean followRedirects);",
+        "prompt": "\n        Please translate the following Java (Android) method titled create from ClientFactory.java into Swift.\n\n        Input:\n\n        Method Name: create\n\n        Method Code: OwnCloudClient create(Uri uri, boolean followRedirects);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc create(uri: URL, followRedirects: Bool) -> OwnCloudClient {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "createPlainClient",
+        "method_code": "PlainClient createPlainClient();",
+        "prompt": "\n        Please translate the following Java (Android) method titled createPlainClient from ClientFactory.java into Swift.\n\n        Input:\n\n        Method Name: createPlainClient\n\n        Method Code: PlainClient createPlainClient();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createPlainClient() -> PlainClient {\n    return PlainClient()\n}\n```"
+    }
+]

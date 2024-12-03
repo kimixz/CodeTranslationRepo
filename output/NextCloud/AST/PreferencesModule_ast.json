@@ -1,0 +1,48 @@
+{
+    "methods": [
+        {
+            "name": "sharedPreferences",
+            "return_type": "SharedPreferences",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 473,
+            "end_position": 659,
+            "body_start": 562,
+            "body_end": 659
+        },
+        {
+            "name": "appPreferences",
+            "return_type": "AppPreferences",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "SharedPreferences",
+                    "name": "sharedPreferences"
+                },
+                {
+                    "type": "UserAccountManager",
+                    "name": "userAccountManager"
+                }
+            ],
+            "start_position": 665,
+            "end_position": 1000,
+            "body_start": 906,
+            "body_end": 1000
+        }
+    ],
+    "code_constructs": [
+        "return_statement"
+    ],
+    "method_calls": {
+        "android.preference.PreferenceManager": [
+            "getDefaultSharedPreferences"
+        ]
+    }
+}

@@ -1,0 +1,218 @@
+{
+    "method_calls": {
+        "DiskLruImageCache.class": [
+            "getSimpleName"
+        ],
+        "DiskLruCache": [
+            "open"
+        ],
+        "editor": [
+            "newOutputStream",
+            "commit",
+            "abort"
+        ],
+        "bitmap": [
+            "compress"
+        ],
+        "out": [
+            "close"
+        ],
+        "unknown": [
+            "convertToValidKey",
+            "writeBitmapToFile"
+        ],
+        "mDiskCache": [
+            "edit",
+            "flush",
+            "get",
+            "delete",
+            "getDirectory",
+            "remove"
+        ],
+        "Log_OC": [
+            "d",
+            "e"
+        ],
+        "snapshot": [
+            "getInputStream",
+            "close"
+        ],
+        "BitmapFactory": [
+            "decodeStream"
+        ],
+        "snapshot2": [
+            "getInputStream"
+        ],
+        "BitmapUtils": [
+            "calculateSampleFactor"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "buffIn": [
+            "close"
+        ],
+        "in": [
+            "close"
+        ],
+        "Integer": [
+            "toString"
+        ],
+        "key": [
+            "hashCode"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "return_statement",
+        "if_statement",
+        "try_with_resources_statement"
+    ],
+    "methods": [
+        {
+            "name": "writeBitmapToFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                },
+                {
+                    "type": "DiskLruCache.Editor",
+                    "name": "editor"
+                }
+            ],
+            "start_position": 1992,
+            "end_position": 2409,
+            "body_start": 2088,
+            "body_end": 2409
+        },
+        {
+            "name": "put",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "Bitmap",
+                    "name": "data"
+                }
+            ],
+            "start_position": 2415,
+            "end_position": 3589,
+            "body_start": 2456,
+            "body_end": 3589
+        },
+        {
+            "name": "getScaledBitmap",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "int",
+                    "name": "width"
+                },
+                {
+                    "type": "int",
+                    "name": "height"
+                }
+            ],
+            "start_position": 3595,
+            "end_position": 5562,
+            "body_start": 3660,
+            "body_end": 5562
+        },
+        {
+            "name": "getBitmap",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 5568,
+            "end_position": 6975,
+            "body_start": 5604,
+            "body_end": 6975
+        },
+        {
+            "name": "containsKey",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 6981,
+            "end_position": 7487,
+            "body_start": 7020,
+            "body_end": 7487
+        },
+        {
+            "name": "clearCache",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7493,
+            "end_position": 7766,
+            "body_start": 7518,
+            "body_end": 7766
+        },
+        {
+            "name": "getCacheFolder",
+            "return_type": "File",
+            "parameters": [],
+            "start_position": 7772,
+            "end_position": 7850,
+            "body_start": 7801,
+            "body_end": 7850
+        },
+        {
+            "name": "convertToValidKey",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 7856,
+            "end_position": 7957,
+            "body_start": 7901,
+            "body_end": 7957
+        },
+        {
+            "name": "removeKey",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 8040,
+            "end_position": 8340,
+            "body_start": 8074,
+            "body_end": 8340
+        }
+    ],
+    "local_variables": {
+        "out": "OutputStream",
+        "editor": "DiskLruCache.Editor",
+        "validKey": "String",
+        "bitmap": "Bitmap",
+        "inputStream": "InputStream",
+        "options": "BitmapFactory.Options",
+        "snapshot": "DiskLruCache.Snapshot",
+        "in": "InputStream",
+        "buffIn": "BufferedInputStream",
+        "contained": "boolean"
+    }
+}

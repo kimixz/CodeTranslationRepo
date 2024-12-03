@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "bind",
+        "method_code": "public void bind(ShareeListAdapterListener listener) {\n        binding.addNewPublicShareLink.setOnClickListener(v -> listener.createPublicShareLink());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled bind from NewLinkShareViewHolder.java into Swift.\n\n        Input:\n\n        Method Name: bind\n\n        Method Code: public void bind(ShareeListAdapterListener listener) {\n        binding.addNewPublicShareLink.setOnClickListener(v -> listener.createPublicShareLink());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc bind(listener: ShareeListAdapterListener) {\n    binding.addNewPublicShareLink.addTarget(self, action: #selector(listener.createPublicShareLink), for: .touchUpInside)\n}\n```"
+    }
+]

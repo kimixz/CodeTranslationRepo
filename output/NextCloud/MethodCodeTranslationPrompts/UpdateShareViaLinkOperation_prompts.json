@@ -1,0 +1,38 @@
+[
+    {
+        "method_name": "run",
+        "method_code": "@Override\n    protected RemoteOperationResult run(OwnCloudClient client) {\n        OCShare publicShare = getStorageManager().getShareById(shareId);\n\n        UpdateShareRemoteOperation updateOp = new UpdateShareRemoteOperation(publicShare.getRemoteId());\n        updateOp.setPassword(password);\n        updateOp.setExpirationDate(expirationDateInMillis);\n        updateOp.setHideFileDownload(hideFileDownload);\n        updateOp.setLabel(label);\n\n        RemoteOperationResult result = updateOp.execute(client);\n\n        if (result.isSuccess()) {\n            // Retrieve updated share / save directly with password? -> no; the password is not to be saved\n            RemoteOperation getShareOp = new GetShareRemoteOperation(publicShare.getRemoteId());\n            result = getShareOp.execute(client);\n            if (result.isSuccess()) {\n                OCShare share = (OCShare) result.getData().get(0);\n                getStorageManager().saveShare(share);\n            }\n        }\n\n        return result;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled run from UpdateShareViaLinkOperation.java into Swift.\n\n        Input:\n\n        Method Name: run\n\n        Method Code: @Override\n    protected RemoteOperationResult run(OwnCloudClient client) {\n        OCShare publicShare = getStorageManager().getShareById(shareId);\n\n        UpdateShareRemoteOperation updateOp = new UpdateShareRemoteOperation(publicShare.getRemoteId());\n        updateOp.setPassword(password);\n        updateOp.setExpirationDate(expirationDateInMillis);\n        updateOp.setHideFileDownload(hideFileDownload);\n        updateOp.setLabel(label);\n\n        RemoteOperationResult result = updateOp.execute(client);\n\n        if (result.isSuccess()) {\n            // Retrieve updated share / save directly with password? -> no; the password is not to be saved\n            RemoteOperation getShareOp = new GetShareRemoteOperation(publicShare.getRemoteId());\n            result = getShareOp.execute(client);\n            if (result.isSuccess()) {\n                OCShare share = (OCShare) result.getData().get(0);\n                getStorageManager().saveShare(share);\n            }\n        }\n\n        return result;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func run(client: OwnCloudClient) -> RemoteOperationResult {\n    let publicShare = getStorageManager().getShareById(shareId)\n\n    let updateOp = UpdateShareRemoteOperation(remoteId: publicShare.getRemoteId())\n    updateOp.setPassword(password)\n    updateOp.setExpirationDate(expirationDateInMillis)\n    updateOp.setHideFileDownload(hideFileDownload)\n    updateOp.setLabel(label)\n\n    var result = updateOp.execute(client: client)\n\n    if result.isSuccess() {\n        let getShareOp = GetShareRemoteOperation(remoteId: publicShare.getRemoteId())\n        result = getShareOp.execute(client: client)\n        if result.isSuccess() {\n            if let share = result.getData().first as? OCShare {\n                getStorageManager().saveShare(share)\n            }\n        }\n    }\n\n    return result\n}\n```"
+    },
+    {
+        "method_name": "getPassword",
+        "method_code": "public String getPassword() {\n        return this.password;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPassword from UpdateShareViaLinkOperation.java into Swift.\n\n        Input:\n\n        Method Name: getPassword\n\n        Method Code: public String getPassword() {\n        return this.password;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPassword() -> String {\n    return self.password\n}\n```"
+    },
+    {
+        "method_name": "setPassword",
+        "method_code": "public void setPassword(String password) {\n        this.password = password;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPassword from UpdateShareViaLinkOperation.java into Swift.\n\n        Input:\n\n        Method Name: setPassword\n\n        Method Code: public void setPassword(String password) {\n        this.password = password;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPassword(_ password: String) {\n    self.password = password\n}\n```"
+    },
+    {
+        "method_name": "setHideFileDownload",
+        "method_code": "public void setHideFileDownload(Boolean hideFileDownload) {\n        this.hideFileDownload = hideFileDownload;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setHideFileDownload from UpdateShareViaLinkOperation.java into Swift.\n\n        Input:\n\n        Method Name: setHideFileDownload\n\n        Method Code: public void setHideFileDownload(Boolean hideFileDownload) {\n        this.hideFileDownload = hideFileDownload;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setHideFileDownload(_ hideFileDownload: Bool?) {\n    self.hideFileDownload = hideFileDownload\n}\n```"
+    },
+    {
+        "method_name": "setExpirationDateInMillis",
+        "method_code": "public void setExpirationDateInMillis(long expirationDateInMillis) {\n        this.expirationDateInMillis = expirationDateInMillis;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setExpirationDateInMillis from UpdateShareViaLinkOperation.java into Swift.\n\n        Input:\n\n        Method Name: setExpirationDateInMillis\n\n        Method Code: public void setExpirationDateInMillis(long expirationDateInMillis) {\n        this.expirationDateInMillis = expirationDateInMillis;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setExpirationDateInMillis(expirationDateInMillis: Int64) {\n    self.expirationDateInMillis = expirationDateInMillis\n}\n```"
+    },
+    {
+        "method_name": "setLabel",
+        "method_code": "public void setLabel(String label) {\n        this.label = label;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLabel from UpdateShareViaLinkOperation.java into Swift.\n\n        Input:\n\n        Method Name: setLabel\n\n        Method Code: public void setLabel(String label) {\n        this.label = label;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLabel(_ label: String) {\n    self.label = label\n}\n```"
+    }
+]

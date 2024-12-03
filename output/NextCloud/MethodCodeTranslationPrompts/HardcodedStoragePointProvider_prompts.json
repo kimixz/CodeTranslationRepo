@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "canProvideStoragePoints",
+        "method_code": "@Override\n    public boolean canProvideStoragePoints() {\n        return true;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled canProvideStoragePoints from HardcodedStoragePointProvider.java into Swift.\n\n        Input:\n\n        Method Name: canProvideStoragePoints\n\n        Method Code: @Override\n    public boolean canProvideStoragePoints() {\n        return true;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc canProvideStoragePoints() -> Bool {\n    return true\n}\n```"
+    },
+    {
+        "method_name": "getAvailableStoragePoint",
+        "method_code": "@Override\n    public Vector<StoragePoint> getAvailableStoragePoint() {\n        Vector<StoragePoint> result = new Vector<>();\n\n        for (String s : PATHS) {\n            if (canBeAddedToAvailableList(result, s)) {\n                result.add(new StoragePoint(s, s, StoragePoint.StorageType.EXTERNAL, StoragePoint.PrivacyType.PUBLIC));\n            }\n        }\n\n        return result;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAvailableStoragePoint from HardcodedStoragePointProvider.java into Swift.\n\n        Input:\n\n        Method Name: getAvailableStoragePoint\n\n        Method Code: @Override\n    public Vector<StoragePoint> getAvailableStoragePoint() {\n        Vector<StoragePoint> result = new Vector<>();\n\n        for (String s : PATHS) {\n            if (canBeAddedToAvailableList(result, s)) {\n                result.add(new StoragePoint(s, s, StoragePoint.StorageType.EXTERNAL, StoragePoint.PrivacyType.PUBLIC));\n            }\n        }\n\n        return result;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAvailableStoragePoint() -> [StoragePoint] {\n    var result: [StoragePoint] = []\n\n    for s in PATHS {\n        if canBeAddedToAvailableList(result, s) {\n            result.append(StoragePoint(path: s, name: s, storageType: .external, privacyType: .public))\n        }\n    }\n\n    return result\n}\n```"
+    }
+]

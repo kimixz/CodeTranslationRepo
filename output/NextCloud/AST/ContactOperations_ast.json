@@ -1,0 +1,703 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "enhanced_for_statement",
+        "if_statement",
+        "continue_statement",
+        "break_statement",
+        "for_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "account": [
+            "put",
+            "getContentValues"
+        ],
+        "unknown": [
+            "convertName",
+            "convertNickname",
+            "convertPhones",
+            "convertEmails",
+            "convertAddresses",
+            "convertIms",
+            "convertCustomFields",
+            "convertGroupedProperties",
+            "convertBirthdays",
+            "convertWebsites",
+            "convertNotes",
+            "convertPhotos",
+            "convertOrganization",
+            "isEmpty",
+            "orderPropertiesByGroup",
+            "downloadPhoto",
+            "put"
+        ],
+        "contentValues": [
+            "size",
+            "add",
+            "put"
+        ],
+        "ContentProviderOperation.newInsert(ContactsContract.RawContacts.CONTENT_URI)\n                        .withValues(cv)": [
+            "build"
+        ],
+        "ContentProviderOperation.newInsert(ContactsContract.RawContacts.CONTENT_URI)": [
+            "withValues"
+        ],
+        "ContentProviderOperation": [
+            "newInsert",
+            "newUpdate"
+        ],
+        "operations": [
+            "add"
+        ],
+        "values": [
+            "getContentValues",
+            "put",
+            "isEmpty",
+            "get",
+            "size"
+        ],
+        "cv": [
+            "size",
+            "getAsString",
+            "remove",
+            "put"
+        ],
+        "ContentProviderOperation.newInsert(ContactsContract.Data.CONTENT_URI)\n                            .withValueBackReference(ContactsContract.Data.RAW_CONTACT_ID, rawContactID)\n                            .withValues(cv)": [
+            "build"
+        ],
+        "ContentProviderOperation.newInsert(ContactsContract.Data.CONTENT_URI)\n                            .withValueBackReference(ContactsContract.Data.RAW_CONTACT_ID, rawContactID)": [
+            "withValues"
+        ],
+        "ContentProviderOperation.newInsert(ContactsContract.Data.CONTENT_URI)": [
+            "withValueBackReference"
+        ],
+        "context.getContentResolver()": [
+            "applyBatch"
+        ],
+        "context": [
+            "getContentResolver"
+        ],
+        "ContentProviderOperation.newUpdate(ContactsContract.Data.CONTENT_URI)\n                            .withSelection(ContactsContract.Data.RAW_CONTACT_ID + \" = ? AND \" + ContactsContract.Data.MIMETYPE + \" = ? \", new String[]{\"\" + contactID, \"\" + mimeType})\n                            .withValues(cv)": [
+            "build"
+        ],
+        "ContentProviderOperation.newUpdate(ContactsContract.Data.CONTENT_URI)\n                            .withSelection(ContactsContract.Data.RAW_CONTACT_ID + \" = ? AND \" + ContactsContract.Data.MIMETYPE + \" = ? \", new String[]{\"\" + contactID, \"\" + mimeType})": [
+            "withValues"
+        ],
+        "ContentProviderOperation.newUpdate(ContactsContract.Data.CONTENT_URI)": [
+            "withSelection"
+        ],
+        "vcard": [
+            "getStructuredName",
+            "getFormattedName",
+            "getExtendedProperty",
+            "getNicknames",
+            "getTelephoneNumbers",
+            "getEmails",
+            "getAddresses",
+            "getExtendedProperties",
+            "getImpps",
+            "getProperties",
+            "getBirthdays",
+            "getUrls",
+            "getNotes",
+            "getPhotos",
+            "getOrganization",
+            "getTitles"
+        ],
+        "n": [
+            "getGiven",
+            "getFamily",
+            "getPrefixes",
+            "getSuffixes"
+        ],
+        "prefixes": [
+            "isEmpty",
+            "get"
+        ],
+        "suffixes": [
+            "isEmpty",
+            "get"
+        ],
+        "fn": [
+            "getValue"
+        ],
+        "sb.append(namePrefix)": [
+            "append"
+        ],
+        "sb": [
+            "append",
+            "length",
+            "deleteCharAt",
+            "toString"
+        ],
+        "sb.append(firstName)": [
+            "append"
+        ],
+        "sb.append(lastName)": [
+            "append"
+        ],
+        "sb.toString()": [
+            "trim"
+        ],
+        "xPhoneticFirstName": [
+            "getValue"
+        ],
+        "xPhoneticLastName": [
+            "getValue"
+        ],
+        "nickname": [
+            "getValues"
+        ],
+        "nicknameValues": [
+            "isEmpty"
+        ],
+        "telephone": [
+            "getText",
+            "getUri"
+        ],
+        "uri": [
+            "toString"
+        ],
+        "DataMappings": [
+            "getPhoneType",
+            "getEmailType",
+            "getAddressType",
+            "getImPropertyNameMappings",
+            "getIMTypeFromProtocol",
+            "getDateType",
+            "getNameType",
+            "getWebSiteType"
+        ],
+        "email": [
+            "getValue"
+        ],
+        "address": [
+            "getStreetAddress",
+            "getPoBox",
+            "getLocality",
+            "getRegion",
+            "getPostalCode",
+            "getCountry",
+            "getLabel"
+        ],
+        "DataMappings.getImPropertyNameMappings()": [
+            "entrySet"
+        ],
+        "entry": [
+            "getKey",
+            "getValue"
+        ],
+        "rawProperty": [
+            "getValue"
+        ],
+        "impp": [
+            "getHandle",
+            "getProtocol"
+        ],
+        "customField": [
+            "getValues",
+            "isNickname",
+            "isContactEvent",
+            "isRelation"
+        ],
+        "orderedByGroup": [
+            "values"
+        ],
+        "properties": [
+            "size"
+        ],
+        "property": [
+            "getPropertyName",
+            "getValue",
+            "getGroup"
+        ],
+        "\"X-ABDATE\"": [
+            "equalsIgnoreCase"
+        ],
+        "\"X-ABRELATEDNAMES\"": [
+            "equalsIgnoreCase"
+        ],
+        "\"X-ABLABEL\"": [
+            "equalsIgnoreCase"
+        ],
+        "\"Nickname\"": [
+            "equals"
+        ],
+        "birthday": [
+            "getDate"
+        ],
+        "df": [
+            "format"
+        ],
+        "url": [
+            "getValue",
+            "getType",
+            "substring",
+            "lastIndexOf"
+        ],
+        "note": [
+            "getValue"
+        ],
+        "photo": [
+            "getUrl",
+            "getData",
+            "setData"
+        ],
+        "DisplayUtils": [
+            "downloadImageSynchronous"
+        ],
+        "bitmap": [
+            "compress"
+        ],
+        "stream": [
+            "toByteArray"
+        ],
+        "ImageType": [
+            "find"
+        ],
+        "organization": [
+            "getValues"
+        ],
+        "titleList": [
+            "isEmpty",
+            "get"
+        ],
+        "titleList.get(0)": [
+            "getValue"
+        ],
+        "groupedProperties": [
+            "get",
+            "put"
+        ],
+        "groupPropertiesList": [
+            "add"
+        ]
+    },
+    "methods": [
+        {
+            "name": "insertContact",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 2120,
+            "end_position": 4657,
+            "body_start": 2213,
+            "body_end": 4657
+        },
+        {
+            "name": "updateContact",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                },
+                {
+                    "type": "Long",
+                    "name": "key"
+                }
+            ],
+            "start_position": 4663,
+            "end_position": 7074,
+            "body_start": 4766,
+            "body_end": 7074
+        },
+        {
+            "name": "convertName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 7080,
+            "end_position": 9908,
+            "body_start": 7161,
+            "body_end": 9908
+        },
+        {
+            "name": "convertNickname",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 9914,
+            "end_position": 10551,
+            "body_start": 9999,
+            "body_end": 10551
+        },
+        {
+            "name": "convertPhones",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 10557,
+            "end_position": 11364,
+            "body_start": 10640,
+            "body_end": 11364
+        },
+        {
+            "name": "convertEmails",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 11370,
+            "end_position": 12011,
+            "body_start": 11453,
+            "body_end": 12011
+        },
+        {
+            "name": "convertAddresses",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 12017,
+            "end_position": 13461,
+            "body_start": 12103,
+            "body_end": 13461
+        },
+        {
+            "name": "convertIms",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 13467,
+            "end_position": 14898,
+            "body_start": 13547,
+            "body_end": 14898
+        },
+        {
+            "name": "convertCustomFields",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 14904,
+            "end_position": 16285,
+            "body_start": 14993,
+            "body_end": 16285
+        },
+        {
+            "name": "convertGroupedProperties",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 16291,
+            "end_position": 18750,
+            "body_start": 16385,
+            "body_end": 18750
+        },
+        {
+            "name": "convertBirthdays",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 18756,
+            "end_position": 19505,
+            "body_start": 18842,
+            "body_end": 19505
+        },
+        {
+            "name": "convertWebsites",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 19511,
+            "end_position": 20157,
+            "body_start": 19596,
+            "body_end": 20157
+        },
+        {
+            "name": "convertNotes",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 20163,
+            "end_position": 20589,
+            "body_start": 20245,
+            "body_end": 20589
+        },
+        {
+            "name": "convertPhotos",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 20595,
+            "end_position": 21112,
+            "body_start": 20678,
+            "body_end": 21112
+        },
+        {
+            "name": "downloadPhoto",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Photo",
+                    "name": "photo"
+                }
+            ],
+            "start_position": 21118,
+            "end_position": 21643,
+            "body_start": 21158,
+            "body_end": 21643
+        },
+        {
+            "name": "convertOrganization",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<NonEmptyContentValues>",
+                    "name": "contentValues"
+                },
+                {
+                    "type": "VCard",
+                    "name": "vcard"
+                }
+            ],
+            "start_position": 21649,
+            "end_position": 22668,
+            "body_start": 21738,
+            "body_end": 22668
+        },
+        {
+            "name": "orderPropertiesByGroup",
+            "return_type": "Map<String, List<T>>",
+            "parameters": [
+                {
+                    "type": "Iterable<T>",
+                    "name": "properties"
+                }
+            ],
+            "start_position": 22938,
+            "end_position": 23642,
+            "body_start": 23040,
+            "body_end": 23642
+        },
+        {
+            "name": "put",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "String",
+                    "name": "value"
+                }
+            ],
+            "start_position": 24312,
+            "end_position": 24480,
+            "body_start": 24354,
+            "body_end": 24480
+        },
+        {
+            "name": "put",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "int",
+                    "name": "value"
+                }
+            ],
+            "start_position": 24490,
+            "end_position": 24583,
+            "body_start": 24529,
+            "body_end": 24583
+        },
+        {
+            "name": "put",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "value"
+                }
+            ],
+            "start_position": 24593,
+            "end_position": 24760,
+            "body_start": 24635,
+            "body_end": 24760
+        },
+        {
+            "name": "getContentValues",
+            "return_type": "ContentValues",
+            "parameters": [],
+            "start_position": 24982,
+            "end_position": 25231,
+            "body_start": 25022,
+            "body_end": 25231
+        }
+    ],
+    "local_variables": {
+        "contentValues": "List<NonEmptyContentValues>",
+        "operations": "ArrayList<ContentProviderOperation>",
+        "cv": "NonEmptyContentValues",
+        "operation": "ContentProviderOperation",
+        "contactID": "long",
+        "mimeType": "String",
+        "values": "List<String>",
+        "firstName": "String",
+        "lastName": "String",
+        "namePrefix": "String",
+        "nameSuffix": "String",
+        "n": "StructuredName",
+        "prefixes": "List<String>",
+        "suffixes": "List<String>",
+        "fn": "FormattedName",
+        "formattedName": "String",
+        "displayName": "String",
+        "sb": "StringBuilder",
+        "xPhoneticFirstName": "RawProperty",
+        "firstPhoneticName": "String",
+        "xPhoneticLastName": "RawProperty",
+        "lastPhoneticName": "String",
+        "nicknameValues": "List<String>",
+        "value": "String",
+        "uri": "TelUri",
+        "phoneKind": "int",
+        "emailKind": "int",
+        "street": "String",
+        "poBox": "String",
+        "city": "String",
+        "state": "String",
+        "zipCode": "String",
+        "country": "String",
+        "label": "String",
+        "addressKind": "int",
+        "propertyName": "String",
+        "protocolType": "Integer",
+        "rawProperties": "List<RawProperty>",
+        "immpAddress": "String",
+        "immpProtocolType": "int",
+        "extendedProperties": "List<RawProperty>",
+        "orderedByGroup": "Map<String, List<RawProperty>>",
+        "ABDATE": "int",
+        "ABRELATEDNAMES": "int",
+        "val": "String",
+        "mime": "int",
+        "name": "String",
+        "type": "int",
+        "df": "DateFormat",
+        "date": "Temporal",
+        "urlValue": "String",
+        "noteValue": "String",
+        "data": "byte[]",
+        "url": "String",
+        "bitmap": "Bitmap",
+        "stream": "ByteArrayOutputStream",
+        "bitmapdata": "byte[]",
+        "organization": "Organization",
+        "keys": "String",
+        "i": "int",
+        "key": "String",
+        "titleList": "List<Title>",
+        "groupedProperties": "Map<String, List<T>>",
+        "group": "String",
+        "groupPropertiesList": "List<T>"
+    }
+}

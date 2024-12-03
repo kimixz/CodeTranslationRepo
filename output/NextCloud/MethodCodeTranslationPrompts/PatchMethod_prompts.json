@@ -1,0 +1,26 @@
+[
+    {
+        "method_name": "getName",
+        "method_code": "@Override\n    public String getName() {\n        return \"PATCH\";\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getName from PatchMethod.java into Swift.\n\n        Input:\n\n        Method Name: getName\n\n        Method Code: @Override\n    public String getName() {\n        return \"PATCH\";\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getName() -> String {\n    return \"PATCH\"\n}\n```"
+    },
+    {
+        "method_name": "hasRequestContent",
+        "method_code": "protected boolean hasRequestContent() {\n        if (!this.params.isEmpty()) {\n            return true;\n        } else {\n            return super.hasRequestContent();\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled hasRequestContent from PatchMethod.java into Swift.\n\n        Input:\n\n        Method Name: hasRequestContent\n\n        Method Code: protected boolean hasRequestContent() {\n        if (!this.params.isEmpty()) {\n            return true;\n        } else {\n            return super.hasRequestContent();\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc hasRequestContent() -> Bool {\n    if !self.params.isEmpty {\n        return true\n    } else {\n        return super.hasRequestContent()\n    }\n}\n```"
+    },
+    {
+        "method_name": "clearRequestBody",
+        "method_code": "protected void clearRequestBody() {\n        this.params.clear();\n        super.clearRequestBody();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled clearRequestBody from PatchMethod.java into Swift.\n\n        Input:\n\n        Method Name: clearRequestBody\n\n        Method Code: protected void clearRequestBody() {\n        this.params.clear();\n        super.clearRequestBody();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc clearRequestBody() {\n    self.params.removeAll()\n    super.clearRequestBody()\n}\n```"
+    },
+    {
+        "method_name": "generateRequestEntity",
+        "method_code": "protected RequestEntity generateRequestEntity() {\n        if (!this.params.isEmpty()) {\n            // Use a ByteArrayRequestEntity instead of a StringRequestEntity.\n            // This is to avoid potential encoding issues.  Form url encoded strings\n            // are ASCII by definition but the content type may not be.  Treating the content\n            // as bytes allows us to keep the current charset without worrying about how\n            // this charset will effect the encoding of the form url encoded string.\n            String content = EncodingUtil.formUrlEncode(getParameters(), getRequestCharSet());\n            return new ByteArrayRequestEntity(\n                EncodingUtil.getAsciiBytes(content),\n                FORM_URL_ENCODED_CONTENT_TYPE\n            );\n        } else {\n            return super.generateRequestEntity();\n        }\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled generateRequestEntity from PatchMethod.java into Swift.\n\n        Input:\n\n        Method Name: generateRequestEntity\n\n        Method Code: protected RequestEntity generateRequestEntity() {\n        if (!this.params.isEmpty()) {\n            // Use a ByteArrayRequestEntity instead of a StringRequestEntity.\n            // This is to avoid potential encoding issues.  Form url encoded strings\n            // are ASCII by definition but the content type may not be.  Treating the content\n            // as bytes allows us to keep the current charset without worrying about how\n            // this charset will effect the encoding of the form url encoded string.\n            String content = EncodingUtil.formUrlEncode(getParameters(), getRequestCharSet());\n            return new ByteArrayRequestEntity(\n                EncodingUtil.getAsciiBytes(content),\n                FORM_URL_ENCODED_CONTENT_TYPE\n            );\n        } else {\n            return super.generateRequestEntity();\n        }\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprotected func generateRequestEntity() -> RequestEntity {\n    if !self.params.isEmpty {\n        let content = EncodingUtil.formUrlEncode(getParameters(), getRequestCharSet())\n        return ByteArrayRequestEntity(\n            EncodingUtil.getAsciiBytes(content),\n            FORM_URL_ENCODED_CONTENT_TYPE\n        )\n    } else {\n        return super.generateRequestEntity()\n    }\n}\n```"
+    }
+]

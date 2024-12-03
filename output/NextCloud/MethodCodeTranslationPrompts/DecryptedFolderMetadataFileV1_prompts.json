@@ -1,0 +1,38 @@
+[
+    {
+        "method_name": "getMetadata",
+        "method_code": "public DecryptedMetadata getMetadata() {\n        return this.metadata;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMetadata from DecryptedFolderMetadataFileV1.java into Swift.\n\n        Input:\n\n        Method Name: getMetadata\n\n        Method Code: public DecryptedMetadata getMetadata() {\n        return this.metadata;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMetadata() -> DecryptedMetadata {\n    return self.metadata\n}\n```"
+    },
+    {
+        "method_name": "getFiles",
+        "method_code": "public Map<String, DecryptedFile> getFiles() {\n        return this.files;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFiles from DecryptedFolderMetadataFileV1.java into Swift.\n\n        Input:\n\n        Method Name: getFiles\n\n        Method Code: public Map<String, DecryptedFile> getFiles() {\n        return this.files;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFiles() -> [String: DecryptedFile] {\n    return self.files\n}\n```"
+    },
+    {
+        "method_name": "setMetadata",
+        "method_code": "public void setMetadata(DecryptedMetadata metadata) {\n        this.metadata = metadata;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setMetadata from DecryptedFolderMetadataFileV1.java into Swift.\n\n        Input:\n\n        Method Name: setMetadata\n\n        Method Code: public void setMetadata(DecryptedMetadata metadata) {\n        this.metadata = metadata;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setMetadata(_ metadata: DecryptedMetadata) {\n    self.metadata = metadata\n}\n```"
+    },
+    {
+        "method_name": "setFiles",
+        "method_code": "public void setFiles(Map<String, DecryptedFile> files) {\n        this.files = files;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFiles from DecryptedFolderMetadataFileV1.java into Swift.\n\n        Input:\n\n        Method Name: setFiles\n\n        Method Code: public void setFiles(Map<String, DecryptedFile> files) {\n        this.files = files;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFiles(_ files: [String: DecryptedFile]) {\n    self.files = files\n}\n```"
+    },
+    {
+        "method_name": "setFiledrop",
+        "method_code": "@VisibleForTesting\n    public void setFiledrop(Map<String, DecryptedFile> filedrop) {\n        this.filedrop = filedrop;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFiledrop from DecryptedFolderMetadataFileV1.java into Swift.\n\n        Input:\n\n        Method Name: setFiledrop\n\n        Method Code: @VisibleForTesting\n    public void setFiledrop(Map<String, DecryptedFile> filedrop) {\n        this.filedrop = filedrop;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFiledrop(_ filedrop: [String: DecryptedFile]) {\n    self.filedrop = filedrop\n}\n```"
+    },
+    {
+        "method_name": "getFiledrop",
+        "method_code": "public Map<String, DecryptedFile> getFiledrop() {\n        return filedrop;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFiledrop from DecryptedFolderMetadataFileV1.java into Swift.\n\n        Input:\n\n        Method Name: getFiledrop\n\n        Method Code: public Map<String, DecryptedFile> getFiledrop() {\n        return filedrop;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFiledrop() -> [String: DecryptedFile] {\n    return filedrop\n}\n```"
+    }
+]

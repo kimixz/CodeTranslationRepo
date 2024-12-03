@@ -1,0 +1,844 @@
+{
+    "methods": [
+        {
+            "name": "activitiesActivity",
+            "return_type": "ActivitiesActivity",
+            "parameters": [],
+            "start_position": 7809,
+            "end_position": 7890
+        },
+        {
+            "name": "authenticatorActivity",
+            "return_type": "AuthenticatorActivity",
+            "parameters": [],
+            "start_position": 7896,
+            "end_position": 7983
+        },
+        {
+            "name": "baseActivity",
+            "return_type": "BaseActivity",
+            "parameters": [],
+            "start_position": 7989,
+            "end_position": 8058
+        },
+        {
+            "name": "conflictsResolveActivity",
+            "return_type": "ConflictsResolveActivity",
+            "parameters": [],
+            "start_position": 8064,
+            "end_position": 8157
+        },
+        {
+            "name": "contactsPreferenceActivity",
+            "return_type": "ContactsPreferenceActivity",
+            "parameters": [],
+            "start_position": 8163,
+            "end_position": 8260
+        },
+        {
+            "name": "copyToClipboardActivity",
+            "return_type": "CopyToClipboardActivity",
+            "parameters": [],
+            "start_position": 8266,
+            "end_position": 8357
+        },
+        {
+            "name": "deepLinkLoginActivity",
+            "return_type": "DeepLinkLoginActivity",
+            "parameters": [],
+            "start_position": 8363,
+            "end_position": 8450
+        },
+        {
+            "name": "drawerActivity",
+            "return_type": "DrawerActivity",
+            "parameters": [],
+            "start_position": 8456,
+            "end_position": 8529
+        },
+        {
+            "name": "errorsWhileCopyingHandlerActivity",
+            "return_type": "ErrorsWhileCopyingHandlerActivity",
+            "parameters": [],
+            "start_position": 8535,
+            "end_position": 8646
+        },
+        {
+            "name": "externalSiteWebView",
+            "return_type": "ExternalSiteWebView",
+            "parameters": [],
+            "start_position": 8652,
+            "end_position": 8735
+        },
+        {
+            "name": "fileDisplayActivity",
+            "return_type": "FileDisplayActivity",
+            "parameters": [],
+            "start_position": 8741,
+            "end_position": 8824
+        },
+        {
+            "name": "filePickerActivity",
+            "return_type": "FilePickerActivity",
+            "parameters": [],
+            "start_position": 8830,
+            "end_position": 8911
+        },
+        {
+            "name": "firstRunActivity",
+            "return_type": "FirstRunActivity",
+            "parameters": [],
+            "start_position": 8917,
+            "end_position": 8994
+        },
+        {
+            "name": "folderPickerActivity",
+            "return_type": "FolderPickerActivity",
+            "parameters": [],
+            "start_position": 9000,
+            "end_position": 9085
+        },
+        {
+            "name": "logsActivity",
+            "return_type": "LogsActivity",
+            "parameters": [],
+            "start_position": 9091,
+            "end_position": 9160
+        },
+        {
+            "name": "manageAccountsActivity",
+            "return_type": "ManageAccountsActivity",
+            "parameters": [],
+            "start_position": 9166,
+            "end_position": 9255
+        },
+        {
+            "name": "manageSpaceActivity",
+            "return_type": "ManageSpaceActivity",
+            "parameters": [],
+            "start_position": 9261,
+            "end_position": 9344
+        },
+        {
+            "name": "notificationsActivity",
+            "return_type": "NotificationsActivity",
+            "parameters": [],
+            "start_position": 9350,
+            "end_position": 9437
+        },
+        {
+            "name": "participateActivity",
+            "return_type": "CommunityActivity",
+            "parameters": [],
+            "start_position": 9443,
+            "end_position": 9524
+        },
+        {
+            "name": "composeActivity",
+            "return_type": "ComposeActivity",
+            "parameters": [],
+            "start_position": 9530,
+            "end_position": 9605
+        },
+        {
+            "name": "passCodeActivity",
+            "return_type": "PassCodeActivity",
+            "parameters": [],
+            "start_position": 9611,
+            "end_position": 9688
+        },
+        {
+            "name": "previewImageActivity",
+            "return_type": "PreviewImageActivity",
+            "parameters": [],
+            "start_position": 9694,
+            "end_position": 9779
+        },
+        {
+            "name": "previewMediaActivity",
+            "return_type": "PreviewMediaActivity",
+            "parameters": [],
+            "start_position": 9785,
+            "end_position": 9870
+        },
+        {
+            "name": "receiveExternalFilesActivity",
+            "return_type": "ReceiveExternalFilesActivity",
+            "parameters": [],
+            "start_position": 9876,
+            "end_position": 9977
+        },
+        {
+            "name": "requestCredentialsActivity",
+            "return_type": "RequestCredentialsActivity",
+            "parameters": [],
+            "start_position": 9983,
+            "end_position": 10080
+        },
+        {
+            "name": "settingsActivity",
+            "return_type": "SettingsActivity",
+            "parameters": [],
+            "start_position": 10086,
+            "end_position": 10163
+        },
+        {
+            "name": "shareActivity",
+            "return_type": "ShareActivity",
+            "parameters": [],
+            "start_position": 10169,
+            "end_position": 10240
+        },
+        {
+            "name": "ssoGrantPermissionActivity",
+            "return_type": "SsoGrantPermissionActivity",
+            "parameters": [],
+            "start_position": 10246,
+            "end_position": 10343
+        },
+        {
+            "name": "syncedFoldersActivity",
+            "return_type": "SyncedFoldersActivity",
+            "parameters": [],
+            "start_position": 10349,
+            "end_position": 10436
+        },
+        {
+            "name": "trashbinActivity",
+            "return_type": "TrashbinActivity",
+            "parameters": [],
+            "start_position": 10442,
+            "end_position": 10519
+        },
+        {
+            "name": "uploadFilesActivity",
+            "return_type": "UploadFilesActivity",
+            "parameters": [],
+            "start_position": 10525,
+            "end_position": 10608
+        },
+        {
+            "name": "uploadListActivity",
+            "return_type": "UploadListActivity",
+            "parameters": [],
+            "start_position": 10614,
+            "end_position": 10695
+        },
+        {
+            "name": "userInfoActivity",
+            "return_type": "UserInfoActivity",
+            "parameters": [],
+            "start_position": 10701,
+            "end_position": 10778
+        },
+        {
+            "name": "whatsNewActivity",
+            "return_type": "WhatsNewActivity",
+            "parameters": [],
+            "start_position": 10784,
+            "end_position": 10861
+        },
+        {
+            "name": "etmActivity",
+            "return_type": "EtmActivity",
+            "parameters": [],
+            "start_position": 10867,
+            "end_position": 10934
+        },
+        {
+            "name": "richDocumentsWebView",
+            "return_type": "RichDocumentsEditorWebView",
+            "parameters": [],
+            "start_position": 10940,
+            "end_position": 11031
+        },
+        {
+            "name": "textEditorWebView",
+            "return_type": "TextEditorWebView",
+            "parameters": [],
+            "start_position": 11037,
+            "end_position": 11116
+        },
+        {
+            "name": "extendedListFragment",
+            "return_type": "ExtendedListFragment",
+            "parameters": [],
+            "start_position": 11122,
+            "end_position": 11207
+        },
+        {
+            "name": "fileDetailFragment",
+            "return_type": "FileDetailFragment",
+            "parameters": [],
+            "start_position": 11213,
+            "end_position": 11294
+        },
+        {
+            "name": "localFileListFragment",
+            "return_type": "LocalFileListFragment",
+            "parameters": [],
+            "start_position": 11300,
+            "end_position": 11387
+        },
+        {
+            "name": "ocFileListFragment",
+            "return_type": "OCFileListFragment",
+            "parameters": [],
+            "start_position": 11393,
+            "end_position": 11474
+        },
+        {
+            "name": "fileDetailActivitiesFragment",
+            "return_type": "FileDetailActivitiesFragment",
+            "parameters": [],
+            "start_position": 11480,
+            "end_position": 11581
+        },
+        {
+            "name": "fileDetailsSharingProcessFragment",
+            "return_type": "FileDetailsSharingProcessFragment",
+            "parameters": [],
+            "start_position": 11587,
+            "end_position": 11698
+        },
+        {
+            "name": "fileDetailSharingFragment",
+            "return_type": "FileDetailSharingFragment",
+            "parameters": [],
+            "start_position": 11704,
+            "end_position": 11799
+        },
+        {
+            "name": "chooseTemplateDialogFragment",
+            "return_type": "ChooseTemplateDialogFragment",
+            "parameters": [],
+            "start_position": 11805,
+            "end_position": 11906
+        },
+        {
+            "name": "accountRemovalDialog",
+            "return_type": "AccountRemovalDialog",
+            "parameters": [],
+            "start_position": 11912,
+            "end_position": 11997
+        },
+        {
+            "name": "chooseRichDocumentsTemplateDialogFragment",
+            "return_type": "ChooseRichDocumentsTemplateDialogFragment",
+            "parameters": [],
+            "start_position": 12003,
+            "end_position": 12130
+        },
+        {
+            "name": "contactsBackupFragment",
+            "return_type": "BackupFragment",
+            "parameters": [],
+            "start_position": 12136,
+            "end_position": 12217
+        },
+        {
+            "name": "previewImageFragment",
+            "return_type": "PreviewImageFragment",
+            "parameters": [],
+            "start_position": 12223,
+            "end_position": 12308
+        },
+        {
+            "name": "chooseContactListFragment",
+            "return_type": "BackupListFragment",
+            "parameters": [],
+            "start_position": 12314,
+            "end_position": 12402
+        },
+        {
+            "name": "previewMediaFragment",
+            "return_type": "PreviewMediaFragment",
+            "parameters": [],
+            "start_position": 12408,
+            "end_position": 12493
+        },
+        {
+            "name": "previewTextFragment",
+            "return_type": "PreviewTextFragment",
+            "parameters": [],
+            "start_position": 12499,
+            "end_position": 12582
+        },
+        {
+            "name": "chooseAccountDialogFragment",
+            "return_type": "ChooseAccountDialogFragment",
+            "parameters": [],
+            "start_position": 12588,
+            "end_position": 12687
+        },
+        {
+            "name": "setStatusDialogFragment",
+            "return_type": "SetStatusDialogFragment",
+            "parameters": [],
+            "start_position": 12693,
+            "end_position": 12784
+        },
+        {
+            "name": "previewTextFileFragment",
+            "return_type": "PreviewTextFileFragment",
+            "parameters": [],
+            "start_position": 12790,
+            "end_position": 12881
+        },
+        {
+            "name": "previewTextStringFragment",
+            "return_type": "PreviewTextStringFragment",
+            "parameters": [],
+            "start_position": 12887,
+            "end_position": 12982
+        },
+        {
+            "name": "searchFragment",
+            "return_type": "UnifiedSearchFragment",
+            "parameters": [],
+            "start_position": 12988,
+            "end_position": 13068
+        },
+        {
+            "name": "photoFragment",
+            "return_type": "GalleryFragment",
+            "parameters": [],
+            "start_position": 13074,
+            "end_position": 13147
+        },
+        {
+            "name": "multipleAccountsDialog",
+            "return_type": "MultipleAccountsDialog",
+            "parameters": [],
+            "start_position": 13153,
+            "end_position": 13242
+        },
+        {
+            "name": "dialogInputUploadFilename",
+            "return_type": "ReceiveExternalFilesActivity.DialogInputUploadFilename",
+            "parameters": [],
+            "start_position": 13248,
+            "end_position": 13372
+        },
+        {
+            "name": "bootupBroadcastReceiver",
+            "return_type": "BootupBroadcastReceiver",
+            "parameters": [],
+            "start_position": 13378,
+            "end_position": 13469
+        },
+        {
+            "name": "networkChangeReceiver",
+            "return_type": "NetworkChangeReceiver",
+            "parameters": [],
+            "start_position": 13475,
+            "end_position": 13562
+        },
+        {
+            "name": "notificationWorkBroadcastReceiver",
+            "return_type": "NotificationWork.NotificationReceiver",
+            "parameters": [],
+            "start_position": 13568,
+            "end_position": 13683
+        },
+        {
+            "name": "fileContentProvider",
+            "return_type": "FileContentProvider",
+            "parameters": [],
+            "start_position": 13689,
+            "end_position": 13772
+        },
+        {
+            "name": "usersAndGroupsSearchProvider",
+            "return_type": "UsersAndGroupsSearchProvider",
+            "parameters": [],
+            "start_position": 13778,
+            "end_position": 13879
+        },
+        {
+            "name": "diskLruImageCacheFileProvider",
+            "return_type": "DiskLruImageCacheFileProvider",
+            "parameters": [],
+            "start_position": 13885,
+            "end_position": 13988
+        },
+        {
+            "name": "documentsStorageProvider",
+            "return_type": "DocumentsStorageProvider",
+            "parameters": [],
+            "start_position": 13994,
+            "end_position": 14087
+        },
+        {
+            "name": "accountManagerService",
+            "return_type": "AccountManagerService",
+            "parameters": [],
+            "start_position": 14093,
+            "end_position": 14180
+        },
+        {
+            "name": "operationsService",
+            "return_type": "OperationsService",
+            "parameters": [],
+            "start_position": 14186,
+            "end_position": 14265
+        },
+        {
+            "name": "playerService",
+            "return_type": "PlayerService",
+            "parameters": [],
+            "start_position": 14271,
+            "end_position": 14342
+        },
+        {
+            "name": "fileDownloaderService",
+            "return_type": "FileTransferService",
+            "parameters": [],
+            "start_position": 14348,
+            "end_position": 14433
+        },
+        {
+            "name": "fileSyncService",
+            "return_type": "FileSyncService",
+            "parameters": [],
+            "start_position": 14439,
+            "end_position": 14514
+        },
+        {
+            "name": "dashboardWidgetService",
+            "return_type": "DashboardWidgetService",
+            "parameters": [],
+            "start_position": 14520,
+            "end_position": 14609
+        },
+        {
+            "name": "previewPDFFragment",
+            "return_type": "PreviewPdfFragment",
+            "parameters": [],
+            "start_position": 14615,
+            "end_position": 14696
+        },
+        {
+            "name": "sharedFragment",
+            "return_type": "SharedListFragment",
+            "parameters": [],
+            "start_position": 14702,
+            "end_position": 14779
+        },
+        {
+            "name": "featureFragment",
+            "return_type": "FeatureFragment",
+            "parameters": [],
+            "start_position": 14785,
+            "end_position": 14860
+        },
+        {
+            "name": "indeterminateProgressDialog",
+            "return_type": "IndeterminateProgressDialog",
+            "parameters": [],
+            "start_position": 14866,
+            "end_position": 14965
+        },
+        {
+            "name": "sortingOrderDialogFragment",
+            "return_type": "SortingOrderDialogFragment",
+            "parameters": [],
+            "start_position": 14971,
+            "end_position": 15068
+        },
+        {
+            "name": "confirmationDialogFragment",
+            "return_type": "ConfirmationDialogFragment",
+            "parameters": [],
+            "start_position": 15074,
+            "end_position": 15171
+        },
+        {
+            "name": "conflictsResolveDialog",
+            "return_type": "ConflictsResolveDialog",
+            "parameters": [],
+            "start_position": 15177,
+            "end_position": 15266
+        },
+        {
+            "name": "createFolderDialogFragment",
+            "return_type": "CreateFolderDialogFragment",
+            "parameters": [],
+            "start_position": 15272,
+            "end_position": 15369
+        },
+        {
+            "name": "expirationDatePickerDialogFragment",
+            "return_type": "ExpirationDatePickerDialogFragment",
+            "parameters": [],
+            "start_position": 15375,
+            "end_position": 15488
+        },
+        {
+            "name": "fileActivity",
+            "return_type": "FileActivity",
+            "parameters": [],
+            "start_position": 15494,
+            "end_position": 15563
+        },
+        {
+            "name": "fileDownloadFragment",
+            "return_type": "FileDownloadFragment",
+            "parameters": [],
+            "start_position": 15569,
+            "end_position": 15654
+        },
+        {
+            "name": "loadingDialog",
+            "return_type": "LoadingDialog",
+            "parameters": [],
+            "start_position": 15660,
+            "end_position": 15731
+        },
+        {
+            "name": "localStoragePathPickerDialogFragment",
+            "return_type": "LocalStoragePathPickerDialogFragment",
+            "parameters": [],
+            "start_position": 15737,
+            "end_position": 15854
+        },
+        {
+            "name": "logsViewModel",
+            "return_type": "LogsViewModel",
+            "parameters": [],
+            "start_position": 15860,
+            "end_position": 15931
+        },
+        {
+            "name": "mainApp",
+            "return_type": "MainApp",
+            "parameters": [],
+            "start_position": 15937,
+            "end_position": 15996
+        },
+        {
+            "name": "migrations",
+            "return_type": "Migrations",
+            "parameters": [],
+            "start_position": 16002,
+            "end_position": 16067
+        },
+        {
+            "name": "notificationWork",
+            "return_type": "NotificationWork",
+            "parameters": [],
+            "start_position": 16073,
+            "end_position": 16150
+        },
+        {
+            "name": "removeFilesDialogFragment",
+            "return_type": "RemoveFilesDialogFragment",
+            "parameters": [],
+            "start_position": 16156,
+            "end_position": 16251
+        },
+        {
+            "name": "renamePublicShareDialogFragment",
+            "return_type": "RenamePublicShareDialogFragment",
+            "parameters": [],
+            "start_position": 16257,
+            "end_position": 16364
+        },
+        {
+            "name": "sendShareDialog",
+            "return_type": "SendShareDialog",
+            "parameters": [],
+            "start_position": 16370,
+            "end_position": 16445
+        },
+        {
+            "name": "setupEncryptionDialogFragment",
+            "return_type": "SetupEncryptionDialogFragment",
+            "parameters": [],
+            "start_position": 16451,
+            "end_position": 16554
+        },
+        {
+            "name": "chooseStorageLocationDialogFragment",
+            "return_type": "ChooseStorageLocationDialogFragment",
+            "parameters": [],
+            "start_position": 16560,
+            "end_position": 16675
+        },
+        {
+            "name": "sharePasswordDialogFragment",
+            "return_type": "SharePasswordDialogFragment",
+            "parameters": [],
+            "start_position": 16681,
+            "end_position": 16780
+        },
+        {
+            "name": "syncedFolderPreferencesDialogFragment",
+            "return_type": "SyncedFolderPreferencesDialogFragment",
+            "parameters": [],
+            "start_position": 16786,
+            "end_position": 16905
+        },
+        {
+            "name": "toolbarActivity",
+            "return_type": "ToolbarActivity",
+            "parameters": [],
+            "start_position": 16911,
+            "end_position": 16986
+        },
+        {
+            "name": "storagePermissionDialogFragment",
+            "return_type": "StoragePermissionDialogFragment",
+            "parameters": [],
+            "start_position": 16992,
+            "end_position": 17099
+        },
+        {
+            "name": "ocfileListBottomSheetDialog",
+            "return_type": "OCFileListBottomSheetDialog",
+            "parameters": [],
+            "start_position": 17105,
+            "end_position": 17204
+        },
+        {
+            "name": "renameFileDialogFragment",
+            "return_type": "RenameFileDialogFragment",
+            "parameters": [],
+            "start_position": 17210,
+            "end_position": 17303
+        },
+        {
+            "name": "syncFileNotEnoughSpaceDialogFragment",
+            "return_type": "SyncFileNotEnoughSpaceDialogFragment",
+            "parameters": [],
+            "start_position": 17309,
+            "end_position": 17426
+        },
+        {
+            "name": "dashboardWidgetConfigurationActivity",
+            "return_type": "DashboardWidgetConfigurationActivity",
+            "parameters": [],
+            "start_position": 17432,
+            "end_position": 17549
+        },
+        {
+            "name": "dashboardWidgetProvider",
+            "return_type": "DashboardWidgetProvider",
+            "parameters": [],
+            "start_position": 17555,
+            "end_position": 17646
+        },
+        {
+            "name": "galleryFragmentBottomSheetDialog",
+            "return_type": "GalleryFragmentBottomSheetDialog",
+            "parameters": [],
+            "start_position": 17652,
+            "end_position": 17761
+        },
+        {
+            "name": "previewBitmapActivity",
+            "return_type": "PreviewBitmapActivity",
+            "parameters": [],
+            "start_position": 17767,
+            "end_position": 17854
+        },
+        {
+            "name": "fileUploadHelper",
+            "return_type": "FileUploadHelper",
+            "parameters": [],
+            "start_position": 17860,
+            "end_position": 17937
+        },
+        {
+            "name": "sslUntrustedCertDialog",
+            "return_type": "SslUntrustedCertDialog",
+            "parameters": [],
+            "start_position": 17943,
+            "end_position": 18032
+        },
+        {
+            "name": "fileActionsBottomSheet",
+            "return_type": "FileActionsBottomSheet",
+            "parameters": [],
+            "start_position": 18038,
+            "end_position": 18127
+        },
+        {
+            "name": "sendFilesDialog",
+            "return_type": "SendFilesDialog",
+            "parameters": [],
+            "start_position": 18133,
+            "end_position": 18208
+        },
+        {
+            "name": "documentScanActivity",
+            "return_type": "DocumentScanActivity",
+            "parameters": [],
+            "start_position": 18214,
+            "end_position": 18299
+        },
+        {
+            "name": "groupfolderListFragment",
+            "return_type": "GroupfolderListFragment",
+            "parameters": [],
+            "start_position": 18305,
+            "end_position": 18396
+        },
+        {
+            "name": "launcherActivity",
+            "return_type": "LauncherActivity",
+            "parameters": [],
+            "start_position": 18402,
+            "end_position": 18479
+        },
+        {
+            "name": "editImageActivity",
+            "return_type": "EditImageActivity",
+            "parameters": [],
+            "start_position": 18485,
+            "end_position": 18564
+        },
+        {
+            "name": "imageDetailFragment",
+            "return_type": "ImageDetailFragment",
+            "parameters": [],
+            "start_position": 18570,
+            "end_position": 18653
+        },
+        {
+            "name": "etmBackgroundJobsFragment",
+            "return_type": "EtmBackgroundJobsFragment",
+            "parameters": [],
+            "start_position": 18659,
+            "end_position": 18754
+        },
+        {
+            "name": "backgroundJobManagerImpl",
+            "return_type": "BackgroundJobManagerImpl",
+            "parameters": [],
+            "start_position": 18760,
+            "end_position": 18853
+        },
+        {
+            "name": "testJob",
+            "return_type": "TestJob",
+            "parameters": [],
+            "start_position": 18859,
+            "end_position": 18918
+        },
+        {
+            "name": "internalTwoWaySyncActivity",
+            "return_type": "InternalTwoWaySyncActivity",
+            "parameters": [],
+            "start_position": 18924,
+            "end_position": 19021
+        },
+        {
+            "name": "backgroundPlayerService",
+            "return_type": "BackgroundPlayerService",
+            "parameters": [],
+            "start_position": 19028,
+            "end_position": 19163
+        }
+    ]
+}

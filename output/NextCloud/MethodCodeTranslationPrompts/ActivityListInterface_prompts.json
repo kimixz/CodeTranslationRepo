@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "onActivityClicked",
+        "method_code": "void onActivityClicked(RichObject richObject);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onActivityClicked from ActivityListInterface.java into Swift.\n\n        Input:\n\n        Method Name: onActivityClicked\n\n        Method Code: void onActivityClicked(RichObject richObject);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onActivityClicked(richObject: RichObject)\n```"
+    }
+]

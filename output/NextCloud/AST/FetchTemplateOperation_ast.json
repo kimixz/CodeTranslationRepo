@@ -1,0 +1,90 @@
+{
+    "method_calls": {
+        "FetchTemplateOperation.class": [
+            "getSimpleName"
+        ],
+        "client": [
+            "getBaseUri",
+            "executeMethod",
+            "exhaustResponse"
+        ],
+        "type.toString()": [
+            "toLowerCase"
+        ],
+        "type": [
+            "toString"
+        ],
+        "getMethod": [
+            "addRequestHeader",
+            "getResponseBodyAsString",
+            "getResponseBodyAsStream",
+            "releaseConnection"
+        ],
+        "respJSON.getJSONObject(NODE_OCS)": [
+            "getJSONArray"
+        ],
+        "respJSON": [
+            "getJSONObject"
+        ],
+        "templates": [
+            "length",
+            "getJSONObject"
+        ],
+        "templateArray": [
+            "add"
+        ],
+        "templateObject": [
+            "getLong",
+            "getString",
+            "optString"
+        ],
+        "Template.Type": [
+            "parse"
+        ],
+        "templateObject.getString(\"type\")": [
+            "toUpperCase"
+        ],
+        "result": [
+            "setData",
+            "getLogMessage",
+            "getException"
+        ],
+        "Log_OC": [
+            "e"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "for_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1591,
+            "end_position": 3880,
+            "body_start": 1650,
+            "body_end": 3880
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult",
+        "getMethod": "GetMethod",
+        "status": "int",
+        "response": "String",
+        "respJSON": "JSONObject",
+        "templates": "JSONArray",
+        "templateArray": "ArrayList<Object>",
+        "i": "int",
+        "templateObject": "JSONObject"
+    }
+}

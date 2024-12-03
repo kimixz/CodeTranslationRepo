@@ -1,0 +1,112 @@
+{
+    "methods": [
+        {
+            "name": "after",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1151,
+            "end_position": 2330,
+            "body_start": 1182,
+            "body_end": 2330
+        },
+        {
+            "name": "verifyDownload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2336,
+            "end_position": 3686,
+            "body_start": 2375,
+            "body_end": 3686
+        },
+        {
+            "name": "verifyDownload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file1"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file2"
+                }
+            ],
+            "start_position": 3692,
+            "end_position": 4530,
+            "body_start": 3748,
+            "body_end": 4530
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult",
+        "ocUpload": "OCUpload",
+        "ocUpload2": "OCUpload",
+        "file1": "OCFile",
+        "file2": "OCFile"
+    },
+    "method_calls": {
+        "new RefreshFolderOperation(getStorageManager().getFileByPath(\"/\"),\n                                                                  System.currentTimeMillis() / 1000L,\n                                                                  false,\n                                                                  true,\n                                                                  getStorageManager(),\n                                                                  user,\n                                                                  targetContext)": [
+            "execute"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "getFileByDecryptedRemotePath"
+        ],
+        "unknown": [
+            "getStorageManager",
+            "uploadOCUpload",
+            "refreshFolder",
+            "verifyDownload",
+            "assertTrue",
+            "assertNotNull",
+            "assertNotSame",
+            "assertEquals"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "result": [
+            "isSuccess"
+        ],
+        "new RemoveFileOperation(getStorageManager().getFileByDecryptedRemotePath(FOLDER),\n                                    false,\n                                    user,\n                                    false,\n                                    targetContext,\n                                    getStorageManager())": [
+            "execute"
+        ],
+        "FileStorageUtils": [
+            "getTemporalPath"
+        ],
+        "fileDataStorageManager": [
+            "getFileByDecryptedRemotePath"
+        ],
+        "new DownloadFileOperation(user, file1, targetContext).execute(client)": [
+            "isSuccess"
+        ],
+        "new DownloadFileOperation(user, file1, targetContext)": [
+            "execute"
+        ],
+        "new DownloadFileOperation(user, file2, targetContext).execute(client)": [
+            "isSuccess"
+        ],
+        "new DownloadFileOperation(user, file2, targetContext)": [
+            "execute"
+        ],
+        "file1": [
+            "getStoragePath"
+        ],
+        "file2": [
+            "getStoragePath"
+        ],
+        "new File(file1.getStoragePath())": [
+            "exists"
+        ],
+        "new File(file2.getStoragePath())": [
+            "exists"
+        ],
+        "Uri": [
+            "encode"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "expression_statement"
+    ]
+}

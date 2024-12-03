@@ -1,0 +1,192 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getId",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 1195,
+            "end_position": 1245,
+            "body_start": 1214,
+            "body_end": 1245
+        },
+        {
+            "name": "getLocalPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1251,
+            "end_position": 1318,
+            "body_start": 1280,
+            "body_end": 1318
+        },
+        {
+            "name": "getModifiedAt",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 1324,
+            "end_position": 1391,
+            "body_start": 1352,
+            "body_end": 1391
+        },
+        {
+            "name": "isFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1397,
+            "end_position": 1458,
+            "body_start": 1423,
+            "body_end": 1458
+        },
+        {
+            "name": "isSentForUpload",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1464,
+            "end_position": 1539,
+            "body_start": 1497,
+            "body_end": 1539
+        },
+        {
+            "name": "getFoundAt",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 1545,
+            "end_position": 1606,
+            "body_start": 1570,
+            "body_end": 1606
+        },
+        {
+            "name": "getSyncedFolderId",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 1612,
+            "end_position": 1687,
+            "body_start": 1644,
+            "body_end": 1687
+        },
+        {
+            "name": "getCrc32",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1693,
+            "end_position": 1766,
+            "body_start": 1732,
+            "body_end": 1766
+        },
+        {
+            "name": "setId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "id"
+                }
+            ],
+            "start_position": 1772,
+            "end_position": 1827,
+            "body_start": 1798,
+            "body_end": 1827
+        },
+        {
+            "name": "setLocalPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                }
+            ],
+            "start_position": 1833,
+            "end_position": 1919,
+            "body_start": 1876,
+            "body_end": 1919
+        },
+        {
+            "name": "setModifiedAt",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "modifiedAt"
+                }
+            ],
+            "start_position": 1925,
+            "end_position": 2013,
+            "body_start": 1968,
+            "body_end": 2013
+        },
+        {
+            "name": "setFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 2019,
+            "end_position": 2094,
+            "body_start": 2057,
+            "body_end": 2094
+        },
+        {
+            "name": "setSentForUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "sentForUpload"
+                }
+            ],
+            "start_position": 2100,
+            "end_position": 2203,
+            "body_start": 2152,
+            "body_end": 2203
+        },
+        {
+            "name": "setFoundAt",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "foundAt"
+                }
+            ],
+            "start_position": 2209,
+            "end_position": 2285,
+            "body_start": 2246,
+            "body_end": 2285
+        },
+        {
+            "name": "setSyncedFolderId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "syncedFolderId"
+                }
+            ],
+            "start_position": 2291,
+            "end_position": 2395,
+            "body_start": 2342,
+            "body_end": 2395
+        },
+        {
+            "name": "setCrc32",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "crc32"
+                }
+            ],
+            "start_position": 2401,
+            "end_position": 2481,
+            "body_start": 2446,
+            "body_end": 2481
+        }
+    ]
+}

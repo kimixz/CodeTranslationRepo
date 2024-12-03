@@ -1,0 +1,145 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "shouldShowImage",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 864,
+            "end_position": 941,
+            "body_start": 897,
+            "body_end": 941
+        },
+        {
+            "name": "shouldShowTitleText",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 947,
+            "end_position": 1063,
+            "body_start": 984,
+            "body_end": 1063
+        },
+        {
+            "name": "shouldShowContentText",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1069,
+            "end_position": 1191,
+            "body_start": 1108,
+            "body_end": 1191
+        },
+        {
+            "name": "shouldContentCentered",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1197,
+            "end_position": 1275,
+            "body_start": 1236,
+            "body_end": 1275
+        },
+        {
+            "name": "shouldShowBulletPointList",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1281,
+            "end_position": 1358,
+            "body_start": 1324,
+            "body_end": 1358
+        },
+        {
+            "name": "describeContents",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 1364,
+            "end_position": 1433,
+            "body_start": 1408,
+            "body_end": 1433
+        },
+        {
+            "name": "writeToParcel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "dest"
+                },
+                {
+                    "type": "int",
+                    "name": "flags"
+                }
+            ],
+            "start_position": 1439,
+            "end_position": 1721,
+            "body_start": 1503,
+            "body_end": 1721
+        },
+        {
+            "name": "createFromParcel",
+            "return_type": "Object",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "source"
+                }
+            ],
+            "start_position": 2036,
+            "end_position": 2155,
+            "body_start": 2100,
+            "body_end": 2155
+        },
+        {
+            "name": "newArray",
+            "return_type": "Object[]",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "size"
+                }
+            ],
+            "start_position": 2165,
+            "end_position": 2271,
+            "body_start": 2218,
+            "body_end": 2271
+        },
+        {
+            "name": "getImage",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 2284,
+            "end_position": 2340,
+            "body_start": 2306,
+            "body_end": 2340
+        },
+        {
+            "name": "getTitleText",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 2346,
+            "end_position": 2410,
+            "body_start": 2372,
+            "body_end": 2410
+        },
+        {
+            "name": "getContentText",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 2416,
+            "end_position": 2484,
+            "body_start": 2444,
+            "body_end": 2484
+        }
+    ],
+    "method_calls": {
+        "dest": [
+            "writeInt",
+            "writeByte"
+        ],
+        "p": [
+            "readInt",
+            "readByte"
+        ]
+    }
+}

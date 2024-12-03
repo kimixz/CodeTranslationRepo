@@ -1,0 +1,41 @@
+{
+    "methods": [
+        {
+            "name": "deserialize",
+            "return_type": "NameCollisionPolicy",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "ordinal"
+                }
+            ],
+            "start_position": 595,
+            "end_position": 814,
+            "body_start": 654,
+            "body_end": 814
+        },
+        {
+            "name": "serialize",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 820,
+            "end_position": 881,
+            "body_start": 843,
+            "body_end": 881
+        }
+    ],
+    "local_variables": {
+        "values": "NameCollisionPolicy[]"
+    },
+    "method_calls": {
+        "NameCollisionPolicy": [
+            "values"
+        ],
+        "this": [
+            "ordinal"
+        ]
+    },
+    "code_constructs": [
+        "return_statement"
+    ]
+}

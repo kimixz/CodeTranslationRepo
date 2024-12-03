@@ -1,0 +1,219 @@
+{
+    "methods": [
+        {
+            "name": "isDigit",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "char",
+                    "name": "ch"
+                }
+            ],
+            "start_position": 1548,
+            "end_position": 1632,
+            "body_start": 1588,
+            "body_end": 1632
+        },
+        {
+            "name": "isSpecialChar",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "char",
+                    "name": "ch"
+                }
+            ],
+            "start_position": 1638,
+            "end_position": 1790,
+            "body_start": 1684,
+            "body_end": 1790
+        },
+        {
+            "name": "getChunk",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "int",
+                    "name": "stringLength"
+                },
+                {
+                    "type": "int",
+                    "name": "marker"
+                }
+            ],
+            "start_position": 1907,
+            "end_position": 2732,
+            "body_start": 1983,
+            "body_end": 2732
+        },
+        {
+            "name": "compare",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "ServerFileInterface",
+                    "name": "o1"
+                },
+                {
+                    "type": "ServerFileInterface",
+                    "name": "o2"
+                }
+            ],
+            "start_position": 2738,
+            "end_position": 2928,
+            "body_start": 2812,
+            "body_end": 2928
+        },
+        {
+            "name": "compare",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "f1"
+                },
+                {
+                    "type": "File",
+                    "name": "f2"
+                }
+            ],
+            "start_position": 2934,
+            "end_position": 3086,
+            "body_start": 2978,
+            "body_end": 3086
+        },
+        {
+            "name": "compare",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "T",
+                    "name": "t1"
+                },
+                {
+                    "type": "T",
+                    "name": "t2"
+                }
+            ],
+            "start_position": 3092,
+            "end_position": 3184,
+            "body_start": 3123,
+            "body_end": 3184
+        },
+        {
+            "name": "compare",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "s1"
+                },
+                {
+                    "type": "String",
+                    "name": "s2"
+                }
+            ],
+            "start_position": 3190,
+            "end_position": 6782,
+            "body_start": 3238,
+            "body_end": 6782
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "if_statement",
+        "while_statement",
+        "break_statement",
+        "for_statement"
+    ],
+    "local_variables": {
+        "chunk": "StringBuilder",
+        "c": "char",
+        "s1": "String",
+        "s2": "String",
+        "thisMarker": "int",
+        "thatMarker": "int",
+        "s1Length": "int",
+        "s2Length": "int",
+        "thisChunk": "String",
+        "thatChunk": "String",
+        "result": "int",
+        "thisChunkZeroCount": "int",
+        "zero": "boolean",
+        "countThis": "int",
+        "thatChunkZeroCount": "int",
+        "countThat": "int",
+        "thisChunkValue": "BigInteger",
+        "thatChunkValue": "BigInteger",
+        "i": "int"
+    },
+    "method_calls": {
+        "string": [
+            "charAt"
+        ],
+        "chunk": [
+            "append",
+            "toString"
+        ],
+        "unknown": [
+            "isDigit",
+            "isSpecialChar",
+            "compare",
+            "getChunk"
+        ],
+        "o1": [
+            "getFileName"
+        ],
+        "o2": [
+            "getFileName"
+        ],
+        "f1": [
+            "getPath"
+        ],
+        "f2": [
+            "getPath"
+        ],
+        "t1": [
+            "toString"
+        ],
+        "t2": [
+            "toString"
+        ],
+        "s1": [
+            "length"
+        ],
+        "s2": [
+            "length"
+        ],
+        "thisChunk": [
+            "length",
+            "charAt",
+            "substring"
+        ],
+        "thatChunk": [
+            "length",
+            "charAt",
+            "substring"
+        ],
+        "Character": [
+            "getNumericValue"
+        ],
+        "thisChunkValue": [
+            "compareTo"
+        ],
+        "Integer": [
+            "compare"
+        ],
+        "Collator.getInstance()": [
+            "compare"
+        ],
+        "Collator": [
+            "getInstance"
+        ]
+    }
+}

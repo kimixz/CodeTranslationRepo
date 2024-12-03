@@ -1,0 +1,106 @@
+{
+    "methods": [
+        {
+            "name": "beforeClass",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1874,
+            "end_position": 4317,
+            "body_start": 1924,
+            "body_end": 4317
+        },
+        {
+            "name": "switchAccountViaAccountList",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4323,
+            "end_position": 4950,
+            "body_start": 4375,
+            "body_end": 4950
+        }
+    ],
+    "local_variables": {
+        "arguments": "Bundle",
+        "baseUrl": "Uri",
+        "platformAccountManager": "AccountManager",
+        "userAccountManager": "UserAccountManager",
+        "loginName": "String",
+        "password": "String",
+        "temp": "Account",
+        "sut": "FileDisplayActivity"
+    },
+    "method_calls": {
+        "androidx.test.platform.app.InstrumentationRegistry": [
+            "getArguments"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "arguments": [
+            "getString"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "UserAccountManagerImpl": [
+            "fromContext"
+        ],
+        "platformAccountManager": [
+            "getAccounts",
+            "removeAccountExplicitly",
+            "addAccountExplicitly",
+            "setUserData"
+        ],
+        "MainApp": [
+            "getAccountType"
+        ],
+        "Integer": [
+            "toString"
+        ],
+        "baseUrl": [
+            "toString"
+        ],
+        "userAccountManager": [
+            "getAccountByName",
+            "getUser"
+        ],
+        "userAccountManager.getUser(account1.name)": [
+            "orElseThrow"
+        ],
+        "activityRule": [
+            "launchActivity"
+        ],
+        "sut": [
+            "setUser",
+            "getUser"
+        ],
+        "unknown": [
+            "assertEquals",
+            "onView",
+            "withId",
+            "click",
+            "anyOf",
+            "withText",
+            "waitForIdleSync"
+        ],
+        "sut.getUser().get()": [
+            "toPlatformAccount"
+        ],
+        "sut.getUser()": [
+            "get"
+        ],
+        "onView(withId(R.id.switch_account_button))": [
+            "perform"
+        ],
+        "onView(anyOf(withText(account2Name), withText(account2DisplayName)))": [
+            "perform"
+        ],
+        "onView(withText(account1.name))": [
+            "perform"
+        ]
+    },
+    "code_constructs": [
+        "enhanced_for_statement",
+        "expression_statement"
+    ]
+}

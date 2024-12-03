@@ -1,0 +1,63 @@
+{
+    "methods": [
+        {
+            "name": "testUserId",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1097,
+            "end_position": 2439,
+            "body_start": 1250,
+            "body_end": 2439
+        }
+    ],
+    "local_variables": {
+        "arguments": "Bundle",
+        "url": "Uri",
+        "loginName": "String",
+        "password": "String",
+        "accountManager": "AccountManager",
+        "accountName": "String",
+        "newAccount": "Account",
+        "manager": "OwnCloudClientManager",
+        "account": "OwnCloudAccount",
+        "client": "OwnCloudClient"
+    },
+    "method_calls": {
+        "InstrumentationRegistry": [
+            "getArguments"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "arguments": [
+            "getString"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "AccountUtils": [
+            "buildAccountName"
+        ],
+        "accountManager": [
+            "addAccountExplicitly",
+            "setUserData",
+            "removeAccountExplicitly",
+            "getAccounts"
+        ],
+        "url": [
+            "toString"
+        ],
+        "manager": [
+            "getClientFor"
+        ],
+        "unknown": [
+            "assertEquals"
+        ],
+        "client": [
+            "getUserId"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement"
+    ]
+}

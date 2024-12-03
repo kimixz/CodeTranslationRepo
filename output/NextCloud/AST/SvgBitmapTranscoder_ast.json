@@ -1,0 +1,53 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "transcode",
+            "return_type": "Resource<Bitmap>",
+            "parameters": [
+                {
+                    "type": "Resource<SVG>",
+                    "name": "toTranscode"
+                }
+            ],
+            "start_position": 963,
+            "end_position": 1621,
+            "body_start": 1038,
+            "body_end": 1621
+        },
+        {
+            "name": "getId",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1627,
+            "end_position": 1689,
+            "body_start": 1663,
+            "body_end": 1689
+        }
+    ],
+    "local_variables": {
+        "svg": "SVG",
+        "bitmap": "Bitmap",
+        "canvas": "Canvas"
+    },
+    "method_calls": {
+        "toTranscode": [
+            "get"
+        ],
+        "svg": [
+            "setDocumentHeight",
+            "setDocumentWidth",
+            "renderToCanvas"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "Bitmap": [
+            "createBitmap"
+        ]
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1734,
+            "end_position": 3105,
+            "body_start": 1807,
+            "body_end": 3105
+        },
+        {
+            "name": "updateData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 3111,
+            "end_position": 3706,
+            "body_start": 3150,
+            "body_end": 3706
+        },
+        {
+            "name": "getPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 3712,
+            "end_position": 3769,
+            "body_start": 3736,
+            "body_end": 3769
+        },
+        {
+            "name": "getPassword",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 3775,
+            "end_position": 3840,
+            "body_start": 3803,
+            "body_end": 3840
+        }
+    ],
+    "local_variables": {
+        "createOp": "CreateShareRemoteOperation",
+        "result": "RemoteOperationResult",
+        "item": "Object",
+        "data": "ArrayList<Object>",
+        "file": "OCFile"
+    },
+    "method_calls": {
+        "createOp": [
+            "setGetShareDetails",
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getData",
+            "setData"
+        ],
+        "result.getData()": [
+            "size",
+            "get"
+        ],
+        "unknown": [
+            "updateData",
+            "getStorageManager"
+        ],
+        "share": [
+            "setPath",
+            "setFolder"
+        ],
+        "path": [
+            "endsWith"
+        ],
+        "getStorageManager()": [
+            "saveShare",
+            "getFileByEncryptedRemotePath",
+            "saveFile"
+        ],
+        "file": [
+            "setSharedViaLink"
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "onMeasure",
+        "method_code": "@Override\n    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {\n        super.onMeasure(widthMeasureSpec, widthMeasureSpec);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onMeasure from SquareLinearLayout.java into Swift.\n\n        Input:\n\n        Method Name: onMeasure\n\n        Method Code: @Override\n    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {\n        super.onMeasure(widthMeasureSpec, widthMeasureSpec);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func layoutSubviews() {\n    super.layoutSubviews()\n    let size = min(bounds.width, bounds.height)\n    self.frame.size = CGSize(width: size, height: size)\n}\n```"
+    }
+]

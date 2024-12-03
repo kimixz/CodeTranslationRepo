@@ -1,0 +1,83 @@
+{
+    "method_calls": {
+        "Pattern": [
+            "compile"
+        ],
+        "unknown": [
+            "getPotentialPaths",
+            "getCommandLineResult",
+            "canBeAddedToAvailableList"
+        ],
+        "result": [
+            "add"
+        ],
+        "mounted": [
+            "split"
+        ],
+        "line.toLowerCase(Locale.US)": [
+            "contains"
+        ],
+        "line": [
+            "toLowerCase",
+            "split"
+        ],
+        "sPattern.matcher(line)": [
+            "matches"
+        ],
+        "sPattern": [
+            "matcher"
+        ],
+        "path": [
+            "length",
+            "charAt",
+            "toLowerCase"
+        ],
+        "path.toLowerCase(Locale.US)": [
+            "contains"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getCommand",
+            "return_type": "String[]",
+            "parameters": [],
+            "start_position": 774,
+            "end_position": 852,
+            "body_start": 820,
+            "body_end": 852
+        },
+        {
+            "name": "getAvailableStoragePoint",
+            "return_type": "List<StoragePoint>",
+            "parameters": [],
+            "start_position": 858,
+            "end_position": 1278,
+            "body_start": 925,
+            "body_end": 1278
+        },
+        {
+            "name": "getPotentialPaths",
+            "return_type": "List<String>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mounted"
+                }
+            ],
+            "start_position": 1284,
+            "end_position": 1892,
+            "body_start": 1339,
+            "body_end": 1892
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "enhanced_for_statement",
+        "if_statement",
+        "expression_statement"
+    ],
+    "local_variables": {
+        "result": "List<String>",
+        "parts": "String"
+    }
+}

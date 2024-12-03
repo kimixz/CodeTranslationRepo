@@ -1,0 +1,648 @@
+{
+    "method_calls": {
+        "unknown": [
+            "createDuration",
+            "getImportReminders",
+            "convertToDB",
+            "query",
+            "generateUid",
+            "processEventTests",
+            "insertAndLog",
+            "hasProperty",
+            "removeProperty",
+            "copyProperty",
+            "copyDateProperty",
+            "durationToMs",
+            "queryEvents",
+            "checkTestValue"
+        ],
+        "mDefaultReminders": [
+            "add"
+        ],
+        "eventReminders": [
+            "size"
+        ],
+        "DuplicateHandlingEnum": [
+            "values"
+        ],
+        "mICalCalendar": [
+            "getComponents"
+        ],
+        "context": [
+            "getContentResolver",
+            "getResources"
+        ],
+        "cAlarm": [
+            "put"
+        ],
+        "options": [
+            "getDuplicateHandling",
+            "getTestFileSupport",
+            "getReminders",
+            "getKeepUids",
+            "getGlobalUids"
+        ],
+        "Log_OC": [
+            "i",
+            "d",
+            "w",
+            "e"
+        ],
+        "dupes": [
+            "ordinal"
+        ],
+        "e": [
+            "toString",
+            "getRecurrenceId",
+            "getStartDate",
+            "getProperties",
+            "getEndDate",
+            "getOrganizer",
+            "getProperty",
+            "getTransparency",
+            "getAlarms"
+        ],
+        "cur": [
+            "moveToNext",
+            "getLong",
+            "close",
+            "moveToPosition",
+            "getString"
+        ],
+        "Uri": [
+            "withAppendedPath"
+        ],
+        "resolver": [
+            "delete",
+            "insert",
+            "query"
+        ],
+        "c": [
+            "containsKey",
+            "put",
+            "getAsString",
+            "remove"
+        ],
+        "Long": [
+            "parseLong"
+        ],
+        "uri": [
+            "getLastPathSegment",
+            "toString"
+        ],
+        "res": [
+            "getQuantityString",
+            "getString"
+        ],
+        "reminders": [
+            "clear",
+            "contains",
+            "add"
+        ],
+        "e.getStartDate()": [
+            "getDate"
+        ],
+        "e.getProperties()": [
+            "add",
+            "remove"
+        ],
+        "e.getEndDate()": [
+            "getDate"
+        ],
+        "e.getOrganizer()": [
+            "getCalAddress"
+        ],
+        "MailTo": [
+            "parse"
+        ],
+        "mailTo": [
+            "getTo"
+        ],
+        "e.getProperty(Property.STATUS)": [
+            "getValue"
+        ],
+        "e.getProperty(Property.CLASS)": [
+            "getValue"
+        ],
+        "fb": [
+            "getParameter"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "a": [
+            "getAction",
+            "getTrigger"
+        ],
+        "e.getStartDate().getDate()": [
+            "getTime"
+        ],
+        "t": [
+            "getDateTime",
+            "getDuration",
+            "getParameter"
+        ],
+        "t.getDateTime()": [
+            "getTime"
+        ],
+        "t.getDuration()": [
+            "isNegative"
+        ],
+        "e.getEndDate().getDate()": [
+            "getTime"
+        ],
+        "options.getReminders(reminders)": [
+            "size"
+        ],
+        "d": [
+            "setValue",
+            "getSeconds",
+            "getMinutes",
+            "getHours",
+            "getDays",
+            "getWeeks"
+        ],
+        "p": [
+            "getValue",
+            "getName"
+        ],
+        "date": [
+            "getDate",
+            "isUtc",
+            "getTimeZone"
+        ],
+        "date.getDate()": [
+            "getTime"
+        ],
+        "date.getTimeZone()": [
+            "getID"
+        ],
+        "result": [
+            "toString"
+        ],
+        "b": [
+            "toString",
+            "append"
+        ],
+        "argsList": [
+            "toArray",
+            "size",
+            "add"
+        ],
+        "b.append(Events.CALENDAR_ID)": [
+            "append"
+        ],
+        "b.append(Events.UID_2445)": [
+            "append"
+        ],
+        "b.append(Events.DTSTART)": [
+            "append"
+        ],
+        "keyValue": [
+            "split"
+        ],
+        "\"<non-null>\"": [
+            "equals"
+        ],
+        "expected": [
+            "equals"
+        ],
+        "testName": [
+            "getValue"
+        ],
+        "Integer": [
+            "parseInt"
+        ],
+        "preferences": [
+            "getUidPid",
+            "setUidPid"
+        ],
+        "uidPid": [
+            "length"
+        ],
+        "UUID.randomUUID().toString()": [
+            "replace"
+        ],
+        "UUID.randomUUID()": [
+            "toString"
+        ],
+        "UUID": [
+            "randomUUID"
+        ],
+        "Math": [
+            "max"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "enhanced_for_statement",
+        "continue_statement",
+        "while_statement",
+        "try_statement",
+        "break_statement",
+        "throw_statement"
+    ],
+    "methods": [
+        {
+            "name": "getReminders",
+            "return_type": "List<Integer>",
+            "parameters": [
+                {
+                    "type": "List<Integer>",
+                    "name": "eventReminders"
+                }
+            ],
+            "start_position": 3047,
+            "end_position": 3282,
+            "body_start": 3111,
+            "body_end": 3282
+        },
+        {
+            "name": "getKeepUids",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3292,
+            "end_position": 3443,
+            "body_start": 3321,
+            "body_end": 3443
+        },
+        {
+            "name": "getImportReminders",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3453,
+            "end_position": 3612,
+            "body_start": 3490,
+            "body_end": 3612
+        },
+        {
+            "name": "getGlobalUids",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3622,
+            "end_position": 3777,
+            "body_start": 3654,
+            "body_end": 3777
+        },
+        {
+            "name": "getTestFileSupport",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3787,
+            "end_position": 3947,
+            "body_start": 3824,
+            "body_end": 3947
+        },
+        {
+            "name": "getDuplicateHandling",
+            "return_type": "DuplicateHandlingEnum",
+            "parameters": [],
+            "start_position": 3957,
+            "end_position": 4194,
+            "body_start": 4009,
+            "body_end": 4194
+        },
+        {
+            "name": "run",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4654,
+            "end_position": 10370,
+            "body_start": 4689,
+            "body_end": 10370
+        },
+        {
+            "name": "convertToDB",
+            "return_type": "ContentValues",
+            "parameters": [
+                {
+                    "type": "VEvent",
+                    "name": "e"
+                },
+                {
+                    "type": "Options",
+                    "name": "options"
+                },
+                {
+                    "type": "List<Integer>",
+                    "name": "reminders"
+                },
+                {
+                    "type": "long",
+                    "name": "calendarId"
+                }
+            ],
+            "start_position": 10470,
+            "end_position": 18316,
+            "body_start": 10611,
+            "body_end": 18316
+        },
+        {
+            "name": "createDuration",
+            "return_type": "Duration",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "value"
+                }
+            ],
+            "start_position": 18322,
+            "end_position": 18464,
+            "body_start": 18375,
+            "body_end": 18464
+        },
+        {
+            "name": "durationToMs",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "Dur",
+                    "name": "d"
+                }
+            ],
+            "start_position": 18470,
+            "end_position": 18838,
+            "body_start": 18510,
+            "body_end": 18838
+        },
+        {
+            "name": "hasProperty",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "VEvent",
+                    "name": "e"
+                },
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 18844,
+            "end_position": 18946,
+            "body_start": 18895,
+            "body_end": 18946
+        },
+        {
+            "name": "removeProperty",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "VEvent",
+                    "name": "e"
+                },
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 18952,
+            "end_position": 19128,
+            "body_start": 19003,
+            "body_end": 19128
+        },
+        {
+            "name": "copyProperty",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ContentValues",
+                    "name": "c"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                },
+                {
+                    "type": "VEvent",
+                    "name": "e"
+                },
+                {
+                    "type": "String",
+                    "name": "evName"
+                }
+            ],
+            "start_position": 19134,
+            "end_position": 19400,
+            "body_start": 19217,
+            "body_end": 19400
+        },
+        {
+            "name": "copyDateProperty",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ContentValues",
+                    "name": "c"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                },
+                {
+                    "type": "String",
+                    "name": "dbTzName"
+                },
+                {
+                    "type": "DateProperty",
+                    "name": "date"
+                }
+            ],
+            "start_position": 19406,
+            "end_position": 19922,
+            "body_start": 19504,
+            "body_end": 19922
+        },
+        {
+            "name": "insertAndLog",
+            "return_type": "Uri",
+            "parameters": [
+                {
+                    "type": "ContentResolver",
+                    "name": "resolver"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "c"
+                },
+                {
+                    "type": "String",
+                    "name": "type"
+                }
+            ],
+            "start_position": 19928,
+            "end_position": 20444,
+            "body_start": 20018,
+            "body_end": 20444
+        },
+        {
+            "name": "queryEvents",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "ContentResolver",
+                    "name": "resolver"
+                },
+                {
+                    "type": "StringBuilder",
+                    "name": "b"
+                },
+                {
+                    "type": "List<String>",
+                    "name": "argsList"
+                }
+            ],
+            "start_position": 20450,
+            "end_position": 20780,
+            "body_start": 20543,
+            "body_end": 20780
+        },
+        {
+            "name": "query",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "ContentResolver",
+                    "name": "resolver"
+                },
+                {
+                    "type": "Options",
+                    "name": "options"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "c"
+                }
+            ],
+            "start_position": 20786,
+            "end_position": 22286,
+            "body_start": 20867,
+            "body_end": 22286
+        },
+        {
+            "name": "checkTestValue",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "VEvent",
+                    "name": "e"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "c"
+                },
+                {
+                    "type": "String",
+                    "name": "keyValue"
+                },
+                {
+                    "type": "String",
+                    "name": "testName"
+                }
+            ],
+            "start_position": 22292,
+            "end_position": 23189,
+            "body_start": 22381,
+            "body_end": 23189
+        },
+        {
+            "name": "processEventTests",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "VEvent",
+                    "name": "e"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "c"
+                },
+                {
+                    "type": "List<Integer>",
+                    "name": "reminders"
+                }
+            ],
+            "start_position": 23195,
+            "end_position": 24421,
+            "body_start": 23278,
+            "body_end": 24421
+        },
+        {
+            "name": "generateUid",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 24470,
+            "end_position": 25034,
+            "body_start": 24499,
+            "body_end": 25034
+        }
+    ],
+    "local_variables": {
+        "options": "Options",
+        "reminders": "List<Integer>",
+        "events": "ComponentList",
+        "resolver": "ContentResolver",
+        "numDel": "int",
+        "numIns": "int",
+        "numDups": "int",
+        "cAlarm": "ContentValues",
+        "dupes": "DuplicateHandlingEnum",
+        "e": "VEvent",
+        "insertCalendarId": "long",
+        "c": "ContentValues",
+        "cur": "Cursor",
+        "mustDelete": "boolean",
+        "rowCalendarId": "long",
+        "id": "long",
+        "eventUri": "Uri",
+        "where": "String",
+        "uri": "URI",
+        "res": "Resources",
+        "n": "int",
+        "msg": "String",
+        "allDay": "boolean",
+        "startIsDate": "boolean",
+        "isRecurring": "boolean",
+        "d": "Duration",
+        "mailTo": "MailTo",
+        "status": "String",
+        "access": "String",
+        "accessLevel": "int",
+        "availability": "int",
+        "fb": "FreeBusy",
+        "fbType": "FbType",
+        "a": "VAlarm",
+        "t": "Trigger",
+        "startMs": "long",
+        "alarmStartMs": "long",
+        "alarmMs": "long",
+        "rel": "Related",
+        "reminder": "int",
+        "ms": "long",
+        "p": "Property",
+        "result": "Uri",
+        "args": "String[]",
+        "b": "StringBuilder",
+        "argsList": "List<String>",
+        "parts": "String[]",
+        "key": "String",
+        "expected": "String",
+        "got": "String",
+        "error": "String",
+        "testName": "Property",
+        "reminderValues": "String",
+        "sep": "String",
+        "ver": "int",
+        "uidPid": "String",
+        "uid": "String"
+    }
+}

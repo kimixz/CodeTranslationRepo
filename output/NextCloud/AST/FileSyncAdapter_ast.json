@@ -1,0 +1,409 @@
+{
+    "method_calls": {
+        "FileSyncAdapter.class": [
+            "getSimpleName",
+            "getName"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "this": [
+            "setAccount",
+            "setContentProviderClient",
+            "setStorageManager",
+            "initClientForCurrentAccount"
+        ],
+        "unknown": [
+            "getUser",
+            "notifyFailedSynchronization",
+            "sendLocalBroadcast",
+            "updateOCVersion",
+            "synchronizeFolder",
+            "getStorageManager",
+            "notifyFailsInFavourites",
+            "notifyForgottenLocalFiles",
+            "getAccount",
+            "getContext",
+            "getClient",
+            "isFinisher",
+            "syncChildren",
+            "createNotificationBuilder",
+            "i18n",
+            "showNotification",
+            "getQuantityString"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "extras": [
+            "getBoolean"
+        ],
+        "getStorageManager()": [
+            "getFileByPath"
+        ],
+        "mForgottenLocalFiles": [
+            "size",
+            "putAll",
+            "keySet",
+            "values"
+        ],
+        "super": [
+            "onSyncCanceled"
+        ],
+        "update": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getCode",
+            "getException"
+        ],
+        "synchFolderOp": [
+            "execute",
+            "getConflictsFound",
+            "getFailsInKeptInSyncFound",
+            "getForgottenLocalFiles",
+            "getChildren"
+        ],
+        "folder": [
+            "getRemotePath"
+        ],
+        "synchFolderOp.getForgottenLocalFiles()": [
+            "size"
+        ],
+        "failedResult": [
+            "getCode"
+        ],
+        "files": [
+            "size",
+            "get"
+        ],
+        "newFile": [
+            "isFolder"
+        ],
+        "files.get(i)": [
+            "getRemotePath"
+        ],
+        "intent": [
+            "putExtra",
+            "setPackage"
+        ],
+        "DataHolderUtil": [
+            "getInstance"
+        ],
+        "dataHolderUtil": [
+            "nextItemId",
+            "save"
+        ],
+        "getContext()": [
+            "getPackageName",
+            "getSystemService",
+            "getString",
+            "getResources"
+        ],
+        "LocalBroadcastManager.getInstance(getContext())": [
+            "sendBroadcast"
+        ],
+        "LocalBroadcastManager": [
+            "getInstance"
+        ],
+        "mLastFailedResult": [
+            "getCode"
+        ],
+        "updateAccountCredentials": [
+            "putExtra",
+            "addFlags"
+        ],
+        "notificationBuilder\n                .setTicker(i18n(R.string.sync_fail_ticker_unauthorized))\n                .setContentTitle(i18n(R.string.sync_fail_ticker_unauthorized))\n                .setContentIntent(PendingIntent.getActivity(\n                    getContext(), (int)System.currentTimeMillis(), updateAccountCredentials,\n                        PendingIntent.FLAG_ONE_SHOT | PendingIntent.FLAG_IMMUTABLE\n                ))": [
+            "setContentText"
+        ],
+        "notificationBuilder\n                .setTicker(i18n(R.string.sync_fail_ticker_unauthorized))\n                .setContentTitle(i18n(R.string.sync_fail_ticker_unauthorized))": [
+            "setContentIntent"
+        ],
+        "notificationBuilder\n                .setTicker(i18n(R.string.sync_fail_ticker_unauthorized))": [
+            "setContentTitle"
+        ],
+        "notificationBuilder": [
+            "setTicker",
+            "setContentIntent",
+            "setSmallIcon"
+        ],
+        "PendingIntent": [
+            "getActivity"
+        ],
+        "notificationBuilder\n                .setTicker(i18n(R.string.sync_fail_ticker))\n                .setContentTitle(i18n(R.string.sync_fail_ticker))": [
+            "setContentText"
+        ],
+        "notificationBuilder\n                .setTicker(i18n(R.string.sync_fail_ticker))": [
+            "setContentTitle"
+        ],
+        "notificationBuilder\n                .setContentIntent(PendingIntent.getActivity(\n                    getContext(), (int) System.currentTimeMillis(), new Intent(), PendingIntent.FLAG_IMMUTABLE\n                                                           ))\n                .setContentTitle(i18n(R.string.sync_fail_in_favourites_ticker))": [
+            "setContentText"
+        ],
+        "notificationBuilder\n                .setContentIntent(PendingIntent.getActivity(\n                    getContext(), (int) System.currentTimeMillis(), new Intent(), PendingIntent.FLAG_IMMUTABLE\n                                                           ))": [
+            "setContentTitle"
+        ],
+        "notificationBuilder\n                .setContentIntent(PendingIntent.getActivity(\n                    getContext(), (int) System.currentTimeMillis(), new Intent(), PendingIntent.FLAG_IMMUTABLE\n                                                           ))\n                .setContentTitle(i18n(R.string.sync_conflicts_in_favourites_ticker))": [
+            "setContentText"
+        ],
+        "explanationIntent": [
+            "putExtra",
+            "setFlags"
+        ],
+        "remotePaths": [
+            "addAll"
+        ],
+        "localPaths": [
+            "addAll"
+        ],
+        "notificationBuilder\n            .setContentIntent(PendingIntent.getActivity(\n                getContext(), (int) System.currentTimeMillis(), explanationIntent, PendingIntent.FLAG_IMMUTABLE\n                                                       ))\n            .setContentTitle(i18n(R.string.sync_foreign_files_forgotten_ticker))": [
+            "setContentText"
+        ],
+        "notificationBuilder\n            .setContentIntent(PendingIntent.getActivity(\n                getContext(), (int) System.currentTimeMillis(), explanationIntent, PendingIntent.FLAG_IMMUTABLE\n                                                       ))": [
+            "setContentTitle"
+        ],
+        "notificationBuilder.setSmallIcon(R.drawable.notification_icon)": [
+            "setAutoCancel"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeNotificationCompatBuilder"
+        ],
+        "builder": [
+            "setChannelId",
+            "build"
+        ],
+        "notificationManager": [
+            "notify"
+        ],
+        "getContext().getResources()": [
+            "getQuantityString"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "return_statement",
+        "if_statement",
+        "for_statement"
+    ],
+    "methods": [
+        {
+            "name": "onPerformSync",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "extras"
+                },
+                {
+                    "type": "String",
+                    "name": "authority"
+                },
+                {
+                    "type": "ContentProviderClient",
+                    "name": "providerClient"
+                },
+                {
+                    "type": "SyncResult",
+                    "name": "syncResult"
+                }
+            ],
+            "start_position": 5842,
+            "end_position": 9157,
+            "body_start": 6030,
+            "body_end": 9157
+        },
+        {
+            "name": "onSyncCanceled",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9623,
+            "end_position": 9835,
+            "body_start": 9666,
+            "body_end": 9835
+        },
+        {
+            "name": "updateOCVersion",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9929,
+            "end_position": 10217,
+            "body_start": 9960,
+            "body_end": 10217
+        },
+        {
+            "name": "synchronizeFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 10704,
+            "end_position": 13409,
+            "body_start": 10750,
+            "body_end": 13409
+        },
+        {
+            "name": "isFinisher",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "failedResult"
+                }
+            ],
+            "start_position": 13773,
+            "end_position": 14221,
+            "body_start": 13836,
+            "body_end": 14221
+        },
+        {
+            "name": "syncChildren",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 14540,
+            "end_position": 15083,
+            "body_start": 14586,
+            "body_end": 15083
+        },
+        {
+            "name": "sendLocalBroadcast",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "event"
+                },
+                {
+                    "type": "String",
+                    "name": "dirRemotePath"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 15550,
+            "end_position": 16457,
+            "body_start": 15684,
+            "body_end": 16457
+        },
+        {
+            "name": "notifyFailedSynchronization",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 16572,
+            "end_position": 18432,
+            "body_start": 16615,
+            "body_end": 18432
+        },
+        {
+            "name": "notifyFailsInFavourites",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 18650,
+            "end_position": 20530,
+            "body_start": 18689,
+            "body_end": 20530
+        },
+        {
+            "name": "notifyForgottenLocalFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 21099,
+            "end_position": 22836,
+            "body_start": 21140,
+            "body_end": 22836
+        },
+        {
+            "name": "createNotificationBuilder",
+            "return_type": "NotificationCompat.Builder",
+            "parameters": [],
+            "start_position": 22972,
+            "end_position": 23372,
+            "body_start": 23035,
+            "body_end": 23372
+        },
+        {
+            "name": "showNotification",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "id"
+                },
+                {
+                    "type": "NotificationCompat.Builder",
+                    "name": "builder"
+                }
+            ],
+            "start_position": 23481,
+            "end_position": 23949,
+            "body_start": 23555,
+            "body_end": 23949
+        },
+        {
+            "name": "i18n",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "key"
+                }
+            ],
+            "start_position": 24058,
+            "end_position": 24160,
+            "body_start": 24103,
+            "body_end": 24160
+        },
+        {
+            "name": "getQuantityString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "id"
+                },
+                {
+                    "type": "int",
+                    "name": "quantity"
+                }
+            ],
+            "start_position": 24526,
+            "end_position": 24710,
+            "body_start": 24615,
+            "body_end": 24710
+        }
+    ],
+    "local_variables": {
+        "mIsManualSync": "boolean",
+        "update": "UpdateOCVersionOperation",
+        "result": "RemoteOperationResult",
+        "synchFolderOp": "RefreshFolderOperation",
+        "children": "List<OCFile>",
+        "code": "RemoteOperationResult.ResultCode",
+        "i": "int",
+        "newFile": "OCFile",
+        "intent": "Intent",
+        "dataHolderUtil": "DataHolderUtil",
+        "dataHolderItemId": "String",
+        "notificationBuilder": "NotificationCompat.Builder",
+        "needsToUpdateCredentials": "boolean",
+        "updateAccountCredentials": "Intent",
+        "explanationIntent": "Intent",
+        "remotePaths": "ArrayList<String>",
+        "localPaths": "ArrayList<String>",
+        "notificationManager": "NotificationManager"
+    }
+}

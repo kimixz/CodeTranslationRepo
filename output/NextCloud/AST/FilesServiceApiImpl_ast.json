@@ -1,0 +1,123 @@
+{
+    "method_calls": {
+        "FilesServiceApiImpl.class": [
+            "getSimpleName"
+        ],
+        "readRemoteFileTask": [
+            "execute"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "clientFactory": [
+            "create"
+        ],
+        "new ReadFileRemoteOperation(fileUrl)": [
+            "execute"
+        ],
+        "resultRemoteFileOp": [
+            "isSuccess",
+            "getData"
+        ],
+        "FileStorageUtils": [
+            "fillOCFile"
+        ],
+        "resultRemoteFileOp.getData()": [
+            "get"
+        ],
+        "baseActivity.getStorageManager()": [
+            "saveFileWithParent"
+        ],
+        "baseActivity": [
+            "getStorageManager",
+            "getUser",
+            "getString"
+        ],
+        "remoteOcFile": [
+            "isFolder"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "baseActivity.getUser()": [
+            "orElseThrow"
+        ],
+        "synchFolderOp": [
+            "execute"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "super": [
+            "onPostExecute"
+        ],
+        "callback": [
+            "onLoaded",
+            "onError"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "readRemoteFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "fileUrl"
+                },
+                {
+                    "type": "BaseActivity",
+                    "name": "activity"
+                },
+                {
+                    "type": "FilesServiceCallback<OCFile>",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 1716,
+            "end_position": 2082,
+            "body_start": 1835,
+            "body_end": 2082
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Boolean",
+            "parameters": [],
+            "start_position": 3236,
+            "end_position": 5178,
+            "body_start": 3302,
+            "body_end": 5178
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Boolean",
+                    "name": "success"
+                }
+            ],
+            "start_position": 5188,
+            "end_position": 5644,
+            "body_start": 5252,
+            "body_end": 5644
+        }
+    ],
+    "local_variables": {
+        "readRemoteFileTask": "ReadRemoteFileTask",
+        "context": "Context",
+        "ownCloudClient": "OwnCloudClient",
+        "resultRemoteFileOp": "RemoteOperationResult",
+        "temp": "OCFile",
+        "synchFolderOp": "RemoteOperation"
+    }
+}

@@ -1,0 +1,446 @@
+{
+    "methods": [
+        {
+            "name": "walkFileTreeRandomly",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Path",
+                    "name": "start"
+                },
+                {
+                    "type": "FileVisitor<? super Path>",
+                    "name": "visitor"
+                }
+            ],
+            "start_position": 2356,
+            "end_position": 3627,
+            "body_start": 2462,
+            "body_end": 3627
+        },
+        {
+            "name": "insertCustomFolderIntoDB",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Path",
+                    "name": "path"
+                },
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                },
+                {
+                    "type": "FilesystemDataProvider",
+                    "name": "filesystemDataProvider"
+                },
+                {
+                    "type": "long",
+                    "name": "lastCheck"
+                }
+            ],
+            "start_position": 3633,
+            "end_position": 6112,
+            "body_start": 3926,
+            "body_end": 6112
+        },
+        {
+            "name": "visitFile",
+            "return_type": "FileVisitResult",
+            "parameters": [
+                {
+                    "type": "Path",
+                    "name": "path"
+                },
+                {
+                    "type": "BasicFileAttributes",
+                    "name": "attrs"
+                }
+            ],
+            "start_position": 4106,
+            "end_position": 5348,
+            "body_start": 4203,
+            "body_end": 5348
+        },
+        {
+            "name": "preVisitDirectory",
+            "return_type": "FileVisitResult",
+            "parameters": [
+                {
+                    "type": "Path",
+                    "name": "dir"
+                },
+                {
+                    "type": "BasicFileAttributes",
+                    "name": "attrs"
+                }
+            ],
+            "start_position": 5366,
+            "end_position": 5772,
+            "body_start": 5470,
+            "body_end": 5772
+        },
+        {
+            "name": "visitFileFailed",
+            "return_type": "FileVisitResult",
+            "parameters": [
+                {
+                    "type": "Path",
+                    "name": "file"
+                },
+                {
+                    "type": "IOException",
+                    "name": "exc"
+                }
+            ],
+            "start_position": 5790,
+            "end_position": 5955,
+            "body_start": 5883,
+            "body_end": 5955
+        },
+        {
+            "name": "insertAllDBEntriesForSyncedFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                }
+            ],
+            "start_position": 6118,
+            "end_position": 8387,
+            "body_start": 6198,
+            "body_end": 8387
+        },
+        {
+            "name": "insertChangedEntries",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                },
+                {
+                    "type": "String[]",
+                    "name": "changedFiles"
+                }
+            ],
+            "start_position": 8393,
+            "end_position": 9243,
+            "body_start": 8527,
+            "body_end": 9243
+        },
+        {
+            "name": "getFileFromURI",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "uri"
+                }
+            ],
+            "start_position": 9249,
+            "end_position": 9887,
+            "body_start": 9297,
+            "body_end": 9887
+        },
+        {
+            "name": "insertContentIntoDB",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                },
+                {
+                    "type": "long",
+                    "name": "lastCheckTimestampMs"
+                }
+            ],
+            "start_position": 9893,
+            "end_position": 12236,
+            "body_start": 10040,
+            "body_end": 12236
+        },
+        {
+            "name": "restartUploadsIfNeeded",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UploadsStorageManager",
+                    "name": "uploadsStorageManager"
+                },
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "ConnectivityService",
+                    "name": "connectivityService"
+                },
+                {
+                    "type": "PowerManagementService",
+                    "name": "powerManagementService"
+                }
+            ],
+            "start_position": 12242,
+            "end_position": 12896,
+            "body_start": 12614,
+            "body_end": 12896
+        },
+        {
+            "name": "scheduleFilesSyncForAllFoldersIfNeeded",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "SyncedFolderProvider",
+                    "name": "syncedFolderProvider"
+                },
+                {
+                    "type": "BackgroundJobManager",
+                    "name": "jobManager"
+                }
+            ],
+            "start_position": 12902,
+            "end_position": 13385,
+            "body_start": 13053,
+            "body_end": 13385
+        },
+        {
+            "name": "startFilesSyncForAllFolders",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SyncedFolderProvider",
+                    "name": "syncedFolderProvider"
+                },
+                {
+                    "type": "BackgroundJobManager",
+                    "name": "jobManager"
+                },
+                {
+                    "type": "boolean",
+                    "name": "overridePowerSaving"
+                },
+                {
+                    "type": "String[]",
+                    "name": "changedFiles"
+                }
+            ],
+            "start_position": 13391,
+            "end_position": 13835,
+            "body_start": 13566,
+            "body_end": 13835
+        },
+        {
+            "name": "calculateScanInterval",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                },
+                {
+                    "type": "ConnectivityService",
+                    "name": "connectivityService"
+                },
+                {
+                    "type": "PowerManagementService",
+                    "name": "powerManagementService"
+                }
+            ],
+            "start_position": 13841,
+            "end_position": 14852,
+            "body_start": 14067,
+            "body_end": 14852
+        }
+    ],
+    "local_variables": {
+        "file": "File",
+        "preVisitDirectoryResult": "FileVisitResult",
+        "children": "File[]",
+        "var5": "File[]",
+        "var6": "int",
+        "var7": "int",
+        "child": "File",
+        "enabledTimestampMs": "long",
+        "context": "Context",
+        "contentResolver": "ContentResolver",
+        "mediaType": "MediaFolderType",
+        "lastCheckTimestampMs": "long",
+        "startTime": "long",
+        "filesystemDataProvider": "FilesystemDataProvider",
+        "path": "String",
+        "changedFile": "String",
+        "cursor": "Cursor",
+        "column_index_data": "int",
+        "filePath": "String",
+        "projection": "String[]",
+        "column_index_date_modified": "int",
+        "contentPath": "String",
+        "isFolder": "boolean",
+        "defaultInterval": "long"
+    },
+    "method_calls": {
+        "start": [
+            "toFile"
+        ],
+        "file": [
+            "canRead",
+            "toString",
+            "isHidden",
+            "isDirectory",
+            "lastModified"
+        ],
+        "visitor": [
+            "visitFileFailed",
+            "preVisitDirectory",
+            "postVisitDirectory",
+            "visitFile"
+        ],
+        "Files": [
+            "isDirectory"
+        ],
+        "start.toFile()": [
+            "listFiles"
+        ],
+        "Collections": [
+            "shuffle"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "unknown": [
+            "walkFileTreeRandomly",
+            "getFileFromURI"
+        ],
+        "FileBasedPathImpl": [
+            "get"
+        ],
+        "syncedFolder": [
+            "getEnabledTimestampMs",
+            "isExcludeHidden",
+            "isExisting",
+            "getLocalPath",
+            "isEnabled",
+            "getType",
+            "getLastScanTimestampMs",
+            "containsTypedFile",
+            "getId",
+            "isWifiOnly"
+        ],
+        "path": [
+            "toFile",
+            "toAbsolutePath",
+            "endsWith"
+        ],
+        "attrs.lastModifiedTime()": [
+            "toMillis"
+        ],
+        "attrs": [
+            "lastModifiedTime"
+        ],
+        "filesystemDataProvider": [
+            "storeOrUpdateFileValue"
+        ],
+        "path.toAbsolutePath()": [
+            "toString"
+        ],
+        "dir": [
+            "compareTo",
+            "toFile"
+        ],
+        "Paths": [
+            "get"
+        ],
+        "dir.toFile()": [
+            "isHidden"
+        ],
+        "Log_OC": [
+            "e",
+            "d"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "context": [
+            "getContentResolver"
+        ],
+        "System": [
+            "nanoTime"
+        ],
+        "FilesSyncHelper": [
+            "insertContentIntoDB",
+            "insertCustomFolderIntoDB"
+        ],
+        "MainApp.getAppContext()": [
+            "getContentResolver"
+        ],
+        "context.getContentResolver()": [
+            "query"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "cursor": [
+            "moveToFirst",
+            "getColumnIndexOrThrow",
+            "getString",
+            "close",
+            "moveToNext",
+            "getLong"
+        ],
+        "new File(contentPath)": [
+            "isDirectory"
+        ],
+        "new Thread(() -> {\n            FileUploadHelper.Companion.instance().retryFailedUploads(\n                uploadsStorageManager,\n                connectivityService,\n                accountManager,\n                powerManagementService);\n        })": [
+            "start"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "retryFailedUploads"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "syncedFolderProvider": [
+            "getSyncedFolders"
+        ],
+        "jobManager": [
+            "schedulePeriodicFilesSyncJob",
+            "scheduleContentObserverJob",
+            "startImmediateFilesSyncJob"
+        ],
+        "connectivityService": [
+            "isConnected",
+            "isInternetWalled",
+            "getConnectivity"
+        ],
+        "connectivityService.getConnectivity()": [
+            "isWifi"
+        ],
+        "powerManagementService.getBattery()": [
+            "getLevel"
+        ],
+        "powerManagementService": [
+            "getBattery"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "for_statement",
+        "try_statement",
+        "return_statement",
+        "enhanced_for_statement",
+        "while_statement",
+        "continue_statement"
+    ]
+}

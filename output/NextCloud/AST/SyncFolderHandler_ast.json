@@ -1,0 +1,229 @@
+{
+    "method_calls": {
+        "SyncFolderHandler.class": [
+            "getSimpleName"
+        ],
+        "mPendingOperations": [
+            "contains",
+            "get",
+            "removePayload",
+            "putIfAbsent",
+            "remove"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "unknown": [
+            "doOperation",
+            "sendBroadcastFinishedSyncFolder",
+            "sendBroadcastNewSyncFolder"
+        ],
+        "Log_OC": [
+            "d",
+            "e"
+        ],
+        "mService": [
+            "stopSelf",
+            "dispatchResultToOperationListeners",
+            "getPackageName",
+            "getApplicationContext"
+        ],
+        "mCurrentAccount": [
+            "equals"
+        ],
+        "OwnCloudClientManagerFactory.getDefaultSingleton()": [
+            "getClientFor"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ],
+        "mCurrentSyncOperation": [
+            "execute",
+            "getRemotePath",
+            "cancel"
+        ],
+        "result": [
+            "isSuccess"
+        ],
+        "file": [
+            "getRemotePath"
+        ],
+        "synchronization": [
+            "cancel"
+        ],
+        "mCurrentSyncOperation.getRemotePath()": [
+            "startsWith"
+        ],
+        "account.name": [
+            "equals"
+        ],
+        "FileDownloadWorker.Companion": [
+            "getDownloadAddedMessage",
+            "getDownloadFinishMessage"
+        ],
+        "added": [
+            "putExtra",
+            "setPackage"
+        ],
+        "LocalBroadcastManager.getInstance(mService.getApplicationContext())": [
+            "sendBroadcast"
+        ],
+        "LocalBroadcastManager": [
+            "getInstance"
+        ],
+        "finished": [
+            "putExtra",
+            "setPackage"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "throw_statement",
+        "expression_statement",
+        "return_statement",
+        "try_statement"
+    ],
+    "methods": [
+        {
+            "name": "isSynchronizing",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 2694,
+            "end_position": 2927,
+            "body_start": 2755,
+            "body_end": 2927
+        },
+        {
+            "name": "handleMessage",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Message",
+                    "name": "msg"
+                }
+            ],
+            "start_position": 2933,
+            "end_position": 3236,
+            "body_start": 2986,
+            "body_end": 3236
+        },
+        {
+            "name": "doOperation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 3307,
+            "end_position": 4768,
+            "body_start": 3368,
+            "body_end": 4768
+        },
+        {
+            "name": "add",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "SynchronizeFolderOperation",
+                    "name": "syncFolderOperation"
+                }
+            ],
+            "start_position": 4774,
+            "end_position": 5144,
+            "body_start": 4893,
+            "body_end": 5144
+        },
+        {
+            "name": "cancel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 5389,
+            "end_position": 6381,
+            "body_start": 5437,
+            "body_end": 6381
+        },
+        {
+            "name": "sendBroadcastNewSyncFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 6530,
+            "end_position": 7006,
+            "body_start": 6606,
+            "body_end": 7006
+        },
+        {
+            "name": "sendBroadcastFinishedSyncFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "boolean",
+                    "name": "success"
+                }
+            ],
+            "start_position": 7155,
+            "end_position": 7796,
+            "body_start": 7302,
+            "body_end": 7796
+        }
+    ],
+    "local_variables": {
+        "itemSyncKey": "Pair<Account, String>",
+        "result": "RemoteOperationResult",
+        "ocAccount": "OwnCloudAccount",
+        "mOwnCloudClient": "OwnCloudClient",
+        "putResult": "Pair<String, String>",
+        "removeResult": "Pair<SynchronizeFolderOperation, String>",
+        "synchronization": "SynchronizeFolderOperation",
+        "added": "Intent",
+        "finished": "Intent"
+    }
+}

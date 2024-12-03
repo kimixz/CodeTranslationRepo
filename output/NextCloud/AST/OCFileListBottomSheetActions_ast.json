@@ -1,0 +1,83 @@
+{
+    "methods": [
+        {
+            "name": "createFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 539,
+            "end_position": 559
+        },
+        {
+            "name": "uploadFromApp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 664,
+            "end_position": 685
+        },
+        {
+            "name": "uploadFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 783,
+            "end_position": 802
+        },
+        {
+            "name": "newDocument",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 870,
+            "end_position": 889
+        },
+        {
+            "name": "newSpreadsheet",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 960,
+            "end_position": 982
+        },
+        {
+            "name": "newPresentation",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1054,
+            "end_position": 1077
+        },
+        {
+            "name": "directCameraUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1157,
+            "end_position": 1183
+        },
+        {
+            "name": "scanDocUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1267,
+            "end_position": 1288
+        },
+        {
+            "name": "showTemplate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Creator",
+                    "name": "creator"
+                },
+                {
+                    "type": "String",
+                    "name": "headline"
+                }
+            ],
+            "start_position": 1367,
+            "end_position": 1419
+        },
+        {
+            "name": "createRichWorkspace",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1479,
+            "end_position": 1506
+        }
+    ]
+}

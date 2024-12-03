@@ -1,0 +1,97 @@
+{
+    "methods": [
+        {
+            "name": "newInstance",
+            "return_type": "FeatureWebFragment",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "webUrl"
+                }
+            ],
+            "start_position": 730,
+            "end_position": 977,
+            "body_start": 790,
+            "body_end": 977
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 983,
+            "end_position": 1189,
+            "body_start": 1055,
+            "body_end": 1189
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 1195,
+            "end_position": 1947,
+            "body_start": 1505,
+            "body_end": 1947
+        }
+    ],
+    "local_variables": {
+        "f": "FeatureWebFragment",
+        "args": "Bundle",
+        "v": "View",
+        "webView": "WebView"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "args": [
+            "putString"
+        ],
+        "f": [
+            "setArguments"
+        ],
+        "super": [
+            "onCreate"
+        ],
+        "unknown": [
+            "getArguments"
+        ],
+        "getArguments()": [
+            "getString"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "v": [
+            "findViewById"
+        ],
+        "webView.getSettings()": [
+            "setJavaScriptEnabled",
+            "setDomStorageEnabled",
+            "setAllowFileAccess"
+        ],
+        "webView": [
+            "getSettings",
+            "setWebViewClient",
+            "loadUrl"
+        ]
+    }
+}

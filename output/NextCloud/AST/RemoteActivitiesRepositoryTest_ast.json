@@ -1,0 +1,61 @@
+{
+    "methods": [
+        {
+            "name": "setUpActivitiesRepository",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1052,
+            "end_position": 1275,
+            "body_start": 1104,
+            "body_end": 1275
+        },
+        {
+            "name": "loadActivitiesReturnSuccess",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1281,
+            "end_position": 1727,
+            "body_start": 1333,
+            "body_end": 1727
+        },
+        {
+            "name": "loadActivitiesReturnError",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1733,
+            "end_position": 2117,
+            "body_start": 1783,
+            "body_end": 2117
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "MockitoAnnotations": [
+            "initMocks"
+        ],
+        "mActivitiesRepository": [
+            "getActivities"
+        ],
+        "verify(serviceApi)": [
+            "getAllActivities"
+        ],
+        "unknown": [
+            "verify",
+            "eq"
+        ],
+        "activitiesServiceCallbackCaptor": [
+            "capture",
+            "getValue"
+        ],
+        "activitiesServiceCallbackCaptor.getValue()": [
+            "onLoaded",
+            "onError"
+        ],
+        "verify(mockedLoadActivitiesCallback)": [
+            "onActivitiesLoaded",
+            "onActivitiesLoadedError"
+        ]
+    }
+}

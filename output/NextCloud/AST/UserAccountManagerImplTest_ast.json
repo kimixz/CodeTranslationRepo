@@ -1,0 +1,81 @@
+{
+    "methods": [
+        {
+            "name": "setUp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 955,
+            "end_position": 1054,
+            "body_start": 987,
+            "body_end": 1054
+        },
+        {
+            "name": "updateOneAccount",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1060,
+            "end_position": 2077,
+            "body_start": 1101,
+            "body_end": 2077
+        },
+        {
+            "name": "checkName",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2083,
+            "end_position": 2911,
+            "body_start": 2117,
+            "body_end": 2911
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "AccountManager": [
+            "get"
+        ],
+        "AppPreferencesImpl": [
+            "fromContext"
+        ],
+        "unknown": [
+            "assertEquals",
+            "assertFalse",
+            "assertNull",
+            "assertTrue"
+        ],
+        "sut": [
+            "getAccounts",
+            "migrateUserId",
+            "accountOwnsFile"
+        ],
+        "appPreferences": [
+            "isUserIdMigrated"
+        ],
+        "accountManager": [
+            "setUserData",
+            "getUserData"
+        ],
+        "androidx.test.platform.app.InstrumentationRegistry": [
+            "getArguments"
+        ],
+        "arguments": [
+            "getString"
+        ],
+        "file1": [
+            "setOwnerId"
+        ]
+    },
+    "local_variables": {
+        "appPreferences": "AppPreferences",
+        "sut": "UserAccountManagerImpl",
+        "account": "Account",
+        "success": "boolean",
+        "arguments": "Bundle",
+        "userId": "String",
+        "owner": "Account",
+        "account1": "Account",
+        "account2": "Account",
+        "file1": "OCFile"
+    }
+}

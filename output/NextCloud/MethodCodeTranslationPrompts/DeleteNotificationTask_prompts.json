@@ -1,0 +1,20 @@
+[
+    {
+        "method_name": "onPreExecute",
+        "method_code": "@Override\n    protected void onPreExecute() {\n        notificationsActivity.removeNotification(holder);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onPreExecute from DeleteNotificationTask.java into Swift.\n\n        Input:\n\n        Method Name: onPreExecute\n\n        Method Code: @Override\n    protected void onPreExecute() {\n        notificationsActivity.removeNotification(holder);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onPreExecute() {\n    notificationsActivity.removeNotification(holder)\n}\n```"
+    },
+    {
+        "method_name": "doInBackground",
+        "method_code": "@Override\n    protected Boolean doInBackground(Action... actions) {\n        RemoteOperationResult result = new DeleteNotificationRemoteOperation(notification.notificationId)\n            .execute(client);\n\n        return result.isSuccess();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled doInBackground from DeleteNotificationTask.java into Swift.\n\n        Input:\n\n        Method Name: doInBackground\n\n        Method Code: @Override\n    protected Boolean doInBackground(Action... actions) {\n        RemoteOperationResult result = new DeleteNotificationRemoteOperation(notification.notificationId)\n            .execute(client);\n\n        return result.isSuccess();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func doInBackground(_ actions: Action...) -> Bool {\n    let result = DeleteNotificationRemoteOperation(notification.notificationId).execute(client)\n    return result.isSuccess()\n}\n```"
+    },
+    {
+        "method_name": "onPostExecute",
+        "method_code": "@Override\n    protected void onPostExecute(Boolean success) {\n        notificationsActivity.onRemovedNotification(success);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onPostExecute from DeleteNotificationTask.java into Swift.\n\n        Input:\n\n        Method Name: onPostExecute\n\n        Method Code: @Override\n    protected void onPostExecute(Boolean success) {\n        notificationsActivity.onRemovedNotification(success);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onPostExecute(success: Bool) {\n    notificationsActivity.onRemovedNotification(success)\n}\n```"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "doInBackground",
+        "method_code": "@Override\n    protected Boolean doInBackground(Action... actions) {\n\n        RemoteOperationResult result = new DeleteAllNotificationsRemoteOperation().execute(client);\n\n        return result.isSuccess();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled doInBackground from DeleteAllNotificationsTask.java into Swift.\n\n        Input:\n\n        Method Name: doInBackground\n\n        Method Code: @Override\n    protected Boolean doInBackground(Action... actions) {\n\n        RemoteOperationResult result = new DeleteAllNotificationsRemoteOperation().execute(client);\n\n        return result.isSuccess();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func doInBackground(_ actions: Action...) -> Bool {\n    let result = DeleteAllNotificationsRemoteOperation().execute(client)\n    return result.isSuccess()\n}\n```"
+    },
+    {
+        "method_name": "onPostExecute",
+        "method_code": "@Override\n    protected void onPostExecute(Boolean success) {\n        notificationsActivity.onRemovedAllNotifications(success);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onPostExecute from DeleteAllNotificationsTask.java into Swift.\n\n        Input:\n\n        Method Name: onPostExecute\n\n        Method Code: @Override\n    protected void onPostExecute(Boolean success) {\n        notificationsActivity.onRemovedAllNotifications(success);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onPostExecute(success: Bool) {\n    notificationsActivity.onRemovedAllNotifications(success)\n}\n```"
+    }
+]

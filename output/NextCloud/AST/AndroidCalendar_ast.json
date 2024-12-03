@@ -1,0 +1,185 @@
+{
+    "methods": [
+        {
+            "name": "loadAll",
+            "return_type": "List<AndroidCalendar>",
+            "parameters": [
+                {
+                    "type": "ContentResolver",
+                    "name": "resolver"
+                }
+            ],
+            "start_position": 1628,
+            "end_position": 3555,
+            "body_start": 1698,
+            "body_end": 3555
+        },
+        {
+            "name": "getColumnIndex",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                }
+            ],
+            "start_position": 3561,
+            "end_position": 3701,
+            "body_start": 3622,
+            "body_end": 3701
+        },
+        {
+            "name": "getLong",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                }
+            ],
+            "start_position": 3707,
+            "end_position": 3860,
+            "body_start": 3762,
+            "body_end": 3860
+        },
+        {
+            "name": "getString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cur"
+                },
+                {
+                    "type": "String",
+                    "name": "dbName"
+                }
+            ],
+            "start_position": 3866,
+            "end_position": 4027,
+            "body_start": 3925,
+            "body_end": 4027
+        },
+        {
+            "name": "missing",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ContentResolver",
+                    "name": "resolver"
+                },
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                }
+            ],
+            "start_position": 4033,
+            "end_position": 4344,
+            "body_start": 4099,
+            "body_end": 4344
+        },
+        {
+            "name": "toString",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 4350,
+            "end_position": 4447,
+            "body_start": 4389,
+            "body_end": 4447
+        },
+        {
+            "name": "differ",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "lhs"
+                },
+                {
+                    "type": "String",
+                    "name": "rhs"
+                }
+            ],
+            "start_position": 4453,
+            "end_position": 4636,
+            "body_start": 4512,
+            "body_end": 4636
+        },
+        {
+            "name": "differsFrom",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "AndroidCalendar",
+                    "name": "other"
+                }
+            ],
+            "start_position": 4642,
+            "end_position": 5128,
+            "body_start": 4692,
+            "body_end": 5128
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "return_statement",
+        "try_statement",
+        "expression_statement",
+        "while_statement",
+        "continue_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "missing",
+            "getLong",
+            "getString",
+            "getColumnIndex",
+            "differ"
+        ],
+        "resolver": [
+            "query",
+            "acquireContentProviderClient"
+        ],
+        "Log_OC": [
+            "w"
+        ],
+        "cur": [
+            "getCount",
+            "moveToNext",
+            "close",
+            "getColumnIndexOrThrow",
+            "getLong",
+            "getString"
+        ],
+        "eventsCur": [
+            "getCount",
+            "close"
+        ],
+        "calendars": [
+            "add"
+        ],
+        "provider": [
+            "release"
+        ],
+        "lhs": [
+            "equals"
+        ]
+    },
+    "local_variables": {
+        "cur": "Cursor",
+        "calendars": "List<AndroidCalendar>",
+        "calendar": "AndroidCalendar",
+        "args": "String[]",
+        "eventsCur": "Cursor",
+        "i": "int",
+        "provider": "ContentProviderClient"
+    }
+}

@@ -1,0 +1,499 @@
+{
+    "method_calls": {
+        "UsersAndGroupsSearchProvider.class": [
+            "getSimpleName"
+        ],
+        "sShareTypes": [
+            "get",
+            "put"
+        ],
+        "context": [
+            "getString"
+        ],
+        "AndroidInjection": [
+            "inject"
+        ],
+        "unknown": [
+            "getContext",
+            "setActionShareWith",
+            "searchForUsersOrGroups",
+            "showErrorMessage"
+        ],
+        "getContext()": [
+            "getString",
+            "getContentResolver",
+            "getResources",
+            "getCacheDir",
+            "getApplicationContext"
+        ],
+        "mUriMatcher": [
+            "addURI",
+            "match"
+        ],
+        "Log_OC": [
+            "d",
+            "e"
+        ],
+        "Thread.currentThread()": [
+            "getName"
+        ],
+        "Thread": [
+            "currentThread"
+        ],
+        "Log": [
+            "d"
+        ],
+        "searchConfig": [
+            "getSearchOnlyUsers"
+        ],
+        "uri": [
+            "getLastPathSegment",
+            "getQueryParameter"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "lastPathSegment": [
+            "toLowerCase"
+        ],
+        "searchRequest": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultData"
+        ],
+        "names": [
+            "size",
+            "iterator"
+        ],
+        "new Uri.Builder().scheme(CONTENT).authority(DATA_USER)": [
+            "build"
+        ],
+        "new Uri.Builder().scheme(CONTENT)": [
+            "authority"
+        ],
+        "new Uri.Builder()": [
+            "scheme"
+        ],
+        "new Uri.Builder().scheme(CONTENT).authority(DATA_GROUP)": [
+            "build"
+        ],
+        "new Uri.Builder().scheme(CONTENT).authority(DATA_ROOM)": [
+            "build"
+        ],
+        "new Uri.Builder().scheme(CONTENT).authority(DATA_REMOTE)": [
+            "build"
+        ],
+        "new Uri.Builder().scheme(CONTENT).authority(DATA_EMAIL)": [
+            "build"
+        ],
+        "new Uri.Builder().scheme(CONTENT).authority(DATA_CIRCLE)": [
+            "build"
+        ],
+        "manager.getCapability(user.getAccountName())\n                .getFilesSharingFederationOutgoing()": [
+            "isTrue"
+        ],
+        "manager.getCapability(user.getAccountName())": [
+            "getFilesSharingFederationOutgoing"
+        ],
+        "manager": [
+            "getCapability"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "namesIt": [
+            "hasNext",
+            "next"
+        ],
+        "item": [
+            "getString",
+            "isNull",
+            "getJSONObject",
+            "optJSONObject"
+        ],
+        "ShareType": [
+            "fromValue"
+        ],
+        "value": [
+            "getInt",
+            "getString"
+        ],
+        "StatusType": [
+            "valueOf"
+        ],
+        "statusObject.getString(PROPERTY_STATUS)": [
+            "toUpperCase"
+        ],
+        "statusObject": [
+            "getString",
+            "isNull",
+            "getLong"
+        ],
+        "Uri": [
+            "withAppendedPath",
+            "parse"
+        ],
+        "userName": [
+            "equals"
+        ],
+        "shareWith": [
+            "split"
+        ],
+        "status": [
+            "getMessage",
+            "getStatus",
+            "getIcon"
+        ],
+        "status.getMessage()": [
+            "isEmpty"
+        ],
+        "Uri.parse(\"content://\" + AUTHORITY + \"/icon\")": [
+            "buildUpon"
+        ],
+        "builder": [
+            "appendQueryParameter",
+            "build"
+        ],
+        "status.getStatus()": [
+            "toString"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "\"null\"": [
+            "equals"
+        ],
+        "response.newRow()\n                            .add(count++)             // BaseColumns._ID\n                            .add(displayName)         // SearchManager.SUGGEST_COLUMN_TEXT_1\n                            .add(subline)             // SearchManager.SUGGEST_COLUMN_TEXT_2\n                            .add(icon)": [
+            "add"
+        ],
+        "response.newRow()\n                            .add(count++)             // BaseColumns._ID\n                            .add(displayName)         // SearchManager.SUGGEST_COLUMN_TEXT_1\n                            .add(subline)": [
+            "add"
+        ],
+        "response.newRow()\n                            .add(count++)             // BaseColumns._ID\n                            .add(displayName)": [
+            "add"
+        ],
+        "response.newRow()\n                            .add(count++)": [
+            "add"
+        ],
+        "response.newRow()": [
+            "add"
+        ],
+        "response": [
+            "newRow"
+        ],
+        "accountManager.getUser()": [
+            "getAccountName"
+        ],
+        "accountName": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "arbitraryDataProvider": [
+            "getValue"
+        ],
+        "ThumbnailsCacheManager": [
+            "getBitmapFromDiskCache"
+        ],
+        "getContext().getResources()": [
+            "getDimension"
+        ],
+        "BitmapUtils": [
+            "drawableToBitmap",
+            "createAvatarWithStatus"
+        ],
+        "TextDrawable": [
+            "createNamedAvatar"
+        ],
+        "f": [
+            "exists",
+            "delete",
+            "createNewFile"
+        ],
+        "avatar": [
+            "compress"
+        ],
+        "bos": [
+            "toByteArray"
+        ],
+        "fos": [
+            "write"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "ParcelFileDescriptor": [
+            "open"
+        ],
+        "Looper": [
+            "getMainLooper"
+        ],
+        "handler": [
+            "post"
+        ],
+        "Toast.makeText(getContext().getApplicationContext(),\n                           ErrorMessageAdapter.getErrorCauseMessage(result, null, getContext().getResources()),\n                           Toast.LENGTH_SHORT)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "ErrorMessageAdapter": [
+            "getErrorCauseMessage"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getShareType",
+            "return_type": "ShareType",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "authority"
+                }
+            ],
+            "start_position": 4171,
+            "end_position": 4277,
+            "body_start": 4226,
+            "body_end": 4277
+        },
+        {
+            "name": "setActionShareWith",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 4283,
+            "end_position": 4440,
+            "body_start": 4348,
+            "body_end": 4440
+        },
+        {
+            "name": "getType",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                }
+            ],
+            "start_position": 4446,
+            "end_position": 4568,
+            "body_start": 4514,
+            "body_end": 4568
+        },
+        {
+            "name": "onCreate",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 4574,
+            "end_position": 5654,
+            "body_start": 4614,
+            "body_end": 5654
+        },
+        {
+            "name": "query",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String[]",
+                    "name": "projection"
+                },
+                {
+                    "type": "String",
+                    "name": "selection"
+                },
+                {
+                    "type": "String[]",
+                    "name": "selectionArgs"
+                },
+                {
+                    "type": "String",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 6389,
+            "end_position": 6809,
+            "body_start": 6560,
+            "body_end": 6809
+        },
+        {
+            "name": "searchForUsersOrGroups",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                }
+            ],
+            "start_position": 6815,
+            "end_position": 15381,
+            "body_start": 6862,
+            "body_end": 15381
+        },
+        {
+            "name": "insert",
+            "return_type": "Uri",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "values"
+                }
+            ],
+            "start_position": 15387,
+            "end_position": 15501,
+            "body_start": 15473,
+            "body_end": 15501
+        },
+        {
+            "name": "delete",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String",
+                    "name": "selection"
+                },
+                {
+                    "type": "String[]",
+                    "name": "selectionArgs"
+                }
+            ],
+            "start_position": 15507,
+            "end_position": 15624,
+            "body_start": 15599,
+            "body_end": 15624
+        },
+        {
+            "name": "update",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "ContentValues",
+                    "name": "values"
+                },
+                {
+                    "type": "String",
+                    "name": "selection"
+                },
+                {
+                    "type": "String[]",
+                    "name": "selectionArgs"
+                }
+            ],
+            "start_position": 15630,
+            "end_position": 15769,
+            "body_start": 15744,
+            "body_end": 15769
+        },
+        {
+            "name": "openFile",
+            "return_type": "ParcelFileDescriptor",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "String",
+                    "name": "mode"
+                }
+            ],
+            "start_position": 15775,
+            "end_position": 18384,
+            "body_start": 15998,
+            "body_end": 18384
+        },
+        {
+            "name": "showErrorMessage",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 18497,
+            "end_position": 19334,
+            "body_start": 18563,
+            "body_end": 19334
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "if_statement",
+        "throw_statement",
+        "try_statement",
+        "while_statement",
+        "continue_statement",
+        "break_statement",
+        "try_with_resources_statement"
+    ],
+    "local_variables": {
+        "match": "int",
+        "lastPathSegment": "String",
+        "user": "User",
+        "userQuery": "String",
+        "searchRequest": "GetShareesRemoteOperation",
+        "result": "RemoteOperationResult<ArrayList<JSONObject>>",
+        "names": "List<JSONObject>",
+        "response": "MatrixCursor",
+        "userBaseUri": "Uri",
+        "groupBaseUri": "Uri",
+        "roomBaseUri": "Uri",
+        "remoteBaseUri": "Uri",
+        "emailBaseUri": "Uri",
+        "circleBaseUri": "Uri",
+        "manager": "FileDataStorageManager",
+        "federatedShareAllowed": "boolean",
+        "namesIt": "Iterator<JSONObject>",
+        "item": "JSONObject",
+        "displayName": "String",
+        "subline": "String",
+        "icon": "String",
+        "dataUri": "Uri",
+        "count": "int",
+        "userName": "String",
+        "name": "String",
+        "value": "JSONObject",
+        "type": "ShareType",
+        "shareWith": "String",
+        "status": "StatusType",
+        "statusObject": "JSONObject",
+        "uriSplitted": "String[]",
+        "builder": "Uri.Builder",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "userId": "String",
+        "accountName": "String",
+        "serverName": "String",
+        "eTag": "String",
+        "avatarKey": "String",
+        "avatarBitmap": "Bitmap",
+        "avatarRadius": "float",
+        "avatar": "Bitmap",
+        "f": "File",
+        "bos": "ByteArrayOutputStream",
+        "bitmapData": "byte[]",
+        "handler": "Handler",
+        "context": "Context"
+    }
+}

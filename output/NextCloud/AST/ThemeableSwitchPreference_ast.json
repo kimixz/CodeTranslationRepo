@@ -1,0 +1,64 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "for_statement",
+        "break_statement"
+    ],
+    "method_calls": {
+        "MainApp.getAppComponent()": [
+            "inject"
+        ],
+        "MainApp": [
+            "getAppComponent"
+        ],
+        "super": [
+            "onBindView"
+        ],
+        "unknown": [
+            "findSwitch"
+        ],
+        "viewGroup": [
+            "getChildCount",
+            "getChildAt"
+        ],
+        "viewThemeUtils.platform": [
+            "colorSwitch"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onBindView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 1246,
+            "end_position": 1430,
+            "body_start": 1297,
+            "body_end": 1430
+        },
+        {
+            "name": "findSwitch",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "viewGroup"
+                }
+            ],
+            "start_position": 1436,
+            "end_position": 1910,
+            "body_start": 1481,
+            "body_end": 1910
+        }
+    ],
+    "local_variables": {
+        "i": "int",
+        "child": "View",
+        "switchView": "Switch"
+    }
+}

@@ -1,0 +1,314 @@
+{
+    "method_calls": {
+        "ExternalSiteWebView.class": [
+            "getSimpleName"
+        ],
+        "Log_OC": [
+            "v",
+            "d"
+        ],
+        "unknown": [
+            "bindView",
+            "showToolbarByDefault",
+            "getIntent",
+            "getWindow",
+            "setContentView",
+            "getRootView",
+            "postOnCreate",
+            "getWebView",
+            "getApplicationInfo",
+            "getResources",
+            "setupToolbar",
+            "findViewById",
+            "setupDrawer",
+            "setDrawerLockMode",
+            "setupActionBar",
+            "setupWebSettings",
+            "getSupportFragmentManager",
+            "getApplicationContext",
+            "getLayoutInflater",
+            "getSupportActionBar",
+            "setDrawerIndicatorEnabled",
+            "isDrawerOpen",
+            "closeDrawer",
+            "openDrawer",
+            "finish"
+        ],
+        "getIntent()": [
+            "getExtras"
+        ],
+        "getIntent().getExtras()": [
+            "getString"
+        ],
+        "extras": [
+            "containsKey",
+            "getBoolean"
+        ],
+        "window": [
+            "requestFeature"
+        ],
+        "super": [
+            "onCreate",
+            "onDestroy",
+            "onOptionsItemSelected"
+        ],
+        "getWebView()": [
+            "getSettings",
+            "setFocusable",
+            "setFocusableInTouchMode",
+            "setClickable",
+            "setWebChromeClient",
+            "setWebViewClient",
+            "loadData",
+            "loadUrl",
+            "destroy"
+        ],
+        "getResources()": [
+            "getBoolean",
+            "openRawResource"
+        ],
+        "WebView": [
+            "setWebContentsDebuggingEnabled"
+        ],
+        "findViewById(R.id.appbar)": [
+            "setVisibility"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "progressBar": [
+            "setProgress"
+        ],
+        "DisplayUtils": [
+            "getData",
+            "startLinkIntent"
+        ],
+        "customError": [
+            "isEmpty"
+        ],
+        "request": [
+            "isRedirect",
+            "getUrl"
+        ],
+        "new WebViewUtil(getApplicationContext())": [
+            "setProxyKKPlus"
+        ],
+        "ExternalsiteWebviewBinding": [
+            "inflate"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "webSettings": [
+            "setSupportZoom",
+            "setBuiltInZoomControls",
+            "setDisplayZoomControls",
+            "setUseWideViewPort",
+            "setLoadWithOverviewMode",
+            "setUserAgentString",
+            "setSaveFormData",
+            "setAllowFileAccess",
+            "setJavaScriptEnabled",
+            "setDomStorageEnabled",
+            "setCacheMode"
+        ],
+        "MainApp": [
+            "getUserAgent"
+        ],
+        "viewThemeUtils.files": [
+            "themeActionBar"
+        ],
+        "actionBar": [
+            "setDisplayHomeAsUpEnabled"
+        ],
+        "item": [
+            "getItemId"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 1864,
+            "end_position": 2625,
+            "body_start": 1935,
+            "body_end": 2625
+        },
+        {
+            "name": "postOnCreate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2631,
+            "end_position": 5280,
+            "body_start": 2661,
+            "body_end": 5280
+        },
+        {
+            "name": "onProgressChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "WebView",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "progress"
+                }
+            ],
+            "start_position": 4066,
+            "end_position": 4205,
+            "body_start": 4124,
+            "body_end": 4205
+        },
+        {
+            "name": "onReceivedError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "WebView",
+                    "name": "view"
+                },
+                {
+                    "type": "WebResourceRequest",
+                    "name": "request"
+                },
+                {
+                    "type": "WebResourceError",
+                    "name": "error"
+                }
+            ],
+            "start_position": 4388,
+            "end_position": 4814,
+            "body_start": 4482,
+            "body_end": 4814
+        },
+        {
+            "name": "shouldOverrideUrlLoading",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "WebView",
+                    "name": "view"
+                },
+                {
+                    "type": "WebResourceRequest",
+                    "name": "request"
+                }
+            ],
+            "start_position": 4828,
+            "end_position": 5147,
+            "body_start": 4932,
+            "body_end": 5147
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5286,
+            "end_position": 5393,
+            "body_start": 5327,
+            "body_end": 5393
+        },
+        {
+            "name": "bindView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5399,
+            "end_position": 5507,
+            "body_start": 5425,
+            "body_end": 5507
+        },
+        {
+            "name": "showToolbarByDefault",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 5513,
+            "end_position": 5582,
+            "body_start": 5554,
+            "body_end": 5582
+        },
+        {
+            "name": "getRootView",
+            "return_type": "View",
+            "parameters": [],
+            "start_position": 5588,
+            "end_position": 5658,
+            "body_start": 5617,
+            "body_end": 5658
+        },
+        {
+            "name": "setupWebSettings",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "WebSettings",
+                    "name": "webSettings"
+                }
+            ],
+            "start_position": 5664,
+            "end_position": 6726,
+            "body_start": 5816,
+            "body_end": 6726
+        },
+        {
+            "name": "setupActionBar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "title"
+                }
+            ],
+            "start_position": 6732,
+            "end_position": 7126,
+            "body_start": 6774,
+            "body_end": 7126
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 7132,
+            "end_position": 7606,
+            "body_start": 7198,
+            "body_end": 7606
+        },
+        {
+            "name": "getWebView",
+            "return_type": "WebView",
+            "parameters": [],
+            "start_position": 7612,
+            "end_position": 7682,
+            "body_start": 7643,
+            "body_end": 7682
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "local_variables": {
+        "extras": "Bundle",
+        "window": "Window",
+        "webSettings": "WebSettings",
+        "title": "String",
+        "progressBar": "ProgressBar",
+        "self": "ExternalSiteWebView",
+        "resources": "InputStream",
+        "customError": "String",
+        "actionBar": "ActionBar"
+    }
+}

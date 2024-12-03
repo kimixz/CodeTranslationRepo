@@ -1,0 +1,26 @@
+[
+    {
+        "method_name": "getDrawable",
+        "method_code": "public Drawable getDrawable() {\n        return drawable;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getDrawable from SendButtonData.java into Swift.\n\n        Input:\n\n        Method Name: getDrawable\n\n        Method Code: public Drawable getDrawable() {\n        return drawable;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getDrawable() -> Drawable? {\n    return drawable\n}\n```"
+    },
+    {
+        "method_name": "getTitle",
+        "method_code": "public CharSequence getTitle() {\n        return title;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getTitle from SendButtonData.java into Swift.\n\n        Input:\n\n        Method Name: getTitle\n\n        Method Code: public CharSequence getTitle() {\n        return title;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getTitle() -> String {\n    return title\n}\n```"
+    },
+    {
+        "method_name": "getPackageName",
+        "method_code": "public String getPackageName() {\n        return packageName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPackageName from SendButtonData.java into Swift.\n\n        Input:\n\n        Method Name: getPackageName\n\n        Method Code: public String getPackageName() {\n        return packageName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPackageName() -> String {\n    return packageName\n}\n```"
+    },
+    {
+        "method_name": "getActivityName",
+        "method_code": "public String getActivityName() {\n        return activityName;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getActivityName from SendButtonData.java into Swift.\n\n        Input:\n\n        Method Name: getActivityName\n\n        Method Code: public String getActivityName() {\n        return activityName;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getActivityName() -> String {\n    return activityName\n}\n```"
+    }
+]

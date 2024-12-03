@@ -1,0 +1,16 @@
+{
+    "method_calls": {
+        "Uri": [
+            "parse"
+        ],
+        "MainApp": [
+            "getAuthority"
+        ],
+        "Collections": [
+            "unmodifiableList"
+        ],
+        "Arrays": [
+            "asList"
+        ]
+    }
+}

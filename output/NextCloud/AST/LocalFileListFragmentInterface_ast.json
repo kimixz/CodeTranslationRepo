@@ -1,0 +1,47 @@
+{
+    "methods": [
+        {
+            "name": "getColumnsCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 543,
+            "end_position": 565
+        },
+        {
+            "name": "onItemClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 570,
+            "end_position": 600
+        },
+        {
+            "name": "onItemCheckboxClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 605,
+            "end_position": 643
+        },
+        {
+            "name": "setLoading",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "loading"
+                }
+            ],
+            "start_position": 648,
+            "end_position": 681
+        }
+    ]
+}

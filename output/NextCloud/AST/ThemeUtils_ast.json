@@ -1,0 +1,65 @@
+{
+    "methods": [
+        {
+            "name": "themingEnabled",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 601,
+            "end_position": 836,
+            "body_start": 648,
+            "body_end": 836
+        },
+        {
+            "name": "getDefaultDisplayNameForRootFolder",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 842,
+            "end_position": 1424,
+            "body_start": 908,
+            "body_end": 1424
+        }
+    ],
+    "local_variables": {
+        "capability": "OCCapability"
+    },
+    "method_calls": {
+        "CapabilityUtils": [
+            "getCapability"
+        ],
+        "capability": [
+            "getServerColor",
+            "getServerName"
+        ],
+        "capability.getServerColor()": [
+            "isEmpty"
+        ],
+        "MainApp": [
+            "isOnlyOnDevice",
+            "string",
+            "getAppContext"
+        ],
+        "capability.getServerName()": [
+            "isEmpty"
+        ],
+        "MainApp.getAppContext().getResources()": [
+            "getString"
+        ],
+        "MainApp.getAppContext()": [
+            "getResources"
+        ]
+    },
+    "code_constructs": [
+        "return_statement",
+        "if_statement"
+    ]
+}

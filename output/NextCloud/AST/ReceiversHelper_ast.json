@@ -1,0 +1,184 @@
+{
+    "methods": [
+        {
+            "name": "registerNetworkChangeReceiver",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UploadsStorageManager",
+                    "name": "uploadsStorageManager"
+                },
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "ConnectivityService",
+                    "name": "connectivityService"
+                },
+                {
+                    "type": "PowerManagementService",
+                    "name": "powerManagementService"
+                },
+                {
+                    "type": "WalledCheckCache",
+                    "name": "walledCheckCache"
+                }
+            ],
+            "start_position": 1129,
+            "end_position": 2677,
+            "body_start": 1623,
+            "body_end": 2677
+        },
+        {
+            "name": "onReceive",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 1955,
+            "end_position": 2536,
+            "body_start": 2031,
+            "body_end": 2536
+        },
+        {
+            "name": "registerPowerChangeReceiver",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UploadsStorageManager",
+                    "name": "uploadsStorageManager"
+                },
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "ConnectivityService",
+                    "name": "connectivityService"
+                },
+                {
+                    "type": "PowerManagementService",
+                    "name": "powerManagementService"
+                }
+            ],
+            "start_position": 2683,
+            "end_position": 3981,
+            "body_start": 3006,
+            "body_end": 3981
+        },
+        {
+            "name": "onReceive",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 3330,
+            "end_position": 3840,
+            "body_start": 3406,
+            "body_end": 3840
+        },
+        {
+            "name": "registerPowerSaveReceiver",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UploadsStorageManager",
+                    "name": "uploadsStorageManager"
+                },
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "ConnectivityService",
+                    "name": "connectivityService"
+                },
+                {
+                    "type": "PowerManagementService",
+                    "name": "powerManagementService"
+                }
+            ],
+            "start_position": 3987,
+            "end_position": 5219,
+            "body_start": 4306,
+            "body_end": 5219
+        },
+        {
+            "name": "onReceive",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 4578,
+            "end_position": 5078,
+            "body_start": 4654,
+            "body_end": 5078
+        }
+    ],
+    "local_variables": {
+        "context": "Context",
+        "intentFilter": "IntentFilter",
+        "broadcastReceiver": "BroadcastReceiver"
+    },
+    "method_calls": {
+        "MainApp": [
+            "getAppContext"
+        ],
+        "intentFilter": [
+            "addAction"
+        ],
+        "DNSCache": [
+            "clear"
+        ],
+        "walledCheckCache": [
+            "clear"
+        ],
+        "connectivityService.getConnectivity()": [
+            "isConnected"
+        ],
+        "connectivityService": [
+            "getConnectivity"
+        ],
+        "FilesSyncHelper": [
+            "restartUploadsIfNeeded"
+        ],
+        "ContextExtensionsKt": [
+            "registerBroadcastReceiver"
+        ],
+        "Intent.ACTION_POWER_CONNECTED": [
+            "equals"
+        ],
+        "intent": [
+            "getAction"
+        ],
+        "powerManagementService": [
+            "isPowerSavingEnabled"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ]
+}

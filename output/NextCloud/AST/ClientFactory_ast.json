@@ -1,0 +1,99 @@
+{
+    "methods": [
+        {
+            "name": "create",
+            "return_type": "OwnCloudClient",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 1188,
+            "end_position": 1246
+        },
+        {
+            "name": "createNextcloudClient",
+            "return_type": "NextcloudClient",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 1252,
+            "end_position": 1326
+        },
+        {
+            "name": "create",
+            "return_type": "OwnCloudClient",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 1332,
+            "end_position": 1513
+        },
+        {
+            "name": "create",
+            "return_type": "OwnCloudClient",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "Activity",
+                    "name": "currentActivity"
+                }
+            ],
+            "start_position": 1519,
+            "end_position": 1726
+        },
+        {
+            "name": "create",
+            "return_type": "OwnCloudClient",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "boolean",
+                    "name": "followRedirects"
+                },
+                {
+                    "type": "boolean",
+                    "name": "useNextcloudUserAgent"
+                }
+            ],
+            "start_position": 1732,
+            "end_position": 1871
+        },
+        {
+            "name": "create",
+            "return_type": "OwnCloudClient",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                },
+                {
+                    "type": "boolean",
+                    "name": "followRedirects"
+                }
+            ],
+            "start_position": 1877,
+            "end_position": 1933
+        },
+        {
+            "name": "createPlainClient",
+            "return_type": "PlainClient",
+            "parameters": [],
+            "start_position": 1939,
+            "end_position": 1971
+        }
+    ]
+}

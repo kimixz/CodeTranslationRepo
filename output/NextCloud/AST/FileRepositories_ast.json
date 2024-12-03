@@ -1,0 +1,21 @@
+{
+    "methods": [
+        {
+            "name": "getRepository",
+            "return_type": "FilesRepository",
+            "parameters": [
+                {
+                    "type": "FilesServiceApi",
+                    "name": "filesServiceApi"
+                }
+            ],
+            "start_position": 371,
+            "end_position": 536,
+            "body_start": 470,
+            "body_end": 536
+        }
+    ],
+    "code_constructs": [
+        "return_statement"
+    ]
+}

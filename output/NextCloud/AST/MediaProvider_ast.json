@@ -1,0 +1,210 @@
+{
+    "method_calls": {
+        "MediaProvider.class": [
+            "getSimpleName"
+        ],
+        "unknown": [
+            "checkPermissions",
+            "isValidAndExistingFilePath",
+            "isFolderOutsideOfAppPath"
+        ],
+        "PermissionUtil": [
+            "checkExternalStoragePermission",
+            "requestExternalStoragePermission"
+        ],
+        "activity": [
+            "getApplicationContext"
+        ],
+        "ContentResolverHelper": [
+            "queryResolver"
+        ],
+        "MainApp": [
+            "getStoragePath",
+            "getDataFolder"
+        ],
+        "cursorFolders": [
+            "moveToNext",
+            "getString",
+            "getColumnIndexOrThrow",
+            "close"
+        ],
+        "uniqueFolders": [
+            "put",
+            "entrySet"
+        ],
+        "folder": [
+            "getValue",
+            "getKey"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "cursorImages": [
+            "moveToNext",
+            "getString",
+            "getColumnIndexOrThrow",
+            "close"
+        ],
+        "mediaFolder.filePaths": [
+            "add"
+        ],
+        "filePath": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "contentResolver": [
+            "query"
+        ],
+        "count": [
+            "getCount",
+            "close"
+        ],
+        "mediaFolders": [
+            "add"
+        ],
+        "mediaFolder.absolutePath": [
+            "startsWith"
+        ],
+        "new File(filePath)": [
+            "exists"
+        ],
+        "cursorVideos": [
+            "moveToNext",
+            "getString",
+            "getColumnIndexOrThrow",
+            "close"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getImageFolders",
+            "return_type": "List<MediaFolder>",
+            "parameters": [
+                {
+                    "type": "ContentResolver",
+                    "name": "contentResolver"
+                },
+                {
+                    "type": "int",
+                    "name": "itemLimit"
+                },
+                {
+                    "type": "AppCompatActivity",
+                    "name": "activity"
+                },
+                {
+                    "type": "boolean",
+                    "name": "getWithoutActivity"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 2138,
+            "end_position": 6898,
+            "body_start": 2551,
+            "body_end": 6898
+        },
+        {
+            "name": "isFolderOutsideOfAppPath",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "dataPath"
+                },
+                {
+                    "type": "MediaFolder",
+                    "name": "mediaFolder"
+                }
+            ],
+            "start_position": 6904,
+            "end_position": 7100,
+            "body_start": 6994,
+            "body_end": 7100
+        },
+        {
+            "name": "isValidAndExistingFilePath",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filePath"
+                }
+            ],
+            "start_position": 7106,
+            "end_position": 7277,
+            "body_start": 7173,
+            "body_end": 7277
+        },
+        {
+            "name": "checkPermissions",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AppCompatActivity",
+                    "name": "activity"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 7283,
+            "end_position": 7674,
+            "body_start": 7436,
+            "body_end": 7674
+        },
+        {
+            "name": "getVideoFolders",
+            "return_type": "List<MediaFolder>",
+            "parameters": [
+                {
+                    "type": "ContentResolver",
+                    "name": "contentResolver"
+                },
+                {
+                    "type": "int",
+                    "name": "itemLimit"
+                },
+                {
+                    "type": "AppCompatActivity",
+                    "name": "activity"
+                },
+                {
+                    "type": "boolean",
+                    "name": "getWithoutActivity"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 7680,
+            "end_position": 12347,
+            "body_start": 8093,
+            "body_end": 12347
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "while_statement",
+        "enhanced_for_statement",
+        "return_statement"
+    ],
+    "local_variables": {
+        "cursorFolders": "Cursor",
+        "mediaFolders": "List<MediaFolder>",
+        "dataPath": "String",
+        "cursorImages": "Cursor",
+        "uniqueFolders": "Map<String, String>",
+        "mediaFolder": "MediaFolder",
+        "filePath": "String",
+        "imageCount": "int",
+        "count": "Cursor",
+        "cursorVideos": "Cursor",
+        "videoCount": "int"
+    }
+}

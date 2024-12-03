@@ -1,0 +1,20 @@
+[
+    {
+        "method_name": "onCreate",
+        "method_code": "@Override\n    public void onCreate() {\n        super.onCreate();\n        AndroidInjection.inject(this);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onCreate from AccountManagerService.java into Swift.\n\n        Input:\n\n        Method Name: onCreate\n\n        Method Code: @Override\n    public void onCreate() {\n        super.onCreate();\n        AndroidInjection.inject(this);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onCreate() {\n    super.onCreate()\n    AndroidInjection.inject(self)\n}\n```"
+    },
+    {
+        "method_name": "onBind",
+        "method_code": "@Override\n    public IBinder onBind(Intent intent) {\n        if(mBinder == null) {\n            mBinder = new InputStreamBinder(getApplicationContext(), accountManager);\n        }\n        return mBinder;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onBind from AccountManagerService.java into Swift.\n\n        Input:\n\n        Method Name: onBind\n\n        Method Code: @Override\n    public IBinder onBind(Intent intent) {\n        if(mBinder == null) {\n            mBinder = new InputStreamBinder(getApplicationContext(), accountManager);\n        }\n        return mBinder;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onBind(intent: Intent) -> IBinder? {\n    if mBinder == nil {\n        mBinder = InputStreamBinder(context: getApplicationContext(), accountManager: accountManager)\n    }\n    return mBinder\n}\n```"
+    },
+    {
+        "method_name": "onUnbind",
+        "method_code": "@Override\n    public boolean onUnbind(Intent intent) {\n        return super.onUnbind(intent);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onUnbind from AccountManagerService.java into Swift.\n\n        Input:\n\n        Method Name: onUnbind\n\n        Method Code: @Override\n    public boolean onUnbind(Intent intent) {\n        return super.onUnbind(intent);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func onUnbind(intent: Intent) -> Bool {\n    return super.onUnbind(intent)\n}\n```"
+    }
+]

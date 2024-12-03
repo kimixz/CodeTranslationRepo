@@ -1,0 +1,568 @@
+{
+    "method_calls": {
+        "UserInfoActivity.class": [
+            "getSimpleName"
+        ],
+        "Log_OC": [
+            "v",
+            "e",
+            "d"
+        ],
+        "super": [
+            "onCreate",
+            "onPrepareOptionsMenu",
+            "onOptionsItemSelected",
+            "onSaveInstanceState"
+        ],
+        "getIntent()": [
+            "getExtras"
+        ],
+        "unknown": [
+            "getIntent",
+            "finish",
+            "getResources",
+            "getLayoutInflater",
+            "setContentView",
+            "setupToolbar",
+            "getSupportActionBar",
+            "populateUserInfoUi",
+            "setMultiListLoadingMessage",
+            "fetchAndSetData",
+            "setHeaderImage",
+            "getMenuInflater",
+            "onBackPressed",
+            "accountClicked",
+            "openAccountRemovalDialog",
+            "getSupportFragmentManager",
+            "getStorageManager",
+            "findViewById",
+            "setErrorMessageForMultiList",
+            "getString",
+            "createUserInfoDetails",
+            "addToListIfNeeded",
+            "getLifecycle",
+            "runOnUiThread",
+            "getUserAccountManager",
+            "notifyDataSetChanged"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "savedInstanceState": [
+            "containsKey"
+        ],
+        "bundle": [
+            "containsKey"
+        ],
+        "getResources()": [
+            "getDimension",
+            "getString"
+        ],
+        "UserInfoLayoutBinding": [
+            "inflate"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "actionBar": [
+            "setDisplayHomeAsUpEnabled",
+            "setDisplayShowHomeEnabled"
+        ],
+        "viewThemeUtils.files": [
+            "themeActionBar"
+        ],
+        "binding.userinfoList": [
+            "setAdapter",
+            "setVisibility",
+            "getAdapter"
+        ],
+        "accountManager.getUser()": [
+            "equals"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "menu.findItem(R.id.action_open_account)": [
+            "setVisible"
+        ],
+        "menu": [
+            "findItem"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "item": [
+            "getItemId"
+        ],
+        "user": [
+            "hashCode",
+            "getAccountName"
+        ],
+        "binding.emptyList.emptyListView": [
+            "setVisibility"
+        ],
+        "binding.emptyList.emptyListViewHeadline": [
+            "setText"
+        ],
+        "binding.emptyList.emptyListViewText": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.emptyList.emptyListIcon": [
+            "setImageResource",
+            "setVisibility"
+        ],
+        "binding.loadingContent": [
+            "setVisibility"
+        ],
+        "getStorageManager().getCapability(user.getAccountName())": [
+            "getServerBackground"
+        ],
+        "getStorageManager()": [
+            "getCapability"
+        ],
+        "URLUtil": [
+            "isValidUrl"
+        ],
+        "viewThemeUtils.platform": [
+            "getPrimaryColorDrawable",
+            "colorImageView"
+        ],
+        "backgroundImageView": [
+            "getContext",
+            "setImageDrawable"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "Glide.with(this)\n                            .load(background)\n                            .centerCrop()\n                            .placeholder(R.drawable.background)\n                            .error(R.drawable.background)\n                            .crossFade()": [
+            "into"
+        ],
+        "Glide.with(this)\n                            .load(background)\n                            .centerCrop()\n                            .placeholder(R.drawable.background)\n                            .error(R.drawable.background)": [
+            "crossFade"
+        ],
+        "Glide.with(this)\n                            .load(background)\n                            .centerCrop()\n                            .placeholder(R.drawable.background)": [
+            "error"
+        ],
+        "Glide.with(this)\n                            .load(background)\n                            .centerCrop()": [
+            "placeholder"
+        ],
+        "Glide.with(this)\n                            .load(background)": [
+            "centerCrop"
+        ],
+        "Glide.with(this)": [
+            "load"
+        ],
+        "Glide": [
+            "with"
+        ],
+        "binding.userinfoUsername": [
+            "setText"
+        ],
+        "binding.userinfoIcon": [
+            "setTag"
+        ],
+        "DisplayUtils": [
+            "setAvatar",
+            "beautifyURL",
+            "beautifyTwitterHandle"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "userInfo": [
+            "getDisplayName",
+            "getPhone",
+            "getEmail",
+            "getAddress",
+            "getTwitter",
+            "getWebsite"
+        ],
+        "binding.userinfoFullName": [
+            "setText"
+        ],
+        "info": [
+            "add"
+        ],
+        "AccountRemovalDialog": [
+            "newInstance"
+        ],
+        "dialog": [
+            "show"
+        ],
+        "OwnCloudClientFactory": [
+            "createNextcloudClient"
+        ],
+        "new GetUserInfoRemoteOperation()": [
+            "execute"
+        ],
+        "getLifecycle().getCurrentState()": [
+            "isAtLeast"
+        ],
+        "getLifecycle()": [
+            "getCurrentState"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultData",
+            "getLogMessage"
+        ],
+        "t": [
+            "start"
+        ],
+        "outState": [
+            "putParcelable"
+        ],
+        "PushUtils": [
+            "pushRegistrationToServer"
+        ],
+        "preferences": [
+            "getPushToken"
+        ],
+        "UserInfoDetailsTableItemBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "parent": [
+            "getContext"
+        ],
+        "mDisplayList": [
+            "get",
+            "size"
+        ],
+        "holder.binding.icon": [
+            "setImageResource",
+            "setContentDescription"
+        ],
+        "holder.binding.text": [
+            "setText"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 3170,
+            "end_position": 4887,
+            "body_start": 3232,
+            "body_end": 4887
+        },
+        {
+            "name": "onPrepareOptionsMenu",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 4893,
+            "end_position": 5144,
+            "body_start": 4954,
+            "body_end": 5144
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 5150,
+            "end_position": 5343,
+            "body_start": 5210,
+            "body_end": 5343
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 5349,
+            "end_position": 5906,
+            "body_start": 5415,
+            "body_end": 5906
+        },
+        {
+            "name": "setMultiListLoadingMessage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5912,
+            "end_position": 6082,
+            "body_start": 5954,
+            "body_end": 6082
+        },
+        {
+            "name": "setErrorMessageForMultiList",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "headline"
+                },
+                {
+                    "type": "String",
+                    "name": "message"
+                },
+                {
+                    "type": "int",
+                    "name": "errorResource"
+                }
+            ],
+            "start_position": 6088,
+            "end_position": 6658,
+            "body_start": 6194,
+            "body_end": 6658
+        },
+        {
+            "name": "setHeaderImage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6664,
+            "end_position": 9100,
+            "body_start": 6694,
+            "body_end": 9100
+        },
+        {
+            "name": "onResourceReady",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "resource"
+                },
+                {
+                    "type": "GlideAnimation",
+                    "name": "glideAnimation"
+                }
+            ],
+            "start_position": 7239,
+            "end_position": 7758,
+            "body_start": 7351,
+            "body_end": 7758
+        },
+        {
+            "name": "onLoadFailed",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Exception",
+                    "name": "e"
+                },
+                {
+                    "type": "Drawable",
+                    "name": "errorDrawable"
+                }
+            ],
+            "start_position": 7784,
+            "end_position": 8471,
+            "body_start": 7880,
+            "body_end": 8471
+        },
+        {
+            "name": "populateUserInfoUi",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "UserInfo",
+                    "name": "userInfo"
+                }
+            ],
+            "start_position": 9106,
+            "end_position": 10852,
+            "body_start": 9157,
+            "body_end": 10852
+        },
+        {
+            "name": "createUserInfoDetails",
+            "return_type": "List<UserInfoDetailsItem>",
+            "parameters": [
+                {
+                    "type": "UserInfo",
+                    "name": "userInfo"
+                }
+            ],
+            "start_position": 10858,
+            "end_position": 11662,
+            "body_start": 10933,
+            "body_end": 11662
+        },
+        {
+            "name": "addToListIfNeeded",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<UserInfoDetailsItem>",
+                    "name": "info"
+                },
+                {
+                    "type": "int",
+                    "name": "icon"
+                },
+                {
+                    "type": "String",
+                    "name": "text"
+                },
+                {
+                    "type": "int",
+                    "name": "contentDescriptionInt"
+                }
+            ],
+            "start_position": 11668,
+            "end_position": 12005,
+            "body_start": 11840,
+            "body_end": 12005
+        },
+        {
+            "name": "openAccountRemovalDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "FragmentManager",
+                    "name": "fragmentManager"
+                }
+            ],
+            "start_position": 12011,
+            "end_position": 12232,
+            "body_start": 12099,
+            "body_end": 12232
+        },
+        {
+            "name": "fetchAndSetData",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12240,
+            "end_position": 13589,
+            "body_start": 12271,
+            "body_end": 13589
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 13595,
+            "end_position": 13825,
+            "body_start": 13670,
+            "body_end": 13825
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "TokenPushEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 13831,
+            "end_position": 14035,
+            "body_start": 13931,
+            "body_end": 14035
+        },
+        {
+            "name": "setData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<UserInfoDetailsItem>",
+                    "name": "displayList"
+                }
+            ],
+            "start_position": 15229,
+            "end_position": 15418,
+            "body_start": 15288,
+            "body_end": 15418
+        },
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "ViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 15428,
+            "end_position": 15776,
+            "body_start": 15541,
+            "body_end": 15776
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 15786,
+            "end_position": 16223,
+            "body_start": 15875,
+            "body_end": 16223
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 16233,
+            "end_position": 16328,
+            "body_start": 16277,
+            "body_end": 16328
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "try_statement"
+    ],
+    "local_variables": {
+        "bundle": "Bundle",
+        "actionBar": "ActionBar",
+        "inflater": "MenuInflater",
+        "retval": "boolean",
+        "itemId": "int",
+        "backgroundImageView": "ImageView",
+        "background": "String",
+        "target": "SimpleTarget",
+        "drawables": "Drawable[]",
+        "layerDrawable": "LayerDrawable",
+        "result": "RemoteOperationResult<UserInfo>",
+        "dialog": "AccountRemovalDialog",
+        "t": "Thread",
+        "nextcloudClient": "NextcloudClient",
+        "item": "UserInfoDetailsItem"
+    }
+}

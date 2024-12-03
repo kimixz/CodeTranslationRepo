@@ -1,0 +1,181 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "updateCertificateView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 1159,
+            "end_position": 1671,
+            "body_start": 1255,
+            "body_end": 1671
+        },
+        {
+            "name": "showValidity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Date",
+                    "name": "notBefore"
+                },
+                {
+                    "type": "Date",
+                    "name": "notAfter"
+                },
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 1677,
+            "end_position": 1994,
+            "body_start": 1782,
+            "body_end": 1994
+        },
+        {
+            "name": "showSubject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SslCertificate.DName",
+                    "name": "subject"
+                },
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 2001,
+            "end_position": 2867,
+            "body_start": 2104,
+            "body_end": 2867
+        },
+        {
+            "name": "showIssuer",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SslCertificate.DName",
+                    "name": "issuer"
+                },
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 2873,
+            "end_position": 3722,
+            "body_start": 2974,
+            "body_end": 3722
+        }
+    ],
+    "method_calls": {
+        "binding.nullCert": [
+            "setVisibility"
+        ],
+        "unknown": [
+            "showSubject",
+            "showIssuer",
+            "showValidity"
+        ],
+        "mCertificate": [
+            "getIssuedTo",
+            "getIssuedBy",
+            "getValidNotBeforeDate",
+            "getValidNotAfterDate"
+        ],
+        "DateFormat": [
+            "getDateInstance"
+        ],
+        "binding.valueValidityFrom": [
+            "setText"
+        ],
+        "dateFormat": [
+            "format"
+        ],
+        "binding.valueValidityTo": [
+            "setText"
+        ],
+        "binding.valueSubjectCN": [
+            "setText",
+            "setVisibility"
+        ],
+        "subject": [
+            "getCName",
+            "getOName",
+            "getUName"
+        ],
+        "binding.valueSubjectO": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueSubjectOU": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueSubjectC": [
+            "setVisibility"
+        ],
+        "binding.valueSubjectST": [
+            "setVisibility"
+        ],
+        "binding.valueSubjectL": [
+            "setVisibility"
+        ],
+        "binding.labelSubjectC": [
+            "setVisibility"
+        ],
+        "binding.labelSubjectST": [
+            "setVisibility"
+        ],
+        "binding.labelSubjectL": [
+            "setVisibility"
+        ],
+        "binding.valueIssuerCN": [
+            "setText",
+            "setVisibility"
+        ],
+        "issuer": [
+            "getCName",
+            "getOName",
+            "getUName"
+        ],
+        "binding.valueIssuerO": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueIssuerOU": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueIssuerC": [
+            "setVisibility"
+        ],
+        "binding.valueIssuerST": [
+            "setVisibility"
+        ],
+        "binding.valueIssuerL": [
+            "setVisibility"
+        ],
+        "binding.labelIssuerC": [
+            "setVisibility"
+        ],
+        "binding.labelIssuerST": [
+            "setVisibility"
+        ],
+        "binding.labelIssuerL": [
+            "setVisibility"
+        ]
+    },
+    "local_variables": {
+        "dateFormat": "DateFormat"
+    }
+}

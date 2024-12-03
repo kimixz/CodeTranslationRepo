@@ -1,0 +1,32 @@
+[
+    {
+        "method_name": "getFileDownloadProgressListener",
+        "method_code": "ublic FileDownloadWorker.FileDownloadProgressListener getFileDownloadProgressListener();\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFileDownloadProgressListener from ComponentsGetter.java into Swift.\n\n        Input:\n\n        Method Name: getFileDownloadProgressListener\n\n        Method Code: ublic FileDownloadWorker.FileDownloadProgressListener getFileDownloadProgressListener();\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFileDownloadProgressListener() -> FileDownloadWorker.FileDownloadProgressListener\n```"
+    },
+    {
+        "method_name": "getFileUploaderHelper",
+        "method_code": "ublic FileUploadHelper getFileUploaderHelper();\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFileUploaderHelper from ComponentsGetter.java into Swift.\n\n        Input:\n\n        Method Name: getFileUploaderHelper\n\n        Method Code: ublic FileUploadHelper getFileUploaderHelper();\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFileUploaderHelper() -> FileUploadHelper {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "getOperationsServiceBinder",
+        "method_code": "ublic OperationsServiceBinder getOperationsServiceBinder();\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getOperationsServiceBinder from ComponentsGetter.java into Swift.\n\n        Input:\n\n        Method Name: getOperationsServiceBinder\n\n        Method Code: ublic OperationsServiceBinder getOperationsServiceBinder();\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getOperationsServiceBinder() -> OperationsServiceBinder\n```"
+    },
+    {
+        "method_name": "getStorageManager",
+        "method_code": "ublic FileDataStorageManager getStorageManager();\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getStorageManager from ComponentsGetter.java into Swift.\n\n        Input:\n\n        Method Name: getStorageManager\n\n        Method Code: ublic FileDataStorageManager getStorageManager();\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getStorageManager() -> FileDataStorageManager {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "getFileOperationsHelper",
+        "method_code": "ublic FileOperationsHelper getFileOperationsHelper();\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFileOperationsHelper from ComponentsGetter.java into Swift.\n\n        Input:\n\n        Method Name: getFileOperationsHelper\n\n        Method Code: ublic FileOperationsHelper getFileOperationsHelper();\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFileOperationsHelper() -> FileOperationsHelper {\n    // Implementation goes here\n}\n```"
+    }
+]

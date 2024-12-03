@@ -1,0 +1,21 @@
+{
+    "methods": [
+        {
+            "name": "openDrawer",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 886,
+            "end_position": 988,
+            "body_start": 941,
+            "body_end": 988
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "openDrawer"
+        ]
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "onTransferProgress",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "progressRate"
+                },
+                {
+                    "type": "long",
+                    "name": "totalTransferredSoFar"
+                },
+                {
+                    "type": "long",
+                    "name": "totalToTransfer"
+                },
+                {
+                    "type": "String",
+                    "name": "fileAbsoluteName"
+                }
+            ],
+            "start_position": 822,
+            "end_position": 1408,
+            "body_start": 1010,
+            "body_end": 1408
+        },
+        {
+            "name": "isWrapping",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ProgressBar",
+                    "name": "progressBar"
+                }
+            ],
+            "start_position": 1414,
+            "end_position": 1654,
+            "body_start": 1465,
+            "body_end": 1654
+        },
+        {
+            "name": "getUpload",
+            "return_type": "OCUpload",
+            "parameters": [],
+            "start_position": 1660,
+            "end_position": 1719,
+            "body_start": 1688,
+            "body_end": 1719
+        }
+    ],
+    "local_variables": {
+        "percent": "int",
+        "progressBar": "ProgressBar",
+        "wrappedProgressBar": "ProgressBar"
+    },
+    "method_calls": {
+        "mProgressBar": [
+            "get"
+        ],
+        "progressBar": [
+            "setProgress",
+            "postInvalidate"
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "method_name": "onCreateViewHolder",
+        "method_code": "@NonNull\n    @Override\n    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\n        return new ViewHolder(SendButtonBinding.inflate(LayoutInflater.from(parent.getContext()), parent,\n                                                                                                 false), clickListener);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onCreateViewHolder from SendButtonAdapter.java into Swift.\n\n        Input:\n\n        Method Name: onCreateViewHolder\n\n        Method Code: @NonNull\n    @Override\n    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\n        return new ViewHolder(SendButtonBinding.inflate(LayoutInflater.from(parent.getContext()), parent,\n                                                                                                 false), clickListener);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {\n    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: \"SendButtonCell\", for: indexPath) as! ViewHolder\n    cell.bind(clickListener: clickListener)\n    return cell\n}\n```"
+    },
+    {
+        "method_name": "onBindViewHolder",
+        "method_code": "@Override\n    public void onBindViewHolder(ViewHolder holder, int position) {\n        holder.bind(sendButtonDataList.get(position));\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onBindViewHolder from SendButtonAdapter.java into Swift.\n\n        Input:\n\n        Method Name: onBindViewHolder\n\n        Method Code: @Override\n    public void onBindViewHolder(ViewHolder holder, int position) {\n        holder.bind(sendButtonDataList.get(position));\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {\n    let cell = tableView.dequeueReusableCell(withIdentifier: \"CellIdentifier\", for: indexPath) as! ViewHolder\n    cell.bind(sendButtonDataList[indexPath.row])\n    return cell\n}\n```"
+    },
+    {
+        "method_name": "getItemCount",
+        "method_code": "@Override\n    public int getItemCount() {\n        return sendButtonDataList.size();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getItemCount from SendButtonAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getItemCount\n\n        Method Code: @Override\n    public int getItemCount() {\n        return sendButtonDataList.size();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getItemCount() -> Int {\n    return sendButtonDataList.count\n}\n```"
+    },
+    {
+        "method_name": "bind",
+        "method_code": "public void bind(SendButtonData item) {\n            sendButtonDataData = item;\n            binding.sendButtonIcon.setImageDrawable(item.getDrawable());\n            binding.sendButtonText.setText(item.getTitle());\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled bind from SendButtonAdapter.java into Swift.\n\n        Input:\n\n        Method Name: bind\n\n        Method Code: public void bind(SendButtonData item) {\n            sendButtonDataData = item;\n            binding.sendButtonIcon.setImageDrawable(item.getDrawable());\n            binding.sendButtonText.setText(item.getTitle());\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc bind(item: SendButtonData) {\n    sendButtonDataData = item\n    binding.sendButtonIcon.image = item.getDrawable()\n    binding.sendButtonText.text = item.getTitle()\n}\n```"
+    },
+    {
+        "method_name": "onClick",
+        "method_code": "@Override\n        public void onClick(View v) {\n            if (clickListener != null) {\n                clickListener.onClick(sendButtonDataData);\n            }\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onClick from SendButtonAdapter.java into Swift.\n\n        Input:\n\n        Method Name: onClick\n\n        Method Code: @Override\n        public void onClick(View v) {\n            if (clickListener != null) {\n                clickListener.onClick(sendButtonDataData);\n            }\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\n@objc func onClick(_ sender: UIButton) {\n    clickListener?.onClick(sendButtonDataData)\n}\n```"
+    },
+    {
+        "method_name": "onClick",
+        "method_code": "void onClick(SendButtonData sendButtonDataData);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onClick from SendButtonAdapter.java into Swift.\n\n        Input:\n\n        Method Name: onClick\n\n        Method Code: void onClick(SendButtonData sendButtonDataData);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onClick(sendButtonDataData: SendButtonData) {\n    // Method implementation goes here\n}\n```"
+    }
+]

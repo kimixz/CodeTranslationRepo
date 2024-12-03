@@ -1,0 +1,138 @@
+{
+    "methods": [
+        {
+            "name": "setUp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1529,
+            "end_position": 1783,
+            "body_start": 1565,
+            "body_end": 1783
+        },
+        {
+            "name": "canRemoveListenersFromCallback",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1793,
+            "end_position": 3152,
+            "body_start": 1852,
+            "body_end": 3152
+        },
+        {
+            "name": "nullsAreNotAddedToRegistry",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3162,
+            "end_position": 3653,
+            "body_start": 3217,
+            "body_end": 3653
+        },
+        {
+            "name": "nullsAreNotRemovedFromRegistry",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3663,
+            "end_position": 3974,
+            "body_start": 3722,
+            "body_end": 3974
+        },
+        {
+            "name": "setUp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4334,
+            "end_position": 4662,
+            "body_start": 4370,
+            "body_end": 4662
+        },
+        {
+            "name": "removeLegacyPreferences",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4672,
+            "end_position": 5756,
+            "body_start": 4724,
+            "body_end": 5756
+        },
+        {
+            "name": "testBruteForceDelay",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5766,
+            "end_position": 6471,
+            "body_start": 5814,
+            "body_end": 6471
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "MockitoAnnotations": [
+            "initMocks"
+        ],
+        "when(appPreferences.getDarkThemeMode())": [
+            "thenReturn"
+        ],
+        "unknown": [
+            "when",
+            "doAnswer",
+            "verify",
+            "times",
+            "anyString",
+            "inOrder",
+            "assertEquals"
+        ],
+        "appPreferences": [
+            "getDarkThemeMode",
+            "removeLegacyPreferences",
+            "computeBruteForceDelay"
+        ],
+        "registry": [
+            "add",
+            "remove",
+            "onSharedPreferenceChanged"
+        ],
+        "doAnswer((i) -> {\n                registry.remove(listener2);\n                registry.remove(listener3);\n                return null;\n            }).when(listener2)": [
+            "onDarkThemeModeChanged"
+        ],
+        "doAnswer((i) -> {\n                registry.remove(listener2);\n                registry.remove(listener3);\n                return null;\n            })": [
+            "when"
+        ],
+        "verify(listener1, times(2))": [
+            "onDarkThemeModeChanged"
+        ],
+        "verify(listener2)": [
+            "onDarkThemeModeChanged"
+        ],
+        "verify(listener3)": [
+            "onDarkThemeModeChanged"
+        ],
+        "verify(listener4, times(2))": [
+            "onDarkThemeModeChanged"
+        ],
+        "when(editor.remove(anyString()))": [
+            "thenReturn"
+        ],
+        "editor": [
+            "remove"
+        ],
+        "when(sharedPreferences.edit())": [
+            "thenReturn"
+        ],
+        "sharedPreferences": [
+            "edit"
+        ],
+        "inOrder.verify(editor)": [
+            "remove",
+            "apply"
+        ],
+        "inOrder": [
+            "verify"
+        ]
+    },
+    "local_variables": {
+        "inOrder": "InOrder"
+    }
+}

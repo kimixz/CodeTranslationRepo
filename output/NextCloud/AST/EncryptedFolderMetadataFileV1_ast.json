@@ -1,0 +1,141 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getMetadata",
+            "return_type": "DecryptedMetadata",
+            "parameters": [],
+            "start_position": 1032,
+            "end_position": 1108,
+            "body_start": 1071,
+            "body_end": 1108
+        },
+        {
+            "name": "getFiles",
+            "return_type": "Map<String, EncryptedFile>",
+            "parameters": [],
+            "start_position": 1114,
+            "end_position": 1188,
+            "body_start": 1159,
+            "body_end": 1188
+        },
+        {
+            "name": "getFiledrop",
+            "return_type": "Map<String, EncryptedFiledrop>",
+            "parameters": [],
+            "start_position": 1194,
+            "end_position": 1278,
+            "body_start": 1246,
+            "body_end": 1278
+        },
+        {
+            "name": "setMetadata",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DecryptedMetadata",
+                    "name": "metadata"
+                }
+            ],
+            "start_position": 1284,
+            "end_position": 1377,
+            "body_start": 1336,
+            "body_end": 1377
+        },
+        {
+            "name": "setFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Map<String, EncryptedFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 1383,
+            "end_position": 1473,
+            "body_start": 1438,
+            "body_end": 1473
+        },
+        {
+            "name": "getEncrypted",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1688,
+            "end_position": 1758,
+            "body_start": 1717,
+            "body_end": 1758
+        },
+        {
+            "name": "getInitializationVector",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1768,
+            "end_position": 1860,
+            "body_start": 1808,
+            "body_end": 1860
+        },
+        {
+            "name": "getAuthenticationTag",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1870,
+            "end_position": 1956,
+            "body_start": 1907,
+            "body_end": 1956
+        },
+        {
+            "name": "getMetadataKey",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 1966,
+            "end_position": 2037,
+            "body_start": 1994,
+            "body_end": 2037
+        },
+        {
+            "name": "setEncrypted",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "encrypted"
+                }
+            ],
+            "start_position": 2047,
+            "end_position": 2141,
+            "body_start": 2090,
+            "body_end": 2141
+        },
+        {
+            "name": "setInitializationVector",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "initializationVector"
+                }
+            ],
+            "start_position": 2151,
+            "end_position": 2289,
+            "body_start": 2216,
+            "body_end": 2289
+        },
+        {
+            "name": "setAuthenticationTag",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "authenticationTag"
+                }
+            ],
+            "start_position": 2299,
+            "end_position": 2425,
+            "body_start": 2358,
+            "body_end": 2425
+        }
+    ]
+}

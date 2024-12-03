@@ -1,0 +1,250 @@
+{
+    "methods": [
+        {
+            "name": "setupHideFileDownload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "menuItem"
+                },
+                {
+                    "type": "boolean",
+                    "name": "hideFileDownload"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isFileDrop"
+                }
+            ],
+            "start_position": 1433,
+            "end_position": 1819,
+            "body_start": 1629,
+            "body_end": 1819
+        },
+        {
+            "name": "setupPasswordMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "password"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isPasswordProtected"
+                }
+            ],
+            "start_position": 2073,
+            "end_position": 2358,
+            "body_start": 2162,
+            "body_end": 2358
+        },
+        {
+            "name": "setupExpirationDateMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "expirationDate"
+                },
+                {
+                    "type": "long",
+                    "name": "expirationDateValue"
+                },
+                {
+                    "type": "Resources",
+                    "name": "res"
+                }
+            ],
+            "start_position": 2703,
+            "end_position": 3214,
+            "body_start": 2816,
+            "body_end": 3214
+        },
+        {
+            "name": "isUploadAndEditingAllowed",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 3220,
+            "end_position": 3618,
+            "body_start": 3283,
+            "body_end": 3618
+        },
+        {
+            "name": "isReadOnly",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 3624,
+            "end_position": 3861,
+            "body_start": 3672,
+            "body_end": 3861
+        },
+        {
+            "name": "isFileDrop",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 3867,
+            "end_position": 4106,
+            "body_start": 3915,
+            "body_end": 4106
+        },
+        {
+            "name": "isSecureFileDrop",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 4112,
+            "end_position": 4380,
+            "body_start": 4166,
+            "body_end": 4380
+        },
+        {
+            "name": "getPermissionName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 4386,
+            "end_position": 5107,
+            "body_start": 4457,
+            "body_end": 5107
+        },
+        {
+            "name": "getPermissionCheckedItem",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "String[]",
+                    "name": "permissionArray"
+                }
+            ],
+            "start_position": 5212,
+            "end_position": 6071,
+            "body_start": 5313,
+            "body_end": 6071
+        },
+        {
+            "name": "getPermissionIndexFromArray",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "String[]",
+                    "name": "permissionArray"
+                },
+                {
+                    "type": "int",
+                    "name": "permissionName"
+                }
+            ],
+            "start_position": 6077,
+            "end_position": 6426,
+            "body_start": 6187,
+            "body_end": 6426
+        },
+        {
+            "name": "canReshare",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 6432,
+            "end_position": 6556,
+            "body_start": 6480,
+            "body_end": 6556
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement",
+        "for_statement"
+    ],
+    "method_calls": {
+        "menuItem": [
+            "setVisible",
+            "setChecked"
+        ],
+        "password": [
+            "setTitle"
+        ],
+        "expirationDate": [
+            "setTitle"
+        ],
+        "res": [
+            "getString"
+        ],
+        "SimpleDateFormat.getDateInstance()": [
+            "format"
+        ],
+        "SimpleDateFormat": [
+            "getDateInstance"
+        ],
+        "share": [
+            "getPermissions",
+            "isFolder"
+        ],
+        "SharingMenuHelper": [
+            "isUploadAndEditingAllowed",
+            "isReadOnly",
+            "isSecureFileDrop",
+            "isFileDrop"
+        ],
+        "context.getResources()": [
+            "getString"
+        ],
+        "context": [
+            "getResources"
+        ],
+        "unknown": [
+            "getPermissionIndexFromArray"
+        ],
+        "permissionArray[i]": [
+            "equalsIgnoreCase"
+        ]
+    },
+    "local_variables": {
+        "i": "int"
+    }
+}

@@ -1,0 +1,331 @@
+{
+    "method_calls": {
+        "AccountAuthenticator.class": [
+            "getSimpleName"
+        ],
+        "Log_OC": [
+            "i",
+            "e"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "accountManager": [
+            "getAccountsByType"
+        ],
+        "MainApp": [
+            "getAccountType"
+        ],
+        "MDMConfig.INSTANCE": [
+            "multiAccountSupport"
+        ],
+        "unknown": [
+            "validateAccountType",
+            "setIntentFlags",
+            "validateAuthTokenType"
+        ],
+        "e": [
+            "getMessage",
+            "getFailureBundle"
+        ],
+        "intent": [
+            "putExtra",
+            "addFlags"
+        ],
+        "bundle": [
+            "putParcelable",
+            "putInt",
+            "putString"
+        ],
+        "String": [
+            "format"
+        ],
+        "mContext": [
+            "getString"
+        ],
+        "mHandler": [
+            "post"
+        ],
+        "Toast.makeText(mContext, message, Toast.LENGTH_SHORT)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "resultBundle": [
+            "putParcelable"
+        ],
+        "authTokenType": [
+            "equals"
+        ],
+        "AccountTypeUtils": [
+            "getAuthTokenTypePass"
+        ],
+        "am": [
+            "getPassword",
+            "peekAuthToken"
+        ],
+        "result": [
+            "putString",
+            "putBoolean"
+        ],
+        "super": [
+            "getAccountRemovalAllowed"
+        ],
+        "type": [
+            "equals"
+        ],
+        "mFailureBundle": [
+            "putInt",
+            "putString"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "try_statement",
+        "return_statement",
+        "throw_statement"
+    ],
+    "methods": [
+        {
+            "name": "addAccount",
+            "return_type": "Bundle",
+            "parameters": [
+                {
+                    "type": "AccountAuthenticatorResponse",
+                    "name": "response"
+                },
+                {
+                    "type": "String",
+                    "name": "accountType"
+                },
+                {
+                    "type": "String",
+                    "name": "authTokenType"
+                },
+                {
+                    "type": "String[]",
+                    "name": "requiredFeatures"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "options"
+                }
+            ],
+            "start_position": 2233,
+            "end_position": 4251,
+            "body_start": 2454,
+            "body_end": 4251
+        },
+        {
+            "name": "confirmCredentials",
+            "return_type": "Bundle",
+            "parameters": [
+                {
+                    "type": "AccountAuthenticatorResponse",
+                    "name": "response"
+                },
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "options"
+                }
+            ],
+            "start_position": 4294,
+            "end_position": 5175,
+            "body_start": 4450,
+            "body_end": 5175
+        },
+        {
+            "name": "editProperties",
+            "return_type": "Bundle",
+            "parameters": [
+                {
+                    "type": "AccountAuthenticatorResponse",
+                    "name": "response"
+                },
+                {
+                    "type": "String",
+                    "name": "accountType"
+                }
+            ],
+            "start_position": 5181,
+            "end_position": 5311,
+            "body_start": 5283,
+            "body_end": 5311
+        },
+        {
+            "name": "getAuthToken",
+            "return_type": "Bundle",
+            "parameters": [
+                {
+                    "type": "AccountAuthenticatorResponse",
+                    "name": "response"
+                },
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "String",
+                    "name": "authTokenType"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "options"
+                }
+            ],
+            "start_position": 5354,
+            "end_position": 7338,
+            "body_start": 5520,
+            "body_end": 7338
+        },
+        {
+            "name": "getAuthTokenLabel",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "authTokenType"
+                }
+            ],
+            "start_position": 7344,
+            "end_position": 7440,
+            "body_start": 7412,
+            "body_end": 7440
+        },
+        {
+            "name": "hasFeatures",
+            "return_type": "Bundle",
+            "parameters": [
+                {
+                    "type": "AccountAuthenticatorResponse",
+                    "name": "response"
+                },
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "String[]",
+                    "name": "features"
+                }
+            ],
+            "start_position": 7446,
+            "end_position": 7733,
+            "body_start": 7591,
+            "body_end": 7733
+        },
+        {
+            "name": "updateCredentials",
+            "return_type": "Bundle",
+            "parameters": [
+                {
+                    "type": "AccountAuthenticatorResponse",
+                    "name": "response"
+                },
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "String",
+                    "name": "authTokenType"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "options"
+                }
+            ],
+            "start_position": 7739,
+            "end_position": 8410,
+            "body_start": 7915,
+            "body_end": 8410
+        },
+        {
+            "name": "getAccountRemovalAllowed",
+            "return_type": "Bundle",
+            "parameters": [
+                {
+                    "type": "AccountAuthenticatorResponse",
+                    "name": "response"
+                },
+                {
+                    "type": "Account",
+                    "name": "account"
+                }
+            ],
+            "start_position": 8416,
+            "end_position": 8639,
+            "body_start": 8566,
+            "body_end": 8639
+        },
+        {
+            "name": "setIntentFlags",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 8645,
+            "end_position": 8873,
+            "body_start": 8688,
+            "body_end": 8873
+        },
+        {
+            "name": "validateAccountType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "type"
+                }
+            ],
+            "start_position": 8879,
+            "end_position": 9100,
+            "body_start": 8964,
+            "body_end": 9100
+        },
+        {
+            "name": "validateAuthTokenType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "authTokenType"
+                }
+            ],
+            "start_position": 9106,
+            "end_position": 9483,
+            "body_start": 9204,
+            "body_end": 9483
+        },
+        {
+            "name": "getFailureBundle",
+            "return_type": "Bundle",
+            "parameters": [],
+            "start_position": 9932,
+            "end_position": 10011,
+            "body_start": 9965,
+            "body_end": 10011
+        }
+    ],
+    "local_variables": {
+        "accountManager": "AccountManager",
+        "accounts": "Account[]",
+        "bundle": "Bundle",
+        "intent": "Intent",
+        "message": "String",
+        "resultBundle": "Bundle",
+        "am": "AccountManager",
+        "accessToken": "String",
+        "result": "Bundle",
+        "accountType": "String"
+    }
+}

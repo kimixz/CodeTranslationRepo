@@ -1,0 +1,62 @@
+[
+    {
+        "method_name": "getPushToken",
+        "method_code": "public String getPushToken() {\n        return this.pushToken;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPushToken from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: getPushToken\n\n        Method Code: public String getPushToken() {\n        return this.pushToken;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPushToken() -> String {\n    return self.pushToken\n}\n```"
+    },
+    {
+        "method_name": "getDeviceIdentifier",
+        "method_code": "public String getDeviceIdentifier() {\n        return this.deviceIdentifier;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getDeviceIdentifier from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: getDeviceIdentifier\n\n        Method Code: public String getDeviceIdentifier() {\n        return this.deviceIdentifier;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getDeviceIdentifier() -> String {\n    return self.deviceIdentifier\n}\n```"
+    },
+    {
+        "method_name": "getDeviceIdentifierSignature",
+        "method_code": "public String getDeviceIdentifierSignature() {\n        return this.deviceIdentifierSignature;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getDeviceIdentifierSignature from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: getDeviceIdentifierSignature\n\n        Method Code: public String getDeviceIdentifierSignature() {\n        return this.deviceIdentifierSignature;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getDeviceIdentifierSignature() -> String {\n    return self.deviceIdentifierSignature\n}\n```"
+    },
+    {
+        "method_name": "getUserPublicKey",
+        "method_code": "public String getUserPublicKey() {\n        return this.userPublicKey;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUserPublicKey from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: getUserPublicKey\n\n        Method Code: public String getUserPublicKey() {\n        return this.userPublicKey;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUserPublicKey() -> String {\n    return self.userPublicKey\n}\n```"
+    },
+    {
+        "method_name": "isShouldBeDeleted",
+        "method_code": "public boolean isShouldBeDeleted() {\n        return this.shouldBeDeleted;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isShouldBeDeleted from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: isShouldBeDeleted\n\n        Method Code: public boolean isShouldBeDeleted() {\n        return this.shouldBeDeleted;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isShouldBeDeleted() -> Bool {\n    return self.shouldBeDeleted\n}\n```"
+    },
+    {
+        "method_name": "setPushToken",
+        "method_code": "public void setPushToken(String pushToken) {\n        this.pushToken = pushToken;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPushToken from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: setPushToken\n\n        Method Code: public void setPushToken(String pushToken) {\n        this.pushToken = pushToken;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPushToken(_ pushToken: String) {\n    self.pushToken = pushToken\n}\n```"
+    },
+    {
+        "method_name": "setDeviceIdentifier",
+        "method_code": "public void setDeviceIdentifier(String deviceIdentifier) {\n        this.deviceIdentifier = deviceIdentifier;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setDeviceIdentifier from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: setDeviceIdentifier\n\n        Method Code: public void setDeviceIdentifier(String deviceIdentifier) {\n        this.deviceIdentifier = deviceIdentifier;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setDeviceIdentifier(_ deviceIdentifier: String) {\n    self.deviceIdentifier = deviceIdentifier\n}\n```"
+    },
+    {
+        "method_name": "setDeviceIdentifierSignature",
+        "method_code": "public void setDeviceIdentifierSignature(String deviceIdentifierSignature) {\n        this.deviceIdentifierSignature = deviceIdentifierSignature;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setDeviceIdentifierSignature from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: setDeviceIdentifierSignature\n\n        Method Code: public void setDeviceIdentifierSignature(String deviceIdentifierSignature) {\n        this.deviceIdentifierSignature = deviceIdentifierSignature;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setDeviceIdentifierSignature(_ deviceIdentifierSignature: String) {\n    self.deviceIdentifierSignature = deviceIdentifierSignature\n}\n```"
+    },
+    {
+        "method_name": "setUserPublicKey",
+        "method_code": "public void setUserPublicKey(String userPublicKey) {\n        this.userPublicKey = userPublicKey;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setUserPublicKey from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: setUserPublicKey\n\n        Method Code: public void setUserPublicKey(String userPublicKey) {\n        this.userPublicKey = userPublicKey;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setUserPublicKey(_ userPublicKey: String) {\n    self.userPublicKey = userPublicKey\n}\n```"
+    },
+    {
+        "method_name": "setShouldBeDeleted",
+        "method_code": "public void setShouldBeDeleted(boolean shouldBeDeleted) {\n        this.shouldBeDeleted = shouldBeDeleted;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setShouldBeDeleted from PushConfigurationState.java into Swift.\n\n        Input:\n\n        Method Name: setShouldBeDeleted\n\n        Method Code: public void setShouldBeDeleted(boolean shouldBeDeleted) {\n        this.shouldBeDeleted = shouldBeDeleted;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setShouldBeDeleted(_ shouldBeDeleted: Bool) {\n    self.shouldBeDeleted = shouldBeDeleted\n}\n```"
+    }
+]

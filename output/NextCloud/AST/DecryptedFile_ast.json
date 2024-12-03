@@ -1,0 +1,100 @@
+{
+    "methods": [
+        {
+            "name": "getEncrypted",
+            "return_type": "Data",
+            "parameters": [],
+            "start_position": 446,
+            "end_position": 511,
+            "body_start": 473,
+            "body_end": 511
+        },
+        {
+            "name": "getInitializationVector",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 517,
+            "end_position": 606,
+            "body_start": 557,
+            "body_end": 606
+        },
+        {
+            "name": "getAuthenticationTag",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 612,
+            "end_position": 695,
+            "body_start": 649,
+            "body_end": 695
+        },
+        {
+            "name": "getMetadataKey",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 701,
+            "end_position": 769,
+            "body_start": 729,
+            "body_end": 769
+        },
+        {
+            "name": "setEncrypted",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Data",
+                    "name": "encrypted"
+                }
+            ],
+            "start_position": 775,
+            "end_position": 859,
+            "body_start": 816,
+            "body_end": 859
+        },
+        {
+            "name": "setInitializationVector",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "initializationVector"
+                }
+            ],
+            "start_position": 865,
+            "end_position": 995,
+            "body_start": 930,
+            "body_end": 995
+        },
+        {
+            "name": "setAuthenticationTag",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "authenticationTag"
+                }
+            ],
+            "start_position": 1001,
+            "end_position": 1119,
+            "body_start": 1060,
+            "body_end": 1119
+        },
+        {
+            "name": "setMetadataKey",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "metadataKey"
+                }
+            ],
+            "start_position": 1125,
+            "end_position": 1216,
+            "body_start": 1169,
+            "body_end": 1216
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement"
+    ]
+}

@@ -1,0 +1,187 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "setActivityAndVersionItems",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "items"
+                },
+                {
+                    "type": "NextcloudClient",
+                    "name": "newClient"
+                },
+                {
+                    "type": "boolean",
+                    "name": "clear"
+                }
+            ],
+            "start_position": 2041,
+            "end_position": 3660,
+            "body_start": 2142,
+            "body_end": 3660
+        },
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "RecyclerView.ViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 3666,
+            "end_position": 4017,
+            "body_start": 3784,
+            "body_end": 4017
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView.ViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 4023,
+            "end_position": 4855,
+            "body_start": 4121,
+            "body_end": 4855
+        },
+        {
+            "name": "getItemViewType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 4861,
+            "end_position": 5187,
+            "body_start": 4916,
+            "body_end": 5187
+        }
+    ],
+    "method_calls": {
+        "values": [
+            "clear",
+            "add",
+            "get"
+        ],
+        "Collections": [
+            "sort"
+        ],
+        "((Activity) o1).getDatetime()": [
+            "getTime"
+        ],
+        "((Activity) o1)": [
+            "getDatetime"
+        ],
+        "((FileVersion) o1)": [
+            "getModifiedTimestamp"
+        ],
+        "((Activity) o2).getDatetime()": [
+            "getTime"
+        ],
+        "((Activity) o2)": [
+            "getDatetime"
+        ],
+        "((FileVersion) o2)": [
+            "getModifiedTimestamp"
+        ],
+        "Long": [
+            "compare"
+        ],
+        "getHeaderDateString(context, activity.getDatetime().getTime())": [
+            "toString"
+        ],
+        "unknown": [
+            "getHeaderDateString",
+            "notifyDataSetChanged"
+        ],
+        "activity.getDatetime()": [
+            "getTime"
+        ],
+        "activity": [
+            "getDatetime"
+        ],
+        "getHeaderDateString(context, version.getModifiedTimestamp())": [
+            "toString"
+        ],
+        "version": [
+            "getModifiedTimestamp"
+        ],
+        "sTime": [
+            "equalsIgnoreCase"
+        ],
+        "VersionListItemBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "parent": [
+            "getContext"
+        ],
+        "super": [
+            "onCreateViewHolder",
+            "onBindViewHolder"
+        ],
+        "versionViewHolder.binding.size": [
+            "setText"
+        ],
+        "DisplayUtils": [
+            "bytesToHumanReadable"
+        ],
+        "fileVersion": [
+            "getFileLength",
+            "getModifiedTimestamp"
+        ],
+        "versionViewHolder.binding.time": [
+            "setText"
+        ],
+        "DateFormat": [
+            "format"
+        ],
+        "new Date(fileVersion.getModifiedTimestamp())": [
+            "getTime"
+        ],
+        "versionViewHolder.binding.restore": [
+            "setOnClickListener"
+        ],
+        "versionListInterface": [
+            "onRestoreClicked"
+        ],
+        "binding": [
+            "getRoot"
+        ]
+    },
+    "local_variables": {
+        "o1Date": "long",
+        "o2Date": "long",
+        "sTime": "String",
+        "time": "String",
+        "activity": "Activity",
+        "version": "FileVersion",
+        "versionViewHolder": "VersionViewHolder",
+        "fileVersion": "FileVersion",
+        "value": "Object"
+    }
+}

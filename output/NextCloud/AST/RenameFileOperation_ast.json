@@ -1,0 +1,149 @@
+{
+    "method_calls": {
+        "RenameFileOperation.class": [
+            "getSimpleName"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "moveLocalFile",
+            "deleteFileInMediaScan",
+            "saveFile"
+        ],
+        "unknown": [
+            "getStorageManager",
+            "isValidNewName",
+            "saveLocalFile"
+        ],
+        "new File(file.getRemotePath())": [
+            "getParent"
+        ],
+        "file": [
+            "getRemotePath",
+            "isFolder",
+            "getFileName",
+            "setFileName",
+            "isEncrypted",
+            "setDecryptedRemotePath",
+            "isDown",
+            "getStoragePath",
+            "setStoragePath",
+            "getMimeType"
+        ],
+        "parent": [
+            "endsWith"
+        ],
+        "new RenameFileRemoteOperation(file.getFileName(),\n                                                   file.getRemotePath(),\n                                                   newName,\n                                                   file.isFolder())": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getLogMessage"
+        ],
+        "Log_OC": [
+            "e",
+            "i"
+        ],
+        "f": [
+            "getParent",
+            "renameTo"
+        ],
+        "parentStoragePath": [
+            "endsWith"
+        ],
+        "MimeTypeUtil": [
+            "isMedia"
+        ],
+        "FileDataStorageManager": [
+            "triggerMediaScan"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "newName": [
+            "contains"
+        ],
+        "FileStorageUtils": [
+            "getTemporalPath"
+        ],
+        "testFile": [
+            "getParentFile",
+            "createNewFile",
+            "exists",
+            "isFile",
+            "delete"
+        ],
+        "tmpFolder": [
+            "exists",
+            "mkdirs",
+            "getAbsolutePath",
+            "isDirectory"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement",
+        "throw_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 2116,
+            "end_position": 4003,
+            "body_start": 2189,
+            "body_end": 4003
+        },
+        {
+            "name": "saveLocalFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "newRemotePath"
+                }
+            ],
+            "start_position": 4009,
+            "end_position": 5353,
+            "body_start": 4058,
+            "body_end": 5353
+        },
+        {
+            "name": "isValidNewName",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6204,
+            "end_position": 7524,
+            "body_start": 6256,
+            "body_end": 7524
+        },
+        {
+            "name": "getFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 7530,
+            "end_position": 7587,
+            "body_start": 7554,
+            "body_end": 7587
+        }
+    ],
+    "local_variables": {
+        "result": "boolean",
+        "newRemotePath": "String",
+        "parent": "String",
+        "oldPath": "String",
+        "f": "File",
+        "parentStoragePath": "String",
+        "newPath": "String",
+        "tmpFolderName": "String",
+        "testFile": "File",
+        "tmpFolder": "File"
+    }
+}

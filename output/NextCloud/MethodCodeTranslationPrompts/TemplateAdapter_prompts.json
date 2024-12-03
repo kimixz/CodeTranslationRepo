@@ -1,0 +1,56 @@
+[
+    {
+        "method_name": "onCreateViewHolder",
+        "method_code": "@NonNull\n    @Override\n    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\n        return new TemplateAdapter.ViewHolder(\n            TemplateButtonBinding.inflate(LayoutInflater.from(parent.getContext()),\n                                          parent,\n                                          false)\n        );\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onCreateViewHolder from TemplateAdapter.java into Swift.\n\n        Input:\n\n        Method Name: onCreateViewHolder\n\n        Method Code: @NonNull\n    @Override\n    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {\n        return new TemplateAdapter.ViewHolder(\n            TemplateButtonBinding.inflate(LayoutInflater.from(parent.getContext()),\n                                          parent,\n                                          false)\n        );\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {\n    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: \"TemplateCell\", for: indexPath) as! TemplateCell\n    return cell\n}\n```"
+    },
+    {
+        "method_name": "onBindViewHolder",
+        "method_code": "@Override\n    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {\n        holder.setData(new ArrayList<>(templateList.getTemplates().values()).get(position));\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onBindViewHolder from TemplateAdapter.java into Swift.\n\n        Input:\n\n        Method Name: onBindViewHolder\n\n        Method Code: @Override\n    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {\n        holder.setData(new ArrayList<>(templateList.getTemplates().values()).get(position));\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {\n    let cell = tableView.dequeueReusableCell(withIdentifier: \"CellIdentifier\", for: indexPath) as! ViewHolder\n    let templatesArray = Array(templateList.getTemplates().values)\n    cell.setData(templatesArray[indexPath.row])\n    return cell\n}\n```"
+    },
+    {
+        "method_name": "setTemplateList",
+        "method_code": "public void setTemplateList(TemplateList templateList) {\n        this.templateList = templateList;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setTemplateList from TemplateAdapter.java into Swift.\n\n        Input:\n\n        Method Name: setTemplateList\n\n        Method Code: public void setTemplateList(TemplateList templateList) {\n        this.templateList = templateList;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setTemplateList(_ templateList: TemplateList) {\n    self.templateList = templateList\n}\n```"
+    },
+    {
+        "method_name": "setTemplateAsActive",
+        "method_code": "@SuppressLint(\"NotifyDataSetChanged\")\n    public void setTemplateAsActive(Template template) {\n        selectedTemplate = template;\n        notifyDataSetChanged();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setTemplateAsActive from TemplateAdapter.java into Swift.\n\n        Input:\n\n        Method Name: setTemplateAsActive\n\n        Method Code: @SuppressLint(\"NotifyDataSetChanged\")\n    public void setTemplateAsActive(Template template) {\n        selectedTemplate = template;\n        notifyDataSetChanged();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setTemplateAsActive(template: Template) {\n    selectedTemplate = template\n    notifyDataSetChanged()\n}\n```"
+    },
+    {
+        "method_name": "getSelectedTemplate",
+        "method_code": "public Template getSelectedTemplate() {\n        return selectedTemplate;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSelectedTemplate from TemplateAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getSelectedTemplate\n\n        Method Code: public Template getSelectedTemplate() {\n        return selectedTemplate;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getSelectedTemplate() -> Template? {\n    return selectedTemplate\n}\n```"
+    },
+    {
+        "method_name": "getItemCount",
+        "method_code": "@Override\n    public int getItemCount() {\n        return templateList.getTemplates().size();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getItemCount from TemplateAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getItemCount\n\n        Method Code: @Override\n    public int getItemCount() {\n        return templateList.getTemplates().size();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {\n    return templateList.getTemplates().count\n}\n```"
+    },
+    {
+        "method_name": "onClick",
+        "method_code": "@Override\n        public void onClick(View v) {\n            if (clickListener != null) {\n                clickListener.onClick(template);\n            }\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onClick from TemplateAdapter.java into Swift.\n\n        Input:\n\n        Method Name: onClick\n\n        Method Code: @Override\n        public void onClick(View v) {\n            if (clickListener != null) {\n                clickListener.onClick(template);\n            }\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onClick(_ view: UIView) {\n    if let clickListener = clickListener {\n        clickListener.onClick(template)\n    }\n}\n```"
+    },
+    {
+        "method_name": "setData",
+        "method_code": "public void setData(Template template) {\n            this.template = template;\n\n            Drawable placeholder = MimeTypeUtil.getFileTypeIcon(mimetype,\n                                                                template.getTitle(),\n                                                                context,\n                                                                viewThemeUtils);\n\n            Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(template.getPreview())\n                .placeholder(placeholder)\n                .error(placeholder)\n                .into(binding.template);\n\n            binding.templateName.setText(template.getTitle());\n            binding.templateContainer.setChecked(template == selectedTemplate);\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setData from TemplateAdapter.java into Swift.\n\n        Input:\n\n        Method Name: setData\n\n        Method Code: public void setData(Template template) {\n            this.template = template;\n\n            Drawable placeholder = MimeTypeUtil.getFileTypeIcon(mimetype,\n                                                                template.getTitle(),\n                                                                context,\n                                                                viewThemeUtils);\n\n            Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(template.getPreview())\n                .placeholder(placeholder)\n                .error(placeholder)\n                .into(binding.template);\n\n            binding.templateName.setText(template.getTitle());\n            binding.templateContainer.setChecked(template == selectedTemplate);\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setData(template: Template) {\n    self.template = template\n\n    let placeholder = MimeTypeUtil.getFileTypeIcon(mimetype: mimetype, title: template.getTitle(), context: context, viewThemeUtils: viewThemeUtils)\n\n    Glide.with(context).using(CustomGlideStreamLoader(user: currentAccountProvider.getUser(), clientFactory: clientFactory))\n        .load(template.getPreview())\n        .placeholder(placeholder)\n        .error(placeholder)\n        .into(binding.template)\n\n    binding.templateName.text = template.getTitle()\n    binding.templateContainer.isChecked = (template == selectedTemplate)\n}\n```"
+    },
+    {
+        "method_name": "onClick",
+        "method_code": "void onClick(Template template);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onClick from TemplateAdapter.java into Swift.\n\n        Input:\n\n        Method Name: onClick\n\n        Method Code: void onClick(Template template);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onClick(template: Template) {\n    // Method implementation goes here\n}\n```"
+    }
+]

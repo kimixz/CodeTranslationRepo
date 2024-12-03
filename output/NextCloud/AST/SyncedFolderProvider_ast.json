@@ -1,0 +1,402 @@
+{
+    "method_calls": {
+        "SyncedFolderProvider.class": [
+            "getSimpleName"
+        ],
+        "Log_OC": [
+            "v",
+            "e"
+        ],
+        "syncedFolder": [
+            "getLocalPath",
+            "isEnabled",
+            "setEnabled",
+            "setLocalPath",
+            "getId",
+            "getRemotePath",
+            "isWifiOnly",
+            "isChargingOnly",
+            "isExisting",
+            "getEnabledTimestampMs",
+            "isSubfolderByDate",
+            "getAccount",
+            "getUploadAction",
+            "getNameCollisionPolicyInt",
+            "getType",
+            "isHidden",
+            "getSubfolderRule",
+            "isExcludeHidden",
+            "getLastScanTimestampMs"
+        ],
+        "unknown": [
+            "createContentValuesFromSyncedFolder",
+            "createSyncedFolderFromCursor",
+            "updateSyncFolder",
+            "getSyncedFolders",
+            "deleteSyncFolderWithId"
+        ],
+        "mContentResolver": [
+            "insert",
+            "query",
+            "delete",
+            "update"
+        ],
+        "Long": [
+            "parseLong"
+        ],
+        "result.getPathSegments()": [
+            "get"
+        ],
+        "result": [
+            "getPathSegments"
+        ],
+        "syncedFolderProvider": [
+            "findByRemotePathAndAccount"
+        ],
+        "file": [
+            "getRemotePath"
+        ],
+        "cursor": [
+            "getCount",
+            "close",
+            "moveToFirst",
+            "getPosition",
+            "moveToNext",
+            "getLong",
+            "getColumnIndexOrThrow",
+            "getString",
+            "getInt"
+        ],
+        "list": [
+            "add"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "clock": [
+            "getCurrentTime"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "syncedFolderID": [
+            "toString"
+        ],
+        "new File(syncedFolder.getLocalPath())": [
+            "exists"
+        ],
+        "localPath": [
+            "endsWith",
+            "substring",
+            "lastIndexOf"
+        ],
+        "new File(localPath)": [
+            "exists"
+        ],
+        "AppPreferencesImpl": [
+            "fromContext"
+        ],
+        "preferences": [
+            "setAutoUploadPathsUpdateEnabled",
+            "setLegacyClean"
+        ],
+        "MediaFolderType": [
+            "getById"
+        ],
+        "SubFolderRule": [
+            "values"
+        ],
+        "cv": [
+            "put"
+        ],
+        "syncedFolder.getSubfolderRule()": [
+            "ordinal"
+        ],
+        "remotePath": [
+            "endsWith",
+            "substring",
+            "length"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "throw_statement",
+        "expression_statement",
+        "return_statement",
+        "do_statement",
+        "while_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "storeSyncedFolder",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                }
+            ],
+            "start_position": 2111,
+            "end_position": 2735,
+            "body_start": 2168,
+            "body_end": 2735
+        },
+        {
+            "name": "isAutoUploadFolder",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "SyncedFolderProvider",
+                    "name": "syncedFolderProvider"
+                },
+                {
+                    "type": "ServerFileInterface",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 2741,
+            "end_position": 2993,
+            "body_start": 2862,
+            "body_end": 2993
+        },
+        {
+            "name": "countEnabledSyncedFolders",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 2999,
+            "end_position": 3492,
+            "body_start": 3038,
+            "body_end": 3492
+        },
+        {
+            "name": "getSyncedFolders",
+            "return_type": "List<SyncedFolder>",
+            "parameters": [],
+            "start_position": 3631,
+            "end_position": 4693,
+            "body_start": 3676,
+            "body_end": 4693
+        },
+        {
+            "name": "updateSyncedFolderEnabled",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                },
+                {
+                    "type": "Boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 4902,
+            "end_position": 6262,
+            "body_start": 4965,
+            "body_end": 6262
+        },
+        {
+            "name": "findByLocalPathAndAccount",
+            "return_type": "SyncedFolder",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "localPath"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 6268,
+            "end_position": 7379,
+            "body_start": 6343,
+            "body_end": 7379
+        },
+        {
+            "name": "getSyncedFolderByID",
+            "return_type": "SyncedFolder",
+            "parameters": [
+                {
+                    "type": "Long",
+                    "name": "syncedFolderID"
+                }
+            ],
+            "start_position": 7385,
+            "end_position": 8060,
+            "body_start": 7460,
+            "body_end": 8060
+        },
+        {
+            "name": "deleteSyncFoldersForAccount",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 8197,
+            "end_position": 8527,
+            "body_start": 8247,
+            "body_end": 8527
+        },
+        {
+            "name": "deleteSyncFolderWithId",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 8638,
+            "end_position": 8925,
+            "body_start": 8682,
+            "body_end": 8925
+        },
+        {
+            "name": "updateAutoUploadPaths",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 9117,
+            "end_position": 10149,
+            "body_start": 9168,
+            "body_end": 10149
+        },
+        {
+            "name": "deleteSyncedFoldersNotInList",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "List<Long>",
+                    "name": "ids"
+                }
+            ],
+            "start_position": 10386,
+            "end_position": 10805,
+            "body_start": 10442,
+            "body_end": 10805
+        },
+        {
+            "name": "deleteSyncedFolder",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 10890,
+            "end_position": 11172,
+            "body_start": 10929,
+            "body_end": 11172
+        },
+        {
+            "name": "getPreferences",
+            "return_type": "AppPreferences",
+            "parameters": [],
+            "start_position": 11178,
+            "end_position": 11252,
+            "body_start": 11217,
+            "body_end": 11252
+        },
+        {
+            "name": "updateSyncFolder",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                }
+            ],
+            "start_position": 11419,
+            "end_position": 11945,
+            "body_start": 11474,
+            "body_end": 11945
+        },
+        {
+            "name": "createSyncedFolderFromCursor",
+            "return_type": "SyncedFolder",
+            "parameters": [
+                {
+                    "type": "Cursor",
+                    "name": "cursor"
+                }
+            ],
+            "start_position": 12121,
+            "end_position": 16011,
+            "body_start": 12186,
+            "body_end": 16011
+        },
+        {
+            "name": "createContentValuesFromSyncedFolder",
+            "return_type": "ContentValues",
+            "parameters": [
+                {
+                    "type": "SyncedFolder",
+                    "name": "syncedFolder"
+                }
+            ],
+            "start_position": 16203,
+            "end_position": 18103,
+            "body_start": 16301,
+            "body_end": 18103
+        },
+        {
+            "name": "findByRemotePathAndAccount",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 18371,
+            "end_position": 19759,
+            "body_start": 18443,
+            "body_end": 19759
+        }
+    ],
+    "local_variables": {
+        "cv": "ContentValues",
+        "result": "boolean",
+        "count": "int",
+        "cursor": "Cursor",
+        "list": "List<SyncedFolder>",
+        "syncedFolder": "SyncedFolder",
+        "syncedFolders": "List<SyncedFolder>",
+        "localPath": "String",
+        "preferences": "AppPreferences",
+        "id": "long",
+        "remotePath": "String",
+        "wifiOnly": "boolean",
+        "chargingOnly": "boolean",
+        "existing": "boolean",
+        "subfolderByDate": "boolean",
+        "accountName": "String",
+        "uploadAction": "int",
+        "nameCollisionPolicy": "int",
+        "enabled": "boolean",
+        "enabledTimestampMs": "long",
+        "type": "MediaFolderType",
+        "hidden": "boolean",
+        "subFolderRule": "SubFolderRule",
+        "excludeHidden": "boolean",
+        "lastScanTimestampMs": "long"
+    }
+}

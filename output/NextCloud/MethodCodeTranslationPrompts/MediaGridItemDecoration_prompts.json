@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "getItemOffsets",
+        "method_code": "@Override\n    public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {\n        outRect.right = space;\n        outRect.bottom = space;\n        outRect.left = space;\n        outRect.top = space;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getItemOffsets from MediaGridItemDecoration.java into Swift.\n\n        Input:\n\n        Method Name: getItemOffsets\n\n        Method Code: @Override\n    public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {\n        outRect.right = space;\n        outRect.bottom = space;\n        outRect.left = space;\n        outRect.top = space;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func getItemOffsets(for view: UIView, in collectionView: UICollectionView, layout: UICollectionViewLayout, at indexPath: IndexPath) -> UIEdgeInsets {\n    return UIEdgeInsets(top: space, left: space, bottom: space, right: space)\n}\n```"
+    }
+]

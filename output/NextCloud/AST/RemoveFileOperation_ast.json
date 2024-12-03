@@ -1,0 +1,77 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "getFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 2511,
+            "end_position": 2571,
+            "body_start": 2535,
+            "body_end": 2571
+        },
+        {
+            "name": "isInBackground",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2577,
+            "end_position": 2645,
+            "body_start": 2609,
+            "body_end": 2645
+        },
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 2801,
+            "end_position": 4786,
+            "body_start": 2874,
+            "body_end": 4786
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult",
+        "operation": "RemoteOperation",
+        "localRemovalFailed": "boolean",
+        "parent": "OCFile"
+    },
+    "method_calls": {
+        "MimeTypeUtil": [
+            "isImage"
+        ],
+        "fileToRemove": [
+            "getMimeType",
+            "isEncrypted",
+            "getParentId",
+            "getRemotePath",
+            "getEncryptedFileName",
+            "isFolder"
+        ],
+        "ThumbnailsCacheManager": [
+            "generateResizedImage"
+        ],
+        "getStorageManager()": [
+            "getFileById",
+            "removeFile"
+        ],
+        "unknown": [
+            "getStorageManager"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getCode"
+        ]
+    }
+}

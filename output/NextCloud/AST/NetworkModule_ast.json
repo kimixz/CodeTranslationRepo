@@ -1,0 +1,66 @@
+{
+    "methods": [
+        {
+            "name": "connectivityService",
+            "return_type": "ConnectivityService",
+            "parameters": [
+                {
+                    "type": "ConnectivityManager",
+                    "name": "connectivityManager"
+                },
+                {
+                    "type": "UserAccountManager",
+                    "name": "accountManager"
+                },
+                {
+                    "type": "ClientFactory",
+                    "name": "clientFactory"
+                },
+                {
+                    "type": "WalledCheckCache",
+                    "name": "walledCheckCache"
+                }
+            ],
+            "start_position": 464,
+            "end_position": 1141,
+            "body_start": 790,
+            "body_end": 1141
+        },
+        {
+            "name": "clientFactory",
+            "return_type": "ClientFactory",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 1147,
+            "end_position": 1275,
+            "body_start": 1221,
+            "body_end": 1275
+        },
+        {
+            "name": "connectivityManager",
+            "return_type": "ConnectivityManager",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 1281,
+            "end_position": 1466,
+            "body_start": 1367,
+            "body_end": 1466
+        }
+    ],
+    "code_constructs": [
+        "return_statement"
+    ],
+    "method_calls": {
+        "context": [
+            "getSystemService"
+        ]
+    }
+}

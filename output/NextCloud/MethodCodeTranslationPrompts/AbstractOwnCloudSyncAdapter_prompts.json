@@ -1,0 +1,68 @@
+[
+    {
+        "method_name": "initClientForCurrentAccount",
+        "method_code": "id initClientForCurrentAccount() throws OperationCanceledException,\n            AuthenticatorException, IOException, AccountNotFoundException {\n        OwnCloudAccount ocAccount = new OwnCloudAccount(account, getContext());\n        client = OwnCloudClientManagerFactory.getDefaultSingleton().\n                getClientFor(ocAccount, getContext());\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled initClientForCurrentAccount from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: initClientForCurrentAccount\n\n        Method Code: id initClientForCurrentAccount() throws OperationCanceledException,\n            AuthenticatorException, IOException, AccountNotFoundException {\n        OwnCloudAccount ocAccount = new OwnCloudAccount(account, getContext());\n        client = OwnCloudClientManagerFactory.getDefaultSingleton().\n                getClientFor(ocAccount, getContext());\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc initClientForCurrentAccount() throws {\n    let ocAccount = try OwnCloudAccount(account: account, context: getContext())\n    client = OwnCloudClientManagerFactory.defaultSingleton().getClientFor(ocAccount, context: getContext())\n}\n```"
+    },
+    {
+        "method_name": "getAccountManager",
+        "method_code": "blic AccountManager getAccountManager() {\n        return this.accountManager;\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAccountManager from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getAccountManager\n\n        Method Code: blic AccountManager getAccountManager() {\n        return this.accountManager;\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAccountManager() -> AccountManager {\n    return self.accountManager\n}\n```"
+    },
+    {
+        "method_name": "getAccount",
+        "method_code": "blic Account getAccount() {\n        return this.account;\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getAccount from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getAccount\n\n        Method Code: blic Account getAccount() {\n        return this.account;\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getAccount() -> Account {\n    return self.account\n}\n```"
+    },
+    {
+        "method_name": "getUser",
+        "method_code": "blic User getUser() {\n        Account account = getAccount();\n        String accountName = account != null ? account.name : null;\n        return userAccountManager.getUser(accountName).orElseGet(userAccountManager::getAnonymousUser);\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getUser from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getUser\n\n        Method Code: blic User getUser() {\n        Account account = getAccount();\n        String accountName = account != null ? account.name : null;\n        return userAccountManager.getUser(accountName).orElseGet(userAccountManager::getAnonymousUser);\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getUser() -> User {\n    let account = getAccount()\n    let accountName = account?.name\n    return userAccountManager.getUser(accountName).orElseGet(userAccountManager.getAnonymousUser)\n}\n```"
+    },
+    {
+        "method_name": "getContentProviderClient",
+        "method_code": "blic ContentProviderClient getContentProviderClient() {\n        return this.contentProviderClient;\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getContentProviderClient from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getContentProviderClient\n\n        Method Code: blic ContentProviderClient getContentProviderClient() {\n        return this.contentProviderClient;\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getContentProviderClient() -> ContentProviderClient? {\n    return self.contentProviderClient\n}\n```"
+    },
+    {
+        "method_name": "getStorageManager",
+        "method_code": "blic FileDataStorageManager getStorageManager() {\n        return this.storageManager;\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getStorageManager from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getStorageManager\n\n        Method Code: blic FileDataStorageManager getStorageManager() {\n        return this.storageManager;\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getStorageManager() -> FileDataStorageManager {\n    return self.storageManager\n}\n```"
+    },
+    {
+        "method_name": "getClient",
+        "method_code": "otected OwnCloudClient getClient() {\n        return this.client;\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled getClient from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getClient\n\n        Method Code: otected OwnCloudClient getClient() {\n        return this.client;\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getClient() -> OwnCloudClient {\n    return self.client\n}\n```"
+    },
+    {
+        "method_name": "setAccountManager",
+        "method_code": "blic void setAccountManager(AccountManager accountManager) {\n        this.accountManager = accountManager;\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAccountManager from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: setAccountManager\n\n        Method Code: blic void setAccountManager(AccountManager accountManager) {\n        this.accountManager = accountManager;\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAccountManager(accountManager: AccountManager) {\n    self.accountManager = accountManager\n}\n```"
+    },
+    {
+        "method_name": "setAccount",
+        "method_code": "blic void setAccount(Account account) {\n        this.account = account;\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setAccount from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: setAccount\n\n        Method Code: blic void setAccount(Account account) {\n        this.account = account;\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setAccount(_ account: Account) {\n    self.account = account\n}\n```"
+    },
+    {
+        "method_name": "setContentProviderClient",
+        "method_code": "blic void setContentProviderClient(ContentProviderClient contentProviderClient) {\n        this.contentProviderClient = contentProviderClient;\n    }\n\n",
+        "prompt": "\n        Please translate the following Java (Android) method titled setContentProviderClient from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: setContentProviderClient\n\n        Method Code: blic void setContentProviderClient(ContentProviderClient contentProviderClient) {\n        this.contentProviderClient = contentProviderClient;\n    }\n\n\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setContentProviderClient(_ contentProviderClient: ContentProviderClient?) {\n    self.contentProviderClient = contentProviderClient\n}\n```"
+    },
+    {
+        "method_name": "setStorageManager",
+        "method_code": "blic void setStorageManager(FileDataStorageManager storageManager) {\n        this.storageManager = storageManager;\n    }\n}",
+        "prompt": "\n        Please translate the following Java (Android) method titled setStorageManager from AbstractOwnCloudSyncAdapter.java into Swift.\n\n        Input:\n\n        Method Name: setStorageManager\n\n        Method Code: blic void setStorageManager(FileDataStorageManager storageManager) {\n        this.storageManager = storageManager;\n    }\n}\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setStorageManager(storageManager: FileDataStorageManager) {\n    self.storageManager = storageManager\n}\n```"
+    }
+]

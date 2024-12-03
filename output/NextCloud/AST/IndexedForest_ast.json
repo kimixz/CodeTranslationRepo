@@ -1,0 +1,380 @@
+{
+    "methods": [
+        {
+            "name": "getAll",
+            "return_type": "ConcurrentMap<String, Node<V>>",
+            "parameters": [],
+            "start_position": 1065,
+            "end_position": 1140,
+            "body_start": 1112,
+            "body_end": 1140
+        },
+        {
+            "name": "getParent",
+            "return_type": "Node<V>",
+            "parameters": [],
+            "start_position": 1677,
+            "end_position": 1743,
+            "body_start": 1704,
+            "body_end": 1743
+        },
+        {
+            "name": "getChildren",
+            "return_type": "Set<Node<V>>",
+            "parameters": [],
+            "start_position": 1753,
+            "end_position": 1828,
+            "body_start": 1787,
+            "body_end": 1828
+        },
+        {
+            "name": "getKey",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1838,
+            "end_position": 1897,
+            "body_start": 1861,
+            "body_end": 1897
+        },
+        {
+            "name": "getPayload",
+            "return_type": "V",
+            "parameters": [],
+            "start_position": 1907,
+            "end_position": 1969,
+            "body_start": 1929,
+            "body_end": 1969
+        },
+        {
+            "name": "addChild",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Node<V>",
+                    "name": "child"
+                }
+            ],
+            "start_position": 1979,
+            "end_position": 2095,
+            "body_start": 2015,
+            "body_end": 2095
+        },
+        {
+            "name": "setParent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Node<V>",
+                    "name": "parent"
+                }
+            ],
+            "start_position": 2105,
+            "end_position": 2185,
+            "body_start": 2144,
+            "body_end": 2185
+        },
+        {
+            "name": "hasChildren",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2195,
+            "end_position": 2276,
+            "body_start": 2224,
+            "body_end": 2276
+        },
+        {
+            "name": "removeChild",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Node<V>",
+                    "name": "removed"
+                }
+            ],
+            "start_position": 2286,
+            "end_position": 2377,
+            "body_start": 2327,
+            "body_end": 2377
+        },
+        {
+            "name": "clearPayload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2387,
+            "end_position": 2454,
+            "body_start": 2414,
+            "body_end": 2454
+        },
+        {
+            "name": "putIfAbsent",
+            "return_type": "Pair<String, String>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "V",
+                    "name": "value"
+                }
+            ],
+            "start_position": 2467,
+            "end_position": 4290,
+            "body_start": 2574,
+            "body_end": 4290
+        },
+        {
+            "name": "removePayload",
+            "return_type": "Pair<V, String>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 4297,
+            "end_position": 4713,
+            "body_start": 4373,
+            "body_end": 4713
+        },
+        {
+            "name": "remove",
+            "return_type": "Pair<V, String>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 4720,
+            "end_position": 5816,
+            "body_start": 4808,
+            "body_end": 5816
+        },
+        {
+            "name": "removeDescendants",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Node<V>",
+                    "name": "removed"
+                }
+            ],
+            "start_position": 5822,
+            "end_position": 6147,
+            "body_start": 5870,
+            "body_end": 6147
+        },
+        {
+            "name": "contains",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 6153,
+            "end_position": 6329,
+            "body_start": 6216,
+            "body_end": 6329
+        },
+        {
+            "name": "get",
+            "return_type": "V",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "key"
+                }
+            ],
+            "start_position": 6335,
+            "end_position": 6542,
+            "body_start": 6379,
+            "body_end": 6542
+        },
+        {
+            "name": "get",
+            "return_type": "V",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 6548,
+            "end_position": 6688,
+            "body_start": 6600,
+            "body_end": 6688
+        },
+        {
+            "name": "remove",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                }
+            ],
+            "start_position": 6807,
+            "end_position": 7167,
+            "body_start": 6845,
+            "body_end": 7167
+        },
+        {
+            "name": "buildKey",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "accountName"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 7392,
+            "end_position": 7503,
+            "body_start": 7455,
+            "body_end": 7503
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "if_statement",
+        "throw_statement",
+        "expression_statement",
+        "while_statement",
+        "break_statement"
+    ],
+    "method_calls": {
+        "mChildren": [
+            "add",
+            "size",
+            "remove"
+        ],
+        "child": [
+            "setParent",
+            "getKey"
+        ],
+        "unknown": [
+            "buildKey",
+            "remove",
+            "removeDescendants",
+            "get"
+        ],
+        "mMap": [
+            "putIfAbsent",
+            "get",
+            "put",
+            "remove",
+            "containsKey",
+            "keySet",
+            "size"
+        ],
+        "OCFile.ROOT_PATH": [
+            "equals"
+        ],
+        "new File(currentPath)": [
+            "getParent"
+        ],
+        "parentPath": [
+            "endsWith"
+        ],
+        "parentNode": [
+            "addChild",
+            "getKey"
+        ],
+        "parentNode.getKey()": [
+            "substring"
+        ],
+        "accountName": [
+            "length"
+        ],
+        "target": [
+            "clearPayload",
+            "hasChildren"
+        ],
+        "removed": [
+            "getParent",
+            "getChildren"
+        ],
+        "parent": [
+            "removeChild",
+            "hasChildren",
+            "getKey"
+        ],
+        "parent.getKey()": [
+            "substring"
+        ],
+        "firstRemoved": [
+            "getPayload"
+        ],
+        "removed.getChildren()": [
+            "iterator"
+        ],
+        "childrenIt": [
+            "hasNext",
+            "next"
+        ],
+        "node": [
+            "getPayload"
+        ],
+        "mMap.keySet()": [
+            "iterator"
+        ],
+        "it": [
+            "hasNext",
+            "next"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "key": [
+            "startsWith"
+        ]
+    },
+    "local_variables": {
+        "targetKey": "String",
+        "valuedNode": "Node<V>",
+        "previousValue": "Node<V>",
+        "currentPath": "String",
+        "parentPath": "String",
+        "parentKey": "String",
+        "currentNode": "Node<V>",
+        "parentNode": "Node<V>",
+        "linked": "boolean",
+        "linkedTo": "String",
+        "target": "Node<V>",
+        "firstRemoved": "Node<V>",
+        "unlinkedFrom": "String",
+        "removed": "Node<V>",
+        "parent": "Node<V>",
+        "childrenIt": "Iterator<Node<V>>",
+        "child": "Node<V>",
+        "node": "Node<V>",
+        "key": "String",
+        "it": "Iterator<String>"
+    }
+}

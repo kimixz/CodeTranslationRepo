@@ -1,0 +1,836 @@
+{
+    "method_calls": {
+        "ExtendedListFragment.class": [
+            "getSimpleName"
+        ],
+        "Looper": [
+            "getMainLooper"
+        ],
+        "mRecyclerView": [
+            "setAdapter",
+            "setHasFooter",
+            "setEmptyView",
+            "setHasFixedSize",
+            "setLayoutManager",
+            "getLayoutManager",
+            "getAdapter",
+            "getChildAt"
+        ],
+        "mRefreshListLayout": [
+            "setRefreshing",
+            "setOnRefreshListener",
+            "setEnabled"
+        ],
+        "unknown": [
+            "isGridEnabled",
+            "getRecyclerView",
+            "getContext",
+            "getColumnsCount",
+            "getActivity",
+            "getResources",
+            "performSearch",
+            "setupEmptyList",
+            "setGridViewColumns",
+            "setMessageForEmptyList",
+            "switchToGridView",
+            "scrollToPosition",
+            "getEmptyViewText",
+            "getString",
+            "requireContext"
+        ],
+        "getRecyclerView()": [
+            "setLayoutManager",
+            "getLayoutManager",
+            "getAdapter",
+            "setOnTouchListener"
+        ],
+        "menu": [
+            "findItem"
+        ],
+        "MenuItemCompat": [
+            "getActionView"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeToolbarSearchView",
+            "themeSwipeRefreshLayout"
+        ],
+        "searchView": [
+            "findViewById",
+            "setOnQueryTextListener",
+            "setOnCloseListener",
+            "setMaxWidth",
+            "setOnQueryTextFocusChangeListener",
+            "getQuery",
+            "setQuery",
+            "requestFocus",
+            "onActionViewExpanded",
+            "clearFocus",
+            "onActionViewCollapsed"
+        ],
+        "activity.getWindowManager().getDefaultDisplay()": [
+            "getMetrics"
+        ],
+        "activity.getWindowManager()": [
+            "getDefaultDisplay"
+        ],
+        "activity": [
+            "getWindowManager"
+        ],
+        "getResources()": [
+            "getConfiguration"
+        ],
+        "handler": [
+            "post",
+            "removeCallbacksAndMessages"
+        ],
+        "((FileDisplayActivity) getActivity())": [
+            "getLeftFragment"
+        ],
+        "((OCFileListFragment) fragment)": [
+            "setFabVisible"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "closeButton": [
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "getActivity()": [
+            "getSystemService",
+            "findViewById"
+        ],
+        "inputMethodManager": [
+            "showSoftInput"
+        ],
+        "searchBar": [
+            "setLayoutTransition"
+        ],
+        "query": [
+            "isEmpty"
+        ],
+        "fileDisplayActivity": [
+            "resetSearchView",
+            "updateListOfFilesFragment",
+            "setDrawerIndicatorEnabled",
+            "isDrawerIndicatorAvailable",
+            "hideSearchView",
+            "getCurrentDir"
+        ],
+        "accountManager\n                                .getUser()\n                                .getServer()\n                                .getVersion()": [
+            "isNewerOrEqual"
+        ],
+        "accountManager\n                                .getUser()\n                                .getServer()": [
+            "getVersion"
+        ],
+        "accountManager\n                                .getUser()": [
+            "getServer"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "((FileDisplayActivity) activity)": [
+            "performUnifiedSearch"
+        ],
+        "EventBus.getDefault()": [
+            "post"
+        ],
+        "EventBus": [
+            "getDefault"
+        ],
+        "localFileListAdapter": [
+            "filter"
+        ],
+        "uploadFilesActivity.getFileListFragment()": [
+            "setLoading"
+        ],
+        "uploadFilesActivity": [
+            "getFileListFragment"
+        ],
+        "((FolderPickerActivity) activity)": [
+            "search"
+        ],
+        "super": [
+            "onAttach",
+            "onDestroyView",
+            "onViewCreated",
+            "onSaveInstanceState",
+            "onConfigurationChanged"
+        ],
+        "Log_OC": [
+            "d",
+            "v"
+        ],
+        "ListFragmentBinding": [
+            "inflate"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "preferences": [
+            "getGridColumns",
+            "setGridColumns"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "mScaleGestureDetector": [
+            "onTouchEvent"
+        ],
+        "motionEvent": [
+            "getAction"
+        ],
+        "view": [
+            "performClick",
+            "getTop",
+            "getHeight"
+        ],
+        "viewThemeUtils.material": [
+            "colorMaterialTextButton"
+        ],
+        "ocFileListAdapter": [
+            "onDestroy"
+        ],
+        "detector": [
+            "getScaleFactor"
+        ],
+        "getRecyclerView().getAdapter()": [
+            "notifyDataSetChanged"
+        ],
+        "gridLayoutManager": [
+            "setSpanCount",
+            "getSpanCount"
+        ],
+        "Math": [
+            "max",
+            "min",
+            "round"
+        ],
+        "mRecyclerView.getAdapter()": [
+            "notifyDataSetChanged"
+        ],
+        "savedInstanceState": [
+            "getIntegerArrayList",
+            "getInt",
+            "getString",
+            "getBoolean",
+            "putBoolean",
+            "putIntegerArrayList",
+            "putInt",
+            "putString"
+        ],
+        "mIndexes": [
+            "isEmpty",
+            "remove",
+            "size",
+            "add"
+        ],
+        "mFirstPositions": [
+            "remove",
+            "size",
+            "add"
+        ],
+        "mTops": [
+            "remove",
+            "size",
+            "add"
+        ],
+        "linearLayoutManager": [
+            "findLastCompletelyVisibleItemPosition",
+            "findFirstCompletelyVisibleItemPosition",
+            "scrollToPositionWithOffset"
+        ],
+        "((GridLayoutManager) layoutManager)": [
+            "findFirstCompletelyVisibleItemPosition"
+        ],
+        "((LinearLayoutManager) layoutManager)": [
+            "findFirstCompletelyVisibleItemPosition"
+        ],
+        "mOnRefreshListener": [
+            "onRefresh"
+        ],
+        "mEmptyListMessage": [
+            "setText",
+            "setVisibility",
+            "getText"
+        ],
+        "new Handler(Looper.getMainLooper())": [
+            "post"
+        ],
+        "mEmptyListHeadline": [
+            "setText"
+        ],
+        "mEmptyListIcon": [
+            "setImageDrawable",
+            "setImageResource",
+            "setVisibility"
+        ],
+        "viewThemeUtils.platform": [
+            "tintPrimaryDrawable"
+        ],
+        "FragmentExtensionsKt": [
+            "getTypedActivity"
+        ],
+        "fileActivity.connectivityService": [
+            "isNetworkAndServerAvailable"
+        ],
+        "mEmptyListMessage.getText()": [
+            "toString"
+        ],
+        "((FileDisplayActivity) mOnRefreshListener)": [
+            "onRefresh"
+        ],
+        "((GridLayoutManager) getRecyclerView().getLayoutManager())": [
+            "setSpanCount"
+        ],
+        "mSwitchGridViewButton": [
+            "setContentDescription",
+            "setIcon"
+        ],
+        "ContextCompat": [
+            "getDrawable"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getBinding",
+            "return_type": "ListFragmentBinding",
+            "parameters": [],
+            "start_position": 5582,
+            "end_position": 5653,
+            "body_start": 5622,
+            "body_end": 5653
+        },
+        {
+            "name": "setRecyclerViewAdapter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView.Adapter",
+                    "name": "recyclerViewAdapter"
+                }
+            ],
+            "start_position": 5659,
+            "end_position": 5801,
+            "body_start": 5739,
+            "body_end": 5801
+        },
+        {
+            "name": "getRecyclerView",
+            "return_type": "RecyclerView",
+            "parameters": [],
+            "start_position": 5807,
+            "end_position": 5885,
+            "body_start": 5848,
+            "body_end": 5885
+        },
+        {
+            "name": "setLoading",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 5891,
+            "end_position": 5989,
+            "body_start": 5931,
+            "body_end": 5989
+        },
+        {
+            "name": "switchToGridView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5995,
+            "end_position": 6179,
+            "body_start": 6026,
+            "body_end": 6179
+        },
+        {
+            "name": "switchToListView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6185,
+            "end_position": 6351,
+            "body_start": 6216,
+            "body_end": 6351
+        },
+        {
+            "name": "isGridEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 6357,
+            "end_position": 6575,
+            "body_start": 6388,
+            "body_end": 6575
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "MenuInflater",
+                    "name": "inflater"
+                }
+            ],
+            "start_position": 6581,
+            "end_position": 9316,
+            "body_start": 6670,
+            "body_end": 9316
+        },
+        {
+            "name": "onQueryTextChange",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "query"
+                }
+            ],
+            "start_position": 9322,
+            "end_position": 9589,
+            "body_start": 9375,
+            "body_end": 9589
+        },
+        {
+            "name": "onQueryTextSubmit",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "query"
+                }
+            ],
+            "start_position": 9595,
+            "end_position": 10152,
+            "body_start": 9656,
+            "body_end": 10152
+        },
+        {
+            "name": "performSearch",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "query"
+                },
+                {
+                    "type": "ArrayList<String>",
+                    "name": "listOfHiddenFiles"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isBackPressed"
+                }
+            ],
+            "start_position": 10158,
+            "end_position": 12545,
+            "body_start": 10270,
+            "body_end": 12545
+        },
+        {
+            "name": "onClose",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 12551,
+            "end_position": 12931,
+            "body_start": 12590,
+            "body_end": 12931
+        },
+        {
+            "name": "onAttach",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 12937,
+            "end_position": 13038,
+            "body_start": 12998,
+            "body_end": 13038
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 13044,
+            "end_position": 14771,
+            "body_start": 13165,
+            "body_end": 14771
+        },
+        {
+            "name": "onDestroyView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14777,
+            "end_position": 15058,
+            "body_start": 14819,
+            "body_end": 15058
+        },
+        {
+            "name": "onScale",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ScaleGestureDetector",
+                    "name": "detector"
+                }
+            ],
+            "start_position": 15160,
+            "end_position": 15445,
+            "body_start": 15232,
+            "body_end": 15445
+        },
+        {
+            "name": "setGridViewColumns",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "float",
+                    "name": "scaleFactor"
+                }
+            ],
+            "start_position": 15457,
+            "end_position": 16177,
+            "body_start": 15510,
+            "body_end": 16177
+        },
+        {
+            "name": "setupEmptyList",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 16183,
+            "end_position": 16487,
+            "body_start": 16224,
+            "body_end": 16487
+        },
+        {
+            "name": "onViewCreated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 16493,
+            "end_position": 17459,
+            "body_start": 16590,
+            "body_end": 17459
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 17465,
+            "end_position": 18148,
+            "body_start": 17547,
+            "body_end": 18148
+        },
+        {
+            "name": "getColumnsCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 18154,
+            "end_position": 18334,
+            "body_start": 18183,
+            "body_end": 18334
+        },
+        {
+            "name": "restoreIndexAndTopPosition",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 18389,
+            "end_position": 19020,
+            "body_start": 18433,
+            "body_end": 19020
+        },
+        {
+            "name": "scrollToPosition",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 19026,
+            "end_position": 19520,
+            "body_start": 19070,
+            "body_end": 19520
+        },
+        {
+            "name": "saveIndexAndTopPosition",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "index"
+                }
+            ],
+            "start_position": 19576,
+            "end_position": 20423,
+            "body_start": 19626,
+            "body_end": 20423
+        },
+        {
+            "name": "onItemClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AdapterView<?>",
+                    "name": "parent"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                },
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 20430,
+            "end_position": 20547,
+            "body_start": 20511,
+            "body_end": 20547
+        },
+        {
+            "name": "onRefresh",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 20553,
+            "end_position": 21152,
+            "body_start": 20591,
+            "body_end": 21152
+        },
+        {
+            "name": "setOnRefreshListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OnEnforceableRefreshListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 21158,
+            "end_position": 21276,
+            "body_start": 21230,
+            "body_end": 21276
+        },
+        {
+            "name": "setSwipeEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 21607,
+            "end_position": 21707,
+            "body_start": 21652,
+            "body_end": 21707
+        },
+        {
+            "name": "setMessageForEmptyList",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 21775,
+            "end_position": 21963,
+            "body_start": 21826,
+            "body_end": 21963
+        },
+        {
+            "name": "setMessageForEmptyList",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "headline"
+                },
+                {
+                    "type": "int",
+                    "name": "message"
+                },
+                {
+                    "type": "int",
+                    "name": "icon"
+                }
+            ],
+            "start_position": 22205,
+            "end_position": 22440,
+            "body_start": 22369,
+            "body_end": 22440
+        },
+        {
+            "name": "setMessageForEmptyList",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "headline"
+                },
+                {
+                    "type": "int",
+                    "name": "message"
+                },
+                {
+                    "type": "int",
+                    "name": "icon"
+                },
+                {
+                    "type": "boolean",
+                    "name": "tintIcon"
+                }
+            ],
+            "start_position": 22748,
+            "end_position": 23689,
+            "body_start": 22936,
+            "body_end": 23689
+        },
+        {
+            "name": "setEmptyListMessage",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SearchType",
+                    "name": "searchType"
+                }
+            ],
+            "start_position": 23695,
+            "end_position": 26579,
+            "body_start": 23756,
+            "body_end": 26579
+        },
+        {
+            "name": "setEmptyListLoadingMessage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 26641,
+            "end_position": 27316,
+            "body_start": 26682,
+            "body_end": 27316
+        },
+        {
+            "name": "getEmptyViewText",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 27444,
+            "end_position": 27605,
+            "body_start": 27477,
+            "body_end": 27605
+        },
+        {
+            "name": "onRefresh",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "ignoreETag"
+                }
+            ],
+            "start_position": 27611,
+            "end_position": 27960,
+            "body_start": 27667,
+            "body_end": 27960
+        },
+        {
+            "name": "onConfigurationChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Configuration",
+                    "name": "newConfig"
+                }
+            ],
+            "start_position": 27966,
+            "end_position": 28516,
+            "body_start": 28049,
+            "body_end": 28516
+        },
+        {
+            "name": "setGridSwitchButton",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28522,
+            "end_position": 29056,
+            "body_start": 28559,
+            "body_end": 29056
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "if_statement"
+    ],
+    "local_variables": {
+        "item": "MenuItem",
+        "handler": "Handler",
+        "displaymetrics": "DisplayMetrics",
+        "activity": "Activity",
+        "width": "int",
+        "fragment": "Fragment",
+        "inputMethodManager": "InputMethodManager",
+        "searchBar": "LinearLayout",
+        "adapter": "var",
+        "listOfHiddenFiles": "ArrayList<String>",
+        "fileDisplayActivity": "FileDisplayActivity",
+        "localFileListAdapter": "LocalFileListAdapter",
+        "v": "View",
+        "gridLayoutManager": "GridLayoutManager",
+        "scaleInt": "Integer",
+        "referencePosition": "int",
+        "index": "int",
+        "firstPosition": "int",
+        "top": "int",
+        "linearLayoutManager": "LinearLayoutManager",
+        "visibleItemCount": "int",
+        "layoutManager": "RecyclerView.LayoutManager",
+        "view": "View",
+        "fileActivity": "FileActivity"
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "methods": [
+        {
+            "name": "initializeDevice",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1342,
+            "end_position": 1518,
+            "body_start": 1385,
+            "body_end": 1518
+        },
+        {
+            "name": "checkPreconditions",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1524,
+            "end_position": 1619,
+            "body_start": 1567,
+            "body_end": 1619
+        },
+        {
+            "name": "startAppFromHomeScreen",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1668,
+            "end_position": 2485,
+            "body_start": 1715,
+            "body_end": 2485
+        },
+        {
+            "name": "startSettingsFromHomeScreen",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2581,
+            "end_position": 3306,
+            "body_start": 2666,
+            "body_end": 3306
+        },
+        {
+            "name": "getLauncherPackageName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 3555,
+            "end_position": 4048,
+            "body_start": 3595,
+            "body_end": 4048
+        },
+        {
+            "name": "clickByText",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "text"
+                }
+            ],
+            "start_position": 4206,
+            "end_position": 4489,
+            "body_start": 4277,
+            "body_end": 4489
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "UiDevice": [
+            "getInstance"
+        ],
+        "InstrumentationRegistry": [
+            "getInstrumentation",
+            "getContext"
+        ],
+        "unknown": [
+            "assertThat",
+            "notNullValue",
+            "getLauncherPackageName",
+            "clickByText"
+        ],
+        "mDevice": [
+            "pressHome",
+            "wait"
+        ],
+        "Until": [
+            "hasObject"
+        ],
+        "By.pkg(launcherPackage)": [
+            "depth"
+        ],
+        "By": [
+            "pkg"
+        ],
+        "context.getPackageManager()": [
+            "getLaunchIntentForPackage"
+        ],
+        "context": [
+            "getPackageManager",
+            "startActivity"
+        ],
+        "intent": [
+            "addFlags",
+            "addCategory"
+        ],
+        "By.pkg(OWNCLOUD_APP_PACKAGE)": [
+            "depth"
+        ],
+        "InstrumentationRegistry.getContext()": [
+            "getPackageManager"
+        ],
+        "pm": [
+            "resolveActivity"
+        ],
+        "device": [
+            "findObject"
+        ],
+        "new UiSelector()": [
+            "text"
+        ],
+        "obj": [
+            "clickAndWaitForNewWindow"
+        ]
+    },
+    "local_variables": {
+        "launcherPackage": "String",
+        "context": "Context",
+        "intent": "Intent",
+        "pm": "PackageManager",
+        "resolveInfo": "ResolveInfo",
+        "device": "UiDevice",
+        "obj": "UiObject"
+    }
+}

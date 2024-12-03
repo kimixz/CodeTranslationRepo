@@ -1,0 +1,60 @@
+{
+    "method_calls": {
+        "RichDocumentsCreateAssetOperation.class": [
+            "getSimpleName"
+        ],
+        "client": [
+            "getBaseUri",
+            "executeMethod",
+            "exhaustResponse"
+        ],
+        "postMethod": [
+            "setParameter",
+            "addRequestHeader",
+            "getResponseBodyAsString",
+            "getResponseBodyAsStream",
+            "releaseConnection"
+        ],
+        "respJSON": [
+            "getString"
+        ],
+        "result": [
+            "setSingleData",
+            "getLogMessage",
+            "getException"
+        ],
+        "Log_OC": [
+            "e"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1456,
+            "end_position": 3023,
+            "body_start": 1515,
+            "body_end": 3023
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult",
+        "postMethod": "Utf8PostMethod",
+        "status": "int",
+        "response": "String",
+        "respJSON": "JSONObject",
+        "url": "String"
+    }
+}

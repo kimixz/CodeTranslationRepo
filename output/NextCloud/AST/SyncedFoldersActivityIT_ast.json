@@ -1,0 +1,86 @@
+{
+    "methods": [
+        {
+            "name": "open",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1480,
+            "end_position": 1776,
+            "body_start": 1529,
+            "body_end": 1776
+        },
+        {
+            "name": "testSyncedFolderDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1782,
+            "end_position": 3779,
+            "body_start": 1849,
+            "body_end": 3779
+        },
+        {
+            "name": "showPowerCheckDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3789,
+            "end_position": 4378,
+            "body_start": 3854,
+            "body_end": 4378
+        }
+    ],
+    "local_variables": {
+        "activity": "SyncedFoldersActivity",
+        "sut": "AlertDialog",
+        "item": "SyncedFolderDisplayItem",
+        "intent": "Intent"
+    },
+    "method_calls": {
+        "activityRule": [
+            "launchActivity"
+        ],
+        "activity.adapter": [
+            "clear"
+        ],
+        "unknown": [
+            "shortSleep",
+            "screenshot",
+            "getInstrumentation"
+        ],
+        "SyncedFolderPreferencesDialogFragment": [
+            "newInstance"
+        ],
+        "sut": [
+            "show",
+            "requireDialog",
+            "getWindow"
+        ],
+        "activity": [
+            "getSupportFragmentManager",
+            "buildPowerCheckDialog",
+            "runOnUiThread"
+        ],
+        "getInstrumentation()": [
+            "waitForIdleSync"
+        ],
+        "Objects.requireNonNull(sut.requireDialog().getWindow())": [
+            "getDecorView"
+        ],
+        "Objects": [
+            "requireNonNull"
+        ],
+        "sut.requireDialog()": [
+            "getWindow"
+        ],
+        "Looper": [
+            "myLooper",
+            "prepare"
+        ],
+        "Objects.requireNonNull(sut.getWindow())": [
+            "getDecorView"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ]
+}

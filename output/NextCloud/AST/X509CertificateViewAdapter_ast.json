@@ -1,0 +1,319 @@
+{
+    "method_calls": {
+        "X509CertificateViewAdapter.class": [
+            "getSimpleName"
+        ],
+        "binding.nullCert": [
+            "setVisibility"
+        ],
+        "unknown": [
+            "showSubject",
+            "showIssuer",
+            "showValidity",
+            "showSignature",
+            "getDigestString",
+            "getDigestHexBytesWithColonsAndNewLines",
+            "getDigest",
+            "parsePrincipal"
+        ],
+        "mCertificate": [
+            "getSubjectX500Principal",
+            "getIssuerX500Principal",
+            "getNotBefore",
+            "getNotAfter",
+            "getEncoded",
+            "getSigAlgName"
+        ],
+        "MessageDigest": [
+            "getInstance"
+        ],
+        "md": [
+            "reset",
+            "digest"
+        ],
+        "binding.valueCertificateFingerprint": [
+            "setText",
+            "getContext"
+        ],
+        "binding.valueSignatureAlgorithm": [
+            "setText"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "System": [
+            "lineSeparator"
+        ],
+        "context": [
+            "getString"
+        ],
+        "hex": [
+            "append",
+            "toString"
+        ],
+        "hex.toString()": [
+            "replaceFirst"
+        ],
+        "DateFormat": [
+            "getDateInstance"
+        ],
+        "binding.valueValidityFrom": [
+            "setText"
+        ],
+        "dateFormat": [
+            "format"
+        ],
+        "binding.valueValidityTo": [
+            "setText"
+        ],
+        "s": [
+            "get"
+        ],
+        "binding.valueSubjectCN": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueSubjectO": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueSubjectOU": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueSubjectC": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueSubjectST": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueSubjectL": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueIssuerCN": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueIssuerO": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueIssuerOU": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueIssuerC": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueIssuerST": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.valueIssuerL": [
+            "setText",
+            "setVisibility"
+        ],
+        "principal": [
+            "getName"
+        ],
+        "toParse": [
+            "split"
+        ],
+        "piece": [
+            "startsWith",
+            "substring"
+        ],
+        "result": [
+            "put"
+        ],
+        "token": [
+            "length"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "try_statement",
+        "return_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "updateCertificateView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 1561,
+            "end_position": 2115,
+            "body_start": 1657,
+            "body_end": 2115
+        },
+        {
+            "name": "getDigest",
+            "return_type": "byte[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "algorithm"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "message"
+                }
+            ],
+            "start_position": 2121,
+            "end_position": 2420,
+            "body_start": 2180,
+            "body_end": 2420
+        },
+        {
+            "name": "showSignature",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 2426,
+            "end_position": 3205,
+            "body_start": 2501,
+            "body_end": 3205
+        },
+        {
+            "name": "getDigestString",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "byte[]",
+                    "name": "cert"
+                }
+            ],
+            "start_position": 3211,
+            "end_position": 3533,
+            "body_start": 3285,
+            "body_end": 3533
+        },
+        {
+            "name": "getDigestHexBytesWithColonsAndNewLines",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "String",
+                    "name": "digestType"
+                },
+                {
+                    "type": "byte []",
+                    "name": "cert"
+                }
+            ],
+            "start_position": 3539,
+            "end_position": 4449,
+            "body_start": 3655,
+            "body_end": 4449
+        },
+        {
+            "name": "showValidity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Date",
+                    "name": "notBefore"
+                },
+                {
+                    "type": "Date",
+                    "name": "notAfter"
+                },
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 4455,
+            "end_position": 4772,
+            "body_start": 4560,
+            "body_end": 4772
+        },
+        {
+            "name": "showSubject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "X500Principal",
+                    "name": "subject"
+                },
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 4778,
+            "end_position": 6388,
+            "body_start": 4874,
+            "body_end": 6388
+        },
+        {
+            "name": "showIssuer",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "X500Principal",
+                    "name": "issuer"
+                },
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 6394,
+            "end_position": 7983,
+            "body_start": 6488,
+            "body_end": 7983
+        },
+        {
+            "name": "parsePrincipal",
+            "return_type": "Map<String, String>",
+            "parameters": [
+                {
+                    "type": "Principal",
+                    "name": "principal"
+                }
+            ],
+            "start_position": 7990,
+            "end_position": 8542,
+            "body_start": 8054,
+            "body_end": 8542
+        }
+    ],
+    "local_variables": {
+        "md": "MessageDigest",
+        "cert": "byte[]",
+        "rawDigest": "byte[]",
+        "newLine": "String",
+        "hex": "StringBuilder",
+        "hiVal": "int",
+        "loVal": "int",
+        "dateFormat": "DateFormat",
+        "s": "Map<String, String>",
+        "result": "Map<String, String>",
+        "toParse": "String",
+        "pieces": "String[]",
+        "tokens": "String[]"
+    }
+}

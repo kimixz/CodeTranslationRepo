@@ -1,0 +1,33 @@
+{
+    "methods": [
+        {
+            "name": "fullUserInfoDetail",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 852,
+            "end_position": 1843,
+            "body_start": 915,
+            "body_end": 1843
+        }
+    ],
+    "local_variables": {
+        "intent": "Intent",
+        "userInfo": "UserInfo",
+        "sut": "UserInfoActivity"
+    },
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "intent": [
+            "putExtra"
+        ],
+        "activityRule": [
+            "launchActivity"
+        ],
+        "unknown": [
+            "shortSleep",
+            "screenshot"
+        ]
+    }
+}

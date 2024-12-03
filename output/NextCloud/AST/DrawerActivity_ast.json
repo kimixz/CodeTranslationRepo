@@ -1,0 +1,1605 @@
+{
+    "method_calls": {
+        "DrawerActivity.class": [
+            "getSimpleName"
+        ],
+        "unknown": [
+            "findViewById",
+            "updateHeader",
+            "setupDrawerMenu",
+            "getAndDisplayUserQuota",
+            "setupQuotaElement",
+            "setupDrawerToggle",
+            "getSupportActionBar",
+            "getMenuItemIdFromTitle",
+            "setDrawerMenuItemChecked",
+            "supportInvalidateOptionsMenu",
+            "isDrawerIndicatorAvailable",
+            "closeDrawer",
+            "getResources",
+            "findQuotaViewById",
+            "getAccount",
+            "getCapabilities",
+            "setDrawerHeaderLogo",
+            "hideTopBanner",
+            "showTopBanner",
+            "openAppOrStore",
+            "openAppStore",
+            "startComposeActivity",
+            "getColor",
+            "getPackageManager",
+            "getUser",
+            "startActivity",
+            "onNavigationItemClicked",
+            "filterDrawerMenu",
+            "unsetAllDrawerMenuItems",
+            "showFiles",
+            "getApplicationContext",
+            "handleSearchEvents",
+            "startPhotoSearch",
+            "getSupportFragmentManager",
+            "startSharedSearch",
+            "startRecentlyModifiedSearch",
+            "externalLinkClicked",
+            "startActivityForResult",
+            "startAccountCreation",
+            "launchActivityForSearch",
+            "fetchExternalLinks",
+            "restart",
+            "isDrawerOpen",
+            "openDrawer",
+            "updateExternalLinksInDrawer",
+            "updateQuotaLink",
+            "isRoot",
+            "getString",
+            "getTheme",
+            "showQuota",
+            "getUserAccountManager",
+            "runOnUiThread",
+            "setQuotaInformation",
+            "setExternalLinkIcon",
+            "getIdMenuItem",
+            "getContentResolver",
+            "setAccount",
+            "finish",
+            "getStorageManager",
+            "getBaseContext",
+            "getPackageName",
+            "handleNavItemClickEvent"
+        ],
+        "mNavigationView": [
+            "getHeaderView",
+            "getMenu"
+        ],
+        "getSupportActionBar()": [
+            "setDisplayHomeAsUpEnabled"
+        ],
+        "super": [
+            "onDrawerSlide",
+            "onDrawerClosed",
+            "onDrawerOpened",
+            "updateActionBarTitleAndHomeButton",
+            "onLoadFailed",
+            "onCreate",
+            "onSaveInstanceState",
+            "onRestoreInstanceState",
+            "onPostCreate",
+            "onConfigurationChanged",
+            "onBackPressed",
+            "onActivityResult",
+            "onStart",
+            "onStop"
+        ],
+        "mDrawerToggle": [
+            "setDrawerIndicatorEnabled",
+            "setDrawerSlideAnimationEnabled",
+            "syncState",
+            "onConfigurationChanged"
+        ],
+        "new Handler()": [
+            "post"
+        ],
+        "mDrawerLayout": [
+            "addDrawerListener",
+            "closeDrawers",
+            "isDrawerOpen",
+            "closeDrawer",
+            "openDrawer",
+            "setDrawerLockMode"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "viewThemeUtils.platform": [
+            "tintToolbarArrowDrawable",
+            "colorNavigationView",
+            "colorDrawable"
+        ],
+        "viewThemeUtils.material": [
+            "colorProgressBar"
+        ],
+        "themeColorUtils": [
+            "unchangedPrimaryColor",
+            "unchangedFontColor"
+        ],
+        "getResources()": [
+            "getBoolean",
+            "getColor",
+            "getDisplayMetrics"
+        ],
+        "getCapabilities()": [
+            "getServerBackground",
+            "getAssistant",
+            "getAccountName"
+        ],
+        "capability": [
+            "getServerLogo",
+            "getServerName"
+        ],
+        "mNavigationViewHeader": [
+            "findViewById"
+        ],
+        "drawerHeader": [
+            "setBackgroundColor"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "URLUtil": [
+            "isValidUrl"
+        ],
+        "Glide.with(this)\n                    .using(Glide.buildStreamModelLoader(Uri.class, this), InputStream.class)\n                    .from(Uri.class)\n                    .as(SVGorImage.class)\n                    .transcode(new SvgOrImageBitmapTranscoder(128, 128), Bitmap.class)\n                    .sourceEncoder(new StreamEncoder())\n                    .cacheDecoder(new FileToStreamDecoder<>(new SvgOrImageDecoder()))": [
+            "decoder"
+        ],
+        "Glide.with(this)\n                    .using(Glide.buildStreamModelLoader(Uri.class, this), InputStream.class)\n                    .from(Uri.class)\n                    .as(SVGorImage.class)\n                    .transcode(new SvgOrImageBitmapTranscoder(128, 128), Bitmap.class)\n                    .sourceEncoder(new StreamEncoder())": [
+            "cacheDecoder"
+        ],
+        "Glide.with(this)\n                    .using(Glide.buildStreamModelLoader(Uri.class, this), InputStream.class)\n                    .from(Uri.class)\n                    .as(SVGorImage.class)\n                    .transcode(new SvgOrImageBitmapTranscoder(128, 128), Bitmap.class)": [
+            "sourceEncoder"
+        ],
+        "Glide.with(this)\n                    .using(Glide.buildStreamModelLoader(Uri.class, this), InputStream.class)\n                    .from(Uri.class)\n                    .as(SVGorImage.class)": [
+            "transcode"
+        ],
+        "Glide.with(this)\n                    .using(Glide.buildStreamModelLoader(Uri.class, this), InputStream.class)\n                    .from(Uri.class)": [
+            "as"
+        ],
+        "Glide.with(this)\n                    .using(Glide.buildStreamModelLoader(Uri.class, this), InputStream.class)": [
+            "from"
+        ],
+        "Glide.with(this)": [
+            "using"
+        ],
+        "Glide": [
+            "with",
+            "buildStreamModelLoader"
+        ],
+        "resource": [
+            "getWidth",
+            "getHeight",
+            "getCurrent"
+        ],
+        "Math": [
+            "max",
+            "round",
+            "ceil"
+        ],
+        "BitmapUtils": [
+            "scaleBitmap"
+        ],
+        "requestBuilder\n                    .diskCacheStrategy(DiskCacheStrategy.SOURCE)\n                    .load(Uri.parse(logo))": [
+            "into"
+        ],
+        "requestBuilder\n                    .diskCacheStrategy(DiskCacheStrategy.SOURCE)": [
+            "load"
+        ],
+        "requestBuilder": [
+            "diskCacheStrategy"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "preferences": [
+            "isShowEcosystemApps",
+            "setLockTimestamp",
+            "getLockTimestamp"
+        ],
+        "banner": [
+            "setVisibility",
+            "findViewById"
+        ],
+        "notesView": [
+            "setOnClickListener"
+        ],
+        "talkView": [
+            "setOnClickListener"
+        ],
+        "moreView": [
+            "setOnClickListener"
+        ],
+        "assistantView": [
+            "setOnClickListener",
+            "setVisibility"
+        ],
+        "getCapabilities().getAssistant()": [
+            "isTrue"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "Hct.fromInt(primaryColor)": [
+            "getTone"
+        ],
+        "Hct": [
+            "fromInt"
+        ],
+        "view": [
+            "getChildAt"
+        ],
+        "imageView": [
+            "setImageTintList",
+            "getBackground",
+            "setImageDrawable",
+            "getTag"
+        ],
+        "ColorStateList": [
+            "valueOf"
+        ],
+        "background": [
+            "setStroke"
+        ],
+        "DisplayUtils": [
+            "convertDpToPixel",
+            "startLinkIntent",
+            "bytesToHumanReadable",
+            "downloadIcon",
+            "showSnackMessage"
+        ],
+        "textView": [
+            "setTextColor"
+        ],
+        "getPackageManager()": [
+            "getLaunchIntentForPackage"
+        ],
+        "intent": [
+            "putExtra",
+            "setData",
+            "addFlags",
+            "setFlags",
+            "setAction"
+        ],
+        "getUser().get()": [
+            "hashCode"
+        ],
+        "getUser()": [
+            "get"
+        ],
+        "imageHeader": [
+            "setImageDrawable",
+            "setAdjustViewBounds"
+        ],
+        "serverNameView": [
+            "setVisibility",
+            "setText",
+            "setTextColor"
+        ],
+        "navigationView": [
+            "setItemIconTintList",
+            "setNavigationItemSelectedListener",
+            "getMenu"
+        ],
+        "accountManager": [
+            "getUser",
+            "setCurrentOwnCloudAccount",
+            "getCurrentAccount"
+        ],
+        "DrawerMenuUtil": [
+            "filterSearchMenuItems",
+            "filterTrashbinMenuItem",
+            "filterActivityMenuItem",
+            "filterGroupfoldersMenuItem",
+            "filterAssistantMenuItem",
+            "setupHomeMenuItem",
+            "removeMenuItem"
+        ],
+        "menuItem": [
+            "getItemId",
+            "setChecked",
+            "getTitle",
+            "isChecked",
+            "setIcon"
+        ],
+        "((FileDisplayActivity) this)": [
+            "getLeftFragment",
+            "browseToRoot"
+        ],
+        "EventBus.getDefault()": [
+            "post",
+            "register",
+            "unregister"
+        ],
+        "EventBus": [
+            "getDefault"
+        ],
+        "MainApp": [
+            "showOnlyFilesOnDevice",
+            "showOnlyPersonalFiles",
+            "getAppContext"
+        ],
+        "Log_OC": [
+            "d",
+            "w",
+            "e"
+        ],
+        "optionalUser": [
+            "isPresent",
+            "get"
+        ],
+        "UserInfoActivity": [
+            "openAccountRemovalDialog"
+        ],
+        "composeActivity": [
+            "putExtra"
+        ],
+        "ChooseAccountDialogFragment": [
+            "newInstance"
+        ],
+        "choseAccountDialog": [
+            "show"
+        ],
+        "MDMConfig.INSTANCE": [
+            "showIntro",
+            "externalSiteSupport"
+        ],
+        "firstRunIntent": [
+            "putExtra"
+        ],
+        "currentUser": [
+            "hashCode"
+        ],
+        "externalLinksProvider": [
+            "getExternalLink",
+            "deleteAllExternalLinks",
+            "storeExternalLink"
+        ],
+        "menuItem.getTitle().toString()": [
+            "equalsIgnoreCase"
+        ],
+        "menuItem.getTitle()": [
+            "toString"
+        ],
+        "link": [
+            "getName",
+            "getRedirect",
+            "getUrl",
+            "getId",
+            "getIconUrl"
+        ],
+        "externalWebViewIntent": [
+            "putExtra"
+        ],
+        "mQuotaView": [
+            "setVisibility"
+        ],
+        "mQuotaTextPercentage": [
+            "setText"
+        ],
+        "String": [
+            "format",
+            "valueOf"
+        ],
+        "mQuotaProgressBar": [
+            "setProgress"
+        ],
+        "menu": [
+            "size",
+            "getItem"
+        ],
+        "menu.getItem(i)": [
+            "setChecked"
+        ],
+        "quotas": [
+            "size",
+            "get"
+        ],
+        "mQuotaTextLink": [
+            "setText",
+            "setClickable",
+            "setVisibility",
+            "setOnClickListener",
+            "setCompoundDrawablesWithIntrinsicBounds"
+        ],
+        "firstQuota": [
+            "getName",
+            "getUrl",
+            "getIconUrl"
+        ],
+        "test": [
+            "setBounds"
+        ],
+        "errorDrawable": [
+            "getCurrent"
+        ],
+        "mNavigationView.getMenu()": [
+            "findItem",
+            "removeGroup",
+            "add"
+        ],
+        "user": [
+            "isAnonymous",
+            "toOwnCloudAccount"
+        ],
+        "OwnCloudClientManagerFactory\n                    .getDefaultSingleton()": [
+            "getNextcloudClientFor"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ],
+        "new GetUserInfoRemoteOperation()": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultData",
+            "getData"
+        ],
+        "userInfo": [
+            "getQuota"
+        ],
+        "quota": [
+            "getUsed",
+            "getTotal",
+            "getRelative",
+            "getQuota"
+        ],
+        "t": [
+            "start"
+        ],
+        "ContextCompat": [
+            "getColor"
+        ],
+        "mNavigationView.getMenu().add(R.id.drawer_menu_external_links,\n                                                       MENU_ITEM_EXTERNAL_LINK + link.getId(), MENU_ORDER_EXTERNAL_LINKS, link.getName())\n                    .setCheckable(true)": [
+            "getItemId"
+        ],
+        "mNavigationView.getMenu().add(R.id.drawer_menu_external_links,\n                                                       MENU_ITEM_EXTERNAL_LINK + link.getId(), MENU_ORDER_EXTERNAL_LINKS, link.getName())": [
+            "setCheckable"
+        ],
+        "savedInstanceState": [
+            "getBoolean"
+        ],
+        "outState": [
+            "putBoolean"
+        ],
+        "getSupportFragmentManager()": [
+            "findFragmentByTag"
+        ],
+        "((FileDetailsSharingProcessFragment) fileDetailsSharingProcessFragment)": [
+            "onBackPressed"
+        ],
+        "data": [
+            "getBooleanExtra",
+            "getIntExtra"
+        ],
+        "((NavigationView) findViewById(R.id.nav_view)).getHeaderView(0)": [
+            "findViewById"
+        ],
+        "((NavigationView) findViewById(R.id.nav_view))": [
+            "getHeaderView"
+        ],
+        "i": [
+            "addFlags",
+            "setAction"
+        ],
+        "fileDisplayActivity": [
+            "addFlags",
+            "setFlags",
+            "setAction"
+        ],
+        "materialButton": [
+            "setIcon",
+            "getTag"
+        ],
+        "String.valueOf(menuItem.getTitle())": [
+            "equals"
+        ],
+        "String.valueOf(imageView.getTag())": [
+            "equals"
+        ],
+        "String.valueOf(materialButton.getTag())": [
+            "equals"
+        ],
+        "SystemClock": [
+            "elapsedRealtime"
+        ],
+        "getCapabilities().getAccountName()": [
+            "isEmpty"
+        ],
+        "getCapabilities": [
+            "execute"
+        ],
+        "CapabilityUtils.getCapability(user, this)\n                .getExternalLinks()": [
+            "isTrue"
+        ],
+        "CapabilityUtils.getCapability(user, this)": [
+            "getExternalLinks"
+        ],
+        "CapabilityUtils": [
+            "getCapability"
+        ],
+        "arbitraryDataProvider": [
+            "getIntegerValue",
+            "storeOrUpdateKeyValue"
+        ],
+        "getExternalLinksOperation": [
+            "execute"
+        ],
+        "uri": [
+            "getLastPathSegment",
+            "getQueryParameter"
+        ],
+        "DeepLinkConstants.Companion": [
+            "fromPath"
+        ],
+        "findViewById(R.id.fab_main)": [
+            "callOnClick"
+        ],
+        "deepLinkType": [
+            "getNavId"
+        ],
+        "navMenu": [
+            "findItem"
+        ]
+    },
+    "methods": [
+        {
+            "name": "setupDrawer",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7988,
+            "end_position": 8597,
+            "body_start": 8017,
+            "body_end": 8597
+        },
+        {
+            "name": "setupDrawerToggle",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8669,
+            "end_position": 10977,
+            "body_start": 8702,
+            "body_end": 10977
+        },
+        {
+            "name": "onDrawerSlide",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "drawerView"
+                },
+                {
+                    "type": "float",
+                    "name": "slideOffset"
+                }
+            ],
+            "start_position": 8890,
+            "end_position": 9491,
+            "body_start": 8974,
+            "body_end": 9491
+        },
+        {
+            "name": "onDrawerClosed",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 9587,
+            "end_position": 10061,
+            "body_start": 9625,
+            "body_end": 10061
+        },
+        {
+            "name": "onDrawerOpened",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "drawerView"
+                }
+            ],
+            "start_position": 10155,
+            "end_position": 10375,
+            "body_start": 10199,
+            "body_end": 10375
+        },
+        {
+            "name": "setupQuotaElement",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11042,
+            "end_position": 11499,
+            "body_start": 11075,
+            "body_end": 11499
+        },
+        {
+            "name": "updateHeader",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11505,
+            "end_position": 14499,
+            "body_start": 11532,
+            "body_end": 14499
+        },
+        {
+            "name": "onResourceReady",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "resource"
+                },
+                {
+                    "type": "GlideAnimation",
+                    "name": "glideAnimation"
+                }
+            ],
+            "start_position": 12948,
+            "end_position": 13859,
+            "body_start": 13054,
+            "body_end": 13859
+        },
+        {
+            "name": "hideTopBanner",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "LinearLayout",
+                    "name": "banner"
+                }
+            ],
+            "start_position": 14505,
+            "end_position": 14601,
+            "body_start": 14553,
+            "body_end": 14601
+        },
+        {
+            "name": "showTopBanner",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "LinearLayout",
+                    "name": "banner"
+                },
+                {
+                    "type": "int",
+                    "name": "primaryColor"
+                }
+            ],
+            "start_position": 14607,
+            "end_position": 16534,
+            "body_start": 14673,
+            "body_end": 16534
+        },
+        {
+            "name": "openAppOrStore",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "packageName"
+                }
+            ],
+            "start_position": 16693,
+            "end_position": 17183,
+            "body_start": 16741,
+            "body_end": 17183
+        },
+        {
+            "name": "openAppStore",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                },
+                {
+                    "type": "boolean",
+                    "name": "search"
+                }
+            ],
+            "start_position": 17518,
+            "end_position": 18161,
+            "body_start": 17575,
+            "body_end": 18161
+        },
+        {
+            "name": "setDrawerHeaderLogo",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "drawable"
+                },
+                {
+                    "type": "String",
+                    "name": "serverName"
+                }
+            ],
+            "start_position": 18167,
+            "end_position": 18784,
+            "body_start": 18238,
+            "body_end": 18784
+        },
+        {
+            "name": "setupDrawerMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "NavigationView",
+                    "name": "navigationView"
+                }
+            ],
+            "start_position": 18945,
+            "end_position": 19558,
+            "body_start": 19005,
+            "body_end": 19558
+        },
+        {
+            "name": "filterDrawerMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 19564,
+            "end_position": 20468,
+            "body_start": 19637,
+            "body_end": 20468
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DummyDrawerEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 20474,
+            "end_position": 20612,
+            "body_start": 20570,
+            "body_end": 20612
+        },
+        {
+            "name": "onNavigationItemClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "menuItem"
+                }
+            ],
+            "start_position": 20618,
+            "end_position": 24822,
+            "body_start": 20680,
+            "body_end": 24822
+        },
+        {
+            "name": "startComposeActivity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ComposeDestination",
+                    "name": "destination"
+                },
+                {
+                    "type": "int",
+                    "name": "titleId"
+                }
+            ],
+            "start_position": 24828,
+            "end_position": 25189,
+            "body_start": 24907,
+            "body_end": 25189
+        },
+        {
+            "name": "startActivity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Class<? extends Activity>",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 25195,
+            "end_position": 25327,
+            "body_start": 25250,
+            "body_end": 25327
+        },
+        {
+            "name": "startActivity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Class<? extends Activity>",
+                    "name": "activity"
+                },
+                {
+                    "type": "int",
+                    "name": "flags"
+                }
+            ],
+            "start_position": 25333,
+            "end_position": 25548,
+            "body_start": 25407,
+            "body_end": 25548
+        },
+        {
+            "name": "showManageAccountsDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 25554,
+            "end_position": 25812,
+            "body_start": 25593,
+            "body_end": 25812
+        },
+        {
+            "name": "openManageAccounts",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 25818,
+            "end_position": 26041,
+            "body_start": 25851,
+            "body_end": 26041
+        },
+        {
+            "name": "openAddAccount",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 26047,
+            "end_position": 26415,
+            "body_start": 26076,
+            "body_end": 26415
+        },
+        {
+            "name": "startSharedSearch",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "menuItem"
+                }
+            ],
+            "start_position": 26421,
+            "end_position": 26696,
+            "body_start": 26471,
+            "body_end": 26696
+        },
+        {
+            "name": "startRecentlyModifiedSearch",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "menuItem"
+                }
+            ],
+            "start_position": 26702,
+            "end_position": 26998,
+            "body_start": 26762,
+            "body_end": 26998
+        },
+        {
+            "name": "startPhotoSearch",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "id"
+                }
+            ],
+            "start_position": 27004,
+            "end_position": 27254,
+            "body_start": 27041,
+            "body_end": 27254
+        },
+        {
+            "name": "handleSearchEvents",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SearchEvent",
+                    "name": "searchEvent"
+                },
+                {
+                    "type": "int",
+                    "name": "menuItemId"
+                }
+            ],
+            "start_position": 27260,
+            "end_position": 27833,
+            "body_start": 27333,
+            "body_end": 27833
+        },
+        {
+            "name": "launchActivityForSearch",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SearchEvent",
+                    "name": "searchEvent"
+                },
+                {
+                    "type": "int",
+                    "name": "menuItemId"
+                }
+            ],
+            "start_position": 27839,
+            "end_position": 28420,
+            "body_start": 27917,
+            "body_end": 28420
+        },
+        {
+            "name": "accountClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "hashCode"
+                }
+            ],
+            "start_position": 28645,
+            "end_position": 28927,
+            "body_start": 28686,
+            "body_end": 28927
+        },
+        {
+            "name": "externalLinkClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "menuItem"
+                }
+            ],
+            "start_position": 28933,
+            "end_position": 29822,
+            "body_start": 28985,
+            "body_end": 29822
+        },
+        {
+            "name": "isDrawerOpen",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 29981,
+            "end_position": 30107,
+            "body_start": 30011,
+            "body_end": 30107
+        },
+        {
+            "name": "toggleDrawer",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 30113,
+            "end_position": 30257,
+            "body_start": 30140,
+            "body_end": 30257
+        },
+        {
+            "name": "closeDrawer",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 30305,
+            "end_position": 30445,
+            "body_start": 30331,
+            "body_end": 30445
+        },
+        {
+            "name": "openDrawer",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 30492,
+            "end_position": 30704,
+            "body_start": 30517,
+            "body_end": 30704
+        },
+        {
+            "name": "setDrawerLockMode",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "lockMode"
+                }
+            ],
+            "start_position": 31014,
+            "end_position": 31167,
+            "body_start": 31058,
+            "body_end": 31167
+        },
+        {
+            "name": "setDrawerIndicatorEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enable"
+                }
+            ],
+            "start_position": 31297,
+            "end_position": 31466,
+            "body_start": 31351,
+            "body_end": 31466
+        },
+        {
+            "name": "updateActionBarTitleAndHomeButton",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "chosenFile"
+                }
+            ],
+            "start_position": 31595,
+            "end_position": 31912,
+            "body_start": 31663,
+            "body_end": 31912
+        },
+        {
+            "name": "showQuota",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "showQuota"
+                }
+            ],
+            "start_position": 32038,
+            "end_position": 32240,
+            "body_start": 32080,
+            "body_end": 32240
+        },
+        {
+            "name": "setQuotaInformation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "usedSpace"
+                },
+                {
+                    "type": "long",
+                    "name": "totalSpace"
+                },
+                {
+                    "type": "int",
+                    "name": "relative"
+                },
+                {
+                    "type": "long",
+                    "name": "quotaValue"
+                }
+            ],
+            "start_position": 32563,
+            "end_position": 33626,
+            "body_start": 32660,
+            "body_end": 33626
+        },
+        {
+            "name": "unsetAllDrawerMenuItems",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 33632,
+            "end_position": 33967,
+            "body_start": 33671,
+            "body_end": 33967
+        },
+        {
+            "name": "updateQuotaLink",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 33973,
+            "end_position": 36827,
+            "body_start": 34004,
+            "body_end": 36827
+        },
+        {
+            "name": "onResourceReady",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "resource"
+                },
+                {
+                    "type": "GlideAnimation",
+                    "name": "glideAnimation"
+                }
+            ],
+            "start_position": 35379,
+            "end_position": 35755,
+            "body_start": 35491,
+            "body_end": 35755
+        },
+        {
+            "name": "onLoadFailed",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Exception",
+                    "name": "e"
+                },
+                {
+                    "type": "Drawable",
+                    "name": "errorDrawable"
+                }
+            ],
+            "start_position": 35781,
+            "end_position": 36214,
+            "body_start": 35877,
+            "body_end": 36214
+        },
+        {
+            "name": "setDrawerMenuItemChecked",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 36965,
+            "end_position": 37549,
+            "body_start": 37004,
+            "body_end": 37549
+        },
+        {
+            "name": "getAndDisplayUserQuota",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 37626,
+            "end_position": 40360,
+            "body_start": 37664,
+            "body_end": 40360
+        },
+        {
+            "name": "updateExternalLinksInDrawer",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 40366,
+            "end_position": 42051,
+            "body_start": 40409,
+            "body_end": 42051
+        },
+        {
+            "name": "onResourceReady",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "resource"
+                },
+                {
+                    "type": "GlideAnimation",
+                    "name": "glideAnimation"
+                }
+            ],
+            "start_position": 41154,
+            "end_position": 41368,
+            "body_start": 41262,
+            "body_end": 41368
+        },
+        {
+            "name": "onLoadFailed",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Exception",
+                    "name": "e"
+                },
+                {
+                    "type": "Drawable",
+                    "name": "errorDrawable"
+                }
+            ],
+            "start_position": 41390,
+            "end_position": 41655,
+            "body_start": 41482,
+            "body_end": 41655
+        },
+        {
+            "name": "setExternalLinkIcon",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "id"
+                },
+                {
+                    "type": "Drawable",
+                    "name": "drawable"
+                },
+                {
+                    "type": "int",
+                    "name": "greyColor"
+                }
+            ],
+            "start_position": 42057,
+            "end_position": 42469,
+            "body_start": 42132,
+            "body_end": 42469
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 42475,
+            "end_position": 42901,
+            "body_start": 42540,
+            "body_end": 42901
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 42907,
+            "end_position": 43119,
+            "body_start": 42982,
+            "body_end": 43119
+        },
+        {
+            "name": "onRestoreInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 43125,
+            "end_position": 43414,
+            "body_start": 43210,
+            "body_end": 43414
+        },
+        {
+            "name": "onPostCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 43420,
+            "end_position": 43883,
+            "body_start": 43489,
+            "body_end": 43883
+        },
+        {
+            "name": "onConfigurationChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Configuration",
+                    "name": "newConfig"
+                }
+            ],
+            "start_position": 43889,
+            "end_position": 44136,
+            "body_start": 43972,
+            "body_end": 44136
+        },
+        {
+            "name": "onBackPressed",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 44142,
+            "end_position": 44649,
+            "body_start": 44184,
+            "body_end": 44649
+        },
+        {
+            "name": "onActivityResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                },
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 44655,
+            "end_position": 45907,
+            "body_start": 44747,
+            "body_end": 45907
+        },
+        {
+            "name": "findQuotaViewById",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "id"
+                }
+            ],
+            "start_position": 46095,
+            "end_position": 46352,
+            "body_start": 46134,
+            "body_end": 46352
+        },
+        {
+            "name": "restart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 46457,
+            "end_position": 46715,
+            "body_start": 46480,
+            "body_end": 46715
+        },
+        {
+            "name": "showFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "onDeviceOnly"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyPersonalFiles"
+                }
+            ],
+            "start_position": 46885,
+            "end_position": 47525,
+            "body_start": 46956,
+            "body_end": 47525
+        },
+        {
+            "name": "avatarGenerated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "avatarDrawable"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 47531,
+            "end_position": 48070,
+            "body_start": 47618,
+            "body_end": 48070
+        },
+        {
+            "name": "shouldCallGeneratedCallback",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tag"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 48076,
+            "end_position": 48607,
+            "body_start": 48165,
+            "body_end": 48607
+        },
+        {
+            "name": "addDrawerListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DrawerLayout.DrawerListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 48780,
+            "end_position": 49051,
+            "body_start": 48848,
+            "body_end": 49051
+        },
+        {
+            "name": "isDrawerIndicatorAvailable",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 49057,
+            "end_position": 49129,
+            "body_start": 49101,
+            "body_end": 49129
+        },
+        {
+            "name": "getAppPreferences",
+            "return_type": "AppPreferences",
+            "parameters": [],
+            "start_position": 49135,
+            "end_position": 49212,
+            "body_start": 49177,
+            "body_end": 49212
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 49218,
+            "end_position": 49335,
+            "body_start": 49257,
+            "body_end": 49335
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 49341,
+            "end_position": 49592,
+            "body_start": 49379,
+            "body_end": 49592
+        },
+        {
+            "name": "onAccountRemovedEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AccountRemovedEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 49598,
+            "end_position": 49730,
+            "body_start": 49704,
+            "body_end": 49730
+        },
+        {
+            "name": "fetchExternalLinks",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "force"
+                }
+            ],
+            "start_position": 49812,
+            "end_position": 52569,
+            "body_start": 49864,
+            "body_end": 52569
+        },
+        {
+            "name": "handleDeepLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "uri"
+                }
+            ],
+            "start_position": 52575,
+            "end_position": 53790,
+            "body_start": 52623,
+            "body_end": 53790
+        },
+        {
+            "name": "handleNavItemClickEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "menuItemId"
+                }
+            ],
+            "start_position": 53796,
+            "end_position": 54084,
+            "body_start": 53856,
+            "body_end": 54084
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "try_statement",
+        "return_statement",
+        "for_statement",
+        "break_statement"
+    ],
+    "local_variables": {
+        "menuItemIdFromTitle": "Integer",
+        "backArrow": "Drawable",
+        "primaryColor": "int",
+        "isClientBranded": "boolean",
+        "capability": "OCCapability",
+        "logo": "Bitmap",
+        "drawerHeader": "LinearLayout",
+        "requestBuilder": "GenericRequestBuilder<Uri, InputStream, SVGorImage, Bitmap>",
+        "target": "MenuSimpleTarget",
+        "width": "int",
+        "height": "int",
+        "max": "int",
+        "drawables": "Drawable[]",
+        "layerDrawable": "LayerDrawable",
+        "name": "String",
+        "banner": "LinearLayout",
+        "shouldHideTopBanner": "boolean",
+        "notesView": "LinearLayout",
+        "talkView": "LinearLayout",
+        "moreView": "LinearLayout",
+        "assistantView": "LinearLayout",
+        "views": "List<LinearLayout>",
+        "iconColor": "int",
+        "imageView": "ImageView",
+        "background": "GradientDrawable",
+        "textView": "TextView",
+        "intent": "Intent",
+        "suffix": "String",
+        "imageHeader": "ImageView",
+        "serverNameView": "TextView",
+        "account": "User",
+        "itemId": "int",
+        "isNewMenuItemChecked": "MenuItem",
+        "optionalUser": "Optional<User>",
+        "composeActivity": "Intent",
+        "choseAccountDialog": "ChooseAccountDialogFragment",
+        "manageAccountsIntent": "Intent",
+        "firstRunIntent": "Intent",
+        "searchEvent": "SearchEvent",
+        "leftFragment": "Fragment",
+        "currentUser": "User",
+        "externalWebViewIntent": "Intent",
+        "menu": "Menu",
+        "i": "Intent",
+        "quotas": "List<ExternalLink>",
+        "density": "float",
+        "size": "int",
+        "firstQuota": "ExternalLink",
+        "test": "Drawable",
+        "menuItem": "MenuItem",
+        "t": "Thread",
+        "user": "User",
+        "context": "Context",
+        "nextcloudClient": "NextcloudClient",
+        "result": "RemoteOperationResult",
+        "userInfo": "UserInfo",
+        "quota": "Quota",
+        "used": "long",
+        "total": "long",
+        "relative": "int",
+        "quotaValue": "long",
+        "greyColor": "int",
+        "id": "int",
+        "fileDetailsSharingProcessFragment": "Fragment",
+        "v": "View",
+        "fileDisplayActivity": "Intent",
+        "newIcon": "MenuItem",
+        "getCapabilities": "GetCapabilitiesOperation",
+        "count": "int",
+        "getExternalLinksOperation": "RemoteOperation",
+        "externalLinks": "ArrayList<ExternalLink>",
+        "path": "String",
+        "deepLinkType": "DeepLinkConstants",
+        "navMenu": "Menu"
+    }
+}

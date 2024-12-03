@@ -1,0 +1,481 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getItemId",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 665,
+            "end_position": 733,
+            "body_start": 702,
+            "body_end": 733
+        },
+        {
+            "name": "getGroupId",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 739,
+            "end_position": 802,
+            "body_start": 777,
+            "body_end": 802
+        },
+        {
+            "name": "getOrder",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 808,
+            "end_position": 869,
+            "body_start": 844,
+            "body_end": 869
+        },
+        {
+            "name": "setTitle",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "CharSequence",
+                    "name": "title"
+                }
+            ],
+            "start_position": 875,
+            "end_position": 991,
+            "body_start": 934,
+            "body_end": 991
+        },
+        {
+            "name": "setTitle",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "title"
+                }
+            ],
+            "start_position": 997,
+            "end_position": 1075,
+            "body_start": 1047,
+            "body_end": 1075
+        },
+        {
+            "name": "getTitle",
+            "return_type": "CharSequence",
+            "parameters": [],
+            "start_position": 1081,
+            "end_position": 1161,
+            "body_start": 1126,
+            "body_end": 1161
+        },
+        {
+            "name": "setTitleCondensed",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "CharSequence",
+                    "name": "title"
+                }
+            ],
+            "start_position": 1167,
+            "end_position": 1263,
+            "body_start": 1235,
+            "body_end": 1263
+        },
+        {
+            "name": "getTitleCondensed",
+            "return_type": "CharSequence",
+            "parameters": [],
+            "start_position": 1269,
+            "end_position": 1351,
+            "body_start": 1323,
+            "body_end": 1351
+        },
+        {
+            "name": "setIcon",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "icon"
+                }
+            ],
+            "start_position": 1357,
+            "end_position": 1438,
+            "body_start": 1410,
+            "body_end": 1438
+        },
+        {
+            "name": "setIcon",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "iconRes"
+                }
+            ],
+            "start_position": 1444,
+            "end_position": 1523,
+            "body_start": 1495,
+            "body_end": 1523
+        },
+        {
+            "name": "getIcon",
+            "return_type": "Drawable",
+            "parameters": [],
+            "start_position": 1529,
+            "end_position": 1597,
+            "body_start": 1569,
+            "body_end": 1597
+        },
+        {
+            "name": "setIntent",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 1603,
+            "end_position": 1686,
+            "body_start": 1658,
+            "body_end": 1686
+        },
+        {
+            "name": "getIntent",
+            "return_type": "Intent",
+            "parameters": [],
+            "start_position": 1692,
+            "end_position": 1760,
+            "body_start": 1732,
+            "body_end": 1760
+        },
+        {
+            "name": "setShortcut",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "char",
+                    "name": "numericChar"
+                },
+                {
+                    "type": "char",
+                    "name": "alphaChar"
+                }
+            ],
+            "start_position": 1766,
+            "end_position": 1870,
+            "body_start": 1842,
+            "body_end": 1870
+        },
+        {
+            "name": "setNumericShortcut",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "char",
+                    "name": "numericChar"
+                }
+            ],
+            "start_position": 1876,
+            "end_position": 1971,
+            "body_start": 1943,
+            "body_end": 1971
+        },
+        {
+            "name": "getNumericShortcut",
+            "return_type": "char",
+            "parameters": [],
+            "start_position": 1977,
+            "end_position": 2049,
+            "body_start": 2024,
+            "body_end": 2049
+        },
+        {
+            "name": "setAlphabeticShortcut",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "char",
+                    "name": "alphaChar"
+                }
+            ],
+            "start_position": 2055,
+            "end_position": 2151,
+            "body_start": 2123,
+            "body_end": 2151
+        },
+        {
+            "name": "getAlphabeticShortcut",
+            "return_type": "char",
+            "parameters": [],
+            "start_position": 2157,
+            "end_position": 2232,
+            "body_start": 2207,
+            "body_end": 2232
+        },
+        {
+            "name": "setCheckable",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "checkable"
+                }
+            ],
+            "start_position": 2238,
+            "end_position": 2328,
+            "body_start": 2300,
+            "body_end": 2328
+        },
+        {
+            "name": "isCheckable",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2334,
+            "end_position": 2406,
+            "body_start": 2377,
+            "body_end": 2406
+        },
+        {
+            "name": "setChecked",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "checked"
+                }
+            ],
+            "start_position": 2412,
+            "end_position": 2498,
+            "body_start": 2470,
+            "body_end": 2498
+        },
+        {
+            "name": "isChecked",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2504,
+            "end_position": 2574,
+            "body_start": 2545,
+            "body_end": 2574
+        },
+        {
+            "name": "setVisible",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "visible"
+                }
+            ],
+            "start_position": 2580,
+            "end_position": 2666,
+            "body_start": 2638,
+            "body_end": 2666
+        },
+        {
+            "name": "isVisible",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2672,
+            "end_position": 2742,
+            "body_start": 2713,
+            "body_end": 2742
+        },
+        {
+            "name": "setEnabled",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 2748,
+            "end_position": 2834,
+            "body_start": 2806,
+            "body_end": 2834
+        },
+        {
+            "name": "isEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2840,
+            "end_position": 2910,
+            "body_start": 2881,
+            "body_end": 2910
+        },
+        {
+            "name": "hasSubMenu",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 2916,
+            "end_position": 2987,
+            "body_start": 2958,
+            "body_end": 2987
+        },
+        {
+            "name": "getSubMenu",
+            "return_type": "SubMenu",
+            "parameters": [],
+            "start_position": 2993,
+            "end_position": 3063,
+            "body_start": 3035,
+            "body_end": 3063
+        },
+        {
+            "name": "setOnMenuItemClickListener",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "OnMenuItemClickListener",
+                    "name": "menuItemClickListener"
+                }
+            ],
+            "start_position": 3069,
+            "end_position": 3201,
+            "body_start": 3173,
+            "body_end": 3201
+        },
+        {
+            "name": "getMenuInfo",
+            "return_type": "ContextMenu.ContextMenuInfo",
+            "parameters": [],
+            "start_position": 3207,
+            "end_position": 3298,
+            "body_start": 3270,
+            "body_end": 3298
+        },
+        {
+            "name": "setShowAsAction",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "actionEnum"
+                }
+            ],
+            "start_position": 3304,
+            "end_position": 3403,
+            "body_start": 3362,
+            "body_end": 3403
+        },
+        {
+            "name": "setShowAsActionFlags",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "actionEnum"
+                }
+            ],
+            "start_position": 3409,
+            "end_position": 3504,
+            "body_start": 3476,
+            "body_end": 3504
+        },
+        {
+            "name": "setActionView",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 3510,
+            "end_position": 3593,
+            "body_start": 3565,
+            "body_end": 3593
+        },
+        {
+            "name": "setActionView",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "resId"
+                }
+            ],
+            "start_position": 3599,
+            "end_position": 3682,
+            "body_start": 3654,
+            "body_end": 3682
+        },
+        {
+            "name": "getActionView",
+            "return_type": "View",
+            "parameters": [],
+            "start_position": 3688,
+            "end_position": 3758,
+            "body_start": 3730,
+            "body_end": 3758
+        },
+        {
+            "name": "setActionProvider",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "ActionProvider",
+                    "name": "actionProvider"
+                }
+            ],
+            "start_position": 3764,
+            "end_position": 3871,
+            "body_start": 3843,
+            "body_end": 3871
+        },
+        {
+            "name": "getActionProvider",
+            "return_type": "ActionProvider",
+            "parameters": [],
+            "start_position": 3877,
+            "end_position": 3961,
+            "body_start": 3933,
+            "body_end": 3961
+        },
+        {
+            "name": "expandActionView",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 3967,
+            "end_position": 4044,
+            "body_start": 4015,
+            "body_end": 4044
+        },
+        {
+            "name": "collapseActionView",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 4050,
+            "end_position": 4129,
+            "body_start": 4100,
+            "body_end": 4129
+        },
+        {
+            "name": "isActionViewExpanded",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 4135,
+            "end_position": 4216,
+            "body_start": 4187,
+            "body_end": 4216
+        },
+        {
+            "name": "setOnActionExpandListener",
+            "return_type": "MenuItem",
+            "parameters": [
+                {
+                    "type": "OnActionExpandListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 4222,
+            "end_position": 4339,
+            "body_start": 4311,
+            "body_end": 4339
+        }
+    ]
+}

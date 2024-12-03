@@ -1,0 +1,1083 @@
+{
+    "method_calls": {
+        "DocumentsStorageProvider.class": [
+            "getSimpleName"
+        ],
+        "TimeUnit.MILLISECONDS": [
+            "convert"
+        ],
+        "Executors": [
+            "newCachedThreadPool"
+        ],
+        "unknown": [
+            "initiateStorageMap",
+            "getContext",
+            "toDocument",
+            "getNonNullContext",
+            "toNotifyUri",
+            "hasServerChange",
+            "saveDownloadedFile",
+            "checkFileName",
+            "checkFolderPath",
+            "getStorageManager",
+            "findFiles",
+            "getCapabilities",
+            "createFolder",
+            "createFile",
+            "getFileNotFoundExceptionWithCause",
+            "deleteDocument",
+            "recursiveRevokePermission",
+            "revokeDocumentPermission",
+            "rootIdForUser",
+            "getFile",
+            "getUser"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ],
+        "AppPreferencesImpl": [
+            "fromContext"
+        ],
+        "SettingsActivity.LOCK_PASSCODE": [
+            "equals"
+        ],
+        "preferences": [
+            "getLockPreference"
+        ],
+        "SettingsActivity.LOCK_DEVICE_CREDENTIALS": [
+            "equals"
+        ],
+        "rootIdToStorageManager": [
+            "values",
+            "get",
+            "clear",
+            "put",
+            "keySet"
+        ],
+        "result": [
+            "addRoot",
+            "addFile",
+            "isSuccess",
+            "toString",
+            "getCode",
+            "getException",
+            "addAll",
+            "add"
+        ],
+        "context": [
+            "getString",
+            "getContentResolver",
+            "getMainLooper"
+        ],
+        "DocumentsContract": [
+            "buildRootsUri",
+            "buildDocumentUri"
+        ],
+        "context.getContentResolver()": [
+            "notifyChange"
+        ],
+        "Log_OC": [
+            "d",
+            "w",
+            "e"
+        ],
+        "parentFolder.getFile()": [
+            "isEncrypted"
+        ],
+        "parentFolder": [
+            "getFile",
+            "getUser",
+            "getStorageManager",
+            "isExpired"
+        ],
+        "FileOperationsHelper": [
+            "isEndToEndEncryptionSetup"
+        ],
+        "Toast.makeText(context, R.string.e2e_not_yet_setup, Toast.LENGTH_LONG)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "storageManager": [
+            "getFolderContent",
+            "saveFile",
+            "saveConflict",
+            "getFileByPath"
+        ],
+        "resultCursor": [
+            "addFile",
+            "setLoadingTask",
+            "setExtras",
+            "setNotificationUri"
+        ],
+        "task": [
+            "executeOnExecutor"
+        ],
+        "extra": [
+            "putBoolean"
+        ],
+        "document": [
+            "getFile",
+            "getUser",
+            "getClient",
+            "getStorageManager",
+            "getRemotePath",
+            "getParent",
+            "getDocumentId"
+        ],
+        "ParcelFileDescriptor": [
+            "parseMode",
+            "open"
+        ],
+        "ocFile": [
+            "existsOnDevice",
+            "getLocalModificationTimestamp",
+            "getLastSyncDateForData",
+            "isDown",
+            "getFileName",
+            "getStoragePath",
+            "setFileLength",
+            "setModificationTimestamp",
+            "getRemotePath",
+            "getEtag"
+        ],
+        "downloadFileOperation": [
+            "execute"
+        ],
+        "Looper": [
+            "getMainLooper"
+        ],
+        "handler": [
+            "post"
+        ],
+        "Toast.makeText(MainApp.getAppContext(),\n                                                              R.string.file_not_synced,\n                                                              Toast.LENGTH_SHORT)": [
+            "show"
+        ],
+        "downloadResult": [
+            "set",
+            "get"
+        ],
+        "downloadThread": [
+            "start",
+            "join"
+        ],
+        "file": [
+            "length",
+            "setLastSyncDateForProperties",
+            "setLastSyncDateForData",
+            "setUpdateThumbnailNeeded",
+            "setModificationTimestamp",
+            "setModificationTimestampAtLastSyncForData",
+            "setEtag",
+            "setMimeType",
+            "setStoragePath",
+            "setFileLength",
+            "setRemoteId",
+            "getStoragePath",
+            "getRemoteId",
+            "getFileLength",
+            "isFolder",
+            "getFileId"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "document.getStorageManager()": [
+            "saveFile",
+            "getFileByPath"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "uploadUpdatedFile"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "new CheckEtagRemoteOperation(ocFile.getRemotePath(), ocFile.getEtag())": [
+            "execute"
+        ],
+        "dfo": [
+            "getModificationTimestamp",
+            "getEtag",
+            "getMimeType",
+            "getSavePath",
+            "getFile"
+        ],
+        "new File(savePath)": [
+            "length"
+        ],
+        "dfo.getFile()": [
+            "getRemoteId"
+        ],
+        "MimeTypeUtil": [
+            "isMedia"
+        ],
+        "FileDataStorageManager": [
+            "triggerMediaScan"
+        ],
+        "AndroidInjection": [
+            "inject"
+        ],
+        "ThumbnailsCacheManager": [
+            "containsBitmap",
+            "generateThumbnailFromOCFile"
+        ],
+        "DiskLruImageCacheFileProvider": [
+            "getParcelFileDescriptorForOCFile"
+        ],
+        "ContextExtensionsKt": [
+            "showToast"
+        ],
+        "new RenameFileOperation(document.getRemotePath(),\n                                                               displayName,\n                                                               document.getStorageManager())": [
+            "execute"
+        ],
+        "targetFolder.getFile()": [
+            "getFileName"
+        ],
+        "targetFolder": [
+            "getFile",
+            "getRemotePath",
+            "getClient",
+            "getStorageManager",
+            "getDocumentId",
+            "getUser"
+        ],
+        "new CopyFileOperation(document.getRemotePath(),\n                                                             targetFolder.getRemotePath(),\n                                                             document.getStorageManager())": [
+            "execute"
+        ],
+        "new RefreshFolderOperation(targetFolder.getFile(),\n                                                                        System.currentTimeMillis(),\n                                                                        false,\n                                                                        false,\n                                                                        true,\n                                                                        storageManager,\n                                                                        user,\n                                                                        context)": [
+            "execute"
+        ],
+        "updateParent": [
+            "isSuccess",
+            "toString"
+        ],
+        "document.getFile()": [
+            "getFileName",
+            "isFolder"
+        ],
+        "newFile": [
+            "getDocumentId"
+        ],
+        "new MoveFileOperation(document.getRemotePath(),\n                                                             targetFolder.getRemotePath(),\n                                                             document.getStorageManager())": [
+            "execute"
+        ],
+        "CapabilityUtils": [
+            "getCapability"
+        ],
+        "accountManager": [
+            "getUser",
+            "getAllUsers"
+        ],
+        "FileNameValidator.INSTANCE": [
+            "checkFolderPath",
+            "checkFileName"
+        ],
+        "DocumentsContract.Document.MIME_TYPE_DIR": [
+            "equalsIgnoreCase"
+        ],
+        "new CreateFolderOperation(newDirPath,\n                                                                 accountManager.getUser(),\n                                                                 context,\n                                                                 storageManager)": [
+            "execute"
+        ],
+        "new RefreshFolderOperation(targetFolder.getFile(), System.currentTimeMillis(),\n                                                                        false, false, true, storageManager,\n                                                                        targetFolder.getUser(), context)": [
+            "execute"
+        ],
+        "newFolder": [
+            "getDocumentId"
+        ],
+        "FileStorageUtils": [
+            "getTemporalPath"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "tempDir": [
+            "exists",
+            "mkdirs",
+            "getAbsolutePath"
+        ],
+        "emptyFile": [
+            "exists",
+            "delete",
+            "createNewFile",
+            "getAbsolutePath"
+        ],
+        "new UploadFileRemoteOperation(emptyFile.getAbsolutePath(),\n                                                                     newFilePath,\n                                                                     mimeType,\n                                                                     \"\",\n                                                                     System.currentTimeMillis() / 1000,\n                                                                     FileUtil.getCreationTimestamp(emptyFile),\n                                                                     false)": [
+            "execute"
+        ],
+        "FileUtil": [
+            "getCreationTimestamp"
+        ],
+        "new RefreshFolderOperation(targetFolder.getFile(),\n                                                                        System.currentTimeMillis(),\n                                                                        false,\n                                                                        false,\n                                                                        true,\n                                                                        targetFolder.getStorageManager(),\n                                                                        user,\n                                                                        context)": [
+            "execute"
+        ],
+        "new RemoveFileOperation(file,\n                                                               false,\n                                                               document.getUser(),\n                                                               true,\n                                                               context,\n                                                               document.getStorageManager())": [
+            "execute"
+        ],
+        "parentDocument": [
+            "getFile",
+            "getUser"
+        ],
+        "currentDocument": [
+            "getFile",
+            "getUser"
+        ],
+        "parentFile": [
+            "getDecryptedRemotePath"
+        ],
+        "childFile": [
+            "getDecryptedRemotePath"
+        ],
+        "parentDocumentOwner": [
+            "nameEquals"
+        ],
+        "childPath": [
+            "startsWith"
+        ],
+        "e": [
+            "initCause"
+        ],
+        "HashUtil": [
+            "md5Hash"
+        ],
+        "getContext()": [
+            "getContentResolver",
+            "getString"
+        ],
+        "root": [
+            "getStorageManager",
+            "getFile"
+        ],
+        "f": [
+            "isFolder",
+            "getFileName"
+        ],
+        "f.getFileName()": [
+            "contains"
+        ],
+        "documentId": [
+            "split"
+        ],
+        "Long": [
+            "parseLong"
+        ],
+        "folder": [
+            "getDocumentId",
+            "getFile",
+            "getStorageManager",
+            "getUser",
+            "getClient"
+        ],
+        "new RefreshFolderOperation(folder.getFile(),\n                                              System.currentTimeMillis(),\n                                              false,\n                                              true,\n                                              true,\n                                              folder.getStorageManager(),\n                                              folder.getUser(),\n                                              MainApp.getAppContext())": [
+            "execute"
+        ],
+        "callback": [
+            "onTaskFinished"
+        ],
+        "storageManager.getFileByPath(filePath)": [
+            "getFileId"
+        ],
+        "Objects": [
+            "equals"
+        ],
+        "getStorageManager()": [
+            "getUser",
+            "getFileById"
+        ],
+        "getFile()": [
+            "getRemotePath",
+            "getLastSyncDateForData",
+            "getParentId"
+        ],
+        "getUser()": [
+            "toOwnCloudAccount"
+        ],
+        "OwnCloudClientManagerFactory.getDefaultSingleton()": [
+            "getClientFor"
+        ],
+        "OwnCloudClientManagerFactory": [
+            "getDefaultSingleton"
+        ]
+    },
+    "methods": [
+        {
+            "name": "queryRoots",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "String[]",
+                    "name": "projection"
+                }
+            ],
+            "start_position": 4635,
+            "end_position": 5521,
+            "body_start": 4695,
+            "body_end": 5521
+        },
+        {
+            "name": "notifyRootsChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 5527,
+            "end_position": 5807,
+            "body_start": 5582,
+            "body_end": 5807
+        },
+        {
+            "name": "queryDocument",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "documentId"
+                },
+                {
+                    "type": "String[]",
+                    "name": "projection"
+                }
+            ],
+            "start_position": 5813,
+            "end_position": 6165,
+            "body_start": 5924,
+            "body_end": 6165
+        },
+        {
+            "name": "queryChildDocuments",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "parentDocumentId"
+                },
+                {
+                    "type": "String[]",
+                    "name": "projection"
+                },
+                {
+                    "type": "String",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 6171,
+            "end_position": 7842,
+            "body_start": 6352,
+            "body_end": 7842
+        },
+        {
+            "name": "openDocument",
+            "return_type": "ParcelFileDescriptor",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "documentId"
+                },
+                {
+                    "type": "String",
+                    "name": "mode"
+                },
+                {
+                    "type": "CancellationSignal",
+                    "name": "cancellationSignal"
+                }
+            ],
+            "start_position": 7848,
+            "end_position": 12708,
+            "body_start": 8043,
+            "body_end": 12708
+        },
+        {
+            "name": "hasServerChange",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Document",
+                    "name": "document"
+                }
+            ],
+            "start_position": 12714,
+            "end_position": 13428,
+            "body_start": 12794,
+            "body_end": 13428
+        },
+        {
+            "name": "saveDownloadedFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                },
+                {
+                    "type": "DownloadFileOperation",
+                    "name": "dfo"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 13513,
+            "end_position": 14500,
+            "body_start": 13624,
+            "body_end": 14500
+        },
+        {
+            "name": "onCreate",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 14506,
+            "end_position": 14770,
+            "body_start": 14546,
+            "body_end": 14770
+        },
+        {
+            "name": "openDocumentThumbnail",
+            "return_type": "AssetFileDescriptor",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "documentId"
+                },
+                {
+                    "type": "Point",
+                    "name": "sizeHint"
+                },
+                {
+                    "type": "CancellationSignal",
+                    "name": "signal"
+                }
+            ],
+            "start_position": 14776,
+            "end_position": 15759,
+            "body_start": 15044,
+            "body_end": 15759
+        },
+        {
+            "name": "renameDocument",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "documentId"
+                },
+                {
+                    "type": "String",
+                    "name": "displayName"
+                }
+            ],
+            "start_position": 15765,
+            "end_position": 16951,
+            "body_start": 15876,
+            "body_end": 16951
+        },
+        {
+            "name": "copyDocument",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "sourceDocumentId"
+                },
+                {
+                    "type": "String",
+                    "name": "targetParentDocumentId"
+                }
+            ],
+            "start_position": 16957,
+            "end_position": 19795,
+            "body_start": 17083,
+            "body_end": 19795
+        },
+        {
+            "name": "moveDocument",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "sourceDocumentId"
+                },
+                {
+                    "type": "String",
+                    "name": "sourceParentDocumentId"
+                },
+                {
+                    "type": "String",
+                    "name": "targetParentDocumentId"
+                }
+            ],
+            "start_position": 19801,
+            "end_position": 21429,
+            "body_start": 19966,
+            "body_end": 21429
+        },
+        {
+            "name": "querySearchDocuments",
+            "return_type": "Cursor",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "rootId"
+                },
+                {
+                    "type": "String",
+                    "name": "query"
+                },
+                {
+                    "type": "String[]",
+                    "name": "projection"
+                }
+            ],
+            "start_position": 21435,
+            "end_position": 21969,
+            "body_start": 21534,
+            "body_end": 21969
+        },
+        {
+            "name": "getCapabilities",
+            "return_type": "OCCapability",
+            "parameters": [],
+            "start_position": 21975,
+            "end_position": 22114,
+            "body_start": 22014,
+            "body_end": 22114
+        },
+        {
+            "name": "checkFolderPath",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 22120,
+            "end_position": 22285,
+            "body_start": 22169,
+            "body_end": 22285
+        },
+        {
+            "name": "checkFileName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 22291,
+            "end_position": 22456,
+            "body_start": 22337,
+            "body_end": 22456
+        },
+        {
+            "name": "createDocument",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "documentId"
+                },
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                },
+                {
+                    "type": "String",
+                    "name": "displayName"
+                }
+            ],
+            "start_position": 22462,
+            "end_position": 23168,
+            "body_start": 22590,
+            "body_end": 23168
+        },
+        {
+            "name": "createFolder",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Document",
+                    "name": "targetFolder"
+                },
+                {
+                    "type": "String",
+                    "name": "displayName"
+                }
+            ],
+            "start_position": 23174,
+            "end_position": 24982,
+            "body_start": 23274,
+            "body_end": 24982
+        },
+        {
+            "name": "createFile",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Document",
+                    "name": "targetFolder"
+                },
+                {
+                    "type": "String",
+                    "name": "displayName"
+                },
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 24988,
+            "end_position": 28300,
+            "body_start": 25103,
+            "body_end": 28300
+        },
+        {
+            "name": "removeDocument",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "documentId"
+                },
+                {
+                    "type": "String",
+                    "name": "parentDocumentId"
+                }
+            ],
+            "start_position": 28306,
+            "end_position": 28463,
+            "body_start": 28420,
+            "body_end": 28463
+        },
+        {
+            "name": "deleteDocument",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "documentId"
+                }
+            ],
+            "start_position": 28469,
+            "end_position": 29756,
+            "body_start": 28558,
+            "body_end": 29756
+        },
+        {
+            "name": "recursiveRevokePermission",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Document",
+                    "name": "document"
+                }
+            ],
+            "start_position": 29762,
+            "end_position": 30223,
+            "body_start": 29820,
+            "body_end": 30223
+        },
+        {
+            "name": "isChildDocument",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "parentDocumentId"
+                },
+                {
+                    "type": "String",
+                    "name": "documentId"
+                }
+            ],
+            "start_position": 30229,
+            "end_position": 32161,
+            "body_start": 30318,
+            "body_end": 32161
+        },
+        {
+            "name": "getFileNotFoundExceptionWithCause",
+            "return_type": "FileNotFoundException",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "msg"
+                },
+                {
+                    "type": "Exception",
+                    "name": "cause"
+                }
+            ],
+            "start_position": 32167,
+            "end_position": 32379,
+            "body_start": 32260,
+            "body_end": 32379
+        },
+        {
+            "name": "getStorageManager",
+            "return_type": "FileDataStorageManager",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "rootId"
+                }
+            ],
+            "start_position": 32385,
+            "end_position": 32507,
+            "body_start": 32449,
+            "body_end": 32507
+        },
+        {
+            "name": "rootIdForUser",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 32513,
+            "end_position": 32645,
+            "body_start": 32582,
+            "body_end": 32645
+        },
+        {
+            "name": "initiateStorageMap",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 32651,
+            "end_position": 33065,
+            "body_start": 32685,
+            "body_end": 33065
+        },
+        {
+            "name": "findFiles",
+            "return_type": "List<Document>",
+            "parameters": [
+                {
+                    "type": "Document",
+                    "name": "root"
+                },
+                {
+                    "type": "String",
+                    "name": "query"
+                }
+            ],
+            "start_position": 33071,
+            "end_position": 33627,
+            "body_start": 33133,
+            "body_end": 33627
+        },
+        {
+            "name": "toNotifyUri",
+            "return_type": "Uri",
+            "parameters": [
+                {
+                    "type": "Document",
+                    "name": "document"
+                }
+            ],
+            "start_position": 33633,
+            "end_position": 33847,
+            "body_start": 33676,
+            "body_end": 33847
+        },
+        {
+            "name": "toDocument",
+            "return_type": "Document",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "documentId"
+                }
+            ],
+            "start_position": 33853,
+            "end_position": 34489,
+            "body_start": 33929,
+            "body_end": 34489
+        },
+        {
+            "name": "getNonNullContext",
+            "return_type": "Context",
+            "parameters": [],
+            "start_position": 34653,
+            "end_position": 34861,
+            "body_start": 34702,
+            "body_end": 34861
+        },
+        {
+            "name": "onTaskFinished",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 34917,
+            "end_position": 34967
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "RemoteOperationResult",
+            "parameters": [],
+            "start_position": 35344,
+            "end_position": 36080,
+            "body_start": 35428,
+            "body_end": 36080
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 36090,
+            "end_position": 36280,
+            "body_start": 36170,
+            "body_end": 36280
+        },
+        {
+            "name": "getDocumentId",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 36977,
+            "end_position": 37289,
+            "body_start": 37007,
+            "body_end": 37289
+        },
+        {
+            "name": "getStorageManager",
+            "return_type": "FileDataStorageManager",
+            "parameters": [],
+            "start_position": 37299,
+            "end_position": 37388,
+            "body_start": 37342,
+            "body_end": 37388
+        },
+        {
+            "name": "getUser",
+            "return_type": "User",
+            "parameters": [],
+            "start_position": 37398,
+            "end_position": 37481,
+            "body_start": 37420,
+            "body_end": 37481
+        },
+        {
+            "name": "getFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 37491,
+            "end_position": 37586,
+            "body_start": 37515,
+            "body_end": 37586
+        },
+        {
+            "name": "getRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 37596,
+            "end_position": 37683,
+            "body_start": 37626,
+            "body_end": 37683
+        },
+        {
+            "name": "getClient",
+            "return_type": "OwnCloudClient",
+            "parameters": [],
+            "start_position": 37693,
+            "end_position": 38127,
+            "body_start": 37720,
+            "body_end": 38127
+        },
+        {
+            "name": "isExpired",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 38137,
+            "end_position": 38271,
+            "body_start": 38157,
+            "body_end": 38271
+        },
+        {
+            "name": "getParent",
+            "return_type": "Document",
+            "parameters": [],
+            "start_position": 38281,
+            "end_position": 38507,
+            "body_start": 38302,
+            "body_end": 38507
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "enhanced_for_statement",
+        "try_statement",
+        "throw_statement"
+    ],
+    "local_variables": {
+        "context": "Context",
+        "preferences": "AppPreferences",
+        "result": "List<Document>",
+        "authority": "String",
+        "rootsUri": "Uri",
+        "document": "Document",
+        "parentFolder": "Document",
+        "resultCursor": "FileCursor",
+        "storageManager": "FileDataStorageManager",
+        "isLoading": "boolean",
+        "task": "ReloadFolderDocumentTask",
+        "extra": "Bundle",
+        "ocFile": "OCFile",
+        "user": "User",
+        "accessMode": "int",
+        "writeOnly": "boolean",
+        "needsDownload": "boolean",
+        "downloadResult": "AtomicBoolean",
+        "downloadThread": "Thread",
+        "downloadFileOperation": "DownloadFileOperation",
+        "handler": "Handler",
+        "file": "OCFile",
+        "syncDate": "long",
+        "savePath": "String",
+        "exists": "boolean",
+        "errorMessage": "String",
+        "targetFolder": "Document",
+        "filename": "String",
+        "updateParent": "RemoteOperationResult",
+        "newPath": "String",
+        "newFile": "Document",
+        "sourceFolder": "Document",
+        "folderDocument": "Document",
+        "newDirPath": "String",
+        "newFolder": "Document",
+        "tempDir": "File",
+        "emptyFile": "File",
+        "newFilePath": "String",
+        "client": "OwnCloudClient",
+        "parentDocument": "Document",
+        "parentFile": "OCFile",
+        "currentDocument": "Document",
+        "childFile": "OCFile",
+        "parentPath": "String",
+        "childPath": "String",
+        "parentDocumentOwner": "User",
+        "currentDocumentOwner": "User",
+        "e": "FileNotFoundException",
+        "contentResolver": "ContentResolver",
+        "separated": "String[]",
+        "ocAccount": "OwnCloudAccount",
+        "parentId": "long"
+    }
+}

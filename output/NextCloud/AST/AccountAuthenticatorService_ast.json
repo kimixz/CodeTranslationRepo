@@ -1,0 +1,39 @@
+{
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 401,
+            "end_position": 528,
+            "body_start": 438,
+            "body_end": 528
+        },
+        {
+            "name": "onBind",
+            "return_type": "IBinder",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 534,
+            "end_position": 636,
+            "body_start": 585,
+            "body_end": 636
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate"
+        ],
+        "mAuthenticator": [
+            "getIBinder"
+        ]
+    }
+}

@@ -1,0 +1,1424 @@
+{
+    "method_calls": {
+        "FileOperationsHelper.class": [
+            "getSimpleName"
+        ],
+        "Pattern": [
+            "compile"
+        ],
+        "br": [
+            "readLine"
+        ],
+        "pattern": [
+            "matcher"
+        ],
+        "m": [
+            "find",
+            "group"
+        ],
+        "Log_OC": [
+            "d",
+            "e",
+            "wtf"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "storagePath": [
+            "lastIndexOf",
+            "substring"
+        ],
+        "FILE_EXTENSION_URL": [
+            "equalsIgnoreCase"
+        ],
+        "FILE_EXTENSION_DESKTOP": [
+            "equalsIgnoreCase"
+        ],
+        "unknown": [
+            "getUrlFromFile",
+            "syncFile",
+            "createOpenFileIntent",
+            "openFileWithTextEditor",
+            "openFileAsRichDocument",
+            "getFileUri",
+            "createIntentFromFile",
+            "showShareFile",
+            "queueShareIntent",
+            "sendShareFile",
+            "toggleFavoriteFile",
+            "createCameraFile",
+            "getTimestampedFileName"
+        ],
+        "FILE_EXTENSION_WEBLOC": [
+            "equalsIgnoreCase"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "new Thread(() -> {\n            User user = fileActivity.getUser().orElseThrow(RuntimeException::new);\n            FileDataStorageManager storageManager = new FileDataStorageManager(user,\n                                                                               fileActivity.getContentResolver());\n\n            // check if file is in conflict (this is known due to latest folder refresh)\n            if (file.isInConflict()) {\n                syncFile(file, user, storageManager);\n                EventBus.getDefault().post(new SyncEventFinished(intent));\n\n                return;\n            }\n\n            // check if latest sync is >30s ago\n            OCFile parent = storageManager.getFileById(file.getParentId());\n            if (parent != null && parent.getLastSyncDateForData() + 30 * 1000 > System.currentTimeMillis()) {\n                EventBus.getDefault().post(new SyncEventFinished(intent));\n\n                return;\n            }\n\n            // if offline or walled garden, show old version with warning\n            if (!connectivityService.getConnectivity().isConnected() || connectivityService.isInternetWalled()) {\n                DisplayUtils.showSnackMessage(fileActivity, R.string.file_not_synced);\n                EventBus.getDefault().post(new SyncEventFinished(intent));\n\n                return;\n            }\n\n            // check for changed eTag\n            CheckEtagRemoteOperation checkEtagOperation = new CheckEtagRemoteOperation(file.getRemotePath(),\n                                                                                       file.getEtag());\n            RemoteOperationResult result = checkEtagOperation.execute(user, fileActivity);\n\n            // eTag changed, sync file\n            if (result.getCode() == RemoteOperationResult.ResultCode.ETAG_CHANGED) {\n                syncFile(file, user, storageManager);\n            }\n\n            EventBus.getDefault().post(new SyncEventFinished(intent));\n        })": [
+            "start"
+        ],
+        "fileActivity.getUser()": [
+            "orElseThrow"
+        ],
+        "fileActivity": [
+            "getUser",
+            "getContentResolver",
+            "runOnUiThread",
+            "showLoadingDialog",
+            "getResources",
+            "startActivity",
+            "dismissLoadingDialog",
+            "getPackageManager",
+            "getAccount",
+            "getStorageManager",
+            "getString",
+            "getOperationsServiceBinder",
+            "refreshList",
+            "getApplicationContext",
+            "getSupportFragmentManager",
+            "startActivityForResult",
+            "startService"
+        ],
+        "file": [
+            "isInConflict",
+            "getParentId",
+            "getRemotePath",
+            "getEtag",
+            "isDown",
+            "getMimeType",
+            "getStoragePath",
+            "getFileName",
+            "getLegacyExposedFileUri",
+            "getExposedFileUri",
+            "getLocalId",
+            "canReshare",
+            "isFolder",
+            "isFavorite",
+            "isEncrypted",
+            "getRemoteId",
+            "isLocked"
+        ],
+        "EventBus.getDefault()": [
+            "post"
+        ],
+        "EventBus": [
+            "getDefault"
+        ],
+        "storageManager": [
+            "getFileById"
+        ],
+        "parent": [
+            "getLastSyncDateForData"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "connectivityService.getConnectivity()": [
+            "isConnected"
+        ],
+        "connectivityService": [
+            "getConnectivity",
+            "isInternetWalled"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage"
+        ],
+        "checkEtagOperation": [
+            "execute"
+        ],
+        "result": [
+            "getCode",
+            "isSuccess",
+            "getData"
+        ],
+        "fileActivity.getResources()": [
+            "getString"
+        ],
+        "sfo": [
+            "execute"
+        ],
+        "ConflictsResolveActivity": [
+            "createIntent"
+        ],
+        "FileStorageUtils": [
+            "checkIfFileFinishedSaving"
+        ],
+        "Thread": [
+            "sleep"
+        ],
+        "fileActivity.getPackageManager()": [
+            "queryIntentActivities"
+        ],
+        "launchables": [
+            "isEmpty"
+        ],
+        "optionalUser": [
+            "isPresent",
+            "get"
+        ],
+        "editorUtils": [
+            "isEditorAvailable"
+        ],
+        "fileActivity.getStorageManager()": [
+            "getCapability",
+            "getSharesByPathAndType",
+            "getAllFilesRecursivelyInsideFolder"
+        ],
+        "capability.getRichDocumentsMimeTypeList()": [
+            "contains"
+        ],
+        "capability": [
+            "getRichDocumentsMimeTypeList",
+            "getRichDocumentsDirectEditing"
+        ],
+        "capability.getRichDocumentsDirectEditing()": [
+            "isTrue"
+        ],
+        "new Thread(new Runnable() {\n                @Override\n                public void run() {\n                    User user = currentAccount.getUser();\n                    FileDataStorageManager storageManager =\n                        new FileDataStorageManager(user, fileActivity.getContentResolver());\n                    // a fresh object is needed; many things could have occurred to the file\n                    // since it was registered to observe again, assuming that local files\n                    // are linked to a remote file AT MOST, SOMETHING TO BE DONE;\n                    SynchronizeFileOperation sfo = new SynchronizeFileOperation(file,\n                                                                                null,\n                                                                                user,\n                                                                                true,\n                                                                                fileActivity,\n                                                                                storageManager,\n                                                                                false);\n                    RemoteOperationResult result = sfo.execute(fileActivity);\n                    fileActivity.dismissLoadingDialog();\n                    if (result.getCode() == RemoteOperationResult.ResultCode.SYNC_CONFLICT) {\n                        // ISSUE 5: if the user is not running the app (this is a service!),\n                        // this can be very intrusive; a notification should be preferred\n                        Intent intent = ConflictsResolveActivity.createIntent(file,\n                                                                              user,\n                                                                              -1,\n                                                                              Intent.FLAG_ACTIVITY_NEW_TASK,\n                                                                              fileActivity);\n                        fileActivity.startActivity(intent);\n                    } else {\n                        if (!launchables.isEmpty()) {\n                            try {\n                                if (!result.isSuccess()) {\n                                    DisplayUtils.showSnackMessage(fileActivity, R.string.file_not_synced);\n                                    try {\n                                        Thread.sleep(3000);\n                                    } catch (InterruptedException e) {\n                                        Log_OC.e(TAG, \"Failed to sleep\");\n                                    }\n                                }\n\n                                openFileWithIntent.setFlags(openFileWithIntent.getFlags() |\n                                                                Intent.FLAG_ACTIVITY_NEW_TASK);\n                                fileActivity.startActivity(openFileWithIntent);\n                            } catch (ActivityNotFoundException exception) {\n                                DisplayUtils.showSnackMessage(fileActivity, R.string.file_list_no_app_for_file_type);\n                            }\n                        } else {\n                            DisplayUtils.showSnackMessage(fileActivity, R.string.file_list_no_app_for_file_type);\n                        }\n                    }\n\n                }\n            })": [
+            "start"
+        ],
+        "currentAccount": [
+            "getUser"
+        ],
+        "openFileWithIntent": [
+            "setFlags",
+            "getFlags",
+            "setDataAndType"
+        ],
+        "collaboraWebViewIntent": [
+            "putExtra"
+        ],
+        "context": [
+            "startActivity",
+            "getResources",
+            "getString"
+        ],
+        "textEditorIntent": [
+            "putExtra"
+        ],
+        "MainApp.getAppContext().getResources()": [
+            "getStringArray"
+        ],
+        "MainApp.getAppContext()": [
+            "getResources",
+            "getFilesDir"
+        ],
+        "MainApp": [
+            "getAppContext",
+            "getStoragePath"
+        ],
+        "MimeTypeMap.getSingleton()": [
+            "getMimeTypeFromExtension"
+        ],
+        "MimeTypeMap": [
+            "getSingleton"
+        ],
+        "file.getFileName()": [
+            "contains",
+            "substring",
+            "lastIndexOf"
+        ],
+        "Arrays.asList(officeExtensions)": [
+            "contains"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "file.getStoragePath()": [
+            "startsWith"
+        ],
+        "MainApp.getAppContext().getFilesDir()": [
+            "getAbsolutePath"
+        ],
+        "new Thread(() -> {\n            StreamMediaFileOperation sfo = new StreamMediaFileOperation(file.getLocalId());\n            RemoteOperationResult result = sfo.execute(user, fileActivity);\n\n            fileActivity.dismissLoadingDialog();\n\n            if (!result.isSuccess()) {\n                DisplayUtils.showSnackMessage(fileActivity, R.string.stream_not_possible_headline);\n                return;\n            }\n\n            Intent openFileWithIntent = new Intent(Intent.ACTION_VIEW);\n            Uri uri = Uri.parse((String) result.getData().get(0));\n\n            openFileWithIntent.setDataAndType(uri, file.getMimeType());\n\n            fileActivity.startActivity(Intent.createChooser(openFileWithIntent,\n                                                            fileActivity.getString(R.string.stream)));\n        })": [
+            "start"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "Intent": [
+            "createChooser"
+        ],
+        "service": [
+            "setAction",
+            "putExtra"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "fileActivity.getOperationsServiceBinder()": [
+            "queueNewOperation"
+        ],
+        "shares": [
+            "size",
+            "get"
+        ],
+        "FileActivity": [
+            "copyAndShareFileLink"
+        ],
+        "shares.get(0)": [
+            "getShareLink"
+        ],
+        "((FileDisplayActivity) fileActivity)": [
+            "showDetails"
+        ],
+        "fileActivity.getApplicationContext()": [
+            "getString"
+        ],
+        "unshareService": [
+            "setAction",
+            "putExtra"
+        ],
+        "share": [
+            "getId",
+            "getShareLink"
+        ],
+        "intent": [
+            "putExtra",
+            "setFlags",
+            "setDataAndType",
+            "setAction",
+            "resolveActivity"
+        ],
+        "updateShareIntent": [
+            "setAction",
+            "putExtra"
+        ],
+        "fm": [
+            "beginTransaction",
+            "findFragmentByTag"
+        ],
+        "ft": [
+            "addToBackStack"
+        ],
+        "SendShareDialog": [
+            "newInstance"
+        ],
+        "mSendShareDialog": [
+            "setFileOperationsHelper",
+            "show"
+        ],
+        "SendFilesDialog.Companion": [
+            "newInstance"
+        ],
+        "sendFilesDialog": [
+            "show"
+        ],
+        "sendIntent": [
+            "setType",
+            "setComponent",
+            "putExtra",
+            "setFlags"
+        ],
+        "context.getResources()": [
+            "getString",
+            "getQuantityString"
+        ],
+        "FileProvider": [
+            "getUriForFile"
+        ],
+        "toToggle": [
+            "add"
+        ],
+        "opsBinder": [
+            "cancel"
+        ],
+        "currentUser": [
+            "toPlatformAccount",
+            "getAccountName"
+        ],
+        "FileDownloadHelper.Companion.instance()": [
+            "isDownloading",
+            "cancelPendingOrCurrentDownloads"
+        ],
+        "FileDownloadHelper.Companion": [
+            "instance"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "isUploading",
+            "cancelFileUpload"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "targetFolder": [
+            "getRemotePath"
+        ],
+        "files": [
+            "size"
+        ],
+        "backgroundJobManager": [
+            "startImmediateFilesExportJob"
+        ],
+        "user": [
+            "toPlatformAccount"
+        ],
+        "activity": [
+            "getApplicationContext",
+            "getResources",
+            "getPackageManager",
+            "startActivityForResult",
+            "getExternalFilesDir"
+        ],
+        "activity.getResources()": [
+            "getString"
+        ],
+        "new SimpleDateFormat(\"yyyy-MM-dd_HHmmss\", Locale.US)": [
+            "format"
+        ],
+        "stat": [
+            "getBlockSizeLong",
+            "getAvailableBlocksLong"
+        ],
+        "arbitraryDataProvider": [
+            "getValue"
+        ],
+        "publicKey": [
+            "isEmpty"
+        ],
+        "privateKey": [
+            "isEmpty"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_with_resources_statement",
+        "while_statement",
+        "if_statement",
+        "break_statement",
+        "return_statement",
+        "try_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "getUrlFromFile",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "storagePath"
+                },
+                {
+                    "type": "Pattern",
+                    "name": "pattern"
+                }
+            ],
+            "start_position": 5656,
+            "end_position": 6370,
+            "body_start": 5737,
+            "body_end": 6370
+        },
+        {
+            "name": "createIntentFromFile",
+            "return_type": "Intent",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "storagePath"
+                }
+            ],
+            "start_position": 6376,
+            "end_position": 7283,
+            "body_start": 6446,
+            "body_end": 7283
+        },
+        {
+            "name": "startSyncForFileAndIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 7290,
+            "end_position": 9337,
+            "body_start": 7356,
+            "body_end": 9337
+        },
+        {
+            "name": "syncFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 9343,
+            "end_position": 11492,
+            "body_start": 9428,
+            "body_end": 11492
+        },
+        {
+            "name": "canOpenFile",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 11498,
+            "end_position": 11820,
+            "body_start": 11538,
+            "body_end": 11820
+        },
+        {
+            "name": "openFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 11826,
+            "end_position": 16797,
+            "body_start": 11860,
+            "body_end": 16797
+        },
+        {
+            "name": "run",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13303,
+            "end_position": 16680,
+            "body_start": 13347,
+            "body_end": 16680
+        },
+        {
+            "name": "openFileAsRichDocument",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 16803,
+            "end_position": 17279,
+            "body_start": 16868,
+            "body_end": 17279
+        },
+        {
+            "name": "openFileWithTextEditor",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 17285,
+            "end_position": 17717,
+            "body_start": 17350,
+            "body_end": 17717
+        },
+        {
+            "name": "openRichWorkspaceWithTextEditor",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "url"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 17723,
+            "end_position": 18247,
+            "body_start": 17809,
+            "body_end": 18247
+        },
+        {
+            "name": "createOpenFileIntent",
+            "return_type": "Intent",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 18253,
+            "end_position": 19755,
+            "body_start": 18315,
+            "body_end": 19755
+        },
+        {
+            "name": "getFileUri",
+            "return_type": "Uri",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 19761,
+            "end_position": 20335,
+            "body_start": 19825,
+            "body_end": 20335
+        },
+        {
+            "name": "streamMediaFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 20341,
+            "end_position": 21369,
+            "body_start": 20382,
+            "body_end": 21369
+        },
+        {
+            "name": "shareFileViaPublicShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "password"
+                }
+            ],
+            "start_position": 21621,
+            "end_position": 22524,
+            "body_start": 21687,
+            "body_end": 22524
+        },
+        {
+            "name": "shareFolderViaSecureFileDrop",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 22530,
+            "end_position": 23108,
+            "body_start": 22593,
+            "body_end": 23108
+        },
+        {
+            "name": "getFileWithLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "ViewThemeUtils",
+                    "name": "viewThemeUtils"
+                }
+            ],
+            "start_position": 23114,
+            "end_position": 23956,
+            "body_start": 23201,
+            "body_end": 23956
+        },
+        {
+            "name": "shareFileWithSharee",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "shareeName"
+                },
+                {
+                    "type": "ShareType",
+                    "name": "shareType"
+                },
+                {
+                    "type": "int",
+                    "name": "permissions"
+                }
+            ],
+            "start_position": 24368,
+            "end_position": 25478,
+            "body_start": 24470,
+            "body_end": 25478
+        },
+        {
+            "name": "shareFileWithSharee",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "shareeName"
+                },
+                {
+                    "type": "ShareType",
+                    "name": "shareType"
+                },
+                {
+                    "type": "int",
+                    "name": "permissions"
+                },
+                {
+                    "type": "boolean",
+                    "name": "hideFileDownload"
+                },
+                {
+                    "type": "String",
+                    "name": "password"
+                },
+                {
+                    "type": "long",
+                    "name": "expirationTimeInMillis"
+                },
+                {
+                    "type": "String",
+                    "name": "note"
+                },
+                {
+                    "type": "String",
+                    "name": "label"
+                },
+                {
+                    "type": "boolean",
+                    "name": "showLoadingDialog"
+                }
+            ],
+            "start_position": 26515,
+            "end_position": 28648,
+            "body_start": 27067,
+            "body_end": 28648
+        },
+        {
+            "name": "restoreFileVersion",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileVersion",
+                    "name": "fileVersion"
+                }
+            ],
+            "start_position": 28836,
+            "end_position": 29617,
+            "body_start": 28892,
+            "body_end": 29617
+        },
+        {
+            "name": "unshareShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 29806,
+            "end_position": 30375,
+            "body_start": 29859,
+            "body_end": 30375
+        },
+        {
+            "name": "queueShareIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "shareIntent"
+                }
+            ],
+            "start_position": 30381,
+            "end_position": 30679,
+            "body_start": 30431,
+            "body_end": 30679
+        },
+        {
+            "name": "showShareFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 30865,
+            "end_position": 31191,
+            "body_start": 30904,
+            "body_end": 31191
+        },
+        {
+            "name": "setLabelToPublicShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "String",
+                    "name": "label"
+                }
+            ],
+            "start_position": 31363,
+            "end_position": 31978,
+            "body_start": 31426,
+            "body_end": 31978
+        },
+        {
+            "name": "setPasswordToShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "String",
+                    "name": "password"
+                }
+            ],
+            "start_position": 32302,
+            "end_position": 33050,
+            "body_start": 32365,
+            "body_end": 33050
+        },
+        {
+            "name": "setExpirationDateToShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "long",
+                    "name": "expirationTimeInMillis"
+                }
+            ],
+            "start_position": 33511,
+            "end_position": 34191,
+            "body_start": 33592,
+            "body_end": 34191
+        },
+        {
+            "name": "setPermissionsToShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "int",
+                    "name": "permissions"
+                }
+            ],
+            "start_position": 34505,
+            "end_position": 35063,
+            "body_start": 34571,
+            "body_end": 35063
+        },
+        {
+            "name": "setUploadPermissionsToPublicShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "boolean",
+                    "name": "uploadPermission"
+                }
+            ],
+            "start_position": 35417,
+            "end_position": 36136,
+            "body_start": 35504,
+            "body_end": 36136
+        },
+        {
+            "name": "setHideFileDownloadPermissionsToPublicShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "boolean",
+                    "name": "hideFileDownload"
+                }
+            ],
+            "start_position": 36142,
+            "end_position": 36746,
+            "body_start": 36239,
+            "body_end": 36746
+        },
+        {
+            "name": "updateNoteToShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "String",
+                    "name": "note"
+                }
+            ],
+            "start_position": 36752,
+            "end_position": 37289,
+            "body_start": 36810,
+            "body_end": 37289
+        },
+        {
+            "name": "updateShareInformation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "int",
+                    "name": "permissions"
+                },
+                {
+                    "type": "boolean",
+                    "name": "hideFileDownload"
+                },
+                {
+                    "type": "String",
+                    "name": "password"
+                },
+                {
+                    "type": "long",
+                    "name": "expirationTimeInMillis"
+                },
+                {
+                    "type": "String",
+                    "name": "label"
+                }
+            ],
+            "start_position": 38039,
+            "end_position": 39205,
+            "body_start": 38270,
+            "body_end": 39205
+        },
+        {
+            "name": "sendShareFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "boolean",
+                    "name": "hideNcSharingOptions"
+                }
+            ],
+            "start_position": 39212,
+            "end_position": 39897,
+            "body_start": 39281,
+            "body_end": 39897
+        },
+        {
+            "name": "sendFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Set<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 39903,
+            "end_position": 40282,
+            "body_start": 39944,
+            "body_end": 40282
+        },
+        {
+            "name": "sendShareFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 40288,
+            "end_position": 40383,
+            "body_start": 40327,
+            "body_end": 40383
+        },
+        {
+            "name": "sendCachedImage",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "packageName"
+                },
+                {
+                    "type": "String",
+                    "name": "activityName"
+                }
+            ],
+            "start_position": 40389,
+            "end_position": 41523,
+            "body_start": 40471,
+            "body_end": 41523
+        },
+        {
+            "name": "setPictureAs",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 41529,
+            "end_position": 43151,
+            "body_start": 41578,
+            "body_end": 43151
+        },
+        {
+            "name": "syncFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 43332,
+            "end_position": 44468,
+            "body_start": 43366,
+            "body_end": 44468
+        },
+        {
+            "name": "toggleFavoriteFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Collection<OCFile>",
+                    "name": "files"
+                },
+                {
+                    "type": "boolean",
+                    "name": "shouldBeFavorite"
+                }
+            ],
+            "start_position": 44474,
+            "end_position": 44875,
+            "body_start": 44558,
+            "body_end": 44875
+        },
+        {
+            "name": "toggleFavoriteFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "boolean",
+                    "name": "shouldBeFavorite"
+                }
+            ],
+            "start_position": 44881,
+            "end_position": 45120,
+            "body_start": 44951,
+            "body_end": 45120
+        },
+        {
+            "name": "toggleEncryption",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "boolean",
+                    "name": "shouldBeEncrypted"
+                }
+            ],
+            "start_position": 45126,
+            "end_position": 45585,
+            "body_start": 45195,
+            "body_end": 45585
+        },
+        {
+            "name": "toggleFileLock",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "boolean",
+                    "name": "shouldBeLocked"
+                }
+            ],
+            "start_position": 45591,
+            "end_position": 45818,
+            "body_start": 45655,
+            "body_end": 45818
+        },
+        {
+            "name": "renameFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "String",
+                    "name": "newFilename"
+                }
+            ],
+            "start_position": 45824,
+            "end_position": 46400,
+            "body_start": 45880,
+            "body_end": 46400
+        },
+        {
+            "name": "removeFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Collection<OCFile>",
+                    "name": "files"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyLocalCopy"
+                },
+                {
+                    "type": "boolean",
+                    "name": "inBackground"
+                }
+            ],
+            "start_position": 46758,
+            "end_position": 47635,
+            "body_start": 46853,
+            "body_end": 47635
+        },
+        {
+            "name": "createFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 47642,
+            "end_position": 48207,
+            "body_start": 47686,
+            "body_end": 48207
+        },
+        {
+            "name": "cancelTransference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 48339,
+            "end_position": 49478,
+            "body_start": 48383,
+            "body_end": 49478
+        },
+        {
+            "name": "moveOrCopyFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "action"
+                },
+                {
+                    "type": "List<String>",
+                    "name": "filePaths"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "targetFolder"
+                }
+            ],
+            "start_position": 49484,
+            "end_position": 50212,
+            "body_start": 49584,
+            "body_end": 50212
+        },
+        {
+            "name": "exportFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Collection<OCFile>",
+                    "name": "files"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "BackgroundJobManager",
+                    "name": "backgroundJobManager"
+                }
+            ],
+            "start_position": 50218,
+            "end_position": 50961,
+            "body_start": 50423,
+            "body_end": 50961
+        },
+        {
+            "name": "getOpIdWaitingFor",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 50967,
+            "end_position": 51038,
+            "body_start": 50999,
+            "body_end": 51038
+        },
+        {
+            "name": "setOpIdWaitingFor",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "waitingForOpId"
+                }
+            ],
+            "start_position": 51045,
+            "end_position": 51145,
+            "body_start": 51096,
+            "body_end": 51145
+        },
+        {
+            "name": "checkCurrentCredentials",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 51314,
+            "end_position": 51805,
+            "body_start": 51361,
+            "body_end": 51805
+        },
+        {
+            "name": "uploadFromCamera",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isVideo"
+                }
+            ],
+            "start_position": 51811,
+            "end_position": 52736,
+            "body_start": 51893,
+            "body_end": 52736
+        },
+        {
+            "name": "createCameraFile",
+            "return_type": "File",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isVideo"
+                }
+            ],
+            "start_position": 52742,
+            "end_position": 53127,
+            "body_start": 52814,
+            "body_end": 53127
+        },
+        {
+            "name": "getCapturedImageName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 53133,
+            "end_position": 53231,
+            "body_start": 53177,
+            "body_end": 53231
+        },
+        {
+            "name": "getCapturedVideoName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 53237,
+            "end_position": 53335,
+            "body_start": 53281,
+            "body_end": 53335
+        },
+        {
+            "name": "getTimestampedFileName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "extension"
+                }
+            ],
+            "start_position": 53505,
+            "end_position": 53680,
+            "body_start": 53573,
+            "body_end": 53680
+        },
+        {
+            "name": "getAvailableSpaceOnDevice",
+            "return_type": "Long",
+            "parameters": [],
+            "start_position": 53783,
+            "end_position": 54106,
+            "body_start": 53830,
+            "body_end": 54106
+        },
+        {
+            "name": "isEndToEndEncryptionSetup",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 54112,
+            "end_position": 54541,
+            "body_start": 54188,
+            "body_end": 54541
+        }
+    ],
+    "local_variables": {
+        "url": "String",
+        "line": "String",
+        "m": "Matcher",
+        "lastIndexOfDot": "int",
+        "fileExt": "String",
+        "user": "User",
+        "storageManager": "FileDataStorageManager",
+        "parent": "OCFile",
+        "checkEtagOperation": "CheckEtagRemoteOperation",
+        "result": "RemoteOperationResult",
+        "sfo": "StreamMediaFileOperation",
+        "intent": "Intent",
+        "openFileWithIntent": "Intent",
+        "launchables": "List<ResolveInfo>",
+        "optionalUser": "Optional<User>",
+        "account": "Account",
+        "capability": "OCCapability",
+        "collaboraWebViewIntent": "Intent",
+        "textEditorIntent": "Intent",
+        "storagePath": "String",
+        "fileUri": "Uri",
+        "guessedMimeType": "String",
+        "uri": "Uri",
+        "service": "Intent",
+        "shares": "List<OCShare>",
+        "unshareService": "Intent",
+        "updateShareIntent": "Intent",
+        "fm": "FragmentManager",
+        "ft": "FragmentTransaction",
+        "mSendShareDialog": "SendShareDialog",
+        "sendFilesDialog": "SendFilesDialog",
+        "context": "Context",
+        "sendIntent": "Intent",
+        "externalFile": "File",
+        "toToggle": "List<OCFile>",
+        "currentUser": "User",
+        "opsBinder": "OperationsService.OperationsServiceBinder",
+        "files": "List<OCFile>",
+        "cameraFile": "File",
+        "cameraUri": "Uri",
+        "directory": "String",
+        "storageDir": "File",
+        "fileName": "String",
+        "stat": "StatFs",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "publicKey": "String",
+        "privateKey": "String"
+    }
+}

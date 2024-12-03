@@ -1,0 +1,194 @@
+[
+    {
+        "method_name": "accountManager",
+        "method_code": "@Provides\n    AccountManager accountManager(Application application) {\n        return (AccountManager) application.getSystemService(Context.ACCOUNT_SERVICE);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled accountManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: accountManager\n\n        Method Code: @Provides\n    AccountManager accountManager(Application application) {\n        return (AccountManager) application.getSystemService(Context.ACCOUNT_SERVICE);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc accountManager(application: UIApplication) -> AccountManager? {\n    return application.value(forKey: \"accountManager\") as? AccountManager\n}\n```"
+    },
+    {
+        "method_name": "context",
+        "method_code": "@Provides\n    Context context(Application application) {\n        return application;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled context from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: context\n\n        Method Code: @Provides\n    Context context(Application application) {\n        return application;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc context(application: UIApplication) -> UIApplication {\n    return application\n}\n```"
+    },
+    {
+        "method_name": "packageManager",
+        "method_code": "@Provides\n    PackageManager packageManager(Application application) {\n        return application.getPackageManager();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled packageManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: packageManager\n\n        Method Code: @Provides\n    PackageManager packageManager(Application application) {\n        return application.getPackageManager();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc packageManager(application: UIApplication) -> PackageManager {\n    return application.packageManager\n}\n```"
+    },
+    {
+        "method_name": "contentResolver",
+        "method_code": "@Provides\n    ContentResolver contentResolver(Context context) {\n        return context.getContentResolver();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled contentResolver from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: contentResolver\n\n        Method Code: @Provides\n    ContentResolver contentResolver(Context context) {\n        return context.getContentResolver();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc contentResolver(context: Context) -> ContentResolver {\n    return context.contentResolver\n}\n```"
+    },
+    {
+        "method_name": "resources",
+        "method_code": "@Provides\n    Resources resources(Application application) {\n        return application.getResources();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled resources from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: resources\n\n        Method Code: @Provides\n    Resources resources(Application application) {\n        return application.getResources();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc resources(application: UIApplication) -> Resources {\n    return application.resources\n}\n```"
+    },
+    {
+        "method_name": "userAccountManager",
+        "method_code": "@Provides\n    UserAccountManager userAccountManager(\n        Context context,\n        AccountManager accountManager) {\n        return new UserAccountManagerImpl(context, accountManager);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled userAccountManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: userAccountManager\n\n        Method Code: @Provides\n    UserAccountManager userAccountManager(\n        Context context,\n        AccountManager accountManager) {\n        return new UserAccountManagerImpl(context, accountManager);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc userAccountManager(context: Context, accountManager: AccountManager) -> UserAccountManager {\n    return UserAccountManagerImpl(context: context, accountManager: accountManager)\n}\n```"
+    },
+    {
+        "method_name": "arbitraryDataProvider",
+        "method_code": "@Provides\n    ArbitraryDataProvider arbitraryDataProvider(ArbitraryDataDao dao) {\n        return new ArbitraryDataProviderImpl(dao);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled arbitraryDataProvider from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: arbitraryDataProvider\n\n        Method Code: @Provides\n    ArbitraryDataProvider arbitraryDataProvider(ArbitraryDataDao dao) {\n        return new ArbitraryDataProviderImpl(dao);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc arbitraryDataProvider(dao: ArbitraryDataDao) -> ArbitraryDataProvider {\n    return ArbitraryDataProviderImpl(dao: dao)\n}\n```"
+    },
+    {
+        "method_name": "syncedFolderProvider",
+        "method_code": "@Provides\n    SyncedFolderProvider syncedFolderProvider(ContentResolver contentResolver,\n                                              AppPreferences appPreferences,\n                                              Clock clock) {\n        return new SyncedFolderProvider(contentResolver, appPreferences, clock);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled syncedFolderProvider from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: syncedFolderProvider\n\n        Method Code: @Provides\n    SyncedFolderProvider syncedFolderProvider(ContentResolver contentResolver,\n                                              AppPreferences appPreferences,\n                                              Clock clock) {\n        return new SyncedFolderProvider(contentResolver, appPreferences, clock);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc syncedFolderProvider(contentResolver: ContentResolver, appPreferences: AppPreferences, clock: Clock) -> SyncedFolderProvider {\n    return SyncedFolderProvider(contentResolver: contentResolver, appPreferences: appPreferences, clock: clock)\n}\n```"
+    },
+    {
+        "method_name": "activitiesServiceApi",
+        "method_code": "@Provides\n    ActivitiesServiceApi activitiesServiceApi(UserAccountManager accountManager) {\n        return new ActivitiesServiceApiImpl(accountManager);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled activitiesServiceApi from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: activitiesServiceApi\n\n        Method Code: @Provides\n    ActivitiesServiceApi activitiesServiceApi(UserAccountManager accountManager) {\n        return new ActivitiesServiceApiImpl(accountManager);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc activitiesServiceApi(accountManager: UserAccountManager) -> ActivitiesServiceApi {\n    return ActivitiesServiceApiImpl(accountManager: accountManager)\n}\n```"
+    },
+    {
+        "method_name": "activitiesRepository",
+        "method_code": "@Provides\n    ActivitiesRepository activitiesRepository(ActivitiesServiceApi api) {\n        return new RemoteActivitiesRepository(api);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled activitiesRepository from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: activitiesRepository\n\n        Method Code: @Provides\n    ActivitiesRepository activitiesRepository(ActivitiesServiceApi api) {\n        return new RemoteActivitiesRepository(api);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc activitiesRepository(api: ActivitiesServiceApi) -> ActivitiesRepository {\n    return RemoteActivitiesRepository(api: api)\n}\n```"
+    },
+    {
+        "method_name": "filesRepository",
+        "method_code": "@Provides\n    FilesRepository filesRepository(UserAccountManager accountManager, ClientFactory clientFactory) {\n        return new RemoteFilesRepository(new FilesServiceApiImpl(accountManager, clientFactory));\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled filesRepository from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: filesRepository\n\n        Method Code: @Provides\n    FilesRepository filesRepository(UserAccountManager accountManager, ClientFactory clientFactory) {\n        return new RemoteFilesRepository(new FilesServiceApiImpl(accountManager, clientFactory));\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc filesRepository(accountManager: UserAccountManager, clientFactory: ClientFactory) -> FilesRepository {\n    return RemoteFilesRepository(filesServiceApi: FilesServiceApiImpl(accountManager: accountManager, clientFactory: clientFactory))\n}\n```"
+    },
+    {
+        "method_name": "uploadsStorageManager",
+        "method_code": "@Provides\n    UploadsStorageManager uploadsStorageManager(CurrentAccountProvider currentAccountProvider,\n                                                Context context) {\n        return new UploadsStorageManager(currentAccountProvider, context.getContentResolver());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled uploadsStorageManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: uploadsStorageManager\n\n        Method Code: @Provides\n    UploadsStorageManager uploadsStorageManager(CurrentAccountProvider currentAccountProvider,\n                                                Context context) {\n        return new UploadsStorageManager(currentAccountProvider, context.getContentResolver());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc uploadsStorageManager(currentAccountProvider: CurrentAccountProvider, context: Context) -> UploadsStorageManager {\n    return UploadsStorageManager(currentAccountProvider: currentAccountProvider, contentResolver: context.contentResolver)\n}\n```"
+    },
+    {
+        "method_name": "fileDataStorageManager",
+        "method_code": "@Provides\n    FileDataStorageManager fileDataStorageManager(CurrentAccountProvider currentAccountProvider,\n                                                  Context context) {\n        return new FileDataStorageManager(currentAccountProvider.getUser(), context.getContentResolver());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileDataStorageManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: fileDataStorageManager\n\n        Method Code: @Provides\n    FileDataStorageManager fileDataStorageManager(CurrentAccountProvider currentAccountProvider,\n                                                  Context context) {\n        return new FileDataStorageManager(currentAccountProvider.getUser(), context.getContentResolver());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc fileDataStorageManager(currentAccountProvider: CurrentAccountProvider, context: Context) -> FileDataStorageManager {\n    return FileDataStorageManager(user: currentAccountProvider.getUser(), contentResolver: context.contentResolver)\n}\n```"
+    },
+    {
+        "method_name": "currentAccountProvider",
+        "method_code": "@Provides\n    CurrentAccountProvider currentAccountProvider(UserAccountManager accountManager) {\n        return accountManager;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled currentAccountProvider from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: currentAccountProvider\n\n        Method Code: @Provides\n    CurrentAccountProvider currentAccountProvider(UserAccountManager accountManager) {\n        return accountManager;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc currentAccountProvider(accountManager: UserAccountManager) -> CurrentAccountProvider {\n    return accountManager\n}\n```"
+    },
+    {
+        "method_name": "deviceInfo",
+        "method_code": "@Provides\n    DeviceInfo deviceInfo() {\n        return new DeviceInfo();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled deviceInfo from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: deviceInfo\n\n        Method Code: @Provides\n    DeviceInfo deviceInfo() {\n        return new DeviceInfo();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc deviceInfo() -> DeviceInfo {\n    return DeviceInfo()\n}\n```"
+    },
+    {
+        "method_name": "clock",
+        "method_code": "@Provides\n    @Singleton\n    Clock clock() {\n        return new ClockImpl();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled clock from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: clock\n\n        Method Code: @Provides\n    @Singleton\n    Clock clock() {\n        return new ClockImpl();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc clock() -> Clock {\n    return ClockImpl()\n}\n```"
+    },
+    {
+        "method_name": "logger",
+        "method_code": "@Provides\n    @Singleton\n    Logger logger(Context context, Clock clock) {\n        File logDir = new File(context.getFilesDir(), \"logs\");\n        FileLogHandler handler = new FileLogHandler(logDir, \"log.txt\", 1024 * 1024);\n        LoggerImpl logger = new LoggerImpl(clock, handler, new Handler(), 1000);\n        logger.start();\n        return logger;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled logger from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: logger\n\n        Method Code: @Provides\n    @Singleton\n    Logger logger(Context context, Clock clock) {\n        File logDir = new File(context.getFilesDir(), \"logs\");\n        FileLogHandler handler = new FileLogHandler(logDir, \"log.txt\", 1024 * 1024);\n        LoggerImpl logger = new LoggerImpl(clock, handler, new Handler(), 1000);\n        logger.start();\n        return logger;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nfunc logger(context: Context, clock: Clock) -> Logger {\n    let logDir = context.filesDir.appendingPathComponent(\"logs\")\n    let handler = FileLogHandler(directory: logDir, fileName: \"log.txt\", maxSize: 1024 * 1024)\n    let logger = LoggerImpl(clock: clock, handler: handler, handlerQueue: DispatchQueue.main, interval: 1000)\n    logger.start()\n    return logger\n}\n```"
+    },
+    {
+        "method_name": "logsRepository",
+        "method_code": "@Provides\n    @Singleton\n    LogsRepository logsRepository(Logger logger) {\n        return (LogsRepository) logger;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled logsRepository from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: logsRepository\n\n        Method Code: @Provides\n    @Singleton\n    LogsRepository logsRepository(Logger logger) {\n        return (LogsRepository) logger;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc logsRepository(logger: Logger) -> LogsRepository {\n    return logger as! LogsRepository\n}\n```"
+    },
+    {
+        "method_name": "uiAsyncRunner",
+        "method_code": "@Provides\n    @Singleton\n    AsyncRunner uiAsyncRunner() {\n        Handler uiHandler = new Handler();\n        return new ThreadPoolAsyncRunner(uiHandler, 4, \"ui\");\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled uiAsyncRunner from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: uiAsyncRunner\n\n        Method Code: @Provides\n    @Singleton\n    AsyncRunner uiAsyncRunner() {\n        Handler uiHandler = new Handler();\n        return new ThreadPoolAsyncRunner(uiHandler, 4, \"ui\");\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc uiAsyncRunner() -> AsyncRunner {\n    let uiHandler = Handler()\n    return ThreadPoolAsyncRunner(handler: uiHandler, threadCount: 4, name: \"ui\")\n}\n```"
+    },
+    {
+        "method_name": "ioAsyncRunner",
+        "method_code": "@Provides\n    @Singleton\n    @Named(\"io\")\n    AsyncRunner ioAsyncRunner() {\n        Handler uiHandler = new Handler();\n        return new ThreadPoolAsyncRunner(uiHandler, 8, \"io\");\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled ioAsyncRunner from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: ioAsyncRunner\n\n        Method Code: @Provides\n    @Singleton\n    @Named(\"io\")\n    AsyncRunner ioAsyncRunner() {\n        Handler uiHandler = new Handler();\n        return new ThreadPoolAsyncRunner(uiHandler, 8, \"io\");\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nimport Foundation\n\nfunc ioAsyncRunner() -> AsyncRunner {\n    let uiHandler = DispatchQueue.main\n    return ThreadPoolAsyncRunner(uiHandler: uiHandler, threadCount: 8, name: \"io\")\n}\n```"
+    },
+    {
+        "method_name": "notificationManager",
+        "method_code": "@Provides\n    NotificationManager notificationManager(Context context) {\n        return (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled notificationManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: notificationManager\n\n        Method Code: @Provides\n    NotificationManager notificationManager(Context context) {\n        return (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc notificationManager(context: Context) -> NotificationManager? {\n    return context.getSystemService(Context.NOTIFICATION_SERVICE) as? NotificationManager\n}\n```"
+    },
+    {
+        "method_name": "audioManager",
+        "method_code": "@Provides\n    AudioManager audioManager(Context context) {\n        return (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled audioManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: audioManager\n\n        Method Code: @Provides\n    AudioManager audioManager(Context context) {\n        return (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc audioManager(context: Context) -> AVAudioSession {\n    return AVAudioSession.sharedInstance()\n}\n```"
+    },
+    {
+        "method_name": "eventBus",
+        "method_code": "@Provides\n    @Singleton\n    EventBus eventBus() {\n        return EventBus.getDefault();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled eventBus from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: eventBus\n\n        Method Code: @Provides\n    @Singleton\n    EventBus eventBus() {\n        return EventBus.getDefault();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc eventBus() -> EventBus {\n    return EventBus.default\n}\n```"
+    },
+    {
+        "method_name": "migrationsDb",
+        "method_code": "@Provides\n    @Singleton\n    MigrationsDb migrationsDb(Application application) {\n        SharedPreferences store = application.getSharedPreferences(\"migrations\", Context.MODE_PRIVATE);\n        return new MigrationsDb(store);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled migrationsDb from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: migrationsDb\n\n        Method Code: @Provides\n    @Singleton\n    MigrationsDb migrationsDb(Application application) {\n        SharedPreferences store = application.getSharedPreferences(\"migrations\", Context.MODE_PRIVATE);\n        return new MigrationsDb(store);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc migrationsDb(application: UIApplication) -> MigrationsDb {\n    let store = application.sharedApplication().userDefaults(forName: \"migrations\")\n    return MigrationsDb(store: store)\n}\n```"
+    },
+    {
+        "method_name": "migrationsManager",
+        "method_code": "@Provides\n    @Singleton\n    MigrationsManager migrationsManager(MigrationsDb migrationsDb,\n                                        AppInfo appInfo,\n                                        AsyncRunner asyncRunner,\n                                        Migrations migrations) {\n        return new MigrationsManagerImpl(appInfo, migrationsDb, asyncRunner, migrations.getSteps());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled migrationsManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: migrationsManager\n\n        Method Code: @Provides\n    @Singleton\n    MigrationsManager migrationsManager(MigrationsDb migrationsDb,\n                                        AppInfo appInfo,\n                                        AsyncRunner asyncRunner,\n                                        Migrations migrations) {\n        return new MigrationsManagerImpl(appInfo, migrationsDb, asyncRunner, migrations.getSteps());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc migrationsManager(migrationsDb: MigrationsDb, appInfo: AppInfo, asyncRunner: AsyncRunner, migrations: Migrations) -> MigrationsManager {\n    return MigrationsManagerImpl(appInfo: appInfo, migrationsDb: migrationsDb, asyncRunner: asyncRunner, steps: migrations.getSteps())\n}\n```"
+    },
+    {
+        "method_name": "notificationsManager",
+        "method_code": "@Provides\n    @Singleton\n    AppNotificationManager notificationsManager(Context context,\n                                                NotificationManager platformNotificationsManager,\n                                                Provider<ViewThemeUtils> viewThemeUtilsProvider) {\n        return new AppNotificationManagerImpl(context,\n                                              context.getResources(),\n                                              platformNotificationsManager,\n                                              viewThemeUtilsProvider.get());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled notificationsManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: notificationsManager\n\n        Method Code: @Provides\n    @Singleton\n    AppNotificationManager notificationsManager(Context context,\n                                                NotificationManager platformNotificationsManager,\n                                                Provider<ViewThemeUtils> viewThemeUtilsProvider) {\n        return new AppNotificationManagerImpl(context,\n                                              context.getResources(),\n                                              platformNotificationsManager,\n                                              viewThemeUtilsProvider.get());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc notificationsManager(context: Context, platformNotificationsManager: NotificationManager, viewThemeUtilsProvider: Provider<ViewThemeUtils>) -> AppNotificationManager {\n    return AppNotificationManagerImpl(context: context, resources: context.resources, platformNotificationsManager: platformNotificationsManager, viewThemeUtils: viewThemeUtilsProvider.get())\n}\n```"
+    },
+    {
+        "method_name": "localBroadcastManager",
+        "method_code": "@Provides\n    LocalBroadcastManager localBroadcastManager(Context context) {\n        return LocalBroadcastManager.getInstance(context);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled localBroadcastManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: localBroadcastManager\n\n        Method Code: @Provides\n    LocalBroadcastManager localBroadcastManager(Context context) {\n        return LocalBroadcastManager.getInstance(context);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc localBroadcastManager(context: Context) -> LocalBroadcastManager {\n    return LocalBroadcastManager.getInstance(context)\n}\n```"
+    },
+    {
+        "method_name": "throttler",
+        "method_code": "@Provides\n    Throttler throttler(Clock clock) {\n        return new Throttler(clock);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled throttler from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: throttler\n\n        Method Code: @Provides\n    Throttler throttler(Clock clock) {\n        return new Throttler(clock);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc throttler(clock: Clock) -> Throttler {\n    return Throttler(clock: clock)\n}\n```"
+    },
+    {
+        "method_name": "passCodeManager",
+        "method_code": "@Provides\n    @Singleton\n    PassCodeManager passCodeManager(AppPreferences preferences, Clock clock) {\n        return new PassCodeManager(preferences, clock);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled passCodeManager from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: passCodeManager\n\n        Method Code: @Provides\n    @Singleton\n    PassCodeManager passCodeManager(AppPreferences preferences, Clock clock) {\n        return new PassCodeManager(preferences, clock);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc passCodeManager(preferences: AppPreferences, clock: Clock) -> PassCodeManager {\n    return PassCodeManager(preferences: preferences, clock: clock)\n}\n```"
+    },
+    {
+        "method_name": "fileOperationHelper",
+        "method_code": "@Provides\n    FileOperationHelper fileOperationHelper(CurrentAccountProvider currentAccountProvider, Context context) {\n        return new FileOperationHelper(currentAccountProvider.getUser(), context, fileDataStorageManager(currentAccountProvider, context));\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled fileOperationHelper from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: fileOperationHelper\n\n        Method Code: @Provides\n    FileOperationHelper fileOperationHelper(CurrentAccountProvider currentAccountProvider, Context context) {\n        return new FileOperationHelper(currentAccountProvider.getUser(), context, fileDataStorageManager(currentAccountProvider, context));\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc fileOperationHelper(currentAccountProvider: CurrentAccountProvider, context: Context) -> FileOperationHelper {\n    return FileOperationHelper(user: currentAccountProvider.getUser(), context: context, fileDataStorageManager: fileDataStorageManager(currentAccountProvider: currentAccountProvider, context: context))\n}\n```"
+    },
+    {
+        "method_name": "userAndGroupSearchConfig",
+        "method_code": "@Provides\n    @Singleton\n    UsersAndGroupsSearchConfig userAndGroupSearchConfig() {\n        return new UsersAndGroupsSearchConfig();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled userAndGroupSearchConfig from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: userAndGroupSearchConfig\n\n        Method Code: @Provides\n    @Singleton\n    UsersAndGroupsSearchConfig userAndGroupSearchConfig() {\n        return new UsersAndGroupsSearchConfig();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc userAndGroupSearchConfig() -> UsersAndGroupsSearchConfig {\n    return UsersAndGroupsSearchConfig()\n}\n```"
+    },
+    {
+        "method_name": "certificateValidator",
+        "method_code": "@Provides\n    @Singleton\n    CertificateValidator certificateValidator() {\n        return new CertificateValidator();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled certificateValidator from AppModule.java into Swift.\n\n        Input:\n\n        Method Name: certificateValidator\n\n        Method Code: @Provides\n    @Singleton\n    CertificateValidator certificateValidator() {\n        return new CertificateValidator();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc certificateValidator() -> CertificateValidator {\n    return CertificateValidator()\n}\n```"
+    }
+]

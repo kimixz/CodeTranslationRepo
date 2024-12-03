@@ -1,0 +1,241 @@
+{
+    "methods": [
+        {
+            "name": "isAlpha",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "char",
+                    "name": "ch"
+                }
+            ],
+            "start_position": 713,
+            "end_position": 844,
+            "body_start": 753,
+            "body_end": 844
+        },
+        {
+            "name": "isNum",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "char",
+                    "name": "ch"
+                }
+            ],
+            "start_position": 850,
+            "end_position": 936,
+            "body_start": 888,
+            "body_end": 936
+        },
+        {
+            "name": "isAlNum",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "char",
+                    "name": "ch"
+                }
+            ],
+            "start_position": 942,
+            "end_position": 1030,
+            "body_start": 982,
+            "body_end": 1030
+        },
+        {
+            "name": "isAnyOf",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "char",
+                    "name": "ch"
+                },
+                {
+                    "type": "String",
+                    "name": "set"
+                }
+            ],
+            "start_position": 1036,
+            "end_position": 1132,
+            "body_start": 1088,
+            "body_end": 1132
+        },
+        {
+            "name": "genException",
+            "return_type": "IllegalArgumentException",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "message"
+                },
+                {
+                    "type": "String",
+                    "name": "sql"
+                }
+            ],
+            "start_position": 1138,
+            "end_position": 1301,
+            "body_start": 1219,
+            "body_end": 1301
+        },
+        {
+            "name": "peek",
+            "return_type": "char",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "s"
+                },
+                {
+                    "type": "int",
+                    "name": "index"
+                }
+            ],
+            "start_position": 1307,
+            "end_position": 1420,
+            "body_start": 1353,
+            "body_end": 1420
+        },
+        {
+            "name": "tokenize",
+            "return_type": "List<String>",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "sql"
+                },
+                {
+                    "type": "int",
+                    "name": "options"
+                }
+            ],
+            "start_position": 1821,
+            "end_position": 2018,
+            "body_start": 1892,
+            "body_end": 2018
+        },
+        {
+            "name": "tokenize",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "sql"
+                },
+                {
+                    "type": "int",
+                    "name": "options"
+                },
+                {
+                    "type": "Consumer<String>",
+                    "name": "checker"
+                }
+            ],
+            "start_position": 2218,
+            "end_position": 6180,
+            "body_start": 2307,
+            "body_end": 6180
+        },
+        {
+            "name": "isKeyword",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 6329,
+            "end_position": 9075,
+            "body_start": 6384,
+            "body_end": 9075
+        },
+        {
+            "name": "isFunction",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 9225,
+            "end_position": 10017,
+            "body_start": 9281,
+            "body_end": 10017
+        },
+        {
+            "name": "isType",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "token"
+                }
+            ],
+            "start_position": 10152,
+            "end_position": 10765,
+            "body_start": 10204,
+            "body_end": 10765
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "throw_statement",
+        "expression_statement",
+        "if_statement",
+        "while_statement",
+        "continue_statement",
+        "for_statement",
+        "break_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "isAlpha",
+            "isNum",
+            "tokenize",
+            "peek",
+            "isAlNum",
+            "isAnyOf",
+            "genException"
+        ],
+        "set": [
+            "indexOf"
+        ],
+        "s": [
+            "length",
+            "charAt"
+        ],
+        "sql": [
+            "length",
+            "substring",
+            "indexOf"
+        ],
+        "checker": [
+            "accept"
+        ],
+        "tokenUnquoted": [
+            "indexOf",
+            "replaceAll"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "token": [
+            "toUpperCase",
+            "toLowerCase"
+        ]
+    },
+    "local_variables": {
+        "res": "ArrayList<String>",
+        "pos": "int",
+        "len": "int",
+        "ch": "char",
+        "start": "int",
+        "end": "int",
+        "token": "String",
+        "quoteStart": "int",
+        "quoteEnd": "int",
+        "tokenUnquoted": "String"
+    }
+}

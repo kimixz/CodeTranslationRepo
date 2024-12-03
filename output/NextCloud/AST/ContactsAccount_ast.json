@@ -1,0 +1,73 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "equals",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "obj"
+                }
+            ],
+            "start_position": 642,
+            "end_position": 956,
+            "body_start": 690,
+            "body_end": 956
+        },
+        {
+            "name": "toString",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 962,
+            "end_position": 1049,
+            "body_start": 1014,
+            "body_end": 1049
+        },
+        {
+            "name": "hashCode",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 1055,
+            "end_position": 1169,
+            "body_start": 1091,
+            "body_end": 1169
+        },
+        {
+            "name": "getName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1175,
+            "end_position": 1227,
+            "body_start": 1199,
+            "body_end": 1227
+        },
+        {
+            "name": "getType",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1233,
+            "end_position": 1285,
+            "body_start": 1257,
+            "body_end": 1285
+        }
+    ],
+    "local_variables": {
+        "other": "ContactsAccount"
+    },
+    "method_calls": {
+        "this.name": [
+            "equalsIgnoreCase"
+        ],
+        "this.type": [
+            "equalsIgnoreCase"
+        ],
+        "Arrays": [
+            "hashCode"
+        ]
+    }
+}

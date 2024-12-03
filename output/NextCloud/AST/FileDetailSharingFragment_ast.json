@@ -1,0 +1,980 @@
+{
+    "methods": [
+        {
+            "name": "newInstance",
+            "return_type": "FileDetailSharingFragment",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 4199,
+            "end_position": 4546,
+            "body_start": 4275,
+            "body_end": 4546
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 4552,
+            "end_position": 5656,
+            "body_start": 4624,
+            "body_end": 5656
+        },
+        {
+            "name": "onActivityCreated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 5662,
+            "end_position": 5862,
+            "body_start": 5733,
+            "body_end": 5862
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 5868,
+            "end_position": 7255,
+            "body_start": 5989,
+            "body_end": 7255
+        },
+        {
+            "name": "onDestroyView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7261,
+            "end_position": 7365,
+            "body_start": 7303,
+            "body_end": 7365
+        },
+        {
+            "name": "onAttach",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 7371,
+            "end_position": 7868,
+            "body_start": 7432,
+            "body_end": 7868
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7874,
+            "end_position": 8003,
+            "body_start": 7910,
+            "body_end": 8003
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8009,
+            "end_position": 8105,
+            "body_start": 8044,
+            "body_end": 8105
+        },
+        {
+            "name": "setupView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8111,
+            "end_position": 9805,
+            "body_start": 8136,
+            "body_end": 9805
+        },
+        {
+            "name": "checkShareViaUser",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9811,
+            "end_position": 9989,
+            "body_start": 9844,
+            "body_end": 9989
+        },
+        {
+            "name": "disableSearchView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 9995,
+            "end_position": 10278,
+            "body_start": 10037,
+            "body_end": 10278
+        },
+        {
+            "name": "setShareWithYou",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10284,
+            "end_position": 11488,
+            "body_start": 10315,
+            "body_end": 11488
+        },
+        {
+            "name": "copyInternalLink",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11494,
+            "end_position": 11889,
+            "body_start": 11539,
+            "body_end": 11889
+        },
+        {
+            "name": "createInternalLink",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "OwnCloudAccount",
+                    "name": "account"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 11895,
+            "end_position": 12049,
+            "body_start": 11967,
+            "body_end": 12049
+        },
+        {
+            "name": "createPublicShareLink",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12055,
+            "end_position": 12741,
+            "body_start": 12105,
+            "body_end": 12741
+        },
+        {
+            "name": "createSecureFileDrop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12747,
+            "end_position": 12868,
+            "body_start": 12796,
+            "body_end": 12868
+        },
+        {
+            "name": "showSendLinkTo",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "publicShare"
+                }
+            ],
+            "start_position": 12874,
+            "end_position": 13259,
+            "body_start": 12923,
+            "body_end": 13259
+        },
+        {
+            "name": "copyLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 13265,
+            "end_position": 13614,
+            "body_start": 13301,
+            "body_end": 13614
+        },
+        {
+            "name": "showSharingMenuActionSheet",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 13701,
+            "end_position": 13982,
+            "body_start": 13792,
+            "body_end": 13982
+        },
+        {
+            "name": "showPermissionsDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 14075,
+            "end_position": 14249,
+            "body_start": 14138,
+            "body_end": 14249
+        },
+        {
+            "name": "onUpdateShareInformation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 14592,
+            "end_position": 14748,
+            "body_start": 14672,
+            "body_end": 14748
+        },
+        {
+            "name": "onUpdateShareInformation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 15115,
+            "end_position": 15306,
+            "body_start": 15182,
+            "body_end": 15306
+        },
+        {
+            "name": "refreshUiFromDB",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15392,
+            "end_position": 15519,
+            "body_start": 15423,
+            "body_end": 15519
+        },
+        {
+            "name": "unshareWith",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 15525,
+            "end_position": 15628,
+            "body_start": 15565,
+            "body_end": 15628
+        },
+        {
+            "name": "requestPasswordForShareViaLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "createShare"
+                },
+                {
+                    "type": "boolean",
+                    "name": "askForPassword"
+                }
+            ],
+            "start_position": 16035,
+            "end_position": 16516,
+            "body_start": 16123,
+            "body_end": 16516
+        },
+        {
+            "name": "requestPasswordForShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "boolean",
+                    "name": "askForPassword"
+                }
+            ],
+            "start_position": 16522,
+            "end_position": 16822,
+            "body_start": 16611,
+            "body_end": 16822
+        },
+        {
+            "name": "showProfileBottomSheet",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "shareWith"
+                }
+            ],
+            "start_position": 16828,
+            "end_position": 17302,
+            "body_start": 16906,
+            "body_end": 17302
+        },
+        {
+            "name": "refreshCapabilitiesFromDB",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 17369,
+            "end_position": 17500,
+            "body_start": 17409,
+            "body_end": 17500
+        },
+        {
+            "name": "refreshSharesFromDB",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 17675,
+            "end_position": 19339,
+            "body_start": 17709,
+            "body_end": 19339
+        },
+        {
+            "name": "checkContactPermission",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 19345,
+            "end_position": 19641,
+            "body_start": 19383,
+            "body_end": 19641
+        },
+        {
+            "name": "pickContactEmail",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 19647,
+            "end_position": 20102,
+            "body_start": 19679,
+            "body_end": 20102
+        },
+        {
+            "name": "handleContactResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Uri",
+                    "name": "contactUri"
+                }
+            ],
+            "start_position": 20108,
+            "end_position": 21890,
+            "body_start": 20166,
+            "body_end": 21890
+        },
+        {
+            "name": "containsNoNewPublicShare",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "List<OCShare>",
+                    "name": "shares"
+                }
+            ],
+            "start_position": 21896,
+            "end_position": 22150,
+            "body_start": 21959,
+            "body_end": 22150
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 22156,
+            "end_position": 22425,
+            "body_start": 22228,
+            "body_end": 22425
+        },
+        {
+            "name": "avatarGenerated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "avatarDrawable"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 22431,
+            "end_position": 22595,
+            "body_start": 22518,
+            "body_end": 22595
+        },
+        {
+            "name": "shouldCallGeneratedCallback",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tag"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 22601,
+            "end_position": 22719,
+            "body_start": 22690,
+            "body_end": 22719
+        },
+        {
+            "name": "isReshareForbidden",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 22725,
+            "end_position": 22931,
+            "body_start": 22775,
+            "body_end": 22931
+        },
+        {
+            "name": "search",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "query"
+                }
+            ],
+            "start_position": 22937,
+            "end_position": 23119,
+            "body_start": 22993,
+            "body_end": 23119
+        },
+        {
+            "name": "advancedPermissions",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 23125,
+            "end_position": 23287,
+            "body_start": 23186,
+            "body_end": 23287
+        },
+        {
+            "name": "sendNewEmail",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 23294,
+            "end_position": 23443,
+            "body_start": 23348,
+            "body_end": 23443
+        },
+        {
+            "name": "unShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 23449,
+            "end_position": 23806,
+            "body_start": 23498,
+            "body_end": 23806
+        },
+        {
+            "name": "sendLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 23812,
+            "end_position": 24108,
+            "body_start": 23862,
+            "body_end": 24108
+        },
+        {
+            "name": "addAnotherLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 24114,
+            "end_position": 24210,
+            "body_start": 24170,
+            "body_end": 24210
+        },
+        {
+            "name": "modifyExistingShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "int",
+                    "name": "screenTypePermission"
+                }
+            ],
+            "start_position": 24216,
+            "end_position": 24519,
+            "body_start": 24290,
+            "body_end": 24519
+        },
+        {
+            "name": "onQuickPermissionChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "int",
+                    "name": "permission"
+                }
+            ],
+            "start_position": 24525,
+            "end_position": 24685,
+            "body_start": 24607,
+            "body_end": 24685
+        },
+        {
+            "name": "editExistingShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "int",
+                    "name": "screenTypePermission"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isReshareShown"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isExpiryDateShown"
+                }
+            ],
+            "start_position": 26406,
+            "end_position": 26552
+        },
+        {
+            "name": "onShareProcessClosed",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 26562,
+            "end_position": 26590
+        }
+    ],
+    "local_variables": {
+        "fragment": "FileDetailSharingFragment",
+        "args": "Bundle",
+        "arguments": "Bundle",
+        "accountManager": "AccountManager",
+        "userId": "String",
+        "parentFile": "OCFile",
+        "i": "int",
+        "note": "String",
+        "account": "OwnCloudAccount",
+        "dialog": "SharePasswordDialogFragment",
+        "newFile": "OCFile",
+        "adapter": "ShareeListAdapter",
+        "shares": "List<OCShare>",
+        "publicShares": "List<OCShare>",
+        "ocShare": "OCShare",
+        "intent": "Intent",
+        "projection": "String[]",
+        "cursor": "Cursor",
+        "columnIndex": "int",
+        "email": "String",
+        "searchView": "SearchView",
+        "contactUri": "Uri"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "throw_statement",
+        "try_statement",
+        "for_statement",
+        "enhanced_for_statement"
+    ],
+    "method_calls": {
+        "args": [
+            "putParcelable"
+        ],
+        "fragment": [
+            "setArguments"
+        ],
+        "super": [
+            "onCreate",
+            "onActivityCreated",
+            "onDestroyView",
+            "onAttach",
+            "onStart",
+            "onStop",
+            "onSaveInstanceState"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "unknown": [
+            "getArguments",
+            "getActivity",
+            "refreshCapabilitiesFromDB",
+            "refreshSharesFromDB",
+            "requireContext",
+            "checkContactPermission",
+            "setupView",
+            "setShareWithYou",
+            "getResources",
+            "disableSearchView",
+            "checkShareViaUser",
+            "getString",
+            "getContext",
+            "getView",
+            "createInternalLink",
+            "requestPasswordForShareViaLink",
+            "requireActivity",
+            "onUpdateShareInformation",
+            "refreshUiFromDB",
+            "getChildFragmentManager",
+            "containsNoNewPublicShare",
+            "pickContactEmail",
+            "requireView",
+            "modifyExistingShare",
+            "unshareWith",
+            "showSendLinkTo",
+            "createPublicShareLink",
+            "isReshareForbidden",
+            "registerForActivityResult",
+            "handleContactResult"
+        ],
+        "FileDetailsSharingFragmentBinding": [
+            "inflate"
+        ],
+        "fileActivity": [
+            "getFileOperationsHelper",
+            "getStorageManager",
+            "getSystemService",
+            "getComponentName",
+            "isFinishing",
+            "getContentResolver"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "accountManager": [
+            "getUserData",
+            "userOwnsFile",
+            "getCurrentOwnCloudAccount"
+        ],
+        "user": [
+            "toPlatformAccount",
+            "getServer",
+            "getAccountName"
+        ],
+        "binding.sharesList": [
+            "setAdapter",
+            "setLayoutManager",
+            "getAdapter"
+        ],
+        "file": [
+            "isEncrypted",
+            "getParentId",
+            "canReshare",
+            "getE2eCounter",
+            "isSharedViaLink",
+            "getOwnerDisplayName",
+            "getOwnerId",
+            "getNote",
+            "getLocalId",
+            "getFileId",
+            "getRemotePath"
+        ],
+        "binding.pickContactEmailBtn": [
+            "setOnClickListener",
+            "setVisibility"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "searchConfig": [
+            "setSearchOnlyUsers",
+            "reset"
+        ],
+        "fileDataStorageManager": [
+            "getFileById",
+            "getCapability",
+            "getSharesWithForAFile",
+            "getSharesByPathAndType"
+        ],
+        "FileDetailSharingFragmentHelper": [
+            "setupSearchView",
+            "isPublicShareDisabled"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeToolbarSearchView"
+        ],
+        "parentFile": [
+            "isEncrypted"
+        ],
+        "binding.searchContainer": [
+            "setVisibility"
+        ],
+        "binding.searchView": [
+            "setQueryHint",
+            "setInputType",
+            "post",
+            "setQuery",
+            "requestFocus"
+        ],
+        "getResources()": [
+            "getString",
+            "getDimension"
+        ],
+        "MDMConfig.INSTANCE": [
+            "shareViaUser"
+        ],
+        "view": [
+            "setEnabled"
+        ],
+        "viewGroup": [
+            "getChildCount",
+            "getChildAt"
+        ],
+        "binding.sharedWithYouContainer": [
+            "setVisibility"
+        ],
+        "binding.sharedWithYouUsername": [
+            "setText"
+        ],
+        "String": [
+            "format"
+        ],
+        "DisplayUtils": [
+            "setAvatar",
+            "showSnackMessage"
+        ],
+        "binding.sharedWithYouAvatar": [
+            "setVisibility",
+            "setImageDrawable"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "binding.sharedWithYouNote": [
+            "setText"
+        ],
+        "binding.sharedWithYouNoteContainer": [
+            "setVisibility"
+        ],
+        "FileDisplayActivity": [
+            "showShareLinkDialog"
+        ],
+        "account": [
+            "getBaseUri"
+        ],
+        "capabilities.getFilesSharingPublicPasswordEnforced()": [
+            "isTrue"
+        ],
+        "capabilities": [
+            "getFilesSharingPublicPasswordEnforced",
+            "getFilesSharingPublicAskForOptionalPassword",
+            "getEndToEndEncryption",
+            "getFilesSharingResharing",
+            "getVersion"
+        ],
+        "capabilities.getFilesSharingPublicAskForOptionalPassword()": [
+            "isTrue"
+        ],
+        "fileOperationsHelper": [
+            "shareFileViaPublicShare",
+            "shareFolderViaSecureFileDrop",
+            "getFileWithLink",
+            "unshareShare",
+            "setPermissionsToShare"
+        ],
+        "publicShare": [
+            "getShareLink"
+        ],
+        "share": [
+            "getShareLink",
+            "getShareType"
+        ],
+        "ClipboardUtil": [
+            "copyToClipboard"
+        ],
+        "new FileDetailSharingMenuBottomSheetDialog(fileActivity, this, share, viewThemeUtils)": [
+            "show"
+        ],
+        "new QuickSharingPermissionsBottomSheetDialog(fileActivity, this, share, viewThemeUtils)": [
+            "show"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultCode",
+            "getData"
+        ],
+        "SharePasswordDialogFragment": [
+            "newInstance"
+        ],
+        "dialog": [
+            "show"
+        ],
+        "user.getServer().getVersion()": [
+            "isNewerOrEqual"
+        ],
+        "user.getServer()": [
+            "getVersion"
+        ],
+        "new RetrieveHoverCardAsyncTask(user,\n                                           shareWith,\n                                           fileActivity,\n                                           clientFactory,\n                                           viewThemeUtils)": [
+            "execute"
+        ],
+        "adapter.getShares()": [
+            "clear"
+        ],
+        "adapter": [
+            "getShares",
+            "addShares",
+            "removeNewPublicShare",
+            "remove"
+        ],
+        "publicShares": [
+            "isEmpty",
+            "add"
+        ],
+        "capabilities.getEndToEndEncryption()": [
+            "isTrue"
+        ],
+        "ocShare": [
+            "setShareType"
+        ],
+        "PermissionUtil": [
+            "checkSelfPermission"
+        ],
+        "requestContactPermissionLauncher": [
+            "launch"
+        ],
+        "intent": [
+            "resolveActivity",
+            "getData"
+        ],
+        "requireContext()": [
+            "getPackageManager"
+        ],
+        "onContactSelectionResultLauncher": [
+            "launch"
+        ],
+        "fileActivity.getContentResolver()": [
+            "query"
+        ],
+        "cursor": [
+            "moveToFirst",
+            "getColumnIndex",
+            "getString",
+            "close"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "FileDetailSharingFragment.class": [
+            "getSimpleName"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "outState": [
+            "putParcelable"
+        ],
+        "capabilities.getFilesSharingResharing()": [
+            "isFalse"
+        ],
+        "requireView()": [
+            "findViewById"
+        ],
+        "searchView": [
+            "setQuery"
+        ],
+        "onEditShareListener": [
+            "editExistingShare"
+        ],
+        "capabilities.getVersion()": [
+            "isNewerOrEqual"
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "method_calls": {
+        "BootupBroadcastReceiver.class": [
+            "getSimpleName"
+        ],
+        "AndroidInjection": [
+            "inject"
+        ],
+        "Intent.ACTION_BOOT_COMPLETED": [
+            "equals"
+        ],
+        "intent": [
+            "getAction"
+        ],
+        "MainApp": [
+            "initSyncOperations",
+            "initContactsBackup"
+        ],
+        "Log_OC": [
+            "d"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onReceive",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 2336,
+            "end_position": 3371,
+            "body_start": 2404,
+            "body_end": 3371
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ]
+}

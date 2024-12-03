@@ -1,0 +1,79 @@
+{
+    "method_calls": {
+        "binding": [
+            "getRoot"
+        ],
+        "binding.spinner": [
+            "setAdapter",
+            "setVisibility"
+        ],
+        "adapter": [
+            "clear",
+            "addAll",
+            "isEmpty"
+        ],
+        "itemView": [
+            "setOnClickListener"
+        ],
+        "Toast.makeText(context,\n                               context.getResources().getString(R.string.no_calendar_exists),\n                               Toast.LENGTH_LONG)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "context.getResources()": [
+            "getString"
+        ],
+        "context": [
+            "getResources"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "setCalendars",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ArrayList<AndroidCalendar>",
+                    "name": "calendars"
+                }
+            ],
+            "start_position": 1280,
+            "end_position": 1410,
+            "body_start": 1343,
+            "body_end": 1410
+        },
+        {
+            "name": "setListener",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View.OnClickListener",
+                    "name": "onClickListener"
+                }
+            ],
+            "start_position": 1416,
+            "end_position": 1539,
+            "body_start": 1478,
+            "body_end": 1539
+        },
+        {
+            "name": "showCalendars",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "show"
+                }
+            ],
+            "start_position": 1545,
+            "end_position": 2039,
+            "body_start": 1585,
+            "body_end": 2039
+        }
+    ]
+}

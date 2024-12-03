@@ -1,0 +1,69 @@
+{
+    "methods": [
+        {
+            "name": "onAttach",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 1040,
+            "end_position": 1416,
+            "body_start": 1092,
+            "body_end": 1416
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 1523,
+            "end_position": 1689,
+            "body_start": 1585,
+            "body_end": 1689
+        },
+        {
+            "name": "setTask",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "CopyAndUploadContentUrisTask",
+                    "name": "task"
+                }
+            ],
+            "start_position": 1813,
+            "end_position": 2314,
+            "body_start": 1868,
+            "body_end": 2314
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "onAttach",
+            "onCreate"
+        ],
+        "mTask": [
+            "setListener"
+        ],
+        "unknown": [
+            "setRetainInstance",
+            "getContext"
+        ],
+        "task": [
+            "setListener"
+        ]
+    },
+    "local_variables": {
+        "context": "Context"
+    }
+}

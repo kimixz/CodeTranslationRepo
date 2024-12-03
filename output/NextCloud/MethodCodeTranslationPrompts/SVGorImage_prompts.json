@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "getSVG",
+        "method_code": "public SVG getSVG() {\n        return svg;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSVG from SVGorImage.java into Swift.\n\n        Input:\n\n        Method Name: getSVG\n\n        Method Code: public SVG getSVG() {\n        return svg;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getSVG() -> SVG {\n    return svg\n}\n```"
+    },
+    {
+        "method_name": "getBitmap",
+        "method_code": "public Bitmap getBitmap() {\n        return bitmap;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getBitmap from SVGorImage.java into Swift.\n\n        Input:\n\n        Method Name: getBitmap\n\n        Method Code: public Bitmap getBitmap() {\n        return bitmap;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getBitmap() -> UIImage? {\n    return bitmap\n}\n```"
+    }
+]

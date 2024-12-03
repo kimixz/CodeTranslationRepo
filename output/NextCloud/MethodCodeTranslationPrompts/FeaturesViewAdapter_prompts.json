@@ -1,0 +1,14 @@
+[
+    {
+        "method_name": "createFragment",
+        "method_code": "@NonNull\n    @Override\n    public Fragment createFragment(int position) {\n        return FeatureFragment.newInstance(mFeatures[position]);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled createFragment from FeaturesViewAdapter.java into Swift.\n\n        Input:\n\n        Method Name: createFragment\n\n        Method Code: @NonNull\n    @Override\n    public Fragment createFragment(int position) {\n        return FeatureFragment.newInstance(mFeatures[position]);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func createFragment(at position: Int) -> Fragment {\n    return FeatureFragment.newInstance(mFeatures[position])\n}\n```"
+    },
+    {
+        "method_name": "getItemCount",
+        "method_code": "@Override\n    public int getItemCount() {\n        return mFeatures.length;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getItemCount from FeaturesViewAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getItemCount\n\n        Method Code: @Override\n    public int getItemCount() {\n        return mFeatures.length;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {\n    return mFeatures.count\n}\n```"
+    }
+]

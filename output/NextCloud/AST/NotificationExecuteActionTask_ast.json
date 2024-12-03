@@ -1,0 +1,56 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "try_statement"
+    ],
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "Boolean",
+            "parameters": [],
+            "start_position": 1823,
+            "end_position": 3016,
+            "body_start": 1889,
+            "body_end": 3016
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Boolean",
+                    "name": "isSuccess"
+                }
+            ],
+            "start_position": 3022,
+            "end_position": 3172,
+            "body_start": 3084,
+            "body_end": 3172
+        }
+    ],
+    "local_variables": {
+        "method": "OkHttpMethodBase",
+        "action": "Action",
+        "status": "int"
+    },
+    "method_calls": {
+        "RequestBody": [
+            "create"
+        ],
+        "method": [
+            "addRequestHeader",
+            "releaseConnection"
+        ],
+        "client": [
+            "execute"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "notificationsActivity": [
+            "onActionCallback"
+        ]
+    }
+}

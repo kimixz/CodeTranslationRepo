@@ -1,0 +1,352 @@
+{
+    "method_calls": {
+        "ActivitiesActivity.class": [
+            "getSimpleName"
+        ],
+        "Log_OC": [
+            "v",
+            "w"
+        ],
+        "super": [
+            "onCreate",
+            "onScrolled",
+            "onOptionsItemSelected",
+            "onResume",
+            "onStop"
+        ],
+        "ActivityListLayoutBinding": [
+            "inflate"
+        ],
+        "unknown": [
+            "getLayoutInflater",
+            "setContentView",
+            "setupToolbar",
+            "setupDrawer",
+            "updateActionBarTitleAndHomeButtonByString",
+            "getString",
+            "getUserAccountManager",
+            "isDrawerOpen",
+            "closeDrawer",
+            "openDrawer",
+            "setupContent",
+            "showEmptyContent",
+            "getBaseContext",
+            "getUser",
+            "startActivity"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeSwipeRefreshLayout"
+        ],
+        "binding.swipeContainingList": [
+            "setOnRefreshListener",
+            "post",
+            "setRefreshing"
+        ],
+        "actionListener": [
+            "loadActivities",
+            "onResume",
+            "openActivity",
+            "onStop"
+        ],
+        "binding.emptyList.emptyListIcon": [
+            "setImageResource",
+            "setVisibility"
+        ],
+        "binding.list": [
+            "setAdapter",
+            "setLayoutManager",
+            "addOnScrollListener",
+            "setVisibility"
+        ],
+        "recyclerView": [
+            "getChildCount"
+        ],
+        "layoutManager": [
+            "getItemCount",
+            "findFirstVisibleItemPosition"
+        ],
+        "item": [
+            "getItemId"
+        ],
+        "richObject": [
+            "getPath"
+        ],
+        "adapter": [
+            "setActivityItems",
+            "isEmpty"
+        ],
+        "binding.loadingContent": [
+            "setVisibility"
+        ],
+        "binding.emptyList.emptyListView": [
+            "setVisibility"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage"
+        ],
+        "PreviewImageFragment": [
+            "canBePreviewed"
+        ],
+        "showDetailsIntent": [
+            "putExtra"
+        ],
+        "getUser()": [
+            "orElseThrow"
+        ],
+        "binding.emptyList.emptyListViewHeadline": [
+            "setText",
+            "setVisibility"
+        ],
+        "binding.emptyList.emptyListViewText": [
+            "setText",
+            "setVisibility"
+        ],
+        "snackbar": [
+            "isShown",
+            "dismiss"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 2394,
+            "end_position": 3421,
+            "body_start": 2459,
+            "body_end": 3421
+        },
+        {
+            "name": "getBinding",
+            "return_type": "ActivityListLayoutBinding",
+            "parameters": [],
+            "start_position": 3427,
+            "end_position": 3527,
+            "body_start": 3496,
+            "body_end": 3527
+        },
+        {
+            "name": "setupContent",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3610,
+            "end_position": 5194,
+            "body_start": 3638,
+            "body_end": 5194
+        },
+        {
+            "name": "onScrolled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView",
+                    "name": "recyclerView"
+                },
+                {
+                    "type": "int",
+                    "name": "dx"
+                },
+                {
+                    "type": "int",
+                    "name": "dy"
+                }
+            ],
+            "start_position": 4316,
+            "end_position": 5091,
+            "body_start": 4413,
+            "body_end": 5091
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 5200,
+            "end_position": 5653,
+            "body_start": 5266,
+            "body_end": 5653
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5659,
+            "end_position": 5791,
+            "body_start": 5699,
+            "body_end": 5791
+        },
+        {
+            "name": "onActivityClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RichObject",
+                    "name": "richObject"
+                }
+            ],
+            "start_position": 5797,
+            "end_position": 5991,
+            "body_start": 5864,
+            "body_end": 5991
+        },
+        {
+            "name": "showActivities",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "activities"
+                },
+                {
+                    "type": "NextcloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "int",
+                    "name": "lastGiven"
+                }
+            ],
+            "start_position": 5997,
+            "end_position": 6891,
+            "body_start": 6102,
+            "body_end": 6891
+        },
+        {
+            "name": "showActivitiesLoadError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "error"
+                }
+            ],
+            "start_position": 6897,
+            "end_position": 7031,
+            "body_start": 6961,
+            "body_end": 7031
+        },
+        {
+            "name": "showActivityDetailUI",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                }
+            ],
+            "start_position": 7037,
+            "end_position": 7598,
+            "body_start": 7099,
+            "body_end": 7598
+        },
+        {
+            "name": "showActivityDetailUIIsNull",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7604,
+            "end_position": 7747,
+            "body_start": 7659,
+            "body_end": 7747
+        },
+        {
+            "name": "showActivityDetailError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "error"
+                }
+            ],
+            "start_position": 7753,
+            "end_position": 7887,
+            "body_start": 7817,
+            "body_end": 7887
+        },
+        {
+            "name": "showLoadingMessage",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7893,
+            "end_position": 8013,
+            "body_start": 7940,
+            "body_end": 8013
+        },
+        {
+            "name": "showEmptyContent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "headline"
+                },
+                {
+                    "type": "String",
+                    "name": "message"
+                }
+            ],
+            "start_position": 8019,
+            "end_position": 8576,
+            "body_start": 8095,
+            "body_end": 8576
+        },
+        {
+            "name": "setProgressIndicatorState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isActive"
+                }
+            ],
+            "start_position": 8582,
+            "end_position": 8848,
+            "body_start": 8652,
+            "body_end": 8848
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8854,
+            "end_position": 8957,
+            "body_start": 8892,
+            "body_end": 8957
+        },
+        {
+            "name": "dismissSnackbar",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8963,
+            "end_position": 9148,
+            "body_start": 9016,
+            "body_end": 9148
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement"
+    ],
+    "local_variables": {
+        "layoutManager": "LinearLayoutManager",
+        "visibleItemCount": "int",
+        "totalItemCount": "int",
+        "firstVisibleItemIndex": "int",
+        "retval": "boolean",
+        "path": "String",
+        "clear": "boolean",
+        "showDetailsIntent": "Intent"
+    }
+}

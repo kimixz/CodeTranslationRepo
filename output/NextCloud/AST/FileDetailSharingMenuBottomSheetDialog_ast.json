@@ -1,0 +1,122 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 1780,
+            "end_position": 2940,
+            "body_start": 1845,
+            "body_end": 2940
+        },
+        {
+            "name": "updateUI",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2946,
+            "end_position": 3644,
+            "body_start": 2970,
+            "body_end": 3644
+        },
+        {
+            "name": "setupClickListener",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3650,
+            "end_position": 4405,
+            "body_start": 3684,
+            "body_end": 4405
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4411,
+            "end_position": 4504,
+            "body_start": 4449,
+            "body_end": 4504
+        }
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate",
+            "onStop"
+        ],
+        "FileDetailsSharingMenuBottomSheetFragmentBinding": [
+            "inflate"
+        ],
+        "unknown": [
+            "getLayoutInflater",
+            "setContentView",
+            "getWindow",
+            "updateUI",
+            "setupClickListener",
+            "setOnShowListener",
+            "getContext",
+            "dismiss"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "getWindow()": [
+            "setLayout"
+        ],
+        "viewThemeUtils.platform": [
+            "themeDialog",
+            "colorImageView"
+        ],
+        "BottomSheetBehavior.from((View) binding.getRoot().getParent())": [
+            "setPeekHeight"
+        ],
+        "BottomSheetBehavior": [
+            "from"
+        ],
+        "binding.getRoot()": [
+            "getParent",
+            "getMeasuredHeight"
+        ],
+        "ocShare": [
+            "getShareType"
+        ],
+        "binding.menuShareAddAnotherLink": [
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "MDMConfig.INSTANCE": [
+            "sendFilesSupport"
+        ],
+        "binding.menuShareSendLink": [
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "SharingMenuHelper": [
+            "isSecureFileDrop"
+        ],
+        "binding.menuShareAdvancedPermissions": [
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "actions": [
+            "advancedPermissions",
+            "sendNewEmail",
+            "unShare",
+            "sendLink",
+            "addAnotherLink"
+        ],
+        "binding.menuShareSendNewEmail": [
+            "setOnClickListener"
+        ],
+        "binding.menuShareUnshare": [
+            "setOnClickListener"
+        ]
+    }
+}

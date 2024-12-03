@@ -1,0 +1,26 @@
+[
+    {
+        "method_name": "read",
+        "method_code": "@Override\n            public int read() {\n                return 0;\n            }",
+        "prompt": "\n        Please translate the following Java (Android) method titled read from Response.java into Swift.\n\n        Input:\n\n        Method Name: read\n\n        Method Code: @Override\n            public int read() {\n                return 0;\n            }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc read() -> Int {\n    return 0\n}\n```"
+    },
+    {
+        "method_name": "getPlainHeadersString",
+        "method_code": "public String getPlainHeadersString() {\n        List<PlainHeader> arrayList = new ArrayList<>(headers.length);\n\n        for (Header header : headers) {\n            arrayList.add(new PlainHeader(header.getName(), header.getValue()));\n        }\n\n        Gson gson = new Gson();\n        return gson.toJson(arrayList);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPlainHeadersString from Response.java into Swift.\n\n        Input:\n\n        Method Name: getPlainHeadersString\n\n        Method Code: public String getPlainHeadersString() {\n        List<PlainHeader> arrayList = new ArrayList<>(headers.length);\n\n        for (Header header : headers) {\n            arrayList.add(new PlainHeader(header.getName(), header.getValue()));\n        }\n\n        Gson gson = new Gson();\n        return gson.toJson(arrayList);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPlainHeadersString() -> String {\n    var arrayList: [PlainHeader] = []\n\n    for header in headers {\n        arrayList.append(PlainHeader(name: header.getName(), value: header.getValue()))\n    }\n\n    let jsonData = try? JSONEncoder().encode(arrayList)\n    return String(data: jsonData ?? Data(), encoding: .utf8) ?? \"\"\n}\n```"
+    },
+    {
+        "method_name": "getBody",
+        "method_code": "public InputStream getBody() {\n        return this.body;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getBody from Response.java into Swift.\n\n        Input:\n\n        Method Name: getBody\n\n        Method Code: public InputStream getBody() {\n        return this.body;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getBody() -> InputStream? {\n    return self.body\n}\n```"
+    },
+    {
+        "method_name": "getMethod",
+        "method_code": "public HttpMethodBase getMethod() {\n        return method;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getMethod from Response.java into Swift.\n\n        Input:\n\n        Method Name: getMethod\n\n        Method Code: public HttpMethodBase getMethod() {\n        return method;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getMethod() -> HttpMethodBase {\n    return method\n}\n```"
+    }
+]

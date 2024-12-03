@@ -1,0 +1,1394 @@
+{
+    "method_calls": {
+        "SettingsActivity.class": [
+            "getSimpleName"
+        ],
+        "super": [
+            "onCreate",
+            "onOptionsItemSelected",
+            "onCreateOptionsMenu",
+            "onActivityResult",
+            "onPostResume",
+            "onTitleChanged",
+            "onConfigurationChanged",
+            "onPostCreate",
+            "onDestroy",
+            "onStop"
+        ],
+        "getDelegate()": [
+            "installViewFactory",
+            "onCreate",
+            "getSupportActionBar",
+            "getMenuInflater",
+            "setContentView",
+            "addContentView",
+            "onPostResume",
+            "setTitle",
+            "onConfigurationChanged",
+            "onPostCreate",
+            "onDestroy",
+            "onStop",
+            "invalidateOptionsMenu"
+        ],
+        "unknown": [
+            "getDelegate",
+            "addPreferencesFromResource",
+            "setupActionBar",
+            "registerForContextMenu",
+            "getListView",
+            "getAppVersion",
+            "findPreference",
+            "setupBaseUri",
+            "setupGeneralCategory",
+            "setupAutoUploadCategory",
+            "setupDetailsCategory",
+            "setupSyncCategory",
+            "setupMoreCategory",
+            "setupAboutCategory",
+            "setupDevCategory",
+            "setListBackground",
+            "showPasscodeDialogIfEnforceAppProtection",
+            "getResources",
+            "getApplicationContext",
+            "getString",
+            "startActivity",
+            "setupAutoUploadPreference",
+            "setupInternalTwoWaySyncPreference",
+            "setupCalendarPreference",
+            "setupBackupPreference",
+            "setupE2EPreference",
+            "setupE2EKeysExist",
+            "setupE2EMnemonicPreference",
+            "removeE2E",
+            "setupHelpPreference",
+            "setupRecommendPreference",
+            "setupLoggingPreference",
+            "setupImprintPreference",
+            "loadExternalSettingLinks",
+            "startActivityForResult",
+            "showRemoveE2EAlertDialog",
+            "launchDavDroidLogin",
+            "setupLockPreference",
+            "setupHiddenFilesPreference",
+            "setupShowEcosystemAppsPreference",
+            "setupShowMediaScanNotifications",
+            "enableLock",
+            "disableLock",
+            "changeLockSetting",
+            "readStoragePath",
+            "getPackageManager",
+            "getPackageName",
+            "finish",
+            "handleMnemonicRequest",
+            "showMnemonicAlertDialogDialog",
+            "getContentResolver",
+            "saveStoragePath"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "MDMConfig.INSTANCE": [
+            "enforceProtection",
+            "isLogEnabled",
+            "externalSiteSupport"
+        ],
+        "Objects": [
+            "equals"
+        ],
+        "preferences": [
+            "getLockPreference",
+            "isShowMediaScanNotifications",
+            "setShowHiddenFilesEnabled",
+            "setShowEcosystemApps",
+            "setDarkThemeMode"
+        ],
+        "lock": [
+            "showDialog",
+            "dismissible",
+            "enableCancelButton",
+            "setEntries",
+            "setEntryValues",
+            "setSummary",
+            "getEntry",
+            "setOnPreferenceChangeListener",
+            "setValue"
+        ],
+        "getResources()": [
+            "getBoolean",
+            "getString"
+        ],
+        "viewThemeUtils.files": [
+            "themePreferenceCategory"
+        ],
+        "pDevLink": [
+            "setOnPreferenceClickListener"
+        ],
+        "FileActivity": [
+            "checkForNewDevVersion",
+            "showDevSnackbar"
+        ],
+        "preferenceCategoryDev": [
+            "removePreference"
+        ],
+        "pChangelogLink": [
+            "setOnPreferenceClickListener"
+        ],
+        "DisplayUtils": [
+            "startLinkIntent",
+            "startIntentIfAppAvailable",
+            "showSnackMessage"
+        ],
+        "pEtm": [
+            "setOnPreferenceClickListener"
+        ],
+        "EtmActivity": [
+            "launch"
+        ],
+        "preferenceScreen": [
+            "removePreference"
+        ],
+        "pAboutApp": [
+            "setTitle",
+            "setSummary"
+        ],
+        "String": [
+            "format",
+            "valueOf"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "licensePreference": [
+            "setSummary",
+            "setOnPreferenceClickListener"
+        ],
+        "preferenceCategoryAbout": [
+            "removePreference"
+        ],
+        "URLUtil": [
+            "isValidUrl"
+        ],
+        "privacyPreference": [
+            "setOnPreferenceClickListener"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "MimeTypeUtil": [
+            "getBestMimeTypeByFilename",
+            "isPDF"
+        ],
+        "privacyUrl": [
+            "getLastPathSegment",
+            "toString"
+        ],
+        "intent": [
+            "putExtra",
+            "setType",
+            "addFlags",
+            "setFlags"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "sourcecodePreference": [
+            "setOnPreferenceClickListener"
+        ],
+        "i": [
+            "addFlags",
+            "setAction",
+            "setFlags",
+            "putExtra"
+        ],
+        "pImprint": [
+            "setOnPreferenceClickListener"
+        ],
+        "imprintWeb": [
+            "isEmpty"
+        ],
+        "preferenceCategoryMore": [
+            "removePreference"
+        ],
+        "pLogger": [
+            "setOnPreferenceClickListener"
+        ],
+        "pRecommend": [
+            "setOnPreferenceClickListener"
+        ],
+        "FileOperationsHelper": [
+            "isEndToEndEncryptionSetup"
+        ],
+        "CapabilityUtils.getCapability(this).getEndToEndEncryptionKeysExist()": [
+            "isTrue",
+            "isUnknown"
+        ],
+        "CapabilityUtils.getCapability(this)": [
+            "getEndToEndEncryptionKeysExist"
+        ],
+        "CapabilityUtils": [
+            "getCapability"
+        ],
+        "preference": [
+            "setOnPreferenceClickListener"
+        ],
+        "connectivityService.getConnectivity()": [
+            "isConnected"
+        ],
+        "connectivityService": [
+            "getConnectivity"
+        ],
+        "MainApp": [
+            "getAppContext",
+            "setAppTheme",
+            "setStoragePath"
+        ],
+        "arbitraryDataProvider.getValue(user.getAccountName(), EncryptionUtils.MNEMONIC)": [
+            "trim"
+        ],
+        "arbitraryDataProvider": [
+            "getValue",
+            "getBooleanValue",
+            "storeOrUpdateKeyValue"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "mnemonic": [
+            "isEmpty"
+        ],
+        "DeviceCredentialUtils": [
+            "areCredentialsAvailable"
+        ],
+        "pMnemonic": [
+            "setOnPreferenceClickListener",
+            "setEnabled",
+            "setSummary"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(getString(R.string.remove_e2e_message))\n            .setCancelable(true)\n            .setNegativeButton(R.string.common_cancel, ((dialog, i) -> dialog.dismiss()))\n            .setPositiveButton(R.string.confirm_removal, (dialog, which) -> {\n                EncryptionUtils.removeE2E(arbitraryDataProvider, user);\n                preferenceCategoryMore.removePreference(preference);\n\n                Preference pMnemonic = findPreference(\"mnemonic\");\n                if (pMnemonic != null) {\n                    preferenceCategoryMore.removePreference(pMnemonic);\n                }\n\n                dialog.dismiss();\n            })\n            .create()": [
+            "show"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(getString(R.string.remove_e2e_message))\n            .setCancelable(true)\n            .setNegativeButton(R.string.common_cancel, ((dialog, i) -> dialog.dismiss()))\n            .setPositiveButton(R.string.confirm_removal, (dialog, which) -> {\n                EncryptionUtils.removeE2E(arbitraryDataProvider, user);\n                preferenceCategoryMore.removePreference(preference);\n\n                Preference pMnemonic = findPreference(\"mnemonic\");\n                if (pMnemonic != null) {\n                    preferenceCategoryMore.removePreference(pMnemonic);\n                }\n\n                dialog.dismiss();\n            })": [
+            "create"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(getString(R.string.remove_e2e_message))\n            .setCancelable(true)\n            .setNegativeButton(R.string.common_cancel, ((dialog, i) -> dialog.dismiss()))": [
+            "setPositiveButton"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(getString(R.string.remove_e2e_message))\n            .setCancelable(true)": [
+            "setNegativeButton"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(getString(R.string.remove_e2e_message))": [
+            "setCancelable"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)": [
+            "setMessage"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)": [
+            "setTitle"
+        ],
+        "dialog": [
+            "dismiss"
+        ],
+        "EncryptionUtils": [
+            "removeE2E"
+        ],
+        "pHelp": [
+            "setOnPreferenceClickListener"
+        ],
+        "autoUpload": [
+            "setOnPreferenceClickListener"
+        ],
+        "twoWaySync": [
+            "setOnPreferenceClickListener"
+        ],
+        "pContactsBackup": [
+            "setTitle",
+            "setSummary",
+            "setOnPreferenceClickListener"
+        ],
+        "ContactsPreferenceActivity": [
+            "startActivityWithoutSidebar"
+        ],
+        "pCalendarContacts": [
+            "setOnPreferenceClickListener"
+        ],
+        "preferenceCategoryDetails": [
+            "removePreference"
+        ],
+        "showHiddenFiles": [
+            "setOnPreferenceClickListener",
+            "isChecked"
+        ],
+        "showEcosystemApps": [
+            "setOnPreferenceClickListener",
+            "isChecked"
+        ],
+        "lockEntries": [
+            "add",
+            "remove",
+            "size",
+            "toArray"
+        ],
+        "lockValues": [
+            "add",
+            "remove",
+            "size",
+            "toArray"
+        ],
+        "((ListPreference) preference)": [
+            "getValue"
+        ],
+        "oldValue": [
+            "equals"
+        ],
+        "LOCK_NONE": [
+            "equals"
+        ],
+        "pUploadOnWifiCheckbox": [
+            "setChecked",
+            "setOnPreferenceClickListener",
+            "isChecked"
+        ],
+        "pSyncedFolder": [
+            "setOnPreferenceClickListener"
+        ],
+        "preferenceCategorySyncedFolders": [
+            "removePreference"
+        ],
+        "LOCK_PASSCODE": [
+            "equals"
+        ],
+        "LOCK_DEVICE_CREDENTIALS": [
+            "equals"
+        ],
+        "DocumentsStorageProvider": [
+            "notifyRootsChanged"
+        ],
+        "prefDataLoc": [
+            "setOnPreferenceClickListener"
+        ],
+        "themeEntries": [
+            "add",
+            "toArray"
+        ],
+        "themeValues": [
+            "add",
+            "toArray"
+        ],
+        "DarkMode.LIGHT": [
+            "name"
+        ],
+        "DarkMode.DARK": [
+            "name"
+        ],
+        "DarkMode.SYSTEM": [
+            "name"
+        ],
+        "themePref": [
+            "setEntries",
+            "setEntryValues",
+            "getEntry",
+            "setValue",
+            "setSummary",
+            "setOnPreferenceChangeListener"
+        ],
+        "DarkMode": [
+            "valueOf"
+        ],
+        "getListView()": [
+            "setBackgroundColor"
+        ],
+        "ContextCompat": [
+            "getColor"
+        ],
+        "getPackageManager()": [
+            "getPackageInfo",
+            "resolveActivity"
+        ],
+        "viewThemeUtils.platform": [
+            "themeStatusBar"
+        ],
+        "actionBar": [
+            "setDisplayHomeAsUpEnabled",
+            "setDisplayShowTitleEnabled"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeActionBar"
+        ],
+        "davDroidLoginIntent": [
+            "setClassName",
+            "putExtra",
+            "setData"
+        ],
+        "serverBaseUri": [
+            "toString"
+        ],
+        "UserAccountManager": [
+            "getUsername"
+        ],
+        "installIntent": [
+            "resolveActivity"
+        ],
+        "clientFactory.create(user)": [
+            "getBaseUri"
+        ],
+        "clientFactory": [
+            "create"
+        ],
+        "t": [
+            "start"
+        ],
+        "data": [
+            "getStringExtra",
+            "getBooleanExtra",
+            "getIntExtra"
+        ],
+        "passcode": [
+            "length",
+            "substring"
+        ],
+        "PreferenceManager\n                    .getDefaultSharedPreferences(getApplicationContext())": [
+            "edit"
+        ],
+        "PreferenceManager": [
+            "getDefaultSharedPreferences"
+        ],
+        "appPrefs": [
+            "putString",
+            "apply",
+            "edit",
+            "getString"
+        ],
+        "storagePath": [
+            "equals"
+        ],
+        "storageMigration": [
+            "setStorageMigrationProgressListener",
+            "migrate"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(mnemonic)\n            .setPositiveButton(R.string.common_ok, (dialog, which) -> dialog.dismiss())\n            .setNegativeButton(R.string.common_cancel, (dialog, i) -> dialog.dismiss())\n            .setNeutralButton(R.string.common_copy, (dialog, i) ->\n                ClipboardUtil.copyToClipboard(this, mnemonic, false))\n            .create()": [
+            "show"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(mnemonic)\n            .setPositiveButton(R.string.common_ok, (dialog, which) -> dialog.dismiss())\n            .setNegativeButton(R.string.common_cancel, (dialog, i) -> dialog.dismiss())\n            .setNeutralButton(R.string.common_copy, (dialog, i) ->\n                ClipboardUtil.copyToClipboard(this, mnemonic, false))": [
+            "create"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(mnemonic)\n            .setPositiveButton(R.string.common_ok, (dialog, which) -> dialog.dismiss())\n            .setNegativeButton(R.string.common_cancel, (dialog, i) -> dialog.dismiss())": [
+            "setNeutralButton"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(mnemonic)\n            .setPositiveButton(R.string.common_ok, (dialog, which) -> dialog.dismiss())": [
+            "setNegativeButton"
+        ],
+        "new MaterialAlertDialogBuilder(this, R.style.FallbackTheming_Dialog)\n            .setTitle(R.string.prefs_e2e_mnemonic)\n            .setMessage(mnemonic)": [
+            "setPositiveButton"
+        ],
+        "ClipboardUtil": [
+            "copyToClipboard"
+        ],
+        "AppCompatDelegate": [
+            "create"
+        ],
+        "externalLinksProvider": [
+            "getExternalLink"
+        ],
+        "link": [
+            "getId",
+            "getName",
+            "getUrl"
+        ],
+        "p": [
+            "setTitle",
+            "setKey",
+            "setOnPreferenceClickListener"
+        ],
+        "externalWebViewIntent": [
+            "putExtra"
+        ],
+        "preferenceCategory": [
+            "addPreference"
+        ],
+        "editor": [
+            "putString",
+            "apply"
+        ],
+        "getApplicationContext().getFilesDir()": [
+            "getAbsolutePath"
+        ],
+        "getApplicationContext()": [
+            "getFilesDir"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 6166,
+            "end_position": 7435,
+            "body_start": 6265,
+            "body_end": 7435
+        },
+        {
+            "name": "showPasscodeDialogIfEnforceAppProtection",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7441,
+            "end_position": 7779,
+            "body_start": 7497,
+            "body_end": 7779
+        },
+        {
+            "name": "setupDevCategory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceScreen",
+                    "name": "preferenceScreen"
+                }
+            ],
+            "start_position": 7785,
+            "end_position": 9486,
+            "body_start": 7850,
+            "body_end": 9486
+        },
+        {
+            "name": "setupAboutCategory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "appVersion"
+                }
+            ],
+            "start_position": 9492,
+            "end_position": 13649,
+            "body_start": 9543,
+            "body_end": 13649
+        },
+        {
+            "name": "onBackPressed",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13655,
+            "end_position": 13898,
+            "body_start": 13697,
+            "body_end": 13898
+        },
+        {
+            "name": "setupSyncCategory",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13904,
+            "end_position": 14230,
+            "body_start": 13937,
+            "body_end": 14230
+        },
+        {
+            "name": "setupMoreCategory",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14236,
+            "end_position": 15045,
+            "body_start": 14269,
+            "body_end": 15045
+        },
+        {
+            "name": "setupImprintPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 15051,
+            "end_position": 15890,
+            "body_start": 15130,
+            "body_end": 15890
+        },
+        {
+            "name": "setupLoggingPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 15896,
+            "end_position": 16507,
+            "body_start": 15975,
+            "body_end": 16507
+        },
+        {
+            "name": "setupRecommendPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 16514,
+            "end_position": 18163,
+            "body_start": 16595,
+            "body_end": 18163
+        },
+        {
+            "name": "setupE2EPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 18169,
+            "end_position": 19376,
+            "body_start": 18244,
+            "body_end": 19376
+        },
+        {
+            "name": "setupE2EKeysExist",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 19382,
+            "end_position": 20361,
+            "body_start": 19456,
+            "body_end": 20361
+        },
+        {
+            "name": "setupE2EMnemonicPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 20367,
+            "end_position": 21459,
+            "body_start": 20450,
+            "body_end": 21459
+        },
+        {
+            "name": "removeE2E",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 21465,
+            "end_position": 22026,
+            "body_start": 21531,
+            "body_end": 22026
+        },
+        {
+            "name": "showRemoveE2EAlertDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                },
+                {
+                    "type": "Preference",
+                    "name": "preference"
+                }
+            ],
+            "start_position": 22032,
+            "end_position": 22969,
+            "body_start": 22136,
+            "body_end": 22969
+        },
+        {
+            "name": "setupHelpPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 22975,
+            "end_position": 23551,
+            "body_start": 23051,
+            "body_end": 23551
+        },
+        {
+            "name": "setupAutoUploadPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 23557,
+            "end_position": 24102,
+            "body_start": 23639,
+            "body_end": 24102
+        },
+        {
+            "name": "setupInternalTwoWaySyncPreference",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 24108,
+            "end_position": 24454,
+            "body_start": 24157,
+            "body_end": 24454
+        },
+        {
+            "name": "setupBackupPreference",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 24460,
+            "end_position": 25379,
+            "body_start": 24497,
+            "body_end": 25379
+        },
+        {
+            "name": "setupCalendarPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryMore"
+                }
+            ],
+            "start_position": 25385,
+            "end_position": 26408,
+            "body_start": 25465,
+            "body_end": 26408
+        },
+        {
+            "name": "setupDetailsCategory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceScreen",
+                    "name": "preferenceScreen"
+                }
+            ],
+            "start_position": 26414,
+            "end_position": 27891,
+            "body_start": 26483,
+            "body_end": 27891
+        },
+        {
+            "name": "setupShowMediaScanNotifications",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryDetails"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fShowMediaScanNotifications"
+                }
+            ],
+            "start_position": 27897,
+            "end_position": 28382,
+            "body_start": 28074,
+            "body_end": 28382
+        },
+        {
+            "name": "setupHiddenFilesPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryDetails"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fShowHiddenFilesEnabled"
+                }
+            ],
+            "start_position": 28388,
+            "end_position": 28990,
+            "body_start": 28551,
+            "body_end": 28990
+        },
+        {
+            "name": "setupShowEcosystemAppsPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryDetails"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fShowEcosystemAppsEnabled"
+                }
+            ],
+            "start_position": 28996,
+            "end_position": 29569,
+            "body_start": 29123,
+            "body_end": 29569
+        },
+        {
+            "name": "setupLockPreference",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategoryDetails"
+                },
+                {
+                    "type": "boolean",
+                    "name": "passCodeEnabled"
+                },
+                {
+                    "type": "boolean",
+                    "name": "deviceCredentialsEnabled"
+                }
+            ],
+            "start_position": 29576,
+            "end_position": 32246,
+            "body_start": 29788,
+            "body_end": 32246
+        },
+        {
+            "name": "setupAutoUploadCategory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceScreen",
+                    "name": "preferenceScreen"
+                }
+            ],
+            "start_position": 32252,
+            "end_position": 34115,
+            "body_start": 32324,
+            "body_end": 34115
+        },
+        {
+            "name": "enableLock",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "lock"
+                }
+            ],
+            "start_position": 34121,
+            "end_position": 34917,
+            "body_start": 34158,
+            "body_end": 34917
+        },
+        {
+            "name": "changeLockSetting",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "value"
+                }
+            ],
+            "start_position": 34923,
+            "end_position": 35106,
+            "body_start": 34968,
+            "body_end": 35106
+        },
+        {
+            "name": "disableLock",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "lock"
+                }
+            ],
+            "start_position": 35112,
+            "end_position": 35652,
+            "body_start": 35150,
+            "body_end": 35652
+        },
+        {
+            "name": "setupGeneralCategory",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 35658,
+            "end_position": 37639,
+            "body_start": 35694,
+            "body_end": 37639
+        },
+        {
+            "name": "setListBackground",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 37645,
+            "end_position": 37777,
+            "body_start": 37678,
+            "body_end": 37777
+        },
+        {
+            "name": "getAppVersion",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 37783,
+            "end_position": 38143,
+            "body_start": 37814,
+            "body_end": 38143
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 38149,
+            "end_position": 38290,
+            "body_start": 38215,
+            "body_end": 38290
+        },
+        {
+            "name": "setupActionBar",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 38296,
+            "end_position": 39154,
+            "body_start": 38326,
+            "body_end": 39154
+        },
+        {
+            "name": "launchDavDroidLogin",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 39160,
+            "end_position": 40733,
+            "body_start": 39195,
+            "body_end": 40733
+        },
+        {
+            "name": "setupBaseUri",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 40739,
+            "end_position": 41098,
+            "body_start": 40767,
+            "body_end": 41098
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 41105,
+            "end_position": 41234,
+            "body_start": 41165,
+            "body_end": 41234
+        },
+        {
+            "name": "onActivityResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                },
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 41240,
+            "end_position": 44471,
+            "body_start": 41332,
+            "body_end": 44471
+        },
+        {
+            "name": "handleMnemonicRequest",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 44477,
+            "end_position": 45214,
+            "body_start": 44547,
+            "body_end": 45214
+        },
+        {
+            "name": "showMnemonicAlertDialogDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mnemonic"
+                }
+            ],
+            "start_position": 45220,
+            "end_position": 45805,
+            "body_start": 45280,
+            "body_end": 45805
+        },
+        {
+            "name": "getMenuInflater",
+            "return_type": "MenuInflater",
+            "parameters": [],
+            "start_position": 45811,
+            "end_position": 45931,
+            "body_start": 45876,
+            "body_end": 45931
+        },
+        {
+            "name": "setContentView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "layoutResID"
+                }
+            ],
+            "start_position": 45937,
+            "end_position": 46064,
+            "body_start": 46006,
+            "body_end": 46064
+        },
+        {
+            "name": "setContentView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 46070,
+            "end_position": 46173,
+            "body_start": 46122,
+            "body_end": 46173
+        },
+        {
+            "name": "setContentView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "ViewGroup.LayoutParams",
+                    "name": "params"
+                }
+            ],
+            "start_position": 46179,
+            "end_position": 46321,
+            "body_start": 46262,
+            "body_end": 46321
+        },
+        {
+            "name": "addContentView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "ViewGroup.LayoutParams",
+                    "name": "params"
+                }
+            ],
+            "start_position": 46327,
+            "end_position": 46469,
+            "body_start": 46410,
+            "body_end": 46469
+        },
+        {
+            "name": "onPostResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 46475,
+            "end_position": 46594,
+            "body_start": 46519,
+            "body_end": 46594
+        },
+        {
+            "name": "onTitleChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "CharSequence",
+                    "name": "title"
+                },
+                {
+                    "type": "int",
+                    "name": "color"
+                }
+            ],
+            "start_position": 46600,
+            "end_position": 46765,
+            "body_start": 46675,
+            "body_end": 46765
+        },
+        {
+            "name": "onConfigurationChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Configuration",
+                    "name": "newConfig"
+                }
+            ],
+            "start_position": 46771,
+            "end_position": 46967,
+            "body_start": 46854,
+            "body_end": 46967
+        },
+        {
+            "name": "onPostCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 46973,
+            "end_position": 47153,
+            "body_start": 47042,
+            "body_end": 47153
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 47159,
+            "end_position": 47269,
+            "body_start": 47200,
+            "body_end": 47269
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 47275,
+            "end_position": 47376,
+            "body_start": 47313,
+            "body_end": 47376
+        },
+        {
+            "name": "invalidateOptionsMenu",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 47382,
+            "end_position": 47472,
+            "body_start": 47418,
+            "body_end": 47472
+        },
+        {
+            "name": "getDelegate",
+            "return_type": "AppCompatDelegate",
+            "parameters": [],
+            "start_position": 47478,
+            "end_position": 47653,
+            "body_start": 47518,
+            "body_end": 47653
+        },
+        {
+            "name": "loadExternalSettingLinks",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "PreferenceCategory",
+                    "name": "preferenceCategory"
+                }
+            ],
+            "start_position": 47659,
+            "end_position": 49129,
+            "body_start": 47736,
+            "body_end": 49129
+        },
+        {
+            "name": "saveStoragePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "newStoragePath"
+                }
+            ],
+            "start_position": 49176,
+            "end_position": 49582,
+            "body_start": 49228,
+            "body_end": 49582
+        },
+        {
+            "name": "readStoragePath",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 49588,
+            "end_position": 49962,
+            "body_start": 49619,
+            "body_end": 49962
+        },
+        {
+            "name": "onStorageMigrationFinished",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "storagePath"
+                },
+                {
+                    "type": "boolean",
+                    "name": "succeed"
+                }
+            ],
+            "start_position": 49968,
+            "end_position": 50140,
+            "body_start": 50058,
+            "body_end": 50140
+        },
+        {
+            "name": "onCancelMigration",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 50146,
+            "end_position": 50257,
+            "body_start": 50192,
+            "body_end": 50257
+        },
+        {
+            "name": "returnVersion",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Integer",
+                    "name": "latestVersion"
+                }
+            ],
+            "start_position": 50263,
+            "end_position": 50405,
+            "body_start": 50326,
+            "body_end": 50405
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "try_statement",
+        "for_statement",
+        "enhanced_for_statement"
+    ],
+    "local_variables": {
+        "appVersion": "String",
+        "preferenceScreen": "PreferenceScreen",
+        "preferenceCategoryDev": "PreferenceCategory",
+        "pDevLink": "Preference",
+        "pChangelogLink": "Preference",
+        "pEtm": "Preference",
+        "preferenceCategoryAbout": "PreferenceCategory",
+        "pAboutApp": "Preference",
+        "buildNumber": "String",
+        "licenseEnabled": "boolean",
+        "licensePreference": "Preference",
+        "privacyEnabled": "boolean",
+        "privacyPreference": "Preference",
+        "privacyUrl": "Uri",
+        "mimeType": "String",
+        "intent": "Intent",
+        "sourcecodeEnabled": "boolean",
+        "sourcecodePreference": "Preference",
+        "i": "Intent",
+        "preferenceCategorySync": "PreferenceCategory",
+        "preferenceCategoryMore": "PreferenceCategory",
+        "imprintEnabled": "boolean",
+        "pImprint": "Preference",
+        "imprintWeb": "String",
+        "pLogger": "Preference",
+        "loggerIntent": "Intent",
+        "recommendEnabled": "boolean",
+        "pRecommend": "Preference",
+        "appName": "String",
+        "downloadUrlGooglePlayStore": "String",
+        "downloadUrlFDroid": "String",
+        "downloadUrls": "String",
+        "recommendSubject": "String",
+        "recommendText": "String",
+        "preference": "Preference",
+        "mnemonic": "String",
+        "pMnemonic": "Preference",
+        "helpEnabled": "boolean",
+        "pHelp": "Preference",
+        "autoUpload": "Preference",
+        "twoWaySync": "Preference",
+        "pContactsBackup": "Preference",
+        "showCalendarBackup": "boolean",
+        "calendarContactsEnabled": "boolean",
+        "pCalendarContacts": "Preference",
+        "activity": "Activity",
+        "preferenceCategoryDetails": "PreferenceCategory",
+        "fPassCodeEnabled": "boolean",
+        "fDeviceCredentialsEnabled": "boolean",
+        "fShowHiddenFilesEnabled": "boolean",
+        "fShowEcosystemAppsEnabled": "boolean",
+        "fSyncedFolderLightEnabled": "boolean",
+        "fShowMediaScanNotifications": "boolean",
+        "mShowMediaScanNotifications": "ThemeableSwitchPreference",
+        "enforceProtection": "boolean",
+        "optionSize": "int",
+        "lockEntries": "ArrayList<String>",
+        "lockValues": "ArrayList<String>",
+        "lockEntriesArr": "String[]",
+        "lockValuesArr": "String[]",
+        "oldValue": "String",
+        "newValue": "String",
+        "preferenceCategorySyncedFolders": "PreferenceCategory",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "pUploadOnWifiCheckbox": "SwitchPreference",
+        "pSyncedFolder": "Preference",
+        "preferenceCategoryGeneral": "PreferenceCategory",
+        "themePref": "ListPreference",
+        "themeEntries": "List<String>",
+        "themeValues": "List<String>",
+        "mode": "DarkMode",
+        "temp": "String",
+        "pkg": "PackageInfo",
+        "actionBar": "ActionBar",
+        "menuIcon": "Drawable",
+        "davDroidLoginIntent": "Intent",
+        "installIntent": "Intent",
+        "t": "Thread",
+        "passcode": "String",
+        "appPrefs": "SharedPreferences",
+        "newPath": "String",
+        "storageMigration": "StorageMigration",
+        "externalLinksProvider": "ExternalLinksProvider",
+        "p": "Preference",
+        "externalWebViewIntent": "Intent",
+        "editor": "SharedPreferences.Editor"
+    }
+}

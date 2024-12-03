@@ -1,0 +1,56 @@
+[
+    {
+        "method_name": "getDescription",
+        "method_code": "public String getDescription() {\n        return this.description;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getDescription from StoragePoint.java into Swift.\n\n        Input:\n\n        Method Name: getDescription\n\n        Method Code: public String getDescription() {\n        return this.description;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getDescription() -> String {\n    return self.description\n}\n```"
+    },
+    {
+        "method_name": "getPath",
+        "method_code": "public String getPath() {\n        return this.path;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPath from StoragePoint.java into Swift.\n\n        Input:\n\n        Method Name: getPath\n\n        Method Code: public String getPath() {\n        return this.path;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPath() -> String {\n    return self.path\n}\n```"
+    },
+    {
+        "method_name": "getStorageType",
+        "method_code": "public StorageType getStorageType() {\n        return this.storageType;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getStorageType from StoragePoint.java into Swift.\n\n        Input:\n\n        Method Name: getStorageType\n\n        Method Code: public StorageType getStorageType() {\n        return this.storageType;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getStorageType() -> StorageType {\n    return self.storageType\n}\n```"
+    },
+    {
+        "method_name": "getPrivacyType",
+        "method_code": "public PrivacyType getPrivacyType() {\n        return this.privacyType;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getPrivacyType from StoragePoint.java into Swift.\n\n        Input:\n\n        Method Name: getPrivacyType\n\n        Method Code: public PrivacyType getPrivacyType() {\n        return this.privacyType;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getPrivacyType() -> PrivacyType {\n    return self.privacyType\n}\n```"
+    },
+    {
+        "method_name": "setDescription",
+        "method_code": "public void setDescription(String description) {\n        this.description = description;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setDescription from StoragePoint.java into Swift.\n\n        Input:\n\n        Method Name: setDescription\n\n        Method Code: public void setDescription(String description) {\n        this.description = description;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setDescription(_ description: String) {\n    self.description = description\n}\n```"
+    },
+    {
+        "method_name": "setPath",
+        "method_code": "public void setPath(String path) {\n        this.path = path;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPath from StoragePoint.java into Swift.\n\n        Input:\n\n        Method Name: setPath\n\n        Method Code: public void setPath(String path) {\n        this.path = path;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPath(_ path: String) {\n    self.path = path\n}\n```"
+    },
+    {
+        "method_name": "setStorageType",
+        "method_code": "public void setStorageType(StorageType storageType) {\n        this.storageType = storageType;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setStorageType from StoragePoint.java into Swift.\n\n        Input:\n\n        Method Name: setStorageType\n\n        Method Code: public void setStorageType(StorageType storageType) {\n        this.storageType = storageType;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setStorageType(storageType: StorageType) {\n    self.storageType = storageType\n}\n```"
+    },
+    {
+        "method_name": "setPrivacyType",
+        "method_code": "public void setPrivacyType(PrivacyType privacyType) {\n        this.privacyType = privacyType;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setPrivacyType from StoragePoint.java into Swift.\n\n        Input:\n\n        Method Name: setPrivacyType\n\n        Method Code: public void setPrivacyType(PrivacyType privacyType) {\n        this.privacyType = privacyType;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setPrivacyType(_ privacyType: PrivacyType) {\n    self.privacyType = privacyType\n}\n```"
+    },
+    {
+        "method_name": "compareTo",
+        "method_code": "@Override\n    public int compareTo(StoragePoint another) {\n        return path.compareTo(another.getPath());\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled compareTo from StoragePoint.java into Swift.\n\n        Input:\n\n        Method Name: compareTo\n\n        Method Code: @Override\n    public int compareTo(StoragePoint another) {\n        return path.compareTo(another.getPath());\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc compareTo(_ another: StoragePoint) -> Int {\n    return path.compare(another.getPath())\n}\n```"
+    }
+]

@@ -1,0 +1,58 @@
+{
+    "methods": [
+        {
+            "name": "before",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 519,
+            "end_position": 871,
+            "body_start": 540,
+            "body_end": 871
+        },
+        {
+            "name": "saveFile",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 877,
+            "end_position": 1371,
+            "body_start": 910,
+            "body_end": 1371
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "targetContext\n                                             .getContentResolver()": [
+            "acquireContentProviderClient"
+        ],
+        "targetContext": [
+            "getContentResolver"
+        ],
+        "super": [
+            "before"
+        ],
+        "file": [
+            "setRemoteId",
+            "setFileLength",
+            "setModificationTimestamp",
+            "getRemotePath"
+        ],
+        "sut": [
+            "saveNewFile",
+            "getFileByPath"
+        ],
+        "unknown": [
+            "assertNotNull",
+            "assertEquals"
+        ],
+        "read": [
+            "getRemotePath"
+        ]
+    },
+    "local_variables": {
+        "path": "String",
+        "file": "OCFile",
+        "read": "OCFile"
+    }
+}

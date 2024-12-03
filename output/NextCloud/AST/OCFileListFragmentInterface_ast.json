@@ -1,0 +1,101 @@
+{
+    "methods": [
+        {
+            "name": "getColumnsCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 583,
+            "end_position": 605
+        },
+        {
+            "name": "onShareIconClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 611,
+            "end_position": 646
+        },
+        {
+            "name": "showShareDetailView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 652,
+            "end_position": 690
+        },
+        {
+            "name": "showActivityDetailView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 696,
+            "end_position": 737
+        },
+        {
+            "name": "onOverflowIconClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 743,
+            "end_position": 794
+        },
+        {
+            "name": "onItemClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 800,
+            "end_position": 832
+        },
+        {
+            "name": "onLongItemClicked",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 838,
+            "end_position": 877
+        },
+        {
+            "name": "isLoading",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 883,
+            "end_position": 903
+        },
+        {
+            "name": "onHeaderClicked",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 909,
+            "end_position": 932
+        }
+    ]
+}

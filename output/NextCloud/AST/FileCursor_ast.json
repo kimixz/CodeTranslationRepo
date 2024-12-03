@@ -1,0 +1,123 @@
+{
+    "methods": [
+        {
+            "name": "setLoadingTask",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AsyncTask<?, ?, ?>",
+                    "name": "task"
+                }
+            ],
+            "start_position": 1268,
+            "end_position": 1360,
+            "body_start": 1320,
+            "body_end": 1360
+        },
+        {
+            "name": "setExtras",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "extras"
+                }
+            ],
+            "start_position": 1366,
+            "end_position": 1453,
+            "body_start": 1417,
+            "body_end": 1453
+        },
+        {
+            "name": "getExtras",
+            "return_type": "Bundle",
+            "parameters": [],
+            "start_position": 1459,
+            "end_position": 1528,
+            "body_start": 1499,
+            "body_end": 1528
+        },
+        {
+            "name": "close",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1534,
+            "end_position": 1738,
+            "body_start": 1568,
+            "body_end": 1738
+        },
+        {
+            "name": "addFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "DocumentsStorageProvider.Document",
+                    "name": "document"
+                }
+            ],
+            "start_position": 1744,
+            "end_position": 3017,
+            "body_start": 1808,
+            "body_end": 3017
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement"
+    ],
+    "method_calls": {
+        "super": [
+            "close"
+        ],
+        "loadingTask": [
+            "getStatus",
+            "cancel"
+        ],
+        "document": [
+            "getFile",
+            "getDocumentId"
+        ],
+        "MimeTypeUtil": [
+            "getFileTypeIconId",
+            "isImage"
+        ],
+        "file": [
+            "getMimeType",
+            "getFileName",
+            "isFolder",
+            "getModificationTimestamp",
+            "getFileLength"
+        ],
+        "newRow().add(Document.COLUMN_DOCUMENT_ID, document.getDocumentId())\n                .add(Document.COLUMN_DISPLAY_NAME, file.getFileName())\n                .add(Document.COLUMN_LAST_MODIFIED, file.getModificationTimestamp())\n                .add(Document.COLUMN_SIZE, file.getFileLength())\n                .add(Document.COLUMN_FLAGS, flags)\n                .add(Document.COLUMN_ICON, iconRes)": [
+            "add"
+        ],
+        "newRow().add(Document.COLUMN_DOCUMENT_ID, document.getDocumentId())\n                .add(Document.COLUMN_DISPLAY_NAME, file.getFileName())\n                .add(Document.COLUMN_LAST_MODIFIED, file.getModificationTimestamp())\n                .add(Document.COLUMN_SIZE, file.getFileLength())\n                .add(Document.COLUMN_FLAGS, flags)": [
+            "add"
+        ],
+        "newRow().add(Document.COLUMN_DOCUMENT_ID, document.getDocumentId())\n                .add(Document.COLUMN_DISPLAY_NAME, file.getFileName())\n                .add(Document.COLUMN_LAST_MODIFIED, file.getModificationTimestamp())\n                .add(Document.COLUMN_SIZE, file.getFileLength())": [
+            "add"
+        ],
+        "newRow().add(Document.COLUMN_DOCUMENT_ID, document.getDocumentId())\n                .add(Document.COLUMN_DISPLAY_NAME, file.getFileName())\n                .add(Document.COLUMN_LAST_MODIFIED, file.getModificationTimestamp())": [
+            "add"
+        ],
+        "newRow().add(Document.COLUMN_DOCUMENT_ID, document.getDocumentId())\n                .add(Document.COLUMN_DISPLAY_NAME, file.getFileName())": [
+            "add"
+        ],
+        "newRow().add(Document.COLUMN_DOCUMENT_ID, document.getDocumentId())": [
+            "add"
+        ],
+        "newRow()": [
+            "add"
+        ],
+        "unknown": [
+            "newRow"
+        ]
+    },
+    "local_variables": {
+        "file": "OCFile",
+        "iconRes": "int",
+        "mimeType": "String",
+        "flags": "int"
+    }
+}

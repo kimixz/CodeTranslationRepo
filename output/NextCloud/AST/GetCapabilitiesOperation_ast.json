@@ -1,0 +1,57 @@
+{
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1199,
+            "end_position": 2149,
+            "body_start": 1272,
+            "body_end": 2149
+        }
+    ],
+    "local_variables": {
+        "storageManager": "FileDataStorageManager",
+        "currentCapability": "OCCapability",
+        "result": "RemoteOperationResult",
+        "capability": "OCCapability"
+    },
+    "method_calls": {
+        "unknown": [
+            "getStorageManager"
+        ],
+        "storageManager.getUser()": [
+            "isAnonymous",
+            "getAccountName"
+        ],
+        "storageManager": [
+            "getUser",
+            "getCapability",
+            "saveCapabilities"
+        ],
+        "new GetCapabilitiesRemoteOperation(currentCapability)": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getData"
+        ],
+        "result.getData()": [
+            "size",
+            "get"
+        ],
+        "CapabilityUtils": [
+            "updateCapability"
+        ]
+    },
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement"
+    ]
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "method_name": "onRemovedNotification",
+        "method_code": "void onRemovedNotification(boolean isSuccess);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onRemovedNotification from NotificationsContract.java into Swift.\n\n        Input:\n\n        Method Name: onRemovedNotification\n\n        Method Code: void onRemovedNotification(boolean isSuccess);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onRemovedNotification(isSuccess: Bool) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "removeNotification",
+        "method_code": "void removeNotification(NotificationListAdapter.NotificationViewHolder holder);",
+        "prompt": "\n        Please translate the following Java (Android) method titled removeNotification from NotificationsContract.java into Swift.\n\n        Input:\n\n        Method Name: removeNotification\n\n        Method Code: void removeNotification(NotificationListAdapter.NotificationViewHolder holder);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc removeNotification(holder: NotificationListAdapter.NotificationViewHolder) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "onRemovedAllNotifications",
+        "method_code": "void onRemovedAllNotifications(boolean isSuccess);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onRemovedAllNotifications from NotificationsContract.java into Swift.\n\n        Input:\n\n        Method Name: onRemovedAllNotifications\n\n        Method Code: void onRemovedAllNotifications(boolean isSuccess);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onRemovedAllNotifications(isSuccess: Bool) {\n}\n```"
+    },
+    {
+        "method_name": "onActionCallback",
+        "method_code": "void onActionCallback(boolean isSuccess,\n                              Notification notification,\n                              NotificationListAdapter.NotificationViewHolder holder);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onActionCallback from NotificationsContract.java into Swift.\n\n        Input:\n\n        Method Name: onActionCallback\n\n        Method Code: void onActionCallback(boolean isSuccess,\n                              Notification notification,\n                              NotificationListAdapter.NotificationViewHolder holder);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onActionCallback(isSuccess: Bool, notification: Notification, holder: NotificationListAdapter.NotificationViewHolder) {\n    // Method implementation goes here\n}\n```"
+    }
+]

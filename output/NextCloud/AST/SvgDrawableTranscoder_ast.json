@@ -1,0 +1,61 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "transcode",
+            "return_type": "Resource<Drawable>",
+            "parameters": [
+                {
+                    "type": "Resource<SVG>",
+                    "name": "toTranscode"
+                }
+            ],
+            "start_position": 1151,
+            "end_position": 1855,
+            "body_start": 1228,
+            "body_end": 1855
+        },
+        {
+            "name": "getId",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1861,
+            "end_position": 1923,
+            "body_start": 1897,
+            "body_end": 1923
+        }
+    ],
+    "local_variables": {
+        "svg": "SVG",
+        "picture": "Picture",
+        "drawable": "PictureDrawable",
+        "returnedBitmap": "Bitmap",
+        "canvas": "Canvas",
+        "d": "Drawable"
+    },
+    "method_calls": {
+        "toTranscode": [
+            "get"
+        ],
+        "svg": [
+            "renderToPicture"
+        ],
+        "Bitmap": [
+            "createBitmap"
+        ],
+        "drawable": [
+            "getIntrinsicWidth",
+            "getIntrinsicHeight",
+            "getPicture"
+        ],
+        "canvas": [
+            "drawPicture"
+        ],
+        "context": [
+            "getResources"
+        ]
+    }
+}

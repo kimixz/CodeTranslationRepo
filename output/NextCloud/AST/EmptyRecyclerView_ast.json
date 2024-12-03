@@ -1,0 +1,201 @@
+{
+    "methods": [
+        {
+            "name": "setAdapter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Adapter",
+                    "name": "adapter"
+                }
+            ],
+            "start_position": 1049,
+            "end_position": 1396,
+            "body_start": 1103,
+            "body_end": 1396
+        },
+        {
+            "name": "setEmptyView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 1402,
+            "end_position": 1502,
+            "body_start": 1438,
+            "body_end": 1502
+        },
+        {
+            "name": "initEmptyView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1508,
+            "end_position": 1893,
+            "body_start": 1537,
+            "body_end": 1893
+        },
+        {
+            "name": "onChanged",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1980,
+            "end_position": 2093,
+            "body_start": 2022,
+            "body_end": 2093
+        },
+        {
+            "name": "onItemRangeChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "positionStart"
+                },
+                {
+                    "type": "int",
+                    "name": "itemCount"
+                }
+            ],
+            "start_position": 2103,
+            "end_position": 2290,
+            "body_start": 2186,
+            "body_end": 2290
+        },
+        {
+            "name": "onItemRangeChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "positionStart"
+                },
+                {
+                    "type": "int",
+                    "name": "itemCount"
+                },
+                {
+                    "type": "Object",
+                    "name": "payload"
+                }
+            ],
+            "start_position": 2300,
+            "end_position": 2522,
+            "body_start": 2409,
+            "body_end": 2522
+        },
+        {
+            "name": "onItemRangeMoved",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "fromPosition"
+                },
+                {
+                    "type": "int",
+                    "name": "toPosition"
+                },
+                {
+                    "type": "int",
+                    "name": "itemCount"
+                }
+            ],
+            "start_position": 2532,
+            "end_position": 2741,
+            "body_start": 2628,
+            "body_end": 2741
+        },
+        {
+            "name": "onItemRangeInserted",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "positionStart"
+                },
+                {
+                    "type": "int",
+                    "name": "itemCount"
+                }
+            ],
+            "start_position": 2751,
+            "end_position": 2940,
+            "body_start": 2835,
+            "body_end": 2940
+        },
+        {
+            "name": "onItemRangeRemoved",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "positionStart"
+                },
+                {
+                    "type": "int",
+                    "name": "itemCount"
+                }
+            ],
+            "start_position": 2950,
+            "end_position": 3137,
+            "body_start": 3033,
+            "body_end": 3137
+        },
+        {
+            "name": "setHasFooter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "bool"
+                }
+            ],
+            "start_position": 3150,
+            "end_position": 3222,
+            "body_start": 3189,
+            "body_end": 3222
+        }
+    ],
+    "local_variables": {
+        "oldAdapter": "Adapter",
+        "emptyCount": "int",
+        "empty": "boolean"
+    },
+    "method_calls": {
+        "unknown": [
+            "getAdapter",
+            "initEmptyView"
+        ],
+        "super": [
+            "setAdapter",
+            "onChanged",
+            "onItemRangeChanged",
+            "onItemRangeMoved",
+            "onItemRangeInserted",
+            "onItemRangeRemoved"
+        ],
+        "oldAdapter": [
+            "unregisterAdapterDataObserver"
+        ],
+        "adapter": [
+            "registerAdapterDataObserver"
+        ],
+        "getAdapter()": [
+            "getItemCount"
+        ],
+        "mEmptyView": [
+            "setVisibility",
+            "setFocusable"
+        ],
+        "this": [
+            "setVisibility"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ]
+}

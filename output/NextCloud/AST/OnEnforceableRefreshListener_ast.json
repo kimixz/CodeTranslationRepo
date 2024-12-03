@@ -1,0 +1,16 @@
+{
+    "methods": [
+        {
+            "name": "onRefresh",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enforced"
+                }
+            ],
+            "start_position": 522,
+            "end_position": 555
+        }
+    ]
+}

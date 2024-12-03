@@ -1,0 +1,16 @@
+{
+    "method_calls": {
+        "String": [
+            "format"
+        ],
+        "object.getClass()": [
+            "getName"
+        ],
+        "object": [
+            "getClass"
+        ],
+        "ComponentsModule.class": [
+            "getName"
+        ]
+    }
+}

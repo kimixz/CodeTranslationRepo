@@ -1,0 +1,45 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "doInBackground",
+            "return_type": "Boolean",
+            "parameters": [],
+            "start_position": 1107,
+            "end_position": 1317,
+            "body_start": 1173,
+            "body_end": 1317
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Boolean",
+                    "name": "success"
+                }
+            ],
+            "start_position": 1323,
+            "end_position": 1456,
+            "body_start": 1383,
+            "body_end": 1456
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult"
+    },
+    "method_calls": {
+        "new DeleteAllNotificationsRemoteOperation()": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess"
+        ],
+        "notificationsActivity": [
+            "onRemovedAllNotifications"
+        ]
+    }
+}

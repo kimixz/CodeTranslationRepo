@@ -1,0 +1,45 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "updateErrorView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SslUntrustedCertLayoutBinding",
+                    "name": "binding"
+                }
+            ],
+            "start_position": 1203,
+            "end_position": 2352,
+            "body_start": 1293,
+            "body_end": 2352
+        }
+    ],
+    "method_calls": {
+        "binding.reasonNoInfoAboutError": [
+            "setVisibility"
+        ],
+        "mSslException": [
+            "getCertPathValidatorException",
+            "getCertificateExpiredException",
+            "getCertificateNotYetValidException",
+            "getSslPeerUnverifiedException"
+        ],
+        "binding.reasonCertNotTrusted": [
+            "setVisibility"
+        ],
+        "binding.reasonCertExpired": [
+            "setVisibility"
+        ],
+        "binding.reasonCertNotYetValid": [
+            "setVisibility"
+        ],
+        "binding.reasonHostnameNotVerified": [
+            "setVisibility"
+        ]
+    }
+}

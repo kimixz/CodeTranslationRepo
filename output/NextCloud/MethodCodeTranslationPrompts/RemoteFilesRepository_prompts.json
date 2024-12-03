@@ -1,0 +1,20 @@
+[
+    {
+        "method_name": "readRemoteFile",
+        "method_code": "@Override\n    public void readRemoteFile(String path, BaseActivity activity, @NonNull ReadRemoteFileCallback callback) {\n        filesServiceApi.readRemoteFile(path, activity, new FilesServiceApi.FilesServiceCallback<OCFile>() {\n                    @Override\n                    public void onLoaded(OCFile ocFile) {\n                        callback.onFileLoaded(ocFile);\n                    }\n\n                    @Override\n                    public void onError(String error) {\n                        callback.onFileLoadError(error);\n                    }\n                });\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled readRemoteFile from RemoteFilesRepository.java into Swift.\n\n        Input:\n\n        Method Name: readRemoteFile\n\n        Method Code: @Override\n    public void readRemoteFile(String path, BaseActivity activity, @NonNull ReadRemoteFileCallback callback) {\n        filesServiceApi.readRemoteFile(path, activity, new FilesServiceApi.FilesServiceCallback<OCFile>() {\n                    @Override\n                    public void onLoaded(OCFile ocFile) {\n                        callback.onFileLoaded(ocFile);\n                    }\n\n                    @Override\n                    public void onError(String error) {\n                        callback.onFileLoadError(error);\n                    }\n                });\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc readRemoteFile(path: String, activity: BaseActivity, callback: @escaping ReadRemoteFileCallback) {\n    filesServiceApi.readRemoteFile(path: path, activity: activity) { result in\n        switch result {\n        case .success(let ocFile):\n            callback.onFileLoaded(ocFile)\n        case .failure(let error):\n            callback.onFileLoadError(error.localizedDescription)\n        }\n    }\n}\n```"
+    },
+    {
+        "method_name": "onLoaded",
+        "method_code": "@Override\n                    public void onLoaded(OCFile ocFile) {\n                        callback.onFileLoaded(ocFile);\n                    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onLoaded from RemoteFilesRepository.java into Swift.\n\n        Input:\n\n        Method Name: onLoaded\n\n        Method Code: @Override\n                    public void onLoaded(OCFile ocFile) {\n                        callback.onFileLoaded(ocFile);\n                    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onLoaded(ocFile: OCFile) {\n    callback.onFileLoaded(ocFile)\n}\n```"
+    },
+    {
+        "method_name": "onError",
+        "method_code": "@Override\n                    public void onError(String error) {\n                        callback.onFileLoadError(error);\n                    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onError from RemoteFilesRepository.java into Swift.\n\n        Input:\n\n        Method Name: onError\n\n        Method Code: @Override\n                    public void onError(String error) {\n                        callback.onFileLoadError(error);\n                    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onError(_ error: String) {\n    callback.onFileLoadError(error)\n}\n```"
+    }
+]

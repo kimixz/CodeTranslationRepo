@@ -1,0 +1,139 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "loadActivities",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "lastGiven"
+                }
+            ],
+            "start_position": 1281,
+            "end_position": 2286,
+            "body_start": 1337,
+            "body_end": 2286
+        },
+        {
+            "name": "onActivitiesLoaded",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "activities"
+                },
+                {
+                    "type": "NextcloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "int",
+                    "name": "lastGiven"
+                }
+            ],
+            "start_position": 1631,
+            "end_position": 1973,
+            "body_start": 1748,
+            "body_end": 1973
+        },
+        {
+            "name": "onActivitiesLoadedError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "error"
+                }
+            ],
+            "start_position": 1987,
+            "end_position": 2268,
+            "body_start": 2059,
+            "body_end": 2268
+        },
+        {
+            "name": "openActivity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "fileUrl"
+                },
+                {
+                    "type": "BaseActivity",
+                    "name": "baseActivity"
+                }
+            ],
+            "start_position": 2292,
+            "end_position": 3275,
+            "body_start": 2374,
+            "body_end": 3275
+        },
+        {
+            "name": "onFileLoaded",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "ocFile"
+                }
+            ],
+            "start_position": 2561,
+            "end_position": 2988,
+            "body_start": 2641,
+            "body_end": 2988
+        },
+        {
+            "name": "onFileLoadError",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "error"
+                }
+            ],
+            "start_position": 3010,
+            "end_position": 3249,
+            "body_start": 3082,
+            "body_end": 3249
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3281,
+            "end_position": 3355,
+            "body_start": 3316,
+            "body_end": 3355
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3361,
+            "end_position": 3438,
+            "body_start": 3398,
+            "body_end": 3438
+        }
+    ],
+    "method_calls": {
+        "activitiesView": [
+            "showLoadingMessage",
+            "setProgressIndicatorState",
+            "showActivities",
+            "showActivitiesLoadError",
+            "showActivityDetailUI",
+            "showActivityDetailUIIsNull",
+            "showActivityDetailError"
+        ],
+        "activitiesRepository": [
+            "getActivities"
+        ],
+        "filesRepository": [
+            "readRemoteFile"
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "yield_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "getFileDetailSharingFragment",
+            "return_type": "FileDetailSharingFragment",
+            "parameters": [],
+            "start_position": 1471,
+            "end_position": 1584,
+            "body_start": 1535,
+            "body_end": 1584
+        },
+        {
+            "name": "getFileDetailActivitiesFragment",
+            "return_type": "FileDetailActivitiesFragment",
+            "parameters": [],
+            "start_position": 1590,
+            "end_position": 1712,
+            "body_start": 1660,
+            "body_end": 1712
+        },
+        {
+            "name": "getImageDetailFragment",
+            "return_type": "ImageDetailFragment",
+            "parameters": [],
+            "start_position": 1718,
+            "end_position": 1813,
+            "body_start": 1770,
+            "body_end": 1813
+        },
+        {
+            "name": "createFragment",
+            "return_type": "Fragment",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 1819,
+            "end_position": 2482,
+            "body_start": 1891,
+            "body_end": 2482
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 2488,
+            "end_position": 2808,
+            "body_start": 2528,
+            "body_end": 2808
+        }
+    ],
+    "method_calls": {
+        "FileDetailActivitiesFragment": [
+            "newInstance"
+        ],
+        "FileDetailSharingFragment": [
+            "newInstance"
+        ],
+        "ImageDetailFragment": [
+            "newInstance"
+        ],
+        "MimeTypeUtil": [
+            "isImage"
+        ]
+    }
+}

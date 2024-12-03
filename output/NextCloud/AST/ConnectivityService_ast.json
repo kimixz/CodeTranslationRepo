@@ -1,0 +1,49 @@
+{
+    "methods": [
+        {
+            "name": "isNetworkAndServerAvailable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GenericCallback<Boolean>",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 782,
+            "end_position": 859
+        },
+        {
+            "name": "isConnected",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 865,
+            "end_position": 887
+        },
+        {
+            "name": "isInternetWalled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1151,
+            "end_position": 1178
+        },
+        {
+            "name": "getConnectivity",
+            "return_type": "Connectivity",
+            "parameters": [],
+            "start_position": 1326,
+            "end_position": 1357
+        },
+        {
+            "name": "onComplete",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "T",
+                    "name": "result"
+                }
+            ],
+            "start_position": 1540,
+            "end_position": 1566
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult<Void>",
+            "parameters": [
+                {
+                    "type": "NextcloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1068,
+            "end_position": 1414,
+            "body_start": 1145,
+            "body_end": 1414
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult<Void>"
+    },
+    "method_calls": {
+        "new CommentFileRemoteOperation(message, fileId)": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess"
+        ],
+        "Log_OC": [
+            "e"
+        ]
+    }
+}

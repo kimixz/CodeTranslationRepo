@@ -1,0 +1,2449 @@
+{
+    "method_calls": {
+        "OCFileListFragment.class": [
+            "getSimpleName",
+            "getPackage"
+        ],
+        "OCFileListFragment.class.getPackage()": [
+            "getName"
+        ],
+        "super": [
+            "onCreate",
+            "onResume",
+            "onAttach",
+            "onCreateView",
+            "onDetach",
+            "onPause",
+            "onActivityCreated",
+            "onSaveInstanceState",
+            "onActivityResult",
+            "onViewStateRestored",
+            "onStart",
+            "onStop",
+            "onRefresh"
+        ],
+        "unknown": [
+            "setHasOptionsMenu",
+            "isSearchEventSet",
+            "getActivity",
+            "handleSearchEvent",
+            "setTitle",
+            "setOnRefreshListener",
+            "getArguments",
+            "setChoiceModeAsMultipleModal",
+            "requireActivity",
+            "setAdapter",
+            "setFabVisible",
+            "registerFabListener",
+            "prepareCurrentSearch",
+            "setEmptyView",
+            "openSortingOrderDialogFragment",
+            "requireFragmentManager",
+            "isGridEnabled",
+            "setListAsPreferred",
+            "setGridAsPreferred",
+            "setGridSwitchButton",
+            "listDirectory",
+            "isGridViewPreferred",
+            "setRecyclerViewAdapter",
+            "getRecyclerView",
+            "prepareActionBarItems",
+            "getCurrentFile",
+            "getString",
+            "getView",
+            "showDirectCameraUploadAlertDialog",
+            "requireContext",
+            "startActivity",
+            "getContext",
+            "openActionsMenu",
+            "isAPKorAAB",
+            "getChildFragmentManager",
+            "onFileActionChosen",
+            "getAdapter",
+            "getCommonAdapter",
+            "getResources",
+            "exitSelectionMode",
+            "updateSortAndGridMenuItems",
+            "shouldNavigateWithoutFilter",
+            "getPreviousFileWithoutFilter",
+            "shouldNavigateWithFilter",
+            "getPreviousFileWithFilter",
+            "getPreviousFile",
+            "updateFileList",
+            "onRefresh",
+            "restoreIndexAndTopPosition",
+            "updateActionModeFile",
+            "toggleItemToCheckedList",
+            "getCapabilities",
+            "browseToFolder",
+            "getParentFragmentManager",
+            "setEmptyListLoadingMessage",
+            "checkFileBeforeOpen",
+            "folderOnItemClick",
+            "fileOnItemClick",
+            "resetSearchIfBrowsingFromFavorites",
+            "saveIndexAndTopPosition",
+            "resetSearchAttributes",
+            "resetMenuItems",
+            "getFragmentManager",
+            "syncAndCheckFiles",
+            "checkInvalidFilenames",
+            "browseToRoot",
+            "pickFolderForMoveOrCopy",
+            "selectAllFiles",
+            "getDirectoryForListDirectory",
+            "updateLayout",
+            "switchToGridView",
+            "switchToListView",
+            "setFabEnabled",
+            "invalidateActionMode",
+            "switchLayoutManager",
+            "getColumnsCount",
+            "setEmptyListMessage",
+            "getSearchRemoteOperation",
+            "encryptFolder",
+            "setLoading",
+            "showSpaceErrorDialog",
+            "showFabWithBehavior"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "getActivity()": [
+            "getIntent",
+            "getSupportFragmentManager",
+            "startActivityForResult",
+            "getMenuInflater",
+            "invalidateOptionsMenu",
+            "runOnUiThread"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "Log_OC": [
+            "i",
+            "v",
+            "e",
+            "d",
+            "w"
+        ],
+        "context": [
+            "toString"
+        ],
+        "FileFragment.ContainerActivity.class": [
+            "getSimpleName"
+        ],
+        "OnEnforceableRefreshListener.class": [
+            "getSimpleName"
+        ],
+        "args": [
+            "getBoolean",
+            "getString"
+        ],
+        "requireActivity()": [
+            "findViewById",
+            "getSupportFragmentManager",
+            "setResult",
+            "finish",
+            "runOnUiThread"
+        ],
+        "viewThemeUtils.material": [
+            "themeFAB"
+        ],
+        "remoteOperationAsyncTask": [
+            "cancel",
+            "getStatus",
+            "executeOnExecutor"
+        ],
+        "mAdapter": [
+            "cancelAllPendingTasks",
+            "getItem",
+            "setEncryptionAttributeForItemID",
+            "swapDirectory",
+            "setHighlightedItem",
+            "getItemPosition",
+            "getFiles",
+            "notifyItemChanged",
+            "setSortOrder",
+            "refreshCommentsCount",
+            "setFavoriteAttributeForItemID",
+            "setData",
+            "getItemCount",
+            "isEmpty"
+        ],
+        "getActivity().getIntent()": [
+            "removeExtra"
+        ],
+        "mSortButton": [
+            "setOnClickListener",
+            "setVisibility",
+            "setText"
+        ],
+        "preferences": [
+            "getSortOrderByFolder",
+            "getFolderLayout",
+            "setFolderLayout"
+        ],
+        "mSwitchGridViewButton": [
+            "setOnClickListener",
+            "setVisibility"
+        ],
+        "fileDisplayActivity": [
+            "updateActionBarTitleAndHomeButton",
+            "getCurrentDir",
+            "getFileOperationsHelper",
+            "startDownloadForPreview"
+        ],
+        "MainApp": [
+            "isOnlyOnDevice"
+        ],
+        "accountManager": [
+            "getUser"
+        ],
+        "fastScrollUtils": [
+            "applyFastScroll"
+        ],
+        "event": [
+            "getSearchType",
+            "getRemoteId",
+            "getShouldFavorite",
+            "getRemotePath",
+            "getSearchQuery",
+            "getLocalId",
+            "getShouldBeEncrypted",
+            "getShouldLock",
+            "getFilePath"
+        ],
+        "mFabMain": [
+            "setOnClickListener",
+            "show",
+            "hide",
+            "getLayoutParams",
+            "setEnabled"
+        ],
+        "dialog.getBehavior()": [
+            "setState",
+            "setSkipCollapsed"
+        ],
+        "dialog": [
+            "getBehavior",
+            "show",
+            "setTargetFragment"
+        ],
+        "CreateFolderDialogFragment.newInstance(mFile)": [
+            "show"
+        ],
+        "CreateFolderDialogFragment": [
+            "newInstance"
+        ],
+        "action.setType(\"*/*\")": [
+            "addCategory"
+        ],
+        "action": [
+            "setType",
+            "putExtra",
+            "putStringArrayListExtra"
+        ],
+        "Intent": [
+            "createChooser"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage",
+            "getSortOrderStringId"
+        ],
+        "PermissionUtil": [
+            "checkSelfPermission",
+            "requestCameraPermission"
+        ],
+        "new MaterialAlertDialogBuilder(fileDisplayActivity)\n            .setTitle(R.string.upload_direct_camera_promt)\n            .setIcon(R.mipmap.ic_launcher)\n            .setPositiveButton(R.string.upload_direct_camera_video, (dialog, which) -> fileDisplayActivity.getFileOperationsHelper().uploadFromCamera(fileDisplayActivity, FileDisplayActivity.REQUEST_CODE__UPLOAD_FROM_VIDEO_CAMERA, true))": [
+            "setNegativeButton"
+        ],
+        "new MaterialAlertDialogBuilder(fileDisplayActivity)\n            .setTitle(R.string.upload_direct_camera_promt)\n            .setIcon(R.mipmap.ic_launcher)": [
+            "setPositiveButton"
+        ],
+        "new MaterialAlertDialogBuilder(fileDisplayActivity)\n            .setTitle(R.string.upload_direct_camera_promt)": [
+            "setIcon"
+        ],
+        "new MaterialAlertDialogBuilder(fileDisplayActivity)": [
+            "setTitle"
+        ],
+        "fileDisplayActivity.getFileOperationsHelper()": [
+            "uploadFromCamera"
+        ],
+        "viewThemeUtils.dialog": [
+            "colorMaterialAlertDialogBackground"
+        ],
+        "builder": [
+            "create",
+            "show"
+        ],
+        "currentFile": [
+            "isFolder",
+            "getRemotePath",
+            "getParentId"
+        ],
+        "intent": [
+            "putExtra"
+        ],
+        "Log": [
+            "w"
+        ],
+        "Toast.makeText(getContext(),\n                           getString(R.string.error_starting_doc_scan),\n                           Toast.LENGTH_SHORT)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "UploadFilesActivity": [
+            "startUploadActivityForResult"
+        ],
+        "((FileActivity) getActivity()).getUser()": [
+            "orElseThrow"
+        ],
+        "((FileActivity) getActivity())": [
+            "getUser",
+            "addDrawerListener"
+        ],
+        "getCurrentFile()": [
+            "isEncrypted"
+        ],
+        "new Thread(() -> {\n            RemoteOperationResult result = new RichWorkspaceDirectEditingRemoteOperation(mFile.getRemotePath())\n                .execute(accountManager.getUser(), requireContext());\n\n            if (result.isSuccess()) {\n                String url = (String) result.getSingleData();\n                mContainerActivity.getFileOperationsHelper().openRichWorkspaceWithTextEditor(mFile,\n                                                                                             url,\n                                                                                             requireContext());\n            } else {\n                DisplayUtils.showSnackMessage(getView(), R.string.failed_to_start_editor);\n            }\n        })": [
+            "start"
+        ],
+        "new RichWorkspaceDirectEditingRemoteOperation(mFile.getRemotePath())": [
+            "execute"
+        ],
+        "mFile": [
+            "getRemotePath",
+            "getParentId",
+            "canWrite",
+            "isOfflineOperation"
+        ],
+        "result": [
+            "isSuccess",
+            "getSingleData"
+        ],
+        "mContainerActivity.getFileOperationsHelper()": [
+            "openRichWorkspaceWithTextEditor",
+            "sendShareFile",
+            "openFile",
+            "openFileWithTextEditor",
+            "openFileAsRichDocument",
+            "toggleEncryption",
+            "streamMediaFile",
+            "setPictureAs",
+            "toggleFileLock",
+            "exportFiles",
+            "toggleFavoriteFiles",
+            "sendFiles",
+            "syncFile"
+        ],
+        "mContainerActivity": [
+            "getFileOperationsHelper",
+            "showDetails",
+            "getStorageManager",
+            "onBrowsedDownTo",
+            "showSortListGroup"
+        ],
+        "file": [
+            "isFolder",
+            "isOfflineOperation",
+            "getFileName",
+            "isEncrypted",
+            "isDown",
+            "getMimeType",
+            "getRemoteId",
+            "getRemotePath",
+            "isAPKorAAB"
+        ],
+        "throttler": [
+            "run"
+        ],
+        "checkedFiles": [
+            "add",
+            "size",
+            "isEmpty",
+            "iterator"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "toHide": [
+            "add"
+        ],
+        "FileActionsBottomSheet.newInstance(filesCount, checkedFiles, isOverflow, toHide)\n                .setResultListener(childFragmentManager, this, (id) -> onFileActionChosen(id, checkedFiles))": [
+            "show"
+        ],
+        "FileActionsBottomSheet.newInstance(filesCount, checkedFiles, isOverflow, toHide)": [
+            "setResultListener"
+        ],
+        "FileActionsBottomSheet": [
+            "newInstance"
+        ],
+        "ChooseRichDocumentsTemplateDialogFragment.newInstance(mFile,\n                                                              ChooseRichDocumentsTemplateDialogFragment.Type.DOCUMENT)": [
+            "show"
+        ],
+        "ChooseRichDocumentsTemplateDialogFragment": [
+            "newInstance"
+        ],
+        "ChooseRichDocumentsTemplateDialogFragment.newInstance(mFile,\n                                                              ChooseRichDocumentsTemplateDialogFragment.Type.SPREADSHEET)": [
+            "show"
+        ],
+        "ChooseRichDocumentsTemplateDialogFragment.newInstance(mFile,\n                                                              ChooseRichDocumentsTemplateDialogFragment.Type.PRESENTATION)": [
+            "show"
+        ],
+        "getAdapter()": [
+            "isMultiSelect",
+            "setCheckedItem",
+            "getItemCount",
+            "shouldShowHeader",
+            "setGridView",
+            "notifyDataSetChanged"
+        ],
+        "((FileDisplayActivity) mContainerActivity)": [
+            "startRichWorkspacePreview",
+            "startImagePreview",
+            "startContactListFragment",
+            "startPdfPreview",
+            "startTextPreview",
+            "startMediaPreview",
+            "startImageEditor",
+            "cancelTransference"
+        ],
+        "ChooseTemplateDialogFragment.newInstance(mFile, creator, headline)": [
+            "show"
+        ],
+        "ChooseTemplateDialogFragment": [
+            "newInstance"
+        ],
+        "mSelectionWhenActionModeClosedByDrawer": [
+            "size",
+            "clear",
+            "addAll"
+        ],
+        "actionBarActivity": [
+            "startActionMode"
+        ],
+        "mActiveActionMode": [
+            "invalidate",
+            "finish"
+        ],
+        "((OCFileListAdapter) getRecyclerView().getAdapter())": [
+            "getCheckedItems"
+        ],
+        "getRecyclerView()": [
+            "getAdapter",
+            "scrollToPosition",
+            "getLayoutManager",
+            "setLayoutManager",
+            "setAdapter"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "menu": [
+            "findItem",
+            "removeItem"
+        ],
+        "item": [
+            "setIcon",
+            "getIcon",
+            "getItemId"
+        ],
+        "viewThemeUtils.platform": [
+            "colorDrawable",
+            "colorStatusBar",
+            "resetStatusBar"
+        ],
+        "ContextCompat": [
+            "getColor"
+        ],
+        "mode": [
+            "invalidate",
+            "setTitle"
+        ],
+        "getCommonAdapter()": [
+            "setMultiSelect",
+            "getCheckedItems",
+            "getFilesCount",
+            "clearCheckedItems",
+            "isCheckedFile",
+            "removeCheckedFile",
+            "addCheckedFile",
+            "notifyItemChanged",
+            "isMultiSelect",
+            "getItemPosition"
+        ],
+        "getResources()": [
+            "getQuantityString"
+        ],
+        "outState": [
+            "putBoolean",
+            "putParcelable"
+        ],
+        "savedInstanceState": [
+            "getBoolean"
+        ],
+        "mMultiChoiceModeListener": [
+            "loadStateFrom",
+            "storeStateIn"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "mOriginalMenuItems": [
+            "isEmpty",
+            "add"
+        ],
+        "topParent": [
+            "isShared",
+            "isFavorite"
+        ],
+        "new File(mFile.getRemotePath())": [
+            "getParent"
+        ],
+        "parentPath": [
+            "endsWith"
+        ],
+        "storageManager": [
+            "getFileByPath",
+            "getFileById",
+            "getTopParent",
+            "getFileByRemoteId"
+        ],
+        "new File(parentPath)": [
+            "getParent"
+        ],
+        "parent": [
+            "isRootDirectory",
+            "isShared",
+            "isFavorite"
+        ],
+        "Executors.newCachedThreadPool()": [
+            "submit"
+        ],
+        "Executors": [
+            "newCachedThreadPool"
+        ],
+        "completableFuture": [
+            "complete"
+        ],
+        "futureResult": [
+            "get"
+        ],
+        "FileNameValidator.INSTANCE": [
+            "checkFileName",
+            "checkParentRemotePaths"
+        ],
+        "((FileActivity) mContainerActivity).getUser()": [
+            "orElseThrow"
+        ],
+        "((FileActivity) mContainerActivity)": [
+            "getUser"
+        ],
+        "mContainerActivity.getStorageManager()": [
+            "getCapability",
+            "getFileByEncryptedRemotePath"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "ocCapability.getEndToEndEncryption()": [
+            "isFalse",
+            "isUnknown"
+        ],
+        "ocCapability": [
+            "getEndToEndEncryption",
+            "getEndToEndEncryptionApiVersion"
+        ],
+        "Snackbar.make(getRecyclerView(), R.string.end_to_end_encryption_not_enabled,\n                              Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "Snackbar": [
+            "make"
+        ],
+        "FileOperationsHelper": [
+            "isEndToEndEncryptionSetup",
+            "getAvailableSpaceOnDevice"
+        ],
+        "((FolderPickerActivity) mContainerActivity)": [
+            "isDoNotEnterEncryptedFolder"
+        ],
+        "Snackbar.make(getRecyclerView(),\n                                  R.string.copy_move_to_encrypted_folder_not_supported,\n                                  Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "fragmentManager": [
+            "findFragmentByTag"
+        ],
+        "fileActivity.connectivityService": [
+            "isNetworkAndServerAvailable"
+        ],
+        "SetupEncryptionDialogFragment": [
+            "newInstance"
+        ],
+        "Set": [
+            "of"
+        ],
+        "Snackbar.make(getRecyclerView(),\n                          errorMessageId,\n                          Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "PreviewImageFragment": [
+            "canBePreviewed"
+        ],
+        "MimeTypeUtil": [
+            "isVCard",
+            "isPDF"
+        ],
+        "PreviewTextFileFragment": [
+            "canBePreviewed"
+        ],
+        "PreviewMediaActivity.Companion": [
+            "canBePreviewed"
+        ],
+        "account": [
+            "getAccountName"
+        ],
+        "editorUtils": [
+            "isEditorAvailable"
+        ],
+        "capability.getRichDocumentsMimeTypeList()": [
+            "contains"
+        ],
+        "capability": [
+            "getRichDocumentsMimeTypeList",
+            "getRichDocumentsDirectEditing"
+        ],
+        "capability.getRichDocumentsDirectEditing()": [
+            "isTrue"
+        ],
+        "data": [
+            "getBooleanExtra",
+            "getIntExtra"
+        ],
+        "checkedFiles.iterator()": [
+            "next"
+        ],
+        "singleFile": [
+            "getMimeType"
+        ],
+        "EditImageActivity.Companion": [
+            "canBePreviewed"
+        ],
+        "RenameFileDialogFragment": [
+            "newInstance"
+        ],
+        "shortcutUtil": [
+            "addShortcutToHomescreen"
+        ],
+        "backgroundJobManager": [
+            "startOfflineOperations"
+        ],
+        "RemoveFilesDialogFragment": [
+            "newInstance"
+        ],
+        "currentUser": [
+            "getAccountName"
+        ],
+        "paths": [
+            "add"
+        ],
+        "directory": [
+            "isFolder",
+            "getParentId"
+        ],
+        "previousDirectory": [
+            "equals"
+        ],
+        "mRefreshListLayout": [
+            "setRefreshing"
+        ],
+        "mFiles": [
+            "indexOf",
+            "set"
+        ],
+        "FOLDER_LAYOUT_GRID": [
+            "equals"
+        ],
+        "((LinearLayoutManager) getRecyclerView().getLayoutManager())": [
+            "findFirstCompletelyVisibleItemPosition"
+        ],
+        "((GridLayoutManager) layoutManager)": [
+            "setSpanSizeLookup",
+            "getSpanCount"
+        ],
+        "themeUtils": [
+            "getDefaultDisplayNameForRootFolder"
+        ],
+        "activity": [
+            "invalidateOptionsMenu",
+            "getIntent"
+        ],
+        "((FileDisplayActivity) activity)": [
+            "initSyncBroadcastReceiver"
+        ],
+        "activity.getIntent()": [
+            "removeExtra"
+        ],
+        "arguments": [
+            "putParcelable"
+        ],
+        "clientFactory": [
+            "create",
+            "createNextcloudClient"
+        ],
+        "toggleFavoriteOperation": [
+            "execute"
+        ],
+        "remoteOperationResult": [
+            "isSuccess",
+            "getHttpCode"
+        ],
+        "searchEvent": [
+            "getSearchType"
+        ],
+        "new Handler(Looper.getMainLooper())": [
+            "post"
+        ],
+        "Looper": [
+            "getMainLooper"
+        ],
+        "getArguments()": [
+            "getBoolean"
+        ],
+        "arbitraryDataProvider": [
+            "getValue"
+        ],
+        "publicKey": [
+            "isEmpty"
+        ],
+        "privateKey": [
+            "isEmpty"
+        ],
+        "folder": [
+            "getRemoteId"
+        ],
+        "new ToggleEncryptionRemoteOperation(localId,\n                                                                                              remotePath,\n                                                                                              shouldBeEncrypted)": [
+            "execute"
+        ],
+        "EncryptionUtils": [
+            "lockFolder",
+            "retrieveMetadata",
+            "unlockFolder",
+            "unlockFolderV1"
+        ],
+        "new EncryptionUtilsV2()": [
+            "serializeAndUploadMetadata"
+        ],
+        "Snackbar.make(getRecyclerView(),\n                              R.string.end_to_end_encryption_folder_not_empty,\n                              Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "Snackbar.make(getRecyclerView(),\n                              R.string.common_error_unknown,\n                              Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "Snackbar.make(getRecyclerView(),\n                              R.string.error_file_lock,\n                              Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "Snackbar.make(getRecyclerView(),\n                          R.string.error_file_lock,\n                          Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "requireContext()": [
+            "getString"
+        ],
+        "((FileDisplayActivity) getActivity())": [
+            "getSupportActionBar"
+        ],
+        "viewThemeUtils.files": [
+            "themeActionBar"
+        ],
+        "EventBus.getDefault()": [
+            "register",
+            "unregister"
+        ],
+        "EventBus": [
+            "getDefault"
+        ],
+        "ocFileListAdapter": [
+            "addAllFilesToCheckedFiles",
+            "clearCheckedItems"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "FileStorageUtils": [
+            "checkIfEnoughSpace"
+        ],
+        "SyncFileNotEnoughSpaceDialogFragment": [
+            "newInstance"
+        ],
+        "((CoordinatorLayout.LayoutParams) layoutParams)": [
+            "getBehavior"
+        ],
+        "behavior": [
+            "slideUp",
+            "slideDown"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 11813,
+            "end_position": 12528,
+            "body_start": 11875,
+            "body_end": 12528
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12534,
+            "end_position": 13049,
+            "body_start": 12571,
+            "body_end": 13049
+        },
+        {
+            "name": "onAttach",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 13092,
+            "end_position": 13927,
+            "body_start": 13153,
+            "body_end": 13927
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 13970,
+            "end_position": 15420,
+            "body_start": 14091,
+            "body_end": 15420
+        },
+        {
+            "name": "onDetach",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15426,
+            "end_position": 15677,
+            "body_start": 15463,
+            "body_end": 15677
+        },
+        {
+            "name": "onPause",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15683,
+            "end_position": 15971,
+            "body_start": 15719,
+            "body_end": 15971
+        },
+        {
+            "name": "onActivityCreated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 16014,
+            "end_position": 18384,
+            "body_start": 16085,
+            "body_end": 18384
+        },
+        {
+            "name": "setAdapter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "args"
+                }
+            ],
+            "start_position": 18390,
+            "end_position": 18961,
+            "body_start": 18429,
+            "body_end": 18961
+        },
+        {
+            "name": "prepareCurrentSearch",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SearchEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 18967,
+            "end_position": 19765,
+            "body_start": 19022,
+            "body_end": 19765
+        },
+        {
+            "name": "registerFabListener",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 19820,
+            "end_position": 20982,
+            "body_start": 19854,
+            "body_end": 20982
+        },
+        {
+            "name": "createFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 20988,
+            "end_position": 21174,
+            "body_start": 21029,
+            "body_end": 21174
+        },
+        {
+            "name": "uploadFromApp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 21180,
+            "end_position": 21679,
+            "body_start": 21222,
+            "body_end": 21679
+        },
+        {
+            "name": "directCameraUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 21685,
+            "end_position": 22315,
+            "body_start": 21732,
+            "body_end": 22315
+        },
+        {
+            "name": "showDirectCameraUploadAlertDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileDisplayActivity",
+                    "name": "fileDisplayActivity"
+                }
+            ],
+            "start_position": 22321,
+            "end_position": 23241,
+            "body_start": 22409,
+            "body_end": 23241
+        },
+        {
+            "name": "scanDocUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 23247,
+            "end_position": 24120,
+            "body_start": 23289,
+            "body_end": 24120
+        },
+        {
+            "name": "uploadFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 24126,
+            "end_position": 24469,
+            "body_start": 24166,
+            "body_end": 24469
+        },
+        {
+            "name": "createRichWorkspace",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 24475,
+            "end_position": 25296,
+            "body_start": 24523,
+            "body_end": 25296
+        },
+        {
+            "name": "onShareIconClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 25302,
+            "end_position": 25626,
+            "body_start": 25358,
+            "body_end": 25626
+        },
+        {
+            "name": "showShareDetailView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 25632,
+            "end_position": 25747,
+            "body_start": 25691,
+            "body_end": 25747
+        },
+        {
+            "name": "showActivityDetailView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 25753,
+            "end_position": 25871,
+            "body_start": 25815,
+            "body_end": 25871
+        },
+        {
+            "name": "onOverflowIconClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 25877,
+            "end_position": 26094,
+            "body_start": 25949,
+            "body_end": 26094
+        },
+        {
+            "name": "openActionsMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "filesCount"
+                },
+                {
+                    "type": "Set<OCFile>",
+                    "name": "checkedFiles"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isOverflow"
+                }
+            ],
+            "start_position": 26100,
+            "end_position": 27774,
+            "body_start": 26208,
+            "body_end": 27774
+        },
+        {
+            "name": "newDocument",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 27780,
+            "end_position": 28105,
+            "body_start": 27820,
+            "body_end": 28105
+        },
+        {
+            "name": "newSpreadsheet",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28111,
+            "end_position": 28442,
+            "body_start": 28154,
+            "body_end": 28442
+        },
+        {
+            "name": "newPresentation",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28448,
+            "end_position": 28781,
+            "body_start": 28492,
+            "body_end": 28781
+        },
+        {
+            "name": "onHeaderClicked",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28787,
+            "end_position": 29070,
+            "body_start": 28831,
+            "body_end": 29070
+        },
+        {
+            "name": "showTemplate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Creator",
+                    "name": "creator"
+                },
+                {
+                    "type": "String",
+                    "name": "headline"
+                }
+            ],
+            "start_position": 29076,
+            "end_position": 29406,
+            "body_start": 29167,
+            "body_end": 29406
+        },
+        {
+            "name": "onDrawerSlide",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "drawerView"
+                },
+                {
+                    "type": "float",
+                    "name": "slideOffset"
+                }
+            ],
+            "start_position": 30261,
+            "end_position": 30390,
+            "body_start": 30350,
+            "body_end": 30390
+        },
+        {
+            "name": "onDrawerOpened",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "drawerView"
+                }
+            ],
+            "start_position": 30400,
+            "end_position": 30511,
+            "body_start": 30471,
+            "body_end": 30511
+        },
+        {
+            "name": "onDrawerClosed",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "drawerView"
+                }
+            ],
+            "start_position": 30770,
+            "end_position": 31309,
+            "body_start": 30841,
+            "body_end": 31309
+        },
+        {
+            "name": "onDrawerStateChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "newState"
+                }
+            ],
+            "start_position": 31622,
+            "end_position": 32096,
+            "body_start": 31687,
+            "body_end": 32096
+        },
+        {
+            "name": "onItemCheckedStateChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ActionMode",
+                    "name": "mode"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                },
+                {
+                    "type": "long",
+                    "name": "id"
+                },
+                {
+                    "type": "boolean",
+                    "name": "checked"
+                }
+            ],
+            "start_position": 32214,
+            "end_position": 32372,
+            "body_start": 32327,
+            "body_end": 32372
+        },
+        {
+            "name": "onCreateActionMode",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ActionMode",
+                    "name": "mode"
+                },
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 32473,
+            "end_position": 33554,
+            "body_start": 32553,
+            "body_end": 33554
+        },
+        {
+            "name": "onPrepareActionMode",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ActionMode",
+                    "name": "mode"
+                },
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 33665,
+            "end_position": 34281,
+            "body_start": 33746,
+            "body_end": 34281
+        },
+        {
+            "name": "onActionItemClicked",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "ActionMode",
+                    "name": "mode"
+                },
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 34398,
+            "end_position": 34779,
+            "body_start": 34483,
+            "body_end": 34779
+        },
+        {
+            "name": "onDestroyActionMode",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ActionMode",
+                    "name": "mode"
+                }
+            ],
+            "start_position": 34837,
+            "end_position": 35377,
+            "body_start": 34904,
+            "body_end": 35377
+        },
+        {
+            "name": "storeStateIn",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 35387,
+            "end_position": 35534,
+            "body_start": 35429,
+            "body_end": 35534
+        },
+        {
+            "name": "loadStateFrom",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 35544,
+            "end_position": 35810,
+            "body_start": 35597,
+            "body_end": 35810
+        },
+        {
+            "name": "setChoiceModeAsMultipleModal",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 35917,
+            "end_position": 36203,
+            "body_start": 35988,
+            "body_end": 36203
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 36265,
+            "end_position": 36814,
+            "body_start": 36337,
+            "body_end": 36814
+        },
+        {
+            "name": "onPrepareOptionsMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 36820,
+            "end_position": 37198,
+            "body_start": 36887,
+            "body_end": 37198
+        },
+        {
+            "name": "updateSortAndGridMenuItems",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 37204,
+            "end_position": 37937,
+            "body_start": 37246,
+            "body_end": 37937
+        },
+        {
+            "name": "shouldNavigateWithoutFilter",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "topParent"
+                }
+            ],
+            "start_position": 37943,
+            "end_position": 38337,
+            "body_start": 38005,
+            "body_end": 38337
+        },
+        {
+            "name": "shouldNavigateWithFilter",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 38343,
+            "end_position": 38527,
+            "body_start": 38386,
+            "body_end": 38527
+        },
+        {
+            "name": "getPreviousFileWithoutFilter",
+            "return_type": "Pair<Integer, OCFile>",
+            "parameters": [
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 38533,
+            "end_position": 39697,
+            "body_start": 38631,
+            "body_end": 39697
+        },
+        {
+            "name": "getPreviousFileWithFilter",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "currentFile"
+                }
+            ],
+            "start_position": 39703,
+            "end_position": 40360,
+            "body_start": 39803,
+            "body_end": 40360
+        },
+        {
+            "name": "getPreviousFile",
+            "return_type": "Future<Pair<Integer, OCFile>>",
+            "parameters": [],
+            "start_position": 40366,
+            "end_position": 41349,
+            "body_start": 40422,
+            "body_end": 41349
+        },
+        {
+            "name": "onBrowseUp",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 41676,
+            "end_position": 42428,
+            "body_start": 41700,
+            "body_end": 42428
+        },
+        {
+            "name": "updateFileList",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 42434,
+            "end_position": 42598,
+            "body_start": 42464,
+            "body_end": 42598
+        },
+        {
+            "name": "toggleItemToCheckedList",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 42760,
+            "end_position": 43043,
+            "body_start": 42810,
+            "body_end": 43043
+        },
+        {
+            "name": "updateActionModeFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 43231,
+            "end_position": 43470,
+            "body_start": 43278,
+            "body_end": 43470
+        },
+        {
+            "name": "onLongItemClicked",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 43476,
+            "end_position": 44033,
+            "body_start": 43536,
+            "body_end": 44033
+        },
+        {
+            "name": "folderOnItemClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 44039,
+            "end_position": 47125,
+            "body_start": 44097,
+            "body_end": 47125
+        },
+        {
+            "name": "checkFileBeforeOpen",
+            "return_type": "Integer",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 47131,
+            "end_position": 47447,
+            "body_start": 47180,
+            "body_end": 47447
+        },
+        {
+            "name": "fileOnItemClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 47453,
+            "end_position": 50461,
+            "body_start": 47495,
+            "body_end": 50461
+        },
+        {
+            "name": "onItemClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 50467,
+            "end_position": 51423,
+            "body_start": 50564,
+            "body_end": 51423
+        },
+        {
+            "name": "browseToFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 51429,
+            "end_position": 51807,
+            "body_start": 51484,
+            "body_end": 51807
+        },
+        {
+            "name": "resetSearchIfBrowsingFromFavorites",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 51813,
+            "end_position": 51999,
+            "body_start": 51863,
+            "body_end": 51999
+        },
+        {
+            "name": "onActivityResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                },
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 52005,
+            "end_position": 53176,
+            "body_start": 52094,
+            "body_end": 53176
+        },
+        {
+            "name": "onFileActionChosen",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "itemId"
+                },
+                {
+                    "type": "Set<OCFile>",
+                    "name": "checkedFiles"
+                }
+            ],
+            "start_position": 53494,
+            "end_position": 59890,
+            "body_start": 53579,
+            "body_end": 59890
+        },
+        {
+            "name": "browseToRoot",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 59896,
+            "end_position": 60065,
+            "body_start": 59924,
+            "body_end": 60065
+        },
+        {
+            "name": "getCapabilities",
+            "return_type": "OCCapability",
+            "parameters": [],
+            "start_position": 60071,
+            "end_position": 60275,
+            "body_start": 60110,
+            "body_end": 60275
+        },
+        {
+            "name": "checkInvalidFilenames",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Set<OCFile>",
+                    "name": "checkedFiles"
+                }
+            ],
+            "start_position": 60281,
+            "end_position": 60656,
+            "body_start": 60344,
+            "body_end": 60656
+        },
+        {
+            "name": "pickFolderForMoveOrCopy",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Set<OCFile>",
+                    "name": "checkedFiles"
+                }
+            ],
+            "start_position": 60662,
+            "end_position": 61370,
+            "body_start": 60731,
+            "body_end": 61370
+        },
+        {
+            "name": "getCurrentFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 61538,
+            "end_position": 61598,
+            "body_start": 61569,
+            "body_end": 61598
+        },
+        {
+            "name": "listDirectory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "onlyOnDevice"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fromSearch"
+                }
+            ],
+            "start_position": 61722,
+            "end_position": 61852,
+            "body_start": 61790,
+            "body_end": 61852
+        },
+        {
+            "name": "refreshDirectory",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 61858,
+            "end_position": 62032,
+            "body_start": 61889,
+            "body_end": 62032
+        },
+        {
+            "name": "listDirectory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "directory"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyOnDevice"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fromSearch"
+                }
+            ],
+            "start_position": 62038,
+            "end_position": 62197,
+            "body_start": 62124,
+            "body_end": 62197
+        },
+        {
+            "name": "getDirectoryForListDirectory",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "directory"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 62203,
+            "end_position": 62813,
+            "body_start": 62304,
+            "body_end": 62813
+        },
+        {
+            "name": "listDirectory",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "directory"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "boolean",
+                    "name": "onlyOnDevice"
+                },
+                {
+                    "type": "boolean",
+                    "name": "fromSearch"
+                }
+            ],
+            "start_position": 63066,
+            "end_position": 64841,
+            "body_start": 63165,
+            "body_end": 64841
+        },
+        {
+            "name": "getAdapterFiles",
+            "return_type": "List<OCFile>",
+            "parameters": [],
+            "start_position": 64847,
+            "end_position": 64928,
+            "body_start": 64885,
+            "body_end": 64928
+        },
+        {
+            "name": "updateOCFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 64934,
+            "end_position": 65284,
+            "body_start": 64981,
+            "body_end": 65284
+        },
+        {
+            "name": "updateLayout",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 65290,
+            "end_position": 66035,
+            "body_start": 65318,
+            "body_end": 66035
+        },
+        {
+            "name": "invalidateActionMode",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 66041,
+            "end_position": 66179,
+            "body_start": 66077,
+            "body_end": 66179
+        },
+        {
+            "name": "sortFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileSortOrder",
+                    "name": "sortOrder"
+                }
+            ],
+            "start_position": 66185,
+            "end_position": 66363,
+            "body_start": 66232,
+            "body_end": 66363
+        },
+        {
+            "name": "isGridViewPreferred",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 66699,
+            "end_position": 66845,
+            "body_start": 66759,
+            "body_end": 66845
+        },
+        {
+            "name": "setListAsPreferred",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 66851,
+            "end_position": 66983,
+            "body_start": 66884,
+            "body_end": 66983
+        },
+        {
+            "name": "switchToListView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 66989,
+            "end_position": 67108,
+            "body_start": 67020,
+            "body_end": 67108
+        },
+        {
+            "name": "setGridAsPreferred",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 67114,
+            "end_position": 67246,
+            "body_start": 67147,
+            "body_end": 67246
+        },
+        {
+            "name": "switchToGridView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 67252,
+            "end_position": 67371,
+            "body_start": 67283,
+            "body_end": 67371
+        },
+        {
+            "name": "switchLayoutManager",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "grid"
+                }
+            ],
+            "start_position": 67377,
+            "end_position": 68708,
+            "body_start": 67423,
+            "body_end": 68708
+        },
+        {
+            "name": "getSpanSize",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 67943,
+            "end_position": 68340,
+            "body_start": 68006,
+            "body_end": 68340
+        },
+        {
+            "name": "getCommonAdapter",
+            "return_type": "CommonOCFileListAdapterInterface",
+            "parameters": [],
+            "start_position": 68714,
+            "end_position": 68805,
+            "body_start": 68773,
+            "body_end": 68805
+        },
+        {
+            "name": "getAdapter",
+            "return_type": "OCFileListAdapter",
+            "parameters": [],
+            "start_position": 68811,
+            "end_position": 68881,
+            "body_start": 68849,
+            "body_end": 68881
+        },
+        {
+            "name": "setTitle",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 68887,
+            "end_position": 69764,
+            "body_start": 68913,
+            "body_end": 69764
+        },
+        {
+            "name": "prepareActionBarItems",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SearchEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 69770,
+            "end_position": 70341,
+            "body_start": 69826,
+            "body_end": 70341
+        },
+        {
+            "name": "setEmptyView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SearchEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 70347,
+            "end_position": 71166,
+            "body_start": 70394,
+            "body_end": 71166
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ChangeMenuEvent",
+                    "name": "changeMenuEvent"
+                }
+            ],
+            "start_position": 71172,
+            "end_position": 71990,
+            "body_start": 71277,
+            "body_end": 71990
+        },
+        {
+            "name": "resetMenuItems",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 71996,
+            "end_position": 72153,
+            "body_start": 72026,
+            "body_end": 72153
+        },
+        {
+            "name": "resetSearchAttributes",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 72159,
+            "end_position": 72302,
+            "body_start": 72196,
+            "body_end": 72302
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "CommentsEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 72308,
+            "end_position": 72474,
+            "body_start": 72407,
+            "body_end": 72474
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FavoriteEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 72480,
+            "end_position": 73458,
+            "body_start": 72579,
+            "body_end": 73458
+        },
+        {
+            "name": "onViewStateRestored",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 73464,
+            "end_position": 73783,
+            "body_start": 73547,
+            "body_end": 73783
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SearchEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 73789,
+            "end_position": 73933,
+            "body_start": 73892,
+            "body_end": 73933
+        },
+        {
+            "name": "handleSearchEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SearchEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 73939,
+            "end_position": 75557,
+            "body_start": 73991,
+            "body_end": 75557
+        },
+        {
+            "name": "getSearchRemoteOperation",
+            "return_type": "RemoteOperation",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "currentUser"
+                },
+                {
+                    "type": "SearchEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 75564,
+            "end_position": 76240,
+            "body_start": 75664,
+            "body_end": 76240
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "EncryptionEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 76246,
+            "end_position": 77783,
+            "body_start": 76347,
+            "body_end": 77783
+        },
+        {
+            "name": "encryptFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                },
+                {
+                    "type": "long",
+                    "name": "localId"
+                },
+                {
+                    "type": "String",
+                    "name": "remoteId"
+                },
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                },
+                {
+                    "type": "boolean",
+                    "name": "shouldBeEncrypted"
+                },
+                {
+                    "type": "String",
+                    "name": "publicKeyString"
+                },
+                {
+                    "type": "String",
+                    "name": "privateKeyString"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                }
+            ],
+            "start_position": 77789,
+            "end_position": 82381,
+            "body_start": 78213,
+            "body_end": 82381
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileLockEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 82387,
+            "end_position": 83668,
+            "body_start": 82486,
+            "body_end": 83668
+        },
+        {
+            "name": "setTitle",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "title"
+                }
+            ],
+            "start_position": 83878,
+            "end_position": 83996,
+            "body_start": 83930,
+            "body_end": 83996
+        },
+        {
+            "name": "setTitle",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "title"
+                },
+                {
+                    "type": "Boolean",
+                    "name": "showBackAsMenu"
+                }
+            ],
+            "start_position": 84234,
+            "end_position": 84762,
+            "body_start": 84302,
+            "body_end": 84762
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 84768,
+            "end_position": 84882,
+            "body_start": 84804,
+            "body_end": 84882
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 84888,
+            "end_position": 85002,
+            "body_start": 84923,
+            "body_end": 85002
+        },
+        {
+            "name": "onRefresh",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 85009,
+            "end_position": 85309,
+            "body_start": 85047,
+            "body_end": 85309
+        },
+        {
+            "name": "setSearchFragment",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "searchFragment"
+                }
+            ],
+            "start_position": 85315,
+            "end_position": 85422,
+            "body_start": 85369,
+            "body_end": 85422
+        },
+        {
+            "name": "isSearchFragment",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 85428,
+            "end_position": 85500,
+            "body_start": 85462,
+            "body_end": 85500
+        },
+        {
+            "name": "selectAllFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "select"
+                }
+            ],
+            "start_position": 85675,
+            "end_position": 86209,
+            "body_start": 85718,
+            "body_end": 86209
+        },
+        {
+            "name": "exitSelectionMode",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 86275,
+            "end_position": 86405,
+            "body_start": 86307,
+            "body_end": 86405
+        },
+        {
+            "name": "isSearchEventSet",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "SearchEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 86411,
+            "end_position": 86912,
+            "body_start": 86463,
+            "body_end": 86912
+        },
+        {
+            "name": "syncAndCheckFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Collection<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 86918,
+            "end_position": 87411,
+            "body_start": 86975,
+            "body_end": 87411
+        },
+        {
+            "name": "showSpaceErrorDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "long",
+                    "name": "availableSpaceOnDevice"
+                }
+            ],
+            "start_position": 87417,
+            "end_position": 87870,
+            "body_start": 87493,
+            "body_end": 87870
+        },
+        {
+            "name": "isLoading",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 87876,
+            "end_position": 87946,
+            "body_start": 87917,
+            "body_end": 87946
+        },
+        {
+            "name": "setFabVisible",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "visible"
+                }
+            ],
+            "start_position": 88194,
+            "end_position": 88739,
+            "body_start": 88243,
+            "body_end": 88739
+        },
+        {
+            "name": "showFabWithBehavior",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "visible"
+                }
+            ],
+            "start_position": 88899,
+            "end_position": 89758,
+            "body_start": 88949,
+            "body_end": 89758
+        },
+        {
+            "name": "setFabEnabled",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 89971,
+            "end_position": 90554,
+            "body_start": 90020,
+            "body_end": 90554
+        },
+        {
+            "name": "isEmpty",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 90560,
+            "end_position": 90647,
+            "body_start": 90585,
+            "body_end": 90647
+        },
+        {
+            "name": "isAPKorAAB",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Set<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 90653,
+            "end_position": 90854,
+            "body_start": 90699,
+            "body_end": 90854
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "try_statement",
+        "throw_statement",
+        "break_statement",
+        "enhanced_for_statement",
+        "while_statement",
+        "for_statement"
+    ],
+    "local_variables": {
+        "intent": "Intent",
+        "v": "View",
+        "args": "Bundle",
+        "allowContextualActions": "boolean",
+        "fragmentActivity": "FragmentActivity",
+        "fileDisplayActivity": "FileDisplayActivity",
+        "hideItemOptions": "boolean",
+        "activity": "Activity",
+        "dialog": "SyncFileNotEnoughSpaceDialogFragment",
+        "action": "Intent",
+        "builder": "MaterialAlertDialogBuilder",
+        "currentFile": "OCFile",
+        "result": "RemoteOperationResult<Void>",
+        "url": "String",
+        "checkedFiles": "Set<OCFile>",
+        "toHide": "List<Integer>",
+        "childFragmentManager": "FragmentManager",
+        "actionBarActivity": "FragmentActivity",
+        "inflater": "MenuInflater",
+        "item": "MenuItem",
+        "checkedCount": "int",
+        "title": "String",
+        "menuItemId": "int",
+        "moveCount": "int",
+        "parentDir": "OCFile",
+        "parentPath": "String",
+        "parent": "OCFile",
+        "completableFuture": "CompletableFuture<Pair<Integer, OCFile>>",
+        "storageManager": "FileDataStorageManager",
+        "topParent": "OCFile",
+        "previousFileWithFilter": "OCFile",
+        "futureResult": "Future<Pair<Integer, OCFile>>",
+        "filenameErrorMessage": "String",
+        "user": "User",
+        "ocCapability": "OCCapability",
+        "fragmentManager": "FragmentManager",
+        "errorMessageId": "Integer",
+        "type": "VirtualFolderType",
+        "account": "User",
+        "capability": "OCCapability",
+        "position": "int",
+        "file": "OCFile",
+        "singleFile": "OCFile",
+        "invalidFilename": "String",
+        "root": "OCFile",
+        "currentUser": "User",
+        "errorMessage": "String",
+        "requestCode": "int",
+        "extraAction": "String",
+        "paths": "ArrayList<String>",
+        "previousDirectory": "OCFile",
+        "mFiles": "List<OCFile>",
+        "index": "int",
+        "layoutManager": "RecyclerView.LayoutManager",
+        "arguments": "Bundle",
+        "client": "NextcloudClient",
+        "toggleFavoriteOperation": "ToggleFavoriteRemoteOperation",
+        "remoteOperationResult": "RemoteOperationResult",
+        "removeFromList": "boolean",
+        "switchViewsRunnable": "Runnable",
+        "remoteOperation": "RemoteOperation",
+        "searchOnlyFolders": "boolean",
+        "publicKey": "String",
+        "privateKey": "String",
+        "token": "String",
+        "metadataPair": "Pair<Boolean, DecryptedFolderMetadataFile>",
+        "metadataExists": "boolean",
+        "metadata": "DecryptedFolderMetadataFile",
+        "operation": "ToggleFileLockRemoteOperation",
+        "actionBar": "ActionBar",
+        "context": "Context",
+        "ocFileListAdapter": "OCFileListAdapter",
+        "i": "int",
+        "searchType": "SearchRemoteOperation.SearchType",
+        "availableSpaceOnDevice": "long",
+        "layoutParams": "ViewGroup.LayoutParams",
+        "coordinatorLayoutBehavior": "CoordinatorLayout.Behavior",
+        "behavior": "HideBottomViewOnScrollBehavior<FloatingActionButton>"
+    }
+}

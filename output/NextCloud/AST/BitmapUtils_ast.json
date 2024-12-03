@@ -1,0 +1,700 @@
+{
+    "method_calls": {
+        "BitmapUtils.class": [
+            "getSimpleName"
+        ],
+        "originalBitmap": [
+            "copy"
+        ],
+        "canvas": [
+            "drawBitmap",
+            "drawRect",
+            "getWidth",
+            "getHeight",
+            "translate",
+            "drawARGB",
+            "drawOval",
+            "drawCircle"
+        ],
+        "paint": [
+            "setColor",
+            "setAlpha",
+            "setXfermode",
+            "setAntiAlias",
+            "setColorFilter"
+        ],
+        "resultBitmap": [
+            "getWidth",
+            "getHeight",
+            "equals"
+        ],
+        "ImageDecoder": [
+            "decodeBitmap",
+            "createSource"
+        ],
+        "decoder": [
+            "setTargetSize"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "exception": [
+            "getMessage"
+        ],
+        "BitmapFactory": [
+            "decodeFile"
+        ],
+        "unknown": [
+            "calculateSampleFactor",
+            "md5",
+            "getResources",
+            "generateColors",
+            "hashToInt",
+            "mixPalette",
+            "stepCalc",
+            "bitmapToCircularBitmapDrawable",
+            "drawableToBitmap",
+            "getCroppedBitmap"
+        ],
+        "Math": [
+            "round"
+        ],
+        "Bitmap": [
+            "createScaledBitmap",
+            "createBitmap"
+        ],
+        "exifInterface": [
+            "getAttributeInt"
+        ],
+        "matrix": [
+            "postScale",
+            "postRotate"
+        ],
+        "bitmap": [
+            "getWidth",
+            "getHeight",
+            "recycle"
+        ],
+        "name": [
+            "toLowerCase"
+        ],
+        "hash": [
+            "length",
+            "matches",
+            "replaceAll",
+            "charAt"
+        ],
+        "getResources()": [
+            "getColor",
+            "getDimension"
+        ],
+        "android.graphics.Color": [
+            "red",
+            "green",
+            "blue"
+        ],
+        "Character": [
+            "digit"
+        ],
+        "System": [
+            "arraycopy"
+        ],
+        "MessageDigest": [
+            "getInstance"
+        ],
+        "md5": [
+            "digest"
+        ],
+        "string": [
+            "getBytes"
+        ],
+        "hexString": [
+            "append",
+            "toString"
+        ],
+        "String": [
+            "format"
+        ],
+        "RoundedBitmapDrawableFactory": [
+            "create"
+        ],
+        "roundedBitmap": [
+            "setCircular",
+            "setCornerRadius"
+        ],
+        "imageView": [
+            "setImageDrawable"
+        ],
+        "BitmapUtils": [
+            "bitmapToCircularBitmapDrawable",
+            "setRoundedBitmap"
+        ],
+        "bitmapDrawable": [
+            "getBitmap"
+        ],
+        "drawable": [
+            "getIntrinsicWidth",
+            "getIntrinsicHeight",
+            "getBounds",
+            "setBounds",
+            "draw"
+        ],
+        "drawable.getBounds()": [
+            "width",
+            "height"
+        ],
+        "DisplayUtils": [
+            "convertDpToPixel"
+        ],
+        "statusDrawable": [
+            "draw"
+        ],
+        "MainApp.getAppContext()": [
+            "getResources"
+        ],
+        "MainApp": [
+            "getAppContext"
+        ]
+    },
+    "methods": [
+        {
+            "name": "addColorFilter",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "originalBitmap"
+                },
+                {
+                    "type": "int",
+                    "name": "filterColor"
+                },
+                {
+                    "type": "int",
+                    "name": "opacity"
+                }
+            ],
+            "start_position": 2119,
+            "end_position": 2704,
+            "body_start": 2208,
+            "body_end": 2704
+        },
+        {
+            "name": "decodeSampledBitmapFromFile",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "srcPath"
+                },
+                {
+                    "type": "int",
+                    "name": "reqWidth"
+                },
+                {
+                    "type": "int",
+                    "name": "reqHeight"
+                }
+            ],
+            "start_position": 3175,
+            "end_position": 4654,
+            "body_start": 3269,
+            "body_end": 4654
+        },
+        {
+            "name": "calculateSampleFactor",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "Options",
+                    "name": "options"
+                },
+                {
+                    "type": "int",
+                    "name": "reqWidth"
+                },
+                {
+                    "type": "int",
+                    "name": "reqHeight"
+                }
+            ],
+            "start_position": 5327,
+            "end_position": 6076,
+            "body_start": 5413,
+            "body_end": 6076
+        },
+        {
+            "name": "scaleBitmap",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                },
+                {
+                    "type": "float",
+                    "name": "px"
+                },
+                {
+                    "type": "int",
+                    "name": "width"
+                },
+                {
+                    "type": "int",
+                    "name": "height"
+                },
+                {
+                    "type": "int",
+                    "name": "max"
+                }
+            ],
+            "start_position": 6402,
+            "end_position": 6680,
+            "body_start": 6492,
+            "body_end": 6680
+        },
+        {
+            "name": "rotateImage",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                },
+                {
+                    "type": "String",
+                    "name": "storagePath"
+                }
+            ],
+            "start_position": 7029,
+            "end_position": 9402,
+            "body_start": 7097,
+            "body_end": 9402
+        },
+        {
+            "name": "getImageResolution",
+            "return_type": "int[]",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "srcPath"
+                }
+            ],
+            "start_position": 9408,
+            "end_position": 9671,
+            "body_start": 9463,
+            "body_end": 9671
+        },
+        {
+            "name": "usernameToColor",
+            "return_type": "Color",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 9677,
+            "end_position": 10526,
+            "body_start": 9726,
+            "body_end": 10526
+        },
+        {
+            "name": "hashToInt",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "hash"
+                },
+                {
+                    "type": "int",
+                    "name": "maximum"
+                }
+            ],
+            "start_position": 10532,
+            "end_position": 10923,
+            "body_start": 10587,
+            "body_end": 10923
+        },
+        {
+            "name": "generateColors",
+            "return_type": "Color[]",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "steps"
+                }
+            ],
+            "start_position": 10929,
+            "end_position": 11650,
+            "body_start": 10978,
+            "body_end": 11650
+        },
+        {
+            "name": "mixPalette",
+            "return_type": "Color[]",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "steps"
+                },
+                {
+                    "type": "Color",
+                    "name": "color1"
+                },
+                {
+                    "type": "Color",
+                    "name": "color2"
+                }
+            ],
+            "start_position": 11656,
+            "end_position": 12196,
+            "body_start": 11780,
+            "body_end": 12196
+        },
+        {
+            "name": "stepCalc",
+            "return_type": "float[]",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "steps"
+                },
+                {
+                    "type": "Color",
+                    "name": "color1"
+                },
+                {
+                    "type": "Color",
+                    "name": "color2"
+                }
+            ],
+            "start_position": 12202,
+            "end_position": 12511,
+            "body_start": 12273,
+            "body_end": 12511
+        },
+        {
+            "name": "equals",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "obj"
+                }
+            ],
+            "start_position": 12933,
+            "end_position": 13213,
+            "body_start": 12995,
+            "body_end": 13213
+        },
+        {
+            "name": "hashCode",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 13223,
+            "end_position": 13319,
+            "body_start": 13263,
+            "body_end": 13319
+        },
+        {
+            "name": "md5",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "string"
+                }
+            ],
+            "start_position": 13331,
+            "end_position": 13842,
+            "body_start": 13403,
+            "body_end": 13842
+        },
+        {
+            "name": "bitmapToCircularBitmapDrawable",
+            "return_type": "RoundedBitmapDrawable",
+            "parameters": [
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                },
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                },
+                {
+                    "type": "float",
+                    "name": "radius"
+                }
+            ],
+            "start_position": 14176,
+            "end_position": 14786,
+            "body_start": 14449,
+            "body_end": 14786
+        },
+        {
+            "name": "bitmapToCircularBitmapDrawable",
+            "return_type": "RoundedBitmapDrawable",
+            "parameters": [
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                },
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                }
+            ],
+            "start_position": 14792,
+            "end_position": 14986,
+            "body_start": 14909,
+            "body_end": 14986
+        },
+        {
+            "name": "setRoundedBitmap",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                },
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                },
+                {
+                    "type": "float",
+                    "name": "radius"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "imageView"
+                }
+            ],
+            "start_position": 14992,
+            "end_position": 15370,
+            "body_start": 15099,
+            "body_end": 15370
+        },
+        {
+            "name": "drawableToBitmap",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "drawable"
+                }
+            ],
+            "start_position": 15376,
+            "end_position": 15491,
+            "body_start": 15433,
+            "body_end": 15491
+        },
+        {
+            "name": "drawableToBitmap",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "drawable"
+                },
+                {
+                    "type": "int",
+                    "name": "desiredWidth"
+                },
+                {
+                    "type": "int",
+                    "name": "desiredHeight"
+                }
+            ],
+            "start_position": 15497,
+            "end_position": 16953,
+            "body_start": 15604,
+            "body_end": 16953
+        },
+        {
+            "name": "setRoundedBitmap",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "thumbnail"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "imageView"
+                }
+            ],
+            "start_position": 16959,
+            "end_position": 17298,
+            "body_start": 17034,
+            "body_end": 17298
+        },
+        {
+            "name": "setRoundedBitmapForGridMode",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "thumbnail"
+                },
+                {
+                    "type": "ImageView",
+                    "name": "imageView"
+                }
+            ],
+            "start_position": 17304,
+            "end_position": 17668,
+            "body_start": 17390,
+            "body_end": 17668
+        },
+        {
+            "name": "createAvatarWithStatus",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "avatar"
+                },
+                {
+                    "type": "StatusType",
+                    "name": "statusType"
+                },
+                {
+                    "type": "String",
+                    "name": "icon"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 17674,
+            "end_position": 18564,
+            "body_start": 17795,
+            "body_end": 18564
+        },
+        {
+            "name": "roundBitmap",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                }
+            ],
+            "start_position": 18692,
+            "end_position": 19443,
+            "body_start": 18740,
+            "body_end": 19443
+        },
+        {
+            "name": "tintImage",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                },
+                {
+                    "type": "int",
+                    "name": "color"
+                }
+            ],
+            "start_position": 19515,
+            "end_position": 19944,
+            "body_start": 19572,
+            "body_end": 19944
+        },
+        {
+            "name": "getCroppedBitmap",
+            "return_type": "Bitmap",
+            "parameters": [
+                {
+                    "type": "Bitmap",
+                    "name": "bitmap"
+                },
+                {
+                    "type": "int",
+                    "name": "width"
+                }
+            ],
+            "start_position": 20015,
+            "end_position": 20706,
+            "body_start": 20080,
+            "body_end": 20706
+        },
+        {
+            "name": "getResources",
+            "return_type": "Resources",
+            "parameters": [],
+            "start_position": 20712,
+            "end_position": 20814,
+            "body_start": 20752,
+            "body_end": 20814
+        }
+    ],
+    "local_variables": {
+        "resultBitmap": "Bitmap",
+        "canvas": "Canvas",
+        "paint": "Paint",
+        "options": "Options",
+        "height": "int",
+        "width": "int",
+        "inSampleSize": "int",
+        "halfHeight": "int",
+        "halfWidth": "int",
+        "scale": "float",
+        "w": "int",
+        "h": "int",
+        "exifInterface": "ExifInterface",
+        "orientation": "int",
+        "matrix": "Matrix",
+        "hash": "String",
+        "color": "int",
+        "steps": "int",
+        "finalPalette": "Color[]",
+        "finalInt": "int",
+        "i": "int",
+        "red": "Color",
+        "yellow": "Color",
+        "blue": "Color",
+        "palette1": "Color[]",
+        "palette2": "Color[]",
+        "palette3": "Color[]",
+        "resultPalette": "Color[]",
+        "palette": "Color[]",
+        "step": "float[]",
+        "r": "int",
+        "g": "int",
+        "b": "int",
+        "other": "Color",
+        "md5": "MessageDigest",
+        "hashBytes": "byte[]",
+        "hexString": "StringBuilder",
+        "roundedBitmap": "RoundedBitmapDrawable",
+        "bitmapDrawable": "BitmapDrawable",
+        "bitmap": "Bitmap",
+        "avatarRadius": "float",
+        "output": "Bitmap",
+        "croppedBitmap": "Bitmap",
+        "statusSize": "int",
+        "status": "Status",
+        "statusDrawable": "StatusDrawable",
+        "rect": "Rect",
+        "rectF": "RectF",
+        "bitmapResult": "Bitmap"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "try_statement",
+        "while_statement",
+        "break_statement",
+        "for_statement",
+        "enhanced_for_statement"
+    ]
+}

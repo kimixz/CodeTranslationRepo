@@ -1,0 +1,187 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "try_statement",
+        "throw_statement"
+    ],
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 1444,
+            "end_position": 1745,
+            "body_start": 1516,
+            "body_end": 1745
+        },
+        {
+            "name": "newInstance",
+            "return_type": "FileFragment",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 1843,
+            "end_position": 2118,
+            "body_start": 1895,
+            "body_end": 2118
+        },
+        {
+            "name": "getFile",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 2228,
+            "end_position": 2280,
+            "body_start": 2252,
+            "body_end": 2280
+        },
+        {
+            "name": "setFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 2287,
+            "end_position": 2356,
+            "body_start": 2323,
+            "body_end": 2356
+        },
+        {
+            "name": "onAttach",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                }
+            ],
+            "start_position": 2400,
+            "end_position": 2809,
+            "body_start": 2454,
+            "body_end": 2809
+        },
+        {
+            "name": "onDetach",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2853,
+            "end_position": 2957,
+            "body_start": 2890,
+            "body_end": 2957
+        },
+        {
+            "name": "showDetails",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 3400,
+            "end_position": 3430
+        },
+        {
+            "name": "showDetails",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "int",
+                    "name": "activeTab"
+                }
+            ],
+            "start_position": 3648,
+            "end_position": 3693
+        },
+        {
+            "name": "onBrowsedDownTo",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 4074,
+            "end_position": 4110
+        },
+        {
+            "name": "onTransferStateChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "boolean",
+                    "name": "downloading"
+                },
+                {
+                    "type": "boolean",
+                    "name": "uploading"
+                }
+            ],
+            "start_position": 5028,
+            "end_position": 5109
+        },
+        {
+            "name": "showSortListGroup",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "show"
+                }
+            ],
+            "start_position": 5119,
+            "end_position": 5156
+        }
+    ],
+    "method_calls": {
+        "super": [
+            "onCreate",
+            "onAttach",
+            "onDetach"
+        ],
+        "unknown": [
+            "getArguments",
+            "setFile"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "bundle": [
+            "putParcelable"
+        ],
+        "fileFragment": [
+            "setArguments"
+        ],
+        "activity": [
+            "toString"
+        ],
+        "ContainerActivity.class": [
+            "getSimpleName"
+        ]
+    },
+    "local_variables": {
+        "bundle": "Bundle",
+        "fileFragment": "FileFragment"
+    }
+}

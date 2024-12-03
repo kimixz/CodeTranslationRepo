@@ -1,0 +1,32 @@
+[
+    {
+        "method_name": "advancedPermissions",
+        "method_code": "void advancedPermissions(OCShare share);",
+        "prompt": "\n        Please translate the following Java (Android) method titled advancedPermissions from FileDetailsSharingMenuBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: advancedPermissions\n\n        Method Code: void advancedPermissions(OCShare share);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc advancedPermissions(share: OCShare) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "sendNewEmail",
+        "method_code": "void sendNewEmail(OCShare share);",
+        "prompt": "\n        Please translate the following Java (Android) method titled sendNewEmail from FileDetailsSharingMenuBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: sendNewEmail\n\n        Method Code: void sendNewEmail(OCShare share);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc sendNewEmail(share: OCShare) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "unShare",
+        "method_code": "void unShare(OCShare share);",
+        "prompt": "\n        Please translate the following Java (Android) method titled unShare from FileDetailsSharingMenuBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: unShare\n\n        Method Code: void unShare(OCShare share);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc unShare(share: OCShare) {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "sendLink",
+        "method_code": "void sendLink(OCShare share);",
+        "prompt": "\n        Please translate the following Java (Android) method titled sendLink from FileDetailsSharingMenuBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: sendLink\n\n        Method Code: void sendLink(OCShare share);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc sendLink(share: OCShare) {\n    // Implementation here\n}\n```"
+    },
+    {
+        "method_name": "addAnotherLink",
+        "method_code": "void addAnotherLink(OCShare share);",
+        "prompt": "\n        Please translate the following Java (Android) method titled addAnotherLink from FileDetailsSharingMenuBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: addAnotherLink\n\n        Method Code: void addAnotherLink(OCShare share);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc addAnotherLink(share: OCShare) {\n    // Method implementation goes here\n}\n```"
+    }
+]

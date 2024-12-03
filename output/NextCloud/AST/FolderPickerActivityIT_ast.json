@@ -1,0 +1,126 @@
+{
+    "methods": [
+        {
+            "name": "getActivityFile",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 919,
+            "end_position": 1334,
+            "body_start": 959,
+            "body_end": 1334
+        },
+        {
+            "name": "getParentFolder_isNotRootFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1340,
+            "end_position": 1859,
+            "body_start": 1396,
+            "body_end": 1859
+        },
+        {
+            "name": "getParentFolder_isRootFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1865,
+            "end_position": 2366,
+            "body_start": 1918,
+            "body_end": 2366
+        },
+        {
+            "name": "nullFile",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2372,
+            "end_position": 2782,
+            "body_start": 2405,
+            "body_end": 2782
+        },
+        {
+            "name": "getParentFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2788,
+            "end_position": 3199,
+            "body_start": 2828,
+            "body_end": 3199
+        },
+        {
+            "name": "open",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3205,
+            "end_position": 3580,
+            "body_start": 3254,
+            "body_end": 3580
+        },
+        {
+            "name": "testMoveOrCopy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3586,
+            "end_position": 3837,
+            "body_start": 3645,
+            "body_end": 3837
+        },
+        {
+            "name": "testChooseLocationAction",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 3843,
+            "end_position": 4202,
+            "body_start": 3912,
+            "body_end": 4202
+        }
+    ],
+    "local_variables": {
+        "targetActivity": "FolderPickerActivity",
+        "origin": "OCFile",
+        "target": "OCFile",
+        "rootFolder": "OCFile",
+        "sut": "FolderPickerActivity",
+        "intent": "Intent"
+    },
+    "method_calls": {
+        "activityRule": [
+            "getActivity",
+            "launchActivity"
+        ],
+        "origin": [
+            "setRemotePath",
+            "setFileId",
+            "setStoragePath",
+            "setFolder"
+        ],
+        "targetActivity": [
+            "setFile",
+            "getFile",
+            "getCurrentFolder",
+            "getStorageManager"
+        ],
+        "Assert": [
+            "assertEquals"
+        ],
+        "targetActivity.getStorageManager()": [
+            "getFileByPath"
+        ],
+        "sut": [
+            "setFile",
+            "runOnUiThread",
+            "findViewById"
+        ],
+        "sut.findViewById(R.id.folder_picker_btn_copy)": [
+            "requestFocus"
+        ],
+        "unknown": [
+            "waitForIdleSync",
+            "screenshot"
+        ],
+        "intent": [
+            "putExtra"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement"
+    ]
+}

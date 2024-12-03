@@ -1,0 +1,1532 @@
+{
+    "method_calls": {
+        "ReceiveExternalFilesActivity.class": [
+            "getSimpleName"
+        ],
+        "Charset": [
+            "forName"
+        ],
+        "savedInstanceState": [
+            "getString"
+        ],
+        "mParents": [
+            "addAll",
+            "push",
+            "size",
+            "pop",
+            "peek",
+            "empty",
+            "add",
+            "clear"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "parentPath": [
+            "split"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "unknown": [
+            "getSystemService",
+            "getLayoutInflater",
+            "setContentView",
+            "prepareStreamsToUpload",
+            "getSupportFragmentManager",
+            "somethingToUpload",
+            "showErrorDialog",
+            "setAccount",
+            "initTargetFolder",
+            "populateDirectoryList",
+            "getString",
+            "browseToFolderIfItExists",
+            "generatePath",
+            "getStorageManager",
+            "startSyncFolderOperation",
+            "browseToRoot",
+            "getUser",
+            "getCapabilities",
+            "requireContext",
+            "startActivityForResult",
+            "requireActivity",
+            "getArguments",
+            "renameSafeFilename",
+            "isIntentStartWithUrl",
+            "internetShortcutUrlText",
+            "internetShortcutWeblocText",
+            "internetShortcutDesktopText",
+            "isIntentFromGoogleMap",
+            "setFilename",
+            "setupSpinner",
+            "createFilenameDialog",
+            "saveSelection",
+            "createTempFile",
+            "getActivity",
+            "hideSpinnerDropDown",
+            "uploadFiles",
+            "finish",
+            "getSupportActionBar",
+            "isHaveMultipleAccount",
+            "getAccount",
+            "setupEmptyList",
+            "setupToolbar",
+            "setupActionBarSubtitle",
+            "setMessageForEmptyList",
+            "sortFileList",
+            "setupReceiveExternalFilesAdapter",
+            "openSortingOrderDialogFragment",
+            "getCurrentDir",
+            "getApplicationContext",
+            "getIntent",
+            "saveTextsFromIntent",
+            "onCreateFolderOperationFinish",
+            "getResources",
+            "getMenuInflater",
+            "setupSearchView",
+            "onBackPressed",
+            "showAccountChooserDialog",
+            "getCurrentFolder",
+            "requestCredentialsUpdate",
+            "showUntrustedCertDialog",
+            "dismissLoadingDialog"
+        ],
+        "super": [
+            "onCreate",
+            "setAccount",
+            "onStart",
+            "onSaveInstanceState",
+            "onDestroy",
+            "onAttach",
+            "onPause",
+            "onBackPressed",
+            "onActivityResult",
+            "onRemoteOperationFinish",
+            "onOptionsItemSelected"
+        ],
+        "ReceiveExternalFilesBinding": [
+            "inflate"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "syncIntentFilter": [
+            "addAction"
+        ],
+        "localBroadcastManager": [
+            "registerReceiver",
+            "unregisterReceiver"
+        ],
+        "fm": [
+            "findFragmentByTag",
+            "beginTransaction"
+        ],
+        "fm.beginTransaction()\n                .add(taskRetainerFragment, TaskRetainerFragment.FTAG_TASK_RETAINER_FRAGMENT)": [
+            "commit"
+        ],
+        "fm.beginTransaction()": [
+            "add"
+        ],
+        "mAccountManager": [
+            "getAccountsByType"
+        ],
+        "MainApp": [
+            "getAccountType",
+            "getAuthTokenType"
+        ],
+        "Log_OC": [
+            "i",
+            "d",
+            "e"
+        ],
+        "dialog": [
+            "show",
+            "setArguments",
+            "cancel"
+        ],
+        "user": [
+            "toPlatformAccount"
+        ],
+        "Toast.makeText(this,\n                           String.format(getString(R.string.uploader_wrn_no_account_text),\n                                         getString(R.string.app_name)),\n                           Toast.LENGTH_LONG)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "String": [
+            "format"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "getFolderContent",
+            "fileExists"
+        ],
+        "preferences": [
+            "setLastUploadPath",
+            "setSortOrder",
+            "getUploadUrlFileExtensionUrlSelectedPos",
+            "getUploadMapFileExtensionUrlSelectedPos",
+            "setUploadUrlFileExtensionUrlSelectedPos",
+            "setUploadMapFileExtensionUrlSelectedPos",
+            "getSortOrderByFolder",
+            "getLastUploadPath"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "outState": [
+            "putString",
+            "putParcelable"
+        ],
+        "getUser()": [
+            "isPresent",
+            "orElseThrow",
+            "get"
+        ],
+        "sortButton": [
+            "setText",
+            "setOnClickListener"
+        ],
+        "DisplayUtils": [
+            "getSortOrderStringId",
+            "showSnackMessage"
+        ],
+        "file": [
+            "isFolder",
+            "getFileName",
+            "isEncrypted",
+            "getAbsolutePath",
+            "getParentRemotePath"
+        ],
+        "FileNameValidator.INSTANCE": [
+            "checkFileName"
+        ],
+        "FileOperationsHelper": [
+            "isEndToEndEncryptionSetup"
+        ],
+        "builder": [
+            "setIcon",
+            "setTitle",
+            "setMessage",
+            "setCancelable",
+            "setPositiveButton",
+            "setNeutralButton",
+            "create",
+            "setView"
+        ],
+        "intent": [
+            "putExtra",
+            "hasExtra",
+            "getAction",
+            "getParcelableArrayListExtra",
+            "getType",
+            "getStringExtra"
+        ],
+        "requireActivity()": [
+            "finish"
+        ],
+        "viewThemeUtils.dialog": [
+            "colorMaterialAlertDialogBackground"
+        ],
+        "args": [
+            "putString"
+        ],
+        "getArguments()": [
+            "getString"
+        ],
+        "UploadFileDialogBinding": [
+            "inflate"
+        ],
+        "adapter": [
+            "setDropDownViewResource",
+            "add",
+            "getCount"
+        ],
+        "mText": [
+            "add",
+            "get"
+        ],
+        "mFilenameBase": [
+            "add",
+            "get"
+        ],
+        "mFilenameSuffix": [
+            "add",
+            "get"
+        ],
+        "extraText": [
+            "split",
+            "startsWith"
+        ],
+        "binding.userInput": [
+            "requestFocus"
+        ],
+        "viewThemeUtils.material": [
+            "colorTextInputLayout",
+            "colorMaterialButtonPrimaryFilled",
+            "colorMaterialButtonPrimaryOutlined"
+        ],
+        "binding.labelFileType": [
+            "setVisibility"
+        ],
+        "binding.fileType": [
+            "setVisibility"
+        ],
+        "filenameDialog": [
+            "getWindow"
+        ],
+        "filenameDialog.getWindow()": [
+            "setSoftInputMode"
+        ],
+        "spinner": [
+            "setAdapter",
+            "setSelection",
+            "setOnItemSelectedListener",
+            "getSelectedItemPosition"
+        ],
+        "userInput.getText()": [
+            "toString"
+        ],
+        "userInput": [
+            "getText"
+        ],
+        "filename": [
+            "endsWith",
+            "lastIndexOf",
+            "length"
+        ],
+        "getActivity()": [
+            "finish",
+            "getCacheDir"
+        ],
+        "((ReceiveExternalFilesActivity) getActivity())": [
+            "uploadFile"
+        ],
+        "Spinner.class": [
+            "getDeclaredMethod"
+        ],
+        "method": [
+            "setAccessible",
+            "invoke"
+        ],
+        "inputText": [
+            "setText",
+            "setSelection"
+        ],
+        "Math": [
+            "min",
+            "max"
+        ],
+        "texts[0]": [
+            "length"
+        ],
+        "subjectText": [
+            "equals"
+        ],
+        "texts[2]": [
+            "startsWith"
+        ],
+        "safeFilename": [
+            "replaceAll",
+            "getBytes"
+        ],
+        "fw": [
+            "write",
+            "close"
+        ],
+        "v": [
+            "getId"
+        ],
+        "stringBuilder.append(p)": [
+            "append"
+        ],
+        "stringBuilder": [
+            "append",
+            "toString"
+        ],
+        "DialogInputUploadFilename": [
+            "newInstance"
+        ],
+        "viewThemeUtils.files": [
+            "themeActionBar"
+        ],
+        "actionBar": [
+            "setSubtitle",
+            "setDisplayHomeAsUpEnabled",
+            "setHomeButtonEnabled"
+        ],
+        "binding.toolbarLayout.sortListButtonGroup": [
+            "setVisibility"
+        ],
+        "binding.toolbarLayout.switchGridViewButton": [
+            "setVisibility"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "files": [
+            "isEmpty"
+        ],
+        "mEmptyListContainer": [
+            "setVisibility"
+        ],
+        "binding.list": [
+            "setVisibility",
+            "setLayoutManager",
+            "setAdapter"
+        ],
+        "btnChooseFolder": [
+            "setOnClickListener",
+            "setEnabled"
+        ],
+        "mFile": [
+            "canWrite",
+            "getRemotePath",
+            "isFolder"
+        ],
+        "viewThemeUtils.platform": [
+            "themeStatusBar",
+            "tintPrimaryDrawable"
+        ],
+        "binding.uploaderCancel": [
+            "setOnClickListener"
+        ],
+        "new Handler(Looper.getMainLooper())": [
+            "post"
+        ],
+        "Looper": [
+            "getMainLooper"
+        ],
+        "mEmptyListHeadline": [
+            "setText"
+        ],
+        "mEmptyListMessage": [
+            "setText",
+            "setVisibility"
+        ],
+        "mEmptyListIcon": [
+            "setImageDrawable",
+            "setVisibility"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "syncFolderOp": [
+            "execute"
+        ],
+        "sortOrder": [
+            "sortCloudFiles"
+        ],
+        "Intent.ACTION_SEND": [
+            "equals"
+        ],
+        "mStreamsToUpload": [
+            "add",
+            "isEmpty",
+            "get",
+            "size"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "Intent.ACTION_SEND_MULTIPLE": [
+            "equals"
+        ],
+        "MimeType.TEXT_PLAIN": [
+            "equals"
+        ],
+        "DateFormat.format(\"yyyyMMdd_kkmmss\", Calendar.getInstance())": [
+            "toString"
+        ],
+        "DateFormat": [
+            "format"
+        ],
+        "Calendar": [
+            "getInstance"
+        ],
+        "FileUploadHelper.Companion.instance()": [
+            "uploadNewFiles"
+        ],
+        "FileUploadHelper.Companion": [
+            "instance"
+        ],
+        "uploader": [
+            "uploadUris"
+        ],
+        "result": [
+            "isSuccess"
+        ],
+        "operation.getRemotePath()": [
+            "substring",
+            "length"
+        ],
+        "operation": [
+            "getRemotePath"
+        ],
+        "remotePath": [
+            "substring",
+            "lastIndexOf"
+        ],
+        "ErrorMessageAdapter": [
+            "getErrorCauseMessage"
+        ],
+        "OCFile.ROOT_PATH": [
+            "equals"
+        ],
+        "lastPath": [
+            "split"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "menu.findItem(R.id.action_switch_account)": [
+            "setVisible"
+        ],
+        "menu": [
+            "findItem"
+        ],
+        "menu.findItem(R.id.action_create_dir)": [
+            "setShowAsAction"
+        ],
+        "newFolderMenuItem": [
+            "setEnabled"
+        ],
+        "MenuItemCompat": [
+            "getActionView"
+        ],
+        "searchView": [
+            "setOnQueryTextListener"
+        ],
+        "receiveExternalFilesAdapter": [
+            "filter"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeToolbarSearchView"
+        ],
+        "item": [
+            "getItemId"
+        ],
+        "CreateFolderDialogFragment": [
+            "newInstance"
+        ],
+        "DataHolderUtil.getInstance()": [
+            "retrieve",
+            "delete"
+        ],
+        "DataHolderUtil": [
+            "getInstance"
+        ],
+        "accountName": [
+            "equals"
+        ],
+        "FileSyncAdapter.EVENT_FULL_SYNC_START": [
+            "equals"
+        ],
+        "getCurrentFolder()": [
+            "getRemotePath",
+            "getFileName"
+        ],
+        "currentDir.getRemotePath()": [
+            "equals"
+        ],
+        "currentDir": [
+            "getRemotePath"
+        ],
+        "FileSyncAdapter.EVENT_FULL_SYNC_END": [
+            "equals"
+        ],
+        "RefreshFolderOperation.EVENT_SINGLE_FOLDER_SHARES_SYNCED": [
+            "equals"
+        ],
+        "RefreshFolderOperation.EVENT_SINGLE_FOLDER_CONTENTS_SYNCED": [
+            "equals"
+        ],
+        "syncResult": [
+            "isSuccess",
+            "getCode",
+            "isException",
+            "getException"
+        ],
+        "ConfirmationDialogFragment": [
+            "newInstance"
+        ],
+        "errorDialog": [
+            "setCancelable",
+            "setOnConfirmationListener",
+            "show"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 7180,
+            "end_position": 9010,
+            "body_start": 7245,
+            "body_end": 9010
+        },
+        {
+            "name": "setAccount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Account",
+                    "name": "account"
+                },
+                {
+                    "type": "boolean",
+                    "name": "savedAccount"
+                }
+            ],
+            "start_position": 9016,
+            "end_position": 9726,
+            "body_start": 9095,
+            "body_end": 9726
+        },
+        {
+            "name": "showAccountChooserDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9732,
+            "end_position": 9905,
+            "body_start": 9772,
+            "body_end": 9905
+        },
+        {
+            "name": "getActivity",
+            "return_type": "Activity",
+            "parameters": [],
+            "start_position": 9911,
+            "end_position": 9970,
+            "body_start": 9942,
+            "body_end": 9970
+        },
+        {
+            "name": "onAccountChosen",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 9976,
+            "end_position": 10159,
+            "body_start": 10038,
+            "body_end": 10159
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10165,
+            "end_position": 10673,
+            "body_start": 10204,
+            "body_end": 10673
+        },
+        {
+            "name": "browseToFolderIfItExists",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10679,
+            "end_position": 11094,
+            "body_start": 10719,
+            "body_end": 11094
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 11100,
+            "end_position": 11598,
+            "body_start": 11175,
+            "body_end": 11598
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11604,
+            "end_position": 11813,
+            "body_start": 11645,
+            "body_end": 11813
+        },
+        {
+            "name": "onSortingOrderChosen",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileSortOrder",
+                    "name": "newSortOrder"
+                }
+            ],
+            "start_position": 11819,
+            "end_position": 12066,
+            "body_start": 11894,
+            "body_end": 12066
+        },
+        {
+            "name": "selectFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 12072,
+            "end_position": 12875,
+            "body_start": 12122,
+            "body_end": 12875
+        },
+        {
+            "name": "onCreateDialog",
+            "return_type": "Dialog",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 13129,
+            "end_position": 14613,
+            "body_start": 13220,
+            "body_end": 14613
+        },
+        {
+            "name": "newInstance",
+            "return_type": "DialogInputUploadFilename",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "subjectText"
+                },
+                {
+                    "type": "String",
+                    "name": "extraText"
+                }
+            ],
+            "start_position": 15376,
+            "end_position": 15777,
+            "body_start": 15466,
+            "body_end": 15777
+        },
+        {
+            "name": "onAttach",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 15787,
+            "end_position": 15900,
+            "body_start": 15852,
+            "body_end": 15900
+        },
+        {
+            "name": "onCreateDialog",
+            "return_type": "Dialog",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 15910,
+            "end_position": 20294,
+            "body_start": 16001,
+            "body_end": 20294
+        },
+        {
+            "name": "setupSpinner",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ArrayAdapter<String>",
+                    "name": "adapter"
+                },
+                {
+                    "type": "int",
+                    "name": "selectPos"
+                },
+                {
+                    "type": "EditText",
+                    "name": "userInput"
+                },
+                {
+                    "type": "Spinner",
+                    "name": "spinner"
+                }
+            ],
+            "start_position": 20304,
+            "end_position": 21151,
+            "body_start": 20418,
+            "body_end": 21151
+        },
+        {
+            "name": "onItemSelected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AdapterView",
+                    "name": "parent"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                },
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 20618,
+            "end_position": 20972,
+            "body_start": 20725,
+            "body_end": 20972
+        },
+        {
+            "name": "onNothingSelected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AdapterView<?>",
+                    "name": "parent"
+                }
+            ],
+            "start_position": 20990,
+            "end_position": 21125,
+            "body_start": 21069,
+            "body_end": 21125
+        },
+        {
+            "name": "createFilenameDialog",
+            "return_type": "Dialog",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "EditText",
+                    "name": "userInput"
+                },
+                {
+                    "type": "Spinner",
+                    "name": "spinner"
+                }
+            ],
+            "start_position": 21161,
+            "end_position": 22379,
+            "body_start": 21274,
+            "body_end": 22379
+        },
+        {
+            "name": "onPause",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 22389,
+            "end_position": 22494,
+            "body_start": 22411,
+            "body_end": 22494
+        },
+        {
+            "name": "saveSelection",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "selectPos"
+                }
+            ],
+            "start_position": 22504,
+            "end_position": 23050,
+            "body_start": 22546,
+            "body_end": 23050
+        },
+        {
+            "name": "hideSpinnerDropDown",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Spinner",
+                    "name": "spinner"
+                }
+            ],
+            "start_position": 23060,
+            "end_position": 23420,
+            "body_start": 23110,
+            "body_end": 23420
+        },
+        {
+            "name": "setFilename",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "EditText",
+                    "name": "inputText"
+                },
+                {
+                    "type": "int",
+                    "name": "selectPos"
+                }
+            ],
+            "start_position": 23430,
+            "end_position": 24032,
+            "body_start": 23490,
+            "body_end": 24032
+        },
+        {
+            "name": "isIntentFromGoogleMap",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "subjectText"
+                },
+                {
+                    "type": "String",
+                    "name": "extraText"
+                }
+            ],
+            "start_position": 24042,
+            "end_position": 24463,
+            "body_start": 24118,
+            "body_end": 24463
+        },
+        {
+            "name": "isIntentStartWithUrl",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "extraText"
+                }
+            ],
+            "start_position": 24473,
+            "end_position": 24627,
+            "body_start": 24528,
+            "body_end": 24627
+        },
+        {
+            "name": "renameSafeFilename",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 24637,
+            "end_position": 25666,
+            "body_start": 24706,
+            "body_end": 25666
+        },
+        {
+            "name": "internetShortcutUrlText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 25676,
+            "end_position": 25823,
+            "body_start": 25727,
+            "body_end": 25823
+        },
+        {
+            "name": "internetShortcutWeblocText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                }
+            ],
+            "start_position": 25833,
+            "end_position": 26327,
+            "body_start": 25887,
+            "body_end": 26327
+        },
+        {
+            "name": "internetShortcutDesktopText",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "url"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 26337,
+            "end_position": 26646,
+            "body_start": 26409,
+            "body_end": 26646
+        },
+        {
+            "name": "createTempFile",
+            "return_type": "File",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "text"
+                }
+            ],
+            "start_position": 26656,
+            "end_position": 27355,
+            "body_start": 26715,
+            "body_end": 27355
+        },
+        {
+            "name": "onBackPressed",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 27367,
+            "end_position": 27594,
+            "body_start": 27409,
+            "body_end": 27594
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "v"
+                }
+            ],
+            "start_position": 27600,
+            "end_position": 28681,
+            "body_start": 27642,
+            "body_end": 28681
+        },
+        {
+            "name": "onActivityResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                },
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 28687,
+            "end_position": 29684,
+            "body_start": 28779,
+            "body_end": 29684
+        },
+        {
+            "name": "setupActionBarSubtitle",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 29690,
+            "end_position": 30025,
+            "body_start": 29728,
+            "body_end": 30025
+        },
+        {
+            "name": "populateDirectoryList",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 30031,
+            "end_position": 32536,
+            "body_start": 30068,
+            "body_end": 32536
+        },
+        {
+            "name": "setupReceiveExternalFilesAdapter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 32542,
+            "end_position": 33385,
+            "body_start": 32608,
+            "body_end": 33385
+        },
+        {
+            "name": "setupEmptyList",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 33391,
+            "end_position": 33686,
+            "body_start": 33423,
+            "body_end": 33686
+        },
+        {
+            "name": "setMessageForEmptyList",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "headline"
+                },
+                {
+                    "type": "int",
+                    "name": "message"
+                },
+                {
+                    "type": "int",
+                    "name": "icon"
+                }
+            ],
+            "start_position": 33692,
+            "end_position": 34357,
+            "body_start": 33856,
+            "body_end": 34357
+        },
+        {
+            "name": "onSavedCertificate",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 34363,
+            "end_position": 34468,
+            "body_start": 34410,
+            "body_end": 34468
+        },
+        {
+            "name": "startSyncFolderOperation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 34474,
+            "end_position": 35526,
+            "body_start": 34527,
+            "body_end": 35526
+        },
+        {
+            "name": "sortFileList",
+            "return_type": "List<OCFile>",
+            "parameters": [
+                {
+                    "type": "List<OCFile>",
+                    "name": "files"
+                }
+            ],
+            "start_position": 35532,
+            "end_position": 35716,
+            "body_start": 35586,
+            "body_end": 35716
+        },
+        {
+            "name": "generatePath",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "Stack<String>",
+                    "name": "dirs"
+                }
+            ],
+            "start_position": 35722,
+            "end_position": 35929,
+            "body_start": 35770,
+            "body_end": 35929
+        },
+        {
+            "name": "prepareStreamsToUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 35935,
+            "end_position": 36843,
+            "body_start": 35973,
+            "body_end": 36843
+        },
+        {
+            "name": "saveTextsFromIntent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 36849,
+            "end_position": 37436,
+            "body_start": 36897,
+            "body_end": 37436
+        },
+        {
+            "name": "somethingToUpload",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 37442,
+            "end_position": 37628,
+            "body_start": 37478,
+            "body_end": 37628
+        },
+        {
+            "name": "uploadFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tmpName"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 37634,
+            "end_position": 38132,
+            "body_start": 37690,
+            "body_end": 38132
+        },
+        {
+            "name": "uploadFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 38138,
+            "end_position": 39968,
+            "body_start": 38164,
+            "body_end": 39968
+        },
+        {
+            "name": "onRemoteOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 39974,
+            "end_position": 40303,
+            "body_start": 40081,
+            "body_end": 40303
+        },
+        {
+            "name": "onCreateFolderOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "CreateFolderOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 40545,
+            "end_position": 41391,
+            "body_start": 40698,
+            "body_end": 41391
+        },
+        {
+            "name": "initTargetFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 41560,
+            "end_position": 42433,
+            "body_start": 41592,
+            "body_end": 42433
+        },
+        {
+            "name": "isHaveMultipleAccount",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 42439,
+            "end_position": 42577,
+            "body_start": 42479,
+            "body_end": 42577
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 42583,
+            "end_position": 43184,
+            "body_start": 42643,
+            "body_end": 43184
+        },
+        {
+            "name": "setupSearchView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 43190,
+            "end_position": 43943,
+            "body_start": 43230,
+            "body_end": 43943
+        },
+        {
+            "name": "onQueryTextSubmit",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "query"
+                }
+            ],
+            "start_position": 43492,
+            "end_position": 43665,
+            "body_start": 43561,
+            "body_end": 43665
+        },
+        {
+            "name": "onQueryTextChange",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "newText"
+                }
+            ],
+            "start_position": 43679,
+            "end_position": 43856,
+            "body_start": 43750,
+            "body_end": 43856
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 43949,
+            "end_position": 44695,
+            "body_start": 44015,
+            "body_end": 44695
+        },
+        {
+            "name": "getCurrentFolder",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 44701,
+            "end_position": 45048,
+            "body_start": 44735,
+            "body_end": 45048
+        },
+        {
+            "name": "browseToRoot",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 45054,
+            "end_position": 45278,
+            "body_start": 45082,
+            "body_end": 45278
+        },
+        {
+            "name": "onReceive",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "Intent",
+                    "name": "intent"
+                }
+            ],
+            "start_position": 45451,
+            "end_position": 49227,
+            "body_start": 45523,
+            "body_end": 49227
+        },
+        {
+            "name": "onTmpFilesCopied",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ResultCode",
+                    "name": "result"
+                }
+            ],
+            "start_position": 49313,
+            "end_position": 49432,
+            "body_start": 49375,
+            "body_end": 49432
+        },
+        {
+            "name": "showErrorDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "messageResId"
+                },
+                {
+                    "type": "int",
+                    "name": "messageResTitle"
+                }
+            ],
+            "start_position": 49795,
+            "end_position": 51016,
+            "body_start": 49863,
+            "body_end": 51016
+        },
+        {
+            "name": "onConfirmation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "callerTag"
+                }
+            ],
+            "start_position": 50455,
+            "end_position": 50575,
+            "body_start": 50526,
+            "body_end": 50575
+        },
+        {
+            "name": "onNeutral",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "callerTag"
+                }
+            ],
+            "start_position": 50593,
+            "end_position": 50724,
+            "body_start": 50659,
+            "body_end": 50724
+        },
+        {
+            "name": "onCancel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "callerTag"
+                }
+            ],
+            "start_position": 50742,
+            "end_position": 50872,
+            "body_start": 50807,
+            "body_end": 50872
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement",
+        "break_statement",
+        "try_statement",
+        "enhanced_for_statement",
+        "throw_statement",
+        "while_statement"
+    ],
+    "local_variables": {
+        "parentPath": "String",
+        "syncIntentFilter": "IntentFilter",
+        "fm": "FragmentManager",
+        "taskRetainerFragment": "TaskRetainerFragment",
+        "accounts": "Account[]",
+        "dialog": "CreateFolderDialogFragment",
+        "full_path": "String",
+        "fileByPath": "OCFile",
+        "filenameErrorMessage": "String",
+        "builder": "Builder",
+        "intent": "Intent",
+        "args": "Bundle",
+        "subjectText": "String",
+        "extraText": "String",
+        "inflater": "MenuInflater",
+        "binding": "UploadFileDialogBinding",
+        "adapter": "ArrayAdapter<String>",
+        "selectPos": "int",
+        "filename": "String",
+        "str": "String",
+        "texts": "String",
+        "filenameDialog": "Dialog",
+        "spinner": "Spinner",
+        "suffix": "String",
+        "file": "OCFile",
+        "tmpName": "String",
+        "method": "Method",
+        "selectionStart": "int",
+        "extensionStart": "int",
+        "selectionEnd": "int",
+        "safeFilename": "String",
+        "maxLength": "int",
+        "fw": "FileWriter",
+        "id": "int",
+        "stringBuilder": "StringBuilder",
+        "actionBar": "ActionBar",
+        "current_dir": "String",
+        "notRoot": "boolean",
+        "files": "List<OCFile>",
+        "btnChooseFolder": "MaterialButton",
+        "sortOrder": "FileSortOrder",
+        "currentSyncTime": "long",
+        "syncFolderOp": "RemoteOperation",
+        "uploader": "UriUploader",
+        "resultCode": "UriUploader.UriUploaderResultCode",
+        "messageResTitle": "int",
+        "messageResId": "int",
+        "remotePath": "String",
+        "newFolder": "String",
+        "lastPath": "String",
+        "dir_names": "String[]",
+        "newFolderMenuItem": "MenuItem",
+        "searchMenuItem": "MenuItem",
+        "searchView": "SearchView",
+        "retval": "boolean",
+        "itemId": "int",
+        "root": "OCFile",
+        "event": "String",
+        "accountName": "String",
+        "syncFolderRemotePath": "String",
+        "syncResult": "RemoteOperationResult",
+        "sameAccount": "boolean",
+        "currentFile": "OCFile",
+        "currentDir": "OCFile",
+        "errorDialog": "ConfirmationDialogFragment"
+    }
+}

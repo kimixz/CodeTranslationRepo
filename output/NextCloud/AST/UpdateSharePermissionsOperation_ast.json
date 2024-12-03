@@ -1,0 +1,142 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1720,
+            "end_position": 2902,
+            "body_start": 1793,
+            "body_end": 2902
+        },
+        {
+            "name": "updateData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 2908,
+            "end_position": 3265,
+            "body_start": 2947,
+            "body_end": 3265
+        },
+        {
+            "name": "getPassword",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 3271,
+            "end_position": 3336,
+            "body_start": 3299,
+            "body_end": 3336
+        },
+        {
+            "name": "getPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 3342,
+            "end_position": 3399,
+            "body_start": 3366,
+            "body_end": 3399
+        },
+        {
+            "name": "setPermissions",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "permissions"
+                }
+            ],
+            "start_position": 3405,
+            "end_position": 3496,
+            "body_start": 3449,
+            "body_end": 3496
+        },
+        {
+            "name": "setExpirationDateInMillis",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "expirationDateInMillis"
+                }
+            ],
+            "start_position": 3502,
+            "end_position": 3638,
+            "body_start": 3569,
+            "body_end": 3638
+        },
+        {
+            "name": "setPassword",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "password"
+                }
+            ],
+            "start_position": 3644,
+            "end_position": 3726,
+            "body_start": 3685,
+            "body_end": 3726
+        }
+    ],
+    "local_variables": {
+        "share": "OCShare",
+        "updateOp": "UpdateShareRemoteOperation",
+        "result": "RemoteOperationResult",
+        "getShareOp": "RemoteOperation"
+    },
+    "method_calls": {
+        "getStorageManager()": [
+            "getShareById",
+            "saveShare"
+        ],
+        "unknown": [
+            "getStorageManager",
+            "updateData"
+        ],
+        "share": [
+            "getPath",
+            "getRemoteId",
+            "setPath",
+            "setFolder",
+            "setPasswordProtected"
+        ],
+        "updateOp": [
+            "setPassword",
+            "setPermissions",
+            "setExpirationDate",
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getData"
+        ],
+        "getShareOp": [
+            "execute"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "path": [
+            "endsWith"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ]
+    }
+}

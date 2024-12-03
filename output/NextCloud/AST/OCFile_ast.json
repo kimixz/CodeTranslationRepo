@@ -1,0 +1,1676 @@
+{
+    "method_calls": {
+        "OCFile.class": [
+            "getSimpleName"
+        ],
+        "unknown": [
+            "resetData",
+            "isEncrypted",
+            "isFolder",
+            "setMimeType",
+            "existsOnDevice",
+            "getLegacyExposedFileUri",
+            "getDecryptedFileName",
+            "getDecryptedRemotePath",
+            "getClass",
+            "getFileName",
+            "isDown",
+            "getPermissions",
+            "isGroupFolder",
+            "isSharedWithMe",
+            "isSharedViaLink",
+            "isSharedWithSharee",
+            "getRemoteId"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "path": [
+            "startsWith"
+        ],
+        "source": [
+            "readLong",
+            "readString",
+            "readInt",
+            "readSerializable"
+        ],
+        "FileLockType": [
+            "fromValue"
+        ],
+        "dest": [
+            "writeLong",
+            "writeString",
+            "writeInt",
+            "writeSerializable"
+        ],
+        "lockType": [
+            "getValue"
+        ],
+        "decryptedRemotePath": [
+            "endsWith"
+        ],
+        "remotePath": [
+            "endsWith"
+        ],
+        "MimeType.DIRECTORY": [
+            "equals"
+        ],
+        "MimeType.WEBDAV_FOLDER": [
+            "equals"
+        ],
+        "new File(localPath)": [
+            "exists"
+        ],
+        "builder": [
+            "scheme",
+            "path",
+            "build"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "WebdavUtils": [
+            "encodePath"
+        ],
+        "FileProvider": [
+            "getUriForFile"
+        ],
+        "context": [
+            "getString"
+        ],
+        "storage_path": [
+            "replaceAll"
+        ],
+        "localPath": [
+            "endsWith"
+        ],
+        "f.getName()": [
+            "length"
+        ],
+        "f": [
+            "getName",
+            "lastModified"
+        ],
+        "Log_OC": [
+            "d"
+        ],
+        "name": [
+            "contains"
+        ],
+        "ROOT_PATH": [
+            "equals"
+        ],
+        "new File(this.getRemotePath())": [
+            "getParent"
+        ],
+        "this": [
+            "getRemotePath"
+        ],
+        "parent": [
+            "endsWith"
+        ],
+        "parentPath": [
+            "endsWith"
+        ],
+        "super": [
+            "hashCode"
+        ],
+        "another": [
+            "isFolder"
+        ],
+        "AlphanumComparator": [
+            "compare"
+        ],
+        "o": [
+            "getClass"
+        ],
+        "String": [
+            "format"
+        ],
+        "getFileName()": [
+            "charAt",
+            "endsWith"
+        ],
+        "remoteId": [
+            "length",
+            "substring"
+        ],
+        "Long": [
+            "parseLong"
+        ],
+        "remoteId.substring(0, 8)": [
+            "replaceAll"
+        ],
+        "permissions": [
+            "contains"
+        ],
+        "Objects": [
+            "requireNonNullElse"
+        ],
+        "\"gplay\"": [
+            "equals"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "throw_statement",
+        "return_statement",
+        "try_statement"
+    ],
+    "methods": [
+        {
+            "name": "writeToParcel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "dest"
+                },
+                {
+                    "type": "int",
+                    "name": "flags"
+                }
+            ],
+            "start_position": 7920,
+            "end_position": 9739,
+            "body_start": 7984,
+            "body_end": 9739
+        },
+        {
+            "name": "getLinkedFileIdForLivePhoto",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 9745,
+            "end_position": 9822,
+            "body_start": 9789,
+            "body_end": 9822
+        },
+        {
+            "name": "setLivePhoto",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "livePhoto"
+                }
+            ],
+            "start_position": 9828,
+            "end_position": 9914,
+            "body_start": 9871,
+            "body_end": 9914
+        },
+        {
+            "name": "setDecryptedRemotePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 9920,
+            "end_position": 10011,
+            "body_start": 9968,
+            "body_end": 10011
+        },
+        {
+            "name": "getDecryptedRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 10162,
+            "end_position": 10851,
+            "body_start": 10201,
+            "body_end": 10851
+        },
+        {
+            "name": "getRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 11172,
+            "end_position": 11470,
+            "body_start": 11202,
+            "body_end": 11470
+        },
+        {
+            "name": "fileExists",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11640,
+            "end_position": 11704,
+            "body_start": 11668,
+            "body_end": 11704
+        },
+        {
+            "name": "isFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 11825,
+            "end_position": 11953,
+            "body_start": 11851,
+            "body_end": 11953
+        },
+        {
+            "name": "setFolder",
+            "return_type": "OCFile",
+            "parameters": [],
+            "start_position": 12092,
+            "end_position": 12187,
+            "body_start": 12118,
+            "body_end": 12187
+        },
+        {
+            "name": "isDown",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 12304,
+            "end_position": 12383,
+            "body_start": 12328,
+            "body_end": 12383
+        },
+        {
+            "name": "existsOnDevice",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 12510,
+            "end_position": 12675,
+            "body_start": 12542,
+            "body_end": 12675
+        },
+        {
+            "name": "getStoragePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 12796,
+            "end_position": 12860,
+            "body_start": 12827,
+            "body_end": 12860
+        },
+        {
+            "name": "getStorageUri",
+            "return_type": "Uri",
+            "parameters": [],
+            "start_position": 13032,
+            "end_position": 13399,
+            "body_start": 13059,
+            "body_end": 13399
+        },
+        {
+            "name": "getLegacyExposedFileUri",
+            "return_type": "Uri",
+            "parameters": [],
+            "start_position": 13406,
+            "end_position": 13714,
+            "body_start": 13443,
+            "body_end": 13714
+        },
+        {
+            "name": "getExposedFileUri",
+            "return_type": "Uri",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 13832,
+            "end_position": 14511,
+            "body_start": 13878,
+            "body_end": 14511
+        },
+        {
+            "name": "setStoragePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "storage_path"
+                }
+            ],
+            "start_position": 14634,
+            "end_position": 15016,
+            "body_start": 14682,
+            "body_end": 15016
+        },
+        {
+            "name": "getFileName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 15150,
+            "end_position": 15224,
+            "body_start": 15178,
+            "body_end": 15224
+        },
+        {
+            "name": "getDecryptedFileName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 15358,
+            "end_position": 15523,
+            "body_start": 15395,
+            "body_end": 15523
+        },
+        {
+            "name": "getEncryptedFileName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 15657,
+            "end_position": 15808,
+            "body_start": 15694,
+            "body_end": 15808
+        },
+        {
+            "name": "setFileName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "name"
+                }
+            ],
+            "start_position": 15988,
+            "end_position": 16645,
+            "body_start": 16025,
+            "body_end": 16645
+        },
+        {
+            "name": "resetData",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 16717,
+            "end_position": 17922,
+            "body_start": 16742,
+            "body_end": 17922
+        },
+        {
+            "name": "getParentRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 18016,
+            "end_position": 18316,
+            "body_start": 18052,
+            "body_end": 18316
+        },
+        {
+            "name": "describeContents",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 18322,
+            "end_position": 18406,
+            "body_start": 18366,
+            "body_end": 18406
+        },
+        {
+            "name": "compareTo",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "another"
+                }
+            ],
+            "start_position": 18412,
+            "end_position": 18776,
+            "body_start": 18472,
+            "body_end": 18776
+        },
+        {
+            "name": "equals",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "o"
+                }
+            ],
+            "start_position": 18782,
+            "end_position": 19095,
+            "body_start": 18828,
+            "body_end": 19095
+        },
+        {
+            "name": "hashCode",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 19101,
+            "end_position": 19237,
+            "body_start": 19137,
+            "body_end": 19237
+        },
+        {
+            "name": "toString",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 19243,
+            "end_position": 19843,
+            "body_start": 19295,
+            "body_end": 19843
+        },
+        {
+            "name": "setEtag",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "etag"
+                }
+            ],
+            "start_position": 19849,
+            "end_position": 19935,
+            "body_start": 19882,
+            "body_end": 19935
+        },
+        {
+            "name": "setEtagOnServer",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "etag"
+                }
+            ],
+            "start_position": 19941,
+            "end_position": 20043,
+            "body_start": 19982,
+            "body_end": 20043
+        },
+        {
+            "name": "getLocalModificationTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 20049,
+            "end_position": 20252,
+            "body_start": 20093,
+            "body_end": 20252
+        },
+        {
+            "name": "isHidden",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 20318,
+            "end_position": 20435,
+            "body_start": 20344,
+            "body_end": 20435
+        },
+        {
+            "name": "getLocalId",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 20511,
+            "end_position": 20826,
+            "body_start": 20567,
+            "body_end": 20826
+        },
+        {
+            "name": "isInConflict",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 20832,
+            "end_position": 20920,
+            "body_start": 20862,
+            "body_end": 20920
+        },
+        {
+            "name": "isSharedWithMe",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 20926,
+            "end_position": 21099,
+            "body_start": 20958,
+            "body_end": 21099
+        },
+        {
+            "name": "canReshare",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 21105,
+            "end_position": 21271,
+            "body_start": 21133,
+            "body_end": 21271
+        },
+        {
+            "name": "canWrite",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 21277,
+            "end_position": 21439,
+            "body_start": 21303,
+            "body_end": 21439
+        },
+        {
+            "name": "isGroupFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 21445,
+            "end_position": 21614,
+            "body_start": 21476,
+            "body_end": 21614
+        },
+        {
+            "name": "getFileOverlayIconId",
+            "return_type": "Integer",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "isAutoUploadFolder"
+                }
+            ],
+            "start_position": 21620,
+            "end_position": 22488,
+            "body_start": 21684,
+            "body_end": 22488
+        },
+        {
+            "name": "createFromParcel",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "Parcel",
+                    "name": "source"
+                }
+            ],
+            "start_position": 22595,
+            "end_position": 22709,
+            "body_start": 22659,
+            "body_end": 22709
+        },
+        {
+            "name": "newArray",
+            "return_type": "OCFile[]",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "size"
+                }
+            ],
+            "start_position": 22719,
+            "end_position": 22820,
+            "body_start": 22772,
+            "body_end": 22820
+        },
+        {
+            "name": "getFileId",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 22890,
+            "end_position": 22949,
+            "body_start": 22914,
+            "body_end": 22949
+        },
+        {
+            "name": "getParentId",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 22955,
+            "end_position": 23018,
+            "body_start": 22981,
+            "body_end": 23018
+        },
+        {
+            "name": "getFileLength",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 23024,
+            "end_position": 23091,
+            "body_start": 23052,
+            "body_end": 23091
+        },
+        {
+            "name": "getCreationTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 23097,
+            "end_position": 23178,
+            "body_start": 23132,
+            "body_end": 23178
+        },
+        {
+            "name": "getModificationTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 23246,
+            "end_position": 23335,
+            "body_start": 23285,
+            "body_end": 23335
+        },
+        {
+            "name": "getUploadTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 23341,
+            "end_position": 23418,
+            "body_start": 23374,
+            "body_end": 23418
+        },
+        {
+            "name": "getModificationTimestampAtLastSyncForData",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 23424,
+            "end_position": 23547,
+            "body_start": 23480,
+            "body_end": 23547
+        },
+        {
+            "name": "getMimeType",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 23553,
+            "end_position": 23618,
+            "body_start": 23581,
+            "body_end": 23618
+        },
+        {
+            "name": "isNeedsUpdatingWhileSaving",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 23624,
+            "end_position": 23721,
+            "body_start": 23668,
+            "body_end": 23721
+        },
+        {
+            "name": "getLastSyncDateForProperties",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 23727,
+            "end_position": 23824,
+            "body_start": 23770,
+            "body_end": 23824
+        },
+        {
+            "name": "getLastSyncDateForData",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 23830,
+            "end_position": 23915,
+            "body_start": 23867,
+            "body_end": 23915
+        },
+        {
+            "name": "isPreviewAvailable",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 23921,
+            "end_position": 24002,
+            "body_start": 23957,
+            "body_end": 24002
+        },
+        {
+            "name": "getEtag",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 24008,
+            "end_position": 24065,
+            "body_start": 24032,
+            "body_end": 24065
+        },
+        {
+            "name": "getEtagOnServer",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 24071,
+            "end_position": 24144,
+            "body_start": 24103,
+            "body_end": 24144
+        },
+        {
+            "name": "isSharedViaLink",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 24150,
+            "end_position": 24225,
+            "body_start": 24183,
+            "body_end": 24225
+        },
+        {
+            "name": "isShared",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 24231,
+            "end_position": 24342,
+            "body_start": 24257,
+            "body_end": 24342
+        },
+        {
+            "name": "getPermissions",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 24348,
+            "end_position": 24419,
+            "body_start": 24379,
+            "body_end": 24419
+        },
+        {
+            "name": "getRemoteId",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 24425,
+            "end_position": 24490,
+            "body_start": 24453,
+            "body_end": 24490
+        },
+        {
+            "name": "isUpdateThumbnailNeeded",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 24496,
+            "end_position": 24587,
+            "body_start": 24537,
+            "body_end": 24587
+        },
+        {
+            "name": "isDownloading",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 24593,
+            "end_position": 24664,
+            "body_start": 24624,
+            "body_end": 24664
+        },
+        {
+            "name": "isRootDirectory",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 24670,
+            "end_position": 24764,
+            "body_start": 24703,
+            "body_end": 24764
+        },
+        {
+            "name": "isOfflineOperation",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 24770,
+            "end_position": 24851,
+            "body_start": 24806,
+            "body_end": 24851
+        },
+        {
+            "name": "getEtagInConflict",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 24857,
+            "end_position": 24934,
+            "body_start": 24891,
+            "body_end": 24934
+        },
+        {
+            "name": "isSharedWithSharee",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 24940,
+            "end_position": 25021,
+            "body_start": 24976,
+            "body_end": 25021
+        },
+        {
+            "name": "isFavorite",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 25027,
+            "end_position": 25092,
+            "body_start": 25055,
+            "body_end": 25092
+        },
+        {
+            "name": "shouldHide",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 25098,
+            "end_position": 25161,
+            "body_start": 25126,
+            "body_end": 25161
+        },
+        {
+            "name": "isEncrypted",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 25167,
+            "end_position": 25234,
+            "body_start": 25196,
+            "body_end": 25234
+        },
+        {
+            "name": "getMountType",
+            "return_type": "WebdavEntry.MountType",
+            "parameters": [],
+            "start_position": 25240,
+            "end_position": 25322,
+            "body_start": 25284,
+            "body_end": 25322
+        },
+        {
+            "name": "getUnreadCommentsCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 25328,
+            "end_position": 25412,
+            "body_start": 25364,
+            "body_end": 25412
+        },
+        {
+            "name": "getOwnerId",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 25418,
+            "end_position": 25481,
+            "body_start": 25445,
+            "body_end": 25481
+        },
+        {
+            "name": "getOwnerDisplayName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 25487,
+            "end_position": 25568,
+            "body_start": 25523,
+            "body_end": 25568
+        },
+        {
+            "name": "getNote",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 25574,
+            "end_position": 25631,
+            "body_start": 25598,
+            "body_end": 25631
+        },
+        {
+            "name": "getSharees",
+            "return_type": "List<ShareeUser>",
+            "parameters": [],
+            "start_position": 25637,
+            "end_position": 25710,
+            "body_start": 25674,
+            "body_end": 25710
+        },
+        {
+            "name": "getRichWorkspace",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 25716,
+            "end_position": 25791,
+            "body_start": 25749,
+            "body_end": 25791
+        },
+        {
+            "name": "setFileId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "fileId"
+                }
+            ],
+            "start_position": 25797,
+            "end_position": 25869,
+            "body_start": 25832,
+            "body_end": 25869
+        },
+        {
+            "name": "setLocalId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "localId"
+                }
+            ],
+            "start_position": 25875,
+            "end_position": 25951,
+            "body_start": 25912,
+            "body_end": 25951
+        },
+        {
+            "name": "setParentId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "parentId"
+                }
+            ],
+            "start_position": 25957,
+            "end_position": 26037,
+            "body_start": 25996,
+            "body_end": 26037
+        },
+        {
+            "name": "setFileLength",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "fileLength"
+                }
+            ],
+            "start_position": 26043,
+            "end_position": 26131,
+            "body_start": 26086,
+            "body_end": 26131
+        },
+        {
+            "name": "setCreationTimestamp",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "creationTimestamp"
+                }
+            ],
+            "start_position": 26137,
+            "end_position": 26253,
+            "body_start": 26194,
+            "body_end": 26253
+        },
+        {
+            "name": "setModificationTimestamp",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "modificationTimestamp"
+                }
+            ],
+            "start_position": 26259,
+            "end_position": 26391,
+            "body_start": 26324,
+            "body_end": 26391
+        },
+        {
+            "name": "setModificationTimestampAtLastSyncForData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "modificationTimestampAtLastSyncForData"
+                }
+            ],
+            "start_position": 26397,
+            "end_position": 26597,
+            "body_start": 26496,
+            "body_end": 26597
+        },
+        {
+            "name": "setRemotePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remotePath"
+                }
+            ],
+            "start_position": 26603,
+            "end_position": 26693,
+            "body_start": 26648,
+            "body_end": 26693
+        },
+        {
+            "name": "setMimeType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "mimeType"
+                }
+            ],
+            "start_position": 26699,
+            "end_position": 26781,
+            "body_start": 26740,
+            "body_end": 26781
+        },
+        {
+            "name": "setLastSyncDateForProperties",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "lastSyncDateForProperties"
+                }
+            ],
+            "start_position": 26787,
+            "end_position": 26935,
+            "body_start": 26860,
+            "body_end": 26935
+        },
+        {
+            "name": "setLastSyncDateForData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "lastSyncDateForData"
+                }
+            ],
+            "start_position": 26941,
+            "end_position": 27065,
+            "body_start": 27002,
+            "body_end": 27065
+        },
+        {
+            "name": "setPreviewAvailable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "previewAvailable"
+                }
+            ],
+            "start_position": 27071,
+            "end_position": 27186,
+            "body_start": 27129,
+            "body_end": 27186
+        },
+        {
+            "name": "setSharedViaLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "sharedViaLink"
+                }
+            ],
+            "start_position": 27192,
+            "end_position": 27295,
+            "body_start": 27244,
+            "body_end": 27295
+        },
+        {
+            "name": "setPermissions",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "permissions"
+                }
+            ],
+            "start_position": 27301,
+            "end_position": 27395,
+            "body_start": 27348,
+            "body_end": 27395
+        },
+        {
+            "name": "setRemoteId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "remoteId"
+                }
+            ],
+            "start_position": 27401,
+            "end_position": 27483,
+            "body_start": 27442,
+            "body_end": 27483
+        },
+        {
+            "name": "setUpdateThumbnailNeeded",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "updateThumbnailNeeded"
+                }
+            ],
+            "start_position": 27489,
+            "end_position": 27624,
+            "body_start": 27557,
+            "body_end": 27624
+        },
+        {
+            "name": "setDownloading",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "downloading"
+                }
+            ],
+            "start_position": 27630,
+            "end_position": 27725,
+            "body_start": 27678,
+            "body_end": 27725
+        },
+        {
+            "name": "setEtagInConflict",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "etagInConflict"
+                }
+            ],
+            "start_position": 27731,
+            "end_position": 27837,
+            "body_start": 27784,
+            "body_end": 27837
+        },
+        {
+            "name": "setSharedWithSharee",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "sharedWithSharee"
+                }
+            ],
+            "start_position": 27843,
+            "end_position": 27958,
+            "body_start": 27901,
+            "body_end": 27958
+        },
+        {
+            "name": "setFavorite",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "favorite"
+                }
+            ],
+            "start_position": 27964,
+            "end_position": 28047,
+            "body_start": 28006,
+            "body_end": 28047
+        },
+        {
+            "name": "setHidden",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "hidden"
+                }
+            ],
+            "start_position": 28053,
+            "end_position": 28128,
+            "body_start": 28091,
+            "body_end": 28128
+        },
+        {
+            "name": "setEncrypted",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "encrypted"
+                }
+            ],
+            "start_position": 28134,
+            "end_position": 28221,
+            "body_start": 28178,
+            "body_end": 28221
+        },
+        {
+            "name": "setMountType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "WebdavEntry.MountType",
+                    "name": "mountType"
+                }
+            ],
+            "start_position": 28227,
+            "end_position": 28328,
+            "body_start": 28285,
+            "body_end": 28328
+        },
+        {
+            "name": "setUnreadCommentsCount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "unreadCommentsCount"
+                }
+            ],
+            "start_position": 28334,
+            "end_position": 28457,
+            "body_start": 28394,
+            "body_end": 28457
+        },
+        {
+            "name": "setOwnerId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "ownerId"
+                }
+            ],
+            "start_position": 28463,
+            "end_position": 28541,
+            "body_start": 28502,
+            "body_end": 28541
+        },
+        {
+            "name": "setOwnerDisplayName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "ownerDisplayName"
+                }
+            ],
+            "start_position": 28547,
+            "end_position": 28661,
+            "body_start": 28604,
+            "body_end": 28661
+        },
+        {
+            "name": "setNote",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "note"
+                }
+            ],
+            "start_position": 28667,
+            "end_position": 28733,
+            "body_start": 28700,
+            "body_end": 28733
+        },
+        {
+            "name": "setSharees",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<ShareeUser>",
+                    "name": "sharees"
+                }
+            ],
+            "start_position": 28739,
+            "end_position": 28827,
+            "body_start": 28788,
+            "body_end": 28827
+        },
+        {
+            "name": "setRichWorkspace",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "richWorkspace"
+                }
+            ],
+            "start_position": 28833,
+            "end_position": 28935,
+            "body_start": 28884,
+            "body_end": 28935
+        },
+        {
+            "name": "getFirstShareTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 28941,
+            "end_position": 29021,
+            "body_start": 28978,
+            "body_end": 29021
+        },
+        {
+            "name": "setFirstShareTimestamp",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "firstShareTimestamp"
+                }
+            ],
+            "start_position": 29027,
+            "end_position": 29151,
+            "body_start": 29088,
+            "body_end": 29151
+        },
+        {
+            "name": "isLocked",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 29157,
+            "end_position": 29213,
+            "body_start": 29183,
+            "body_end": 29213
+        },
+        {
+            "name": "setLocked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "locked"
+                }
+            ],
+            "start_position": 29219,
+            "end_position": 29294,
+            "body_start": 29257,
+            "body_end": 29294
+        },
+        {
+            "name": "getLockType",
+            "return_type": "FileLockType",
+            "parameters": [],
+            "start_position": 29300,
+            "end_position": 29380,
+            "body_start": 29348,
+            "body_end": 29380
+        },
+        {
+            "name": "setLockType",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileLockType",
+                    "name": "lockType"
+                }
+            ],
+            "start_position": 29386,
+            "end_position": 29484,
+            "body_start": 29443,
+            "body_end": 29484
+        },
+        {
+            "name": "getLockOwnerId",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 29490,
+            "end_position": 29570,
+            "body_start": 29535,
+            "body_end": 29570
+        },
+        {
+            "name": "setLockOwnerId",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "lockOwnerId"
+                }
+            ],
+            "start_position": 29576,
+            "end_position": 29680,
+            "body_start": 29633,
+            "body_end": 29680
+        },
+        {
+            "name": "getLockOwnerDisplayName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 29686,
+            "end_position": 29784,
+            "body_start": 29740,
+            "body_end": 29784
+        },
+        {
+            "name": "setLockOwnerDisplayName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "lockOwnerDisplayName"
+                }
+            ],
+            "start_position": 29790,
+            "end_position": 29930,
+            "body_start": 29865,
+            "body_end": 29930
+        },
+        {
+            "name": "getLockOwnerEditor",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 29936,
+            "end_position": 30024,
+            "body_start": 29985,
+            "body_end": 30024
+        },
+        {
+            "name": "setLockOwnerEditor",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "lockOwnerEditor"
+                }
+            ],
+            "start_position": 30030,
+            "end_position": 30150,
+            "body_start": 30095,
+            "body_end": 30150
+        },
+        {
+            "name": "getLockTimestamp",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 30156,
+            "end_position": 30224,
+            "body_start": 30187,
+            "body_end": 30224
+        },
+        {
+            "name": "setLockTimestamp",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "lockTimestamp"
+                }
+            ],
+            "start_position": 30230,
+            "end_position": 30330,
+            "body_start": 30279,
+            "body_end": 30330
+        },
+        {
+            "name": "getLockTimeout",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 30336,
+            "end_position": 30400,
+            "body_start": 30365,
+            "body_end": 30400
+        },
+        {
+            "name": "setLockTimeout",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "lockTimeout"
+                }
+            ],
+            "start_position": 30406,
+            "end_position": 30498,
+            "body_start": 30451,
+            "body_end": 30498
+        },
+        {
+            "name": "getLockToken",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 30504,
+            "end_position": 30580,
+            "body_start": 30547,
+            "body_end": 30580
+        },
+        {
+            "name": "setLockToken",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "lockToken"
+                }
+            ],
+            "start_position": 30586,
+            "end_position": 30682,
+            "body_start": 30639,
+            "body_end": 30682
+        },
+        {
+            "name": "setImageDimension",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ImageDimension",
+                    "name": "imageDimension"
+                }
+            ],
+            "start_position": 30688,
+            "end_position": 30812,
+            "body_start": 30759,
+            "body_end": 30812
+        },
+        {
+            "name": "getImageDimension",
+            "return_type": "ImageDimension",
+            "parameters": [],
+            "start_position": 30818,
+            "end_position": 30912,
+            "body_start": 30874,
+            "body_end": 30912
+        },
+        {
+            "name": "setGeoLocation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GeoLocation",
+                    "name": "geolocation"
+                }
+            ],
+            "start_position": 30918,
+            "end_position": 31027,
+            "body_start": 30980,
+            "body_end": 31027
+        },
+        {
+            "name": "getGeoLocation",
+            "return_type": "GeoLocation",
+            "parameters": [],
+            "start_position": 31033,
+            "end_position": 31118,
+            "body_start": 31083,
+            "body_end": 31118
+        },
+        {
+            "name": "getTags",
+            "return_type": "List<String>",
+            "parameters": [],
+            "start_position": 31124,
+            "end_position": 31182,
+            "body_start": 31154,
+            "body_end": 31182
+        },
+        {
+            "name": "setTags",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<String>",
+                    "name": "tags"
+                }
+            ],
+            "start_position": 31188,
+            "end_position": 31260,
+            "body_start": 31227,
+            "body_end": 31260
+        },
+        {
+            "name": "getE2eCounter",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 31266,
+            "end_position": 31328,
+            "body_start": 31294,
+            "body_end": 31328
+        },
+        {
+            "name": "setE2eCounter",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Long",
+                    "name": "e2eCounter"
+                }
+            ],
+            "start_position": 31334,
+            "end_position": 31531,
+            "body_start": 31387,
+            "body_end": 31531
+        },
+        {
+            "name": "isInternalFolderSync",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 31537,
+            "end_position": 31719,
+            "body_start": 31575,
+            "body_end": 31719
+        },
+        {
+            "name": "getInternalFolderSyncTimestamp",
+            "return_type": "Long",
+            "parameters": [],
+            "start_position": 31729,
+            "end_position": 31858,
+            "body_start": 31774,
+            "body_end": 31858
+        },
+        {
+            "name": "setInternalFolderSyncTimestamp",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Long",
+                    "name": "internalFolderSyncTimestamp"
+                }
+            ],
+            "start_position": 31864,
+            "end_position": 32020,
+            "body_start": 31941,
+            "body_end": 32020
+        },
+        {
+            "name": "getInternalFolderSyncResult",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 32026,
+            "end_position": 32118,
+            "body_start": 32070,
+            "body_end": 32118
+        },
+        {
+            "name": "setInternalFolderSyncResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "internalFolderSyncResult"
+                }
+            ],
+            "start_position": 32124,
+            "end_position": 32270,
+            "body_start": 32197,
+            "body_end": 32270
+        },
+        {
+            "name": "isAPKorAAB",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 32280,
+            "end_position": 32503,
+            "body_start": 32308,
+            "body_end": 32503
+        }
+    ],
+    "local_variables": {
+        "builder": "Uri.Builder",
+        "f": "File",
+        "parent": "String",
+        "parentPath": "String",
+        "ocFile": "OCFile",
+        "asString": "String",
+        "permissions": "String"
+    }
+}

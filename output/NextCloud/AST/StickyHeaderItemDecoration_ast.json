@@ -1,0 +1,212 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "return_statement",
+        "for_statement",
+        "break_statement"
+    ],
+    "methods": [
+        {
+            "name": "onDrawOver",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Canvas",
+                    "name": "canvas"
+                },
+                {
+                    "type": "RecyclerView",
+                    "name": "parent"
+                },
+                {
+                    "type": "RecyclerView.State",
+                    "name": "state"
+                }
+            ],
+            "start_position": 776,
+            "end_position": 1766,
+            "body_start": 902,
+            "body_end": 1766
+        },
+        {
+            "name": "drawHeader",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Canvas",
+                    "name": "canvas"
+                },
+                {
+                    "type": "View",
+                    "name": "header"
+                }
+            ],
+            "start_position": 1772,
+            "end_position": 1941,
+            "body_start": 1824,
+            "body_end": 1941
+        },
+        {
+            "name": "moveHeader",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Canvas",
+                    "name": "canvas"
+                },
+                {
+                    "type": "View",
+                    "name": "currentHeader"
+                },
+                {
+                    "type": "View",
+                    "name": "nextHeader"
+                }
+            ],
+            "start_position": 1947,
+            "end_position": 2193,
+            "body_start": 2023,
+            "body_end": 2193
+        },
+        {
+            "name": "getChildInContact",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "RecyclerView",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "contactPoint"
+                }
+            ],
+            "start_position": 2199,
+            "end_position": 2650,
+            "body_start": 2269,
+            "body_end": 2650
+        },
+        {
+            "name": "getHeaderViewForItem",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "itemPosition"
+                },
+                {
+                    "type": "RecyclerView",
+                    "name": "parent"
+                }
+            ],
+            "start_position": 2656,
+            "end_position": 3051,
+            "body_start": 2729,
+            "body_end": 3051
+        },
+        {
+            "name": "fixLayoutSize",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 3057,
+            "end_position": 3860,
+            "body_start": 3113,
+            "body_end": 3860
+        }
+    ],
+    "method_calls": {
+        "super": [
+            "onDrawOver"
+        ],
+        "parent": [
+            "getChildAt",
+            "getChildAdapterPosition",
+            "getChildCount",
+            "getContext",
+            "getWidth",
+            "getHeight",
+            "getPaddingLeft",
+            "getPaddingRight",
+            "getPaddingTop",
+            "getPaddingBottom"
+        ],
+        "unknown": [
+            "getHeaderViewForItem",
+            "fixLayoutSize",
+            "getChildInContact",
+            "moveHeader",
+            "drawHeader"
+        ],
+        "currentHeader": [
+            "getBottom",
+            "getHeight",
+            "draw"
+        ],
+        "adapter": [
+            "isHeader",
+            "getHeaderPositionForItem",
+            "getHeaderLayout",
+            "bindHeaderData"
+        ],
+        "canvas": [
+            "save",
+            "translate",
+            "restore"
+        ],
+        "header": [
+            "draw"
+        ],
+        "nextHeader": [
+            "getTop"
+        ],
+        "currentChild": [
+            "getBottom",
+            "getTop"
+        ],
+        "LayoutInflater.from(parent.getContext())": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "View.MeasureSpec": [
+            "makeMeasureSpec"
+        ],
+        "ViewGroup": [
+            "getChildMeasureSpec"
+        ],
+        "view": [
+            "getLayoutParams",
+            "measure",
+            "layout",
+            "getMeasuredWidth",
+            "getMeasuredHeight"
+        ]
+    },
+    "local_variables": {
+        "topChild": "View",
+        "topChildPosition": "int",
+        "currentHeader": "View",
+        "contactPoint": "int",
+        "childInContact": "View",
+        "i": "int",
+        "currentChild": "View",
+        "headerPosition": "int",
+        "layoutId": "int",
+        "header": "View",
+        "widthSpec": "int",
+        "heightSpec": "int",
+        "childWidthSpec": "int",
+        "childHeightSpec": "int"
+    }
+}

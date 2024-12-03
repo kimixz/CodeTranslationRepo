@@ -1,0 +1,417 @@
+{
+    "method_calls": {
+        "PreviewTextFileFragment.class": [
+            "getSimpleName"
+        ],
+        "args": [
+            "putParcelable",
+            "putBoolean",
+            "putString",
+            "containsKey",
+            "getString",
+            "getBoolean"
+        ],
+        "fragment": [
+            "setArguments"
+        ],
+        "super": [
+            "onCreate",
+            "onSaveInstanceState",
+            "onCreateOptionsMenu",
+            "onOptionsItemSelected",
+            "onStop"
+        ],
+        "unknown": [
+            "setHasOptionsMenu",
+            "getFile",
+            "getArguments",
+            "setFile",
+            "finish",
+            "setText",
+            "requireActivity",
+            "showFileActions",
+            "getChildFragmentManager",
+            "getView",
+            "openFile",
+            "getFragmentManager",
+            "seeDetails",
+            "getContext"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "outState": [
+            "putParcelable"
+        ],
+        "textLoadAsyncTask": [
+            "execute",
+            "cancel"
+        ],
+        "getFile()": [
+            "getStoragePath",
+            "isSharedWithMe",
+            "canReshare"
+        ],
+        "TextLoadAsyncTask.class": [
+            "getName"
+        ],
+        "ReaderFactory": [
+            "createReaderFromFile"
+        ],
+        "scanner": [
+            "hasNextLine",
+            "nextLine",
+            "ioException",
+            "close"
+        ],
+        "bufferedWriter": [
+            "append",
+            "close"
+        ],
+        "Log_OC": [
+            "e"
+        ],
+        "e": [
+            "getMessage"
+        ],
+        "reader": [
+            "close"
+        ],
+        "textViewReference": [
+            "get"
+        ],
+        "stringWriter": [
+            "toString"
+        ],
+        "searchView": [
+            "setOnQueryTextListener",
+            "setQuery",
+            "setMaxWidth",
+            "setIconified",
+            "clearFocus"
+        ],
+        "textView": [
+            "setVisibility"
+        ],
+        "progressViewReference": [
+            "get"
+        ],
+        "progress": [
+            "setVisibility"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "menu": [
+            "findItem"
+        ],
+        "menuItem": [
+            "setVisible"
+        ],
+        "MenuItemCompat": [
+            "getActionView"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeToolbarSearchView"
+        ],
+        "item": [
+            "getItemId"
+        ],
+        "containerActivity": [
+            "getStorageManager",
+            "getFileOperationsHelper",
+            "showDetails"
+        ],
+        "containerActivity.getStorageManager()": [
+            "getFileById"
+        ],
+        "file": [
+            "getFileId",
+            "isDown",
+            "getMimeType",
+            "getRemotePath"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "additionalFilter": [
+            "add"
+        ],
+        "FileActionsBottomSheet.newInstance(file, false, additionalFilter)\n            .setResultListener(fragmentManager, this, this::onFileActionChosen)": [
+            "show"
+        ],
+        "FileActionsBottomSheet.newInstance(file, false, additionalFilter)": [
+            "setResultListener"
+        ],
+        "FileActionsBottomSheet": [
+            "newInstance"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage"
+        ],
+        "containerActivity.getFileOperationsHelper()": [
+            "sendShareFile",
+            "syncFile",
+            "cancelTransference",
+            "openFileWithTextEditor",
+            "openFile"
+        ],
+        "RemoveFilesDialogFragment": [
+            "newInstance"
+        ],
+        "dialog": [
+            "show"
+        ],
+        "unsupportedTypes": [
+            "add",
+            "contains"
+        ],
+        "MimeTypeUtil": [
+            "isText",
+            "getMimeTypeFromPath"
+        ]
+    },
+    "methods": [
+        {
+            "name": "create",
+            "return_type": "PreviewTextFileFragment",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "boolean",
+                    "name": "openSearch"
+                },
+                {
+                    "type": "String",
+                    "name": "searchQuery"
+                }
+            ],
+            "start_position": 2149,
+            "end_position": 2642,
+            "body_start": 2258,
+            "body_end": 2642
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 3111,
+            "end_position": 4384,
+            "body_start": 3173,
+            "body_end": 4384
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 4427,
+            "end_position": 4758,
+            "body_start": 4499,
+            "body_end": 4758
+        },
+        {
+            "name": "loadAndShowTextPreview",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4764,
+            "end_position": 5076,
+            "body_start": 4815,
+            "body_end": 5076
+        },
+        {
+            "name": "onPreExecute",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5677,
+            "end_position": 5774,
+            "body_start": 5725,
+            "body_end": 5774
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "StringWriter",
+            "parameters": [],
+            "start_position": 5784,
+            "end_position": 7550,
+            "body_start": 5858,
+            "body_end": 7550
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "StringWriter",
+                    "name": "stringWriter"
+                }
+            ],
+            "start_position": 7560,
+            "end_position": 8485,
+            "body_start": 7675,
+            "body_end": 8485
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "MenuInflater",
+                    "name": "inflater"
+                }
+            ],
+            "start_position": 8534,
+            "end_position": 9217,
+            "body_start": 8632,
+            "body_end": 9217
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 9223,
+            "end_position": 9933,
+            "body_start": 9298,
+            "body_end": 9933
+        },
+        {
+            "name": "showFileActions",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 9939,
+            "end_position": 10797,
+            "body_start": 9981,
+            "body_end": 10797
+        },
+        {
+            "name": "onFileActionChosen",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "itemId"
+                }
+            ],
+            "start_position": 10803,
+            "end_position": 12047,
+            "body_start": 10853,
+            "body_end": 12047
+        },
+        {
+            "name": "updateFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 12170,
+            "end_position": 12236,
+            "body_start": 12206,
+            "body_end": 12236
+        },
+        {
+            "name": "seeDetails",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12242,
+            "end_position": 12325,
+            "body_start": 12268,
+            "body_end": 12325
+        },
+        {
+            "name": "openFile",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12409,
+            "end_position": 12531,
+            "body_start": 12433,
+            "body_end": 12531
+        },
+        {
+            "name": "canBePreviewed",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 12797,
+            "end_position": 13595,
+            "body_start": 12847,
+            "body_end": 13595
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13602,
+            "end_position": 13797,
+            "body_start": 13637,
+            "body_end": 13797
+        }
+    ],
+    "local_variables": {
+        "args": "Bundle",
+        "fragment": "PreviewTextFileFragment",
+        "file": "OCFile",
+        "location": "String",
+        "scanner": "Scanner",
+        "source": "StringWriter",
+        "bufferedWriter": "BufferedWriter",
+        "reader": "Reader",
+        "exc": "IOException",
+        "textView": "TextView",
+        "progress": "FrameLayout",
+        "menuItem": "MenuItem",
+        "updatedFile": "OCFile",
+        "fileNew": "OCFile",
+        "additionalFilter": "List<Integer>",
+        "fragmentManager": "FragmentManager",
+        "dialog": "RemoveFilesDialogFragment",
+        "unsupportedTypes": "List<String>"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "throw_statement",
+        "try_statement",
+        "while_statement"
+    ]
+}

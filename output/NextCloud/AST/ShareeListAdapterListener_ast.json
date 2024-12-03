@@ -1,0 +1,93 @@
+{
+    "methods": [
+        {
+            "name": "copyLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 460,
+            "end_position": 489
+        },
+        {
+            "name": "showSharingMenuActionSheet",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 495,
+            "end_position": 542
+        },
+        {
+            "name": "copyInternalLink",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 548,
+            "end_position": 572
+        },
+        {
+            "name": "createPublicShareLink",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 578,
+            "end_position": 607
+        },
+        {
+            "name": "createSecureFileDrop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 613,
+            "end_position": 641
+        },
+        {
+            "name": "requestPasswordForShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                },
+                {
+                    "type": "boolean",
+                    "name": "askForPassword"
+                }
+            ],
+            "start_position": 647,
+            "end_position": 715
+        },
+        {
+            "name": "showPermissionsDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 721,
+            "end_position": 763
+        },
+        {
+            "name": "showProfileBottomSheet",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "String",
+                    "name": "shareWith"
+                }
+            ],
+            "start_position": 769,
+            "end_position": 826
+        }
+    ]
+}

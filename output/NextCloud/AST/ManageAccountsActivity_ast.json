@@ -1,0 +1,567 @@
+{
+    "method_calls": {
+        "ManageAccountsActivity.class": [
+            "getSimpleName"
+        ],
+        "super": [
+            "onCreate",
+            "onActivityResult",
+            "onBackPressed",
+            "onOptionsItemSelected",
+            "getStorageManager"
+        ],
+        "unknown": [
+            "setContentView",
+            "findViewById",
+            "setupToolbar",
+            "getSupportActionBar",
+            "toAccountNames",
+            "getUser",
+            "getUserListItems",
+            "observeWorkerState",
+            "performAccountRemoval",
+            "hasAccountListChanged",
+            "hasCurrentAccountChanged",
+            "setResult",
+            "startActivity",
+            "finish",
+            "getUserAccountManager",
+            "onBackPressed",
+            "getApplicationContext",
+            "runOnUiThread",
+            "startActivityForResult",
+            "accountClicked",
+            "openAccountRemovalDialog",
+            "getSupportFragmentManager",
+            "openAccount"
+        ],
+        "actionBar": [
+            "setDisplayHomeAsUpEnabled",
+            "setDisplayShowHomeEnabled"
+        ],
+        "viewThemeUtils.files": [
+            "themeActionBar"
+        ],
+        "accountManager": [
+            "getAllUsers",
+            "getUser",
+            "setCurrentOwnCloudAccount",
+            "resetOwnCloudAccount"
+        ],
+        "currentUser": [
+            "isPresent",
+            "get",
+            "isAnonymous"
+        ],
+        "currentUser.get()": [
+            "getAccountName"
+        ],
+        "MDMConfig.INSTANCE": [
+            "multiAccountSupport"
+        ],
+        "recyclerView": [
+            "setAdapter",
+            "setLayoutManager"
+        ],
+        "data": [
+            "getExtras"
+        ],
+        "bundle": [
+            "containsKey"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "accountManager.getUser(account.name)": [
+            "orElseThrow"
+        ],
+        "accountManager.getAllUsers()": [
+            "size"
+        ],
+        "resultIntent": [
+            "putExtra"
+        ],
+        "intent": [
+            "setFlags",
+            "putExtra"
+        ],
+        "arbitraryDataProvider": [
+            "getBooleanValue",
+            "storeOrUpdateKeyValue"
+        ],
+        "newList": [
+            "add"
+        ],
+        "originalUsers": [
+            "equals"
+        ],
+        "Sets": [
+            "newHashSetWithExpectedSize"
+        ],
+        "users": [
+            "size",
+            "get"
+        ],
+        "accountNames": [
+            "add"
+        ],
+        "user": [
+            "getAccountName",
+            "isAnonymous",
+            "isPresent",
+            "toOwnCloudAccount",
+            "hashCode"
+        ],
+        "getUserAccountManager()": [
+            "getUser"
+        ],
+        "user.getAccountName()": [
+            "equals"
+        ],
+        "userListItems": [
+            "add"
+        ],
+        "item": [
+            "getItemId",
+            "getUser",
+            "setEnabled"
+        ],
+        "firstRunIntent": [
+            "putExtra"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "am": [
+            "addAccount"
+        ],
+        "MainApp": [
+            "getAccountType"
+        ],
+        "future": [
+            "getResult",
+            "isDone"
+        ],
+        "result": [
+            "getString"
+        ],
+        "userListAdapter": [
+            "notifyDataSetChanged",
+            "clear",
+            "addAll",
+            "getItemCount",
+            "getItem"
+        ],
+        "Log_OC": [
+            "d",
+            "e"
+        ],
+        "fileUploadHelper": [
+            "cancel"
+        ],
+        "FileDownloadHelper.Companion.instance()": [
+            "cancelAllDownloadsForAccount"
+        ],
+        "FileDownloadHelper.Companion": [
+            "instance"
+        ],
+        "users.get(0)": [
+            "getAccountName"
+        ],
+        "userListItemArray": [
+            "size"
+        ],
+        "item.getUser().getAccountName()": [
+            "equalsIgnoreCase"
+        ],
+        "item.getUser()": [
+            "getAccountName"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "backgroundJobManager": [
+            "startAccountRemovalJob"
+        ],
+        "u.getAccountName()": [
+            "equalsIgnoreCase"
+        ],
+        "u": [
+            "getAccountName"
+        ],
+        "newAccountName": [
+            "isEmpty"
+        ],
+        "AccountRemovalDialog": [
+            "newInstance"
+        ],
+        "dialog": [
+            "show"
+        ],
+        "oca": [
+            "getDisplayName"
+        ],
+        "view": [
+            "getId"
+        ],
+        "popup.getMenuInflater()": [
+            "inflate"
+        ],
+        "popup": [
+            "getMenuInflater",
+            "getMenu",
+            "setOnMenuItemClickListener",
+            "show"
+        ],
+        "accountManager.getUser()": [
+            "equals"
+        ],
+        "popup.getMenu().findItem(R.id.action_open_account)": [
+            "setVisible"
+        ],
+        "popup.getMenu()": [
+            "findItem"
+        ],
+        "WorkerStateLiveData.Companion.instance()": [
+            "observe"
+        ],
+        "WorkerStateLiveData.Companion": [
+            "instance"
+        ],
+        "((WorkerState.DownloadStarted) state).getUser()": [
+            "getAccountName"
+        ],
+        "((WorkerState.DownloadStarted) state)": [
+            "getUser",
+            "getCurrentDownload"
+        ]
+    },
+    "methods": [
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 4368,
+            "end_position": 6051,
+            "body_start": 4433,
+            "body_end": 6051
+        },
+        {
+            "name": "onActivityResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "int",
+                    "name": "resultCode"
+                },
+                {
+                    "type": "Intent",
+                    "name": "data"
+                }
+            ],
+            "start_position": 6057,
+            "end_position": 6830,
+            "body_start": 6149,
+            "body_end": 6830
+        },
+        {
+            "name": "onBackPressed",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6836,
+            "end_position": 7472,
+            "body_start": 6878,
+            "body_end": 7472
+        },
+        {
+            "name": "hasAccountListChanged",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 7677,
+            "end_position": 8183,
+            "body_start": 7717,
+            "body_end": 8183
+        },
+        {
+            "name": "toAccountNames",
+            "return_type": "Set<String>",
+            "parameters": [
+                {
+                    "type": "Collection<User>",
+                    "name": "users"
+                }
+            ],
+            "start_position": 8189,
+            "end_position": 8470,
+            "body_start": 8255,
+            "body_end": 8470
+        },
+        {
+            "name": "hasCurrentAccountChanged",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8659,
+            "end_position": 8921,
+            "body_start": 8702,
+            "body_end": 8921
+        },
+        {
+            "name": "getUserListItems",
+            "return_type": "List<UserListItem>",
+            "parameters": [],
+            "start_position": 8927,
+            "end_position": 9489,
+            "body_start": 8973,
+            "body_end": 9489
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 9495,
+            "end_position": 9789,
+            "body_start": 9561,
+            "body_end": 9789
+        },
+        {
+            "name": "showFirstRunActivity",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9795,
+            "end_position": 10058,
+            "body_start": 9844,
+            "body_end": 10058
+        },
+        {
+            "name": "startAccountCreation",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10064,
+            "end_position": 11773,
+            "body_start": 10113,
+            "body_end": 11773
+        },
+        {
+            "name": "onAccountRemovedEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AccountRemovedEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 11779,
+            "end_position": 12091,
+            "body_start": 11885,
+            "body_end": 12091
+        },
+        {
+            "name": "run",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AccountManagerFuture<Boolean>",
+                    "name": "future"
+                }
+            ],
+            "start_position": 12097,
+            "end_position": 13774,
+            "body_start": 12165,
+            "body_end": 13774
+        },
+        {
+            "name": "getHandler",
+            "return_type": "Handler",
+            "parameters": [],
+            "start_position": 13780,
+            "end_position": 13839,
+            "body_start": 13808,
+            "body_end": 13839
+        },
+        {
+            "name": "getOperationsServiceBinder",
+            "return_type": "OperationsService.OperationsServiceBinder",
+            "parameters": [],
+            "start_position": 13845,
+            "end_position": 13965,
+            "body_start": 13937,
+            "body_end": 13965
+        },
+        {
+            "name": "getStorageManager",
+            "return_type": "FileDataStorageManager",
+            "parameters": [],
+            "start_position": 13971,
+            "end_position": 14084,
+            "body_start": 14035,
+            "body_end": 14084
+        },
+        {
+            "name": "getFileOperationsHelper",
+            "return_type": "FileOperationsHelper",
+            "parameters": [],
+            "start_position": 14090,
+            "end_position": 14186,
+            "body_start": 14158,
+            "body_end": 14186
+        },
+        {
+            "name": "performAccountRemoval",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 14192,
+            "end_position": 16220,
+            "body_start": 14238,
+            "body_end": 16220
+        },
+        {
+            "name": "openAccountRemovalDialog",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "FragmentManager",
+                    "name": "fragmentManager"
+                }
+            ],
+            "start_position": 16226,
+            "end_position": 16447,
+            "body_start": 16314,
+            "body_end": 16447
+        },
+        {
+            "name": "openAccount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 16453,
+            "end_position": 16818,
+            "body_start": 16489,
+            "body_end": 16818
+        },
+        {
+            "name": "showUser",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "UserInfo",
+                    "name": "userInfo"
+                }
+            ],
+            "start_position": 16824,
+            "end_position": 17277,
+            "body_start": 16898,
+            "body_end": 17277
+        },
+        {
+            "name": "onOptionItemClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                }
+            ],
+            "start_position": 17283,
+            "end_position": 18279,
+            "body_start": 17351,
+            "body_end": 18279
+        },
+        {
+            "name": "observeWorkerState",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 18285,
+            "end_position": 18750,
+            "body_start": 18319,
+            "body_end": 18750
+        },
+        {
+            "name": "onAccountClicked",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 18756,
+            "end_position": 18844,
+            "body_start": 18810,
+            "body_end": 18844
+        }
+    ],
+    "code_constructs": [
+        "expression_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "return_statement",
+        "try_statement",
+        "for_statement",
+        "break_statement"
+    ],
+    "local_variables": {
+        "actionBar": "ActionBar",
+        "users": "List<User>",
+        "currentUser": "User",
+        "bundle": "Bundle",
+        "account": "Account",
+        "user": "Optional<User>",
+        "resultIntent": "Intent",
+        "intent": "Intent",
+        "newList": "List<User>",
+        "pendingForRemoval": "boolean",
+        "actualAccounts": "Set<String>",
+        "accountNames": "Set<String>",
+        "userListItems": "List<UserListItem>",
+        "retval": "boolean",
+        "firstRunIntent": "Intent",
+        "am": "AccountManager",
+        "result": "Bundle",
+        "name": "String",
+        "userListItemArray": "List<UserListItem>",
+        "accountName": "String",
+        "i": "int",
+        "item": "UserListItem",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "newAccountName": "String",
+        "dialog": "AccountRemovalDialog",
+        "oca": "OwnCloudAccount",
+        "popup": "PopupMenu",
+        "itemId": "int"
+    }
+}

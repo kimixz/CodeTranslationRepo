@@ -1,0 +1,131 @@
+{
+    "method_calls": {
+        "PrintAsyncTask.class": [
+            "getSimpleName"
+        ],
+        "richDocumentsWebViewWeakReference.get()": [
+            "runOnUiThread",
+            "showLoadingDialog",
+            "getString"
+        ],
+        "richDocumentsWebViewWeakReference": [
+            "get"
+        ],
+        "super": [
+            "onPreExecute"
+        ],
+        "client": [
+            "executeMethod"
+        ],
+        "file": [
+            "exists",
+            "delete",
+            "getParentFile",
+            "createNewFile",
+            "getAbsolutePath"
+        ],
+        "file.getParentFile()": [
+            "mkdirs",
+            "exists",
+            "getAbsolutePath"
+        ],
+        "Log_OC": [
+            "d",
+            "e"
+        ],
+        "getMethod": [
+            "getResponseBodyAsStream",
+            "getResponseHeader",
+            "releaseConnection"
+        ],
+        "contentLength.getValue()": [
+            "length"
+        ],
+        "contentLength": [
+            "getValue"
+        ],
+        "Long": [
+            "parseLong"
+        ],
+        "bis": [
+            "read"
+        ],
+        "fos": [
+            "write",
+            "close"
+        ],
+        "getMethod.getResponseBodyAsStream()": [
+            "close"
+        ],
+        "richDocumentsWebView": [
+            "dismissLoadingDialog",
+            "getSystemService",
+            "getString"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage"
+        ],
+        "printManager": [
+            "print"
+        ],
+        "new PrintAttributes.Builder()": [
+            "build"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement",
+        "while_statement"
+    ],
+    "methods": [
+        {
+            "name": "onPreExecute",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1683,
+            "end_position": 1999,
+            "body_start": 1727,
+            "body_end": 1999
+        },
+        {
+            "name": "doInBackground",
+            "return_type": "Boolean",
+            "parameters": [],
+            "start_position": 2005,
+            "end_position": 4438,
+            "body_start": 2067,
+            "body_end": 4438
+        },
+        {
+            "name": "onPostExecute",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Boolean",
+                    "name": "result"
+                }
+            ],
+            "start_position": 4444,
+            "end_position": 5191,
+            "body_start": 4503,
+            "body_end": 5191
+        }
+    ],
+    "local_variables": {
+        "client": "HttpClient",
+        "getMethod": "GetMethod",
+        "fos": "FileOutputStream",
+        "status": "int",
+        "bis": "BufferedInputStream",
+        "transferred": "long",
+        "contentLength": "Header",
+        "totalToTransfer": "long",
+        "bytes": "byte[]",
+        "readResult": "int",
+        "richDocumentsWebView": "RichDocumentsEditorWebView",
+        "printManager": "PrintManager",
+        "printAdapter": "PrintDocumentAdapter"
+    }
+}

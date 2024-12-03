@@ -1,0 +1,77 @@
+{
+    "methods": [
+        {
+            "name": "setUp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 728,
+            "end_position": 873,
+            "body_start": 760,
+            "body_end": 873
+        },
+        {
+            "name": "setName_assertCorrectNameUpdated",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 879,
+            "end_position": 1137,
+            "body_start": 936,
+            "body_end": 1137
+        },
+        {
+            "name": "getName_assertCorrectNamedRetrieved",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1143,
+            "end_position": 1316,
+            "body_start": 1203,
+            "body_end": 1316
+        },
+        {
+            "name": "setUrl_assertCorrectUrlUpdated",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1322,
+            "end_position": 1581,
+            "body_start": 1377,
+            "body_end": 1581
+        },
+        {
+            "name": "getUrl_assertCorrectUrlRetrieved",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1587,
+            "end_position": 1754,
+            "body_start": 1644,
+            "body_end": 1754
+        },
+        {
+            "name": "getEntryId_assertCorrectIdRetrieved",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1760,
+            "end_position": 1926,
+            "body_start": 1820,
+            "body_end": 1926
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "ownCloudSession": [
+            "setSessionName",
+            "setSessionUrl",
+            "getSessionName",
+            "getSessionUrl",
+            "getEntryId"
+        ],
+        "unknown": [
+            "assertEquals"
+        ]
+    },
+    "local_variables": {
+        "newName": "String",
+        "newUrl": "String"
+    }
+}

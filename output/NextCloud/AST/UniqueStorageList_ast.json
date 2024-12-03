@@ -1,0 +1,66 @@
+{
+    "methods": [
+        {
+            "name": "add",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "StoragePoint",
+                    "name": "sp"
+                }
+            ],
+            "start_position": 570,
+            "end_position": 1072,
+            "body_start": 620,
+            "body_end": 1072
+        },
+        {
+            "name": "addAll",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Collection<? extends StoragePoint>",
+                    "name": "collection"
+                }
+            ],
+            "start_position": 1078,
+            "end_position": 1278,
+            "body_start": 1174,
+            "body_end": 1278
+        }
+    ],
+    "code_constructs": [
+        "try_statement",
+        "enhanced_for_statement",
+        "if_statement",
+        "return_statement",
+        "expression_statement"
+    ],
+    "local_variables": {
+        "thisCanonPath": "String",
+        "otherCanonPath": "String"
+    },
+    "method_calls": {
+        "new File(s.getPath())": [
+            "getCanonicalPath"
+        ],
+        "s": [
+            "getPath"
+        ],
+        "new File(sp.getPath())": [
+            "getCanonicalPath"
+        ],
+        "sp": [
+            "getPath"
+        ],
+        "thisCanonPath": [
+            "equals"
+        ],
+        "super": [
+            "add"
+        ],
+        "unknown": [
+            "add"
+        ]
+    }
+}

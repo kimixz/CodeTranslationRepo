@@ -1,0 +1,200 @@
+{
+    "methods": [
+        {
+            "name": "filterSearchMenuItems",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                }
+            ],
+            "start_position": 703,
+            "end_position": 1139,
+            "body_start": 877,
+            "body_end": 1139
+        },
+        {
+            "name": "filterTrashbinMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 1145,
+            "end_position": 1459,
+            "body_start": 1233,
+            "body_end": 1459
+        },
+        {
+            "name": "filterActivityMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 1465,
+            "end_position": 1695,
+            "body_start": 1553,
+            "body_end": 1695
+        },
+        {
+            "name": "filterAssistantMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                },
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                }
+            ],
+            "start_position": 1701,
+            "end_position": 2110,
+            "body_start": 1811,
+            "body_end": 2110
+        },
+        {
+            "name": "filterGroupfoldersMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 2116,
+            "end_position": 2358,
+            "body_start": 2208,
+            "body_end": 2358
+        },
+        {
+            "name": "removeMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "int",
+                    "name": "id"
+                },
+                {
+                    "type": "boolean",
+                    "name": "remove"
+                }
+            ],
+            "start_position": 2364,
+            "end_position": 2505,
+            "body_start": 2433,
+            "body_end": 2505
+        },
+        {
+            "name": "setupHomeMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "Resources",
+                    "name": "resources"
+                }
+            ],
+            "start_position": 2511,
+            "end_position": 2874,
+            "body_start": 2580,
+            "body_end": 2874
+        },
+        {
+            "name": "removeMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 2880,
+            "end_position": 3086,
+            "body_start": 2942,
+            "body_end": 3086
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "enhanced_for_statement"
+    ],
+    "method_calls": {
+        "user": [
+            "isAnonymous"
+        ],
+        "unknown": [
+            "removeMenuItem"
+        ],
+        "resources": [
+            "getBoolean",
+            "getString"
+        ],
+        "menu": [
+            "removeItem",
+            "findItem"
+        ],
+        "capability.getFilesUndelete()": [
+            "isFalse",
+            "isUnknown"
+        ],
+        "capability": [
+            "getFilesUndelete",
+            "getActivity",
+            "getAssistant",
+            "getGroupfolders"
+        ],
+        "capability.getActivity()": [
+            "isFalse"
+        ],
+        "capability.getAssistant()": [
+            "isFalse"
+        ],
+        "capability.getGroupfolders()": [
+            "isTrue"
+        ],
+        "menu.findItem(R.id.nav_all_files)": [
+            "setTitle",
+            "setIcon"
+        ]
+    }
+}

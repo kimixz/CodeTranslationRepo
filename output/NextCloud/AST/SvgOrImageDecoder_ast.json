@@ -1,0 +1,72 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "decode",
+            "return_type": "Resource<SVGorImage>",
+            "parameters": [
+                {
+                    "type": "InputStream",
+                    "name": "source"
+                },
+                {
+                    "type": "int",
+                    "name": "w"
+                },
+                {
+                    "type": "int",
+                    "name": "h"
+                }
+            ],
+            "start_position": 1266,
+            "end_position": 2279,
+            "body_start": 1354,
+            "body_end": 2279
+        },
+        {
+            "name": "getId",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 2285,
+            "end_position": 2378,
+            "body_start": 2321,
+            "body_end": 2378
+        }
+    ],
+    "local_variables": {
+        "array": "byte[]",
+        "svgInputStream": "ByteArrayInputStream",
+        "pngInputStream": "ByteArrayInputStream",
+        "svg": "SVG",
+        "bitmap": "Bitmap"
+    },
+    "method_calls": {
+        "source": [
+            "available",
+            "read",
+            "close"
+        ],
+        "array": [
+            "clone"
+        ],
+        "SVG": [
+            "getFromInputStream"
+        ],
+        "pngInputStream": [
+            "close"
+        ],
+        "svg": [
+            "setDocumentWidth",
+            "setDocumentHeight",
+            "setDocumentPreserveAspectRatio"
+        ],
+        "BitmapFactory": [
+            "decodeStream"
+        ]
+    }
+}

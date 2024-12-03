@@ -1,0 +1,24 @@
+{
+    "methods": [
+        {
+            "name": "testConvertIdn",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 362,
+            "end_position": 871,
+            "body_start": 401,
+            "body_end": 871
+        }
+    ],
+    "code_constructs": [
+        "expression_statement"
+    ],
+    "method_calls": {
+        "unknown": [
+            "assertEquals"
+        ],
+        "DisplayUtils": [
+            "convertIdn"
+        ]
+    }
+}

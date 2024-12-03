@@ -1,0 +1,483 @@
+{
+    "method_calls": {
+        "CreateFolderOperation.class": [
+            "getSimpleName"
+        ],
+        "new File(getRemotePath())": [
+            "getParent"
+        ],
+        "unknown": [
+            "getRemotePath",
+            "getStorageManager",
+            "encryptedCreateV1",
+            "encryptedCreateV2",
+            "normalCreate",
+            "isFileExisting",
+            "createRandomFileName",
+            "createDecryptedFile",
+            "createRemoteFolderOcFile",
+            "saveFolderInDB",
+            "onCreateRemoteFolderOperationFinish"
+        ],
+        "remoteParentPath": [
+            "endsWith"
+        ],
+        "getStorageManager()": [
+            "getFileByDecryptedRemotePath",
+            "getCapability",
+            "saveFile",
+            "getFileByPath"
+        ],
+        "new File(tempRemoteParentPath)": [
+            "getParent"
+        ],
+        "tempRemoteParentPath": [
+            "endsWith"
+        ],
+        "FileStorageUtils": [
+            "checkEncryptionStatus",
+            "getParentPath"
+        ],
+        "getStorageManager().getCapability(user)": [
+            "getEndToEndEncryptionApiVersion"
+        ],
+        "arbitraryDataProvider": [
+            "getValue"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "new File(remotePath)": [
+            "getName"
+        ],
+        "EncryptionUtils": [
+            "lockFolder",
+            "retrieveMetadataV1",
+            "encryptFolderMetadata",
+            "serializeJSON",
+            "uploadMetadata",
+            "unlockFolderV1",
+            "unlockFolder",
+            "generateKey",
+            "randomBytes",
+            "encodeBytesToBase64String"
+        ],
+        "parent": [
+            "getRemotePath",
+            "getLocalId",
+            "getFileId",
+            "getDecryptedRemotePath"
+        ],
+        "new CreateFolderRemoteOperation(encryptedRemotePath,\n                                                                                   true,\n                                                                                   token)": [
+            "execute"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultData"
+        ],
+        "metadata.getFiles()": [
+            "put",
+            "values",
+            "get"
+        ],
+        "metadata": [
+            "getFiles",
+            "getMetadata"
+        ],
+        "unlockFolderResult": [
+            "isSuccess"
+        ],
+        "new ReadFolderRemoteOperation(encryptedRemotePath)": [
+            "execute"
+        ],
+        "remoteFolderOperationResult.getData()": [
+            "get"
+        ],
+        "remoteFolderOperationResult": [
+            "getData"
+        ],
+        "new ToggleEncryptionRemoteOperation(\n                    newDir.getLocalId(),\n                    newDir.getRemotePath(),\n                    true)": [
+            "execute"
+        ],
+        "newDir": [
+            "getLocalId",
+            "getRemotePath",
+            "setMimeType",
+            "setParentId",
+            "setRemoteId",
+            "setModificationTimestamp",
+            "setEncrypted",
+            "setPermissions",
+            "setDecryptedRemotePath"
+        ],
+        "encryptionOperationResult": [
+            "isSuccess"
+        ],
+        "Log_OC": [
+            "e",
+            "d"
+        ],
+        "EncryptionUtils.unlockFolderV1(parent, client, token)": [
+            "isSuccess"
+        ],
+        "new RemoveRemoteEncryptedFileOperation(encryptedRemotePath,\n                                                                                            user,\n                                                                                            context,\n                                                                                            filename,\n                                                                                            parent,\n                                                                                            true\n                )": [
+            "execute"
+        ],
+        "removeResult": [
+            "isSuccess"
+        ],
+        "encryptionUtilsV2": [
+            "retrieveMetadata",
+            "createDecryptedFolderMetadataFile",
+            "serializeAndUploadMetadata",
+            "addFolderToMetadata"
+        ],
+        "metadataPair": [
+            "getFirst",
+            "getSecond"
+        ],
+        "EncryptionUtils.unlockFolder(parent, client, token)": [
+            "isSuccess"
+        ],
+        "new RemoveRemoteEncryptedFileOperation(encryptedRemotePath,\n                                                                                            user,\n                                                                                            context,\n                                                                                            filename,\n                                                                                            parent,\n                                                                                            true)": [
+            "execute"
+        ],
+        "filename": [
+            "equalsIgnoreCase"
+        ],
+        "file.getEncrypted()": [
+            "getFilename"
+        ],
+        "file": [
+            "getEncrypted",
+            "getFilename"
+        ],
+        "metadata.getMetadata().getFiles()": [
+            "values",
+            "get"
+        ],
+        "metadata.getMetadata()": [
+            "getFiles"
+        ],
+        "remoteFolder": [
+            "getRemotePath",
+            "getRemoteId",
+            "getPermissions"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "data": [
+            "setFilename",
+            "setMimetype",
+            "setKey"
+        ],
+        "decryptedFile": [
+            "setEncrypted",
+            "setInitializationVector"
+        ],
+        "UUID.randomUUID().toString()": [
+            "replaceAll"
+        ],
+        "UUID.randomUUID()": [
+            "toString"
+        ],
+        "UUID": [
+            "randomUUID"
+        ],
+        "new CreateFolderRemoteOperation(remotePath, true)": [
+            "execute"
+        ],
+        "new ReadFolderRemoteOperation(remotePath)": [
+            "execute"
+        ],
+        "remotePath": [
+            "split"
+        ],
+        "subFolder": [
+            "isEmpty"
+        ],
+        "getStorageManager().getFileByPath(FileStorageUtils.getParentPath(remotePath))": [
+            "getFileId"
+        ],
+        "createdRemoteFolder": [
+            "getRemoteId",
+            "getPermissions"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "while_statement",
+        "if_statement",
+        "return_statement",
+        "try_statement",
+        "throw_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 3209,
+            "end_position": 4814,
+            "body_start": 3282,
+            "body_end": 4814
+        },
+        {
+            "name": "encryptedCreateV1",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "parent"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 4820,
+            "end_position": 11973,
+            "body_start": 4906,
+            "body_end": 11973
+        },
+        {
+            "name": "encryptedCreateV2",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "parent"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 11979,
+            "end_position": 19102,
+            "body_start": 12065,
+            "body_end": 19102
+        },
+        {
+            "name": "isFileExisting",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "DecryptedFolderMetadataFileV1",
+                    "name": "metadata"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 19108,
+            "end_position": 19473,
+            "body_start": 19196,
+            "body_end": 19473
+        },
+        {
+            "name": "isFileExisting",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "DecryptedFolderMetadataFile",
+                    "name": "metadata"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 19479,
+            "end_position": 19793,
+            "body_start": 19565,
+            "body_end": 19793
+        },
+        {
+            "name": "createRemoteFolderOcFile",
+            "return_type": "OCFile",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "parent"
+                },
+                {
+                    "type": "String",
+                    "name": "filename"
+                },
+                {
+                    "type": "RemoteFile",
+                    "name": "remoteFolder"
+                }
+            ],
+            "start_position": 19799,
+            "end_position": 20414,
+            "body_start": 19909,
+            "body_end": 20414
+        },
+        {
+            "name": "createDecryptedFile",
+            "return_type": "com.owncloud.android.datamodel.e2e.v1.decrypted.DecryptedFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 20420,
+            "end_position": 21277,
+            "body_start": 20540,
+            "body_end": 21277
+        },
+        {
+            "name": "createDecryptedFolder",
+            "return_type": "DecryptedFile",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "filename"
+                }
+            ],
+            "start_position": 21283,
+            "end_position": 21871,
+            "body_start": 21357,
+            "body_end": 21871
+        },
+        {
+            "name": "createRandomFileName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "DecryptedFolderMetadataFile",
+                    "name": "metadata"
+                }
+            ],
+            "start_position": 21877,
+            "end_position": 22266,
+            "body_start": 21964,
+            "body_end": 22266
+        },
+        {
+            "name": "createRandomFileName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "DecryptedFolderMetadataFileV1",
+                    "name": "metadata"
+                }
+            ],
+            "start_position": 22272,
+            "end_position": 22649,
+            "body_start": 22361,
+            "body_end": 22649
+        },
+        {
+            "name": "normalCreate",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 22655,
+            "end_position": 23248,
+            "body_start": 22721,
+            "body_end": 23248
+        },
+        {
+            "name": "onRemoteOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperation",
+                    "name": "operation"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 23254,
+            "end_position": 23499,
+            "body_start": 23361,
+            "body_end": 23499
+        },
+        {
+            "name": "onCreateRemoteFolderOperationFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 23505,
+            "end_position": 23746,
+            "body_start": 23584,
+            "body_end": 23746
+        },
+        {
+            "name": "saveFolderInDB",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 23813,
+            "end_position": 25274,
+            "body_start": 23843,
+            "body_end": 25274
+        },
+        {
+            "name": "getRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 25280,
+            "end_position": 25344,
+            "body_start": 25310,
+            "body_end": 25344
+        }
+    ],
+    "local_variables": {
+        "remoteParentPath": "String",
+        "parent": "OCFile",
+        "tempRemoteParentPath": "String",
+        "encryptedAncestor": "boolean",
+        "e2EVersion": "E2EVersion",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "privateKey": "String",
+        "publicKey": "String",
+        "token": "String",
+        "metadataExists": "Boolean",
+        "metadata": "DecryptedFolderMetadataFile",
+        "encryptedRemotePath": "String",
+        "filename": "String",
+        "metadataPair": "kotlin.Pair<Boolean, DecryptedFolderMetadataFile>",
+        "encryptedFileName": "String",
+        "result": "RemoteOperationResult",
+        "encryptedFolderMetadata": "EncryptedFolderMetadataFileV1",
+        "serializedFolderMetadata": "String",
+        "unlockFolderResult": "RemoteOperationResult",
+        "remoteFolderOperationResult": "RemoteOperationResult",
+        "newDir": "OCFile",
+        "encryptionOperationResult": "RemoteOperationResult",
+        "removeResult": "RemoteOperationResult",
+        "encryptionUtilsV2": "EncryptionUtilsV2",
+        "remoteId": "String",
+        "subFolderMetadata": "DecryptedFolderMetadataFile",
+        "updatedMetadataFile": "DecryptedFolderMetadataFile",
+        "key": "byte[]",
+        "iv": "byte[]",
+        "decryptedFile": "com.owncloud.android.datamodel.e2e.v1.decrypted.DecryptedFile",
+        "data": "Data",
+        "subFolders": "String[]",
+        "composedRemotePath": "String",
+        "parentId": "long"
+    }
+}

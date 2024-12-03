@@ -1,0 +1,131 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "ViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 981,
+            "end_position": 1320,
+            "body_start": 1086,
+            "body_end": 1320
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 1326,
+            "end_position": 1464,
+            "body_start": 1402,
+            "body_end": 1464
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 1470,
+            "end_position": 1559,
+            "body_start": 1510,
+            "body_end": 1559
+        },
+        {
+            "name": "bind",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SendButtonData",
+                    "name": "item"
+                }
+            ],
+            "start_position": 2084,
+            "end_position": 2306,
+            "body_start": 2122,
+            "body_end": 2306
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "v"
+                }
+            ],
+            "start_position": 2316,
+            "end_position": 2487,
+            "body_start": 2362,
+            "body_end": 2487
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SendButtonData",
+                    "name": "sendButtonDataData"
+                }
+            ],
+            "start_position": 2540,
+            "end_position": 2588
+        }
+    ],
+    "method_calls": {
+        "SendButtonBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "parent": [
+            "getContext"
+        ],
+        "holder": [
+            "bind"
+        ],
+        "sendButtonDataList": [
+            "get",
+            "size"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "itemView": [
+            "setOnClickListener"
+        ],
+        "binding.sendButtonIcon": [
+            "setImageDrawable"
+        ],
+        "item": [
+            "getDrawable",
+            "getTitle"
+        ],
+        "binding.sendButtonText": [
+            "setText"
+        ],
+        "clickListener": [
+            "onClick"
+        ]
+    }
+}

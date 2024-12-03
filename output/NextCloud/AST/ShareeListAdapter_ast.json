@@ -1,0 +1,284 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "break_statement"
+    ],
+    "method_calls": {
+        "fileActivity.getResources()": [
+            "getDimension"
+        ],
+        "fileActivity": [
+            "getResources"
+        ],
+        "unknown": [
+            "sortShares",
+            "notifyDataSetChanged"
+        ],
+        "shares.get(position).getShareType()": [
+            "getValue"
+        ],
+        "shares.get(position)": [
+            "getShareType",
+            "getId"
+        ],
+        "shares": [
+            "get",
+            "size",
+            "addAll",
+            "remove",
+            "add"
+        ],
+        "MDMConfig.INSTANCE": [
+            "shareViaLink"
+        ],
+        "ShareType": [
+            "fromValue"
+        ],
+        "FileDetailsShareLinkShareItemBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "FileDetailsShareSecureFileDropAddNewItemBinding": [
+            "inflate"
+        ],
+        "FileDetailsSharePublicLinkAddNewItemBinding": [
+            "inflate"
+        ],
+        "FileDetailsShareInternalShareLinkBinding": [
+            "inflate"
+        ],
+        "FileDetailsShareShareItemBinding": [
+            "inflate"
+        ],
+        "internalShareViewHolder": [
+            "bind"
+        ],
+        "publicShareViewHolder": [
+            "bind"
+        ],
+        "newLinkShareViewHolder": [
+            "bind"
+        ],
+        "newSecureFileDropViewHolder": [
+            "bind"
+        ],
+        "userViewHolder": [
+            "bind"
+        ],
+        "iv": [
+            "setImageDrawable",
+            "getTag"
+        ],
+        "String.valueOf(iv.getTag())": [
+            "equals"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "tag": [
+            "split"
+        ],
+        "share": [
+            "getShareType"
+        ],
+        "links": [
+            "add",
+            "sort"
+        ],
+        "users": [
+            "add",
+            "sort"
+        ],
+        "Long": [
+            "compare"
+        ],
+        "o2": [
+            "getSharedDate"
+        ],
+        "o1": [
+            "getSharedDate"
+        ],
+        "ocShare": [
+            "setShareType"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getItemViewType",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 3021,
+            "end_position": 3146,
+            "body_start": 3076,
+            "body_end": 3146
+        },
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "RecyclerView.ViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 3152,
+            "end_position": 5854,
+            "body_start": 3270,
+            "body_end": 5854
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RecyclerView.ViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 5860,
+            "end_position": 7163,
+            "body_start": 5958,
+            "body_end": 7163
+        },
+        {
+            "name": "getItemId",
+            "return_type": "long",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 7169,
+            "end_position": 7271,
+            "body_start": 7219,
+            "body_end": 7271
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 7277,
+            "end_position": 7513,
+            "body_start": 7317,
+            "body_end": 7513
+        },
+        {
+            "name": "addShares",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<OCShare>",
+                    "name": "sharesToAdd"
+                }
+            ],
+            "start_position": 7519,
+            "end_position": 7707,
+            "body_start": 7610,
+            "body_end": 7707
+        },
+        {
+            "name": "avatarGenerated",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Drawable",
+                    "name": "avatarDrawable"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 7713,
+            "end_position": 7917,
+            "body_start": 7800,
+            "body_end": 7917
+        },
+        {
+            "name": "shouldCallGeneratedCallback",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "tag"
+                },
+                {
+                    "type": "Object",
+                    "name": "callContext"
+                }
+            ],
+            "start_position": 7923,
+            "end_position": 8245,
+            "body_start": 8012,
+            "body_end": 8245
+        },
+        {
+            "name": "remove",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 8251,
+            "end_position": 8396,
+            "body_start": 8327,
+            "body_end": 8396
+        },
+        {
+            "name": "sortShares",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8482,
+            "end_position": 9375,
+            "body_start": 8516,
+            "body_end": 9375
+        },
+        {
+            "name": "getShares",
+            "return_type": "List<OCShare>",
+            "parameters": [],
+            "start_position": 9381,
+            "end_position": 9444,
+            "body_start": 9414,
+            "body_end": 9444
+        },
+        {
+            "name": "removeNewPublicShare",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9450,
+            "end_position": 9685,
+            "body_start": 9485,
+            "body_end": 9685
+        }
+    ],
+    "local_variables": {
+        "shareViaLink": "boolean",
+        "share": "OCShare",
+        "userViewHolder": "ShareViewHolder",
+        "links": "List<OCShare>",
+        "users": "List<OCShare>",
+        "ocShare": "OCShare"
+    }
+}

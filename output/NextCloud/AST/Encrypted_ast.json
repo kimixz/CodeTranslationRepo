@@ -1,0 +1,31 @@
+{
+    "methods": [
+        {
+            "name": "getMetadataKeys",
+            "return_type": "Map<Integer, String>",
+            "parameters": [],
+            "start_position": 376,
+            "end_position": 463,
+            "body_start": 422,
+            "body_end": 463
+        },
+        {
+            "name": "setMetadataKeys",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Map<Integer, String>",
+                    "name": "metadataKeys"
+                }
+            ],
+            "start_position": 469,
+            "end_position": 581,
+            "body_start": 532,
+            "body_end": 581
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement"
+    ]
+}

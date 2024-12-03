@@ -1,0 +1,44 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getDrawable",
+            "return_type": "Drawable",
+            "parameters": [],
+            "start_position": 729,
+            "end_position": 791,
+            "body_start": 759,
+            "body_end": 791
+        },
+        {
+            "name": "getTitle",
+            "return_type": "CharSequence",
+            "parameters": [],
+            "start_position": 797,
+            "end_position": 857,
+            "body_start": 828,
+            "body_end": 857
+        },
+        {
+            "name": "getPackageName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 863,
+            "end_position": 929,
+            "body_start": 894,
+            "body_end": 929
+        },
+        {
+            "name": "getActivityName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 935,
+            "end_position": 1003,
+            "body_start": 967,
+            "body_end": 1003
+        }
+    ]
+}

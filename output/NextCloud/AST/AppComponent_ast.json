@@ -1,0 +1,107 @@
+{
+    "methods": [
+        {
+            "name": "inject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MainApp",
+                    "name": "app"
+                }
+            ],
+            "start_position": 1810,
+            "end_position": 1835
+        },
+        {
+            "name": "inject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MediaControlView",
+                    "name": "mediaControlView"
+                }
+            ],
+            "start_position": 1841,
+            "end_position": 1888
+        },
+        {
+            "name": "inject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "BackgroundPlayerService",
+                    "name": "backgroundPlayerService"
+                }
+            ],
+            "start_position": 1894,
+            "end_position": 1999
+        },
+        {
+            "name": "inject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ThemeableSwitchPreference",
+                    "name": "switchPreference"
+                }
+            ],
+            "start_position": 2005,
+            "end_position": 2061
+        },
+        {
+            "name": "inject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileUploadHelper",
+                    "name": "fileUploadHelper"
+                }
+            ],
+            "start_position": 2067,
+            "end_position": 2114
+        },
+        {
+            "name": "inject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileDownloadHelper",
+                    "name": "fileDownloadHelper"
+                }
+            ],
+            "start_position": 2120,
+            "end_position": 2171
+        },
+        {
+            "name": "inject",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ProgressIndicator",
+                    "name": "progressIndicator"
+                }
+            ],
+            "start_position": 2177,
+            "end_position": 2226
+        },
+        {
+            "name": "application",
+            "return_type": "Builder",
+            "parameters": [
+                {
+                    "type": "Application",
+                    "name": "application"
+                }
+            ],
+            "start_position": 2283,
+            "end_position": 2351
+        },
+        {
+            "name": "build",
+            "return_type": "AppComponent",
+            "parameters": [],
+            "start_position": 2361,
+            "end_position": 2382
+        }
+    ]
+}

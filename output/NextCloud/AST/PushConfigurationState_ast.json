@@ -1,0 +1,123 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getPushToken",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1006,
+            "end_position": 1073,
+            "body_start": 1035,
+            "body_end": 1073
+        },
+        {
+            "name": "getDeviceIdentifier",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1079,
+            "end_position": 1160,
+            "body_start": 1115,
+            "body_end": 1160
+        },
+        {
+            "name": "getDeviceIdentifierSignature",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1166,
+            "end_position": 1265,
+            "body_start": 1211,
+            "body_end": 1265
+        },
+        {
+            "name": "getUserPublicKey",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 1271,
+            "end_position": 1346,
+            "body_start": 1304,
+            "body_end": 1346
+        },
+        {
+            "name": "isShouldBeDeleted",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 1352,
+            "end_position": 1431,
+            "body_start": 1387,
+            "body_end": 1431
+        },
+        {
+            "name": "setPushToken",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "pushToken"
+                }
+            ],
+            "start_position": 1437,
+            "end_position": 1523,
+            "body_start": 1480,
+            "body_end": 1523
+        },
+        {
+            "name": "setDeviceIdentifier",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "deviceIdentifier"
+                }
+            ],
+            "start_position": 1529,
+            "end_position": 1643,
+            "body_start": 1586,
+            "body_end": 1643
+        },
+        {
+            "name": "setDeviceIdentifierSignature",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "deviceIdentifierSignature"
+                }
+            ],
+            "start_position": 1649,
+            "end_position": 1799,
+            "body_start": 1724,
+            "body_end": 1799
+        },
+        {
+            "name": "setUserPublicKey",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "userPublicKey"
+                }
+            ],
+            "start_position": 1805,
+            "end_position": 1907,
+            "body_start": 1856,
+            "body_end": 1907
+        },
+        {
+            "name": "setShouldBeDeleted",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "shouldBeDeleted"
+                }
+            ],
+            "start_position": 1913,
+            "end_position": 2024,
+            "body_start": 1969,
+            "body_end": 2024
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "methods": [
+        {
+            "name": "getRecipient",
+            "return_type": "Map<String, String>",
+            "parameters": [],
+            "start_position": 400,
+            "end_position": 480,
+            "body_start": 442,
+            "body_end": 480
+        },
+        {
+            "name": "getSignature",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 486,
+            "end_position": 553,
+            "body_start": 515,
+            "body_end": 553
+        },
+        {
+            "name": "setRecipient",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Map<String, String>",
+                    "name": "recipient"
+                }
+            ],
+            "start_position": 559,
+            "end_position": 658,
+            "body_start": 615,
+            "body_end": 658
+        },
+        {
+            "name": "setSignature",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "signature"
+                }
+            ],
+            "start_position": 664,
+            "end_position": 750,
+            "body_start": 707,
+            "body_end": 750
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement"
+    ]
+}

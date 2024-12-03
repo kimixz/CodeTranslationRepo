@@ -1,0 +1,664 @@
+{
+    "methods": [
+        {
+            "name": "getFileDisplayActivity",
+            "return_type": "FileDisplayActivity",
+            "parameters": [],
+            "start_position": 3896,
+            "end_position": 4086,
+            "body_start": 3949,
+            "body_end": 4086
+        },
+        {
+            "name": "quitLooperIfNeeded",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4097,
+            "end_position": 4243,
+            "body_start": 4141,
+            "body_end": 4243
+        },
+        {
+            "name": "testRenameFileDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4249,
+            "end_position": 4628,
+            "body_start": 4314,
+            "body_end": 4628
+        },
+        {
+            "name": "testLoadingDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4634,
+            "end_position": 4800,
+            "body_start": 4696,
+            "body_end": 4800
+        },
+        {
+            "name": "testConfirmationDialogWithOneAction",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 4806,
+            "end_position": 5126,
+            "body_start": 4886,
+            "body_end": 5126
+        },
+        {
+            "name": "testConfirmationDialogWithTwoAction",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5132,
+            "end_position": 5472,
+            "body_start": 5212,
+            "body_end": 5472
+        },
+        {
+            "name": "testConfirmationDialogWithThreeAction",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5478,
+            "end_position": 5841,
+            "body_start": 5560,
+            "body_end": 5841
+        },
+        {
+            "name": "testConfirmationDialogWithThreeActionRTL",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5847,
+            "end_position": 6233,
+            "body_start": 5932,
+            "body_end": 6233
+        },
+        {
+            "name": "testRemoveFileDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6239,
+            "end_position": 6445,
+            "body_start": 6304,
+            "body_end": 6445
+        },
+        {
+            "name": "testRemoveFilesDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6451,
+            "end_position": 6798,
+            "body_start": 6517,
+            "body_end": 6798
+        },
+        {
+            "name": "testRemoveFolderDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6804,
+            "end_position": 7012,
+            "body_start": 6871,
+            "body_end": 7012
+        },
+        {
+            "name": "testRemoveFoldersDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7018,
+            "end_position": 7365,
+            "body_start": 7086,
+            "body_end": 7365
+        },
+        {
+            "name": "testNewFolderDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7371,
+            "end_position": 7646,
+            "body_start": 7435,
+            "body_end": 7646
+        },
+        {
+            "name": "testEnforcedPasswordDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7652,
+            "end_position": 7949,
+            "body_start": 7723,
+            "body_end": 7949
+        },
+        {
+            "name": "testOptionalPasswordDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7955,
+            "end_position": 8251,
+            "body_start": 8026,
+            "body_end": 8251
+        },
+        {
+            "name": "testAccountChooserDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8257,
+            "end_position": 12753,
+            "body_start": 8371,
+            "body_end": 12753
+        },
+        {
+            "name": "testAccountChooserDialogWithStatusDisabled",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12759,
+            "end_position": 14709,
+            "body_start": 12891,
+            "body_end": 14709
+        },
+        {
+            "name": "testBottomSheet",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14715,
+            "end_position": 21030,
+            "body_start": 14775,
+            "body_end": 21030
+        },
+        {
+            "name": "createFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14955,
+            "end_position": 15020,
+            "body_start": 15004,
+            "body_end": 15020
+        },
+        {
+            "name": "uploadFromApp",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15034,
+            "end_position": 15100,
+            "body_start": 15084,
+            "body_end": 15100
+        },
+        {
+            "name": "uploadFiles",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15114,
+            "end_position": 15178,
+            "body_start": 15162,
+            "body_end": 15178
+        },
+        {
+            "name": "newDocument",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15192,
+            "end_position": 15256,
+            "body_start": 15240,
+            "body_end": 15256
+        },
+        {
+            "name": "newSpreadsheet",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15270,
+            "end_position": 15337,
+            "body_start": 15321,
+            "body_end": 15337
+        },
+        {
+            "name": "newPresentation",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15351,
+            "end_position": 15419,
+            "body_start": 15403,
+            "body_end": 15419
+        },
+        {
+            "name": "directCameraUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15433,
+            "end_position": 15504,
+            "body_start": 15488,
+            "body_end": 15504
+        },
+        {
+            "name": "scanDocUpload",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15518,
+            "end_position": 15584,
+            "body_start": 15568,
+            "body_end": 15584
+        },
+        {
+            "name": "showTemplate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Creator",
+                    "name": "creator"
+                },
+                {
+                    "type": "String",
+                    "name": "headline"
+                }
+            ],
+            "start_position": 15598,
+            "end_position": 15695,
+            "body_start": 15679,
+            "body_end": 15695
+        },
+        {
+            "name": "createRichWorkspace",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 15709,
+            "end_position": 15781,
+            "body_start": 15765,
+            "body_end": 15781
+        },
+        {
+            "name": "getScanContract",
+            "return_type": "ActivityResultContract<Unit, String>",
+            "parameters": [],
+            "start_position": 18296,
+            "end_position": 18507,
+            "body_start": 18401,
+            "body_end": 18507
+        },
+        {
+            "name": "getMaterialSchemesForUser",
+            "return_type": "MaterialSchemes",
+            "parameters": [
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 18622,
+            "end_position": 18778,
+            "body_start": 18734,
+            "body_end": 18778
+        },
+        {
+            "name": "getMaterialSchemesForCapability",
+            "return_type": "MaterialSchemes",
+            "parameters": [
+                {
+                    "type": "OCCapability",
+                    "name": "capability"
+                }
+            ],
+            "start_position": 18792,
+            "end_position": 18968,
+            "body_start": 18924,
+            "body_end": 18968
+        },
+        {
+            "name": "getMaterialSchemesForCurrentUser",
+            "return_type": "MaterialSchemes",
+            "parameters": [],
+            "start_position": 18982,
+            "end_position": 19170,
+            "body_start": 19083,
+            "body_end": 19170
+        },
+        {
+            "name": "getDefaultMaterialSchemes",
+            "return_type": "MaterialSchemes",
+            "parameters": [],
+            "start_position": 19184,
+            "end_position": 19322,
+            "body_start": 19278,
+            "body_end": 19322
+        },
+        {
+            "name": "getMaterialSchemesForPrimaryBackground",
+            "return_type": "MaterialSchemes",
+            "parameters": [],
+            "start_position": 19336,
+            "end_position": 19487,
+            "body_start": 19443,
+            "body_end": 19487
+        },
+        {
+            "name": "testProfileBottomSheet",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 21036,
+            "end_position": 22786,
+            "body_start": 21103,
+            "body_end": 22786
+        },
+        {
+            "name": "testSslUntrustedCertDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 22793,
+            "end_position": 23355,
+            "body_start": 22864,
+            "body_end": 23355
+        },
+        {
+            "name": "testStoragePermissionDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 23362,
+            "end_position": 23656,
+            "body_start": 23434,
+            "body_end": 23656
+        },
+        {
+            "name": "testFileActionsBottomSheet",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 23662,
+            "end_position": 23989,
+            "body_start": 23733,
+            "body_end": 23989
+        },
+        {
+            "name": "showDialog",
+            "return_type": "FileDisplayActivity",
+            "parameters": [
+                {
+                    "type": "DialogFragment",
+                    "name": "dialog"
+                }
+            ],
+            "start_position": 23995,
+            "end_position": 24339,
+            "body_start": 24057,
+            "body_end": 24339
+        },
+        {
+            "name": "showDialog",
+            "return_type": "FileDisplayActivity",
+            "parameters": [
+                {
+                    "type": "FileDisplayActivity",
+                    "name": "sut"
+                },
+                {
+                    "type": "DialogFragment",
+                    "name": "dialog"
+                }
+            ],
+            "start_position": 24345,
+            "end_position": 24819,
+            "body_start": 24432,
+            "body_end": 24819
+        },
+        {
+            "name": "hideCursors",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "viewGroup"
+                }
+            ],
+            "start_position": 24825,
+            "end_position": 25229,
+            "body_start": 24871,
+            "body_end": 25229
+        },
+        {
+            "name": "testGson",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 25239,
+            "end_position": 25754,
+            "body_start": 25272,
+            "body_end": 25754
+        }
+    ],
+    "local_variables": {
+        "intent": "Intent",
+        "dialog": "RemoveFilesDialogFragment",
+        "toDelete": "ArrayList<OCFile>",
+        "sut": "FileDisplayActivity",
+        "activity": "FileDisplayActivity",
+        "userAccountManager": "UserAccountManager",
+        "accountManager": "AccountManager",
+        "newAccount": "Account",
+        "newUser": "User",
+        "newAccount2": "Account",
+        "fileDataStorageManager": "FileDataStorageManager",
+        "capability": "OCCapability",
+        "fda": "FileDisplayActivity",
+        "action": "OCFileListBottomSheetActions",
+        "info": "DeviceInfo",
+        "ocFile": "OCFile",
+        "directEditing": "DirectEditing",
+        "json": "String",
+        "appScanOptionalFeature": "AppScanOptionalFeature",
+        "materialSchemesProvider": "MaterialSchemesProvider",
+        "viewThemeUtils": "ViewThemeUtils",
+        "editorUtils": "EditorUtils",
+        "viewGroup": "ViewGroup",
+        "actions": "List<Action>",
+        "hoverCard": "HoverCard",
+        "certificate": "SslCertificate",
+        "sslError": "SslError",
+        "handler": "SslErrorHandler",
+        "i": "int",
+        "child": "View",
+        "t": "ArrayList<EnforcedServer>",
+        "s": "String",
+        "t2": "ArrayList<EnforcedServer>",
+        "temp": "ArrayList<String>"
+    },
+    "code_constructs": [
+        "return_statement",
+        "if_statement",
+        "expression_statement",
+        "enhanced_for_statement",
+        "throw_statement",
+        "for_statement"
+    ],
+    "method_calls": {
+        "activityRule": [
+            "launchActivity",
+            "getActivity"
+        ],
+        "Looper": [
+            "myLooper",
+            "prepare"
+        ],
+        "Looper.myLooper()": [
+            "quitSafely"
+        ],
+        "RenameFileDialogFragment": [
+            "newInstance"
+        ],
+        "unknown": [
+            "showDialog",
+            "enableRTL",
+            "resetLocale",
+            "getFileDisplayActivity",
+            "waitForIdleSync",
+            "shortSleep",
+            "screenshot",
+            "getInstrumentation",
+            "hideCursors"
+        ],
+        "LoadingDialog": [
+            "newInstance"
+        ],
+        "ConfirmationDialogFragment": [
+            "newInstance"
+        ],
+        "RemoveFilesDialogFragment": [
+            "newInstance"
+        ],
+        "toDelete": [
+            "add"
+        ],
+        "CreateFolderDialogFragment": [
+            "newInstance"
+        ],
+        "SharePasswordDialogFragment": [
+            "newInstance"
+        ],
+        "activity": [
+            "getUserAccountManager",
+            "runOnUiThread"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "accountManager": [
+            "getAccountsByType",
+            "removeAccountExplicitly",
+            "addAccountExplicitly",
+            "setUserData",
+            "setAuthToken",
+            "getAccounts"
+        ],
+        "MainApp": [
+            "getAccountType"
+        ],
+        "AccountTypeUtils": [
+            "getAuthTokenTypePass"
+        ],
+        "userAccountManager.getUser(newAccount.name)": [
+            "orElseThrow",
+            "get"
+        ],
+        "userAccountManager": [
+            "getUser",
+            "setCurrentOwnCloudAccount"
+        ],
+        "targetContext": [
+            "getContentResolver"
+        ],
+        "capability": [
+            "setUserStatus",
+            "setUserStatusSupportsEmoji",
+            "setRichDocuments",
+            "setRichDocumentsDirectEditing",
+            "setRichDocumentsTemplatesAvailable",
+            "setAccountName"
+        ],
+        "fileDataStorageManager": [
+            "saveCapabilities"
+        ],
+        "ChooseAccountDialogFragment": [
+            "newInstance"
+        ],
+        "URI": [
+            "create"
+        ],
+        "sut": [
+            "setStatus",
+            "getBehavior",
+            "getWindow",
+            "getSupportFragmentManager"
+        ],
+        "fda": [
+            "getUserAccountManager",
+            "getCapabilities",
+            "runOnUiThread"
+        ],
+        "ocFile": [
+            "setRemoteId"
+        ],
+        "directEditing.getCreators()": [
+            "put"
+        ],
+        "directEditing": [
+            "getCreators",
+            "getEditors"
+        ],
+        "directEditing.getEditors()": [
+            "put"
+        ],
+        "Collections": [
+            "singletonList"
+        ],
+        "new Gson()": [
+            "toJson",
+            "fromJson"
+        ],
+        "new ArbitraryDataProviderImpl(targetContext)": [
+            "storeOrUpdateKeyValue"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "CapabilityUtils": [
+            "updateCapability"
+        ],
+        "materialSchemesProvider": [
+            "getMaterialSchemesForCurrentUser"
+        ],
+        "getInstrumentation()": [
+            "waitForIdleSync"
+        ],
+        "sut.getBehavior()": [
+            "setState"
+        ],
+        "sut.getWindow()": [
+            "findViewById",
+            "getDecorView"
+        ],
+        "Objects.requireNonNull(sut.getWindow())": [
+            "getDecorView"
+        ],
+        "Objects": [
+            "requireNonNull"
+        ],
+        "actions": [
+            "add"
+        ],
+        "Mockito": [
+            "mock"
+        ],
+        "SslUntrustedCertDialog": [
+            "newInstanceForEmptySslError"
+        ],
+        "StoragePermissionDialogFragment.Companion": [
+            "newInstance"
+        ],
+        "FileActionsBottomSheet": [
+            "newInstance"
+        ],
+        "dialog": [
+            "show",
+            "requireDialog"
+        ],
+        "dialog.requireDialog().getWindow()": [
+            "findViewById"
+        ],
+        "dialog.requireDialog()": [
+            "getWindow"
+        ],
+        "Objects.requireNonNull(dialog.requireDialog().getWindow())": [
+            "getDecorView"
+        ],
+        "viewGroup": [
+            "getChildCount",
+            "getChildAt"
+        ],
+        "((TextView) child)": [
+            "setCursorVisible"
+        ],
+        "t": [
+            "add"
+        ],
+        "new TypeToken<ArrayList<EnforcedServer>>() {\n        }": [
+            "getType"
+        ],
+        "temp": [
+            "add"
+        ],
+        "p": [
+            "getName"
+        ]
+    }
+}

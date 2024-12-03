@@ -1,0 +1,822 @@
+{
+    "method_calls": {
+        "UploadFilesActivity.class": [
+            "getCanonicalName"
+        ],
+        "action": [
+            "putExtra"
+        ],
+        "activity": [
+            "startActivityForResult"
+        ],
+        "Log_OC": [
+            "d",
+            "e"
+        ],
+        "super": [
+            "onCreate",
+            "onCreateOptionsMenu",
+            "onOptionsItemSelected",
+            "onRequestPermissionsResult",
+            "onSaveInstanceState",
+            "onStart",
+            "onStop"
+        ],
+        "getIntent()": [
+            "getExtras"
+        ],
+        "unknown": [
+            "getIntent",
+            "getAccount",
+            "fillDirectoryDropdown",
+            "getLayoutInflater",
+            "setContentView",
+            "getSupportFragmentManager",
+            "getString",
+            "setupToolbar",
+            "getSupportActionBar",
+            "showToolbarSpinner",
+            "onBackPressed",
+            "checkWritableFolder",
+            "getOnBackPressedDispatcher",
+            "getMenuInflater",
+            "setSelectAllMenuItem",
+            "checkLocalStoragePathPickerPermission",
+            "requestPermissions",
+            "showLocalStoragePathPickerDialog",
+            "isSearchOpen",
+            "setDrawerIndicatorEnabled",
+            "isDrawerIndicatorAvailable",
+            "finish",
+            "popDirname",
+            "updateUploadButtonActive",
+            "setResult",
+            "getListOfFilesFragment",
+            "onDirectoryClick",
+            "pushDirname",
+            "findViewById"
+        ],
+        "extras": [
+            "getBoolean",
+            "get"
+        ],
+        "savedInstanceState": [
+            "getString",
+            "getBoolean"
+        ],
+        "Environment.getExternalStorageDirectory()": [
+            "getAbsolutePath"
+        ],
+        "Environment": [
+            "getExternalStorageDirectory"
+        ],
+        "preferences": [
+            "getUploadFromLocalLastPath",
+            "getUploaderBehaviour",
+            "setSortOrder",
+            "setUploaderBehaviour",
+            "setUploadFromLocalLastPath"
+        ],
+        "lastUploadFrom": [
+            "isEmpty"
+        ],
+        "mCurrentDir": [
+            "exists",
+            "getParentFile",
+            "getAbsolutePath"
+        ],
+        "mDirectories": [
+            "setDropDownViewResource",
+            "add",
+            "getCount",
+            "insert",
+            "remove",
+            "getItem",
+            "isEmpty",
+            "clear"
+        ],
+        "UploadFilesLayoutBinding": [
+            "inflate"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "binding.uploadOptions": [
+            "setVisibility"
+        ],
+        "binding.uploadFilesBtnUpload": [
+            "setText",
+            "setOnClickListener",
+            "setEnabled"
+        ],
+        "getSupportFragmentManager()": [
+            "findFragmentByTag"
+        ],
+        "viewThemeUtils.material": [
+            "colorMaterialButtonPrimaryOutlined",
+            "colorMaterialButtonPrimaryFilled"
+        ],
+        "binding.uploadFilesBtnCancel": [
+            "setOnClickListener"
+        ],
+        "behaviours": [
+            "add"
+        ],
+        "themeUtils": [
+            "getDefaultDisplayNameForRootFolder"
+        ],
+        "behaviourAdapter": [
+            "setDropDownViewResource"
+        ],
+        "binding.uploadFilesSpinnerBehaviour": [
+            "setAdapter",
+            "setSelection",
+            "getSelectedItemPosition",
+            "setEnabled"
+        ],
+        "binding.uploadFilesToolbar.sortListButtonGroup": [
+            "setVisibility"
+        ],
+        "binding.uploadFilesToolbar.switchGridViewButton": [
+            "setVisibility"
+        ],
+        "actionBar": [
+            "setHomeButtonEnabled",
+            "setDisplayHomeAsUpEnabled",
+            "setDisplayShowTitleEnabled"
+        ],
+        "viewThemeUtils.files": [
+            "themeActionBar"
+        ],
+        "mToolbarSpinner": [
+            "setAdapter",
+            "setOnItemSelectedListener",
+            "setSelection",
+            "setVisibility"
+        ],
+        "mCurrentDialog": [
+            "dismiss",
+            "show"
+        ],
+        "getOnBackPressedDispatcher()": [
+            "addCallback"
+        ],
+        "PermissionUtil": [
+            "requestExternalStoragePermission",
+            "checkExternalStoragePermission"
+        ],
+        "currentDir": [
+            "getParentFile",
+            "getName"
+        ],
+        "getMenuInflater()": [
+            "inflate"
+        ],
+        "menu": [
+            "findItem"
+        ],
+        "MenuItemCompat": [
+            "getActionView"
+        ],
+        "viewThemeUtils.androidx": [
+            "themeToolbarSearchView"
+        ],
+        "viewThemeUtils.platform": [
+            "tintTextDrawable",
+            "tintPrimaryDrawable"
+        ],
+        "menu.findItem(R.id.action_choose_storage_path)": [
+            "getIcon"
+        ],
+        "mSearchView": [
+            "setOnSearchClickListener",
+            "findViewById",
+            "setQuery",
+            "onActionViewCollapsed"
+        ],
+        "item": [
+            "getItemId",
+            "isChecked",
+            "setChecked"
+        ],
+        "mFileListFragment": [
+            "selectAllFiles",
+            "sortFiles",
+            "onClose",
+            "onNavigateUp",
+            "getCurrentDirectory",
+            "getCheckedFilesCount",
+            "getCheckedFilePaths",
+            "getFilesCount"
+        ],
+        "fm": [
+            "beginTransaction"
+        ],
+        "ft": [
+            "addToBackStack"
+        ],
+        "LocalStoragePathPickerDialogFragment": [
+            "newInstance"
+        ],
+        "dialog": [
+            "show",
+            "setOnConfirmationListener",
+            "dismissAllowingStateLoss"
+        ],
+        "DisplayUtils": [
+            "showSnackMessage"
+        ],
+        "mSearchEditFrame": [
+            "getVisibility"
+        ],
+        "parentFolder": [
+            "canRead"
+        ],
+        "mOptionsMenu": [
+            "findItem"
+        ],
+        "FileExtensionsKt": [
+            "logFileSize"
+        ],
+        "outState": [
+            "putString",
+            "putBoolean"
+        ],
+        "mOptionsMenu.findItem(R.id.action_select_all)": [
+            "isChecked"
+        ],
+        "directory": [
+            "isDirectory",
+            "getName"
+        ],
+        "selectAll": [
+            "setChecked",
+            "setIcon"
+        ],
+        "IndeterminateProgressDialog": [
+            "newInstance"
+        ],
+        "ActivityExtensionsKt": [
+            "isDialogFragmentReady"
+        ],
+        "data": [
+            "putExtra"
+        ],
+        "ConfirmationDialogFragment": [
+            "newInstance"
+        ],
+        "((LocalFileListFragment) getListOfFilesFragment())": [
+            "listDirectory"
+        ],
+        "folder": [
+            "canWrite"
+        ],
+        "textView": [
+            "setText"
+        ],
+        "new StringBuilder().append(getString(R.string.uploader_upload_files_behaviour))\n                                 .append(' ')\n                                 .append(getString(R.string.uploader_upload_files_behaviour_not_writable))": [
+            "toString"
+        ],
+        "new StringBuilder().append(getString(R.string.uploader_upload_files_behaviour))\n                                 .append(' ')": [
+            "append"
+        ],
+        "new StringBuilder().append(getString(R.string.uploader_upload_files_behaviour))": [
+            "append"
+        ],
+        "new StringBuilder()": [
+            "append"
+        ],
+        "v": [
+            "getId"
+        ],
+        "new CheckAvailableSpaceTask(this, selectedFilePaths)": [
+            "execute"
+        ],
+        "QUERY_TO_MOVE_DIALOG_TAG": [
+            "equals"
+        ],
+        "mAccountOnCreation": [
+            "equals"
+        ],
+        "getListOfFilesFragment()": [
+            "isGridEnabled"
+        ]
+    },
+    "methods": [
+        {
+            "name": "getFileListFragment",
+            "return_type": "LocalFileListFragment",
+            "parameters": [],
+            "start_position": 5232,
+            "end_position": 5324,
+            "body_start": 5283,
+            "body_end": 5324
+        },
+        {
+            "name": "startUploadActivityForResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Activity",
+                    "name": "activity"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "boolean",
+                    "name": "isWithinEncryptedFolder"
+                }
+            ],
+            "start_position": 5783,
+            "end_position": 6380,
+            "body_start": 6067,
+            "body_end": 6380
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 6386,
+            "end_position": 11940,
+            "body_start": 6526,
+            "body_end": 11940
+        },
+        {
+            "name": "onItemSelected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AdapterView<?>",
+                    "name": "parent"
+                },
+                {
+                    "type": "View",
+                    "name": "view"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                },
+                {
+                    "type": "long",
+                    "name": "id"
+                }
+            ],
+            "start_position": 10871,
+            "end_position": 11479,
+            "body_start": 10977,
+            "body_end": 11479
+        },
+        {
+            "name": "onNothingSelected",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "AdapterView<?>",
+                    "name": "parent"
+                }
+            ],
+            "start_position": 11493,
+            "end_position": 11612,
+            "body_start": 11568,
+            "body_end": 11612
+        },
+        {
+            "name": "requestPermissions",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11946,
+            "end_position": 12072,
+            "body_start": 11980,
+            "body_end": 12072
+        },
+        {
+            "name": "showToolbarSpinner",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12078,
+            "end_position": 12171,
+            "body_start": 12111,
+            "body_end": 12171
+        },
+        {
+            "name": "fillDirectoryDropdown",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12177,
+            "end_position": 12492,
+            "body_start": 12214,
+            "body_end": 12492
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                }
+            ],
+            "start_position": 12498,
+            "end_position": 13307,
+            "body_start": 12558,
+            "body_end": 13307
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 13313,
+            "end_position": 14099,
+            "body_start": 13379,
+            "body_end": 14099
+        },
+        {
+            "name": "checkLocalStoragePathPickerPermission",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14105,
+            "end_position": 14342,
+            "body_start": 14158,
+            "body_end": 14342
+        },
+        {
+            "name": "showLocalStoragePathPickerDialog",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 14348,
+            "end_position": 14717,
+            "body_start": 14396,
+            "body_end": 14717
+        },
+        {
+            "name": "onRequestPermissionsResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "String[]",
+                    "name": "permissions"
+                },
+                {
+                    "type": "int[]",
+                    "name": "grantResults"
+                }
+            ],
+            "start_position": 14723,
+            "end_position": 15451,
+            "body_start": 14939,
+            "body_end": 15451
+        },
+        {
+            "name": "onSortingOrderChosen",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileSortOrder",
+                    "name": "selection"
+                }
+            ],
+            "start_position": 15457,
+            "end_position": 15667,
+            "body_start": 15529,
+            "body_end": 15667
+        },
+        {
+            "name": "isSearchOpen",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 15673,
+            "end_position": 16001,
+            "body_start": 15704,
+            "body_end": 16001
+        },
+        {
+            "name": "handleOnBackPressed",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 16109,
+            "end_position": 17555,
+            "body_start": 16161,
+            "body_end": 17555
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 17568,
+            "end_position": 18377,
+            "body_start": 17643,
+            "body_end": 18377
+        },
+        {
+            "name": "pushDirname",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "directory"
+                }
+            ],
+            "start_position": 18575,
+            "end_position": 18883,
+            "body_start": 18615,
+            "body_end": 18883
+        },
+        {
+            "name": "popDirname",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 19012,
+            "end_position": 19141,
+            "body_start": 19040,
+            "body_end": 19141
+        },
+        {
+            "name": "updateUploadButtonActive",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 19147,
+            "end_position": 19364,
+            "body_start": 19187,
+            "body_end": 19364
+        },
+        {
+            "name": "setSelectAllMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "selectAll"
+                },
+                {
+                    "type": "boolean",
+                    "name": "checked"
+                }
+            ],
+            "start_position": 19370,
+            "end_position": 19831,
+            "body_start": 19441,
+            "body_end": 19831
+        },
+        {
+            "name": "onCheckAvailableSpaceStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 19837,
+            "end_position": 20183,
+            "body_start": 19892,
+            "body_end": 20183
+        },
+        {
+            "name": "onCheckAvailableSpaceFinish",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "hasEnoughSpaceAvailable"
+                }
+            ],
+            "start_position": 20504,
+            "end_position": 22889,
+            "body_start": 20616,
+            "body_end": 22889
+        },
+        {
+            "name": "chosenPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 22895,
+            "end_position": 23310,
+            "body_start": 22945,
+            "body_end": 23310
+        },
+        {
+            "name": "onDirectoryClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "directory"
+                }
+            ],
+            "start_position": 23353,
+            "end_position": 23805,
+            "body_start": 23412,
+            "body_end": 23805
+        },
+        {
+            "name": "checkWritableFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 23811,
+            "end_position": 24752,
+            "body_start": 23857,
+            "body_end": 24752
+        },
+        {
+            "name": "onFileClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "File",
+                    "name": "file"
+                }
+            ],
+            "start_position": 24795,
+            "end_position": 25083,
+            "body_start": 24844,
+            "body_end": 25083
+        },
+        {
+            "name": "getInitialDirectory",
+            "return_type": "File",
+            "parameters": [],
+            "start_position": 25126,
+            "end_position": 25209,
+            "body_start": 25174,
+            "body_end": 25209
+        },
+        {
+            "name": "isFolderPickerMode",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 25252,
+            "end_position": 25348,
+            "body_start": 25302,
+            "body_end": 25348
+        },
+        {
+            "name": "isWithinEncryptedFolder",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 25354,
+            "end_position": 25456,
+            "body_start": 25409,
+            "body_end": 25456
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "v"
+                }
+            ],
+            "start_position": 25750,
+            "end_position": 26967,
+            "body_start": 25792,
+            "body_end": 26967
+        },
+        {
+            "name": "onConfirmation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "callerTag"
+                }
+            ],
+            "start_position": 26973,
+            "end_position": 27866,
+            "body_start": 27032,
+            "body_end": 27866
+        },
+        {
+            "name": "onNeutral",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "callerTag"
+                }
+            ],
+            "start_position": 27872,
+            "end_position": 28032,
+            "body_start": 27926,
+            "body_end": 28032
+        },
+        {
+            "name": "onCancel",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "callerTag"
+                }
+            ],
+            "start_position": 28038,
+            "end_position": 28265,
+            "body_start": 28091,
+            "body_end": 28265
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28271,
+            "end_position": 28591,
+            "body_start": 28310,
+            "body_end": 28591
+        },
+        {
+            "name": "isGridView",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 28597,
+            "end_position": 28690,
+            "body_start": 28626,
+            "body_end": 28690
+        },
+        {
+            "name": "getListOfFilesFragment",
+            "return_type": "ExtendedListFragment",
+            "parameters": [],
+            "start_position": 28696,
+            "end_position": 28919,
+            "body_start": 28750,
+            "body_end": 28919
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 28925,
+            "end_position": 29082,
+            "body_start": 28963,
+            "body_end": 29082
+        }
+    ],
+    "code_constructs": [
+        "return_statement",
+        "expression_statement",
+        "if_statement",
+        "while_statement",
+        "throw_statement",
+        "break_statement"
+    ],
+    "local_variables": {
+        "action": "Intent",
+        "extras": "Bundle",
+        "lastUploadFrom": "String",
+        "localBehaviour": "int",
+        "behaviours": "List<String>",
+        "behaviourAdapter": "ArrayAdapter<String>",
+        "actionBar": "ActionBar",
+        "i": "int",
+        "currentDir": "File",
+        "selectAll": "boolean",
+        "item": "MenuItem",
+        "retval": "boolean",
+        "itemId": "int",
+        "fm": "FragmentManager",
+        "ft": "FragmentTransaction",
+        "mSearchEditFrame": "View",
+        "parentFolder": "File",
+        "anySelected": "boolean",
+        "data": "Intent",
+        "args": "String[]",
+        "dialog": "ConfirmationDialogFragment",
+        "file": "File",
+        "canWriteIntoFolder": "boolean",
+        "textView": "TextView",
+        "selectedFilePaths": "String[]",
+        "isPositionZero": "boolean",
+        "account": "Account"
+    }
+}

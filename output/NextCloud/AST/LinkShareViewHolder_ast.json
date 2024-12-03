@@ -1,0 +1,127 @@
+{
+    "method_calls": {
+        "binding": [
+            "getRoot"
+        ],
+        "publicShare": [
+            "getShareType",
+            "getSharedWithDisplayName",
+            "getLabel"
+        ],
+        "binding.name": [
+            "setText"
+        ],
+        "binding.icon": [
+            "setImageDrawable",
+            "getBackground",
+            "getDrawable"
+        ],
+        "ResourcesCompat": [
+            "getDrawable"
+        ],
+        "context": [
+            "getResources",
+            "getString"
+        ],
+        "binding.copyLink": [
+            "setVisibility",
+            "setOnClickListener"
+        ],
+        "binding.icon.getBackground()": [
+            "setColorFilter"
+        ],
+        "context.getResources()": [
+            "getColor",
+            "getString"
+        ],
+        "binding.icon.getDrawable().mutate()": [
+            "setColorFilter"
+        ],
+        "binding.icon.getDrawable()": [
+            "mutate"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "String": [
+            "format"
+        ],
+        "SharingMenuHelper": [
+            "isSecureFileDrop",
+            "getPermissionName"
+        ],
+        "viewThemeUtils.platform": [
+            "colorImageViewBackgroundAndIcon"
+        ],
+        "unknown": [
+            "setPermissionName"
+        ],
+        "binding.overflowMenu": [
+            "setOnClickListener"
+        ],
+        "listener": [
+            "showSharingMenuActionSheet",
+            "showPermissionsDialog",
+            "copyLink"
+        ],
+        "binding.shareByLinkContainer": [
+            "setOnClickListener"
+        ],
+        "MDMConfig.INSTANCE": [
+            "clipBoardSupport"
+        ],
+        "binding.permissionName": [
+            "setText",
+            "setVisibility"
+        ],
+        "viewThemeUtils.androidx": [
+            "colorPrimaryTextViewElement"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ],
+    "methods": [
+        {
+            "name": "bind",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "publicShare"
+                },
+                {
+                    "type": "ShareeListAdapterListener",
+                    "name": "listener"
+                }
+            ],
+            "start_position": 1595,
+            "end_position": 3862,
+            "body_start": 1669,
+            "body_end": 3862
+        },
+        {
+            "name": "setPermissionName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "publicShare"
+                },
+                {
+                    "type": "String",
+                    "name": "permissionName"
+                }
+            ],
+            "start_position": 3868,
+            "end_position": 4353,
+            "body_start": 3943,
+            "body_end": 4353
+        }
+    ],
+    "local_variables": {
+        "text": "String",
+        "permissionName": "String"
+    }
+}

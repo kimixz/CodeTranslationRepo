@@ -1,0 +1,26 @@
+[
+    {
+        "method_name": "getColumnsCount",
+        "method_code": "int getColumnsCount();",
+        "prompt": "\n        Please translate the following Java (Android) method titled getColumnsCount from LocalFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: getColumnsCount\n\n        Method Code: int getColumnsCount();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getColumnsCount() -> Int\n```"
+    },
+    {
+        "method_name": "onItemClicked",
+        "method_code": "void onItemClicked(File file);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onItemClicked from LocalFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: onItemClicked\n\n        Method Code: void onItemClicked(File file);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onItemClicked(file: File)\n```"
+    },
+    {
+        "method_name": "onItemCheckboxClicked",
+        "method_code": "void onItemCheckboxClicked(File file);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onItemCheckboxClicked from LocalFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: onItemCheckboxClicked\n\n        Method Code: void onItemCheckboxClicked(File file);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onItemCheckboxClicked(file: File)\n```"
+    },
+    {
+        "method_name": "setLoading",
+        "method_code": "void setLoading(boolean loading);",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLoading from LocalFileListFragmentInterface.java into Swift.\n\n        Input:\n\n        Method Name: setLoading\n\n        Method Code: void setLoading(boolean loading);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLoading(_ loading: Bool)\n```"
+    }
+]

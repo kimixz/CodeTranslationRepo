@@ -1,0 +1,600 @@
+{
+    "method_calls": {
+        "BackupListFragment.class": [
+            "getSimpleName"
+        ],
+        "arguments": [
+            "putParcelable",
+            "putParcelableArray",
+            "getParcelableArray"
+        ],
+        "frag": [
+            "setArguments"
+        ],
+        "super": [
+            "onCreateOptionsMenu",
+            "onDetach",
+            "onSaveInstanceState",
+            "onDestroy",
+            "onDestroyView",
+            "onResume",
+            "onStart",
+            "onStop",
+            "onOptionsItemSelected",
+            "onRequestPermissionsResult"
+        ],
+        "inflater": [
+            "inflate"
+        ],
+        "BackuplistFragmentBinding": [
+            "inflate"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "unknown": [
+            "setHasOptionsMenu",
+            "getActivity",
+            "requireContext",
+            "showRestoreButton",
+            "getContext",
+            "getArguments",
+            "setFile",
+            "showLoadingMessage",
+            "checkAndAskForCalendarWritePermission",
+            "importCalendar",
+            "checkAndAskForContactsWritePermission",
+            "importContacts",
+            "closeFragment",
+            "setSelectAllMenuItem",
+            "getFile",
+            "requestPermissions",
+            "getView"
+        ],
+        "contactsPreferenceActivity": [
+            "getSupportActionBar",
+            "setDrawerIndicatorEnabled",
+            "onBackPressed"
+        ],
+        "viewThemeUtils.files": [
+            "themeActionBar"
+        ],
+        "actionBar": [
+            "setDisplayHomeAsUpEnabled"
+        ],
+        "savedInstanceState": [
+            "getStringArray",
+            "getIntArray"
+        ],
+        "checkedCalendarItems": [
+            "put",
+            "size"
+        ],
+        "checkedContactsItems": [
+            "add",
+            "size"
+        ],
+        "binding.list": [
+            "setAdapter",
+            "setLayoutManager"
+        ],
+        "BundleExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "ocFiles": [
+            "add"
+        ],
+        "fileDownloader": [
+            "registerTransferListener",
+            "bind",
+            "enqueue",
+            "unbind"
+        ],
+        "file": [
+            "isDown"
+        ],
+        "MimeTypeUtil": [
+            "isVCard",
+            "isCalendar"
+        ],
+        "loadContactsTask": [
+            "execute",
+            "cancel"
+        ],
+        "listAdapter": [
+            "addCalendar",
+            "getCheckedContactsIntArray",
+            "getCheckedCalendarStringArray",
+            "selectAll",
+            "getCheckedCalendarPathsArray",
+            "replaceVcards",
+            "hasCalendarEntry"
+        ],
+        "binding.restoreSelected": [
+            "setOnClickListener"
+        ],
+        "Snackbar\n                .make(\n                    binding.list,\n                    R.string.contacts_preferences_import_scheduled,\n                    Snackbar.LENGTH_LONG\n                     )": [
+            "show"
+        ],
+        "Snackbar": [
+            "make"
+        ],
+        "viewThemeUtils.material": [
+            "colorMaterialButtonPrimaryBorderless"
+        ],
+        "outState": [
+            "putStringArray",
+            "putIntArray"
+        ],
+        "event": [
+            "getShowRestoreButton"
+        ],
+        "binding.contactlistRestoreSelectedContainer": [
+            "setVisibility"
+        ],
+        "EventBus.getDefault()": [
+            "register",
+            "unregister"
+        ],
+        "EventBus": [
+            "getDefault"
+        ],
+        "item": [
+            "getItemId",
+            "setChecked",
+            "isChecked"
+        ],
+        "binding.loadingListContainer": [
+            "setVisibility"
+        ],
+        "selectAll": [
+            "setChecked",
+            "setIcon"
+        ],
+        "backgroundJobManager": [
+            "startImmediateContactsImport",
+            "startImmediateCalendarImport"
+        ],
+        "account": [
+            "getName",
+            "getType"
+        ],
+        "getFile()": [
+            "getStoragePath"
+        ],
+        "Snackbar\n            .make(\n                binding.list,\n                R.string.contacts_preferences_import_scheduled,\n                Snackbar.LENGTH_LONG\n                 )": [
+            "show"
+        ],
+        "PermissionUtil": [
+            "checkSelfPermission"
+        ],
+        "Manifest.permission.WRITE_CONTACTS": [
+            "equalsIgnoreCase"
+        ],
+        "Snackbar.make(getView(), R.string.contactlist_no_permission, Snackbar.LENGTH_LONG)": [
+            "show"
+        ],
+        "Toast.makeText(getContext(), R.string.contactlist_no_permission, Toast.LENGTH_LONG)": [
+            "show"
+        ],
+        "Toast": [
+            "makeText"
+        ],
+        "Manifest.permission.WRITE_CALENDAR": [
+            "equalsIgnoreCase"
+        ],
+        "download": [
+            "getState",
+            "getFile"
+        ],
+        "vCards": [
+            "clear",
+            "addAll"
+        ],
+        "vCard": [
+            "getFormattedName",
+            "getTelephoneNumbers",
+            "getEmails"
+        ],
+        "vCard.getFormattedName()": [
+            "getValue"
+        ],
+        "vCard.getTelephoneNumbers()": [
+            "size",
+            "get"
+        ],
+        "vCard.getTelephoneNumbers().get(0)": [
+            "getText"
+        ],
+        "vCard.getEmails()": [
+            "size",
+            "get"
+        ],
+        "vCard.getEmails().get(0)": [
+            "getValue"
+        ]
+    },
+    "methods": [
+        {
+            "name": "newInstance",
+            "return_type": "BackupListFragment",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 3425,
+            "end_position": 3757,
+            "body_start": 3494,
+            "body_end": 3757
+        },
+        {
+            "name": "newInstance",
+            "return_type": "BackupListFragment",
+            "parameters": [
+                {
+                    "type": "OCFile[]",
+                    "name": "files"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                }
+            ],
+            "start_position": 3763,
+            "end_position": 4105,
+            "body_start": 3835,
+            "body_end": 4105
+        },
+        {
+            "name": "onCreateOptionsMenu",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Menu",
+                    "name": "menu"
+                },
+                {
+                    "type": "MenuInflater",
+                    "name": "inflater"
+                }
+            ],
+            "start_position": 4148,
+            "end_position": 4366,
+            "body_start": 4246,
+            "body_end": 4366
+        },
+        {
+            "name": "onCreateView",
+            "return_type": "View",
+            "parameters": [
+                {
+                    "type": "LayoutInflater",
+                    "name": "inflater"
+                },
+                {
+                    "type": "ViewGroup",
+                    "name": "container"
+                },
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 4372,
+            "end_position": 9560,
+            "body_start": 4499,
+            "body_end": 9560
+        },
+        {
+            "name": "onDetach",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 9566,
+            "end_position": 9721,
+            "body_start": 9603,
+            "body_end": 9721
+        },
+        {
+            "name": "onSaveInstanceState",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "outState"
+                }
+            ],
+            "start_position": 9727,
+            "end_position": 10069,
+            "body_start": 9799,
+            "body_end": 10069
+        },
+        {
+            "name": "onMessageEvent",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "VCardToggleEvent",
+                    "name": "event"
+                }
+            ],
+            "start_position": 10075,
+            "end_position": 10416,
+            "body_start": 10171,
+            "body_end": 10416
+        },
+        {
+            "name": "showRestoreButton",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "show"
+                }
+            ],
+            "start_position": 10422,
+            "end_position": 10573,
+            "body_start": 10466,
+            "body_end": 10573
+        },
+        {
+            "name": "onDestroy",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10579,
+            "end_position": 10827,
+            "body_start": 10617,
+            "body_end": 10827
+        },
+        {
+            "name": "onDestroyView",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10833,
+            "end_position": 10937,
+            "body_start": 10875,
+            "body_end": 10937
+        },
+        {
+            "name": "onResume",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 10943,
+            "end_position": 11176,
+            "body_start": 10966,
+            "body_end": 11176
+        },
+        {
+            "name": "onStart",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11182,
+            "end_position": 11296,
+            "body_start": 11218,
+            "body_end": 11296
+        },
+        {
+            "name": "onStop",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 11302,
+            "end_position": 11509,
+            "body_start": 11337,
+            "body_end": 11509
+        },
+        {
+            "name": "onOptionsItemSelected",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "item"
+                }
+            ],
+            "start_position": 11515,
+            "end_position": 12099,
+            "body_start": 11581,
+            "body_end": 12099
+        },
+        {
+            "name": "showLoadingMessage",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "showIt"
+                }
+            ],
+            "start_position": 12105,
+            "end_position": 12246,
+            "body_start": 12152,
+            "body_end": 12246
+        },
+        {
+            "name": "setSelectAllMenuItem",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "MenuItem",
+                    "name": "selectAll"
+                },
+                {
+                    "type": "boolean",
+                    "name": "checked"
+                }
+            ],
+            "start_position": 12252,
+            "end_position": 12534,
+            "body_start": 12323,
+            "body_end": 12534
+        },
+        {
+            "name": "importContacts",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ContactsAccount",
+                    "name": "account"
+                }
+            ],
+            "start_position": 12540,
+            "end_position": 13175,
+            "body_start": 12593,
+            "body_end": 13175
+        },
+        {
+            "name": "importCalendar",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13181,
+            "end_position": 13555,
+            "body_start": 13211,
+            "body_end": 13555
+        },
+        {
+            "name": "closeFragment",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 13561,
+            "end_position": 13821,
+            "body_start": 13590,
+            "body_end": 13821
+        },
+        {
+            "name": "checkAndAskForContactsWritePermission",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 13827,
+            "end_position": 14254,
+            "body_start": 13883,
+            "body_end": 14254
+        },
+        {
+            "name": "checkAndAskForCalendarWritePermission",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 14260,
+            "end_position": 14687,
+            "body_start": 14316,
+            "body_end": 14687
+        },
+        {
+            "name": "onRequestPermissionsResult",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "requestCode"
+                },
+                {
+                    "type": "String[]",
+                    "name": "permissions"
+                },
+                {
+                    "type": "int[]",
+                    "name": "grantResults"
+                }
+            ],
+            "start_position": 14693,
+            "end_position": 16608,
+            "body_start": 14823,
+            "body_end": 16608
+        },
+        {
+            "name": "onDownloadUpdate",
+            "return_type": "Unit",
+            "parameters": [
+                {
+                    "type": "Transfer",
+                    "name": "download"
+                }
+            ],
+            "start_position": 16614,
+            "end_position": 17100,
+            "body_start": 16663,
+            "body_end": 17100
+        },
+        {
+            "name": "loadVCards",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<VCard>",
+                    "name": "cards"
+                }
+            ],
+            "start_position": 17106,
+            "end_position": 17287,
+            "body_start": 17148,
+            "body_end": 17287
+        },
+        {
+            "name": "getDisplayName",
+            "return_type": "String",
+            "parameters": [
+                {
+                    "type": "VCard",
+                    "name": "vCard"
+                }
+            ],
+            "start_position": 17293,
+            "end_position": 17784,
+            "body_start": 17342,
+            "body_end": 17784
+        },
+        {
+            "name": "hasCalendarEntry",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 17790,
+            "end_position": 17878,
+            "body_start": 17824,
+            "body_end": 17878
+        },
+        {
+            "name": "setSelectedAccount",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ContactsAccount",
+                    "name": "account"
+                }
+            ],
+            "start_position": 17884,
+            "end_position": 17982,
+            "body_start": 17940,
+            "body_end": 17982
+        }
+    ],
+    "local_variables": {
+        "frag": "BackupListFragment",
+        "arguments": "Bundle",
+        "view": "View",
+        "contactsPreferenceActivity": "ContactsPreferenceActivity",
+        "actionBar": "ActionBar",
+        "checkedCalendarItems": "HashMap<String, Integer>",
+        "checkedCalendarItemsArray": "String[]",
+        "checkedContactsItems": "HashSet<Integer>",
+        "checkedContactsItemsArray": "int[]",
+        "user": "User",
+        "request": "Request",
+        "retval": "boolean",
+        "itemId": "int",
+        "index": "int",
+        "activity": "Activity",
+        "ocFile": "OCFile"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "enhanced_for_statement",
+        "for_statement",
+        "break_statement"
+    ]
+}

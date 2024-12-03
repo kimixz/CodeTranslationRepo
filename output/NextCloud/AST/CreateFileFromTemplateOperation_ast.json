@@ -1,0 +1,73 @@
+{
+    "method_calls": {
+        "CreateFileFromTemplateOperation.class": [
+            "getSimpleName"
+        ],
+        "client": [
+            "getBaseUri",
+            "executeMethod",
+            "exhaustResponse"
+        ],
+        "postMethod": [
+            "setParameter",
+            "addRequestHeader",
+            "getResponseBodyAsString",
+            "getResponseBodyAsStream",
+            "releaseConnection"
+        ],
+        "String": [
+            "valueOf"
+        ],
+        "respJSON.getJSONObject(NODE_OCS).getJSONObject(NODE_DATA)": [
+            "getString"
+        ],
+        "respJSON.getJSONObject(NODE_OCS)": [
+            "getJSONObject"
+        ],
+        "respJSON": [
+            "getJSONObject"
+        ],
+        "templateArray": [
+            "add"
+        ],
+        "result": [
+            "setData",
+            "getLogMessage",
+            "getException"
+        ],
+        "Log_OC": [
+            "e"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 1458,
+            "end_position": 3193,
+            "body_start": 1517,
+            "body_end": 3193
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult",
+        "postMethod": "Utf8PostMethod",
+        "status": "int",
+        "response": "String",
+        "respJSON": "JSONObject",
+        "url": "String",
+        "templateArray": "ArrayList<Object>"
+    }
+}

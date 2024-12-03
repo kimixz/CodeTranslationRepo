@@ -1,0 +1,37 @@
+{
+    "methods": [
+        {
+            "name": "compare",
+            "return_type": "int",
+            "parameters": [
+                {
+                    "type": "VCard",
+                    "name": "o1"
+                },
+                {
+                    "type": "VCard",
+                    "name": "o2"
+                }
+            ],
+            "start_position": 393,
+            "end_position": 639,
+            "body_start": 446,
+            "body_end": 639
+        }
+    ],
+    "local_variables": {
+        "contact1": "String",
+        "contact2": "String"
+    },
+    "method_calls": {
+        "BackupListFragment": [
+            "getDisplayName"
+        ],
+        "contact1": [
+            "compareToIgnoreCase"
+        ]
+    },
+    "code_constructs": [
+        "return_statement"
+    ]
+}

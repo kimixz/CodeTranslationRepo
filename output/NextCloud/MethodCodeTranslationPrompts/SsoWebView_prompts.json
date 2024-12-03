@@ -1,0 +1,8 @@
+[
+    {
+        "method_name": "onCheckIsTextEditor",
+        "method_code": "@Override\n    public boolean onCheckIsTextEditor () {\n        return false;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled onCheckIsTextEditor from SsoWebView.java into Swift.\n\n        Input:\n\n        Method Name: onCheckIsTextEditor\n\n        Method Code: @Override\n    public boolean onCheckIsTextEditor () {\n        return false;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\noverride var isTextInput: Bool {\n    return false\n}\n```"
+    }
+]

@@ -1,0 +1,349 @@
+{
+    "methods": [
+        {
+            "name": "beforeAll",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2404,
+            "end_position": 5235,
+            "body_start": 2452,
+            "body_end": 5235
+        },
+        {
+            "name": "after",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5241,
+            "end_position": 5337,
+            "body_start": 5272,
+            "body_end": 5337
+        },
+        {
+            "name": "deleteAllFilesOnServer",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5343,
+            "end_position": 6808,
+            "body_start": 5387,
+            "body_end": 6808
+        },
+        {
+            "name": "waitForServer",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "Uri",
+                    "name": "baseUrl"
+                }
+            ],
+            "start_position": 6814,
+            "end_position": 7438,
+            "body_start": 6884,
+            "body_end": 7438
+        },
+        {
+            "name": "uploadOCUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "ocUpload"
+                }
+            ],
+            "start_position": 7444,
+            "end_position": 7570,
+            "body_start": 7490,
+            "body_end": 7570
+        },
+        {
+            "name": "uploadOCUpload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCUpload",
+                    "name": "ocUpload"
+                },
+                {
+                    "type": "int",
+                    "name": "localBehaviour"
+                }
+            ],
+            "start_position": 7576,
+            "end_position": 10441,
+            "body_start": 7642,
+            "body_end": 10441
+        },
+        {
+            "name": "isNetworkAndServerAvailable",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "GenericCallback<Boolean>",
+                    "name": "callback"
+                }
+            ],
+            "start_position": 7738,
+            "end_position": 7860,
+            "body_start": 7844,
+            "body_end": 7860
+        },
+        {
+            "name": "isConnected",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 7874,
+            "end_position": 7970,
+            "body_start": 7925,
+            "body_end": 7970
+        },
+        {
+            "name": "isInternetWalled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 7984,
+            "end_position": 8085,
+            "body_start": 8040,
+            "body_end": 8085
+        },
+        {
+            "name": "getConnectivity",
+            "return_type": "Connectivity",
+            "parameters": [],
+            "start_position": 8099,
+            "end_position": 8226,
+            "body_start": 8159,
+            "body_end": 8226
+        },
+        {
+            "name": "getBattery",
+            "return_type": "BatteryStatus",
+            "parameters": [],
+            "start_position": 8342,
+            "end_position": 8478,
+            "body_start": 8419,
+            "body_end": 8478
+        },
+        {
+            "name": "isPowerSavingEnabled",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8492,
+            "end_position": 8597,
+            "body_start": 8552,
+            "body_end": 8597
+        },
+        {
+            "name": "isPowerSavingExclusionAvailable",
+            "return_type": "boolean",
+            "parameters": [],
+            "start_position": 8611,
+            "end_position": 8727,
+            "body_start": 8682,
+            "body_end": 8727
+        },
+        {
+            "name": "refreshFolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 10447,
+            "end_position": 10997,
+            "body_start": 10489,
+            "body_end": 10997
+        }
+    ],
+    "code_constructs": [
+        "try_statement",
+        "expression_statement",
+        "enhanced_for_statement",
+        "if_statement",
+        "throw_statement",
+        "for_statement",
+        "break_statement",
+        "while_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "InstrumentationRegistry.getInstrumentation()": [
+            "getTargetContext"
+        ],
+        "InstrumentationRegistry": [
+            "getInstrumentation"
+        ],
+        "AccountManager": [
+            "get"
+        ],
+        "platformAccountManager": [
+            "getAccounts",
+            "removeAccountExplicitly",
+            "addAccountExplicitly",
+            "setUserData"
+        ],
+        "account.type": [
+            "equalsIgnoreCase"
+        ],
+        "androidx.test.platform.app.InstrumentationRegistry": [
+            "getArguments"
+        ],
+        "Uri": [
+            "parse"
+        ],
+        "arguments": [
+            "getString"
+        ],
+        "MainApp": [
+            "getAccountType"
+        ],
+        "UserAccountManagerImpl": [
+            "fromContext"
+        ],
+        "accountManager": [
+            "exists"
+        ],
+        "Integer": [
+            "toString"
+        ],
+        "baseUrl": [
+            "toString"
+        ],
+        "userAccountManager": [
+            "getAccountByName",
+            "getUser"
+        ],
+        "optionalUser": [
+            "orElseThrow"
+        ],
+        "OwnCloudClientFactory": [
+            "createOwnCloudClient",
+            "createNextcloudClient"
+        ],
+        "unknown": [
+            "createDummyFiles",
+            "waitForServer",
+            "deleteAllFilesOnServer",
+            "assertTrue",
+            "shortSleep",
+            "uploadOCUpload",
+            "getStorageManager",
+            "assertNotNull"
+        ],
+        "super": [
+            "after"
+        ],
+        "new ReadFolderRemoteOperation(\"/\")": [
+            "execute"
+        ],
+        "result": [
+            "getLogMessage",
+            "isSuccess",
+            "getData"
+        ],
+        "remoteFile.getRemotePath()": [
+            "equals"
+        ],
+        "remoteFile": [
+            "getRemotePath",
+            "isEncrypted",
+            "getLocalId"
+        ],
+        "operation\n                        .execute(client)": [
+            "isSuccess"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "new RemoveFileRemoteOperation(remoteFile.getRemotePath())\n                        .execute(client)": [
+            "isSuccess"
+        ],
+        "new RemoveFileRemoteOperation(remoteFile.getRemotePath())": [
+            "execute"
+        ],
+        "client": [
+            "executeMethod"
+        ],
+        "System.out": [
+            "println"
+        ],
+        "Thread": [
+            "sleep"
+        ],
+        "Assert": [
+            "fail"
+        ],
+        "e": [
+            "printStackTrace"
+        ],
+        "targetContext": [
+            "getContentResolver"
+        ],
+        "newUpload": [
+            "addRenameUploadListener",
+            "setRemoteFolderToBeCreated",
+            "execute"
+        ],
+        "getStorageManager()": [
+            "getFileByEncryptedRemotePath",
+            "getFileByDecryptedRemotePath"
+        ],
+        "new File(ocUpload.getRemotePath())": [
+            "getParent",
+            "getName"
+        ],
+        "ocUpload": [
+            "getRemotePath"
+        ],
+        "parentFolder": [
+            "getDecryptedRemotePath"
+        ],
+        "uploadedFile": [
+            "getRemoteId",
+            "getPermissions",
+            "getStoragePath"
+        ],
+        "new File(uploadedFile.getStoragePath())": [
+            "exists"
+        ],
+        "new RefreshFolderOperation(getStorageManager().getFileByEncryptedRemotePath(path),\n                                              System.currentTimeMillis(),\n                                              false,\n                                              false,\n                                              getStorageManager(),\n                                              user,\n                                              targetContext\n        ).execute(client)": [
+            "isSuccess"
+        ],
+        "new RefreshFolderOperation(getStorageManager().getFileByEncryptedRemotePath(path),\n                                              System.currentTimeMillis(),\n                                              false,\n                                              false,\n                                              getStorageManager(),\n                                              user,\n                                              targetContext\n        )": [
+            "execute"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ]
+    },
+    "local_variables": {
+        "platformAccountManager": "AccountManager",
+        "arguments": "Bundle",
+        "baseUrl": "Uri",
+        "loginName": "String",
+        "password": "String",
+        "temp": "Account",
+        "accountManager": "UserAccountManager",
+        "userAccountManager": "UserAccountManager",
+        "optionalUser": "Optional<User>",
+        "result": "RemoteOperationResult",
+        "remoteFile": "RemoteFile",
+        "operation": "ToggleEncryptionRemoteOperation",
+        "operationResult": "boolean",
+        "removeResult": "boolean",
+        "i": "int",
+        "get": "GetMethod",
+        "connectivityServiceMock": "ConnectivityService",
+        "powerManagementServiceMock": "PowerManagementService",
+        "uploadsStorageManager": "UploadsStorageManager",
+        "newUpload": "UploadFileOperation",
+        "parentFolder": "OCFile",
+        "uploadedFileName": "String",
+        "uploadedFile": "OCFile"
+    }
+}

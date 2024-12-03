@@ -1,0 +1,98 @@
+[
+    {
+        "method_name": "getId",
+        "method_code": "public int getId() {\n        return this.id;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getId from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: getId\n\n        Method Code: public int getId() {\n        return this.id;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getId() -> Int {\n    return self.id\n}\n```"
+    },
+    {
+        "method_name": "getLocalPath",
+        "method_code": "public String getLocalPath() {\n        return this.localPath;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getLocalPath from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: getLocalPath\n\n        Method Code: public String getLocalPath() {\n        return this.localPath;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getLocalPath() -> String {\n    return self.localPath\n}\n```"
+    },
+    {
+        "method_name": "getModifiedAt",
+        "method_code": "public long getModifiedAt() {\n        return this.modifiedAt;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getModifiedAt from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: getModifiedAt\n\n        Method Code: public long getModifiedAt() {\n        return this.modifiedAt;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getModifiedAt() -> Int64 {\n    return self.modifiedAt\n}\n```"
+    },
+    {
+        "method_name": "isFolder",
+        "method_code": "public boolean isFolder() {\n        return this.folder;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isFolder from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: isFolder\n\n        Method Code: public boolean isFolder() {\n        return this.folder;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isFolder() -> Bool {\n    return self.folder\n}\n```"
+    },
+    {
+        "method_name": "isSentForUpload",
+        "method_code": "public boolean isSentForUpload() {\n        return this.sentForUpload;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled isSentForUpload from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: isSentForUpload\n\n        Method Code: public boolean isSentForUpload() {\n        return this.sentForUpload;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isSentForUpload() -> Bool {\n    return self.sentForUpload\n}\n```"
+    },
+    {
+        "method_name": "getFoundAt",
+        "method_code": "public long getFoundAt() {\n        return this.foundAt;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getFoundAt from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: getFoundAt\n\n        Method Code: public long getFoundAt() {\n        return this.foundAt;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getFoundAt() -> Int64 {\n    return self.foundAt\n}\n```"
+    },
+    {
+        "method_name": "getSyncedFolderId",
+        "method_code": "public long getSyncedFolderId() {\n        return this.syncedFolderId;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getSyncedFolderId from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: getSyncedFolderId\n\n        Method Code: public long getSyncedFolderId() {\n        return this.syncedFolderId;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getSyncedFolderId() -> Int64 {\n    return self.syncedFolderId\n}\n```"
+    },
+    {
+        "method_name": "getCrc32",
+        "method_code": "@Nullable\n    public String getCrc32() {\n        return this.crc32;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getCrc32 from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: getCrc32\n\n        Method Code: @Nullable\n    public String getCrc32() {\n        return this.crc32;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getCrc32() -> String? {\n    return self.crc32\n}\n```"
+    },
+    {
+        "method_name": "setId",
+        "method_code": "public void setId(int id) {\n        this.id = id;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setId from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: setId\n\n        Method Code: public void setId(int id) {\n        this.id = id;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setId(_ id: Int) {\n    self.id = id\n}\n```"
+    },
+    {
+        "method_name": "setLocalPath",
+        "method_code": "public void setLocalPath(String localPath) {\n        this.localPath = localPath;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setLocalPath from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: setLocalPath\n\n        Method Code: public void setLocalPath(String localPath) {\n        this.localPath = localPath;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setLocalPath(_ localPath: String) {\n    self.localPath = localPath\n}\n```"
+    },
+    {
+        "method_name": "setModifiedAt",
+        "method_code": "public void setModifiedAt(long modifiedAt) {\n        this.modifiedAt = modifiedAt;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setModifiedAt from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: setModifiedAt\n\n        Method Code: public void setModifiedAt(long modifiedAt) {\n        this.modifiedAt = modifiedAt;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setModifiedAt(_ modifiedAt: Int64) {\n    self.modifiedAt = modifiedAt\n}\n```"
+    },
+    {
+        "method_name": "setFolder",
+        "method_code": "public void setFolder(boolean folder) {\n        this.folder = folder;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFolder from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: setFolder\n\n        Method Code: public void setFolder(boolean folder) {\n        this.folder = folder;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFolder(_ folder: Bool) {\n    self.folder = folder\n}\n```"
+    },
+    {
+        "method_name": "setSentForUpload",
+        "method_code": "public void setSentForUpload(boolean sentForUpload) {\n        this.sentForUpload = sentForUpload;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSentForUpload from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: setSentForUpload\n\n        Method Code: public void setSentForUpload(boolean sentForUpload) {\n        this.sentForUpload = sentForUpload;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSentForUpload(_ sentForUpload: Bool) {\n    self.sentForUpload = sentForUpload\n}\n```"
+    },
+    {
+        "method_name": "setFoundAt",
+        "method_code": "public void setFoundAt(long foundAt) {\n        this.foundAt = foundAt;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setFoundAt from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: setFoundAt\n\n        Method Code: public void setFoundAt(long foundAt) {\n        this.foundAt = foundAt;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setFoundAt(_ foundAt: Int64) {\n    self.foundAt = foundAt\n}\n```"
+    },
+    {
+        "method_name": "setSyncedFolderId",
+        "method_code": "public void setSyncedFolderId(long syncedFolderId) {\n        this.syncedFolderId = syncedFolderId;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setSyncedFolderId from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: setSyncedFolderId\n\n        Method Code: public void setSyncedFolderId(long syncedFolderId) {\n        this.syncedFolderId = syncedFolderId;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setSyncedFolderId(_ syncedFolderId: Int64) {\n    self.syncedFolderId = syncedFolderId\n}\n```"
+    },
+    {
+        "method_name": "setCrc32",
+        "method_code": "public void setCrc32(@Nullable String crc32) {\n        this.crc32 = crc32;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled setCrc32 from FileSystemDataSet.java into Swift.\n\n        Input:\n\n        Method Name: setCrc32\n\n        Method Code: public void setCrc32(@Nullable String crc32) {\n        this.crc32 = crc32;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc setCrc32(_ crc32: String?) {\n    self.crc32 = crc32\n}\n```"
+    }
+]

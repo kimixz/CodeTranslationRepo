@@ -1,0 +1,77 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getFilePaths",
+            "return_type": "List<String>",
+            "parameters": [],
+            "start_position": 4997,
+            "end_position": 5070,
+            "body_start": 5032,
+            "body_end": 5070
+        },
+        {
+            "name": "getFolderName",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 5076,
+            "end_position": 5145,
+            "body_start": 5106,
+            "body_end": 5145
+        },
+        {
+            "name": "getNumberOfFiles",
+            "return_type": "long",
+            "parameters": [],
+            "start_position": 5151,
+            "end_position": 5224,
+            "body_start": 5182,
+            "body_end": 5224
+        },
+        {
+            "name": "setFilePaths",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<String>",
+                    "name": "filePaths"
+                }
+            ],
+            "start_position": 5230,
+            "end_position": 5322,
+            "body_start": 5279,
+            "body_end": 5322
+        },
+        {
+            "name": "setFolderName",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "folderName"
+                }
+            ],
+            "start_position": 5328,
+            "end_position": 5418,
+            "body_start": 5373,
+            "body_end": 5418
+        },
+        {
+            "name": "setNumberOfFiles",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "long",
+                    "name": "numberOfFiles"
+                }
+            ],
+            "start_position": 5424,
+            "end_position": 5524,
+            "body_start": 5473,
+            "body_end": 5524
+        }
+    ]
+}

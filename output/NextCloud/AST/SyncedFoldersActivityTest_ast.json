@@ -1,0 +1,165 @@
+{
+    "methods": [
+        {
+            "name": "regular",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 830,
+            "end_position": 1066,
+            "body_start": 862,
+            "body_end": 1066
+        },
+        {
+            "name": "withNull",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1072,
+            "end_position": 1345,
+            "body_start": 1105,
+            "body_end": 1345
+        },
+        {
+            "name": "withNullAndEnableStatus",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1351,
+            "end_position": 1865,
+            "body_start": 1399,
+            "body_end": 1865
+        },
+        {
+            "name": "withNullFolderName",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1871,
+            "end_position": 2302,
+            "body_start": 1914,
+            "body_end": 2302
+        },
+        {
+            "name": "withNullFolderNameAllEnabled",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2308,
+            "end_position": 2707,
+            "body_start": 2361,
+            "body_end": 2707
+        },
+        {
+            "name": "shuffle",
+            "return_type": "List<SyncedFolderDisplayItem>",
+            "parameters": [
+                {
+                    "type": "List<SyncedFolderDisplayItem>",
+                    "name": "list"
+                }
+            ],
+            "start_position": 2713,
+            "end_position": 2940,
+            "body_start": 2795,
+            "body_end": 2940
+        },
+        {
+            "name": "sortAndTest",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "List<SyncedFolderDisplayItem>",
+                    "name": "sortedList"
+                }
+            ],
+            "start_position": 2946,
+            "end_position": 3190,
+            "body_start": 3016,
+            "body_end": 3190
+        },
+        {
+            "name": "test",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "List<SyncedFolderDisplayItem>",
+                    "name": "target"
+                },
+                {
+                    "type": "List<SyncedFolderDisplayItem>",
+                    "name": "actual"
+                }
+            ],
+            "start_position": 3196,
+            "end_position": 4306,
+            "body_start": 3293,
+            "body_end": 4306
+        },
+        {
+            "name": "create",
+            "return_type": "SyncedFolderDisplayItem",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "folderName"
+                },
+                {
+                    "type": "boolean",
+                    "name": "enabled"
+                }
+            ],
+            "start_position": 4312,
+            "end_position": 5581,
+            "body_start": 4387,
+            "body_end": 5581
+        }
+    ],
+    "local_variables": {
+        "sortedArray": "SyncedFolderDisplayItem[]",
+        "shuffled": "List<SyncedFolderDisplayItem>",
+        "unsortedList": "List<SyncedFolderDisplayItem>",
+        "i": "int",
+        "compare": "boolean"
+    },
+    "method_calls": {
+        "unknown": [
+            "create",
+            "assertTrue",
+            "sortAndTest",
+            "shuffle",
+            "test"
+        ],
+        "Arrays": [
+            "asList"
+        ],
+        "Collections": [
+            "shuffle"
+        ],
+        "SyncedFoldersActivity": [
+            "sortSyncedFolderItems"
+        ],
+        "target": [
+            "size",
+            "get"
+        ],
+        "actual": [
+            "get"
+        ],
+        "System.out": [
+            "println"
+        ],
+        "item": [
+            "getFolderName",
+            "isEnabled"
+        ],
+        "NameCollisionPolicy.ASK_USER": [
+            "serialize"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "for_statement",
+        "if_statement",
+        "enhanced_for_statement"
+    ]
+}

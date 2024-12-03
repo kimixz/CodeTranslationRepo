@@ -1,0 +1,74 @@
+[
+    {
+        "method_name": "shouldShowImage",
+        "method_code": "public boolean shouldShowImage() {\n        return image != DO_NOT_SHOW;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled shouldShowImage from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: shouldShowImage\n\n        Method Code: public boolean shouldShowImage() {\n        return image != DO_NOT_SHOW;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc shouldShowImage() -> Bool {\n    return image != DO_NOT_SHOW\n}\n```"
+    },
+    {
+        "method_name": "shouldShowTitleText",
+        "method_code": "public boolean shouldShowTitleText() {\n        return titleText != DO_NOT_SHOW && titleText != R.string.empty;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled shouldShowTitleText from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: shouldShowTitleText\n\n        Method Code: public boolean shouldShowTitleText() {\n        return titleText != DO_NOT_SHOW && titleText != R.string.empty;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc shouldShowTitleText() -> Bool {\n    return titleText != DO_NOT_SHOW && titleText != R.string.empty\n}\n```"
+    },
+    {
+        "method_name": "shouldShowContentText",
+        "method_code": "public boolean shouldShowContentText() {\n        return contentText != DO_NOT_SHOW && contentText != R.string.empty;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled shouldShowContentText from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: shouldShowContentText\n\n        Method Code: public boolean shouldShowContentText() {\n        return contentText != DO_NOT_SHOW && contentText != R.string.empty;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc shouldShowContentText() -> Bool {\n    return contentText != DO_NOT_SHOW && contentText != R.string.empty\n}\n```"
+    },
+    {
+        "method_name": "shouldContentCentered",
+        "method_code": "public boolean shouldContentCentered() {\n        return contentCentered;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled shouldContentCentered from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: shouldContentCentered\n\n        Method Code: public boolean shouldContentCentered() {\n        return contentCentered;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc shouldContentCentered() -> Bool {\n    return contentCentered\n}\n```"
+    },
+    {
+        "method_name": "shouldShowBulletPointList",
+        "method_code": "public boolean shouldShowBulletPointList() {\n        return bulletList;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled shouldShowBulletPointList from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: shouldShowBulletPointList\n\n        Method Code: public boolean shouldShowBulletPointList() {\n        return bulletList;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc shouldShowBulletPointList() -> Bool {\n    return bulletList\n}\n```"
+    },
+    {
+        "method_name": "describeContents",
+        "method_code": "@Override\n    public int describeContents() {\n        return 0;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled describeContents from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: describeContents\n\n        Method Code: @Override\n    public int describeContents() {\n        return 0;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc describeContents() -> Int {\n    return 0\n}\n```"
+    },
+    {
+        "method_name": "writeToParcel",
+        "method_code": "@Override\n    public void writeToParcel(Parcel dest, int flags) {\n        dest.writeInt(image);\n        dest.writeInt(titleText);\n        dest.writeInt(contentText);\n        dest.writeByte((byte) (contentCentered ? 1 : 0));\n        dest.writeByte((byte) (bulletList ? 1 : 0));\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled writeToParcel from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: writeToParcel\n\n        Method Code: @Override\n    public void writeToParcel(Parcel dest, int flags) {\n        dest.writeInt(image);\n        dest.writeInt(titleText);\n        dest.writeInt(contentText);\n        dest.writeByte((byte) (contentCentered ? 1 : 0));\n        dest.writeByte((byte) (bulletList ? 1 : 0));\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc writeToParcel(dest: inout Parcel, flags: Int) {\n    dest.writeInt(image)\n    dest.writeInt(titleText)\n    dest.writeInt(contentText)\n    dest.writeByte(contentCentered ? 1 : 0)\n    dest.writeByte(bulletList ? 1 : 0)\n}\n```"
+    },
+    {
+        "method_name": "createFromParcel",
+        "method_code": "@Override\n        public Object createFromParcel(Parcel source) {\n            return new FeatureItem(source);\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled createFromParcel from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: createFromParcel\n\n        Method Code: @Override\n        public Object createFromParcel(Parcel source) {\n            return new FeatureItem(source);\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createFromParcel(source: Parcel) -> Any {\n    return FeatureItem(source: source)\n}\n```"
+    },
+    {
+        "method_name": "newArray",
+        "method_code": "@Override\n        public Object[] newArray(int size) {\n            return new FeatureItem[size];\n        }",
+        "prompt": "\n        Please translate the following Java (Android) method titled newArray from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: newArray\n\n        Method Code: @Override\n        public Object[] newArray(int size) {\n            return new FeatureItem[size];\n        }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc newArray(size: Int) -> [FeatureItem] {\n    return [FeatureItem](repeating: FeatureItem(), count: size)\n}\n```"
+    },
+    {
+        "method_name": "getImage",
+        "method_code": "public int getImage() {\n        return this.image;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getImage from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: getImage\n\n        Method Code: public int getImage() {\n        return this.image;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getImage() -> Int {\n    return self.image\n}\n```"
+    },
+    {
+        "method_name": "getTitleText",
+        "method_code": "public int getTitleText() {\n        return this.titleText;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getTitleText from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: getTitleText\n\n        Method Code: public int getTitleText() {\n        return this.titleText;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getTitleText() -> Int {\n    return self.titleText\n}\n```"
+    },
+    {
+        "method_name": "getContentText",
+        "method_code": "public int getContentText() {\n        return this.contentText;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getContentText from FeatureItem.java into Swift.\n\n        Input:\n\n        Method Name: getContentText\n\n        Method Code: public int getContentText() {\n        return this.contentText;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getContentText() -> Int {\n    return self.contentText\n}\n```"
+    }
+]

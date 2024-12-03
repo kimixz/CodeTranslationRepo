@@ -1,0 +1,62 @@
+[
+    {
+        "method_name": "createFolder",
+        "method_code": "void createFolder();",
+        "prompt": "\n        Please translate the following Java (Android) method titled createFolder from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: createFolder\n\n        Method Code: void createFolder();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createFolder() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "uploadFromApp",
+        "method_code": "void uploadFromApp();",
+        "prompt": "\n        Please translate the following Java (Android) method titled uploadFromApp from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: uploadFromApp\n\n        Method Code: void uploadFromApp();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc uploadFromApp() {\n    // Implementation of the method in Swift\n}\n```"
+    },
+    {
+        "method_name": "uploadFiles",
+        "method_code": "void uploadFiles();",
+        "prompt": "\n        Please translate the following Java (Android) method titled uploadFiles from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: uploadFiles\n\n        Method Code: void uploadFiles();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc uploadFiles() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "newDocument",
+        "method_code": "void newDocument();",
+        "prompt": "\n        Please translate the following Java (Android) method titled newDocument from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: newDocument\n\n        Method Code: void newDocument();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc newDocument() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "newSpreadsheet",
+        "method_code": "void newSpreadsheet();",
+        "prompt": "\n        Please translate the following Java (Android) method titled newSpreadsheet from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: newSpreadsheet\n\n        Method Code: void newSpreadsheet();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc newSpreadsheet() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "newPresentation",
+        "method_code": "void newPresentation();",
+        "prompt": "\n        Please translate the following Java (Android) method titled newPresentation from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: newPresentation\n\n        Method Code: void newPresentation();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc newPresentation() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "directCameraUpload",
+        "method_code": "void directCameraUpload();",
+        "prompt": "\n        Please translate the following Java (Android) method titled directCameraUpload from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: directCameraUpload\n\n        Method Code: void directCameraUpload();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc directCameraUpload() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "scanDocUpload",
+        "method_code": "void scanDocUpload();",
+        "prompt": "\n        Please translate the following Java (Android) method titled scanDocUpload from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: scanDocUpload\n\n        Method Code: void scanDocUpload();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc scanDocUpload() {\n    // Implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "showTemplate",
+        "method_code": "void showTemplate(Creator creator, String headline);",
+        "prompt": "\n        Please translate the following Java (Android) method titled showTemplate from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: showTemplate\n\n        Method Code: void showTemplate(Creator creator, String headline);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc showTemplate(creator: Creator, headline: String) {\n    // Method implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "createRichWorkspace",
+        "method_code": "void createRichWorkspace();",
+        "prompt": "\n        Please translate the following Java (Android) method titled createRichWorkspace from OCFileListBottomSheetActions.java into Swift.\n\n        Input:\n\n        Method Name: createRichWorkspace\n\n        Method Code: void createRichWorkspace();\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc createRichWorkspace() {\n    // Implementation goes here\n}\n```"
+    }
+]

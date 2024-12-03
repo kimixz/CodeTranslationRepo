@@ -1,0 +1,36 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "createFragment",
+            "return_type": "Fragment",
+            "parameters": [
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 777,
+            "end_position": 921,
+            "body_start": 849,
+            "body_end": 921
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 927,
+            "end_position": 1007,
+            "body_start": 967,
+            "body_end": 1007
+        }
+    ],
+    "method_calls": {
+        "FeatureFragment": [
+            "newInstance"
+        ]
+    }
+}

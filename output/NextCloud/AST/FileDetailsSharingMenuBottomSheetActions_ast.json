@@ -1,0 +1,64 @@
+{
+    "methods": [
+        {
+            "name": "advancedPermissions",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 621,
+            "end_position": 661
+        },
+        {
+            "name": "sendNewEmail",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 725,
+            "end_position": 758
+        },
+        {
+            "name": "unShare",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 813,
+            "end_position": 841
+        },
+        {
+            "name": "sendLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 933,
+            "end_position": 962
+        },
+        {
+            "name": "addAnotherLink",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCShare",
+                    "name": "share"
+                }
+            ],
+            "start_position": 1056,
+            "end_position": 1091
+        }
+    ]
+}

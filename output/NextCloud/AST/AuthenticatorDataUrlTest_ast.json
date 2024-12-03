@@ -1,0 +1,89 @@
+{
+    "methods": [
+        {
+            "name": "allDataUrlElements",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1174,
+            "end_position": 1860,
+            "body_start": 1217,
+            "body_end": 1860
+        },
+        {
+            "name": "oneElement",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 1866,
+            "end_position": 2751,
+            "body_start": 1901,
+            "body_end": 2751
+        },
+        {
+            "name": "twoDataUrlElements",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 2757,
+            "end_position": 6141,
+            "body_start": 2800,
+            "body_end": 6141
+        },
+        {
+            "name": "tooManyDataUrlElements",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6147,
+            "end_position": 6763,
+            "body_start": 6194,
+            "body_end": 6763
+        },
+        {
+            "name": "noDataUrlElements",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6769,
+            "end_position": 6925,
+            "body_start": 6854,
+            "body_end": 6925
+        },
+        {
+            "name": "onlyOneDataUrlElements",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 6931,
+            "end_position": 7162,
+            "body_start": 6978,
+            "body_end": 7162
+        },
+        {
+            "name": "onlyTwoDataUrlElements",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 7168,
+            "end_position": 7506,
+            "body_start": 7215,
+            "body_end": 7506
+        }
+    ],
+    "local_variables": {
+        "dataUrl": "String",
+        "info": "LoginUrlInfo",
+        "loginUrlInfo": "LoginUrlInfo"
+    },
+    "code_constructs": [
+        "enhanced_for_statement",
+        "expression_statement",
+        "try_statement"
+    ],
+    "method_calls": {
+        "AuthenticatorActivity": [
+            "parseLoginDataUrl"
+        ],
+        "System.out": [
+            "println"
+        ],
+        "Assert": [
+            "assertEquals",
+            "fail"
+        ]
+    }
+}

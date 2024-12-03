@@ -1,0 +1,26 @@
+[
+    {
+        "method_name": "writeObject",
+        "method_code": "private void writeObject(ObjectOutputStream oos) throws IOException {\n        oos.writeObject(name);\n        oos.writeObject(value);\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled writeObject from PlainHeader.java into Swift.\n\n        Input:\n\n        Method Name: writeObject\n\n        Method Code: private void writeObject(ObjectOutputStream oos) throws IOException {\n        oos.writeObject(name);\n        oos.writeObject(value);\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprivate func writeObject(_ oos: inout ObjectOutputStream) throws {\n    try oos.writeObject(name)\n    try oos.writeObject(value)\n}\n```"
+    },
+    {
+        "method_name": "readObject",
+        "method_code": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {\n        name = (String) in.readObject();\n        value = (String) in.readObject();\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled readObject from PlainHeader.java into Swift.\n\n        Input:\n\n        Method Name: readObject\n\n        Method Code: private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {\n        name = (String) in.readObject();\n        value = (String) in.readObject();\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nprivate func readObject(from in: ObjectInputStream) throws {\n    name = try in.readObject() as! String\n    value = try in.readObject() as! String\n}\n```"
+    },
+    {
+        "method_name": "getName",
+        "method_code": "public String getName() {\n        return this.name;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getName from PlainHeader.java into Swift.\n\n        Input:\n\n        Method Name: getName\n\n        Method Code: public String getName() {\n        return this.name;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getName() -> String {\n    return self.name\n}\n```"
+    },
+    {
+        "method_name": "getValue",
+        "method_code": "public String getValue() {\n        return this.value;\n    }",
+        "prompt": "\n        Please translate the following Java (Android) method titled getValue from PlainHeader.java into Swift.\n\n        Input:\n\n        Method Name: getValue\n\n        Method Code: public String getValue() {\n        return this.value;\n    }\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getValue() -> String {\n    return self.value\n}\n```"
+    }
+]

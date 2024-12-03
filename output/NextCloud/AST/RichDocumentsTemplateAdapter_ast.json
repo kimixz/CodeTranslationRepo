@@ -1,0 +1,199 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "break_statement"
+    ],
+    "methods": [
+        {
+            "name": "onCreateViewHolder",
+            "return_type": "ViewHolder",
+            "parameters": [
+                {
+                    "type": "ViewGroup",
+                    "name": "parent"
+                },
+                {
+                    "type": "int",
+                    "name": "viewType"
+                }
+            ],
+            "start_position": 2257,
+            "end_position": 2677,
+            "body_start": 2416,
+            "body_end": 2677
+        },
+        {
+            "name": "onBindViewHolder",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ViewHolder",
+                    "name": "holder"
+                },
+                {
+                    "type": "int",
+                    "name": "position"
+                }
+            ],
+            "start_position": 2683,
+            "end_position": 2827,
+            "body_start": 2768,
+            "body_end": 2827
+        },
+        {
+            "name": "setTemplateList",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Template>",
+                    "name": "templateList"
+                }
+            ],
+            "start_position": 2833,
+            "end_position": 2939,
+            "body_start": 2890,
+            "body_end": 2939
+        },
+        {
+            "name": "setTemplateAsActive",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Template",
+                    "name": "template"
+                }
+            ],
+            "start_position": 2945,
+            "end_position": 3072,
+            "body_start": 2996,
+            "body_end": 3072
+        },
+        {
+            "name": "getSelectedTemplate",
+            "return_type": "Template",
+            "parameters": [],
+            "start_position": 3078,
+            "end_position": 3156,
+            "body_start": 3116,
+            "body_end": 3156
+        },
+        {
+            "name": "getItemCount",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 3162,
+            "end_position": 3245,
+            "body_start": 3202,
+            "body_end": 3245
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "View",
+                    "name": "v"
+                }
+            ],
+            "start_position": 3727,
+            "end_position": 3888,
+            "body_start": 3773,
+            "body_end": 3888
+        },
+        {
+            "name": "setData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Template",
+                    "name": "template"
+                }
+            ],
+            "start_position": 3898,
+            "end_position": 4941,
+            "body_start": 3937,
+            "body_end": 4941
+        },
+        {
+            "name": "onClick",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Template",
+                    "name": "template"
+                }
+            ],
+            "start_position": 4994,
+            "end_position": 5026
+        }
+    ],
+    "method_calls": {
+        "TemplateButtonBinding": [
+            "inflate"
+        ],
+        "LayoutInflater": [
+            "from"
+        ],
+        "parent": [
+            "getContext"
+        ],
+        "holder": [
+            "setData"
+        ],
+        "templateList": [
+            "get",
+            "size"
+        ],
+        "unknown": [
+            "notifyDataSetChanged"
+        ],
+        "binding": [
+            "getRoot"
+        ],
+        "viewThemeUtils.files": [
+            "themeTemplateCardView"
+        ],
+        "itemView": [
+            "setOnClickListener"
+        ],
+        "clickListener": [
+            "onClick"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(template.getThumbnailLink())\n                .placeholder(placeholder)\n                .error(placeholder)": [
+            "into"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(template.getThumbnailLink())\n                .placeholder(placeholder)": [
+            "error"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))\n                .load(template.getThumbnailLink())": [
+            "placeholder"
+        ],
+        "Glide.with(context).using(new CustomGlideStreamLoader(currentAccountProvider.getUser(), clientFactory))": [
+            "load"
+        ],
+        "Glide.with(context)": [
+            "using"
+        ],
+        "Glide": [
+            "with"
+        ],
+        "currentAccountProvider": [
+            "getUser"
+        ],
+        "template": [
+            "getThumbnailLink",
+            "getName"
+        ],
+        "binding.templateName": [
+            "setText"
+        ],
+        "binding.templateContainer": [
+            "setChecked"
+        ]
+    },
+    "local_variables": {
+        "placeholder": "int"
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "methods": [
+        {
+            "name": "setupSearchView",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "SearchManager",
+                    "name": "searchManager"
+                },
+                {
+                    "type": "SearchView",
+                    "name": "searchView"
+                },
+                {
+                    "type": "ComponentName",
+                    "name": "componentName"
+                }
+            ],
+            "start_position": 956,
+            "end_position": 2131,
+            "body_start": 1121,
+            "body_end": 2131
+        },
+        {
+            "name": "onQueryTextSubmit",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "query"
+                }
+            ],
+            "start_position": 1707,
+            "end_position": 1894,
+            "body_start": 1776,
+            "body_end": 1894
+        },
+        {
+            "name": "onQueryTextChange",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "newText"
+                }
+            ],
+            "start_position": 1908,
+            "end_position": 2113,
+            "body_start": 1979,
+            "body_end": 2113
+        },
+        {
+            "name": "isPublicShareDisabled",
+            "return_type": "boolean",
+            "parameters": [
+                {
+                    "type": "OCCapability",
+                    "name": "capabilities"
+                }
+            ],
+            "start_position": 2220,
+            "end_position": 2392,
+            "body_start": 2291,
+            "body_end": 2392
+        }
+    ],
+    "code_constructs": [
+        "if_statement",
+        "expression_statement",
+        "return_statement"
+    ],
+    "method_calls": {
+        "searchView": [
+            "setVisibility",
+            "setSearchableInfo",
+            "setIconifiedByDefault",
+            "setImeOptions",
+            "setOnQueryTextListener"
+        ],
+        "searchManager": [
+            "getSearchableInfo"
+        ],
+        "capabilities.getFilesSharingPublicEnabled()": [
+            "isFalse"
+        ],
+        "capabilities": [
+            "getFilesSharingPublicEnabled"
+        ]
+    }
+}

@@ -1,0 +1,791 @@
+{
+    "method_calls": {
+        "RefreshFolderOperation.class": [
+            "getSimpleName",
+            "getName"
+        ],
+        "mForgottenLocalFiles": [
+            "clear"
+        ],
+        "OCFile.ROOT_PATH": [
+            "equals"
+        ],
+        "mLocalFolder": [
+            "getRemotePath",
+            "setEtag",
+            "setLastSyncDateForData",
+            "getEtag",
+            "getRemoteId",
+            "getFileId",
+            "isDown",
+            "getStoragePath",
+            "getParentId",
+            "setEncrypted",
+            "setPermissions",
+            "setRichWorkspace",
+            "setFileLength",
+            "isEncrypted",
+            "setE2eCounter"
+        ],
+        "unknown": [
+            "updateOCVersion",
+            "updateUserProfile",
+            "checkForChanges",
+            "fetchAndSyncRemoteFolder",
+            "startContentSynchronizations",
+            "checkFolderConflictData",
+            "sendLocalBroadcast",
+            "refreshSharesForFolder",
+            "sendFolderSyncConflictEventBroadcast",
+            "updateCapabilities",
+            "updateDirectEditing",
+            "updatePredefinedStatus",
+            "removeLocalFolder",
+            "synchronizeData",
+            "getDecryptedFolderMetadata",
+            "getClient",
+            "prefillLocalFilesMap",
+            "setLocalFileDataOnUpdatedFile",
+            "updateFileNameForEncryptedFileV1",
+            "updateFileNameForEncryptedFile",
+            "setMimeTypeAndDecryptedRemotePath"
+        ],
+        "result": [
+            "isSuccess",
+            "getResultData",
+            "getData",
+            "getCode",
+            "isException",
+            "getLogMessage",
+            "getException"
+        ],
+        "fileDataStorageManager": [
+            "getFolderContent",
+            "saveFile",
+            "getCapability",
+            "fileExists",
+            "removeFolder",
+            "getFileByPath",
+            "saveFolder",
+            "saveSharesInFolder"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "fileDataStorageManager.offlineOperationDao": [
+            "getAll"
+        ],
+        "offlineOperations": [
+            "isEmpty"
+        ],
+        "RemoteOperationResultExtensionsKt": [
+            "getConflictedRemoteIdsWithOfflineOperations"
+        ],
+        "conflictData": [
+            "equals"
+        ],
+        "intent": [
+            "putExtra",
+            "setPackage"
+        ],
+        "LocalBroadcastManager.getInstance(mContext)": [
+            "sendBroadcast"
+        ],
+        "LocalBroadcastManager": [
+            "getInstance"
+        ],
+        "update": [
+            "execute"
+        ],
+        "OwnCloudClientFactory": [
+            "createNextcloudClient"
+        ],
+        "new GetUserProfileOperation(fileDataStorageManager)": [
+            "execute"
+        ],
+        "Log_OC": [
+            "w",
+            "i",
+            "e",
+            "d"
+        ],
+        "arbitraryDataProvider": [
+            "getValue",
+            "storeOrUpdateKeyValue",
+            "deleteKeyForAccount"
+        ],
+        "new GetCapabilitiesOperation(fileDataStorageManager)": [
+            "execute"
+        ],
+        "fileDataStorageManager.getCapability(user.getAccountName())": [
+            "getDirectEditingEtag"
+        ],
+        "user": [
+            "getAccountName"
+        ],
+        "oldDirectEditingEtag": [
+            "equalsIgnoreCase"
+        ],
+        "new DirectEditingObtainRemoteOperation()": [
+            "executeNextcloudClient"
+        ],
+        "new Gson()": [
+            "toJson"
+        ],
+        "new GetPredefinedStatusesRemoteOperation()": [
+            "execute"
+        ],
+        "new ReadFileRemoteOperation(remotePath)": [
+            "execute"
+        ],
+        "FileStorageUtils": [
+            "fillOCFile",
+            "getSavePath",
+            "checkEncryptionStatus",
+            "searchForLocalFileInDefaultPath",
+            "getDefaultSavePathFor"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "remoteFolder": [
+            "getEtag",
+            "setParentId",
+            "setFileId",
+            "getPermissions",
+            "getRichWorkspace",
+            "getFileLength"
+        ],
+        "remoteFolderETag": [
+            "equalsIgnoreCase"
+        ],
+        "new ReadFolderRemoteOperation(remotePath)": [
+            "execute"
+        ],
+        "mLocalFolder.getStoragePath()": [
+            "startsWith"
+        ],
+        "folderAndFiles": [
+            "get",
+            "size"
+        ],
+        "mFilesToSyncContents": [
+            "clear"
+        ],
+        "CapabilityUtils.getCapability(mContext).getEndToEndEncryptionApiVersion()": [
+            "compareTo"
+        ],
+        "CapabilityUtils.getCapability(mContext)": [
+            "getEndToEndEncryptionApiVersion"
+        ],
+        "CapabilityUtils": [
+            "getCapability"
+        ],
+        "((DecryptedFolderMetadataFile) object).getMetadata()": [
+            "getCounter"
+        ],
+        "((DecryptedFolderMetadataFile) object)": [
+            "getMetadata"
+        ],
+        "updatedFile": [
+            "setParentId",
+            "getRemotePath",
+            "setLastSyncDateForProperties",
+            "isUpdateThumbnailNeeded",
+            "setImageDimension",
+            "setE2eCounter",
+            "isEncrypted",
+            "setEncrypted",
+            "getParentId",
+            "getFileName",
+            "isFolder",
+            "setDecryptedRemotePath",
+            "setMimeType",
+            "getFileId",
+            "setFileId",
+            "setLastSyncDateForData",
+            "setInternalFolderSyncTimestamp",
+            "setModificationTimestampAtLastSyncForData",
+            "setStoragePath",
+            "getEtag",
+            "setEtagInConflict",
+            "setEtag",
+            "setFileLength",
+            "setMountType",
+            "setUpdateThumbnailNeeded",
+            "setSharedViaLink",
+            "setSharedWithSharee",
+            "setEtagOnServer"
+        ],
+        "localFilesMap": [
+            "remove",
+            "values",
+            "put"
+        ],
+        "remoteFile": [
+            "getRemotePath",
+            "getFileLength",
+            "getMountType",
+            "getModificationTimestamp",
+            "getFileName",
+            "getEtag"
+        ],
+        "localFile": [
+            "getImageDimension",
+            "getE2eCounter",
+            "getFileId",
+            "getLastSyncDateForData",
+            "getInternalFolderSyncTimestamp",
+            "getModificationTimestampAtLastSyncForData",
+            "isEncrypted",
+            "getFileName",
+            "getStoragePath",
+            "isDown",
+            "getEtag",
+            "getModificationTimestamp",
+            "isSharedViaLink",
+            "isSharedWithSharee"
+        ],
+        "updatedFiles": [
+            "add"
+        ],
+        "EncryptionUtils": [
+            "downloadFolderMetadata"
+        ],
+        "storageManager": [
+            "getFileById"
+        ],
+        "parentFile": [
+            "getDecryptedRemotePath",
+            "getRemotePath"
+        ],
+        "mimetype": [
+            "isEmpty"
+        ],
+        "metadata.getFiles().get(updatedFile.getFileName()).getEncrypted()": [
+            "getFilename"
+        ],
+        "metadata.getFiles().get(updatedFile.getFileName())": [
+            "getEncrypted"
+        ],
+        "metadata.getFiles()": [
+            "get"
+        ],
+        "metadata": [
+            "getFiles",
+            "getMetadata"
+        ],
+        "decryptedFile.getEncrypted()": [
+            "getFilename",
+            "getMimetype"
+        ],
+        "decryptedFile": [
+            "getEncrypted",
+            "getFilename",
+            "getMimetype"
+        ],
+        "metadata.getMetadata().getFolders()": [
+            "get"
+        ],
+        "metadata.getMetadata()": [
+            "getFolders",
+            "getFiles"
+        ],
+        "metadata.getMetadata().getFiles()": [
+            "get"
+        ],
+        "updatedFile.getEtag()": [
+            "equals"
+        ],
+        "MimeTypeUtil": [
+            "isImage"
+        ],
+        "Maps": [
+            "newHashMapWithExpectedSize"
+        ],
+        "localFiles": [
+            "size"
+        ],
+        "file": [
+            "getRemotePath",
+            "getParentRemotePath",
+            "getEncryptedFileName",
+            "isFolder"
+        ],
+        "remotePath": [
+            "endsWith"
+        ],
+        "op": [
+            "execute"
+        ],
+        "contentsResult": [
+            "isSuccess",
+            "getCode",
+            "getException",
+            "getLogMessage"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "share": [
+            "getShareType"
+        ],
+        "shares": [
+            "add"
+        ],
+        "DataHolderUtil": [
+            "getInstance"
+        ],
+        "dataHolderUtil": [
+            "nextItemId",
+            "save"
+        ],
+        "mContext": [
+            "getPackageName",
+            "getApplicationContext"
+        ],
+        "LocalBroadcastManager.getInstance(mContext.getApplicationContext())": [
+            "sendBroadcast"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "return_statement",
+        "if_statement",
+        "try_statement",
+        "throw_statement",
+        "for_statement",
+        "enhanced_for_statement"
+    ],
+    "methods": [
+        {
+            "name": "getConflictsFound",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 8413,
+            "end_position": 8483,
+            "body_start": 8444,
+            "body_end": 8483
+        },
+        {
+            "name": "getFailsInKeptInSyncFound",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 8489,
+            "end_position": 8575,
+            "body_start": 8528,
+            "body_end": 8575
+        },
+        {
+            "name": "getForgottenLocalFiles",
+            "return_type": "Map<String, String>",
+            "parameters": [],
+            "start_position": 8581,
+            "end_position": 8677,
+            "body_start": 8633,
+            "body_end": 8677
+        },
+        {
+            "name": "getChildren",
+            "return_type": "List<OCFile>",
+            "parameters": [],
+            "start_position": 8920,
+            "end_position": 8987,
+            "body_start": 8954,
+            "body_end": 8987
+        },
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 9078,
+            "end_position": 10831,
+            "body_start": 9151,
+            "body_end": 10831
+        },
+        {
+            "name": "checkFolderConflictData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 10917,
+            "end_position": 11495,
+            "body_start": 10984,
+            "body_end": 11495
+        },
+        {
+            "name": "sendFolderSyncConflictEventBroadcast",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "HashMap<String, String>",
+                    "name": "conflictData"
+                }
+            ],
+            "start_position": 11501,
+            "end_position": 11864,
+            "body_start": 11589,
+            "body_end": 11864
+        },
+        {
+            "name": "updateOCVersion",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 11870,
+            "end_position": 12210,
+            "body_start": 11922,
+            "body_end": 12210
+        },
+        {
+            "name": "updateUserProfile",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12216,
+            "end_position": 12886,
+            "body_start": 12249,
+            "body_end": 12886
+        },
+        {
+            "name": "updateCapabilities",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 12892,
+            "end_position": 13817,
+            "body_start": 12926,
+            "body_end": 13817
+        },
+        {
+            "name": "updateDirectEditing",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                },
+                {
+                    "type": "String",
+                    "name": "newDirectEditingEtag"
+                }
+            ],
+            "start_position": 13823,
+            "end_position": 14758,
+            "body_start": 13930,
+            "body_end": 14758
+        },
+        {
+            "name": "updatePredefinedStatus",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "ArbitraryDataProvider",
+                    "name": "arbitraryDataProvider"
+                }
+            ],
+            "start_position": 14764,
+            "end_position": 15766,
+            "body_start": 14845,
+            "body_end": 15766
+        },
+        {
+            "name": "checkForChanges",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 15772,
+            "end_position": 17575,
+            "body_start": 15841,
+            "body_end": 17575
+        },
+        {
+            "name": "fetchAndSyncRemoteFolder",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 17582,
+            "end_position": 18472,
+            "body_start": 17660,
+            "body_end": 18472
+        },
+        {
+            "name": "removeLocalFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 18478,
+            "end_position": 18943,
+            "body_start": 18511,
+            "body_end": 18943
+        },
+        {
+            "name": "synchronizeData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "folderAndFiles"
+                }
+            ],
+            "start_position": 19276,
+            "end_position": 25680,
+            "body_start": 19334,
+            "body_end": 25680
+        },
+        {
+            "name": "getDecryptedFolderMetadata",
+            "return_type": "Object",
+            "parameters": [
+                {
+                    "type": "boolean",
+                    "name": "encryptedAncestor"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "localFolder"
+                },
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 25686,
+            "end_position": 26299,
+            "body_start": 26054,
+            "body_end": 26299
+        },
+        {
+            "name": "setMimeTypeAndDecryptedRemotePath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "updatedFile"
+                },
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                },
+                {
+                    "type": "String",
+                    "name": "decryptedFileName"
+                },
+                {
+                    "type": "String",
+                    "name": "mimetype"
+                }
+            ],
+            "start_position": 26305,
+            "end_position": 27475,
+            "body_start": 26491,
+            "body_end": 27475
+        },
+        {
+            "name": "updateFileNameForEncryptedFileV1",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                },
+                {
+                    "type": "DecryptedFolderMetadataFileV1",
+                    "name": "metadata"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "updatedFile"
+                }
+            ],
+            "start_position": 27481,
+            "end_position": 28808,
+            "body_start": 27753,
+            "body_end": 28808
+        },
+        {
+            "name": "updateFileNameForEncryptedFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "FileDataStorageManager",
+                    "name": "storageManager"
+                },
+                {
+                    "type": "DecryptedFolderMetadataFile",
+                    "name": "metadata"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "updatedFile"
+                }
+            ],
+            "start_position": 28814,
+            "end_position": 30036,
+            "body_start": 29078,
+            "body_end": 30036
+        },
+        {
+            "name": "setLocalFileDataOnUpdatedFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "remoteFile"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "localFile"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "updatedFile"
+                },
+                {
+                    "type": "boolean",
+                    "name": "remoteFolderChanged"
+                }
+            ],
+            "start_position": 30042,
+            "end_position": 32659,
+            "body_start": 30171,
+            "body_end": 32659
+        },
+        {
+            "name": "prefillLocalFilesMap",
+            "return_type": "Map<String, OCFile>",
+            "parameters": [
+                {
+                    "type": "Object",
+                    "name": "metadata"
+                },
+                {
+                    "type": "List<OCFile>",
+                    "name": "localFiles"
+                }
+            ],
+            "start_position": 32665,
+            "end_position": 33391,
+            "body_start": 32806,
+            "body_end": 33391
+        },
+        {
+            "name": "startContentSynchronizations",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<SynchronizeFileOperation>",
+                    "name": "filesToSyncContents"
+                }
+            ],
+            "start_position": 33804,
+            "end_position": 34849,
+            "body_start": 33898,
+            "body_end": 34849
+        },
+        {
+            "name": "refreshSharesForFolder",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 35186,
+            "end_position": 36018,
+            "body_start": 35262,
+            "body_end": 36018
+        },
+        {
+            "name": "sendLocalBroadcast",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "event"
+                },
+                {
+                    "type": "String",
+                    "name": "dirRemotePath"
+                },
+                {
+                    "type": "RemoteOperationResult",
+                    "name": "result"
+                }
+            ],
+            "start_position": 36367,
+            "end_position": 37192,
+            "body_start": 36465,
+            "body_end": 37192
+        }
+    ],
+    "local_variables": {
+        "result": "RemoteOperationResult",
+        "offlineOperations": "var",
+        "conflictData": "var",
+        "intent": "Intent",
+        "update": "UpdateOCVersionOperation",
+        "nextcloudClient": "NextcloudClient",
+        "arbitraryDataProvider": "ArbitraryDataProvider",
+        "oldDirectEditingEtag": "String",
+        "newDirectEditingEtag": "String",
+        "directEditing": "DirectEditing",
+        "json": "String",
+        "client": "NextcloudClient",
+        "predefinedStatuses": "ArrayList<PredefinedStatus>",
+        "remotePath": "String",
+        "remoteFolder": "OCFile",
+        "remoteFolderETag": "String",
+        "currentSavePath": "String",
+        "updatedFiles": "List<OCFile>",
+        "encryptedAncestor": "boolean",
+        "object": "Object",
+        "localFilesMap": "Map<String, OCFile>",
+        "e2EVersion": "E2EVersion",
+        "remoteFile": "OCFile",
+        "localFile": "OCFile",
+        "updatedFile": "OCFile",
+        "remote": "RemoteFile",
+        "i": "int",
+        "encrypted": "boolean",
+        "metadata": "Object",
+        "parentFile": "OCFile",
+        "decryptedRemotePath": "String",
+        "decryptedFileName": "String",
+        "mimetype": "String",
+        "decryptedFile": "DecryptedFile",
+        "contentsResult": "RemoteOperationResult",
+        "operation": "GetSharesForFileRemoteOperation",
+        "shares": "ArrayList<OCShare>",
+        "share": "OCShare",
+        "dataHolderUtil": "DataHolderUtil",
+        "dataHolderItemId": "String"
+    }
+}

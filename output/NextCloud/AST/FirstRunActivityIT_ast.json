@@ -1,0 +1,27 @@
+{
+    "methods": [
+        {
+            "name": "open",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 894,
+            "end_position": 1034,
+            "body_start": 943,
+            "body_end": 1034
+        }
+    ],
+    "local_variables": {
+        "sut": "Activity"
+    },
+    "method_calls": {
+        "activityRule": [
+            "launchActivity"
+        ],
+        "unknown": [
+            "screenshot"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "code_constructs": [
+        "expression_statement",
+        "return_statement"
+    ],
+    "methods": [
+        {
+            "name": "getIdMenuItem",
+            "return_type": "int",
+            "parameters": [],
+            "start_position": 526,
+            "end_position": 588,
+            "body_start": 553,
+            "body_end": 588
+        }
+    ]
+}

@@ -1,0 +1,212 @@
+{
+    "method_calls": {
+        "ContactsPreferenceActivity.class": [
+            "getSimpleName"
+        ],
+        "context": [
+            "startActivity"
+        ],
+        "intent": [
+            "putExtra"
+        ],
+        "super": [
+            "onCreate"
+        ],
+        "unknown": [
+            "setContentView",
+            "setupToolbar",
+            "getIntent",
+            "setDrawerLockMode",
+            "getSupportActionBar",
+            "getSupportFragmentManager",
+            "getOnBackPressedDispatcher",
+            "finish"
+        ],
+        "getIntent()": [
+            "getBooleanExtra"
+        ],
+        "getSupportActionBar()": [
+            "setDisplayHomeAsUpEnabled"
+        ],
+        "mDrawerToggle": [
+            "setDrawerIndicatorEnabled"
+        ],
+        "getSupportFragmentManager()": [
+            "beginTransaction",
+            "findFragmentByTag",
+            "popBackStack"
+        ],
+        "IntentExtensionsKt": [
+            "getParcelableArgument"
+        ],
+        "BackupFragment": [
+            "create"
+        ],
+        "transaction": [
+            "add",
+            "commit"
+        ],
+        "BackupListFragment": [
+            "newInstance"
+        ],
+        "getOnBackPressedDispatcher()": [
+            "addCallback"
+        ]
+    },
+    "methods": [
+        {
+            "name": "startActivity",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 1968,
+            "end_position": 2143,
+            "body_start": 2018,
+            "body_end": 2143
+        },
+        {
+            "name": "startActivityWithContactsFile",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                },
+                {
+                    "type": "User",
+                    "name": "user"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 2149,
+            "end_position": 2450,
+            "body_start": 2239,
+            "body_end": 2450
+        },
+        {
+            "name": "startActivityWithoutSidebar",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Context",
+                    "name": "context"
+                }
+            ],
+            "start_position": 2456,
+            "end_position": 2697,
+            "body_start": 2520,
+            "body_end": 2697
+        },
+        {
+            "name": "onCreate",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "Bundle",
+                    "name": "savedInstanceState"
+                }
+            ],
+            "start_position": 2703,
+            "end_position": 4577,
+            "body_start": 2768,
+            "body_end": 4577
+        },
+        {
+            "name": "showDetails",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 4583,
+            "end_position": 4663,
+            "body_start": 4634,
+            "body_end": 4663
+        },
+        {
+            "name": "showDetails",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "int",
+                    "name": "activeTab"
+                }
+            ],
+            "start_position": 4669,
+            "end_position": 4764,
+            "body_start": 4735,
+            "body_end": 4764
+        },
+        {
+            "name": "onBrowsedDownTo",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "folder"
+                }
+            ],
+            "start_position": 4770,
+            "end_position": 4856,
+            "body_start": 4827,
+            "body_end": 4856
+        },
+        {
+            "name": "onTransferStateChanged",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                },
+                {
+                    "type": "boolean",
+                    "name": "downloading"
+                },
+                {
+                    "type": "boolean",
+                    "name": "uploading"
+                }
+            ],
+            "start_position": 4862,
+            "end_position": 4993,
+            "body_start": 4964,
+            "body_end": 4993
+        },
+        {
+            "name": "handleOnBackPressed",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 5101,
+            "end_position": 5438,
+            "body_start": 5153,
+            "body_end": 5438
+        }
+    ],
+    "local_variables": {
+        "intent": "Intent",
+        "showSidebar": "boolean",
+        "transaction": "FragmentTransaction",
+        "fragment": "BackupFragment",
+        "file": "OCFile",
+        "user": "User",
+        "contactListFragment": "BackupListFragment"
+    },
+    "code_constructs": [
+        "expression_statement",
+        "if_statement"
+    ]
+}

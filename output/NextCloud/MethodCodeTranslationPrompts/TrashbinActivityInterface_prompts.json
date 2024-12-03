@@ -1,0 +1,20 @@
+[
+    {
+        "method_name": "onOverflowIconClicked",
+        "method_code": "void onOverflowIconClicked(TrashbinFile file, View view);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onOverflowIconClicked from TrashbinActivityInterface.java into Swift.\n\n        Input:\n\n        Method Name: onOverflowIconClicked\n\n        Method Code: void onOverflowIconClicked(TrashbinFile file, View view);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onOverflowIconClicked(file: TrashbinFile, view: UIView) {\n    // Method implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "onItemClicked",
+        "method_code": "void onItemClicked(TrashbinFile file);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onItemClicked from TrashbinActivityInterface.java into Swift.\n\n        Input:\n\n        Method Name: onItemClicked\n\n        Method Code: void onItemClicked(TrashbinFile file);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onItemClicked(file: TrashbinFile) {\n    // Method implementation\n}\n```"
+    },
+    {
+        "method_name": "onRestoreIconClicked",
+        "method_code": "void onRestoreIconClicked(TrashbinFile file, View view);",
+        "prompt": "\n        Please translate the following Java (Android) method titled onRestoreIconClicked from TrashbinActivityInterface.java into Swift.\n\n        Input:\n\n        Method Name: onRestoreIconClicked\n\n        Method Code: void onRestoreIconClicked(TrashbinFile file, View view);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc onRestoreIconClicked(file: TrashbinFile, view: UIView) {\n    // Method implementation\n}\n```"
+    }
+]

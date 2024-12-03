@@ -1,0 +1,470 @@
+{
+    "method_calls": {
+        "SynchronizeFolderOperation.class": [
+            "getSimpleName"
+        ],
+        "getStorageManager()": [
+            "getFileByPath",
+            "getFolderContent"
+        ],
+        "unknown": [
+            "getStorageManager",
+            "checkForChanges",
+            "fetchAndSyncRemoteFolder",
+            "prepareOpsFromLocalKnowledge",
+            "syncContents",
+            "removeLocalFolder",
+            "synchronizeData",
+            "getClient",
+            "updateLocalStateData",
+            "classifyFileForLaterSyncOrDownload",
+            "startSyncFolderOperation",
+            "startDirectDownloads",
+            "startContentSynchronizations",
+            "updateETag"
+        ],
+        "result": [
+            "isSuccess",
+            "getData",
+            "getCode",
+            "isException",
+            "getLogMessage",
+            "getException"
+        ],
+        "mCancellationRequested": [
+            "get",
+            "set"
+        ],
+        "Log_OC": [
+            "d",
+            "i",
+            "e",
+            "v"
+        ],
+        "user": [
+            "getAccountName",
+            "toPlatformAccount"
+        ],
+        "operation": [
+            "execute"
+        ],
+        "FileStorageUtils": [
+            "fillOCFile",
+            "getSavePath",
+            "checkEncryptionStatus",
+            "searchForLocalFileInDefaultPath",
+            "getDefaultSavePathFor"
+        ],
+        "result.getData()": [
+            "get"
+        ],
+        "remoteFolder.getEtag()": [
+            "equalsIgnoreCase"
+        ],
+        "remoteFolder": [
+            "getEtag",
+            "setParentId",
+            "setFileId",
+            "getPermissions",
+            "getRichWorkspace"
+        ],
+        "mLocalFolder": [
+            "getEtag",
+            "getRemoteId",
+            "getFileId",
+            "isDown",
+            "getStoragePath",
+            "getParentId",
+            "getRemotePath",
+            "setEncrypted",
+            "setPermissions",
+            "setRichWorkspace",
+            "isEncrypted",
+            "setLastSyncDateForData",
+            "setEtag"
+        ],
+        "storageManager": [
+            "fileExists",
+            "removeFolder",
+            "getFolderContent",
+            "getFileByPath",
+            "saveFolder",
+            "saveFile"
+        ],
+        "mLocalFolder.getStoragePath()": [
+            "startsWith"
+        ],
+        "folderAndFiles": [
+            "get",
+            "size"
+        ],
+        "mFilesForDirectDownload": [
+            "clear",
+            "add",
+            "forEach"
+        ],
+        "mFilesToSyncContents": [
+            "clear",
+            "add"
+        ],
+        "RefreshFolderOperation": [
+            "getDecryptedFolderMetadata",
+            "prefillLocalFilesMap",
+            "updateFileNameForEncryptedFileV1",
+            "updateFileNameForEncryptedFile"
+        ],
+        "updatedFile": [
+            "setParentId",
+            "getRemotePath",
+            "isEncrypted",
+            "setEncrypted",
+            "setLastSyncDateForProperties",
+            "setFileId",
+            "setLastSyncDateForData",
+            "setModificationTimestampAtLastSyncForData",
+            "setStoragePath",
+            "setEtag",
+            "isFolder",
+            "setFileLength",
+            "setUpdateThumbnailNeeded",
+            "setSharedViaLink",
+            "setSharedWithSharee",
+            "setEtagInConflict"
+        ],
+        "localFilesMap": [
+            "remove",
+            "values"
+        ],
+        "remoteFile": [
+            "getRemotePath",
+            "getModificationTimestamp",
+            "getFileName",
+            "isFolder",
+            "getEtag"
+        ],
+        "updatedFiles": [
+            "add"
+        ],
+        "System": [
+            "currentTimeMillis"
+        ],
+        "localFile": [
+            "getFileId",
+            "getLastSyncDateForData",
+            "getModificationTimestampAtLastSyncForData",
+            "getStoragePath",
+            "getEtag",
+            "getFileLength",
+            "getModificationTimestamp",
+            "isSharedViaLink",
+            "isSharedWithSharee",
+            "getEtagInConflict"
+        ],
+        "MimeTypeUtil": [
+            "isImage"
+        ],
+        "child": [
+            "isFolder",
+            "isDown",
+            "getEtagInConflict"
+        ],
+        "FileDownloadHelper.Companion": [
+            "instance"
+        ],
+        "file": [
+            "getFileName",
+            "getStoragePath",
+            "isFolder",
+            "setStoragePath",
+            "setLastSyncDateForData"
+        ],
+        "fileDownloadHelper": [
+            "saveFile",
+            "downloadFile"
+        ],
+        "op": [
+            "execute"
+        ],
+        "contentsResult": [
+            "isSuccess",
+            "getCode",
+            "getException",
+            "getLogMessage"
+        ],
+        "f": [
+            "exists",
+            "getAbsolutePath",
+            "lastModified"
+        ],
+        "TextUtils": [
+            "isEmpty"
+        ],
+        "intent": [
+            "setAction",
+            "putExtra"
+        ],
+        "mContext": [
+            "startService"
+        ]
+    },
+    "code_constructs": [
+        "expression_statement",
+        "try_statement",
+        "if_statement",
+        "throw_statement",
+        "return_statement",
+        "for_statement",
+        "synchronized_statement",
+        "enhanced_for_statement",
+        "break_statement",
+        "continue_statement"
+    ],
+    "methods": [
+        {
+            "name": "run",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 4797,
+            "end_position": 5790,
+            "body_start": 4870,
+            "body_end": 5790
+        },
+        {
+            "name": "checkForChanges",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 5796,
+            "end_position": 7413,
+            "body_start": 5900,
+            "body_end": 7413
+        },
+        {
+            "name": "fetchAndSyncRemoteFolder",
+            "return_type": "RemoteOperationResult",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 7420,
+            "end_position": 8451,
+            "body_start": 7533,
+            "body_end": 8451
+        },
+        {
+            "name": "removeLocalFolder",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 8458,
+            "end_position": 9038,
+            "body_start": 8491,
+            "body_end": 9038
+        },
+        {
+            "name": "synchronizeData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<Object>",
+                    "name": "folderAndFiles"
+                }
+            ],
+            "start_position": 9287,
+            "end_position": 15214,
+            "body_start": 9380,
+            "body_end": 15214
+        },
+        {
+            "name": "updateLocalStateData",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "remoteFile"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "localFile"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "updatedFile"
+                }
+            ],
+            "start_position": 15220,
+            "end_position": 16880,
+            "body_start": 15311,
+            "body_end": 16880
+        },
+        {
+            "name": "classifyFileForLaterSyncOrDownload",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "remoteFile"
+                },
+                {
+                    "type": "OCFile",
+                    "name": "localFile"
+                }
+            ],
+            "start_position": 16886,
+            "end_position": 17864,
+            "body_start": 17037,
+            "body_end": 17864
+        },
+        {
+            "name": "prepareOpsFromLocalKnowledge",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 17871,
+            "end_position": 18841,
+            "body_start": 17950,
+            "body_end": 18841
+        },
+        {
+            "name": "syncContents",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 18847,
+            "end_position": 19058,
+            "body_start": 18931,
+            "body_end": 19058
+        },
+        {
+            "name": "updateETag",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OwnCloudClient",
+                    "name": "client"
+                }
+            ],
+            "start_position": 19355,
+            "end_position": 19855,
+            "body_start": 19402,
+            "body_end": 19855
+        },
+        {
+            "name": "startDirectDownloads",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 19861,
+            "end_position": 21384,
+            "body_start": 19897,
+            "body_end": 21384
+        },
+        {
+            "name": "startContentSynchronizations",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "List<SyncOperation>",
+                    "name": "filesToSyncContents"
+                }
+            ],
+            "start_position": 21799,
+            "end_position": 23100,
+            "body_start": 21929,
+            "body_end": 23100
+        },
+        {
+            "name": "searchForLocalFileInDefaultPath",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "OCFile",
+                    "name": "file"
+                }
+            ],
+            "start_position": 23410,
+            "end_position": 23815,
+            "body_start": 23468,
+            "body_end": 23815
+        },
+        {
+            "name": "cancel",
+            "return_type": "void",
+            "parameters": [],
+            "start_position": 23862,
+            "end_position": 23932,
+            "body_start": 23883,
+            "body_end": 23932
+        },
+        {
+            "name": "getFolderPath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 23938,
+            "end_position": 24195,
+            "body_start": 23968,
+            "body_end": 24195
+        },
+        {
+            "name": "startSyncFolderOperation",
+            "return_type": "void",
+            "parameters": [
+                {
+                    "type": "String",
+                    "name": "path"
+                }
+            ],
+            "start_position": 24201,
+            "end_position": 24584,
+            "body_start": 24251,
+            "body_end": 24584
+        },
+        {
+            "name": "getRemotePath",
+            "return_type": "String",
+            "parameters": [],
+            "start_position": 24590,
+            "end_position": 24655,
+            "body_start": 24620,
+            "body_end": 24655
+        }
+    ],
+    "local_variables": {
+        "result": "var",
+        "operation": "var",
+        "remoteFolder": "OCFile",
+        "storageManager": "FileDataStorageManager",
+        "currentSavePath": "String",
+        "encryptedAncestor": "boolean",
+        "object": "Object",
+        "localFilesMap": "Map<String, OCFile>",
+        "e2EVersion": "E2EVersion",
+        "updatedFiles": "List<OCFile>",
+        "remoteFile": "OCFile",
+        "localFile": "OCFile",
+        "updatedFile": "OCFile",
+        "remote": "RemoteFile",
+        "i": "int",
+        "encrypted": "boolean",
+        "children": "List<OCFile>",
+        "eTag": "String",
+        "fileDownloadHelper": "var",
+        "filename": "String",
+        "contentsResult": "RemoteOperationResult",
+        "f": "File",
+        "path": "String",
+        "intent": "Intent"
+    }
+}

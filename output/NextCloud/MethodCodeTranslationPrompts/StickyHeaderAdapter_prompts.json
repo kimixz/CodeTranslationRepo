@@ -1,0 +1,26 @@
+[
+    {
+        "method_name": "getHeaderPositionForItem",
+        "method_code": "int getHeaderPositionForItem(int itemPosition);",
+        "prompt": "\n        Please translate the following Java (Android) method titled getHeaderPositionForItem from StickyHeaderAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getHeaderPositionForItem\n\n        Method Code: int getHeaderPositionForItem(int itemPosition);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getHeaderPositionForItem(itemPosition: Int) -> Int\n```"
+    },
+    {
+        "method_name": "getHeaderLayout",
+        "method_code": "int getHeaderLayout(int headerPosition);",
+        "prompt": "\n        Please translate the following Java (Android) method titled getHeaderLayout from StickyHeaderAdapter.java into Swift.\n\n        Input:\n\n        Method Name: getHeaderLayout\n\n        Method Code: int getHeaderLayout(int headerPosition);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc getHeaderLayout(headerPosition: Int) -> Int\n```"
+    },
+    {
+        "method_name": "bindHeaderData",
+        "method_code": "void bindHeaderData(View header, int headerPosition);",
+        "prompt": "\n        Please translate the following Java (Android) method titled bindHeaderData from StickyHeaderAdapter.java into Swift.\n\n        Input:\n\n        Method Name: bindHeaderData\n\n        Method Code: void bindHeaderData(View header, int headerPosition);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc bindHeaderData(header: UIView, headerPosition: Int) {\n    // Method implementation goes here\n}\n```"
+    },
+    {
+        "method_name": "isHeader",
+        "method_code": "boolean isHeader(int itemPosition);",
+        "prompt": "\n        Please translate the following Java (Android) method titled isHeader from StickyHeaderAdapter.java into Swift.\n\n        Input:\n\n        Method Name: isHeader\n\n        Method Code: boolean isHeader(int itemPosition);\n\n        Abstract Syntax Tree: AST not available\n\n        Output Requirement: Return only the translated Swift code. No additional details, explanation, or formatting is required.\n        ",
+        "translateMethod": "```swift\nfunc isHeader(itemPosition: Int) -> Bool\n```"
+    }
+]
